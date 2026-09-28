@@ -17,13 +17,15 @@ function load(){
 }
 
 document.getElementById('save').addEventListener('click', ()=>{
+  const ss = parseInt(document.getElementById('starterSlots').value, 10);
+  const bw = parseFloat(document.getElementById('benchWeight').value);
   const config = {
     numTeams: parseInt(document.getElementById('numTeams').value,10) || DEFAULTS.numTeams,
     rosterSlots: parseInt(document.getElementById('rosterSlots').value,10) || DEFAULTS.rosterSlots,
     budget: parseInt(document.getElementById('budget').value,10) || DEFAULTS.budget,
     myTeamName: document.getElementById('myTeamName').value.trim(),
-    starterSlots: parseInt(document.getElementById('starterSlots').value,10) || DEFAULTS.starterSlots,
-    benchWeight: parseFloat(document.getElementById('benchWeight').value) ?? DEFAULTS.benchWeight,
+    starterSlots: isNaN(ss) ? DEFAULTS.starterSlots : ss,
+    benchWeight: isNaN(bw) ? DEFAULTS.benchWeight : bw,
   };
   chrome.storage.local.set({ config }, ()=>{
     document.getElementById('status').textContent = 'Saved. Refresh the draft tab to apply.';

@@ -65,11 +65,14 @@ test('runOptimizer returns best feasible team with starter and bench allocation'
 });
 
 test('runOptimizer applies heavy penalty to bench slots when benchWeight is low', () => {
-  const resWeight03 = runOptimizer(defaultState, PLAYERS);
+  const stateWeight10 = Object.assign({}, defaultState, { benchWeight: 1.0 });
   const stateWeight00 = Object.assign({}, defaultState, { benchWeight: 0.0 });
+  const resWeight10 = runOptimizer(stateWeight10, PLAYERS);
   const resWeight00 = runOptimizer(stateWeight00, PLAYERS);
 
-  assert.ok(resWeight00.bestVal <= resWeight03.bestVal);
+  const topStartersZ10 = resWeight10.players.slice(0, 5).reduce((a, p) => a + p.z, 0);
+  const topStartersZ00 = resWeight00.players.slice(0, 5).reduce((a, p) => a + p.z, 0);
+  assert.ok(topStartersZ00 >= topStartersZ10, `Bench weight 0.0 should shift value to top starters: ${topStartersZ00} >= ${topStartersZ10}`);
 });
 
 test('checkPrice calculates max bid for top starter target', () => {

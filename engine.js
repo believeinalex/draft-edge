@@ -250,7 +250,7 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
     if(cost <= B){
       for(let k=K;k>=1;k--){
-        const itemVal = (k <= sSlots) ? baseVal : (baseVal > 0 ? baseVal * bWeight : baseVal);
+        const itemVal = (k <= sSlots) ? baseVal : baseVal * bWeight;
         for(let b=B;b>=cost;b--){
           for(let mask=0;mask<M;mask++){
             const srcVal = dp[idx(k-1,b-cost,mask)];
