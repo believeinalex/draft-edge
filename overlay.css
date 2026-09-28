@@ -1,0 +1,106 @@
+#de-overlay{
+  all: initial;
+  position: fixed; top: 70px; right: 16px; width: 560px; max-width: calc(100vw - 24px); max-height: 86vh;
+  z-index: 2147483647; font: 12.5px -apple-system,BlinkMacSystemFont,sans-serif;
+  background: #1a1f27; color: #e9ecf1; border: 1px solid #2d3441; border-radius: 10px;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.6); overflow: hidden; display: flex; flex-direction: column;
+}
+#de-overlay *{ box-sizing: border-box; font-family: inherit; }
+#de-overlay.de-collapsed{ max-height: 40px; }
+#de-overlay .de-head{
+  display:flex; align-items:center; gap:8px; padding:9px 10px; background:#222834; cursor: move;
+  border-bottom: 1px solid #2d3441; user-select:none;
+}
+#de-overlay .de-head b{ font-size:12.5px; color:#e9ecf1; margin-right:auto; }
+#de-overlay .de-dot{ width:7px; height:7px; border-radius:99px; background:#4fbf85; flex:none; }
+#de-overlay .de-dot.off{ background:#8a93a5; }
+#de-overlay .de-btn{
+  border:1px solid #2d3441; background:#2b3240; color:#e9ecf1; border-radius:6px;
+  padding:3px 7px; font-size:11px; cursor:pointer; line-height:1.4;
+}
+#de-overlay .de-btn:hover{ background:#343c4d; }
+#de-overlay .de-body{ overflow-y:auto; overflow-x:hidden; padding:10px; }
+#de-overlay .de-stats{ display:grid; grid-template-columns: repeat(3,1fr); gap:6px; margin-bottom:10px; }
+#de-overlay .de-stat{ background:#222834; border:1px solid #2d3441; border-radius:7px; padding:6px 7px; }
+#de-overlay .de-stat .l{ font-size:9.5px; text-transform:uppercase; letter-spacing:.04em; color:#8a93a5; }
+#de-overlay .de-stat .v{ font-size:15px; font-weight:600; font-variant-numeric:tabular-nums; }
+#de-overlay .de-stat .v.accent{ color:#e8a33d; }
+#de-overlay h2{ font-size:10.5px; text-transform:uppercase; letter-spacing:.05em; color:#8a93a5; margin:12px 0 6px; font-weight:600; }
+#de-overlay .de-alert{ background:#3a1c1c; border:1px solid #e2685f; color:#e2685f; border-radius:7px; padding:7px 9px; font-size:11.5px; margin-bottom:8px; }
+#de-overlay .de-check-result{ background:#222834; border:1px solid #2d3441; border-radius:7px; padding:8px 9px; margin-top:6px; }
+#de-overlay .de-check-result .n{ font-weight:600; font-size:12.5px; }
+#de-overlay .de-check-result .m{ font-size:10.5px; color:#8a93a5; margin-top:1px; }
+#de-overlay .de-check-result .p{ font-family: ui-monospace, monospace; color:#e8a33d; font-weight:700; font-size:17px; margin-top:4px; }
+#de-overlay .de-check-result .p .lbl{ font-family:inherit; color:#8a93a5; font-weight:400; font-size:10px; text-transform:uppercase; letter-spacing:.04em; display:block; }
+#de-overlay .de-check-actions{ display:flex; gap:6px; margin-top:7px; }
+#de-overlay .de-check-actions input{ flex:0 0 58px; background:#1a1f27; border:1px solid #2d3441; border-radius:6px; color:#e9ecf1; padding:5px 6px; font-size:11.5px; }
+#de-overlay .de-check-actions button{ flex:1; }
+#de-overlay .de-power-wrap{ overflow-x:auto; border-radius:7px; border:1px solid #2d3441; }
+#de-overlay table.de-power{ width:100%; border-collapse:collapse; font-size:11px; }
+#de-overlay table.de-power th, #de-overlay table.de-power td{ padding:5px 6px; text-align:center; white-space:nowrap; border-bottom:1px solid #2d3441; }
+#de-overlay table.de-power th:nth-child(2), #de-overlay table.de-power td.name{ text-align:left; }
+#de-overlay table.de-power th{ color:#8a93a5; font-weight:600; font-size:9.5px; text-transform:uppercase; background:#1e242e; position:sticky; top:0; }
+#de-overlay table.de-power td.rankpos{ color:#8a93a5; font-family: ui-monospace, monospace; }
+#de-overlay table.de-power td.name{ font-weight:500; max-width:120px; overflow:hidden; text-overflow:ellipsis; }
+#de-overlay .de-poscoverage{ display:flex; gap:5px; margin:8px 0; }
+#de-overlay .de-poschip{ flex:1; text-align:center; padding:3px 0; border-radius:6px; font-size:10px; font-weight:700; font-family: ui-monospace, monospace; }
+#de-overlay .de-poschip.ok{ background:#173324; color:#4fbf85; }
+#de-overlay .de-poschip.bad{ background:#3a1c1c; color:#e2685f; }
+#de-overlay .de-opt-list{ display:flex; flex-direction:column; }
+#de-overlay .de-opt-row{ display:flex; justify-content:space-between; align-items:center; gap:6px; padding:4px 0; border-bottom:1px solid #2d3441; font-size:11.5px; }
+#de-overlay .de-opt-row:last-child{ border-bottom:none; }
+#de-overlay .de-opt-meta{ color:#8a93a5; font-size:10.5px; margin-left:6px; }
+#de-overlay .de-opt-right{ display:flex; align-items:center; gap:8px; flex:none; }
+#de-overlay .de-opt-cost{ font-family: ui-monospace, monospace; color:#8a93a5; }
+#de-overlay .de-opt-z{ font-family: ui-monospace, monospace; color:#e8a33d; min-width:44px; text-align:right; }
+#de-overlay .de-opt-summary{ font-size:11px; color:#8a93a5; margin-top:8px; line-height:1.5; }
+#de-overlay table.de-power tr.me{ background:#3a2c14; }
+#de-overlay table.de-power tr:last-child td{ border-bottom:none; }
+#de-overlay table.de-power td.total{ font-family: ui-monospace, monospace; font-weight:700; }
+#de-overlay .de-rankchip{
+  display:inline-flex; align-items:center; justify-content:center; min-width:18px; height:18px; padding:0 3px;
+  border-radius:5px; font-weight:700; font-family: ui-monospace, monospace; font-size:10px;
+}
+#de-overlay .de-rankchip.good{ background:#173324; color:#4fbf85; }
+#de-overlay .de-rankchip.mid{ background:#362c12; color:#e0bc4f; }
+#de-overlay .de-rankchip.bad{ background:#3a1c1c; color:#e2685f; }
+#de-overlay .de-log-row{ display:flex; justify-content:space-between; align-items:center; gap:6px; padding:4px 0; border-bottom:1px solid #2d3441; font-size:11.5px; }
+#de-overlay .de-log-row:last-child{ border-bottom:none; }
+#de-overlay .de-log-row.de-new{ animation: de-flash 1.6s ease; }
+@keyframes de-flash{ 0%{ background:#3a2c14; } 100%{ background:transparent; } }
+#de-overlay .de-log-x{ border:none; background:none; color:#8a93a5; cursor:pointer; font-size:13px; padding:0 3px; }
+#de-overlay .de-log-x:hover{ color:#e2685f; }
+#de-overlay .de-empty{ color:#8a93a5; font-size:11.5px; padding:6px 0; }
+#de-overlay .de-manual{ display:flex; gap:5px; margin-top:8px; }
+#de-overlay .de-manual input{ flex:1; min-width:0; background:#222834; border:1px solid #2d3441; border-radius:6px; color:#e9ecf1; padding:5px 6px; font-size:11.5px; }
+#de-overlay .de-manual input.de-price{ flex:0 0 52px; }
+#de-overlay .de-manual-results{ position:relative; }
+#de-overlay .de-mr-list{ position:absolute; top:100%; left:0; right:0; background:#1a1f27; border:1px solid #2d3441; border-radius:6px; margin-top:3px; max-height:160px; overflow-y:auto; z-index:5; display:none; }
+#de-overlay .de-mr-list.open{ display:block; }
+#de-overlay .de-mr-item{ padding:5px 8px; cursor:pointer; font-size:11.5px; }
+#de-overlay .de-mr-item:hover{ background:#2b3240; }
+#de-overlay .de-badge{ font-size:9.5px; padding:1px 6px; border-radius:99px; background:#2b3240; color:#8a93a5; }
+#de-overlay .de-badge.live{ background:#173324; color:#4fbf85; }
+
+/* Punt Strategy & Category Weights */
+#de-overlay .de-punt-hdr{ display:flex; justify-content:space-between; align-items:center; margin:12px 0 6px; }
+#de-overlay .de-punt-hdr h2{ margin:0; }
+#de-overlay .de-punt-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:5px; margin-bottom:8px; }
+#de-overlay .de-punt-chip{
+  background:#222834; border:1px solid #2d3441; border-radius:6px; padding:5px 4px;
+  text-align:center; cursor:pointer; user-select:none; transition:all .15s ease;
+  display:flex; flex-direction:column; align-items:center; gap:1px;
+}
+#de-overlay .de-punt-chip:hover{ border-color:#4fbf85; background:#28303f; }
+#de-overlay .de-punt-chip.soft{ background:#2a2818; border-color:#e0bc4f; }
+#de-overlay .de-punt-chip.punted{ background:#2c1a1a; border-color:#e2685f; opacity:.9; }
+#de-overlay .de-punt-cat{ font-weight:700; font-size:11px; color:#e9ecf1; }
+#de-overlay .de-punt-chip.punted .de-punt-cat{ text-decoration:line-through; color:#e2685f; }
+#de-overlay .de-punt-weight{ font-size:9px; font-family: ui-monospace, monospace; color:#8a93a5; margin-top:1px; }
+#de-overlay .de-punt-chip.soft .de-punt-weight{ color:#e0bc4f; font-weight:600; }
+#de-overlay .de-punt-chip.punted .de-punt-weight{ color:#e2685f; font-weight:700; }
+#de-overlay .de-punt-tag{ font-size:8px; padding:1px 4px; border-radius:4px; text-transform:uppercase; font-weight:700; margin-top:2px; letter-spacing:.03em; }
+#de-overlay .de-punt-tag.dominant{ background:#173324; color:#4fbf85; }
+#de-overlay .de-punt-tag.mid{ background:#362c12; color:#e0bc4f; }
+#de-overlay .de-punt-tag.lagging{ background:#3a1c1c; color:#e2685f; }
+

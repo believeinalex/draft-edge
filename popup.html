@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+<title>Draft Edge Live Sync</title>
+<style>
+  body{ width:280px; font:13px -apple-system,BlinkMacSystemFont,sans-serif; margin:0; padding:14px; background:#1b2420; color:#e9ecf1; }
+  h1{ font-size:14px; margin:0 0 10px; }
+  label{ display:block; font-size:11px; color:#8a93a5; margin:10px 0 3px; text-transform:uppercase; letter-spacing:.04em; }
+  input, select{ width:100%; box-sizing:border-box; padding:6px 8px; border-radius:6px; border:1px solid #2d3441; background:#222834; color:#e9ecf1; font-size:13px; }
+  button{ width:100%; margin-top:14px; padding:8px; border-radius:6px; border:1px solid #e8a33d; background:#e8a33d; color:#1a1206; font-weight:600; cursor:pointer; }
+  button:hover{ filter:brightness(1.05); }
+  .status{ margin-top:10px; font-size:11.5px; color:#8a93a5; line-height:1.5; }
+  .row{ display:flex; gap:8px; }
+  .row > div{ flex:1; }
+  .danger{ background:#3a1c1c; border-color:#e2685f; color:#e2685f; margin-top:8px; }
+</style>
+</head>
+<body>
+  <h1>Draft Edge Live Sync</h1>
+  <div class="row">
+    <div>
+      <label>Teams</label>
+      <input type="number" id="numTeams" min="4" max="20" value="12">
+    </div>
+    <div>
+      <label>Roster slots</label>
+      <input type="number" id="rosterSlots" min="5" max="25" value="13">
+    </div>
+  </div>
+  <label>Budget per team</label>
+  <input type="number" id="budget" min="20" max="1000" value="200">
+  <label>Your team label (as Yahoo shows it in the draft room)</label>
+  <input type="text" id="myTeamName" placeholder="You">
+  <div class="status" style="margin-top:2px;">Yahoo labels your own picks "You" in the live draft feed — leave this as-is unless yours shows differently.</div>
+  <button id="save">Save &amp; apply</button>
+  <button class="danger" id="reset">Reset this draft's picks</button>
+  <div class="status" id="status"></div>
+</body>
+<script src="popup.js"></script>
+</html>
