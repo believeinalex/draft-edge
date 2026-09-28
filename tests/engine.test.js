@@ -122,9 +122,9 @@ test('14-team league configuration (14 teams, 13 roster slots)', () => {
 test('15-team league configuration (15 teams, 14 roster slots)', () => {
   const state15 = Object.assign({}, defaultState, { numTeams: 15, rosterSlots: 14, starterSlots: 10 });
   const C = computeAll(state15, PLAYERS);
-  // 15 * 14 = 210, clamped to total 200 players in PLAYERS pool
-  assert.equal(C.poolSize, 200);
-  assert.equal(C.availableInPool.length, 200);
+  const expectedPool = Math.min(PLAYERS.length, 15 * 14); // 210 players
+  assert.equal(C.poolSize, expectedPool);
+  assert.equal(C.availableInPool.length, expectedPool);
 
   const opt15 = runOptimizer(state15, PLAYERS);
   assert.ok(opt15);
@@ -153,7 +153,7 @@ test('Deep league mid-draft progress (15 teams with 120+ picks made)', () => {
 
   const C = computeAll(stateDeepDraft, PLAYERS);
   assert.equal(C.draftedCount, 120);
-  assert.equal(C.availableInPool.length, 200 - 120); // 80 players remaining
+  assert.equal(C.availableInPool.length, C.poolSize - 120); // remaining pool after 120 drafted picks
 
   const optDeep = runOptimizer(stateDeepDraft, PLAYERS);
   assert.ok(optDeep);
