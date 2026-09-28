@@ -1,0 +1,16 @@
+{
+  "name": "draft-edge-live-sync",
+  "version": "0.1.0",
+  "description": "Watches a live Yahoo Fantasy Basketball auction draft and overlays budget, inflation, and value-pick recommendations in real time.",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "fantasy-basketball",
+    "chrome-extension",
+    "yahoo-fantasy",
+    "auction-draft"
+  ],
+  "author": "Alex",
+  "license": "ISC"
+}
