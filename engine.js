@@ -228,7 +228,7 @@ function missingCorePositions(players){
   return zeroEligible.length ? zeroEligible : ['(position conflict)'];
 }
 
-function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach){
+function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight){
   const n = pool.length;
   const B = Math.max(0, Math.floor(capBudget));
   const K = Math.max(0, Math.floor(capSlots));
@@ -239,19 +239,23 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach){
   let dp = new Float64Array((K+1)*(B+1)*M).fill(NEG);
   for(let b=0;b<=B;b++) for(let mask=0;mask<M;mask++) if(reach0[mask]) dp[idx(0,b,mask)] = 0;
   const choice = new Array(n);
+  const sSlots = (starterSlotsLeft !== undefined) ? starterSlotsLeft : K;
+  const bWeight = (benchWeight !== undefined) ? benchWeight : 0.3;
+
   for(let i=0;i<n;i++){
     const cost = Math.round(costFn(pool[i]));
-    const val = valFn(pool[i]);
+    const baseVal = valFn(pool[i]);
     const pm = posMaskOf(pool[i]);
     const newDp = dp.slice();
     const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
     if(cost <= B){
       for(let k=K;k>=1;k--){
+        const itemVal = (k <= sSlots) ? baseVal : (baseVal > 0 ? baseVal * bWeight : baseVal);
         for(let b=B;b>=cost;b--){
           for(let mask=0;mask<M;mask++){
             const srcVal = dp[idx(k-1,b-cost,mask)];
             if(srcVal <= NEG/2) continue;
-            const withItem = srcVal + val;
+            const withItem = srcVal + itemVal;
             const t0 = idx(k,b,mask);
             if(withItem > newDp[t0]){ newDp[t0] = withItem; take[t0] = mask; }
             for(let j=0;j<CORE_POS.length;j++){
@@ -301,7 +305,7 @@ function checkPrice(state, PLAYERS, rk){
   const C = computeAll(state, PLAYERS);
   const p = PLAYERS.find(x=>x.rk===rk);
   if(!p) return null;
-  const {budgetLeft, slotsLeft} = C.teamBudgetAndSlotsLeft(state.myTeamName);
+  const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { player:p, full:true };
   const costFn = x=>C.fairPrice(x.rk);
   const valFn = x=>C.compositeZ(C.zAll.get(x.rk));
@@ -313,14 +317,27 @@ function checkPrice(state, PLAYERS, rk){
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const baseReach = reachableCoverage(myPlayers);
-  const res = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach);
+  const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+  const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
+  const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
+
+  const res = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
   res.costOf = costFn;
+
+  const isStarterTarget = picksMade < starterSlots;
+  const pValEff = isStarterTarget ? pVal : pVal * benchWeight;
+  const subStarterSlotsLeft = isStarterTarget ? Math.max(0, starterSlotsLeft - 1) : 0;
+  const resSub = (subStarterSlotsLeft === starterSlotsLeft)
+    ? res
+    : knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, subStarterSlotsLeft, benchWeight);
+  resSub.costOf = costFn;
+
   function bestCompatible(k, b){
     if(b<0) return {value:-1e15, mask:-1};
     let best=-1e15, bestMask=-1;
-    for(let m=0;m<res.M;m++){
+    for(let m=0;m<resSub.M;m++){
       if((m|pMask)!==FULL_COVERAGE) continue;
-      const v = res.dp[res.idx(k,b,m)];
+      const v = resSub.dp[resSub.idx(k,b,m)];
       if(v>best){ best=v; bestMask=m; }
     }
     return {value:best, mask:bestMask};
@@ -337,12 +354,12 @@ function checkPrice(state, PLAYERS, rk){
     for(let X=1; X<=B; X++){
       const remB = B - X;
       const sub = bestCompatible(slotsLeft-1, remB);
-      const withVal = pVal + sub.value;
+      const withVal = pValEff + sub.value;
       if(withVal >= baseline){ bestX = X; bestSubMask = sub.mask; }
     }
   }
   const passRoster = (baseline < -1e14) ? [] : knapsackReconstruct(res, slotsLeft, res.B, baselineMask);
-  const restAtBestX = bestSubMask>=0 ? knapsackReconstruct(res, slotsLeft-1, B-bestX, bestSubMask) : [];
+  const restAtBestX = bestSubMask>=0 ? knapsackReconstruct(resSub, slotsLeft-1, B-bestX, bestSubMask) : [];
   return {
     player: p, maxBid: bestX, soloZ: pVal, mktNow: C.fairPrice(rk),
     baselineZ: baseline>-1e14 ? baseline : null, baselineInfeasible,
@@ -363,7 +380,7 @@ function checkPrice(state, PLAYERS, rk){
 // which wrote straight to the page).
 function runOptimizer(state, PLAYERS){
   const C = computeAll(state, PLAYERS);
-  const {budgetLeft, slotsLeft} = C.teamBudgetAndSlotsLeft(state.myTeamName);
+  const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { full: true };
   const costFn = p=>C.fairPrice(p.rk);
   const valFn = p=>C.compositeZ(C.zAll.get(p.rk));
@@ -371,7 +388,10 @@ function runOptimizer(state, PLAYERS){
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const baseReach = reachableCoverage(myPlayers);
   const B = Math.max(budgetLeft,0);
-  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach);
+  const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+  const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
+  const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
+  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
