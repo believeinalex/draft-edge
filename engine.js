@@ -132,16 +132,23 @@ function computeAll(state, PLAYERS){
   let powerRankings = [];
   if(teamNames.length){
     const n = teamNames.length;
+    const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+    const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
     const teamProjZ = teamNames.map(name=>{
       const picksOfTeam = state.picks.filter(pk=>pk.teamName===name);
-      const empty = Math.max(state.rosterSlots - picksOfTeam.length, 0);
       const proj = {};
+      const numPicks = picksOfTeam.length;
+      const emptyStarters = Math.max(0, starterSlots - numPicks);
+      const emptyBench = Math.max(0, state.rosterSlots - Math.max(starterSlots, numPicks));
       for(const c of CATS){
-        let s = empty*replZ[c];
-        for(const pk of picksOfTeam){
+        let s = emptyStarters * replZ[c] + emptyBench * benchWeight * replZ[c];
+        picksOfTeam.forEach((pk, idx)=>{
           const zc = zAll.get(pk.rk);
-          s += zc ? zc[c] : 0;
-        }
+          if(zc){
+            const w = (idx < starterSlots) ? 1.0 : benchWeight;
+            s += w * zc[c];
+          }
+        });
         proj[c] = s;
       }
       return proj;
