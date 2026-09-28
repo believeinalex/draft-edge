@@ -1,28 +1,52 @@
-# Draft Edge Live Sync (Chrome extension) — WIP
+# Draft Edge Live Sync (Chrome Extension)
 
-Not ready to load yet — pick-detection selectors still need a real-DOM test pass
-against a live Yahoo draft room. Once that's done this will be delivered as a
-zip with load-unpacked instructions.
+A Chrome extension that integrates directly into the Yahoo Fantasy Basketball live auction draft room (`*://*.fantasysports.yahoo.com/*`). It monitors draft picks in real time, calculates dynamic inflation, tracks team budgets, and provides live valuation and maximum bid recommendations powered by the Draft Edge model.
 
-## What's built
-- `engine.js` — the valuation math, ported line-for-line from the Draft Edge
-  artifact's `computeAll()` and `checkPrice()` (exact position-aware knapsack),
-  generalized to key teams by name string instead of a fixed index.
-- `players.js` — the same 200-player 2026-27 projection dataset Draft Edge uses.
-- `content.js` — overlay UI + pick-detection adapter (MutationObserver-based,
-  currently running the generic fallback scanner since real selectors aren't
-  filled in yet — see `YAHOO_SELECTORS` at the top of the detection section).
-- `popup.html`/`popup.js` — league setup (teams, roster slots, budget, your
-  team name) stored in `chrome.storage.local`.
+---
 
-## Verified so far (Node, outside the browser)
-- `computeAll` / `checkPrice` run correctly against a fabricated draft state
-  (budget, inflation, position alerts, power rankings, max-bid math all sane).
-- Name matching handles the known Yahoo abbreviation cases (Nic Claxton →
-  Nicolas Claxton, etc.) and returns null (not a crash) on an unmatched name.
+## Features
 
-## Still needed
-1. Real DOM inspection of a live Yahoo draft room to fill in `YAHOO_SELECTORS`
-   in `content.js` and confirm the generic fallback even fires.
-2. Load-unpacked test in Chrome against that live/mock draft.
-3. Package as a zip for delivery.
+- **Live Yahoo Pick Detection**:
+  - **Dual Scrapers**: Reads live pick feeds from both the Yahoo **Queue side-panel** and the **Board tab** (ensuring full draft history is preserved even after page refreshes).
+  - **Auto-Nomination Sync**: Detects the player currently up for auction and automatically populates the price checker.
+  - **Auto & Manual Pick Logging**: Picks are automatically logged with an `auto` tag and a one-click undo (`×`), with manual logging for edge cases.
+- **Real-Time Valuation & Inflation**:
+  - Re-computes player values dynamically as league money and talent pool shift.
+  - Displays dollar-for-dollar inflation multipliers and remaining league dollars.
+- **Position-Aware Maximum Bid Solver**:
+  - Uses an exact position-aware knapsack algorithm (`checkPrice()`) to compute the maximum recommended bid for any player on your specific roster.
+- **Power Rankings & Category Weights**:
+  - Live projected standings across all categories.
+  - Customizable category weight sliders to adjust valuations according to your punt strategies.
+- **League Setup Popup**:
+  - Configure number of teams, roster slots, total budget, and your team name via the extension popup.
+
+---
+
+## Installation (Load Unpacked)
+
+1. Clone or download this repository.
+2. Open Chrome and navigate to `chrome://extensions/`.
+3. Enable **Developer mode** using the toggle switch in the top right corner.
+4. Click **Load unpacked**.
+5. Select the repository directory (`Edge2`).
+
+---
+
+## Usage
+
+1. **Configure League**: Click the extension icon in the toolbar to set your league size (e.g., 12 teams), budget ($200), roster slots (13), and your exact team name.
+2. **Join Yahoo Draft**: Open your Yahoo Fantasy Basketball live auction draft room.
+3. **Overlay Control**: The Draft Edge overlay will render automatically in the live draft room.
+4. **Draft Tracking**: Picks will auto-log as players are won. Open the **Board tab** at least once if rejoining mid-draft to sync past pick history.
+
+---
+
+## File Overview
+
+- [manifest.json](file:///c:/Users/swarm/Downloads/Edge2/manifest.json) — Chrome Extension Manifest (v3).
+- [content.js](file:///c:/Users/swarm/Downloads/Edge2/content.js) — Yahoo DOM scrapers, MutationObserver, live pick detection, and floating overlay UI.
+- [engine.js](file:///c:/Users/swarm/Downloads/Edge2/engine.js) — Valuation algorithms, inflation calculations, knapsack max-bid math, and power rankings.
+- [players.js](file:///c:/Users/swarm/Downloads/Edge2/players.js) — 200-player 2026-27 projection & valuation dataset.
+- [overlay.css](file:///c:/Users/swarm/Downloads/Edge2/overlay.css) — Styling for the in-page floating draft overlay.
+- [popup.html](file:///c:/Users/swarm/Downloads/Edge2/popup.html) / [popup.js](file:///c:/Users/swarm/Downloads/Edge2/popup.js) — Extension popup for league settings management.
