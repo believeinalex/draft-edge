@@ -40,17 +40,17 @@ function computeAll(state, PLAYERS){
       let totMakes=0, totAtt=0;
       const impacts = [];
       for(const p of availableInPool){
-        totMakes += p[mkey]*p.gp; totAtt += p[akey]*p.gp;
+        totMakes += p[mkey]; totAtt += p[akey];
       }
       const poolAvg = totAtt>0 ? totMakes/totAtt : 0;
       for(const p of availableInPool){
-        const seasonA = p[akey]*p.gp;
-        impacts.push((p[c]-poolAvg)*seasonA);
+        const perGameA = p[akey];
+        impacts.push((p[c]-poolAvg)*perGameA);
       }
       const m = mean(impacts), sd = stdev(impacts,m);
       poolStats[c] = {mode:'pct', poolAvg, m, sd, mkey, akey};
     } else {
-      const totals = availableInPool.map(p=>p[c]*p.gp);
+      const totals = availableInPool.map(p=>p[c]);
       const m = mean(totals), sd = stdev(totals,m);
       poolStats[c] = {mode:'count', m, sd};
     }
@@ -59,12 +59,11 @@ function computeAll(state, PLAYERS){
   function zOf(p, c){
     const st = poolStats[c];
     if(st.mode==='pct'){
-      const seasonA = p[st.akey]*p.gp;
-      const impact = (p[c]-st.poolAvg)*seasonA;
+      const perGameA = p[st.akey];
+      const impact = (p[c]-st.poolAvg)*perGameA;
       return (impact - st.m)/st.sd;
     } else {
-      const total = p[c]*p.gp;
-      return (total - st.m)/st.sd;
+      return (p[c] - st.m)/st.sd;
     }
   }
 
