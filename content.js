@@ -16,7 +16,7 @@
 (function(){
   'use strict';
 
-  const DEFAULTS = { numTeams: 12, rosterSlots: 13, budget: 200, myTeamName: 'You' };
+  const DEFAULTS = { numTeams: 12, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 10, benchWeight: 0.3 };
   const PLAYERS = DRAFT_EDGE_PLAYERS;
   const nameIndex = buildNameIndex(PLAYERS);
 
@@ -27,7 +27,8 @@
 
   function state(){
     return { numTeams: config.numTeams, rosterSlots: config.rosterSlots, budget: config.budget,
-             myTeamName: config.myTeamName, weights, picks };
+             myTeamName: config.myTeamName, starterSlots: config.starterSlots, benchWeight: config.benchWeight,
+             weights, picks };
   }
 
   function save(){

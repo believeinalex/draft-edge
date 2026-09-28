@@ -1,4 +1,4 @@
-const DEFAULTS = { numTeams: 12, rosterSlots: 13, budget: 200, myTeamName: 'You' };
+const DEFAULTS = { numTeams: 12, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 10, benchWeight: 0.3 };
 
 function load(){
   chrome.storage.local.get(['config','picks'], (res)=>{
@@ -7,6 +7,8 @@ function load(){
     document.getElementById('rosterSlots').value = cfg.rosterSlots;
     document.getElementById('budget').value = cfg.budget;
     document.getElementById('myTeamName').value = cfg.myTeamName;
+    document.getElementById('starterSlots').value = cfg.starterSlots !== undefined ? cfg.starterSlots : DEFAULTS.starterSlots;
+    document.getElementById('benchWeight').value = cfg.benchWeight !== undefined ? cfg.benchWeight : DEFAULTS.benchWeight;
     const n = (res.picks||[]).length;
     document.getElementById('status').textContent = n
       ? `${n} pick${n===1?'':'s'} logged this draft. Reopen the draft tab to see the overlay.`
@@ -20,6 +22,8 @@ document.getElementById('save').addEventListener('click', ()=>{
     rosterSlots: parseInt(document.getElementById('rosterSlots').value,10) || DEFAULTS.rosterSlots,
     budget: parseInt(document.getElementById('budget').value,10) || DEFAULTS.budget,
     myTeamName: document.getElementById('myTeamName').value.trim(),
+    starterSlots: parseInt(document.getElementById('starterSlots').value,10) || DEFAULTS.starterSlots,
+    benchWeight: parseFloat(document.getElementById('benchWeight').value) ?? DEFAULTS.benchWeight,
   };
   chrome.storage.local.set({ config }, ()=>{
     document.getElementById('status').textContent = 'Saved. Refresh the draft tab to apply.';
