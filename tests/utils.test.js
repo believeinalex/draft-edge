@@ -1,6 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { parseCSVLine, parsePctWithAtt } = require('../utils/update_projections.js');
+const { parsePrice, updatePrices } = require('../utils/update_prices.js');
 
 test('parseCSVLine handles quoted and unquoted commas', () => {
   const line = 'Luka Doncic,3.6,"PG,SG",LAL,68,35.4,0.465(10.6/22.9)';
@@ -17,3 +18,21 @@ test('parsePctWithAtt extracts percentage, makes, and attempts', () => {
   assert.equal(parsed.m, 10.5);
   assert.equal(parsed.a, 18.3);
 });
+
+test('parsePrice correctly strips currency symbols and handles values', () => {
+  assert.equal(parsePrice('$74.60'), 74.60);
+  assert.equal(parsePrice('$0.00'), 0);
+  assert.equal(parsePrice(''), 0);
+  assert.equal(parsePrice('-'), 0);
+  assert.equal(parsePrice(' 45.5 '), 45.5);
+});
+
+test('updatePrices updates players array with maximum price across sources', () => {
+  const res = updatePrices();
+  assert.ok(res.updatedCount > 250);
+  const players = require('../players.js');
+  const jokic = players.find(p => p.name === 'Nikola Jokic');
+  assert.ok(jokic);
+  assert.equal(jokic.mktCost, 83); // Math.max(74.60, 70.00, 83.20) rounded = 83
+});
+
