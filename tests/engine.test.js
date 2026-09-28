@@ -98,3 +98,96 @@ test('checkPrice penalizes max bid when all starter slots are already filled', (
   assert.ok(priceBench.maxBid <= priceStarterEquiv.maxBid,
     `Bench max bid (${priceBench.maxBid}) should be <= starter max bid (${priceStarterEquiv.maxBid})`);
 });
+
+// =========================================================================
+// Enhanced Tests for 13-15 Team Leagues and Custom Roster Configuration
+// =========================================================================
+
+test('14-team league configuration (14 teams, 13 roster slots)', () => {
+  const state14 = Object.assign({}, defaultState, { numTeams: 14, rosterSlots: 13 });
+  const C = computeAll(state14, PLAYERS);
+  assert.equal(C.poolSize, 14 * 13); // 182 players
+  assert.equal(C.availableInPool.length, 182);
+
+  const opt14 = runOptimizer(state14, PLAYERS);
+  assert.ok(opt14);
+  assert.equal(opt14.players.length, 13);
+  assert.ok(opt14.totalCost <= 200);
+
+  const cp14 = checkPrice(state14, PLAYERS, 1);
+  assert.ok(cp14);
+  assert.ok(cp14.maxBid > 0);
+});
+
+test('15-team league configuration (15 teams, 14 roster slots)', () => {
+  const state15 = Object.assign({}, defaultState, { numTeams: 15, rosterSlots: 14, starterSlots: 10 });
+  const C = computeAll(state15, PLAYERS);
+  // 15 * 14 = 210, clamped to total 200 players in PLAYERS pool
+  assert.equal(C.poolSize, 200);
+  assert.equal(C.availableInPool.length, 200);
+
+  const opt15 = runOptimizer(state15, PLAYERS);
+  assert.ok(opt15);
+  assert.equal(opt15.players.length, 14);
+  assert.ok(opt15.totalCost <= 200);
+
+  const cp15 = checkPrice(state15, PLAYERS, 5);
+  assert.ok(cp15);
+  assert.ok(cp15.maxBid > 0);
+});
+
+test('Deep league mid-draft progress (15 teams with 120+ picks made)', () => {
+  const picks150 = [];
+  // 10 other teams have drafted 12 players each (120 picks total)
+  for (let t = 1; t <= 10; t++) {
+    for (let s = 0; s < 12; s++) {
+      const pIdx = (t - 1) * 12 + s;
+      picks150.push({ rk: PLAYERS[pIdx].rk, teamName: `Team${t}`, price: 10 });
+    }
+  }
+  const stateDeepDraft = Object.assign({}, defaultState, {
+    numTeams: 15,
+    rosterSlots: 14,
+    picks: picks150
+  });
+
+  const C = computeAll(stateDeepDraft, PLAYERS);
+  assert.equal(C.draftedCount, 120);
+  assert.equal(C.availableInPool.length, 200 - 120); // 80 players remaining
+
+  const optDeep = runOptimizer(stateDeepDraft, PLAYERS);
+  assert.ok(optDeep);
+  assert.equal(optDeep.players.length, 14);
+
+  const cpDeep = checkPrice(stateDeepDraft, PLAYERS, PLAYERS[121].rk);
+  assert.ok(cpDeep);
+});
+
+test('Edge case: starterSlots >= rosterSlots', () => {
+  const stateAllStarters = Object.assign({}, defaultState, { starterSlots: 15, rosterSlots: 13 });
+  const opt = runOptimizer(stateAllStarters, PLAYERS);
+  assert.ok(opt);
+  assert.equal(opt.players.length, 13);
+
+  const cp = checkPrice(stateAllStarters, PLAYERS, 1);
+  assert.ok(cp);
+  assert.ok(cp.maxBid > 0);
+});
+
+test('Edge case: late draft pool scarcity (available players < remaining roster slots)', () => {
+  // 198 out of 200 players drafted
+  const picks198 = PLAYERS.slice(0, 198).map((p, i) => ({
+    rk: p.rk,
+    teamName: `Team${(i % 12) + 1}`,
+    price: 5
+  }));
+  const stateScarcity = Object.assign({}, defaultState, {
+    picks: picks198,
+    myTeamName: 'You'
+  });
+
+  // 'You' has 0 picks made, needs 13 slots, but only 2 players remain in pool
+  const optScarcity = runOptimizer(stateScarcity, PLAYERS);
+  assert.ok(optScarcity);
+  assert.equal(optScarcity.infeasible, true);
+});
