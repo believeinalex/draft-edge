@@ -27,12 +27,12 @@ test('parsePrice correctly strips currency symbols and handles values', () => {
   assert.equal(parsePrice(' 45.5 '), 45.5);
 });
 
-test('updatePrices updates players array with maximum price across sources', () => {
+test('updatePrices updates players array with maximum price across sources (excluding ESPN)', () => {
   const res = updatePrices();
   assert.ok(res.updatedCount > 250);
   const players = require('../players.js');
   const jokic = players.find(p => p.name === 'Nikola Jokic');
   assert.ok(jokic);
-  assert.equal(jokic.mktCost, 83); // Math.max(74.60, 70.00, 83.20) rounded = 83
+  assert.equal(jokic.mktCost, 75); // Math.max(74.60, 70.00) rounded = 75
 });
 

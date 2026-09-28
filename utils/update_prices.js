@@ -72,7 +72,8 @@ function updatePrices(csvPath, targetPlayersPath) {
     const pYAvg = yAvgIdx !== -1 ? parsePrice(cols[yAvgIdx]) : 0;
     const pEspnAvg = espnAvgIdx !== -1 ? parsePrice(cols[espnAvgIdx]) : 0;
 
-    const maxVal = Math.max(pValuedAt, pYAvg, pEspnAvg);
+    // Drop ESPN from max price calculation per user preference
+    const maxVal = Math.max(pValuedAt, pYAvg);
     const estimatedPrice = maxVal > 0 ? Math.max(1, Math.round(maxVal)) : 1;
 
     priceMap.set(normName(rawName), {
