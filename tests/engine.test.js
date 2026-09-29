@@ -219,3 +219,9 @@ test('zRankMap and checkPrice return correct Z-Score Rank and category Z-scores'
   assert.ok(opt.players.every(p => typeof p.rk === 'number' && p.rk > 0), 'Every optimizer player must have a valid rk');
 });
 
+test('checkPrice evaluates positive max bid for high-value targets even under positional constraints', () => {
+  const buzelisPrice = checkPrice(defaultState, PLAYERS, 48); // Matas Buzelis
+  assert.ok(buzelisPrice);
+  assert.ok(buzelisPrice.maxBid > 0, `Buzelis maxBid should be > 0, got ${buzelisPrice.maxBid}`);
+});
+

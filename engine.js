@@ -349,14 +349,29 @@ function checkPrice(state, PLAYERS, rk){
   resSub.costOf = costFn;
 
   function bestCompatible(k, b){
-    if(b<0) return {value:-1e15, mask:-1};
-    let best=-1e15, bestMask=-1;
-    for(let m=0;m<resSub.M;m++){
-      if((m|pMask)!==FULL_COVERAGE) continue;
-      const v = resSub.dp[resSub.idx(k,b,m)];
-      if(v>best){ best=v; bestMask=m; }
+    if(b < 0) return {value: -1e15, mask: -1};
+    let maxCovered = -1;
+    let bestVal = -1e15;
+    let bestMask = -1;
+
+    for(let m = 0; m < resSub.M; m++){
+      const v = resSub.dp[resSub.idx(k, b, m)];
+      if(v <= -1e14) continue;
+      const combinedMask = m | pMask;
+      let count = 0;
+      for(let j = 0; j < CORE_POS.length; j++){
+        if(combinedMask & (1 << j)) count++;
+      }
+      if(count > maxCovered){
+        maxCovered = count;
+        bestVal = v;
+        bestMask = m;
+      } else if(count === maxCovered && v > bestVal){
+        bestVal = v;
+        bestMask = m;
+      }
     }
-    return {value:best, mask:bestMask};
+    return {value: bestVal, mask: bestMask};
   }
   let baseline = bestFeasible(res, slotsLeft, res.B);
   let baselineInfeasible = baseline < -1e14;
