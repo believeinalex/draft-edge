@@ -225,3 +225,13 @@ test('checkPrice evaluates positive max bid for high-value targets even under po
   assert.ok(buzelisPrice.maxBid > 0, `Buzelis maxBid should be > 0, got ${buzelisPrice.maxBid}`);
 });
 
+test('checkPrice agrees with runOptimizer: all suggested optimizer players get positive maxBids', () => {
+  const opt = runOptimizer(defaultState, PLAYERS);
+  assert.ok(opt && opt.players.length > 0);
+  for (const optPlayer of opt.players) {
+    const cp = checkPrice(defaultState, PLAYERS, optPlayer.rk);
+    assert.ok(cp, `checkPrice for ${optPlayer.name} should exist`);
+    assert.ok(cp.maxBid > 0, `Player ${optPlayer.name} is in Optimizer suggested team, checkPrice maxBid should be > 0, got ${cp.maxBid}`);
+  }
+});
+

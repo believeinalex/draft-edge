@@ -327,7 +327,6 @@ function checkPrice(state, PLAYERS, rk){
   const valFn = x=>C.compositeZ(C.zAll.get(x.rk));
   const pZc = C.zAll.get(p.rk);
   const pVal = C.compositeZ(pZc);
-  const pMask = posMaskOf(p);
   const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
   const B = Math.max(budgetLeft, 0);
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
@@ -337,67 +336,63 @@ function checkPrice(state, PLAYERS, rk){
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
-  const res = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
-  res.costOf = costFn;
+  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
+  resExcl.costOf = costFn;
 
-  const isStarterTarget = picksMade < starterSlots;
-  const pValEff = isStarterTarget ? pVal : pVal * benchWeight;
-  const subStarterSlotsLeft = isStarterTarget ? Math.max(0, starterSlotsLeft - 1) : 0;
-  const resSub = (subStarterSlotsLeft === starterSlotsLeft)
-    ? res
-    : knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, subStarterSlotsLeft, benchWeight);
-  resSub.costOf = costFn;
-
-  function bestCompatible(k, b){
-    if(b < 0) return {value: -1e15, mask: -1};
-    let maxCovered = -1;
-    let bestVal = -1e15;
-    let bestMask = -1;
-
-    for(let m = 0; m < resSub.M; m++){
-      const v = resSub.dp[resSub.idx(k, b, m)];
-      if(v <= -1e14) continue;
-      const combinedMask = m | pMask;
-      let count = 0;
-      for(let j = 0; j < CORE_POS.length; j++){
-        if(combinedMask & (1 << j)) count++;
-      }
-      if(count > maxCovered){
-        maxCovered = count;
-        bestVal = v;
-        bestMask = m;
-      } else if(count === maxCovered && v > bestVal){
-        bestVal = v;
-        bestMask = m;
-      }
-    }
-    return {value: bestVal, mask: bestMask};
-  }
-  let baseline = bestFeasible(res, slotsLeft, res.B);
+  let baseline = bestFeasible(resExcl, slotsLeft, resExcl.B);
   let baselineInfeasible = baseline < -1e14;
   let baselineMask = FULL_COVERAGE;
   if(baselineInfeasible){
-    const fb = bestAny(res, slotsLeft, res.B);
-    baseline = fb.value; baselineMask = fb.mask;
+    const fb = bestAny(resExcl, slotsLeft, resExcl.B);
+    baseline = fb.value;
+    baselineMask = fb.mask;
   }
-  let bestX = 0, bestSubMask = -1;
-  if(slotsLeft-1 >= 0){
-    for(let X=1; X<=B; X++){
-      const remB = B - X;
-      const sub = bestCompatible(slotsLeft-1, remB);
-      const withVal = pValEff + sub.value;
-      if(withVal >= baseline){ bestX = X; bestSubMask = sub.mask; }
+
+  // Preserve natural rk sorting in poolWithP so knapsackDP evaluates starter vs bench weights consistently with runOptimizer
+  const poolWithP = C.availableInPool.some(x => x.rk === rk)
+    ? C.availableInPool
+    : poolExcl.concat([p]).sort((a,b) => a.rk - b.rk);
+
+  let bestX = 0;
+  let bestXChosen = [];
+  if(slotsLeft - 1 >= 0 && B >= 1){
+    let low = 1, high = B;
+    while(low <= high){
+      const X = Math.floor((low + high) / 2);
+      const customCostFn = x => (x.rk === rk ? X : costFn(x));
+      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
+      resWithP.costOf = customCostFn;
+
+      let valWithP = bestFeasible(resWithP, slotsLeft, B);
+      let maskToUse = FULL_COVERAGE;
+      if(valWithP < -1e14){
+        const fb = bestAny(resWithP, slotsLeft, B);
+        valWithP = fb.value;
+        maskToUse = fb.mask;
+      }
+
+      const chosen = knapsackReconstruct(resWithP, slotsLeft, B, maskToUse);
+      const pWasTaken = chosen.some(x => x.rk === rk);
+
+      if(pWasTaken && valWithP >= baseline){
+        bestX = X;
+        bestXChosen = chosen;
+        low = X + 1;
+      } else {
+        high = X - 1;
+      }
     }
   }
-  const passRoster = (baseline < -1e14) ? [] : knapsackReconstruct(res, slotsLeft, res.B, baselineMask);
-  const restAtBestX = bestSubMask>=0 ? knapsackReconstruct(resSub, slotsLeft-1, B-bestX, bestSubMask) : [];
+
+  const passRoster = (baseline < -1e14) ? [] : knapsackReconstruct(resExcl, slotsLeft, resExcl.B, baselineMask);
+  const restAtBestX = bestXChosen.filter(x => x.rk !== rk);
   const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
   const zc = C.zAll.get(p.rk);
 
   return {
     player: p, maxBid: bestX, soloZ: pVal, mktNow: C.fairPrice(rk),
     zRank, zc,
-    baselineZ: baseline>-1e14 ? baseline : null, baselineInfeasible,
+    baselineZ: baseline > -1e14 ? baseline : null, baselineInfeasible,
     passRoster: passRoster.slice().sort((a,b)=>costFn(b)-costFn(a)),
     alternativeNames: restAtBestX.slice(0,2).map(x=>x.name),
     alternativeMore: restAtBestX.length>2,
