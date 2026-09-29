@@ -7,18 +7,18 @@ const analyzeMock = require('./analyze_mock.js');
 const text = fs.readFileSync(path.join(__dirname, 'mock.txt'), 'utf8');
 const parsed = analyzeMock.parseMockDraftText(text);
 
-const state = {
+const baselineState = {
   numTeams: 14,
   rosterSlots: 13,
   budget: 200,
   myTeamName: 'Alex',
   weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
-  picks: parsed.picks.map(p => ({ rk: p.rk, teamName: p.teamName, price: p.price })),
+  picks: [],
   starterSlots: 10,
   benchWeight: 0.3
 };
 
-const C = engine.computeAll(state, players);
+const C = engine.computeAll(baselineState, players);
 
 const allPicksWithZ = parsed.picks.map(p => {
   const zObj = C.zAll.get(p.rk) || {};
