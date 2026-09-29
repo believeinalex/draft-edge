@@ -36,3 +36,21 @@ test('updatePrices updates players array with maximum price across sources (excl
   assert.equal(jokic.mktCost, 75); // Math.max(74.60, 70.00) rounded = 75
 });
 
+test('normalizeNameOrder flips Last, First to First Last correctly', () => {
+  const { normalizeNameOrder } = require('../utils/analyze_mock.js');
+  assert.equal(normalizeNameOrder('Jackson Jr., Jaren'), 'Jaren Jackson Jr.');
+  assert.equal(normalizeNameOrder('Dončić, Luka'), 'Luka Dončić');
+  assert.equal(normalizeNameOrder('Nikola Jokic'), 'Nikola Jokic');
+});
+
+test('analyzeMockDraft calculates correct power rankings and surplus for mock export', () => {
+  const { runAnalysisFromFile } = require('../utils/analyze_mock.js');
+  const analysis = runAnalysisFromFile(require('path').join(__dirname, '../utils/mock.txt'), 'Alex');
+  assert.equal(analysis.powerRankings.length, 14);
+  assert.equal(analysis.targetUserTeam, 'Alex');
+  assert.ok(analysis.userPicks.length === 13);
+  const userRank = analysis.powerRankings.findIndex(pr => pr.teamName === 'Alex');
+  assert.equal(userRank, 0); // Ranked #1 in league
+});
+
+
