@@ -78,6 +78,16 @@ function computeAll(state, PLAYERS){
     return s;
   }
 
+  const playerZScores = PLAYERS.map(p => ({
+    rk: p.rk,
+    compositeZ: compositeZ(zAll.get(p.rk))
+  })).sort((a,b) => b.compositeZ - a.compositeZ);
+
+  const zRankMap = new Map();
+  playerZScores.forEach((item, index) => {
+    zRankMap.set(item.rk, index + 1);
+  });
+
   const draftedCount = state.picks.length;
   const remainingSlots = clamp(poolSize - draftedCount, 0, poolSize);
   const availSortedByComposite = availableInPool.slice().sort((a,b)=> compositeZ(zAll.get(b.rk)) - compositeZ(zAll.get(a.rk)));
@@ -195,7 +205,7 @@ function computeAll(state, PLAYERS){
     poolSize, rosterPool, availableInPool, zAll, compositeZ, replZ,
     fairPrice, remainingBudgetAllTeams, remainingSlots, draftedCount, inflation,
     myBudgetLeft: my.budgetLeft, mySlotsLeft: my.slotsLeft, myPicksMade: my.picksMade,
-    missingPos, teamBudgetAndSlotsLeft, powerRankings
+    missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap
   };
 }
 
@@ -366,8 +376,12 @@ function checkPrice(state, PLAYERS, rk){
   }
   const passRoster = (baseline < -1e14) ? [] : knapsackReconstruct(res, slotsLeft, res.B, baselineMask);
   const restAtBestX = bestSubMask>=0 ? knapsackReconstruct(resSub, slotsLeft-1, B-bestX, bestSubMask) : [];
+  const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
+  const zc = C.zAll.get(p.rk);
+
   return {
     player: p, maxBid: bestX, soloZ: pVal, mktNow: C.fairPrice(rk),
+    zRank, zc,
     baselineZ: baseline>-1e14 ? baseline : null, baselineInfeasible,
     passRoster: passRoster.slice().sort((a,b)=>costFn(b)-costFn(a)),
     alternativeNames: restAtBestX.slice(0,2).map(x=>x.name),

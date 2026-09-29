@@ -201,3 +201,18 @@ test('Joel Embiid per-game rate valuation and max bid', () => {
   assert.ok(embiidPrice.soloZ > -1.0, `Embiid soloZ should be sane, got ${embiidPrice.soloZ}`);
   assert.ok(embiidPrice.maxBid > 0, `Embiid should have a positive max bid, got ${embiidPrice.maxBid}`);
 });
+
+test('zRankMap and checkPrice return correct Z-Score Rank and category Z-scores', () => {
+  const C = computeAll(defaultState, PLAYERS);
+  assert.ok(C.zRankMap);
+  assert.equal(C.zRankMap.get(1), 1, 'Nikola Jokic should be ranked #1 overall');
+  assert.equal(C.zRankMap.get(2), 2, 'Victor Wembanyama should be ranked #2 overall');
+
+  const wembyPrice = checkPrice(defaultState, PLAYERS, 2);
+  assert.ok(wembyPrice);
+  assert.equal(wembyPrice.zRank, 2);
+  assert.ok(wembyPrice.zc);
+  assert.ok(wembyPrice.zc.blk > 2.0, `Wembanyama BLK Z-score should be elite (> 2.0), got ${wembyPrice.zc.blk}`);
+  assert.ok(wembyPrice.zc.pts > 1.0, `Wembanyama PTS Z-score should be strong (> 1.0), got ${wembyPrice.zc.pts}`);
+});
+

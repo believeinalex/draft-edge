@@ -198,7 +198,7 @@
     if(!els.search) return;
     els.search.value = player.name;
     els.results.classList.remove('open');
-    renderCheck(player.rk);
+    renderCheck(player.rk, true);
   }
 
   // Last-resort fallback if `.ys-player` ever disappears (Yahoo redesign):
@@ -341,9 +341,13 @@
       if(q.length<2){ els.results.classList.remove('open'); els.results.innerHTML=''; return; }
       const draftedRks = new Set(picks.map(p=>p.rk));
       const matches = PLAYERS.filter(p=>!draftedRks.has(p.rk) && p.name.toLowerCase().includes(q)).slice(0,12);
+      const C_search = computeAll(state(), PLAYERS);
       activeIdx = -1;
       els.results.innerHTML = matches.length
-        ? matches.map(p=>`<div class="de-mr-item" data-rk="${p.rk}">${p.name} <span style="color:#8a93a5;">${p.pos.join('/')} · ${p.team||'FA'}</span></div>`).join('')
+        ? matches.map(p=> {
+            const zR = (C_search.zRankMap && C_search.zRankMap.get(p.rk)) || p.rk;
+            return `<div class="de-mr-item" data-rk="${p.rk}"><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(p.name)} <span style="color:#8a93a5;">${p.pos.join('/')} · ${p.team||'FA'}</span></div>`;
+          }).join('')
         : `<div class="de-mr-item" style="cursor:default; color:#8a93a5;">No undrafted match</div>`;
       els.results.classList.add('open');
       els.results.querySelectorAll('.de-mr-item[data-rk]').forEach(item=>{
@@ -366,12 +370,71 @@
     if(opt.full){ box.innerHTML = `<div class="de-empty">Your roster is already full.</div>`; return; }
     if(opt.infeasible){ box.innerHTML = `<div class="de-empty">No feasible build — you need ~$${opt.slotsLeft} minimum ($1/slot) for ${opt.slotsLeft} open slots but only have $${opt.budgetLeft} left.</div>`; return; }
     const posStrip = opt.posCoverage.map(pc=>`<span class="de-poschip ${pc.covered?'ok':'bad'}">${pc.pos}</span>`).join('');
-    const rows = opt.players.map(p=>`<div class="de-opt-row"><span>${escapeHtml(p.name)}<span class="de-opt-meta">${p.pos.join('/')} · ${p.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost">$${p.cost}</span><span class="de-opt-z">${p.z.toFixed(2)}z</span></span></div>`).join('');
+    const C_opt = computeAll(state(), PLAYERS);
+    const rows = opt.players.map(p=> {
+      const zR = (C_opt.zRankMap && C_opt.zRankMap.get(p.rk)) || p.rk;
+      return `<div class="de-opt-row"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(p.name)}<span class="de-opt-meta">${p.pos.join('/')} · ${p.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost">$${p.cost}</span><span class="de-opt-z">${p.z.toFixed(2)}z</span></span></div>`;
+    }).join('');
     box.innerHTML = `
       ${opt.posWarning ? `<div class="de-alert">${escapeHtml(opt.posWarning)}</div>` : ''}
       <div class="de-poscoverage">${posStrip}</div>
       <div class="de-opt-list">${rows}</div>
       <div class="de-opt-summary">Fill: ${opt.bestVal.toFixed(2)}z for $${opt.totalCost} of $${opt.budgetLeft} left across ${opt.slotsLeft} slots. Whole team incl. drafted: <b>${(opt.existingZ+opt.bestVal).toFixed(2)}z</b>.</div>
+    `;
+  }
+
+  function getHashtagStyle(z){
+    if(typeof z !== 'number' || !isFinite(z)) return 'background:#222834; color:#e9ecf1;';
+    if(z >= 2.0) return 'background:#1f9d55; color:#ffffff; font-weight:700;';
+    if(z >= 1.0) return 'background:#38c172; color:#ffffff; font-weight:600;';
+    if(z >= 0.25) return 'background:#a8e6a1; color:#1a1f27; font-weight:500;';
+    if(z > -0.25) return 'background:#ffffff; color:#1a1f27; font-weight:400;';
+    if(z > -1.0) return 'background:#f8d7da; color:#1a1f27; font-weight:500;';
+    if(z > -2.0) return 'background:#e3342f; color:#ffffff; font-weight:600;';
+    return 'background:#b71c1c; color:#ffffff; font-weight:700;';
+  }
+
+  function renderStatBreakdownTable(p, zc){
+    if(!p || !zc) return '';
+    const ths = `<th>TYPE</th><th>FG%</th><th>FT%</th><th>3PM</th><th>PTS</th><th>TREB</th><th>AST</th><th>STL</th><th>BLK</th>`;
+
+    let tds = `<td class="type-cell">2026-27 Proj</td>`;
+    
+    // FG%
+    const fgZ = zc.fgPct || 0;
+    const fgVal = p.fgPct !== undefined ? p.fgPct.toFixed(3) : '-';
+    const fgAtt = (p.fgm && p.fga) ? `<div class="de-att">(${p.fgm}/${p.fga})</div>` : '';
+    tds += `<td style="${getHashtagStyle(fgZ)}">${fgVal}${fgAtt}</td>`;
+
+    // FT%
+    const ftZ = zc.ftPct || 0;
+    const ftVal = p.ftPct !== undefined ? p.ftPct.toFixed(3) : '-';
+    const ftAtt = (p.ftm && p.fta) ? `<div class="de-att">(${p.ftm}/${p.fta})</div>` : '';
+    tds += `<td style="${getHashtagStyle(ftZ)}">${ftVal}${ftAtt}</td>`;
+
+    // Counting stats
+    const countCats = [
+      { key: 'tpm', val: p.tpm },
+      { key: 'pts', val: p.pts },
+      { key: 'treb', val: p.treb },
+      { key: 'ast', val: p.ast },
+      { key: 'stl', val: p.stl },
+      { key: 'blk', val: p.blk }
+    ];
+    for(const item of countCats){
+      const z = zc[item.key] || 0;
+      const v = item.val !== undefined ? Number(item.val).toFixed(1) : '-';
+      tds += `<td style="${getHashtagStyle(z)}">${v}</td>`;
+    }
+
+    return `
+      <div class="de-breakdown-container">
+        <div class="de-breakdown-hdr">Statistical Breakdowns</div>
+        <table class="de-stat-breakdown-table">
+          <thead><tr>${ths}</tr></thead>
+          <tbody><tr>${tds}</tr></tbody>
+        </table>
+      </div>
     `;
   }
 
@@ -383,27 +446,49 @@
     renderCheck(rk);
   }
 
-  function renderCheck(rk){
+  function renderCheck(rk, isUpNow){
     const p = PLAYERS.find(x=>x.rk===rk);
     if(!p){ els.checkResult.innerHTML=''; return; }
+    const C = computeAll(state(), PLAYERS);
+    const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
+    const zc = C.zAll ? C.zAll.get(rk) : null;
+
     if(picks.some(pk=>pk.rk===rk)){
-      els.checkResult.innerHTML = `<div class="de-check-result"><div class="n">${p.name}</div><div class="m">Already drafted.</div></div>`;
+      els.checkResult.innerHTML = `
+        <div class="de-check-result">
+          <div class="n"><span class="de-name-rank-badge">#${zRank}</span> ${escapeHtml(p.name)}</div>
+          <div class="m">Already drafted.</div>
+          ${renderStatBreakdownTable(p, zc)}
+        </div>
+      `;
       return;
     }
     const result = checkPrice(state(), PLAYERS, rk);
     if(!result || result.full){
-      els.checkResult.innerHTML = `<div class="de-check-result"><div class="m">Your roster is full — nothing left to spend on.</div></div>`;
+      els.checkResult.innerHTML = `
+        <div class="de-check-result">
+          <div class="n"><span class="de-name-rank-badge">#${zRank}</span> ${escapeHtml(p.name)}</div>
+          <div class="m">Your roster is full — nothing left to spend on.</div>
+          ${renderStatBreakdownTable(p, zc)}
+        </div>
+      `;
       return;
     }
     const altTxt = result.alternativeNames.length
       ? `Above $${result.maxBid}, passing and building around ${result.alternativeNames.join(' + ')}${result.alternativeMore?' + others':''} instead comes out ahead.`
       : '';
+
+    const upBannerHtml = isUpNow ? `<div class="de-player-up-tag">⚡ Player Up For Bidding</div>` : '';
+    const rankBadgeHtml = `<span class="de-name-rank-badge">#${result.zRank}</span>`;
+
     els.checkResult.innerHTML = `
-      <div class="de-check-result">
-        <div class="n">${p.name}</div>
-        <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}</div>
+      <div class="de-check-result ${isUpNow ? 'de-player-up-banner' : ''}">
+        ${upBannerHtml}
+        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}</div>
+        <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · Z-Score Rank #${result.zRank} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}</div>
         <div class="p"><span class="lbl">Max worth bidding</span>${result.maxBid>0 ? '$'+result.maxBid : 'pass'}</div>
         ${altTxt ? `<div class="m" style="margin-top:4px;">${altTxt}</div>` : ''}
+        ${renderStatBreakdownTable(p, result.zc)}
         <div class="de-check-actions">
           <input type="text" id="deLogTeam" placeholder="Team" value="${config.myTeamName ? escapeHtml(config.myTeamName) : ''}">
           <input type="number" id="deLogPrice" min="1" value="${result.maxBid>0?result.maxBid:result.mktNow}">
