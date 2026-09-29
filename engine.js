@@ -445,7 +445,7 @@ function runOptimizer(state, PLAYERS){
     posWarning, budgetLeft, slotsLeft, bestVal, totalCost, existingZ,
     catTotals, posCoverage,
     players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a)).map(p=>({
-      name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.compositeZ(C.zAll.get(p.rk)),
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.compositeZ(C.zAll.get(p.rk)),
     })),
   };
 }

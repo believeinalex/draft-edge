@@ -214,5 +214,8 @@ test('zRankMap and checkPrice return correct Z-Score Rank and category Z-scores'
   assert.ok(wembyPrice.zc);
   assert.ok(wembyPrice.zc.blk > 2.0, `Wembanyama BLK Z-score should be elite (> 2.0), got ${wembyPrice.zc.blk}`);
   assert.ok(wembyPrice.zc.pts > 1.0, `Wembanyama PTS Z-score should be strong (> 1.0), got ${wembyPrice.zc.pts}`);
+
+  const opt = runOptimizer(defaultState, PLAYERS);
+  assert.ok(opt.players.every(p => typeof p.rk === 'number' && p.rk > 0), 'Every optimizer player must have a valid rk');
 });
 
