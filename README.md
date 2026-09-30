@@ -50,3 +50,12 @@ A Chrome extension that integrates directly into the Yahoo Fantasy Basketball li
 - [players.js](file:///c:/Users/swarm/Downloads/Edge2/players.js) — 200-player 2026-27 projection & valuation dataset.
 - [overlay.css](file:///c:/Users/swarm/Downloads/Edge2/overlay.css) — Styling for the in-page floating draft overlay.
 - [popup.html](file:///c:/Users/swarm/Downloads/Edge2/popup.html) / [popup.js](file:///c:/Users/swarm/Downloads/Edge2/popup.js) — Extension popup for league settings management.
+
+
+## Analysis Utilities
+
+This repository includes built-in tools for testing and historical draft tracking:
+- **Draft Simulation**: Run \
+ode utils/simulate_parallel.js --runs=30\ to test the engine's win rate against automated opponents in a Monte Carlo environment.
+- **Mock Draft Analysis**: Paste raw draft results into \utils/mock.txt\ and run \
+ode utils/analyze_mock.js\. This will generate a power ranking report, automatically archive the draft to the \drafts/\ folder, and print a historical analysis of all your tracked drafts to show your average win rate and most profitable players over time.
