@@ -324,13 +324,21 @@ function checkPrice(state, PLAYERS, rk){
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { player:p, full:true };
   const costFn = x=>C.fairPrice(x.rk);
-  const valFn = x=>C.compositeZ(C.zAll.get(x.rk));
+  
+  const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
+  const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
+  const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
+  const valFn = x => {
+    let z = C.compositeZ(C.zAll.get(x.rk));
+    if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
+    else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+    return z;
+  };
+  
   const pZc = C.zAll.get(p.rk);
   const pVal = C.compositeZ(pZc);
   const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
   const B = Math.max(budgetLeft, 0);
-  const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
-  const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const baseReach = reachableCoverage(myPlayers);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
@@ -413,9 +421,15 @@ function runOptimizer(state, PLAYERS){
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { full: true };
   const costFn = p=>C.fairPrice(p.rk);
-  const valFn = p=>C.compositeZ(C.zAll.get(p.rk));
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
+  const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
+  const valFn = p => {
+    let z = C.compositeZ(C.zAll.get(p.rk));
+    if (numCenters === 0 && p.pos && p.pos.includes('C')) z += 4.0;
+    else if (numCenters === 1 && p.pos && p.pos.includes('C')) z += 2.0;
+    return z;
+  };
   const baseReach = reachableCoverage(myPlayers);
   const B = Math.max(budgetLeft,0);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;

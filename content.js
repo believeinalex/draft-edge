@@ -16,7 +16,7 @@
 (function(){
   'use strict';
 
-  const DEFAULTS = { numTeams: 12, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 10, benchWeight: 0.3 };
+  const DEFAULTS = { numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
   const PLAYERS = DRAFT_EDGE_PLAYERS;
   const nameIndex = buildNameIndex(PLAYERS);
 

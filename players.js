@@ -1353,19 +1353,19 @@ const DRAFT_EDGE_PLAYERS = [
     "gp": 72,
     "mpg": 34.1,
     "fgPct": 0.474,
-    "fgm": 8.3,
-    "fga": 17.5,
+    "fgm": 0.83,
+    "fga": 1.75,
     "ftPct": 0.826,
-    "ftm": 3.7,
-    "fta": 4.4,
-    "tpm": 1.9,
-    "pts": 22.1,
-    "treb": 5.7,
-    "ast": 4.1,
-    "stl": 0.8,
-    "blk": 0.7,
+    "ftm": 0.37,
+    "fta": 0.44,
+    "tpm": 0.19,
+    "pts": 2.21,
+    "treb": 0.57,
+    "ast": 0.41,
+    "stl": 0.08,
+    "blk": 0.07,
     "adp": 64.3,
-    "mktCost": 14
+    "mktCost": 1
   },
   {
     "rk": 56,
@@ -1499,19 +1499,19 @@ const DRAFT_EDGE_PLAYERS = [
     "gp": 51,
     "mpg": 26,
     "fgPct": 0.468,
-    "fgm": 6,
-    "fga": 12.8,
+    "fgm": 0.6,
+    "fga": 1.28,
     "ftPct": 0.823,
-    "ftm": 3.9,
-    "fta": 4.7,
-    "tpm": 2.1,
-    "pts": 17.9,
-    "treb": 6,
-    "ast": 2.2,
-    "stl": 0.7,
-    "blk": 1.3,
+    "ftm": 0.39,
+    "fta": 0.47,
+    "tpm": 0.21,
+    "pts": 1.79,
+    "treb": 0.6,
+    "ast": 0.22,
+    "stl": 0.07,
+    "blk": 0.13,
     "adp": 100,
-    "mktCost": 10
+    "mktCost": 1
   },
   {
     "rk": 62,
@@ -7440,4 +7440,6 @@ const DRAFT_EDGE_PLAYERS = [
   }
 ];
 
-if (typeof module !== 'undefined') { module.exports = DRAFT_EDGE_PLAYERS; }
+if(typeof module !== 'undefined'){
+  module.exports = DRAFT_EDGE_PLAYERS;
+}

@@ -114,7 +114,7 @@ async function runSimulation(runIndex) {
     myTeamName: 'Alex',
     weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
     picks: [],
-    starterSlots: 10,
+    starterSlots: 9,
     benchWeight: 0.3
   };
 
