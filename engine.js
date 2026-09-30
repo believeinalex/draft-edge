@@ -330,8 +330,11 @@ function checkPrice(state, PLAYERS, rk){
   const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
   const valFn = x => {
     let z = C.compositeZ(C.zAll.get(x.rk));
-    if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
-    else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+    // ONLY apply the positional bonus to the nominated player (p) to prevent suppressing bids on non-centers
+    if (x.rk === p.rk) {
+      if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
+      else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+    }
     return z;
   };
   
