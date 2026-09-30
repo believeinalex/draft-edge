@@ -99,3 +99,4 @@ function analyzeHistory() {
 if (require.main === module) {
   analyzeHistory();
 }
+module.exports = { analyzeHistory };

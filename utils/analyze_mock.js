@@ -241,6 +241,20 @@ function runAnalysisFromFile(filePath, userTeamName = 'Alex') {
   const parsed = parseMockDraftText(text);
   const analysis = analyzeMockDraft(parsed, { userTeamName });
   printReport(analysis);
+  
+  // Archive to drafts dir if it's not already there
+  const draftsDir = path.join(__dirname, '..', 'drafts');
+  const isAlreadyInDrafts = path.resolve(mockPath).startsWith(path.resolve(draftsDir));
+  
+  if (!isAlreadyInDrafts) {
+    if (!fs.existsSync(draftsDir)) fs.mkdirSync(draftsDir);
+    const dateStr = new Date().toISOString().replace(/[:.]/g, '-').split('T');
+    const timestamp = `${dateStr[0]}_${dateStr[1].substring(0, 6)}`;
+    const destName = `mock_${timestamp}.txt`;
+    fs.writeFileSync(path.join(draftsDir, destName), text);
+    console.log(`[Auto-Archive] Saved a copy to drafts/${destName}`);
+  }
+  
   return analysis;
 }
 
@@ -250,6 +264,15 @@ if (require.main === module) {
   const userArg = args.find(a => a.startsWith('--user='));
   const userTeamName = userArg ? userArg.split('=')[1] : 'Alex';
   runAnalysisFromFile(fileArg, userTeamName);
+  
+  // Try to run historical analysis automatically
+  try {
+    const { execSync } = require('child_process');
+    const out = execSync(`node ${path.join(__dirname, 'analyze_history.js')} --user="${userTeamName}"`, { encoding: 'utf8' });
+    console.log(out);
+  } catch (err) {
+    // Silently ignore if analyze_history is not available or fails
+  }
 }
 
 module.exports = {

@@ -1,200 +1,173 @@
 Your Team
-1. Jackson Jr., Jaren (UTA - C,PF) $28
-2. Davis, Anthony (WAS - PF,C) $27
-3. Bane, Desmond (ORL - SF,SG) $29
-4. Alexander-Walker, Nickeil (ATL - PG,SG) $22
-5. Murray, Dejounte (NOP - PG) $20
-6. Embiid, Joel (PHI - C) $20
-7. Garland, Darius (LAC - PG) $21
-8. Sharpe, Day'Ron (BKN - C) $3
-9. Quickley, Immanuel (TOR - PG,SG) $7
-10. LaVine, Zach (SAC - PG,SG,SF) $3
-11. Suggs, Jalen (ORL - PG,SG) $6
-12. Morant, Ja (POR - PG) $4
-13. Butler III, Jimmy (GSW - SF,PF) $6
-
+1. Curry, Stephen (GSW - PG) $36
+2. Davis, Anthony (WAS - PF,C) $25
+3. Murphy III, Trey (NOP - SG,SF) $33
+4. Leonard, Kawhi (TOR - SG,SF,PF) $31
+5. Duren, Jalen (DET - C) $20
+6. Garland, Darius (LAC - PG) $16
+7. Murray, Dejounte (NOP - PG) $11
+8. Herro, Tyler (MIL - SG,PG) $11
+9. Pritchard, Payton (BOS - PG) $2
+10. Randle, Julius (BKN - PF) $4
+11. White, Coby (CHA - PG,SG) $4
+12. Butler III, Jimmy (GSW - SF,PF) $3
+13. Sharpe, Day'Ron (BKN - C) $4
 
 All Draft Results in nomination order
 * your team in bold
-(1) Ryan - Haliburton, Tyrese (IND - PG,SG) - $52
-(2) Ryan - Towns, Karl-Anthony (NYK - C,PF) - $48
-(3) Ryan - Ball, LaMelo (MIN - PG) - $39
-(4) Ryan - Kessler, Walker (LAL - C) - $31
-(5) Ryan - Zubac, Ivica (IND - C) - $22
-(6) Ryan - Watson, Peyton (CLE - SF,PF) - $1
-(7) Ryan - George, Kyshawn (WAS - SF,SG,PF) - $1
-(8) Ryan - Mitchell, Ajay (OKC - PG,SG) - $1
-(9) Ryan - Nesmith, Aaron (IND - SF,SG) - $1
-(10) Ryan - Oubre Jr., Kelly (IND - SF,PF) - $1
-(11) Ryan - Grant, Jerami (MEM - PF,SF) - $1
-(12) Ryan - Johnson, Cameron (DEN - SF,PF) - $1
-(13) Ryan - Kuzma, Kyle (MIL - PF,SF) - $1
-(14) Shiyang - Wembanyama, Victor (SAS - C) - $72
-(15) Shiyang - Jokić, Nikola (DEN - C) - $73
-(16) Shiyang - Thompson, Amen (HOU - PG,SG) - $39
-(17) Shiyang - Claxton, Nic (CHI - C) - $7
-(18) Shiyang - Nurkić, Jusuf (UTA - C) - $1
-(19) Shiyang - Gordon, Aaron (DEN - PF,C) - $1
-(20) Shiyang - Jones, Tre (CHI - PG,SG) - $1
-(21) Shiyang - Braun, Christian (DEN - SG,SF,PF) - $1
-(22) Shiyang - Bailey, Ace (UTA - SF,PF) - $1
-(23) Shiyang - Sexton, Collin (LAL - SG,PG) - $1
-(24) Shiyang - Gafford, Daniel (DAL - C) - $1
-(25) Shiyang - Robinson, Mitchell (BOS - C) - $1
-(26) Shiyang - Strus, Max (LAC - SF,PF) - $1
-(27) jesse - Dončić, Luka (LAL - PG,SG) - $69
-(28) jesse - Siakam, Pascal (IND - PF,C) - $17
-(29) jesse - Daniels, Dyson (ATL - SG,SF) - $21
-(30) jesse - Allen, Jarrett (CLE - C) - $18
-(31) jesse - Anunoby, OG (NYK - SF,PF) - $15
-(32) jesse - Bridges, Mikal (NYK - SF,PF) - $14
-(33) jesse - Edgecombe, VJ (PHI - SG,PG) - $11
-(34) jesse - Buzelis, Matas (CHI - SF,PF) - $15
-(35) jesse - White, Coby (CHA - PG,SG) - $8
-(36) jesse - Powell, Norman (CHI - SG,SF) - $9
-(37) jesse - Collins, John (DET - PF,C) - $1
-(38) jesse - Porter Jr., Kevin (MIL - PG,SG) - $1
-(39) jesse - Jerome, Ty (MEM - SG,PG) - $1
-(40) Alex - Jackson Jr., Jaren (UTA - C,PF) - $28
-(41) Alex - Davis, Anthony (WAS - PF,C) - $27
-(42) Alex - Bane, Desmond (ORL - SF,SG) - $29
-(43) Alex - Alexander-Walker, Nickeil (ATL - PG,SG) - $22
-(44) Alex - Murray, Dejounte (NOP - PG) - $20
-(45) Alex - Embiid, Joel (PHI - C) - $20
-(46) Alex - Garland, Darius (LAC - PG) - $21
-(47) Alex - Sharpe, Day'Ron (BKN - C) - $3
-(48) Alex - Quickley, Immanuel (TOR - PG,SG) - $7
-(49) Alex - LaVine, Zach (SAC - PG,SG,SF) - $3
-(50) Alex - Suggs, Jalen (ORL - PG,SG) - $6
-(51) Alex - Morant, Ja (POR - PG) - $4
-(52) Alex - Butler III, Jimmy (GSW - SF,PF) - $6
-(53) Jeffrey - Booker, Devin (PHX - SG,PG) - $34
-(54) Jeffrey - Harden, James (CLE - SG,PG) - $35
-(55) Jeffrey - Adebayo, Bam (MIA - C,PF) - $31
-(56) Jeffrey - Leonard, Kawhi (TOR - SG,SF,PF) - $34
-(57) Jeffrey - Murphy III, Trey (NOP - SG,SF) - $31
-(58) Jeffrey - Herro, Tyler (MIL - SG,PG) - $18
-(59) Jeffrey - Thompson, Ausar (DET - SF,PF,SG) - $4
-(60) Jeffrey - Bridges, Miles (PHX - PF) - $2
-(61) Jeffrey - Turner, Myles (MIL - C) - $2
-(62) Jeffrey - Hart, Josh (NYK - SG,SF) - $2
-(63) Jeffrey - Peterson, Darryn (UTA - SG) - $2
-(64) Jeffrey - Vučević, Nikola (ORL - C) - $2
-(65) Jeffrey - Queta, Neemias (BOS - C) - $2
-(66) Team 1 - Flagg, Cooper (DAL - SG,SF,PF) - $52
-(67) Team 1 - Barnes, Scottie (TOR - SF,PF,C) - $50
-(68) Team 1 - Markkanen, Lauri (UTA - PF,SF) - $30
-(69) Team 1 - Clingan, Donovan (POR - C) - $27
-(70) Team 1 - Porter Jr., Michael (BKN - SF,PF) - $19
-(71) Team 1 - Pritchard, Payton (BOS - PG) - $15
-(72) Team 1 - Poeltl, Jakob (TOR - C) - $1
-(73) Team 1 - Wallace, Cason (OKC - SG,PG,SF) - $1
-(74) Team 1 - Eason, Tari (HOU - SF,PF,SG) - $1
-(75) Team 1 - Jones, Herbert (NOP - SG,SF) - $1
-(76) Team 1 - Grimes, Quentin (LAL - SG,SF) - $1
-(77) Team 1 - Hauser, Sam (BOS - PF,SF) - $1
-(78) Team 1 - Lively II, Dereck (DAL - C) - $1
-(79) Team 4 - Reaves, Austin (LAL - SG,PG,SF) - $40
-(80) Team 4 - Duren, Jalen (DET - C) - $30
-(81) Team 4 - Avdija, Deni (POR - SF,PF,SG) - $25
-(82) Team 4 - Banchero, Paolo (ORL - PF) - $22
-(83) Team 4 - Boozer, Cameron (MEM - PF) - $19
-(84) Team 4 - Rollins, Ryan (MIL - PG,SG) - $17
-(85) Team 4 - Gobert, Rudy (MIN - C) - $15
-(86) Team 4 - George, Paul (BOS - SF,PF) - $15
-(87) Team 4 - Castle, Stephon (SAS - PG,SG) - $13
-(88) Team 4 - Hartenstein, Isaiah (OKC - C) - $1
-(89) Team 4 - Podziemski, Brandin (GSW - SG,PG) - $1
-(90) Team 4 - Murray, Keegan (SAC - SF,PF) - $1
-(91) Team 4 - Carter Jr., Wendell (ORL - C) - $1
-(92) Team 8 - Maxey, Tyrese (PHI - PG) - $62
-(93) Team 8 - Curry, Stephen (GSW - PG) - $38
-(94) Team 8 - Knueppel, Kon (CHA - SF,SG) - $26
-(95) Team 8 - Irving, Kyrie (DAL - PG) - $24
-(96) Team 8 - Wagner, Franz (ORL - SF,PF) - $27
-(97) Team 8 - Williamson, Zion (NOP - PF,C) - $11
-(98) Team 8 - Wiggins, Andrew (MIA - SG,SF,PF) - $4
-(99) Team 8 - Harper, Dylan (SAS - SG,PG) - $3
-(100) Team 8 - Murray-Boyles, Collin (TOR - PF,C) - $1
-(101) Team 8 - Mamukelashvili, Sandro (LAL - PF,C) - $1
-(102) Team 8 - Holiday, Jrue (POR - PG,SG) - $1
-(103) Team 8 - Diabaté, Moussa (CHA - C) - $1
-(104) Team 8 - Jenkins, Daniss (DET - PG,SG) - $1
-(105) Team 9 - Gilgeous-Alexander, Shai (OKC - PG) - $68
-(106) Team 9 - Mitchell, Donovan (CLE - SG,PG) - $55
-(107) Team 9 - Holmgren, Chet (OKC - PF,C) - $36
-(108) Team 9 - Okongwu, Onyeka (ATL - C) - $25
-(109) Team 9 - Wilson, Caleb (CHI - PF) - $8
-(110) Team 9 - Nembhard, Andrew (IND - SG,PG) - $1
-(111) Team 9 - Sheppard, Reed (HOU - PG,SG) - $1
-(112) Team 9 - Barrett, RJ (TOR - SF,PF,SG) - $1
-(113) Team 9 - Green, Draymond (GSW - PF,C) - $1
-(114) Team 9 - Lopez, Brook (LAC - C) - $1
-(115) Team 9 - Allen, Grayson (CHA - SG,SF) - $1
-(116) Team 9 - Henderson, Scoot (POR - PG) - $1
-(117) Team 9 - Hunter, De'Andre (SAC - SF,PF) - $1
-(118) Team 10 - Brown, Jaylen (PHI - SG,SF,PF) - $35
-(119) Team 10 - Miller, Brandon (CHA - SF,PF) - $30
-(120) Team 10 - Reid, Naz (CHA - C,PF) - $20
-(121) Team 10 - Lillard, Damian (POR - PG) - $21
-(122) Team 10 - Edey, Zach (MEM - C) - $17
-(123) Team 10 - Sarr, Alex (WAS - C) - $18
-(124) Team 10 - Ware, Kel'el (MIL - C) - $19
-(125) Team 10 - Fox, De'Aaron (SAS - PG) - $15
-(126) Team 10 - Randle, Julius (BKN - PF) - $14
-(127) Team 10 - Coward, Cedric (MEM - SG,SF) - $8
-(128) Team 10 - Dosunmu, Ayo (MIN - PG,SG) - $1
-(129) Team 10 - Lendeborg, Yaxel (GSW - PF) - $1
-(130) Team 10 - Gillespie, Collin (PHX - PG,SG) - $1
-(131) Team 11 - Edwards, Anthony (MIN - PG,SG) - $63
-(132) Team 11 - Tatum, Jayson (BOS - SF,PF) - $58
-(133) Team 11 - Brunson, Jalen (NYK - PG) - $36
-(134) Team 11 - Williams, Jalen (OKC - SF,PF) - $31
-(135) Team 11 - McDaniels, Jaden (MIN - SF) - $4
-(136) Team 11 - Camara, Toumani (POR - SF,PF) - $1
-(137) Team 11 - Maluach, Khaman (PHX - C) - $1
-(138) Team 11 - Jaquez Jr., Jaime (MIL - SF,SG,PF) - $1
-(139) Team 11 - Portis, Bobby (MIA - PF,C) - $1
-(140) Team 11 - Brooks, Dillon (PHX - SF,PF) - $1
-(141) Team 11 - Johnson Jr., Morez (DAL - PF) - $1
-(142) Team 11 - Stewart, Isaiah (MEM - C,PF) - $1
-(143) Team 11 - Filipowski, Kyle (UTA - PF,C) - $1
-(144) Team 12 - Durant, Kevin (HOU - SF,PF,SG) - $49
-(145) Team 12 - Murray, Jamal (DEN - PG) - $46
-(146) Team 12 - Young, Trae (WAS - PG) - $42
-(147) Team 12 - Sabonis, Domantas (SAC - C,PF) - $37
-(148) Team 12 - Ingram, Brandon (LAC - SG,SF,PF) - $17
-(149) Team 12 - Porziņģis, Kristaps (GSW - C) - $2
-(150) Team 12 - McCollum, CJ (ATL - SG,PG) - $1
-(151) Team 12 - Raynaud, Maxime (SAC - C) - $1
-(152) Team 12 - Bey, Saddiq (NOP - PF,SF) - $1
-(153) Team 12 - Black, Anthony (ORL - PG,SG,SF) - $1
-(154) Team 12 - Mathurin, Bennedict (NOP - SG,SF) - $1
-(155) Team 12 - Ighodaro, Oso (PHX - C) - $1
-(156) Team 12 - Champagnie, Julian (SAS - SF,PF) - $1
-(157) Team 13 - Johnson, Jalen (ATL - PF,SF) - $55
-(158) Team 13 - Giddey, Josh (CHI - PG,SG) - $44
-(159) Team 13 - Mobley, Evan (CLE - C,PF) - $34
-(160) Team 13 - White, Derrick (BOS - SG,PG) - $28
-(161) Team 13 - James, LeBron (PHI - SF,PF) - $30
-(162) Team 13 - Dybantsa, AJ (WAS - SF) - $2
-(163) Team 13 - Mitchell, Davion (MIA - PG) - $1
-(164) Team 13 - Vassell, Devin (SAS - SF,SG) - $1
-(165) Team 13 - VanVleet, Fred (HOU - PG) - $1
-(166) Team 13 - Washington, P.J. (DAL - PF,C) - $1
-(167) Team 13 - Fears, Jeremiah (NOP - PG,SG) - $1
-(168) Team 13 - Dëmin, Egor (BKN - PG,SG) - $1
-(169) Team 13 - Aldama, Santi (DAL - PF) - $1
-(170) Team 14 - Cunningham, Cade (DET - PG,SG) - $68
-(171) Team 14 - Antetokounmpo, Giannis (MIA - PF,C) - $58
-(172) Team 14 - Şengün, Alperen (HOU - C,PF) - $37
-(173) Team 14 - George, Keyonte (UTA - SG,PG) - $23
-(174) Team 14 - Queen, Derik (NOP - C,PF) - $5
-(175) Team 14 - Smith Jr., Jabari (HOU - PF,C) - $2
-(176) Team 14 - Green, Jalen (PHX - SG,SF) - $1
-(177) Team 14 - Reed, Paul (DET - C,PF) - $1
-(178) Team 14 - Harris, Tobias (SAS - PF) - $1
-(179) Team 14 - Acuff Jr., Darius (SAC - PG) - $1
-(180) Team 14 - Missi, Yves (NOP - C) - $1
-(181) Team 14 - Poole, Jordan (NOP - SG,PG) - $1
-(182) Team 14 - Simons, Anfernee (PHI - SG,PG) - $1
+(1) Andy - Antetokounmpo, Giannis (MIA - PF,C) - $57
+(2) Andy - Mitchell, Donovan (CLE - SG,PG) - $54
+(3) Andy - Towns, Karl-Anthony (NYK - C,PF) - $45
+(4) Andy - Ball, LaMelo (MIN - PG) - $34
+(5) Andy - Coward, Cedric (MEM - SG,SF) - $2
+(6) Andy - Smith Jr., Jabari (HOU - PF,C) - $1
+(7) Andy - Morant, Ja (POR - PG) - $1
+(8) Andy - Poeltl, Jakob (TOR - C) - $1
+(9) Andy - Mamukelashvili, Sandro (LAL - PF,C) - $1
+(10) Andy - Mitchell, Ajay (OKC - PG,SG) - $1
+(11) Andy - VanVleet, Fred (HOU - PG) - $1
+(12) Andy - Vučević, Nikola (ORL - C) - $1
+(13) Andy - Harris, Tobias (SAS - PF) - $1
+(14) spinalk - Jokić, Nikola (DEN - C) - $84
+(15) spinalk - Sabonis, Domantas (SAC - C,PF) - $29
+(16) spinalk - Haliburton, Tyrese (IND - PG,SG) - $53
+(17) spinalk - Embiid, Joel (PHI - C) - $17
+(18) spinalk - Okongwu, Onyeka (ATL - C) - $9
+(19) spinalk - George, Kyshawn (WAS - SF,SG,PF) - $1
+(20) spinalk - Murray, Keegan (SAC - SF,PF) - $1
+(21) spinalk - Jerome, Ty (MEM - SG,PG) - $1
+(22) spinalk - Green, Draymond (GSW - PF,C) - $1
+(23) spinalk - Nesmith, Aaron (IND - SF,SG) - $1
+(24) spinalk - Brooks, Dillon (PHX - SF,PF) - $1
+(25) spinalk - Black, Anthony (ORL - PG,SG,SF) - $1
+(26) spinalk - Jenkins, Daniss (DET - PG,SG) - $1
+(27) Brad Pitt - Wembanyama, Victor (SAS - C) - $91
+(28) Brad Pitt - Adebayo, Bam (MIA - C,PF) - $24
+(29) Brad Pitt - Irving, Kyrie (DAL - PG) - $21
+(30) Brad Pitt - Bridges, Mikal (NYK - SF,PF) - $11
+(31) Brad Pitt - Porter Jr., Michael (BKN - SF,PF) - $16
+(32) Brad Pitt - Edey, Zach (MEM - C) - $10
+(33) Brad Pitt - Wallace, Cason (OKC - SG,PG,SF) - $4
+(34) Brad Pitt - George, Paul (BOS - SF,PF) - $9
+(35) Brad Pitt - Edgecombe, VJ (PHI - SG,PG) - $6
+(36) Brad Pitt - Powell, Norman (CHI - SG,SF) - $4
+(37) Brad Pitt - Suggs, Jalen (ORL - PG,SG) - $1
+(38) Brad Pitt - Queta, Neemias (BOS - C) - $1
+(39) Brad Pitt - Sheppard, Reed (HOU - PG,SG) - $2
+(40) Adrian - Barnes, Scottie (TOR - SF,PF,C) - $49
+(41) Adrian - Giddey, Josh (CHI - PG,SG) - $39
+(42) Adrian - Thompson, Amen (HOU - PG,SG) - $38
+(43) Adrian - Daniels, Dyson (ATL - SG,SF) - $22
+(44) Adrian - Banchero, Paolo (ORL - PF) - $10
+(45) Adrian - Thompson, Ausar (DET - SF,PF,SG) - $17
+(46) Adrian - Fox, De'Aaron (SAS - PG) - $8
+(47) Adrian - Williamson, Zion (NOP - PF,C) - $6
+(48) Adrian - Claxton, Nic (CHI - C) - $2
+(49) Adrian - Mitchell, Davion (MIA - PG) - $1
+(50) Adrian - Turner, Myles (MIL - C) - $2
+(51) Adrian - Hartenstein, Isaiah (OKC - C) - $2
+(52) Adrian - Murray-Boyles, Collin (TOR - PF,C) - $2
+(53) Dood Soup - Maxey, Tyrese (PHI - PG) - $62
+(54) Dood Soup - Edwards, Anthony (MIN - PG,SG) - $54
+(55) Dood Soup - Tatum, Jayson (BOS - SF,PF) - $50
+(56) Dood Soup - Avdija, Deni (POR - SF,PF,SG) - $25
+(57) Dood Soup - LaVine, Zach (SAC - PG,SG,SF) - $1
+(58) Dood Soup - Nembhard, Andrew (IND - SG,PG) - $1
+(59) Dood Soup - Podziemski, Brandin (GSW - SG,PG) - $1
+(60) Dood Soup - Lendeborg, Yaxel (GSW - PF) - $1
+(61) Dood Soup - Reed, Paul (DET - C,PF) - $1
+(62) Dood Soup - Carter Jr., Wendell (ORL - C) - $1
+(63) Dood Soup - Diabaté, Moussa (CHA - C) - $1
+(64) Dood Soup - Jones, Herbert (NOP - SG,SF) - $1
+(65) Dood Soup - Bailey, Ace (UTA - SF,PF) - $1
+(66) Jimmy - Dončić, Luka (LAL - PG,SG) - $71
+(67) Jimmy - Cunningham, Cade (DET - PG,SG) - $58
+(68) Jimmy - Harden, James (CLE - SG,PG) - $32
+(69) Jimmy - Brown, Jaylen (PHI - SG,SF,PF) - $29
+(70) Jimmy - Castle, Stephon (SAS - PG,SG) - $2
+(71) Jimmy - Wiggins, Andrew (MIA - SG,SF,PF) - $1
+(72) Jimmy - Peterson, Darryn (UTA - SG) - $1
+(73) Jimmy - Vassell, Devin (SAS - SF,SG) - $1
+(74) Jimmy - Raynaud, Maxime (SAC - C) - $1
+(75) Jimmy - Portis Jr., Bobby (MIA - PF,C) - $1
+(76) Jimmy - Braun, Christian (DEN - SG,SF,PF) - $1
+(77) Jimmy - Bey, Saddiq (NOP - PF,SF) - $1
+(78) Jimmy - Washington, P.J. (DAL - PF,C) - $1
+(79) Alex - Curry, Stephen (GSW - PG) - $36
+(80) Alex - Davis, Anthony (WAS - PF,C) - $25
+(81) Alex - Murphy III, Trey (NOP - SG,SF) - $33
+(82) Alex - Leonard, Kawhi (TOR - SG,SF,PF) - $31
+(83) Alex - Duren, Jalen (DET - C) - $20
+(84) Alex - Garland, Darius (LAC - PG) - $16
+(85) Alex - Murray, Dejounte (NOP - PG) - $11
+(86) Alex - Herro, Tyler (MIL - SG,PG) - $11
+(87) Alex - Pritchard, Payton (BOS - PG) - $2
+(88) Alex - Randle, Julius (BKN - PF) - $4
+(89) Alex - White, Coby (CHA - PG,SG) - $4
+(90) Alex - Butler III, Jimmy (GSW - SF,PF) - $3
+(91) Alex - Sharpe, Day'Ron (BKN - C) - $4
+(92) Jeffrey - Holmgren, Chet (OKC - PF,C) - $37
+(93) Jeffrey - Williams, Jalen (OKC - SF,PF) - $28
+(94) Jeffrey - Clingan, Donovan (POR - C) - $21
+(95) Jeffrey - Miller, Brandon (CHA - SF,PF) - $25
+(96) Jeffrey - Ware, Kel'el (MIL - C) - $16
+(97) Jeffrey - George, Keyonte (UTA - SG,PG) - $13
+(98) Jeffrey - Alexander-Walker, Nickeil (ATL - PG,SG) - $9
+(99) Jeffrey - Reid, Naz (CHA - C,PF) - $13
+(100) Jeffrey - Anunoby, OG (NYK - SF,PF) - $12
+(101) Jeffrey - Wilson, Caleb (CHI - PF) - $6
+(102) Jeffrey - Maluach, Khaman (PHX - C) - $5
+(103) Jeffrey - Quickley, Immanuel (TOR - PG,SG) - $8
+(104) Jeffrey - Acuff Jr., Darius (SAC - PG) - $6
+(105) SF - Flagg, Cooper (DAL - SG,SF,PF) - $41
+(106) SF - Şengün, Alperen (HOU - C,PF) - $36
+(107) SF - Markkanen, Lauri (UTA - PF,SF) - $25
+(108) SF - White, Derrick (BOS - SG,PG) - $23
+(109) SF - Jackson Jr., Jaren (UTA - C,PF) - $22
+(110) SF - Knueppel, Kon (CHA - SF,SG) - $14
+(111) SF - Wagner, Franz (ORL - SF,PF) - $23
+(112) SF - Boozer, Cameron (MEM - PF) - $11
+(113) SF - Porziņģis, Kristaps (GSW - C) - $1
+(114) SF - McCollum, CJ (ATL - SG,PG) - $1
+(115) SF - Green, Jalen (PHX - SG,SF) - $1
+(116) SF - Barrett, RJ (TOR - SF,PF,SG) - $1
+(117) SF - Gillespie, Collin (PHX - PG,SG) - $1
+(118) 夾魚 - Johnson, Jalen (ATL - PF,SF) - $50
+(119) 夾魚 - Young, Trae (WAS - PG) - $39
+(120) 夾魚 - Brunson, Jalen (NYK - PG) - $33
+(121) 夾魚 - Mobley, Evan (CLE - C,PF) - $34
+(122) 夾魚 - James, LeBron (PHI - SF,PF) - $28
+(123) 夾魚 - Lillard, Damian (POR - PG) - $7
+(124) 夾魚 - Ingram, Brandon (LAC - SG,SF,PF) - $3
+(125) 夾魚 - Bridges, Miles (PHX - PF) - $1
+(126) 夾魚 - Nurkić, Jusuf (UTA - C) - $1
+(127) 夾魚 - Gordon, Aaron (DEN - PF,C) - $1
+(128) 夾魚 - Jaquez Jr., Jaime (MIL - SF,SG,PF) - $1
+(129) 夾魚 - Holiday, Jrue (POR - PG,SG) - $1
+(130) 夾魚 - Eason, Tari (HOU - SF,PF,SG) - $1
+(131) Michael - Reaves, Austin (LAL - SG,PG,SF) - $37
+(132) Michael - Kessler, Walker (LAL - C) - $32
+(133) Michael - Durant, Kevin (HOU - SF,PF,SG) - $37
+(134) Michael - Queen, Derik (NOP - C,PF) - $8
+(135) Michael - Bane, Desmond (ORL - SF,SG) - $26
+(136) Michael - Buzelis, Matas (CHI - SF,PF) - $17
+(137) Michael - Rollins, Ryan (MIL - PG,SG) - $17
+(138) Michael - Sarr, Alex (WAS - C) - $11
+(139) Michael - Gobert, Rudy (MIN - C) - $11
+(140) Michael - Camara, Toumani (POR - SF,PF) - $1
+(141) Michael - Collins, John (DET - PF,C) - $1
+(142) Michael - Porter Jr., Kevin (MIL - PG,SG) - $1
+(143) Michael - Jones, Tre (CHI - PG,SG) - $1
+(144) luiz - Gilgeous-Alexander, Shai (OKC - PG) - $69
+(145) luiz - Booker, Devin (PHX - SG,PG) - $36
+(146) luiz - Murray, Jamal (DEN - PG) - $45
+(147) luiz - Siakam, Pascal (IND - PF,C) - $10
+(148) luiz - Zubac, Ivica (IND - C) - $9
+(149) luiz - Allen, Jarrett (CLE - C) - $8
+(150) luiz - Risacher, Zaccharie (DAL - SF,PF) - $1
+(151) luiz - McDaniels, Jaden (MIN - SF) - $7
+(152) luiz - Dybantsa, AJ (WAS - SF) - $5
+(153) luiz - Harper, Dylan (SAS - SG,PG) - $5
+(154) luiz - Hart, Josh (NYK - SG,SF) - $1
+(155) luiz - Watson, Peyton (CLE - SF,PF) - $1
+(156) luiz - Dosunmu, Ayo (MIN - PG,SG) - $3
