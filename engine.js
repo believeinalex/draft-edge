@@ -504,12 +504,54 @@ function runOptimizer(state, PLAYERS){
   const posCoverage = CORE_POS.map(pos=>({
     pos, covered: fullyCovered || myPlayers.concat(chosen).some(p=>p.pos && p.pos.includes(pos)),
   }));
+  // --- Snipe Detection Pass ---
+  // Identify high-value players acquirable well below market value because
+  // opponents lack the budget to compete.
+  let maxOppBid = 0;
+  const knownOppCount = (C.teamNamesAll || []).filter(t => t !== state.myTeamName).length;
+  for(const t of C.teamNamesAll || []) {
+    if(t === state.myTeamName) continue;
+    const tInfo = C.teamBudgetAndSlotsLeft(t);
+    if(tInfo.slotsLeft > 0) {
+      const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
+      if(tMax > maxOppBid) maxOppBid = tMax;
+    }
+  }
+  // Account for opponents who haven't made any picks yet (not in teamNamesAll)
+  const unseenOpponents = Math.max(0, (state.numTeams - 1) - knownOppCount);
+  if(unseenOpponents > 0) {
+    const unseenMax = state.budget - (state.rosterSlots - 1);
+    if(unseenMax > maxOppBid) maxOppBid = unseenMax;
+  }
+
+  const snipes = [];
+  for(const p of C.availableInPool) {
+    const fp = C.fairPrice(p.rk);
+    const snipeCost = Math.min(fp, maxOppBid + 1);
+    if(snipeCost < fp * 0.5) {
+      const zc = C.zAll.get(p.rk);
+      snipes.push({
+        rk: p.rk,
+        name: p.name,
+        pos: p.pos,
+        team: p.team,
+        compositeZ: zc ? C.compositeZ(zc) : 0,
+        fairPrice: fp,
+        snipeCost,
+        surplus: fp - snipeCost,
+      });
+    }
+  }
+  snipes.sort((a,b) => b.compositeZ - a.compositeZ);
+  const topSnipes = snipes.slice(0, 5);
+
   return {
     posWarning, budgetLeft, slotsLeft, bestVal, totalCost, existingZ,
     catTotals, posCoverage,
     players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a)).map(p=>({
       rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.compositeZ(C.zAll.get(p.rk)),
     })),
+    snipes: topSnipes,
   };
 }
 
