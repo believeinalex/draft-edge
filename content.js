@@ -375,10 +375,20 @@
       const zR = (C_opt.zRankMap && C_opt.zRankMap.get(p.rk)) || p.rk;
       return `<div class="de-opt-row"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(p.name)}<span class="de-opt-meta">${p.pos.join('/')} · ${p.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost">$${p.cost}</span><span class="de-opt-z">${p.z.toFixed(2)}z</span></span></div>`;
     }).join('');
+    const snipeRows = (opt.snipes && opt.snipes.length > 0)
+      ? opt.snipes.map(s => {
+          const zR = (C_opt.zRankMap && C_opt.zRankMap.get(s.rk)) || s.rk;
+          return `<div class="de-opt-row de-snipe-row"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(s.name)}<span class="de-opt-meta">${s.pos.join('/')} · ${s.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost de-snipe-market"><s>$${s.fairPrice}</s></span><span class="de-opt-cost de-snipe-cost">$${s.snipeCost}</span><span class="de-opt-z">${s.compositeZ.toFixed(2)}z</span></span></div>`;
+        }).join('')
+      : '';
+    const snipeSection = snipeRows
+      ? `<div class="de-snipe-header">🎯 Snipe targets <span class="de-snipe-subtitle">opponents can't outbid you</span></div><div class="de-opt-list de-snipe-list">${snipeRows}</div>`
+      : '';
     box.innerHTML = `
       ${opt.posWarning ? `<div class="de-alert">${escapeHtml(opt.posWarning)}</div>` : ''}
       <div class="de-poscoverage">${posStrip}</div>
       <div class="de-opt-list">${rows}</div>
+      ${snipeSection}
       <div class="de-opt-summary">Fill: ${opt.bestVal.toFixed(2)}z for $${opt.totalCost} of $${opt.budgetLeft} left across ${opt.slotsLeft} slots. Whole team incl. drafted: <b>${(opt.existingZ+opt.bestVal).toFixed(2)}z</b>.</div>
     `;
   }
