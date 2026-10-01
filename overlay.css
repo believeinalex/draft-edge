@@ -54,6 +54,12 @@
 #de-overlay .de-opt-cost{ font-family: ui-monospace, monospace; color:#8a93a5; }
 #de-overlay .de-opt-z{ font-family: ui-monospace, monospace; color:#e8a33d; min-width:44px; text-align:right; }
 #de-overlay .de-opt-summary{ font-size:11px; color:#8a93a5; margin-top:8px; line-height:1.5; }
+#de-overlay .de-snipe-header{ font-size:12px; font-weight:600; color:#e8a33d; margin-top:10px; padding-top:8px; border-top:1px dashed #3a3f4b; }
+#de-overlay .de-snipe-subtitle{ font-weight:400; color:#8a93a5; font-size:10.5px; margin-left:4px; }
+#de-overlay .de-snipe-row{ background:rgba(232,163,61,0.06); }
+#de-overlay .de-snipe-market{ color:#5a6270; font-size:10px; }
+#de-overlay .de-snipe-market s{ text-decoration:line-through; }
+#de-overlay .de-snipe-cost{ color:#1f9d55; font-weight:600; }
 #de-overlay table.de-power tr.me{ background:#3a2c14; }
 #de-overlay table.de-power tr:last-child td{ border-bottom:none; }
 #de-overlay table.de-power td.total{ font-family: ui-monospace, monospace; font-weight:700; }
