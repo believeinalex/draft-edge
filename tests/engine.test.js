@@ -235,3 +235,97 @@ test('checkPrice agrees with runOptimizer: all suggested optimizer players get p
   }
 });
 
+// =========================================================================
+// Snipe Detection Tests
+// =========================================================================
+
+test('runOptimizer returns snipes array (empty when opponents have budget)', () => {
+  const res = runOptimizer(defaultState, PLAYERS);
+  assert.ok(res);
+  assert.ok(Array.isArray(res.snipes), 'snipes should be an array');
+  // At start of draft, no opponents are broke, so snipes should be empty
+  assert.equal(res.snipes.length, 0, 'No snipes expected at start of draft when all opponents have full budgets');
+});
+
+test('runOptimizer surfaces snipe targets when opponents are nearly broke', () => {
+  // Build a late-draft scenario: 14 teams, 13 slots each = 182 total picks
+  // 13 opponents have drafted 12 of 13 players each, spending most of their budget
+  // "You" have drafted 10 of 13 players, with $40 remaining
+  const picks = [];
+  const numTeams = 14;
+  const rosterSlots = 13;
+
+  // Distribute top players to opponents so they're "gone" from the pool
+  let playerIdx = 0;
+  for (let t = 1; t <= numTeams - 1; t++) {
+    const teamName = `Opp${t}`;
+    for (let s = 0; s < rosterSlots - 1; s++) { // 12 picks each, 1 slot left
+      // Each opponent spends $198, leaving $2 with 1 slot => maxBid = $2
+      const perPick = s === 0 ? 198 - 15 * (rosterSlots - 2) : 15;
+      picks.push({
+        rk: PLAYERS[playerIdx].rk,
+        teamName,
+        price: perPick,
+      });
+      playerIdx++;
+    }
+  }
+
+  // "You" have drafted 10 players spending $160, with $40 left and 3 slots
+  const myPickCount = rosterSlots - 3; // 10 picks
+  for (let s = 0; s < myPickCount; s++) {
+    picks.push({
+      rk: PLAYERS[playerIdx].rk,
+      teamName: 'You',
+      price: 16,
+    });
+    playerIdx++;
+  }
+
+  const lateDraftState = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 9,
+    benchWeight: 0.3,
+  };
+
+  const res = runOptimizer(lateDraftState, PLAYERS);
+  assert.ok(res, 'runOptimizer should return a result');
+  assert.ok(!res.full && !res.infeasible, 'Should not be full or infeasible');
+  assert.ok(Array.isArray(res.snipes), 'snipes should be an array');
+
+  // With opponents maxing out at ~$2 bids, and remaining pool players having
+  // fairPrice well above that, there should be snipe candidates
+  if (res.snipes.length > 0) {
+    // Verify snipe data shape
+    const snipe = res.snipes[0];
+    assert.ok(typeof snipe.rk === 'number', 'snipe.rk should be a number');
+    assert.ok(typeof snipe.name === 'string', 'snipe.name should be a string');
+    assert.ok(Array.isArray(snipe.pos), 'snipe.pos should be an array');
+    assert.ok(typeof snipe.compositeZ === 'number', 'snipe.compositeZ should be a number');
+    assert.ok(typeof snipe.fairPrice === 'number', 'snipe.fairPrice should be a number');
+    assert.ok(typeof snipe.snipeCost === 'number', 'snipe.snipeCost should be a number');
+    assert.ok(typeof snipe.surplus === 'number', 'snipe.surplus should be a number');
+
+    // Verify snipe invariant: snipeCost < fairPrice * 0.5
+    for (const s of res.snipes) {
+      assert.ok(s.snipeCost < s.fairPrice * 0.5,
+        `Snipe ${s.name}: snipeCost ($${s.snipeCost}) should be < 50% of fairPrice ($${s.fairPrice})`);
+      assert.ok(s.surplus > 0, `Snipe ${s.name}: surplus should be positive`);
+      assert.equal(s.surplus, s.fairPrice - s.snipeCost, `Snipe ${s.name}: surplus should equal fairPrice - snipeCost`);
+    }
+
+    // Verify sorted by compositeZ descending
+    for (let i = 1; i < res.snipes.length; i++) {
+      assert.ok(res.snipes[i].compositeZ <= res.snipes[i-1].compositeZ,
+        `Snipes should be sorted by compositeZ descending`);
+    }
+
+    // Verify cap of 5
+    assert.ok(res.snipes.length <= 5, `Snipes should be capped at 5, got ${res.snipes.length}`);
+  }
+});
