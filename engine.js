@@ -16,13 +16,15 @@ function stdev(arr, m){ if(arr.length<2) return 1e-9; const v = arr.reduce((a,b)
 
 function posMaskOf(p){
   let m = 0;
-  if (p.pos) {
-    for(const pos of p.pos){ const i = CORE_POS.indexOf(pos); if(i>=0) m |= (1<<i); }
-  }
+  for(const pos of p.pos){ const i = CORE_POS.indexOf(pos); if(i>=0) m |= (1<<i); }
   return m;
 }
 
 // state = { numTeams, rosterSlots, budget, myTeamName, weights, picks:[{rk,teamName,price,ts}] }
+// Unlike Draft Edge (which pre-assigns a fixed 0..N-1 team index array from
+// its own setup form), the extension only knows teams by whatever name
+// string Yahoo's draft-results feed shows for the winning bidder, so picks
+// are keyed by teamName here, not a numeric index.
 function computeAll(state, PLAYERS){
   const poolSize = clamp(state.numTeams * state.rosterSlots, 1, PLAYERS.length);
   const rosterPool = PLAYERS.slice(0, poolSize);
@@ -71,66 +73,8 @@ function computeAll(state, PLAYERS){
     for(const c of CATS) zc[c] = zOf(p,c);
     zAll.set(p.rk, zc);
   }
-  function baseCompositeZ(zc){
-    let s=0; for(const c of CATS) s += zc[c]; return s;
-  }
-
-  const availSortedBase = availableInPool.slice().sort((a,b)=> baseCompositeZ(zAll.get(b.rk)) - baseCompositeZ(zAll.get(a.rk)));
-  const draftedCount = state.picks.length;
-  const remainingSlots = clamp(poolSize - draftedCount, 0, poolSize);
-  const replIdx = clamp(remainingSlots-1, 0, Math.max(0,availSortedBase.length-1));
-  const winLo = clamp(replIdx-4,0,availSortedBase.length-1);
-  const winHi = clamp(replIdx+5,0,availSortedBase.length);
-  const replWindowBase = availSortedBase.slice(winLo, Math.max(winHi, winLo+1));
-  const replZBase = {};
-  for(const c of CATS){
-    replZBase[c] = replWindowBase.length ? mean(replWindowBase.map(p=>zAll.get(p.rk)[c])) : 0;
-  }
-
-  const teamNamesAll = Array.from(new Set(state.picks.map(p=>p.teamName).concat(state.myTeamName ? [state.myTeamName] : [])));
-  const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
-  const benchWeightConf = state.benchWeight !== undefined ? state.benchWeight : 0.3;
-  const teamProjBase = teamNamesAll.map(name=>{
-      const picksOfTeam = state.picks.filter(pk=>pk.teamName===name);
-      const proj = {};
-      const numPicks = picksOfTeam.length;
-      const emptyStarters = Math.max(0, starterSlots - numPicks);
-      const emptyBench = Math.max(0, state.rosterSlots - Math.max(starterSlots, numPicks));
-      for(const c of CATS){
-        let s = emptyStarters * replZBase[c] + emptyBench * benchWeightConf * replZBase[c];
-        picksOfTeam.forEach((pk, idx)=>{
-          const zc = zAll.get(pk.rk);
-          if(zc){
-            const w = (idx < starterSlots) ? 1.0 : benchWeightConf;
-            s += w * zc[c];
-          }
-        });
-        proj[c] = s;
-      }
-      return {name, proj};
-  });
-
-  const myProj = teamProjBase.find(t => t.name === state.myTeamName);
-  const dynWeights = {};
-  for(const c of CATS) {
-      if(!myProj || teamProjBase.length < 2) {
-          dynWeights[c] = 1.0;
-          continue;
-      }
-      let minDist = 1e9;
-      for(const t of teamProjBase) {
-          if(t.name === state.myTeamName) continue;
-          const dist = Math.abs(t.proj[c] - myProj.proj[c]);
-          if(dist < minDist) minDist = dist;
-      }
-      const catVals = teamProjBase.map(t => t.proj[c]);
-      const catSd = stdev(catVals, mean(catVals));
-      const normDist = catSd > 0 ? minDist / catSd : 0;
-      dynWeights[c] = Math.max(0.6, Math.exp(-Math.pow(normDist, 2) / 2) * 1.5);
-  }
-
   function compositeZ(zc){
-    let s=0; for(const c of CATS) s += dynWeights[c]*zc[c];
+    let s=0; for(const c of CATS) s += state.weights[c]*zc[c];
     return s;
   }
 
@@ -144,30 +88,26 @@ function computeAll(state, PLAYERS){
     zRankMap.set(item.rk, index + 1);
   });
 
+  const draftedCount = state.picks.length;
+  const remainingSlots = clamp(poolSize - draftedCount, 0, poolSize);
   const availSortedByComposite = availableInPool.slice().sort((a,b)=> compositeZ(zAll.get(b.rk)) - compositeZ(zAll.get(a.rk)));
+  const replIdx = clamp(remainingSlots-1, 0, Math.max(0,availSortedByComposite.length-1));
+  const winLo = clamp(replIdx-4,0,availSortedByComposite.length-1);
+  const winHi = clamp(replIdx+5,0,availSortedByComposite.length);
   const replWindow = availSortedByComposite.slice(winLo, Math.max(winHi, winLo+1));
   const replZ = {};
   for(const c of CATS){
     replZ[c] = replWindow.length ? mean(replWindow.map(p=>zAll.get(p.rk)[c])) : 0;
   }
 
-  const totalSlots = state.numTeams * state.rosterSlots;
-  const remainingGlobalSlots = Math.max(0, totalSlots - draftedCount);
-  const slotsPerPos = remainingGlobalSlots / CORE_POS.length;
-  const posScarcity = {};
-  for(const pos of CORE_POS) {
-      const viableRemaining = availableInPool.filter(p => p.pos && p.pos.includes(pos) && baseCompositeZ(zAll.get(p.rk)) > 0.5).length;
-      posScarcity[pos] = viableRemaining > 0 ? (slotsPerPos / viableRemaining) : 1.5; 
-  }
-
   const remainingBudgetAllTeams = state.numTeams*state.budget - state.picks.reduce((a,pk)=>a+(pk.price||0),0);
+
   const totalMarketCostAtStart = rosterPool.reduce((a,p)=>a+(p.mktCost||1),0);
   const remainingMarketCost = availableInPool.reduce((a,p)=>a+(p.mktCost||1),0);
   const origSpendable = state.numTeams*state.budget - state.numTeams*state.rosterSlots;
   const baselineRatio = totalMarketCostAtStart>0 ? origSpendable/totalMarketCostAtStart : 1;
   const nowRatio = remainingMarketCost>0 ? Math.max(remainingBudgetAllTeams - remainingSlots,0)/remainingMarketCost : 1;
   const inflation = clamp(baselineRatio>0 ? nowRatio/baselineRatio : 1, 0.4, 2.2);
-
   function fairPrice(rk){
     const p = rosterPoolByRk.get(rk);
     return p ? Math.max(1, Math.round((p.mktCost || 1) * inflation)) : 1;
@@ -180,26 +120,42 @@ function computeAll(state, PLAYERS){
   }
   const my = teamBudgetAndSlotsLeft(state.myTeamName);
 
+  // position coverage: which of PG/SG/SF/PF/C can I currently fill from my roster
   const myPicks = state.picks.filter(p=>p.teamName===state.myTeamName).map(pk=>rosterPoolByRk.get(pk.rk) || PLAYERS.find(p=>p.rk===pk.rk)).filter(Boolean);
   let reach = 0;
   for(const p of myPicks) reach |= posMaskOf(p);
   const missingPos = CORE_POS.filter((_,i)=> !(reach & (1<<i)));
 
+  // ---- power rankings: projected roto finish for every team seen so far ----
+  // Ported from Draft Edge's teamProjZ/rankPoints. Draft Edge knows the full
+  // fixed team list from setup; the extension only knows a team once it's
+  // made a pick, so `teamNames` here is "every distinct name seen in
+  // state.picks, plus myTeamName" rather than a complete pre-declared roster.
+  // Teams that haven't picked yet just aren't in the table — noted in the UI.
+  const teamNames = Array.from(new Set(state.picks.map(p=>p.teamName).concat(state.myTeamName ? [state.myTeamName] : [])));
+  // Matches Draft Edge's renderPowerRankings exactly: per-category cells show
+  // RAW RANK POSITION (1 = best in that category, numTeams = worst), tiered
+  // into good/mid/bad thirds for coloring — not a continuous z-heatmap and
+  // not tie-averaged points. Tot is the points-equivalent sum
+  // (numTeams+1-rank per category) so a higher total still reads as better,
+  // matching the sort order.
   let powerRankings = [];
-  if(teamNamesAll.length){
-    const n = teamNamesAll.length;
-    const teamProjZFinal = teamNamesAll.map(name=>{
+  if(teamNames.length){
+    const n = teamNames.length;
+    const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+    const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
+    const teamProjZ = teamNames.map(name=>{
       const picksOfTeam = state.picks.filter(pk=>pk.teamName===name);
       const proj = {};
       const numPicks = picksOfTeam.length;
       const emptyStarters = Math.max(0, starterSlots - numPicks);
       const emptyBench = Math.max(0, state.rosterSlots - Math.max(starterSlots, numPicks));
       for(const c of CATS){
-        let s = emptyStarters * replZ[c] + emptyBench * benchWeightConf * replZ[c];
+        let s = emptyStarters * replZ[c] + emptyBench * benchWeight * replZ[c];
         picksOfTeam.forEach((pk, idx)=>{
           const zc = zAll.get(pk.rk);
           if(zc){
-            const w = (idx < starterSlots) ? 1.0 : benchWeightConf;
+            const w = (idx < starterSlots) ? 1.0 : benchWeight;
             s += w * zc[c];
           }
         });
@@ -210,7 +166,7 @@ function computeAll(state, PLAYERS){
     const rankOfCat = {};
     const leadOfCat = {};
     for(const c of CATS){
-      const values = teamProjZFinal.map(t=>t[c]);
+      const values = teamProjZ.map(t=>t[c]);
       const idx = values.map((v,i)=>i).sort((a,b)=>values[b]-values[a]);
       const ranks = new Array(n);
       const leads = new Array(n);
@@ -226,9 +182,9 @@ function computeAll(state, PLAYERS){
       leadOfCat[c] = leads;
     }
     const tierOf = (r)=> r<=Math.ceil(n/3) ? 'good' : (r<=Math.ceil(n*2/3) ? 'mid' : 'bad');
-    const totals = teamNamesAll.map((_,i)=> CATS.reduce((a,c)=>a + (n+1-rankOfCat[c][i]), 0));
-    powerRankings = teamNamesAll.map((name,i)=>{
-      const {budgetLeft} = teamBudgetAndSlotsLeft(name);
+    const totals = teamNames.map((_,i)=> CATS.reduce((a,c)=>a + (n+1-rankOfCat[c][i]), 0));
+    powerRankings = teamNames.map((name,i)=>{
+      const {budgetLeft} = C_teamBudget(name);
       return {
         teamName: name,
         isMe: !!state.myTeamName && name===state.myTeamName,
@@ -239,15 +195,28 @@ function computeAll(state, PLAYERS){
       };
     }).sort((a,b)=> b.total-a.total);
   }
+  function C_teamBudget(name){
+    const picksT = state.picks.filter(p=>p.teamName===name);
+    const spent = picksT.reduce((a,p)=>a+(p.price||0),0);
+    return { budgetLeft: state.budget - spent };
+  }
 
   return {
     poolSize, rosterPool, availableInPool, zAll, compositeZ, replZ,
     fairPrice, remainingBudgetAllTeams, remainingSlots, draftedCount, inflation,
     myBudgetLeft: my.budgetLeft, mySlotsLeft: my.slotsLeft, myPicksMade: my.picksMade,
-    missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap, teamNamesAll, dynWeights, posScarcity, myPicks
+    missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap
   };
 }
 
+// ---------- price check (ported from Draft Edge's checkPrice, verbatim math) ----------
+// "The highest bid at which winning this player still leaves you at least as
+// well off as passing and drafting the best alternative team with the money
+// and slots you'd have left." Exact 0/1 knapsack over the remaining pool,
+// tracking PG/SG/SF/PF/C coverage as a 32-state bitmask so the alternative
+// build has to be a legal fieldable team, not just the highest-z pile of
+// players. This is the calculation Alex actually leans on during a live
+// auction, so it's ported in full rather than approximated.
 const FULL_COVERAGE = (1<<CORE_POS.length)-1;
 const COVERAGE_STATES = 1<<CORE_POS.length;
 
@@ -287,17 +256,17 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
   for(let b=0;b<=B;b++) for(let mask=0;mask<M;mask++) if(reach0[mask]) dp[idx(0,b,mask)] = 0;
   const choice = new Array(n);
   const sSlots = (starterSlotsLeft !== undefined) ? starterSlotsLeft : K;
+  const bWeight = (benchWeight !== undefined) ? benchWeight : 0.3;
 
   for(let i=0;i<n;i++){
     const cost = Math.round(costFn(pool[i]));
-    const baseValStarter = valFn(pool[i], true);
-    const baseValBench = valFn(pool[i], false);
+    const baseVal = valFn(pool[i]);
     const pm = posMaskOf(pool[i]);
     const newDp = dp.slice();
     const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
     if(cost <= B){
       for(let k=K;k>=1;k--){
-        const itemVal = (k <= sSlots) ? baseValStarter : baseValBench;
+        const itemVal = (k <= sSlots) ? baseVal : baseVal * bWeight;
         for(let b=B;b>=cost;b--){
           for(let mask=0;mask<M;mask++){
             const srcVal = dp[idx(k-1,b-cost,mask)];
@@ -345,31 +314,9 @@ function knapsackReconstruct(res, k, b, mask){
   return chosen;
 }
 
-function buildValFn(C) {
-  return (x, isStarter = true) => {
-    let z = 0;
-    const zc = C.zAll.get(x.rk);
-    if(zc) {
-        for(const c of CATS) {
-            let w = C.dynWeights[c] || 1.0;
-            if (!isStarter) {
-                if (c === 'fgPct' || c === 'ftPct') {
-                    w *= (zc[c] < 0 ? 0.8 : 0.2);
-                } else {
-                    w *= 0.2;
-                }
-            }
-            z += w * zc[c];
-        }
-    }
-    // Original hardcoded Center bonus
-    const numCenters = C.myPicks && C.myPicks.length > 0 ? C.myPicks.filter(pl => pl.pos && pl.pos.includes('C')).length : 0;
-    if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
-    else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
-    return z;
-  };
-}
-
+// Returns null if the player isn't found or the roster is already full.
+// Otherwise: { player, maxBid, soloZ, mktNow, baselineZ, baselineInfeasible,
+//              alternativeNames, positionWarning }
 function checkPrice(state, PLAYERS, rk){
   const C = computeAll(state, PLAYERS);
   const p = PLAYERS.find(x=>x.rk===rk);
@@ -380,27 +327,27 @@ function checkPrice(state, PLAYERS, rk){
   
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
-  const valFn = buildValFn(C);
+  const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
+  const valFn = x => {
+    let z = C.compositeZ(C.zAll.get(x.rk));
+    // ONLY apply the positional bonus to the nominated player (p) to prevent suppressing bids on non-centers
+    if (x.rk === p.rk) {
+      if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
+      else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+    }
+    return z;
+  };
   
   const pZc = C.zAll.get(p.rk);
-  const pVal = valFn(p, true);
+  const pVal = C.compositeZ(pZc);
   const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
   const B = Math.max(budgetLeft, 0);
   const baseReach = reachableCoverage(myPlayers);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+  const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
-  let maxOppBid = 0;
-  for(const t of C.teamNamesAll || []) {
-      if(t === state.myTeamName) continue;
-      const tInfo = C.teamBudgetAndSlotsLeft(t);
-      if(tInfo.slotsLeft > 0) {
-          const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
-          if(tMax > maxOppBid) maxOppBid = tMax;
-      }
-  }
-
-  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, null);
+  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
   resExcl.costOf = costFn;
 
   let baseline = bestFeasible(resExcl, slotsLeft, resExcl.B);
@@ -412,6 +359,7 @@ function checkPrice(state, PLAYERS, rk){
     baselineMask = fb.mask;
   }
 
+  // Preserve natural rk sorting in poolWithP so knapsackDP evaluates starter vs bench weights consistently with runOptimizer
   const poolWithP = C.availableInPool.some(x => x.rk === rk)
     ? C.availableInPool
     : poolExcl.concat([p]).sort((a,b) => a.rk - b.rk);
@@ -419,11 +367,11 @@ function checkPrice(state, PLAYERS, rk){
   let bestX = 0;
   let bestXChosen = [];
   if(slotsLeft - 1 >= 0 && B >= 1){
-    let low = 1, high = maxOppBid > 0 ? Math.min(B, maxOppBid + 1) : B;
+    let low = 1, high = B;
     while(low <= high){
       const X = Math.floor((low + high) / 2);
       const customCostFn = x => (x.rk === rk ? X : costFn(x));
-      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, null);
+      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
       resWithP.costOf = customCostFn;
 
       let valWithP = bestFeasible(resWithP, slotsLeft, B);
@@ -462,6 +410,15 @@ function checkPrice(state, PLAYERS, rk){
   };
 }
 
+// ---------- team optimizer (ported from Draft Edge's runOptimizer, verbatim
+// math) ----------
+// "Best possible team right now": an exact knapsack over every available
+// player, priced at market valuation (not the model's own z-value), against
+// remaining budget/slots — this is what Alex uses to see who's worth
+// nominating or watching for, not just what one specific player is worth.
+// Returns null only when the roster is already full; otherwise a data object
+// for the caller to render (no DOM work here, unlike Draft Edge's original
+// which wrote straight to the page).
 function runOptimizer(state, PLAYERS){
   const C = computeAll(state, PLAYERS);
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
@@ -469,12 +426,19 @@ function runOptimizer(state, PLAYERS){
   const costFn = p=>C.fairPrice(p.rk);
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
-  const valFn = buildValFn(C);
+  const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
+  const valFn = p => {
+    let z = C.compositeZ(C.zAll.get(p.rk));
+    if (numCenters === 0 && p.pos && p.pos.includes('C')) z += 4.0;
+    else if (numCenters === 1 && p.pos && p.pos.includes('C')) z += 2.0;
+    return z;
+  };
   const baseReach = reachableCoverage(myPlayers);
   const B = Math.max(budgetLeft,0);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+  const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
-  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, null);
+  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
@@ -555,6 +519,10 @@ function runOptimizer(state, PLAYERS){
   };
 }
 
+// ---------- name matching ----------
+// Yahoo displays names slightly differently in places (suffixes, accents,
+// abbreviated first names for space). Normalize aggressively and fall back to
+// a token-overlap match so "Nic Claxton" -> "Nicolas Claxton" still resolves.
 const NAME_ALIASES = {
   'nic claxton': 'nicolas claxton',
   'alex sarr': 'alexandre sarr',
@@ -564,7 +532,7 @@ const NAME_ALIASES = {
 };
 
 function stripDiacritics(s){
-  return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g,'') : s;
+  return s.normalize ? s.normalize('NFD').replace(/[̀-ͯ]/g,'') : s;
 }
 function normName(s){
   if(!s) return '';
@@ -580,6 +548,7 @@ function matchPlayer(rawName, PLAYERS, byNorm){
   const n = normName(rawName);
   if(!n) return null;
   if(byNorm.has(n)) return byNorm.get(n);
+  // token-overlap fallback: last name must match, first name may be truncated/nicknamed
   const parts = n.split(' ');
   const last = parts[parts.length-1];
   const candidates = PLAYERS.filter(p=>{
