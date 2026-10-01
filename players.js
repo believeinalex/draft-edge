@@ -69,7 +69,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.5,
     "stl": 1.6,
     "blk": 0.9,
-    "adp": 4.3,
+    "adp": 4,
     "mktCost": 67
   },
   {
@@ -94,7 +94,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 8.8,
     "stl": 1.7,
     "blk": 0.5,
-    "adp": 3.6,
+    "adp": 3.5,
     "mktCost": 73
   },
   {
@@ -119,7 +119,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 9.8,
     "stl": 1.3,
     "blk": 0.8,
-    "adp": 6.3,
+    "adp": 6,
     "mktCost": 65
   },
   {
@@ -144,7 +144,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.1,
     "stl": 1.2,
     "blk": 0.5,
-    "adp": 10.2,
+    "adp": 9.4,
     "mktCost": 53
   },
   {
@@ -169,7 +169,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 1.2,
     "blk": 0.7,
-    "adp": 8.8,
+    "adp": 7.9,
     "mktCost": 61
   },
   {
@@ -193,7 +193,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.2,
     "stl": 1,
     "blk": 0.4,
-    "adp": 24.4,
+    "adp": 23.6,
     "mktCost": 37
   },
   {
@@ -217,7 +217,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.8,
     "stl": 1.8,
     "blk": 0.5,
-    "adp": 9,
+    "adp": 8.6,
     "mktCost": 58
   },
   {
@@ -243,36 +243,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.3,
     "stl": 0.8,
     "blk": 1,
-    "adp": 17.2,
+    "adp": 16.6,
     "mktCost": 42
   },
   {
     "rk": 11,
-    "name": "Anthony Davis",
-    "pos": [
-      "PF",
-      "C"
-    ],
-    "team": "WAS",
-    "gp": 65,
-    "mpg": 31.1,
-    "fgPct": 0.514,
-    "fgm": 8.6,
-    "fga": 16.8,
-    "ftPct": 0.767,
-    "ftm": 4.7,
-    "fta": 6.1,
-    "tpm": 0.6,
-    "pts": 22.5,
-    "treb": 10.9,
-    "ast": 3.2,
-    "stl": 1.1,
-    "blk": 1.9,
-    "adp": 39.1,
-    "mktCost": 35
-  },
-  {
-    "rk": 12,
     "name": "Donovan Mitchell",
     "pos": [
       "PG",
@@ -293,11 +268,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.4,
     "stl": 1.5,
     "blk": 0.3,
-    "adp": 14.2,
+    "adp": 13.4,
     "mktCost": 45
   },
   {
-    "rk": 13,
+    "rk": 12,
     "name": "Karl-Anthony Towns",
     "pos": [
       "PF",
@@ -318,11 +293,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 0.9,
     "blk": 0.6,
-    "adp": 14.9,
+    "adp": 15.3,
     "mktCost": 38
   },
   {
-    "rk": 14,
+    "rk": 13,
     "name": "Trae Young",
     "pos": [
       "PG"
@@ -346,7 +321,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 33
   },
   {
-    "rk": 15,
+    "rk": 14,
     "name": "Jalen Johnson",
     "pos": [
       "SF",
@@ -367,11 +342,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.9,
     "stl": 1.4,
     "blk": 0.6,
-    "adp": 12,
+    "adp": 11.6,
     "mktCost": 51
   },
   {
-    "rk": 16,
+    "rk": 15,
     "name": "Jamal Murray",
     "pos": [
       "PG"
@@ -391,11 +366,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.5,
     "stl": 1.1,
     "blk": 0.4,
-    "adp": 20.3,
+    "adp": 20.6,
     "mktCost": 36
   },
   {
-    "rk": 17,
+    "rk": 16,
     "name": "Austin Reaves",
     "pos": [
       "PG",
@@ -417,11 +392,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.7,
     "stl": 1.1,
     "blk": 0.3,
-    "adp": 21.9,
+    "adp": 22.6,
     "mktCost": 32
   },
   {
-    "rk": 18,
+    "rk": 17,
     "name": "Cooper Flagg",
     "pos": [
       "SG",
@@ -443,11 +418,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.9,
     "stl": 1.3,
     "blk": 1,
-    "adp": 10,
+    "adp": 10.3,
     "mktCost": 52
   },
   {
-    "rk": 19,
+    "rk": 18,
     "name": "Kawhi Leonard",
     "pos": [
       "SG",
@@ -469,11 +444,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3,
     "stl": 1.7,
     "blk": 0.4,
-    "adp": 28.5,
+    "adp": 30.2,
     "mktCost": 35
   },
   {
-    "rk": 20,
+    "rk": 19,
     "name": "Tyrese Haliburton",
     "pos": [
       "PG",
@@ -494,12 +469,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 9.6,
     "stl": 1.3,
     "blk": 0.6,
-    "adp": 17.2,
-    "mktCost": 44,
-    "note": "Coming back from the torn Achilles suffered in Game 7 of the 2025 Finals. This 2026-27 projection already bakes in a reduced 60-game workload and a lighter role than his pre-injury peak, so no extra manual discount needed — but confirm he's actually been cleared to start the season before you pay full price."
+    "adp": 15.8,
+    "mktCost": 44
   },
   {
-    "rk": 21,
+    "rk": 20,
     "name": "James Harden",
     "pos": [
       "PG",
@@ -520,11 +494,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 8.2,
     "stl": 1.1,
     "blk": 0.5,
-    "adp": 35.6,
+    "adp": 34.6,
     "mktCost": 31
   },
   {
-    "rk": 22,
+    "rk": 21,
     "name": "Scottie Barnes",
     "pos": [
       "SF",
@@ -546,11 +520,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.1,
     "stl": 1.5,
     "blk": 1.3,
-    "adp": 14,
+    "adp": 14.3,
     "mktCost": 46
   },
   {
-    "rk": 23,
+    "rk": 22,
     "name": "Trey Murphy III",
     "pos": [
       "SG",
@@ -571,11 +545,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.7,
     "stl": 1.3,
     "blk": 0.5,
-    "adp": 39.9,
+    "adp": 40.4,
     "mktCost": 29
   },
   {
-    "rk": 24,
+    "rk": 23,
     "name": "Chet Holmgren",
     "pos": [
       "PF",
@@ -596,11 +570,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.7,
     "blk": 2.1,
-    "adp": 27,
+    "adp": 28.3,
     "mktCost": 30
   },
   {
-    "rk": 25,
+    "rk": 24,
     "name": "Dejounte Murray",
     "pos": [
       "PG"
@@ -620,11 +594,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 7.1,
     "stl": 1.8,
     "blk": 0.3,
-    "adp": 71.9,
+    "adp": 72.3,
     "mktCost": 26
   },
   {
-    "rk": 26,
+    "rk": 25,
     "name": "Giannis Antetokounmpo",
     "pos": [
       "PF",
@@ -645,8 +619,33 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.5,
     "stl": 1,
     "blk": 1.1,
-    "adp": 8,
+    "adp": 7.6,
     "mktCost": 58
+  },
+  {
+    "rk": 26,
+    "name": "Anthony Davis",
+    "pos": [
+      "PF",
+      "C"
+    ],
+    "team": "WAS",
+    "gp": 59,
+    "mpg": 31.1,
+    "fgPct": 0.502,
+    "fgm": 7.5,
+    "fga": 15,
+    "ftPct": 0.767,
+    "ftm": 4.2,
+    "fta": 5.5,
+    "tpm": 0.6,
+    "pts": 19.8,
+    "treb": 9.8,
+    "ast": 2.9,
+    "stl": 1,
+    "blk": 1.7,
+    "adp": 41.9,
+    "mktCost": 35
   },
   {
     "rk": 27,
@@ -670,7 +669,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.3,
     "stl": 0.8,
     "blk": 0.2,
-    "adp": 27.4,
+    "adp": 26.3,
     "mktCost": 26
   },
   {
@@ -695,7 +694,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.1,
     "stl": 1.2,
     "blk": 1.5,
-    "adp": 50.6,
+    "adp": 50.2,
     "mktCost": 25
   },
   {
@@ -719,9 +718,8 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.9,
     "stl": 1.1,
     "blk": 0.4,
-    "adp": 52.6,
-    "mktCost": 25,
-    "note": "Coming back from an ACL tear suffered in March 2025; missed all of 2025-26. This 2026-27 projection already bakes in a reduced 55-game workload, so no extra manual discount needed — but he's 34 and confirmation of his actual season-opener readiness is worth checking before draft day."
+    "adp": 52.1,
+    "mktCost": 25
   },
   {
     "rk": 30,
@@ -770,7 +768,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 8.4,
     "stl": 1.2,
     "blk": 0.6,
-    "adp": 23.9,
+    "adp": 23.2,
     "mktCost": 33
   },
   {
@@ -795,7 +793,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.6,
     "stl": 0.8,
     "blk": 1.8,
-    "adp": 30,
+    "adp": 30.1,
     "mktCost": 24
   },
   {
@@ -820,7 +818,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.6,
     "stl": 1.1,
     "blk": 0.4,
-    "adp": 53,
+    "adp": 52.6,
     "mktCost": 24
   },
   {
@@ -844,7 +842,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 7,
     "stl": 1.2,
     "blk": 0.2,
-    "adp": 65.3,
+    "adp": 66.1,
     "mktCost": 24
   },
   {
@@ -869,7 +867,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 7.4,
     "stl": 1,
     "blk": 0.5,
-    "adp": 39.4,
+    "adp": 37.4,
     "mktCost": 23
   },
   {
@@ -894,7 +892,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.9,
     "blk": 0.5,
-    "adp": 39.2,
+    "adp": 38,
     "mktCost": 23
   },
   {
@@ -919,7 +917,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.2,
     "stl": 0.7,
     "blk": 0.3,
-    "adp": 28.4,
+    "adp": 25.6,
     "mktCost": 23
   },
   {
@@ -929,7 +927,7 @@ const DRAFT_EDGE_PLAYERS = [
       "C"
     ],
     "team": "DET",
-    "gp": 70,
+    "gp": 68,
     "mpg": 28.4,
     "fgPct": 0.652,
     "fgm": 6.9,
@@ -943,7 +941,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.5,
     "stl": 0.8,
     "blk": 0.9,
-    "adp": 35.8,
+    "adp": 36.4,
     "mktCost": 22
   },
   {
@@ -967,7 +965,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.2,
     "stl": 0.7,
     "blk": 1.8,
-    "adp": 74.6,
+    "adp": 74.9,
     "mktCost": 22
   },
   {
@@ -992,7 +990,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.3,
     "stl": 1.5,
     "blk": 0.6,
-    "adp": 42.9,
+    "adp": 41.9,
     "mktCost": 22
   },
   {
@@ -1016,7 +1014,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.9,
     "stl": 0.8,
     "blk": 0.1,
-    "adp": 22.5,
+    "adp": 21.4,
     "mktCost": 35
   },
   {
@@ -1040,36 +1038,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 7.1,
     "stl": 1.3,
     "blk": 0.2,
-    "adp": 25.7,
+    "adp": 26.2,
     "mktCost": 29
   },
   {
     "rk": 43,
-    "name": "Tyler Herro",
-    "pos": [
-      "PG",
-      "SG"
-    ],
-    "team": "MIL",
-    "gp": 64,
-    "mpg": 31.8,
-    "fgPct": 0.468,
-    "fgm": 8.1,
-    "fga": 17.3,
-    "ftPct": 0.887,
-    "ftm": 3.3,
-    "fta": 3.7,
-    "tpm": 2.9,
-    "pts": 22.4,
-    "treb": 4.8,
-    "ast": 4.8,
-    "stl": 0.8,
-    "blk": 0.3,
-    "adp": 68.1,
-    "mktCost": 21
-  },
-  {
-    "rk": 44,
     "name": "Derrick White",
     "pos": [
       "PG",
@@ -1090,7 +1063,32 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.1,
     "stl": 1.1,
     "blk": 1.2,
-    "adp": 46.9,
+    "adp": 47.2,
+    "mktCost": 21
+  },
+  {
+    "rk": 44,
+    "name": "Tyler Herro",
+    "pos": [
+      "PG",
+      "SG"
+    ],
+    "team": "MIL",
+    "gp": 64,
+    "mpg": 31.8,
+    "fgPct": 0.468,
+    "fgm": 8.1,
+    "fga": 17.3,
+    "ftPct": 0.887,
+    "ftm": 3.3,
+    "fta": 3.7,
+    "tpm": 2.9,
+    "pts": 22.4,
+    "treb": 4.8,
+    "ast": 4.8,
+    "stl": 0.8,
+    "blk": 0.3,
+    "adp": 69.4,
     "mktCost": 21
   },
   {
@@ -1115,7 +1113,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.3,
     "stl": 1.2,
     "blk": 0.4,
-    "adp": 53.4,
+    "adp": 52.6,
     "mktCost": 21
   },
   {
@@ -1140,7 +1138,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.6,
     "stl": 1.1,
     "blk": 0.5,
-    "adp": 60.1,
+    "adp": 59.8,
     "mktCost": 21
   },
   {
@@ -1164,7 +1162,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3,
     "stl": 0.5,
     "blk": 1,
-    "adp": 51,
+    "adp": 50.9,
     "mktCost": 21
   },
   {
@@ -1189,7 +1187,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 0.8,
     "blk": 1.7,
-    "adp": 59.8,
+    "adp": 64.8,
     "mktCost": 20
   },
   {
@@ -1213,7 +1211,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.8,
     "stl": 0.7,
     "blk": 2.2,
-    "adp": 37,
+    "adp": 38.7,
     "mktCost": 20
   },
   {
@@ -1238,7 +1236,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.9,
     "stl": 1.7,
     "blk": 0.8,
-    "adp": 111.6,
+    "adp": 110.8,
     "mktCost": 20
   },
   {
@@ -1263,7 +1261,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 1,
     "blk": 0.7,
-    "adp": 46.9,
+    "adp": 46.3,
     "mktCost": 19
   },
   {
@@ -1288,7 +1286,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.7,
     "stl": 1.2,
     "blk": 1,
-    "adp": 18.2,
+    "adp": 18.7,
     "mktCost": 31
   },
   {
@@ -1313,7 +1311,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.1,
     "stl": 1.8,
     "blk": 0.5,
-    "adp": 80.8,
+    "adp": 79.9,
     "mktCost": 19
   },
   {
@@ -1343,32 +1341,6 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 55,
-    "name": "Brandon Ingram",
-    "pos": [
-      "SG",
-      "SF",
-      "PF"
-    ],
-    "team": "LAC",
-    "gp": 72,
-    "mpg": 34.1,
-    "fgPct": 0.474,
-    "fgm": 0.83,
-    "fga": 1.75,
-    "ftPct": 0.826,
-    "ftm": 0.37,
-    "fta": 0.44,
-    "tpm": 0.19,
-    "pts": 2.21,
-    "treb": 0.57,
-    "ast": 0.41,
-    "stl": 0.08,
-    "blk": 0.07,
-    "adp": 64.3,
-    "mktCost": 14
-  },
-  {
-    "rk": 56,
     "name": "Kel'el Ware",
     "pos": [
       "C"
@@ -1388,11 +1360,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.1,
     "stl": 0.9,
     "blk": 1.4,
-    "adp": 72,
+    "adp": 74.3,
     "mktCost": 18
   },
   {
-    "rk": 57,
+    "rk": 56,
     "name": "Damian Lillard",
     "pos": [
       "PG"
@@ -1412,11 +1384,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5,
     "stl": 0.9,
     "blk": 0.1,
-    "adp": 68.9,
+    "adp": 66.1,
     "mktCost": 18
   },
   {
-    "rk": 58,
+    "rk": 57,
     "name": "Cameron Boozer",
     "pos": [
       "PF"
@@ -1436,11 +1408,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.9,
     "stl": 1.1,
     "blk": 0.6,
-    "adp": 57.8,
+    "adp": 57.1,
     "mktCost": 17
   },
   {
-    "rk": 59,
+    "rk": 58,
     "name": "Kon Knueppel",
     "pos": [
       "SG",
@@ -1461,11 +1433,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 0.7,
     "blk": 0.2,
-    "adp": 39.5,
+    "adp": 42,
     "mktCost": 17
   },
   {
-    "rk": 60,
+    "rk": 59,
     "name": "OG Anunoby",
     "pos": [
       "SF",
@@ -1486,35 +1458,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.1,
     "stl": 1.5,
     "blk": 0.8,
-    "adp": 66.5,
+    "adp": 66.9,
     "mktCost": 17
   },
   {
-    "rk": 61,
-    "name": "Kristaps Porzingis",
-    "pos": [
-      "C"
-    ],
-    "team": "GS",
-    "gp": 51,
-    "mpg": 26,
-    "fgPct": 0.468,
-    "fgm": 0.6,
-    "fga": 1.28,
-    "ftPct": 0.823,
-    "ftm": 0.39,
-    "fta": 0.47,
-    "tpm": 0.21,
-    "pts": 1.79,
-    "treb": 0.6,
-    "ast": 0.22,
-    "stl": 0.07,
-    "blk": 0.13,
-    "adp": 100,
-    "mktCost": 10
-  },
-  {
-    "rk": 62,
+    "rk": 60,
     "name": "Ryan Rollins",
     "pos": [
       "PG",
@@ -1535,11 +1483,37 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.9,
     "stl": 1.5,
     "blk": 0.5,
-    "adp": 76.3,
+    "adp": 78.8,
     "mktCost": 16
   },
   {
-    "rk": 63,
+    "rk": 61,
+    "name": "Brandon Ingram",
+    "pos": [
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "team": "LAC",
+    "gp": 42,
+    "mpg": 34.1,
+    "fgPct": 0.474,
+    "fgm": 8,
+    "fga": 16.9,
+    "ftPct": 0.825,
+    "ftm": 3.5,
+    "fta": 4.3,
+    "tpm": 1.9,
+    "pts": 21.4,
+    "treb": 5.5,
+    "ast": 3.9,
+    "stl": 0.8,
+    "blk": 0.7,
+    "adp": 62.7,
+    "mktCost": 14
+  },
+  {
+    "rk": 62,
     "name": "Jimmy Butler III",
     "pos": [
       "SF",
@@ -1560,11 +1534,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.6,
     "stl": 1.3,
     "blk": 0.3,
-    "adp": 117.3,
+    "adp": 116.2,
     "mktCost": 14
   },
   {
-    "rk": 64,
+    "rk": 63,
     "name": "Michael Porter Jr.",
     "pos": [
       "SF",
@@ -1585,11 +1559,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 0.8,
     "blk": 0.4,
-    "adp": 60.2,
+    "adp": 58.9,
     "mktCost": 16
   },
   {
-    "rk": 65,
+    "rk": 64,
     "name": "Donovan Clingan",
     "pos": [
       "C"
@@ -1609,11 +1583,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.6,
     "blk": 1.8,
-    "adp": 40.9,
+    "adp": 42.2,
     "mktCost": 16
   },
   {
-    "rk": 66,
+    "rk": 65,
     "name": "Ty Jerome",
     "pos": [
       "PG",
@@ -1634,11 +1608,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.2,
     "stl": 1.3,
     "blk": 0.2,
-    "adp": 109.5,
+    "adp": 113.2,
     "mktCost": 16
   },
   {
-    "rk": 67,
+    "rk": 66,
     "name": "Onyeka Okongwu",
     "pos": [
       "C"
@@ -1658,11 +1632,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.9,
     "stl": 1.1,
     "blk": 1.1,
-    "adp": 54.5,
+    "adp": 54.8,
     "mktCost": 16
   },
   {
-    "rk": 68,
+    "rk": 67,
     "name": "Deni Avdija",
     "pos": [
       "SG",
@@ -1684,11 +1658,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5,
     "stl": 0.9,
     "blk": 0.5,
-    "adp": 39.4,
+    "adp": 40,
     "mktCost": 16
   },
   {
-    "rk": 69,
+    "rk": 68,
     "name": "Zach LaVine",
     "pos": [
       "PG",
@@ -1710,11 +1684,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.4,
     "stl": 0.7,
     "blk": 0.2,
-    "adp": 105.1,
+    "adp": 102.3,
     "mktCost": 16
   },
   {
-    "rk": 70,
+    "rk": 69,
     "name": "Jaylen Brown",
     "pos": [
       "SG",
@@ -1736,11 +1710,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.4,
     "stl": 1.1,
     "blk": 0.5,
-    "adp": 28.2,
+    "adp": 27,
     "mktCost": 29
   },
   {
-    "rk": 71,
+    "rk": 70,
     "name": "Pascal Siakam",
     "pos": [
       "PF",
@@ -1761,11 +1735,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.8,
     "stl": 1.1,
     "blk": 0.5,
-    "adp": 49.1,
+    "adp": 49.5,
     "mktCost": 15
   },
   {
-    "rk": 72,
+    "rk": 71,
     "name": "De'Aaron Fox",
     "pos": [
       "PG"
@@ -1785,11 +1759,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.8,
     "stl": 1.2,
     "blk": 0.3,
-    "adp": 80.2,
+    "adp": 80.1,
     "mktCost": 15
   },
   {
-    "rk": 73,
+    "rk": 72,
     "name": "Dyson Daniels",
     "pos": [
       "SG",
@@ -1810,11 +1784,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.7,
     "stl": 2.2,
     "blk": 0.6,
-    "adp": 61.9,
+    "adp": 63.6,
     "mktCost": 15
   },
   {
-    "rk": 74,
+    "rk": 73,
     "name": "Ivica Zubac",
     "pos": [
       "C"
@@ -1834,11 +1808,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 0.6,
     "blk": 1,
-    "adp": 65.1,
+    "adp": 64.7,
     "mktCost": 15
   },
   {
-    "rk": 75,
+    "rk": 74,
     "name": "Jaden McDaniels",
     "pos": [
       "SF"
@@ -1858,11 +1832,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.7,
     "stl": 1.1,
     "blk": 1,
-    "adp": 88.3,
+    "adp": 90.2,
     "mktCost": 15
   },
   {
-    "rk": 76,
+    "rk": 75,
     "name": "Ja Morant",
     "pos": [
       "PG"
@@ -1886,7 +1860,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 15
   },
   {
-    "rk": 77,
+    "rk": 76,
     "name": "John Collins",
     "pos": [
       "PF",
@@ -1907,11 +1881,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.4,
     "stl": 0.9,
     "blk": 0.9,
-    "adp": 116.8,
+    "adp": 116.2,
     "mktCost": 15
   },
   {
-    "rk": 78,
+    "rk": 77,
     "name": "Naz Reid",
     "pos": [
       "PF",
@@ -1932,11 +1906,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.6,
     "stl": 1,
     "blk": 1.1,
-    "adp": 63.1,
+    "adp": 62.2,
     "mktCost": 14
   },
   {
-    "rk": 79,
+    "rk": 78,
     "name": "Keyonte George",
     "pos": [
       "PG",
@@ -1957,11 +1931,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.1,
     "stl": 0.9,
     "blk": 0.2,
-    "adp": 56,
+    "adp": 56.7,
     "mktCost": 14
   },
   {
-    "rk": 80,
+    "rk": 79,
     "name": "Immanuel Quickley",
     "pos": [
       "PG",
@@ -1982,11 +1956,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.2,
     "stl": 1.2,
     "blk": 0.1,
-    "adp": 97,
+    "adp": 96.9,
     "mktCost": 14
   },
   {
-    "rk": 81,
+    "rk": 80,
     "name": "Day'Ron Sharpe",
     "pos": [
       "C"
@@ -2006,11 +1980,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3,
     "stl": 1.4,
     "blk": 0.9,
-    "adp": 94.8,
+    "adp": 94.5,
     "mktCost": 14
   },
   {
-    "rk": 82,
+    "rk": 81,
     "name": "Coby White",
     "pos": [
       "PG",
@@ -2031,11 +2005,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.7,
     "stl": 0.8,
     "blk": 0.2,
-    "adp": 88.4,
+    "adp": 88.9,
     "mktCost": 13
   },
   {
-    "rk": 83,
+    "rk": 82,
     "name": "Jarrett Allen",
     "pos": [
       "C"
@@ -2055,11 +2029,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.8,
     "stl": 0.9,
     "blk": 0.8,
-    "adp": 70.9,
+    "adp": 69.4,
     "mktCost": 12
   },
   {
-    "rk": 84,
+    "rk": 83,
     "name": "Josh Hart",
     "pos": [
       "SG",
@@ -2080,11 +2054,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5,
     "stl": 1.3,
     "blk": 0.3,
-    "adp": 96.4,
+    "adp": 96,
     "mktCost": 12
   },
   {
-    "rk": 85,
+    "rk": 84,
     "name": "VJ Edgecombe",
     "pos": [
       "PG",
@@ -2105,11 +2079,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.1,
     "stl": 1.4,
     "blk": 0.5,
-    "adp": 75.7,
+    "adp": 73.4,
     "mktCost": 12
   },
   {
-    "rk": 86,
+    "rk": 85,
     "name": "Paolo Banchero",
     "pos": [
       "PF"
@@ -2129,11 +2103,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.2,
     "stl": 0.8,
     "blk": 0.6,
-    "adp": 33.9,
+    "adp": 34.3,
     "mktCost": 18
   },
   {
-    "rk": 87,
+    "rk": 86,
     "name": "Julius Randle",
     "pos": [
       "PF"
@@ -2153,8 +2127,32 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.6,
     "stl": 0.9,
     "blk": 0.2,
-    "adp": 68.4,
+    "adp": 68.6,
     "mktCost": 12
+  },
+  {
+    "rk": 87,
+    "name": "Kristaps Porzingis",
+    "pos": [
+      "C"
+    ],
+    "team": "GS",
+    "gp": 42,
+    "mpg": 24.2,
+    "fgPct": 0.467,
+    "fgm": 5.5,
+    "fga": 11.8,
+    "ftPct": 0.822,
+    "ftm": 3.6,
+    "fta": 4.4,
+    "tpm": 1.9,
+    "pts": 16.5,
+    "treb": 5.5,
+    "ast": 2.1,
+    "stl": 0.6,
+    "blk": 1.2,
+    "adp": 98.5,
+    "mktCost": 10
   },
   {
     "rk": 88,
@@ -2179,7 +2177,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.8,
     "stl": 1.1,
     "blk": 1,
-    "adp": 102,
+    "adp": 99.6,
     "mktCost": 12
   },
   {
@@ -2204,7 +2202,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4,
     "stl": 1.4,
     "blk": 0.3,
-    "adp": 115.4,
+    "adp": 117.7,
     "mktCost": 11
   },
   {
@@ -2228,11 +2226,35 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 1,
     "blk": 1,
-    "adp": 121.4,
+    "adp": 121.3,
     "mktCost": 11
   },
   {
     "rk": 91,
+    "name": "Isaiah Hartenstein",
+    "pos": [
+      "C"
+    ],
+    "team": "OKC",
+    "gp": 68,
+    "mpg": 26.4,
+    "fgPct": 0.597,
+    "fgm": 4.5,
+    "fga": 7.6,
+    "ftPct": 0.645,
+    "ftm": 1.4,
+    "fta": 2.2,
+    "tpm": 0,
+    "pts": 10.5,
+    "treb": 10.3,
+    "ast": 3.8,
+    "stl": 0.9,
+    "blk": 1,
+    "adp": 105.8,
+    "mktCost": 11
+  },
+  {
+    "rk": 92,
     "name": "Derik Queen",
     "pos": [
       "PF",
@@ -2253,31 +2275,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4,
     "stl": 1.1,
     "blk": 1,
-    "adp": 77.4,
-    "mktCost": 11
-  },
-  {
-    "rk": 92,
-    "name": "Isaiah Hartenstein",
-    "pos": [
-      "C"
-    ],
-    "team": "OKC",
-    "gp": 68,
-    "mpg": 26.4,
-    "fgPct": 0.597,
-    "fgm": 4.5,
-    "fga": 7.6,
-    "ftPct": 0.645,
-    "ftm": 1.4,
-    "fta": 2.2,
-    "tpm": 0,
-    "pts": 10.5,
-    "treb": 10.3,
-    "ast": 3.8,
-    "stl": 0.9,
-    "blk": 1,
-    "adp": 105.6,
+    "adp": 81.9,
     "mktCost": 11
   },
   {
@@ -2301,7 +2299,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.7,
     "stl": 0.8,
     "blk": 0.2,
-    "adp": 79,
+    "adp": 80,
     "mktCost": 11
   },
   {
@@ -2326,7 +2324,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.2,
     "stl": 1.1,
     "blk": 0.2,
-    "adp": 92.7,
+    "adp": 92,
     "mktCost": 11
   },
   {
@@ -2351,7 +2349,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.9,
     "stl": 0.8,
     "blk": 0.4,
-    "adp": 113.9,
+    "adp": null,
     "mktCost": 11
   },
   {
@@ -2375,7 +2373,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.5,
     "stl": 0.7,
     "blk": 1.8,
-    "adp": 99.8,
+    "adp": 100.4,
     "mktCost": 10
   },
   {
@@ -2400,7 +2398,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.5,
     "stl": 0.9,
     "blk": 1.1,
-    "adp": 120.7,
+    "adp": 120.4,
     "mktCost": 10
   },
   {
@@ -2425,7 +2423,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.9,
     "stl": 1.1,
     "blk": 0.7,
-    "adp": 70.3,
+    "adp": 69,
     "mktCost": 10
   },
   {
@@ -2451,7 +2449,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.2,
     "stl": 2.2,
     "blk": 1,
-    "adp": 89,
+    "adp": 88.2,
     "mktCost": 10
   },
   {
@@ -2475,7 +2473,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.6,
     "stl": 0.7,
     "blk": 1.3,
-    "adp": 114.2,
+    "adp": 116.9,
     "mktCost": 9
   },
   {
@@ -2500,7 +2498,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.1,
     "stl": 1,
     "blk": 0.5,
-    "adp": 85,
+    "adp": 84.4,
     "mktCost": 9
   },
   {
@@ -2524,7 +2522,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 0.7,
     "stl": 0.5,
     "blk": 1.9,
-    "adp": 121.2,
+    "adp": 119,
     "mktCost": 9
   },
   {
@@ -2573,7 +2571,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.4,
     "stl": 0.6,
     "blk": 0.5,
-    "adp": 98,
+    "adp": 98.2,
     "mktCost": 8
   },
   {
@@ -2599,7 +2597,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.9,
     "stl": 2.1,
     "blk": 0.5,
-    "adp": 118,
+    "adp": 118.3,
     "mktCost": 8
   },
   {
@@ -2624,7 +2622,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.1,
     "stl": 0.9,
     "blk": 0.6,
-    "adp": 118.1,
+    "adp": 120.3,
     "mktCost": 8
   },
   {
@@ -2648,7 +2646,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.7,
     "stl": 0.8,
     "blk": 1.8,
-    "adp": 71.4,
+    "adp": 72.4,
     "mktCost": 8
   },
   {
@@ -2672,7 +2670,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.7,
     "stl": 0.8,
     "blk": 1.5,
-    "adp": 72.9,
+    "adp": 72.3,
     "mktCost": 9
   },
   {
@@ -2697,7 +2695,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 1.2,
     "blk": 1.2,
-    "adp": 115.8,
+    "adp": 115.5,
     "mktCost": 8
   },
   {
@@ -2747,7 +2745,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.1,
     "stl": 1.2,
     "blk": 0.2,
-    "adp": 116.5,
+    "adp": 117.3,
     "mktCost": 7
   },
   {
@@ -2771,7 +2769,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2,
     "stl": 1.2,
     "blk": 1,
-    "adp": 79.6,
+    "adp": 79.3,
     "mktCost": 7
   },
   {
@@ -2796,7 +2794,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.1,
     "stl": 0.7,
     "blk": 0.5,
-    "adp": 89.7,
+    "adp": 87.4,
     "mktCost": 8
   },
   {
@@ -2821,7 +2819,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.3,
     "stl": 1.1,
     "blk": 0.2,
-    "adp": 112.2,
+    "adp": 119.2,
     "mktCost": 7
   },
   {
@@ -2847,7 +2845,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.6,
     "stl": 0.9,
     "blk": 0.4,
-    "adp": 120.5,
+    "adp": 119.9,
     "mktCost": 7
   },
   {
@@ -2872,7 +2870,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.6,
     "stl": 0.7,
     "blk": 0.9,
-    "adp": 94.5,
+    "adp": 93.4,
     "mktCost": 7
   },
   {
@@ -2897,7 +2895,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5.7,
     "stl": 1.2,
     "blk": 0.9,
-    "adp": 109.5,
+    "adp": 106.9,
     "mktCost": 7
   },
   {
@@ -2922,7 +2920,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.8,
     "stl": 1.5,
     "blk": 0.3,
-    "adp": 117.8,
+    "adp": 120.1,
     "mktCost": 6
   },
   {
@@ -2947,7 +2945,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 1,
     "blk": 0.4,
-    "adp": 121.5,
+    "adp": 119.9,
     "mktCost": 6
   },
   {
@@ -2972,7 +2970,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.3,
     "stl": 1.5,
     "blk": 0.7,
-    "adp": 120.2,
+    "adp": 121.5,
     "mktCost": 6
   },
   {
@@ -3022,7 +3020,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.7,
     "stl": 1.3,
     "blk": 1.2,
-    "adp": 117.6,
+    "adp": 114.6,
     "mktCost": 5
   },
   {
@@ -3047,7 +3045,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.6,
     "stl": 1,
     "blk": 0.3,
-    "adp": 117.6,
+    "adp": 116.9,
     "mktCost": 5
   },
   {
@@ -3072,7 +3070,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 1.3,
     "blk": 0.5,
-    "adp": 111,
+    "adp": 109.2,
     "mktCost": 5
   },
   {
@@ -3097,11 +3095,35 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.4,
     "stl": 1.2,
     "blk": 0.2,
-    "adp": 120.8,
+    "adp": 119,
     "mktCost": 4
   },
   {
     "rk": 126,
+    "name": "Yaxel Lendeborg",
+    "pos": [
+      "PF"
+    ],
+    "team": "GS",
+    "gp": 72,
+    "mpg": 27.5,
+    "fgPct": 0.498,
+    "fgm": 3.5,
+    "fga": 7,
+    "ftPct": 0.828,
+    "ftm": 2.4,
+    "fta": 2.9,
+    "tpm": 1.2,
+    "pts": 10.5,
+    "treb": 6,
+    "ast": 2.2,
+    "stl": 0.8,
+    "blk": 0.8,
+    "adp": 116.2,
+    "mktCost": 4
+  },
+  {
+    "rk": 127,
     "name": "Cam Spencer",
     "pos": [
       "PG",
@@ -3126,7 +3148,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 4
   },
   {
-    "rk": 127,
+    "rk": 128,
     "name": "Devin Vassell",
     "pos": [
       "SG",
@@ -3147,11 +3169,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.7,
     "stl": 1.1,
     "blk": 0.4,
-    "adp": 116.5,
+    "adp": 116.1,
     "mktCost": 4
   },
   {
-    "rk": 128,
+    "rk": 129,
     "name": "Jalen Green",
     "pos": [
       "SG",
@@ -3172,11 +3194,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.3,
     "stl": 0.9,
     "blk": 0.3,
-    "adp": 103.9,
+    "adp": 102.1,
     "mktCost": 4
   },
   {
-    "rk": 129,
+    "rk": 130,
     "name": "Andrew Nembhard",
     "pos": [
       "PG",
@@ -3197,11 +3219,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.4,
     "stl": 1.1,
     "blk": 0.2,
-    "adp": 115,
+    "adp": 113.6,
     "mktCost": 4
   },
   {
-    "rk": 130,
+    "rk": 131,
     "name": "DeMar DeRozan",
     "pos": [
       "SF",
@@ -3222,32 +3244,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.3,
     "stl": 0.9,
     "blk": 0.4,
-    "adp": 116.6,
-    "mktCost": 4
-  },
-  {
-    "rk": 131,
-    "name": "Egor Demin",
-    "pos": [
-      "PG",
-      "SG"
-    ],
-    "team": "BKN",
-    "gp": 69,
-    "mpg": 29.5,
-    "fgPct": 0.418,
-    "fgm": 4.6,
-    "fga": 11.1,
-    "ftPct": 0.826,
-    "ftm": 1.3,
-    "fta": 1.6,
-    "tpm": 2.6,
-    "pts": 13.2,
-    "treb": 3.7,
-    "ast": 4,
-    "stl": 1,
-    "blk": 0.4,
-    "adp": 120.5,
+    "adp": 115.3,
     "mktCost": 4
   },
   {
@@ -3272,11 +3269,36 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.9,
     "stl": 0.8,
     "blk": 0.4,
-    "adp": 108.5,
+    "adp": 108.1,
     "mktCost": 4
   },
   {
     "rk": 133,
+    "name": "Egor Demin",
+    "pos": [
+      "PG",
+      "SG"
+    ],
+    "team": "BKN",
+    "gp": 69,
+    "mpg": 29.5,
+    "fgPct": 0.418,
+    "fgm": 4.6,
+    "fga": 11.1,
+    "ftPct": 0.826,
+    "ftm": 1.3,
+    "fta": 1.6,
+    "tpm": 2.6,
+    "pts": 13.2,
+    "treb": 3.7,
+    "ast": 4,
+    "stl": 1,
+    "blk": 0.4,
+    "adp": 119.3,
+    "mktCost": 4
+  },
+  {
+    "rk": 134,
     "name": "Jusuf Nurkic",
     "pos": [
       "C"
@@ -3296,11 +3318,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.9,
     "stl": 1.1,
     "blk": 0.7,
-    "adp": 113.2,
+    "adp": 112.5,
     "mktCost": 4
   },
   {
-    "rk": 134,
+    "rk": 135,
     "name": "Aaron Nesmith",
     "pos": [
       "SG",
@@ -3321,11 +3343,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.8,
     "stl": 0.8,
     "blk": 0.5,
-    "adp": 106.5,
+    "adp": 110.4,
     "mktCost": 3
   },
   {
-    "rk": 135,
+    "rk": 136,
     "name": "Stephon Castle",
     "pos": [
       "PG",
@@ -3346,11 +3368,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.3,
     "stl": 1.2,
     "blk": 0.3,
-    "adp": 55.3,
+    "adp": 53.8,
     "mktCost": 7
   },
   {
-    "rk": 136,
+    "rk": 137,
     "name": "Saddiq Bey",
     "pos": [
       "SF",
@@ -3371,11 +3393,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 0.9,
     "blk": 0.1,
-    "adp": 120.7,
+    "adp": 119.7,
     "mktCost": 3
   },
   {
-    "rk": 137,
+    "rk": 138,
     "name": "Anthony Black",
     "pos": [
       "PG",
@@ -3401,7 +3423,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 3
   },
   {
-    "rk": 138,
+    "rk": 139,
     "name": "Kyshawn George",
     "pos": [
       "SG",
@@ -3423,31 +3445,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 1.1,
     "blk": 0.9,
-    "adp": 117.3,
-    "mktCost": 3
-  },
-  {
-    "rk": 139,
-    "name": "Fred VanVleet",
-    "pos": [
-      "PG"
-    ],
-    "team": "HOU",
-    "gp": 60,
-    "mpg": 31.2,
-    "fgPct": 0.378,
-    "fgm": 4.3,
-    "fga": 11.3,
-    "ftPct": 0.814,
-    "ftm": 1.7,
-    "fta": 2,
-    "tpm": 2.4,
-    "pts": 12.6,
-    "treb": 3.3,
-    "ast": 5,
-    "stl": 1.4,
-    "blk": 0.4,
-    "adp": 119.1,
+    "adp": 118.8,
     "mktCost": 3
   },
   {
@@ -3473,11 +3471,35 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.4,
     "stl": 1,
     "blk": 0.3,
-    "adp": 103.5,
+    "adp": 109.1,
     "mktCost": 3
   },
   {
     "rk": 141,
+    "name": "Fred VanVleet",
+    "pos": [
+      "PG"
+    ],
+    "team": "HOU",
+    "gp": 60,
+    "mpg": 31.2,
+    "fgPct": 0.378,
+    "fgm": 4.3,
+    "fga": 11.3,
+    "ftPct": 0.814,
+    "ftm": 1.7,
+    "fta": 2,
+    "tpm": 2.4,
+    "pts": 12.6,
+    "treb": 3.3,
+    "ast": 5,
+    "stl": 1.4,
+    "blk": 0.4,
+    "adp": 118.5,
+    "mktCost": 3
+  },
+  {
+    "rk": 142,
     "name": "P.J. Washington",
     "pos": [
       "PF",
@@ -3498,32 +3520,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2,
     "stl": 1,
     "blk": 1,
-    "adp": 117.2,
-    "mktCost": 3
-  },
-  {
-    "rk": 142,
-    "name": "Malik Monk",
-    "pos": [
-      "PG",
-      "SG"
-    ],
-    "team": "SAC",
-    "gp": 68,
-    "mpg": 26.2,
-    "fgPct": 0.439,
-    "fgm": 5.3,
-    "fga": 12.2,
-    "ftPct": 0.869,
-    "ftm": 1.9,
-    "fta": 2.2,
-    "tpm": 2,
-    "pts": 14.6,
-    "treb": 2.8,
-    "ast": 4.2,
-    "stl": 0.8,
-    "blk": 0.5,
-    "adp": null,
+    "adp": 115.5,
     "mktCost": 3
   },
   {
@@ -3548,11 +3545,36 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.9,
     "blk": 1.4,
-    "adp": 115.6,
+    "adp": 115.2,
     "mktCost": 2
   },
   {
     "rk": 144,
+    "name": "Malik Monk",
+    "pos": [
+      "PG",
+      "SG"
+    ],
+    "team": "SAC",
+    "gp": 68,
+    "mpg": 26.2,
+    "fgPct": 0.439,
+    "fgm": 5.3,
+    "fga": 12.2,
+    "ftPct": 0.869,
+    "ftm": 1.9,
+    "fta": 2.2,
+    "tpm": 2,
+    "pts": 14.6,
+    "treb": 2.8,
+    "ast": 4.2,
+    "stl": 0.8,
+    "blk": 0.5,
+    "adp": null,
+    "mktCost": 3
+  },
+  {
+    "rk": 145,
     "name": "Robert Williams III",
     "pos": [
       "C"
@@ -3576,7 +3598,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 2
   },
   {
-    "rk": 145,
+    "rk": 146,
     "name": "Ayo Dosunmu",
     "pos": [
       "PG",
@@ -3597,11 +3619,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.7,
     "stl": 0.8,
     "blk": 0.3,
-    "adp": 114.3,
+    "adp": 115.7,
     "mktCost": 2
   },
   {
-    "rk": 146,
+    "rk": 147,
     "name": "Aaron Gordon",
     "pos": [
       "PF",
@@ -3622,33 +3644,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3,
     "stl": 0.5,
     "blk": 0.3,
-    "adp": 112.5,
-    "mktCost": 2
-  },
-  {
-    "rk": 147,
-    "name": "Tari Eason",
-    "pos": [
-      "SG",
-      "SF",
-      "PF"
-    ],
-    "team": "HOU",
-    "gp": 60,
-    "mpg": 24.2,
-    "fgPct": 0.45,
-    "fgm": 4.2,
-    "fga": 9.4,
-    "ftPct": 0.766,
-    "ftm": 1.1,
-    "fta": 1.4,
-    "tpm": 1.3,
-    "pts": 10.8,
-    "treb": 6.1,
-    "ast": 1.4,
-    "stl": 1.4,
-    "blk": 0.6,
-    "adp": 116.8,
+    "adp": 112.2,
     "mktCost": 2
   },
   {
@@ -3672,11 +3668,37 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1,
     "stl": 1.1,
     "blk": 1.4,
-    "adp": 108,
+    "adp": 106.9,
     "mktCost": 2
   },
   {
     "rk": 149,
+    "name": "Tari Eason",
+    "pos": [
+      "SG",
+      "SF",
+      "PF"
+    ],
+    "team": "HOU",
+    "gp": 60,
+    "mpg": 24.2,
+    "fgPct": 0.45,
+    "fgm": 4.2,
+    "fga": 9.4,
+    "ftPct": 0.766,
+    "ftm": 1.1,
+    "fta": 1.4,
+    "tpm": 1.3,
+    "pts": 10.8,
+    "treb": 6.1,
+    "ast": 1.4,
+    "stl": 1.4,
+    "blk": 0.6,
+    "adp": 118.3,
+    "mktCost": 2
+  },
+  {
+    "rk": 150,
     "name": "Bobby Portis",
     "pos": [
       "PF",
@@ -3697,11 +3719,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.7,
     "blk": 0.3,
-    "adp": 111.9,
+    "adp": 111.8,
     "mktCost": 1
   },
   {
-    "rk": 150,
+    "rk": 151,
     "name": "Nicolas Claxton",
     "pos": [
       "C"
@@ -3721,11 +3743,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.1,
     "stl": 0.8,
     "blk": 1.3,
-    "adp": 90.6,
+    "adp": 89.5,
     "mktCost": 3
   },
   {
-    "rk": 151,
+    "rk": 152,
     "name": "Darryn Peterson",
     "pos": [
       "SG"
@@ -3745,11 +3767,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3,
     "stl": 1.1,
     "blk": 0.5,
-    "adp": 99.3,
+    "adp": 101.6,
     "mktCost": 10
   },
   {
-    "rk": 152,
+    "rk": 153,
     "name": "Wendell Carter Jr.",
     "pos": [
       "C"
@@ -3769,11 +3791,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.1,
     "stl": 0.8,
     "blk": 0.7,
-    "adp": 112,
+    "adp": 114.4,
     "mktCost": 2
   },
   {
-    "rk": 153,
+    "rk": 154,
     "name": "Grayson Allen",
     "pos": [
       "SG",
@@ -3794,11 +3816,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.8,
     "stl": 1,
     "blk": 0.3,
-    "adp": 115,
+    "adp": 115.5,
     "mktCost": 1
   },
   {
-    "rk": 154,
+    "rk": 155,
     "name": "Tobias Harris",
     "pos": [
       "PF"
@@ -3818,11 +3840,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.1,
     "stl": 0.9,
     "blk": 0.5,
-    "adp": 113.9,
+    "adp": 113.8,
     "mktCost": 1
   },
   {
-    "rk": 155,
+    "rk": 156,
     "name": "Dereck Lively II",
     "pos": [
       "C"
@@ -3846,7 +3868,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 156,
+    "rk": 157,
     "name": "Isaiah Stewart",
     "pos": [
       "PF",
@@ -3867,11 +3889,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.6,
     "stl": 0.4,
     "blk": 1.5,
-    "adp": 111.9,
+    "adp": 113.3,
     "mktCost": 1
   },
   {
-    "rk": 157,
+    "rk": 158,
     "name": "Santi Aldama",
     "pos": [
       "PF"
@@ -3895,7 +3917,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 158,
+    "rk": 159,
     "name": "Jaylin Williams",
     "pos": [
       "PF",
@@ -3920,7 +3942,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 159,
+    "rk": 160,
     "name": "Naji Marshall",
     "pos": [
       "SG",
@@ -3946,7 +3968,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 160,
+    "rk": 161,
     "name": "RJ Barrett",
     "pos": [
       "SG",
@@ -3968,32 +3990,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 4.5,
     "stl": 0.8,
     "blk": 0.3,
-    "adp": 111.5,
-    "mktCost": 1
-  },
-  {
-    "rk": 161,
-    "name": "Collin Sexton",
-    "pos": [
-      "PG",
-      "SG"
-    ],
-    "team": "LAL",
-    "gp": 70,
-    "mpg": 25.4,
-    "fgPct": 0.483,
-    "fgm": 5.1,
-    "fga": 10.6,
-    "ftPct": 0.862,
-    "ftm": 2.9,
-    "fta": 3.3,
-    "tpm": 1.5,
-    "pts": 14.6,
-    "treb": 2.2,
-    "ast": 3.2,
-    "stl": 0.8,
-    "blk": 0.1,
-    "adp": 118.9,
+    "adp": 111.9,
     "mktCost": 1
   },
   {
@@ -4023,6 +4020,31 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 163,
+    "name": "Collin Sexton",
+    "pos": [
+      "PG",
+      "SG"
+    ],
+    "team": "LAL",
+    "gp": 70,
+    "mpg": 25.4,
+    "fgPct": 0.483,
+    "fgm": 5.1,
+    "fga": 10.6,
+    "ftPct": 0.862,
+    "ftm": 2.9,
+    "fta": 3.3,
+    "tpm": 1.5,
+    "pts": 14.6,
+    "treb": 2.2,
+    "ast": 3.2,
+    "stl": 0.8,
+    "blk": 0.1,
+    "adp": 118,
+    "mktCost": 1
+  },
+  {
+    "rk": 164,
     "name": "Isaiah Joe",
     "pos": [
       "SG",
@@ -4047,7 +4069,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 164,
+    "rk": 165,
     "name": "Bradley Beal",
     "pos": [
       "SG",
@@ -4072,7 +4094,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 165,
+    "rk": 166,
     "name": "Julian Champagnie",
     "pos": [
       "SF",
@@ -4093,11 +4115,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.5,
     "stl": 0.8,
     "blk": 0.5,
-    "adp": 109.2,
+    "adp": 109.3,
     "mktCost": 1
   },
   {
-    "rk": 166,
+    "rk": 167,
     "name": "Obi Toppin",
     "pos": [
       "SF",
@@ -4122,7 +4144,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 167,
+    "rk": 168,
     "name": "Davion Mitchell",
     "pos": [
       "PG"
@@ -4142,11 +4164,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 6.2,
     "stl": 1.1,
     "blk": 0.2,
-    "adp": 118.6,
+    "adp": 117.8,
     "mktCost": 1
   },
   {
-    "rk": 168,
+    "rk": 169,
     "name": "Herbert Jones",
     "pos": [
       "SG",
@@ -4171,7 +4193,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 169,
+    "rk": 170,
     "name": "Moussa Diabaté",
     "pos": [
       "C"
@@ -4191,11 +4213,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.6,
     "stl": 0.8,
     "blk": 0.9,
-    "adp": 113,
+    "adp": 114.1,
     "mktCost": 1
   },
   {
-    "rk": 170,
+    "rk": 171,
     "name": "Scotty Pippen Jr.",
     "pos": [
       "PG"
@@ -4219,7 +4241,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 171,
+    "rk": 172,
     "name": "Yanic Konan Niederhauser",
     "pos": [
       "C"
@@ -4239,31 +4261,6 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 0.6,
     "stl": 0.3,
     "blk": 1.5,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 172,
-    "name": "De'Anthony Melton",
-    "pos": [
-      "PG",
-      "SG"
-    ],
-    "team": "GS",
-    "gp": 55,
-    "mpg": 22.2,
-    "fgPct": 0.407,
-    "fgm": 4.3,
-    "fga": 10.5,
-    "ftPct": 0.815,
-    "ftm": 1.9,
-    "fta": 2.3,
-    "tpm": 1.5,
-    "pts": 11.9,
-    "treb": 3.2,
-    "ast": 2.6,
-    "stl": 1.5,
-    "blk": 0.4,
     "adp": null,
     "mktCost": 1
   },
@@ -4289,11 +4286,36 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.9,
     "blk": 0.7,
-    "adp": 118.1,
+    "adp": 118,
     "mktCost": 1
   },
   {
     "rk": 174,
+    "name": "De'Anthony Melton",
+    "pos": [
+      "PG",
+      "SG"
+    ],
+    "team": "GS",
+    "gp": 55,
+    "mpg": 22.2,
+    "fgPct": 0.407,
+    "fgm": 4.3,
+    "fga": 10.5,
+    "ftPct": 0.815,
+    "ftm": 1.9,
+    "fta": 2.3,
+    "tpm": 1.5,
+    "pts": 11.9,
+    "treb": 3.2,
+    "ast": 2.6,
+    "stl": 1.5,
+    "blk": 0.4,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 175,
     "name": "Daniss Jenkins",
     "pos": [
       "PG",
@@ -4314,31 +4336,6 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 5,
     "stl": 1.1,
     "blk": 0.3,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 175,
-    "name": "Max Christie",
-    "pos": [
-      "SG",
-      "SF"
-    ],
-    "team": "DAL",
-    "gp": 75,
-    "mpg": 30.5,
-    "fgPct": 0.435,
-    "fgm": 4,
-    "fga": 9.3,
-    "ftPct": 0.878,
-    "ftm": 1.8,
-    "fta": 2.1,
-    "tpm": 2.1,
-    "pts": 11.9,
-    "treb": 3.6,
-    "ast": 2.1,
-    "stl": 0.8,
-    "blk": 0.4,
     "adp": null,
     "mktCost": 1
   },
@@ -4364,11 +4361,36 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.5,
     "stl": 1.3,
     "blk": 0.4,
-    "adp": 115.4,
+    "adp": 114.1,
     "mktCost": 1
   },
   {
     "rk": 177,
+    "name": "Max Christie",
+    "pos": [
+      "SG",
+      "SF"
+    ],
+    "team": "DAL",
+    "gp": 75,
+    "mpg": 30.5,
+    "fgPct": 0.435,
+    "fgm": 4,
+    "fga": 9.3,
+    "ftPct": 0.878,
+    "ftm": 1.8,
+    "fta": 2.1,
+    "tpm": 2.1,
+    "pts": 11.9,
+    "treb": 3.6,
+    "ast": 2.1,
+    "stl": 0.8,
+    "blk": 0.4,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 178,
     "name": "Dillon Brooks",
     "pos": [
       "SF",
@@ -4389,11 +4411,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.7,
     "stl": 0.9,
     "blk": 0.2,
-    "adp": 115.2,
+    "adp": 114.2,
     "mktCost": 1
   },
   {
-    "rk": 178,
+    "rk": 179,
     "name": "Mikel Brown Jr.",
     "pos": [
       "PG"
@@ -4413,11 +4435,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.5,
     "stl": 0.9,
     "blk": 0.1,
-    "adp": 117.5,
+    "adp": 118,
     "mktCost": 1
   },
   {
-    "rk": 179,
+    "rk": 180,
     "name": "Max Strus",
     "pos": [
       "SF",
@@ -4442,7 +4464,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 180,
+    "rk": 181,
     "name": "Nikola Vucevic",
     "pos": [
       "C"
@@ -4462,11 +4484,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.3,
     "stl": 0.5,
     "blk": 0.5,
-    "adp": 115.1,
+    "adp": 114.2,
     "mktCost": 1
   },
   {
-    "rk": 181,
+    "rk": 182,
     "name": "Scoot Henderson",
     "pos": [
       "PG"
@@ -4490,7 +4512,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 182,
+    "rk": 183,
     "name": "Anfernee Simons",
     "pos": [
       "PG",
@@ -4511,11 +4533,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.3,
     "stl": 0.6,
     "blk": 0.1,
-    "adp": 104.1,
+    "adp": 109.6,
     "mktCost": 1
   },
   {
-    "rk": 183,
+    "rk": 184,
     "name": "Daniel Gafford",
     "pos": [
       "C"
@@ -4535,11 +4557,11 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.2,
     "stl": 0.5,
     "blk": 1.2,
-    "adp": 107.6,
+    "adp": 108.7,
     "mktCost": 1
   },
   {
-    "rk": 184,
+    "rk": 185,
     "name": "Jerami Grant",
     "pos": [
       "SF",
@@ -4560,32 +4582,8 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.9,
     "stl": 0.7,
     "blk": 0.7,
-    "adp": 117.7,
+    "adp": 118,
     "mktCost": 1
-  },
-  {
-    "rk": 185,
-    "name": "Yaxel Lendeborg",
-    "pos": [
-      "PF"
-    ],
-    "team": "GS",
-    "gp": 72,
-    "mpg": 23.5,
-    "fgPct": 0.497,
-    "fgm": 2.9,
-    "fga": 5.9,
-    "ftPct": 0.828,
-    "ftm": 2,
-    "fta": 2.4,
-    "tpm": 1,
-    "pts": 8.8,
-    "treb": 5.1,
-    "ast": 1.9,
-    "stl": 0.6,
-    "blk": 0.7,
-    "adp": 116.1,
-    "mktCost": 4
   },
   {
     "rk": 186,
@@ -4633,7 +4631,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.3,
     "stl": 0.9,
     "blk": 0.2,
-    "adp": 118.7,
+    "adp": null,
     "mktCost": 1
   },
   {
@@ -4658,7 +4656,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 0.8,
     "blk": 0.1,
-    "adp": 108.3,
+    "adp": 113.8,
     "mktCost": 1
   },
   {
@@ -4708,7 +4706,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.5,
     "stl": 0.6,
     "blk": 0.2,
-    "adp": 107.2,
+    "adp": null,
     "mktCost": 1
   },
   {
@@ -4738,30 +4736,6 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 192,
-    "name": "Darius Acuff Jr.",
-    "pos": [
-      "PG"
-    ],
-    "team": "SAC",
-    "gp": 72,
-    "mpg": 29.1,
-    "fgPct": 0.454,
-    "fgm": 5,
-    "fga": 10.9,
-    "ftPct": 0.804,
-    "ftm": 3,
-    "fta": 3.8,
-    "tpm": 1.6,
-    "pts": 14.5,
-    "treb": 1.9,
-    "ast": 5,
-    "stl": 0.6,
-    "blk": 0.2,
-    "adp": 110.1,
-    "mktCost": 3
-  },
-  {
-    "rk": 193,
     "name": "Ryan Kalkbrenner",
     "pos": [
       "C"
@@ -4785,6 +4759,30 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
+    "rk": 193,
+    "name": "Darius Acuff Jr.",
+    "pos": [
+      "PG"
+    ],
+    "team": "SAC",
+    "gp": 72,
+    "mpg": 29.1,
+    "fgPct": 0.454,
+    "fgm": 5,
+    "fga": 10.9,
+    "ftPct": 0.804,
+    "ftm": 3,
+    "fta": 3.8,
+    "tpm": 1.6,
+    "pts": 14.5,
+    "treb": 1.9,
+    "ast": 5,
+    "stl": 0.6,
+    "blk": 0.2,
+    "adp": 109.7,
+    "mktCost": 3
+  },
+  {
     "rk": 194,
     "name": "Jeremiah Fears",
     "pos": [
@@ -4806,7 +4804,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 3.2,
     "stl": 1.1,
     "blk": 0.4,
-    "adp": 117.1,
+    "adp": 118.4,
     "mktCost": 1
   },
   {
@@ -4831,7 +4829,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.4,
     "stl": 1.5,
     "blk": 0.5,
-    "adp": 104.7,
+    "adp": 106.6,
     "mktCost": 1
   },
   {
@@ -4855,7 +4853,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.2,
     "stl": 0.6,
     "blk": 0.8,
-    "adp": 107.8,
+    "adp": 108.5,
     "mktCost": 1
   },
   {
@@ -4880,7 +4878,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.1,
     "stl": 0.7,
     "blk": 0.4,
-    "adp": 107.7,
+    "adp": 109.5,
     "mktCost": 1
   },
   {
@@ -4904,7 +4902,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.2,
     "stl": 0.5,
     "blk": 0.5,
-    "adp": 118.3,
+    "adp": 118.2,
     "mktCost": 1
   },
   {
@@ -4933,31 +4931,6 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 200,
-    "name": "Sam Merrill",
-    "pos": [
-      "SG",
-      "SF"
-    ],
-    "team": "CLE",
-    "gp": 65,
-    "mpg": 25.4,
-    "fgPct": 0.436,
-    "fgm": 3.7,
-    "fga": 8.4,
-    "ftPct": 0.889,
-    "ftm": 0.8,
-    "fta": 0.9,
-    "tpm": 2.7,
-    "pts": 10.8,
-    "treb": 2.7,
-    "ast": 2.2,
-    "stl": 0.8,
-    "blk": 0.2,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 201,
     "name": "Derrick Jones Jr.",
     "pos": [
       "SF",
@@ -4978,6 +4951,31 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1,
     "stl": 1,
     "blk": 0.7,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 201,
+    "name": "Sam Merrill",
+    "pos": [
+      "SG",
+      "SF"
+    ],
+    "team": "CLE",
+    "gp": 65,
+    "mpg": 25.4,
+    "fgPct": 0.436,
+    "fgm": 3.7,
+    "fga": 8.4,
+    "ftPct": 0.889,
+    "ftm": 0.8,
+    "fta": 0.9,
+    "tpm": 2.7,
+    "pts": 10.8,
+    "treb": 2.7,
+    "ast": 2.2,
+    "stl": 0.8,
+    "blk": 0.2,
     "adp": null,
     "mktCost": 1
   },
@@ -5003,7 +5001,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.6,
     "stl": 0.8,
     "blk": 0.5,
-    "adp": 116.7,
+    "adp": 114.2,
     "mktCost": 1
   },
   {
@@ -5079,7 +5077,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.7,
     "stl": 0.6,
     "blk": 0.2,
-    "adp": 117.6,
+    "adp": 117.1,
     "mktCost": 1
   },
   {
@@ -5178,7 +5176,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.8,
     "stl": 0.9,
     "blk": 0.3,
-    "adp": 109.1,
+    "adp": 109.5,
     "mktCost": 1
   },
   {
@@ -5251,7 +5249,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.2,
     "stl": 0.5,
     "blk": 1.2,
-    "adp": 104.2,
+    "adp": 107.5,
     "mktCost": 1
   },
   {
@@ -5275,7 +5273,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 0.8,
     "stl": 0.5,
     "blk": 0.7,
-    "adp": 117.7,
+    "adp": 114,
     "mktCost": 1
   },
   {
@@ -5579,6 +5577,30 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 226,
+    "name": "Andre Drummond",
+    "pos": [
+      "C"
+    ],
+    "team": "NY",
+    "gp": 68,
+    "mpg": 20.2,
+    "fgPct": 0.483,
+    "fgm": 2.8,
+    "fga": 5.9,
+    "ftPct": 0.626,
+    "ftm": 1.1,
+    "fta": 1.8,
+    "tpm": 0.4,
+    "pts": 7.2,
+    "treb": 8.7,
+    "ast": 1.2,
+    "stl": 0.8,
+    "blk": 0.7,
+    "adp": 105.6,
+    "mktCost": 1
+  },
+  {
+    "rk": 227,
     "name": "Ja'Kobe Walter",
     "pos": [
       "PG",
@@ -5600,30 +5622,6 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 227,
-    "name": "Andre Drummond",
-    "pos": [
-      "C"
-    ],
-    "team": "NY",
-    "gp": 68,
-    "mpg": 20.2,
-    "fgPct": 0.483,
-    "fgm": 2.8,
-    "fga": 5.9,
-    "ftPct": 0.626,
-    "ftm": 1.1,
-    "fta": 1.8,
-    "tpm": 0.4,
-    "pts": 7.2,
-    "treb": 8.7,
-    "ast": 1.2,
-    "stl": 0.8,
-    "blk": 0.7,
-    "adp": 104.7,
     "mktCost": 1
   },
   {
@@ -5749,7 +5747,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.2,
     "stl": 0.7,
     "blk": 0.2,
-    "adp": 77.9,
+    "adp": 78.8,
     "mktCost": 4
   },
   {
@@ -5797,7 +5795,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 0.5,
     "stl": 0.5,
     "blk": 1.3,
-    "adp": 102.9,
+    "adp": 105.7,
     "mktCost": 1
   },
   {
@@ -5822,7 +5820,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.8,
     "stl": 0.5,
     "blk": 0.8,
-    "adp": 104.3,
+    "adp": 105.3,
     "mktCost": 1
   },
   {
@@ -5847,7 +5845,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.5,
     "stl": 0.6,
     "blk": 0.3,
-    "adp": null,
+    "adp": 111.3,
     "mktCost": 1
   },
   {
@@ -5877,30 +5875,6 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 238,
-    "name": "Jamal Shead",
-    "pos": [
-      "PG"
-    ],
-    "team": "TOR",
-    "gp": 76,
-    "mpg": 24.4,
-    "fgPct": 0.386,
-    "fgm": 2.9,
-    "fga": 7.5,
-    "ftPct": 0.781,
-    "ftm": 1.1,
-    "fta": 1.4,
-    "tpm": 1.2,
-    "pts": 8,
-    "treb": 1.9,
-    "ast": 5.6,
-    "stl": 1,
-    "blk": 0.2,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 239,
     "name": "Goga Bitadze",
     "pos": [
       "C"
@@ -5920,6 +5894,30 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.4,
     "stl": 0.6,
     "blk": 1,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 239,
+    "name": "Jamal Shead",
+    "pos": [
+      "PG"
+    ],
+    "team": "TOR",
+    "gp": 76,
+    "mpg": 24.4,
+    "fgPct": 0.386,
+    "fgm": 2.9,
+    "fga": 7.5,
+    "ftPct": 0.781,
+    "ftm": 1.1,
+    "fta": 1.4,
+    "tpm": 1.2,
+    "pts": 8,
+    "treb": 1.9,
+    "ast": 5.6,
+    "stl": 1,
+    "blk": 0.2,
     "adp": null,
     "mktCost": 1
   },
@@ -5945,7 +5943,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.5,
     "stl": 0.7,
     "blk": 0.1,
-    "adp": 103.5,
+    "adp": 107,
     "mktCost": 1
   },
   {
@@ -6223,30 +6221,6 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 252,
-    "name": "Brayden Burries",
-    "pos": [
-      "SG"
-    ],
-    "team": "MIL",
-    "gp": 69,
-    "mpg": 22.8,
-    "fgPct": 0.466,
-    "fgm": 3.5,
-    "fga": 7.6,
-    "ftPct": 0.814,
-    "ftm": 2,
-    "fta": 2.5,
-    "tpm": 1.1,
-    "pts": 10.2,
-    "treb": 2.8,
-    "ast": 1.4,
-    "stl": 0.9,
-    "blk": 0.1,
-    "adp": 114.1,
-    "mktCost": 1
-  },
-  {
-    "rk": 253,
     "name": "Precious Achiuwa",
     "pos": [
       "PF",
@@ -6267,6 +6241,30 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.1,
     "stl": 0.8,
     "blk": 0.7,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 253,
+    "name": "Brayden Burries",
+    "pos": [
+      "SG"
+    ],
+    "team": "MIL",
+    "gp": 69,
+    "mpg": 22.8,
+    "fgPct": 0.466,
+    "fgm": 3.5,
+    "fga": 7.6,
+    "ftPct": 0.814,
+    "ftm": 2,
+    "fta": 2.5,
+    "tpm": 1.1,
+    "pts": 10.2,
+    "treb": 2.8,
+    "ast": 1.4,
+    "stl": 0.9,
+    "blk": 0.1,
     "adp": null,
     "mktCost": 1
   },
@@ -6391,7 +6389,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2.5,
     "stl": 0.5,
     "blk": 0.2,
-    "adp": 119.3,
+    "adp": 118.5,
     "mktCost": 1
   },
   {
@@ -6441,7 +6439,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.7,
     "stl": 0.6,
     "blk": 0.3,
-    "adp": 114,
+    "adp": 114.1,
     "mktCost": 1
   },
   {
@@ -6546,6 +6544,30 @@ const DRAFT_EDGE_PLAYERS = [
   },
   {
     "rk": 265,
+    "name": "Isaiah Jackson",
+    "pos": [
+      "C"
+    ],
+    "team": "LAC",
+    "gp": 50,
+    "mpg": 14.8,
+    "fgPct": 0.635,
+    "fgm": 2.5,
+    "fga": 3.9,
+    "ftPct": 0.631,
+    "ftm": 1.1,
+    "fta": 1.8,
+    "tpm": 0,
+    "pts": 6.1,
+    "treb": 4.8,
+    "ast": 0.9,
+    "stl": 0.6,
+    "blk": 0.9,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 266,
     "name": "Tristan da Silva",
     "pos": [
       "SF",
@@ -6570,56 +6592,7 @@ const DRAFT_EDGE_PLAYERS = [
     "mktCost": 1
   },
   {
-    "rk": 266,
-    "name": "Isaiah Jackson",
-    "pos": [
-      "C"
-    ],
-    "team": "LAC",
-    "gp": 50,
-    "mpg": 14.8,
-    "fgPct": 0.635,
-    "fgm": 2.5,
-    "fga": 3.9,
-    "ftPct": 0.631,
-    "ftm": 1.1,
-    "fta": 1.8,
-    "tpm": 0,
-    "pts": 6.1,
-    "treb": 4.8,
-    "ast": 0.9,
-    "stl": 0.6,
-    "blk": 0.9,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
     "rk": 267,
-    "name": "Kobe Sanders",
-    "pos": [
-      "SG",
-      "SF"
-    ],
-    "team": "LAC",
-    "gp": 65,
-    "mpg": 21.4,
-    "fgPct": 0.466,
-    "fgm": 2.8,
-    "fga": 6,
-    "ftPct": 0.833,
-    "ftm": 0.9,
-    "fta": 1.1,
-    "tpm": 1.3,
-    "pts": 7.8,
-    "treb": 2.4,
-    "ast": 1.7,
-    "stl": 0.8,
-    "blk": 0.2,
-    "adp": null,
-    "mktCost": 1
-  },
-  {
-    "rk": 268,
     "name": "Marvin Bagley III",
     "pos": [
       "PF",
@@ -6640,6 +6613,31 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.1,
     "stl": 0.4,
     "blk": 0.6,
+    "adp": null,
+    "mktCost": 1
+  },
+  {
+    "rk": 268,
+    "name": "Kobe Sanders",
+    "pos": [
+      "SG",
+      "SF"
+    ],
+    "team": "LAC",
+    "gp": 65,
+    "mpg": 21.4,
+    "fgPct": 0.466,
+    "fgm": 2.8,
+    "fga": 6,
+    "ftPct": 0.833,
+    "ftm": 0.9,
+    "fta": 1.1,
+    "tpm": 1.3,
+    "pts": 7.8,
+    "treb": 2.4,
+    "ast": 1.7,
+    "stl": 0.8,
+    "blk": 0.2,
     "adp": null,
     "mktCost": 1
   },
@@ -6665,7 +6663,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.4,
     "stl": 0.5,
     "blk": 0.3,
-    "adp": 108.6,
+    "adp": 106.7,
     "mktCost": 1
   },
   {
@@ -7111,7 +7109,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 1.5,
     "stl": 0.4,
     "blk": 0.1,
-    "adp": 103.3,
+    "adp": 105.4,
     "mktCost": 1
   },
   {
@@ -7136,7 +7134,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 2,
     "stl": 0.5,
     "blk": 0.3,
-    "adp": 117.3,
+    "adp": 118,
     "mktCost": 1
   },
   {
@@ -7385,7 +7383,7 @@ const DRAFT_EDGE_PLAYERS = [
     "ast": 0.6,
     "stl": 0.4,
     "blk": 0.6,
-    "adp": 117.1,
+    "adp": 116.8,
     "mktCost": 1
   },
   {

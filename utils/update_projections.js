@@ -68,20 +68,20 @@ function updateProjections(csvPath, targetPlayersPath) {
     const cols = parseCSVLine(lines[i]);
     if (cols.length < 10) continue;
 
-    const name = cols[0];
-    const rawAdp = cols[1];
-    const rawPos = cols[2];
-    const team = cols[3];
-    const gp = parseInt(cols[4], 10) || 0;
-    const mpg = parseFloat(cols[5]) || 0;
-    const fg = parsePctWithAtt(cols[6]);
-    const ft = parsePctWithAtt(cols[7]);
-    const tpm = parseFloat(cols[8]) || 0;
-    const pts = parseFloat(cols[9]) || 0;
-    const treb = parseFloat(cols[10]) || 0;
-    const ast = parseFloat(cols[11]) || 0;
-    const stl = parseFloat(cols[12]) || 0;
-    const blk = parseFloat(cols[13]) || 0;
+    const nameIdx = header.indexOf('PLAYER'); const name = cols[nameIdx];
+    const rawAdp = cols[header.indexOf('ADP')];
+    const rawPos = cols[header.indexOf('POS')];
+    const team = cols[header.indexOf('TEAM')];
+    const gp = parseInt(cols[header.indexOf('GP')], 10) || 0;
+    const mpg = parseFloat(cols[header.indexOf('MPG')]) || 0;
+    const fg = parsePctWithAtt(cols[header.indexOf('FG%')]);
+    const ft = parsePctWithAtt(cols[header.indexOf('FT%')]);
+    const tpm = parseFloat(cols[header.indexOf('3:00 PM') !== -1 ? header.indexOf('3:00 PM') : header.indexOf('3PM')]) || 0;
+    const pts = parseFloat(cols[header.indexOf('PTS')]) || 0;
+    const treb = parseFloat(cols[header.indexOf('TREB')]) || 0;
+    const ast = parseFloat(cols[header.indexOf('AST')]) || 0;
+    const stl = parseFloat(cols[header.indexOf('STL')]) || 0;
+    const blk = parseFloat(cols[header.indexOf('BLK')]) || 0;
 
     const pos = rawPos ? rawPos.split(',').map(s => s.trim()).filter(Boolean) : [];
     const adp = rawAdp && !isNaN(parseFloat(rawAdp)) ? parseFloat(rawAdp) : null;

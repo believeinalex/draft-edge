@@ -74,14 +74,19 @@ function computeAll(state, PLAYERS){
     zAll.set(p.rk, zc);
   }
   function compositeZ(zc){
-    let s=0; for(const c of CATS) s += state.weights[c]*zc[c];
+    let s=0; 
+    for(const c of CATS) {
+      const userW = (state.weights && typeof state.weights[c] === 'number') ? state.weights[c] : 1.0;
+      s += userW * zc[c];
+    }
     return s;
   }
+  const baseCompositeZ = compositeZ;
 
   const playerZScores = PLAYERS.map(p => ({
     rk: p.rk,
-    compositeZ: compositeZ(zAll.get(p.rk))
-  })).sort((a,b) => b.compositeZ - a.compositeZ);
+    baseZ: baseCompositeZ(zAll.get(p.rk))
+  })).sort((a,b) => b.baseZ - a.baseZ);
 
   const zRankMap = new Map();
   playerZScores.forEach((item, index) => {
@@ -202,7 +207,7 @@ function computeAll(state, PLAYERS){
   }
 
   return {
-    poolSize, rosterPool, availableInPool, zAll, compositeZ, replZ,
+    poolSize, rosterPool, availableInPool, zAll, compositeZ, baseCompositeZ, replZ,
     fairPrice, remainingBudgetAllTeams, remainingSlots, draftedCount, inflation,
     myBudgetLeft: my.budgetLeft, mySlotsLeft: my.slotsLeft, myPicksMade: my.picksMade,
     missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap
@@ -513,7 +518,7 @@ function runOptimizer(state, PLAYERS){
     posWarning, budgetLeft, slotsLeft, bestVal, totalCost, existingZ,
     catTotals, posCoverage,
     players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a)).map(p=>({
-      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.compositeZ(C.zAll.get(p.rk)),
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.baseCompositeZ(C.zAll.get(p.rk)),
     })),
     snipes: topSnipes,
   };
