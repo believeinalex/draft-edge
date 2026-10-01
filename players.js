@@ -22,6 +22,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.6,
     "blk": 0.7,
     "adp": 1.9,
+    "totalZ": 16.48,
     "mktCost": 75
   },
   {
@@ -46,6 +47,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 3.2,
     "adp": 1.6,
+    "totalZ": 14.67,
     "mktCost": 70
   },
   {
@@ -70,6 +72,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.6,
     "blk": 0.9,
     "adp": 4,
+    "totalZ": 14.31,
     "mktCost": 67
   },
   {
@@ -95,6 +98,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.7,
     "blk": 0.5,
     "adp": 3.5,
+    "totalZ": 11.6,
     "mktCost": 73
   },
   {
@@ -120,6 +124,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.8,
     "adp": 6,
+    "totalZ": 8.46,
     "mktCost": 65
   },
   {
@@ -145,6 +150,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.5,
     "adp": 9.4,
+    "totalZ": 7.97,
     "mktCost": 53
   },
   {
@@ -170,6 +176,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.7,
     "adp": 7.9,
+    "totalZ": 7.96,
     "mktCost": 61
   },
   {
@@ -194,6 +201,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.4,
     "adp": 23.6,
+    "totalZ": 7.79,
     "mktCost": 37
   },
   {
@@ -218,6 +226,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.8,
     "blk": 0.5,
     "adp": 8.6,
+    "totalZ": 7.66,
     "mktCost": 58
   },
   {
@@ -244,6 +253,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1,
     "adp": 16.6,
+    "totalZ": 7.57,
     "mktCost": 42
   },
   {
@@ -269,6 +279,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.3,
     "adp": 13.4,
+    "totalZ": 7.03,
     "mktCost": 45
   },
   {
@@ -294,6 +305,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.6,
     "adp": 15.3,
+    "totalZ": 6.96,
     "mktCost": 38
   },
   {
@@ -318,6 +330,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": 26.6,
+    "totalZ": 6.85,
     "mktCost": 33
   },
   {
@@ -343,6 +356,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.6,
     "adp": 11.6,
+    "totalZ": 6.8,
     "mktCost": 51
   },
   {
@@ -367,6 +381,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.4,
     "adp": 20.6,
+    "totalZ": 6.59,
     "mktCost": 36
   },
   {
@@ -393,6 +408,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.3,
     "adp": 22.6,
+    "totalZ": 6.56,
     "mktCost": 32
   },
   {
@@ -419,6 +435,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 1,
     "adp": 10.3,
+    "totalZ": 6.47,
     "mktCost": 52
   },
   {
@@ -445,6 +462,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.7,
     "blk": 0.4,
     "adp": 30.2,
+    "totalZ": 6.37,
     "mktCost": 35
   },
   {
@@ -470,6 +488,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.6,
     "adp": 15.8,
+    "totalZ": 6.25,
     "mktCost": 44
   },
   {
@@ -495,6 +514,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.5,
     "adp": 34.6,
+    "totalZ": 6.24,
     "mktCost": 31
   },
   {
@@ -521,6 +541,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 1.3,
     "adp": 14.3,
+    "totalZ": 6.24,
     "mktCost": 46
   },
   {
@@ -546,6 +567,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.5,
     "adp": 40.4,
+    "totalZ": 5.96,
     "mktCost": 29
   },
   {
@@ -571,6 +593,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 2.1,
     "adp": 28.3,
+    "totalZ": 5.79,
     "mktCost": 30
   },
   {
@@ -595,6 +618,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.8,
     "blk": 0.3,
     "adp": 72.3,
+    "totalZ": 5.16,
     "mktCost": 26
   },
   {
@@ -620,6 +644,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 1.1,
     "adp": 7.6,
+    "totalZ": 5.03,
     "mktCost": 58
   },
   {
@@ -645,6 +670,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 1.7,
     "adp": 41.9,
+    "totalZ": 4.96,
     "mktCost": 35
   },
   {
@@ -670,6 +696,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": 26.3,
+    "totalZ": 4.92,
     "mktCost": 26
   },
   {
@@ -695,6 +722,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 1.5,
     "adp": 50.2,
+    "totalZ": 4.92,
     "mktCost": 25
   },
   {
@@ -719,6 +747,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.4,
     "adp": 52.1,
+    "totalZ": 4.88,
     "mktCost": 25
   },
   {
@@ -744,6 +773,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 1,
     "adp": 23.6,
+    "totalZ": 4.85,
     "mktCost": 25
   },
   {
@@ -769,6 +799,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.6,
     "adp": 23.2,
+    "totalZ": 4.84,
     "mktCost": 33
   },
   {
@@ -794,6 +825,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1.8,
     "adp": 30.1,
+    "totalZ": 4.78,
     "mktCost": 24
   },
   {
@@ -819,6 +851,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.4,
     "adp": 52.6,
+    "totalZ": 4.59,
     "mktCost": 24
   },
   {
@@ -843,6 +876,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.2,
     "adp": 66.1,
+    "totalZ": 4.58,
     "mktCost": 24
   },
   {
@@ -868,6 +902,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.5,
     "adp": 37.4,
+    "totalZ": 4.48,
     "mktCost": 23
   },
   {
@@ -893,6 +928,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.5,
     "adp": 38,
+    "totalZ": 4.47,
     "mktCost": 23
   },
   {
@@ -918,6 +954,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.3,
     "adp": 25.6,
+    "totalZ": 4.38,
     "mktCost": 23
   },
   {
@@ -942,6 +979,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.9,
     "adp": 36.4,
+    "totalZ": 4.35,
     "mktCost": 22
   },
   {
@@ -966,6 +1004,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 1.8,
     "adp": 74.9,
+    "totalZ": 4.31,
     "mktCost": 22
   },
   {
@@ -991,6 +1030,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.6,
     "adp": 41.9,
+    "totalZ": 4.29,
     "mktCost": 22
   },
   {
@@ -1015,6 +1055,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.1,
     "adp": 21.4,
+    "totalZ": 4.18,
     "mktCost": 35
   },
   {
@@ -1039,6 +1080,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.2,
     "adp": 26.2,
+    "totalZ": 4.03,
     "mktCost": 29
   },
   {
@@ -1064,6 +1106,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1.2,
     "adp": 47.2,
+    "totalZ": 4.02,
     "mktCost": 21
   },
   {
@@ -1089,6 +1132,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.3,
     "adp": 69.4,
+    "totalZ": 4.01,
     "mktCost": 21
   },
   {
@@ -1114,6 +1158,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.4,
     "adp": 52.6,
+    "totalZ": 3.97,
     "mktCost": 21
   },
   {
@@ -1139,6 +1184,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.5,
     "adp": 59.8,
+    "totalZ": 3.94,
     "mktCost": 21
   },
   {
@@ -1163,6 +1209,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1,
     "adp": 50.9,
+    "totalZ": 3.94,
     "mktCost": 21
   },
   {
@@ -1188,6 +1235,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1.7,
     "adp": 64.8,
+    "totalZ": 3.87,
     "mktCost": 20
   },
   {
@@ -1212,6 +1260,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 2.2,
     "adp": 38.7,
+    "totalZ": 3.86,
     "mktCost": 20
   },
   {
@@ -1237,6 +1286,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.7,
     "blk": 0.8,
     "adp": 110.8,
+    "totalZ": 3.71,
     "mktCost": 20
   },
   {
@@ -1262,6 +1312,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.7,
     "adp": 46.3,
+    "totalZ": 3.63,
     "mktCost": 19
   },
   {
@@ -1287,6 +1338,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 1,
     "adp": 18.7,
+    "totalZ": 3.56,
     "mktCost": 31
   },
   {
@@ -1312,6 +1364,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.8,
     "blk": 0.5,
     "adp": 79.9,
+    "totalZ": 3.54,
     "mktCost": 19
   },
   {
@@ -1337,6 +1390,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.7,
     "adp": 30.2,
+    "totalZ": 3.44,
     "mktCost": 23
   },
   {
@@ -1361,6 +1415,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 1.4,
     "adp": 74.3,
+    "totalZ": 3.28,
     "mktCost": 18
   },
   {
@@ -1385,6 +1440,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.1,
     "adp": 66.1,
+    "totalZ": 3.17,
     "mktCost": 18
   },
   {
@@ -1409,6 +1465,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.6,
     "adp": 57.1,
+    "totalZ": 3.14,
     "mktCost": 17
   },
   {
@@ -1434,6 +1491,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": 42,
+    "totalZ": 3.12,
     "mktCost": 17
   },
   {
@@ -1459,6 +1517,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.8,
     "adp": 66.9,
+    "totalZ": 3.03,
     "mktCost": 17
   },
   {
@@ -1484,6 +1543,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.5,
     "adp": 78.8,
+    "totalZ": 2.88,
     "mktCost": 16
   },
   {
@@ -1510,6 +1570,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.7,
     "adp": 62.7,
+    "totalZ": 2.85,
     "mktCost": 14
   },
   {
@@ -1535,6 +1596,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.3,
     "adp": 116.2,
+    "totalZ": 2.85,
     "mktCost": 14
   },
   {
@@ -1560,6 +1622,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": 58.9,
+    "totalZ": 2.84,
     "mktCost": 16
   },
   {
@@ -1584,6 +1647,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 1.8,
     "adp": 42.2,
+    "totalZ": 2.83,
     "mktCost": 16
   },
   {
@@ -1609,6 +1673,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.2,
     "adp": 113.2,
+    "totalZ": 2.78,
     "mktCost": 16
   },
   {
@@ -1633,6 +1698,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1.1,
     "adp": 54.8,
+    "totalZ": 2.76,
     "mktCost": 16
   },
   {
@@ -1659,6 +1725,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.5,
     "adp": 40,
+    "totalZ": 2.73,
     "mktCost": 16
   },
   {
@@ -1685,6 +1752,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": 102.3,
+    "totalZ": 2.73,
     "mktCost": 16
   },
   {
@@ -1711,6 +1779,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.5,
     "adp": 27,
+    "totalZ": 2.72,
     "mktCost": 29
   },
   {
@@ -1736,6 +1805,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.5,
     "adp": 49.5,
+    "totalZ": 2.69,
     "mktCost": 15
   },
   {
@@ -1760,6 +1830,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.3,
     "adp": 80.1,
+    "totalZ": 2.65,
     "mktCost": 15
   },
   {
@@ -1785,6 +1856,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 2.2,
     "blk": 0.6,
     "adp": 63.6,
+    "totalZ": 2.64,
     "mktCost": 15
   },
   {
@@ -1809,6 +1881,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 1,
     "adp": 64.7,
+    "totalZ": 2.61,
     "mktCost": 15
   },
   {
@@ -1833,6 +1906,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1,
     "adp": 90.2,
+    "totalZ": 2.56,
     "mktCost": 15
   },
   {
@@ -1857,6 +1931,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.2,
     "adp": 92.3,
+    "totalZ": 2.53,
     "mktCost": 15
   },
   {
@@ -1882,6 +1957,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.9,
     "adp": 116.2,
+    "totalZ": 2.51,
     "mktCost": 15
   },
   {
@@ -1907,6 +1983,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 1.1,
     "adp": 62.2,
+    "totalZ": 2.44,
     "mktCost": 14
   },
   {
@@ -1932,6 +2009,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": 56.7,
+    "totalZ": 2.4,
     "mktCost": 14
   },
   {
@@ -1957,6 +2035,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.1,
     "adp": 96.9,
+    "totalZ": 2.4,
     "mktCost": 14
   },
   {
@@ -1981,6 +2060,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.9,
     "adp": 94.5,
+    "totalZ": 2.34,
     "mktCost": 14
   },
   {
@@ -2006,6 +2086,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": 88.9,
+    "totalZ": 2.1,
     "mktCost": 13
   },
   {
@@ -2030,6 +2111,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.8,
     "adp": 69.4,
+    "totalZ": 2,
     "mktCost": 12
   },
   {
@@ -2055,6 +2137,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.3,
     "adp": 96,
+    "totalZ": 1.96,
     "mktCost": 12
   },
   {
@@ -2080,6 +2163,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.5,
     "adp": 73.4,
+    "totalZ": 1.88,
     "mktCost": 12
   },
   {
@@ -2104,6 +2188,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.6,
     "adp": 34.3,
+    "totalZ": 1.87,
     "mktCost": 18
   },
   {
@@ -2128,6 +2213,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": 68.6,
+    "totalZ": 1.82,
     "mktCost": 12
   },
   {
@@ -2152,6 +2238,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 1.2,
     "adp": 98.5,
+    "totalZ": 1.81,
     "mktCost": 10
   },
   {
@@ -2178,6 +2265,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1,
     "adp": 99.6,
+    "totalZ": 1.8,
     "mktCost": 12
   },
   {
@@ -2203,6 +2291,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.3,
     "adp": 117.7,
+    "totalZ": 1.77,
     "mktCost": 11
   },
   {
@@ -2227,6 +2316,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 1,
     "adp": 121.3,
+    "totalZ": 1.74,
     "mktCost": 11
   },
   {
@@ -2251,6 +2341,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 1,
     "adp": 105.8,
+    "totalZ": 1.71,
     "mktCost": 11
   },
   {
@@ -2276,6 +2367,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1,
     "adp": 81.9,
+    "totalZ": 1.71,
     "mktCost": 11
   },
   {
@@ -2300,6 +2392,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": 80,
+    "totalZ": 1.67,
     "mktCost": 11
   },
   {
@@ -2325,6 +2418,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": 92,
+    "totalZ": 1.58,
     "mktCost": 11
   },
   {
@@ -2350,6 +2444,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": null,
+    "totalZ": 1.55,
     "mktCost": 11
   },
   {
@@ -2374,6 +2469,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 1.8,
     "adp": 100.4,
+    "totalZ": 1.51,
     "mktCost": 10
   },
   {
@@ -2399,6 +2495,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 1.1,
     "adp": 120.4,
+    "totalZ": 1.45,
     "mktCost": 10
   },
   {
@@ -2424,6 +2521,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.7,
     "adp": 69,
+    "totalZ": 1.38,
     "mktCost": 10
   },
   {
@@ -2450,6 +2548,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 2.2,
     "blk": 1,
     "adp": 88.2,
+    "totalZ": 1.36,
     "mktCost": 10
   },
   {
@@ -2474,6 +2573,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 1.3,
     "adp": 116.9,
+    "totalZ": 1.27,
     "mktCost": 9
   },
   {
@@ -2499,6 +2599,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.5,
     "adp": 84.4,
+    "totalZ": 1.16,
     "mktCost": 9
   },
   {
@@ -2523,6 +2624,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.9,
     "adp": 119,
+    "totalZ": 1.14,
     "mktCost": 9
   },
   {
@@ -2548,6 +2650,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.6,
     "adp": 79.7,
+    "totalZ": 1.08,
     "mktCost": 8
   },
   {
@@ -2572,6 +2675,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.5,
     "adp": 98.2,
+    "totalZ": 1.08,
     "mktCost": 8
   },
   {
@@ -2598,6 +2702,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 2.1,
     "blk": 0.5,
     "adp": 118.3,
+    "totalZ": 1.01,
     "mktCost": 8
   },
   {
@@ -2623,6 +2728,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.6,
     "adp": 120.3,
+    "totalZ": 0.93,
     "mktCost": 8
   },
   {
@@ -2647,6 +2753,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1.8,
     "adp": 72.4,
+    "totalZ": 0.91,
     "mktCost": 8
   },
   {
@@ -2671,6 +2778,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1.5,
     "adp": 72.3,
+    "totalZ": 0.91,
     "mktCost": 9
   },
   {
@@ -2696,6 +2804,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 1.2,
     "adp": 115.5,
+    "totalZ": 0.88,
     "mktCost": 8
   },
   {
@@ -2721,6 +2830,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": null,
+    "totalZ": 0.83,
     "mktCost": 7
   },
   {
@@ -2746,6 +2856,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.2,
     "adp": 117.3,
+    "totalZ": 0.83,
     "mktCost": 7
   },
   {
@@ -2770,6 +2881,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 1,
     "adp": 79.3,
+    "totalZ": 0.76,
     "mktCost": 7
   },
   {
@@ -2795,6 +2907,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.5,
     "adp": 87.4,
+    "totalZ": 0.75,
     "mktCost": 8
   },
   {
@@ -2820,6 +2933,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": 119.2,
+    "totalZ": 0.74,
     "mktCost": 7
   },
   {
@@ -2846,6 +2960,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.4,
     "adp": 119.9,
+    "totalZ": 0.66,
     "mktCost": 7
   },
   {
@@ -2871,6 +2986,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.9,
     "adp": 93.4,
+    "totalZ": 0.65,
     "mktCost": 7
   },
   {
@@ -2896,6 +3012,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.9,
     "adp": 106.9,
+    "totalZ": 0.63,
     "mktCost": 7
   },
   {
@@ -2921,6 +3038,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.3,
     "adp": 120.1,
+    "totalZ": 0.56,
     "mktCost": 6
   },
   {
@@ -2946,6 +3064,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.4,
     "adp": 119.9,
+    "totalZ": 0.47,
     "mktCost": 6
   },
   {
@@ -2971,6 +3090,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.7,
     "adp": 121.5,
+    "totalZ": 0.41,
     "mktCost": 6
   },
   {
@@ -2996,6 +3116,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.5,
     "adp": null,
+    "totalZ": 0.34,
     "mktCost": 5
   },
   {
@@ -3021,6 +3142,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 1.2,
     "adp": 114.6,
+    "totalZ": 0.3,
     "mktCost": 5
   },
   {
@@ -3046,6 +3168,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": 116.9,
+    "totalZ": 0.26,
     "mktCost": 5
   },
   {
@@ -3071,6 +3194,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.5,
     "adp": 109.2,
+    "totalZ": 0.23,
     "mktCost": 5
   },
   {
@@ -3096,6 +3220,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.2,
     "adp": 119,
+    "totalZ": 0.15,
     "mktCost": 4
   },
   {
@@ -3120,6 +3245,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.8,
     "adp": 116.2,
+    "totalZ": 0.1,
     "mktCost": 4
   },
   {
@@ -3145,6 +3271,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": 0.07,
     "mktCost": 4
   },
   {
@@ -3170,6 +3297,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.4,
     "adp": 116.1,
+    "totalZ": -0.01,
     "mktCost": 4
   },
   {
@@ -3195,6 +3323,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.3,
     "adp": 102.1,
+    "totalZ": -0.01,
     "mktCost": 4
   },
   {
@@ -3220,6 +3349,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": 113.6,
+    "totalZ": -0.02,
     "mktCost": 4
   },
   {
@@ -3245,6 +3375,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.4,
     "adp": 115.3,
+    "totalZ": -0.02,
     "mktCost": 4
   },
   {
@@ -3270,6 +3401,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": 108.1,
+    "totalZ": -0.02,
     "mktCost": 4
   },
   {
@@ -3295,6 +3427,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.4,
     "adp": 119.3,
+    "totalZ": -0.02,
     "mktCost": 4
   },
   {
@@ -3319,6 +3452,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.7,
     "adp": 112.5,
+    "totalZ": -0.06,
     "mktCost": 4
   },
   {
@@ -3344,6 +3478,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": 110.4,
+    "totalZ": -0.12,
     "mktCost": 3
   },
   {
@@ -3369,6 +3504,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.3,
     "adp": 53.8,
+    "totalZ": -0.14,
     "mktCost": 7
   },
   {
@@ -3394,6 +3530,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.1,
     "adp": 119.7,
+    "totalZ": -0.16,
     "mktCost": 3
   },
   {
@@ -3420,6 +3557,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.8,
     "adp": 118.6,
+    "totalZ": -0.18,
     "mktCost": 3
   },
   {
@@ -3446,6 +3584,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.9,
     "adp": 118.8,
+    "totalZ": -0.19,
     "mktCost": 3
   },
   {
@@ -3472,6 +3611,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": 109.1,
+    "totalZ": -0.27,
     "mktCost": 3
   },
   {
@@ -3496,6 +3636,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.4,
     "adp": 118.5,
+    "totalZ": -0.27,
     "mktCost": 3
   },
   {
@@ -3521,6 +3662,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 1,
     "adp": 115.5,
+    "totalZ": -0.3,
     "mktCost": 3
   },
   {
@@ -3546,6 +3688,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 1.4,
     "adp": 115.2,
+    "totalZ": -0.3,
     "mktCost": 2
   },
   {
@@ -3571,6 +3714,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -0.31,
     "mktCost": 3
   },
   {
@@ -3595,6 +3739,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 1.5,
     "adp": null,
+    "totalZ": -0.39,
     "mktCost": 2
   },
   {
@@ -3620,6 +3765,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.3,
     "adp": 115.7,
+    "totalZ": -0.48,
     "mktCost": 2
   },
   {
@@ -3645,6 +3791,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.3,
     "adp": 112.2,
+    "totalZ": -0.48,
     "mktCost": 2
   },
   {
@@ -3669,6 +3816,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 1.4,
     "adp": 106.9,
+    "totalZ": -0.52,
     "mktCost": 2
   },
   {
@@ -3695,6 +3843,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.6,
     "adp": 118.3,
+    "totalZ": -0.53,
     "mktCost": 2
   },
   {
@@ -3720,6 +3869,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.3,
     "adp": 111.8,
+    "totalZ": -0.57,
     "mktCost": 1
   },
   {
@@ -3744,6 +3894,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 1.3,
     "adp": 89.5,
+    "totalZ": -0.58,
     "mktCost": 3
   },
   {
@@ -3768,6 +3919,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.5,
     "adp": 101.6,
+    "totalZ": -0.64,
     "mktCost": 10
   },
   {
@@ -3792,6 +3944,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.7,
     "adp": 114.4,
+    "totalZ": -0.67,
     "mktCost": 2
   },
   {
@@ -3817,6 +3970,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": 115.5,
+    "totalZ": -0.85,
     "mktCost": 1
   },
   {
@@ -3841,6 +3995,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.5,
     "adp": 113.8,
+    "totalZ": -0.86,
     "mktCost": 1
   },
   {
@@ -3865,6 +4020,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.4,
     "adp": null,
+    "totalZ": -0.87,
     "mktCost": 1
   },
   {
@@ -3890,6 +4046,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 1.5,
     "adp": 113.3,
+    "totalZ": -0.93,
     "mktCost": 1
   },
   {
@@ -3914,6 +4071,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -0.95,
     "mktCost": 1
   },
   {
@@ -3939,6 +4097,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.8,
     "adp": null,
+    "totalZ": -0.98,
     "mktCost": 1
   },
   {
@@ -3965,6 +4124,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -1.05,
     "mktCost": 1
   },
   {
@@ -3991,6 +4151,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.3,
     "adp": 111.9,
+    "totalZ": -1.07,
     "mktCost": 1
   },
   {
@@ -4016,6 +4177,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 1.5,
     "adp": null,
+    "totalZ": -1.13,
     "mktCost": 1
   },
   {
@@ -4041,6 +4203,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.1,
     "adp": 118,
+    "totalZ": -1.13,
     "mktCost": 1
   },
   {
@@ -4066,6 +4229,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -1.15,
     "mktCost": 1
   },
   {
@@ -4091,6 +4255,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -1.21,
     "mktCost": 1
   },
   {
@@ -4116,6 +4281,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": 109.3,
+    "totalZ": -1.27,
     "mktCost": 1
   },
   {
@@ -4141,6 +4307,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -1.3,
     "mktCost": 1
   },
   {
@@ -4165,6 +4332,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": 117.8,
+    "totalZ": -1.33,
     "mktCost": 1
   },
   {
@@ -4190,6 +4358,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.6,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -1.34,
     "mktCost": 1
   },
   {
@@ -4214,6 +4383,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.9,
     "adp": 114.1,
+    "totalZ": -1.4,
     "mktCost": 1
   },
   {
@@ -4238,6 +4408,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -1.42,
     "mktCost": 1
   },
   {
@@ -4262,6 +4433,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.3,
     "blk": 1.5,
     "adp": null,
+    "totalZ": -1.42,
     "mktCost": 1
   },
   {
@@ -4287,6 +4459,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.7,
     "adp": 118,
+    "totalZ": -1.44,
     "mktCost": 1
   },
   {
@@ -4312,6 +4485,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -1.44,
     "mktCost": 1
   },
   {
@@ -4337,6 +4511,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -1.48,
     "mktCost": 1
   },
   {
@@ -4362,6 +4537,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.4,
     "adp": 114.1,
+    "totalZ": -1.48,
     "mktCost": 1
   },
   {
@@ -4387,6 +4563,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -1.48,
     "mktCost": 1
   },
   {
@@ -4412,6 +4589,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": 114.2,
+    "totalZ": -1.49,
     "mktCost": 1
   },
   {
@@ -4436,6 +4614,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.1,
     "adp": 118,
+    "totalZ": -1.62,
     "mktCost": 1
   },
   {
@@ -4461,6 +4640,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -1.67,
     "mktCost": 1
   },
   {
@@ -4485,6 +4665,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.5,
     "adp": 114.2,
+    "totalZ": -1.68,
     "mktCost": 1
   },
   {
@@ -4509,6 +4690,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -1.68,
     "mktCost": 1
   },
   {
@@ -4534,6 +4716,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.1,
     "adp": 109.6,
+    "totalZ": -1.69,
     "mktCost": 1
   },
   {
@@ -4558,6 +4741,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.2,
     "adp": 108.7,
+    "totalZ": -1.7,
     "mktCost": 1
   },
   {
@@ -4583,6 +4767,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.7,
     "adp": 118,
+    "totalZ": -1.73,
     "mktCost": 1
   },
   {
@@ -4607,6 +4792,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 1.5,
     "adp": null,
+    "totalZ": -1.73,
     "mktCost": 1
   },
   {
@@ -4632,6 +4818,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -1.78,
     "mktCost": 1
   },
   {
@@ -4657,6 +4844,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.1,
     "adp": 113.8,
+    "totalZ": -1.78,
     "mktCost": 1
   },
   {
@@ -4682,6 +4870,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -1.84,
     "mktCost": 1
   },
   {
@@ -4707,6 +4896,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -1.88,
     "mktCost": 1
   },
   {
@@ -4732,6 +4922,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -1.92,
     "mktCost": 1
   },
   {
@@ -4756,6 +4947,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 1.3,
     "adp": null,
+    "totalZ": -1.94,
     "mktCost": 1
   },
   {
@@ -4780,6 +4972,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": 109.7,
+    "totalZ": -1.94,
     "mktCost": 3
   },
   {
@@ -4805,6 +4998,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.4,
     "adp": 118.4,
+    "totalZ": -1.97,
     "mktCost": 1
   },
   {
@@ -4830,6 +5024,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.5,
     "blk": 0.5,
     "adp": 106.6,
+    "totalZ": -2.01,
     "mktCost": 1
   },
   {
@@ -4854,6 +5049,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.8,
     "adp": 108.5,
+    "totalZ": -2.03,
     "mktCost": 1
   },
   {
@@ -4879,6 +5075,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.4,
     "adp": 109.5,
+    "totalZ": -2.04,
     "mktCost": 1
   },
   {
@@ -4903,6 +5100,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.5,
     "adp": 118.2,
+    "totalZ": -2.07,
     "mktCost": 1
   },
   {
@@ -4927,6 +5125,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1,
     "adp": null,
+    "totalZ": -2.09,
     "mktCost": 1
   },
   {
@@ -4952,6 +5151,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -2.11,
     "mktCost": 1
   },
   {
@@ -4977,6 +5177,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -2.12,
     "mktCost": 1
   },
   {
@@ -5002,6 +5203,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": 114.2,
+    "totalZ": -2.23,
     "mktCost": 1
   },
   {
@@ -5027,6 +5229,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -2.35,
     "mktCost": 1
   },
   {
@@ -5053,6 +5256,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -2.35,
     "mktCost": 1
   },
   {
@@ -5078,6 +5282,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": 117.1,
+    "totalZ": -2.4,
     "mktCost": 1
   },
   {
@@ -5103,6 +5308,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -2.41,
     "mktCost": 1
   },
   {
@@ -5127,6 +5333,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -2.42,
     "mktCost": 1
   },
   {
@@ -5152,6 +5359,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.8,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -2.43,
     "mktCost": 1
   },
   {
@@ -5177,6 +5385,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.3,
     "adp": 109.5,
+    "totalZ": -2.43,
     "mktCost": 1
   },
   {
@@ -5201,6 +5410,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.8,
     "adp": null,
+    "totalZ": -2.45,
     "mktCost": 1
   },
   {
@@ -5226,6 +5436,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.6,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -2.48,
     "mktCost": 1
   },
   {
@@ -5250,6 +5461,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.2,
     "adp": 107.5,
+    "totalZ": -2.61,
     "mktCost": 1
   },
   {
@@ -5274,6 +5486,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.7,
     "adp": 114,
+    "totalZ": -2.61,
     "mktCost": 1
   },
   {
@@ -5299,6 +5512,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.4,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -2.66,
     "mktCost": 1
   },
   {
@@ -5324,6 +5538,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -2.68,
     "mktCost": 1
   },
   {
@@ -5349,6 +5564,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -2.7,
     "mktCost": 1
   },
   {
@@ -5374,6 +5590,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -2.79,
     "mktCost": 1
   },
   {
@@ -5399,6 +5616,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -2.97,
     "mktCost": 1
   },
   {
@@ -5424,6 +5642,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.3,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -3,
     "mktCost": 1
   },
   {
@@ -5449,6 +5668,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -3.08,
     "mktCost": 1
   },
   {
@@ -5474,6 +5694,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.1,
     "mktCost": 1
   },
   {
@@ -5499,6 +5720,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -3.1,
     "mktCost": 1
   },
   {
@@ -5524,6 +5746,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.2,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -3.11,
     "mktCost": 1
   },
   {
@@ -5549,6 +5772,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -3.18,
     "mktCost": 1
   },
   {
@@ -5573,6 +5797,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.19,
     "mktCost": 1
   },
   {
@@ -5597,6 +5822,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.7,
     "adp": 105.6,
+    "totalZ": -3.21,
     "mktCost": 1
   },
   {
@@ -5622,6 +5848,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.21,
     "mktCost": 1
   },
   {
@@ -5648,6 +5875,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -3.23,
     "mktCost": 1
   },
   {
@@ -5673,6 +5901,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -3.23,
     "mktCost": 1
   },
   {
@@ -5698,6 +5927,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -3.28,
     "mktCost": 1
   },
   {
@@ -5724,6 +5954,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -3.29,
     "mktCost": 1
   },
   {
@@ -5748,6 +5979,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": 78.8,
+    "totalZ": -3.31,
     "mktCost": 4
   },
   {
@@ -5772,6 +6004,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.1,
     "adp": null,
+    "totalZ": -3.32,
     "mktCost": 1
   },
   {
@@ -5796,6 +6029,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.3,
     "adp": 105.7,
+    "totalZ": -3.32,
     "mktCost": 1
   },
   {
@@ -5821,6 +6055,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.8,
     "adp": 105.3,
+    "totalZ": -3.34,
     "mktCost": 1
   },
   {
@@ -5846,6 +6081,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": 111.3,
+    "totalZ": -3.35,
     "mktCost": 1
   },
   {
@@ -5871,6 +6107,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -3.38,
     "mktCost": 1
   },
   {
@@ -5895,6 +6132,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 1,
     "adp": null,
+    "totalZ": -3.41,
     "mktCost": 1
   },
   {
@@ -5919,6 +6157,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.41,
     "mktCost": 1
   },
   {
@@ -5944,6 +6183,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.1,
     "adp": 107,
+    "totalZ": -3.46,
     "mktCost": 1
   },
   {
@@ -5968,6 +6208,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 1.4,
     "adp": null,
+    "totalZ": -3.49,
     "mktCost": 1
   },
   {
@@ -5993,6 +6234,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -3.59,
     "mktCost": 1
   },
   {
@@ -6018,6 +6260,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -3.6,
     "mktCost": 1
   },
   {
@@ -6043,6 +6286,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.66,
     "mktCost": 1
   },
   {
@@ -6068,6 +6312,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -3.66,
     "mktCost": 1
   },
   {
@@ -6093,6 +6338,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -3.72,
     "mktCost": 1
   },
   {
@@ -6118,6 +6364,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -3.75,
     "mktCost": 1
   },
   {
@@ -6142,6 +6389,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -3.78,
     "mktCost": 1
   },
   {
@@ -6167,6 +6415,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1.2,
     "adp": null,
+    "totalZ": -3.88,
     "mktCost": 1
   },
   {
@@ -6192,6 +6441,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -3.91,
     "mktCost": 1
   },
   {
@@ -6217,6 +6467,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -3.92,
     "mktCost": 1
   },
   {
@@ -6242,6 +6493,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -3.95,
     "mktCost": 1
   },
   {
@@ -6266,6 +6518,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -3.95,
     "mktCost": 1
   },
   {
@@ -6290,6 +6543,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -4.02,
     "mktCost": 1
   },
   {
@@ -6315,6 +6569,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.06,
     "mktCost": 1
   },
   {
@@ -6341,6 +6596,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.1,
     "mktCost": 1
   },
   {
@@ -6366,6 +6622,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -4.12,
     "mktCost": 1
   },
   {
@@ -6390,6 +6647,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.2,
     "adp": 118.5,
+    "totalZ": -4.18,
     "mktCost": 1
   },
   {
@@ -6415,6 +6673,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -4.21,
     "mktCost": 1
   },
   {
@@ -6440,6 +6699,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": 114.1,
+    "totalZ": -4.21,
     "mktCost": 1
   },
   {
@@ -6465,6 +6725,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.23,
     "mktCost": 1
   },
   {
@@ -6490,6 +6751,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -4.29,
     "mktCost": 1
   },
   {
@@ -6515,6 +6777,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.29,
     "mktCost": 1
   },
   {
@@ -6540,6 +6803,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -4.33,
     "mktCost": 1
   },
   {
@@ -6564,6 +6828,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.9,
     "adp": null,
+    "totalZ": -4.34,
     "mktCost": 1
   },
   {
@@ -6589,6 +6854,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.34,
     "mktCost": 1
   },
   {
@@ -6614,6 +6880,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -4.34,
     "mktCost": 1
   },
   {
@@ -6639,6 +6906,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -4.35,
     "mktCost": 1
   },
   {
@@ -6664,6 +6932,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.3,
     "adp": 106.7,
+    "totalZ": -4.37,
     "mktCost": 1
   },
   {
@@ -6689,6 +6958,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.8,
     "adp": null,
+    "totalZ": -4.47,
     "mktCost": 1
   },
   {
@@ -6714,6 +6984,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.49,
     "mktCost": 1
   },
   {
@@ -6738,6 +7009,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.55,
     "mktCost": 1
   },
   {
@@ -6763,6 +7035,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.67,
     "mktCost": 1
   },
   {
@@ -6788,6 +7061,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.7,
     "mktCost": 1
   },
   {
@@ -6813,6 +7087,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.6,
     "adp": null,
+    "totalZ": -4.83,
     "mktCost": 1
   },
   {
@@ -6838,6 +7113,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -4.85,
     "mktCost": 1
   },
   {
@@ -6862,6 +7138,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -4.86,
     "mktCost": 1
   },
   {
@@ -6887,6 +7164,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.89,
     "mktCost": 1
   },
   {
@@ -6912,6 +7190,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -4.9,
     "mktCost": 1
   },
   {
@@ -6936,6 +7215,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.7,
     "adp": null,
+    "totalZ": -4.91,
     "mktCost": 1
   },
   {
@@ -6960,6 +7240,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -4.92,
     "mktCost": 1
   },
   {
@@ -6984,6 +7265,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.92,
     "mktCost": 1
   },
   {
@@ -7009,6 +7291,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -4.96,
     "mktCost": 1
   },
   {
@@ -7034,6 +7317,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -4.98,
     "mktCost": 1
   },
   {
@@ -7059,6 +7343,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -5.04,
     "mktCost": 1
   },
   {
@@ -7084,6 +7369,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -5.07,
     "mktCost": 1
   },
   {
@@ -7110,6 +7396,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.1,
     "adp": 105.4,
+    "totalZ": -5.11,
     "mktCost": 1
   },
   {
@@ -7135,6 +7422,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.3,
     "adp": 118,
+    "totalZ": -5.13,
     "mktCost": 1
   },
   {
@@ -7160,6 +7448,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -5.15,
     "mktCost": 1
   },
   {
@@ -7185,6 +7474,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -5.18,
     "mktCost": 1
   },
   {
@@ -7210,6 +7500,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -5.21,
     "mktCost": 1
   },
   {
@@ -7235,6 +7526,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.1,
     "adp": null,
+    "totalZ": -5.25,
     "mktCost": 1
   },
   {
@@ -7260,6 +7552,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -5.27,
     "mktCost": 1
   },
   {
@@ -7285,6 +7578,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -5.29,
     "mktCost": 1
   },
   {
@@ -7310,6 +7604,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.8,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -5.33,
     "mktCost": 1
   },
   {
@@ -7335,6 +7630,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 0.2,
     "adp": null,
+    "totalZ": -5.34,
     "mktCost": 1
   },
   {
@@ -7360,6 +7656,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.6,
     "blk": 0.4,
     "adp": null,
+    "totalZ": -5.39,
     "mktCost": 1
   },
   {
@@ -7384,6 +7681,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.4,
     "blk": 0.6,
     "adp": 116.8,
+    "totalZ": -5.42,
     "mktCost": 1
   },
   {
@@ -7409,6 +7707,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.5,
     "adp": null,
+    "totalZ": -5.5,
     "mktCost": 1
   },
   {
@@ -7434,6 +7733,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.9,
     "blk": 0.3,
     "adp": null,
+    "totalZ": -5.51,
     "mktCost": 1
   }
 ];

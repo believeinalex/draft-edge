@@ -73,6 +73,14 @@ function computeAll(state, PLAYERS){
     for(const c of CATS) zc[c] = zOf(p,c);
     zAll.set(p.rk, zc);
   }
+  function baseCompositeZ(zc){
+    let s=0; 
+    for(const c of CATS) {
+      s += zc[c];
+    }
+    return s;
+  }
+
   function compositeZ(zc){
     let s=0; 
     for(const c of CATS) {
@@ -81,17 +89,29 @@ function computeAll(state, PLAYERS){
     }
     return s;
   }
-  const baseCompositeZ = compositeZ;
 
-  const playerZScores = PLAYERS.map(p => ({
-    rk: p.rk,
-    baseZ: baseCompositeZ(zAll.get(p.rk))
-  })).sort((a,b) => b.baseZ - a.baseZ);
+  const isPunting = state.weights && Object.values(state.weights).some(w => typeof w === 'number' && Math.abs(w - 1.0) > 1e-4);
 
   const zRankMap = new Map();
-  playerZScores.forEach((item, index) => {
-    zRankMap.set(item.rk, index + 1);
-  });
+  if (!isPunting) {
+    PLAYERS.forEach(p => {
+      zRankMap.set(p.rk, p.rk);
+    });
+  } else {
+    const playerZScores = PLAYERS.map(p => {
+      const zc = zAll.get(p.rk);
+      const delta = zc ? (compositeZ(zc) - baseCompositeZ(zc)) : 0;
+      const baseScore = typeof p.totalZ === 'number' ? p.totalZ : (301 - p.rk);
+      return {
+        rk: p.rk,
+        score: baseScore + delta
+      };
+    }).sort((a,b) => b.score - a.score);
+
+    playerZScores.forEach((item, index) => {
+      zRankMap.set(item.rk, index + 1);
+    });
+  }
 
   const draftedCount = state.picks.length;
   const remainingSlots = clamp(poolSize - draftedCount, 0, poolSize);

@@ -82,6 +82,7 @@ function updateProjections(csvPath, targetPlayersPath) {
     const ast = parseFloat(cols[header.indexOf('AST')]) || 0;
     const stl = parseFloat(cols[header.indexOf('STL')]) || 0;
     const blk = parseFloat(cols[header.indexOf('BLK')]) || 0;
+    const totalZ = header.indexOf('TOTAL') !== -1 ? (parseFloat(cols[header.indexOf('TOTAL')]) || 0) : 0;
 
     const pos = rawPos ? rawPos.split(',').map(s => s.trim()).filter(Boolean) : [];
     const adp = rawAdp && !isNaN(parseFloat(rawAdp)) ? parseFloat(rawAdp) : null;
@@ -110,6 +111,7 @@ function updateProjections(csvPath, targetPlayersPath) {
       stl,
       blk,
       adp,
+      totalZ,
       mktCost
     };
 
