@@ -1365,7 +1365,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.08,
     "blk": 0.07,
     "adp": 64.3,
-    "mktCost": 1
+    "mktCost": 14
   },
   {
     "rk": 56,
@@ -1511,7 +1511,7 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.07,
     "blk": 0.13,
     "adp": 100,
-    "mktCost": 1
+    "mktCost": 10
   },
   {
     "rk": 62,
@@ -7440,6 +7440,4 @@ const DRAFT_EDGE_PLAYERS = [
   }
 ];
 
-if(typeof module !== 'undefined'){
-  module.exports = DRAFT_EDGE_PLAYERS;
-}
+if (typeof module !== 'undefined') { module.exports = DRAFT_EDGE_PLAYERS; }

@@ -1,0 +1,44 @@
+Monte Carlo Simulation Report (1 runs)
+=========================================
+Overall Win Rates (by archetype):
+  - Our Bot (The Edge): 100.0%
+  - Market Value Bots: 0.0%
+  - Stars & Scrubs Bots: 0.0%
+  - Strict Budget Bots: 0.0%
+  - Homer Bots: 0.0%
+
+Our Average Final Power Points: 89.0
+Our Average Unspent Budget: $2.0
+
+--- Budget Pacing ---
+  Budget remaining at Pick 50: $56.0
+  Budget remaining at Pick 100: $12.0
+  Budget remaining at Pick 150: $2.0
+
+--- Positional Breakdown ---
+  PG: 6.0   SG: 6.0   SF: 3.0   PF: 6.0   C: 4.0
+
+--- Average Z-Scores by Category (Baseline Initial) ---
+  fgPct    : -1.979
+  ftPct    : 0.904
+  tpm      : 4.667
+  pts      : 4.800
+  treb     : -1.850
+  ast      : 4.405
+  stl      : 3.055
+  blk      : -1.760
+
+--- Top 20 Most Drafted Players (with Avg Profit) ---
+ 1. Trey Murphy III           : 100.0% | Avg ROI: +$1.0
+ 2. Dejounte Murray           : 100.0% | Avg ROI: $0.0
+ 3. Devin Booker              : 100.0% | Avg ROI: +$2.0
+ 4. Evan Mobley               : 100.0% | Avg ROI: +$1.0
+ 5. Darius Garland            : 100.0% | Avg ROI: $0.0
+ 6. Tyler Herro               : 100.0% | Avg ROI: +$1.0
+ 7. Jalen Suggs               : 100.0% | Avg ROI: +$1.0
+ 8. Pascal Siakam             : 100.0% | Avg ROI: $0.0
+ 9. Zion Williamson           : 100.0% | Avg ROI: +$1.0
+10. Jabari Smith Jr.          : 100.0% | Avg ROI: +$1.0
+11. Toumani Camara            : 100.0% | Avg ROI: +$4.0
+12. Cam Spencer               : 100.0% | Avg ROI: +$2.0
+13. Kyshawn George            : 100.0% | Avg ROI: +$2.0
