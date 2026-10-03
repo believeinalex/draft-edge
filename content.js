@@ -17,13 +17,17 @@
   'use strict';
 
   const DEFAULTS = { numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
-  const PLAYERS = DRAFT_EDGE_PLAYERS;
-  const nameIndex = buildNameIndex(PLAYERS);
+  const PLAYERS = typeof DRAFT_EDGE_PLAYERS !== 'undefined' ? DRAFT_EDGE_PLAYERS : (typeof require !== 'undefined' ? require('./players.js') : []);
+  const _buildNameIndex = typeof buildNameIndex === 'function' ? buildNameIndex : (typeof require !== 'undefined' ? require('./engine.js').buildNameIndex : null);
+  const _matchPlayer = typeof matchPlayer === 'function' ? matchPlayer : (typeof require !== 'undefined' ? require('./engine.js').matchPlayer : null);
+  const _CATS = typeof CATS !== 'undefined' ? CATS : (typeof require !== 'undefined' ? require('./engine.js').CATS : ['fgPct','ftPct','tpm','pts','treb','ast','stl','blk']);
+  const _CAT_LABEL = typeof CAT_LABEL !== 'undefined' ? CAT_LABEL : (typeof require !== 'undefined' ? require('./engine.js').CAT_LABEL : {});
+  const nameIndex = _buildNameIndex ? _buildNameIndex(PLAYERS) : null;
 
   let config = Object.assign({}, DEFAULTS);
   let picks = []; // {rk, teamName, price, ts, source: 'auto'|'manual'}
   let seenSignatures = new Set();
-  let weights = Object.fromEntries(CATS.map(c=>[c,1]));
+  let weights = Object.fromEntries(_CATS.map(c=>[c,1]));
 
   function state(){
     return { numTeams: config.numTeams, rosterSlots: config.rosterSlots, budget: config.budget,
@@ -32,16 +36,19 @@
   }
 
   function save(){
-    chrome.storage.local.set({ picks, seenSignatures: Array.from(seenSignatures), weights });
+    if(typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local){
+      chrome.storage.local.set({ picks, seenSignatures: Array.from(seenSignatures), weights });
+    }
   }
 
   function loadThenInit(){
+    if(typeof chrome === 'undefined' || !chrome.storage || !chrome.storage.local) return;
     chrome.storage.local.get(['config','picks','seenSignatures','weights'], (res)=>{
       config = Object.assign({}, DEFAULTS, res.config||{});
       picks = Array.isArray(res.picks) ? res.picks : [];
       seenSignatures = new Set(res.seenSignatures||[]);
       if(res.weights && typeof res.weights === 'object'){
-        weights = Object.assign(Object.fromEntries(CATS.map(c=>[c,1])), res.weights);
+        weights = Object.assign(Object.fromEntries(_CATS.map(c=>[c,1])), res.weights);
       }
       buildOverlay();
       render();
@@ -49,14 +56,16 @@
     });
   }
 
-  chrome.storage.onChanged.addListener((changes, area)=>{
-    if(area!=='local') return;
-    let dirty = false;
-    if(changes.config){ config = Object.assign({}, DEFAULTS, changes.config.newValue||{}); dirty = true; }
-    if(changes.picks){ picks = Array.isArray(changes.picks.newValue) ? changes.picks.newValue : []; dirty = true; }
-    if(changes.weights){ weights = Object.assign(Object.fromEntries(CATS.map(c=>[c,1])), changes.weights.newValue||{}); dirty = true; }
-    if(dirty) render();
-  });
+  if(typeof chrome !== 'undefined' && chrome.storage && chrome.storage.onChanged){
+    chrome.storage.onChanged.addListener((changes, area)=>{
+      if(area!=='local') return;
+      let dirty = false;
+      if(changes.config){ config = Object.assign({}, DEFAULTS, changes.config.newValue||{}); dirty = true; }
+      if(changes.picks){ picks = Array.isArray(changes.picks.newValue) ? changes.picks.newValue : []; dirty = true; }
+      if(changes.weights){ weights = Object.assign(Object.fromEntries(_CATS.map(c=>[c,1])), changes.weights.newValue||{}); dirty = true; }
+      if(dirty) render();
+    });
+  }
 
   /* ---------------------------------------------------------------------
    * 1. Pick logging (shared by auto-detect and the manual check/log field)
@@ -154,9 +163,67 @@
     return nominationDiv;
   }
 
+  // Helper to dynamically inspect board grid columns and headers.
+  // Yahoo dynamically defines columns using CSS grid: repeat(N, minmax(100px, 1fr))
+  // where N matches the league size (14 teams, 12 teams, etc.).
+  function getGridInfo(grid){
+    let numCols = 0;
+    const inlineStyle = (grid.style && grid.style.gridTemplateColumns) || (typeof grid.getAttribute === 'function' ? grid.getAttribute('style') : '') || '';
+    const repeatMatch = inlineStyle.match(/repeat\(\s*(\d+)/i);
+    if(repeatMatch){
+      numCols = parseInt(repeatMatch[1], 10);
+    } else if(typeof window !== 'undefined' && window.getComputedStyle){
+      try {
+        const comp = window.getComputedStyle(grid).gridTemplateColumns || '';
+        const repComp = comp.match(/repeat\(\s*(\d+)/i);
+        if(repComp){
+          numCols = parseInt(repComp[1], 10);
+        } else {
+          const parts = comp.trim().split(/\s+/).filter(Boolean);
+          if(parts.length > 1) numCols = parts.length;
+        }
+      } catch(e){}
+    }
+
+    if(!numCols || numCols <= 0){
+      let count = 0;
+      for(let i = 0; i < grid.children.length; i++){
+        const c = grid.children[i];
+        const isSticky = c && (
+          (c.classList && c.classList.contains('Pos(st)')) ||
+          (c.className && typeof c.className === 'string' && c.className.indexOf('Pos(st)') !== -1)
+        );
+        if(isSticky){
+          count++;
+        } else {
+          break;
+        }
+      }
+      if(count > 0) numCols = count;
+    }
+
+    if(!numCols || numCols <= 0){
+      const sidebarCount = document.querySelectorAll('tr.ys-team, .ys-team[data-id]').length;
+      if(sidebarCount > 0) numCols = sidebarCount;
+    }
+
+    if(!numCols || numCols <= 0){
+      numCols = config.numTeams || 14;
+    }
+
+    const headers = [];
+    for(let i = 0; i < numCols && i < grid.children.length; i++){
+      const h = grid.children[i];
+      const name = (h.textContent||'').trim() || (typeof h.getAttribute === 'function' ? h.getAttribute('title') : '') || `Team ${i+1}`;
+      headers.push(name);
+    }
+
+    return { numCols, headers };
+  }
+
   // ---- Board-tab grid: the persistent, full-history source. Structure
-  // (verified live): a flat container of [numTeams header cells] followed by
-  // [numTeams * rosterSlots player-slot cells] in ROW-MAJOR order (round 1
+  // (verified live): a flat container of [numCols header cells] followed by
+  // [numCols * rosterSlots player-slot cells] in ROW-MAJOR order (round 1
   // for every team, then round 2 for every team, ...). Each filled slot's
   // player card carries a `title` attribute of the exact shape
   // "Full Player Name, TEAM-POS, " — unlike the Queue feed this gives the
@@ -171,17 +238,62 @@
       const cellWrap = div.parentElement;
       const grid = cellWrap ? cellWrap.parentElement : null;
       if(!grid) return;
+      const { numCols, headers } = getGridInfo(grid);
       const idx = Array.prototype.indexOf.call(grid.children, cellWrap);
-      if(idx < config.numTeams) return; // it's a header cell, not a player slot
-      const headers = Array.prototype.slice.call(grid.children, 0, config.numTeams).map(h=>h.textContent.trim());
-      const j = idx - config.numTeams;
-      const teamIdx = j % config.numTeams;
+      if(idx < numCols) return; // it's a header cell, not a player slot
+      const j = idx - numCols;
+      const teamIdx = j % numCols;
       const teamName = headers[teamIdx];
       if(!teamName) return;
       const priceMatch = cellWrap.textContent.match(/\$(\d{1,3})(?!\d)/);
       if(!priceMatch) return;
       handleScrapedPick(m[1].trim(), parseInt(priceMatch[1],10), teamName, null);
     });
+  }
+
+  function autoDetectLeague(){
+    let detectedTeams = 0;
+    const grid = document.querySelector('div[style*="grid-template-columns"]');
+    if(grid){
+      const info = getGridInfo(grid);
+      if(info.numCols >= 4 && info.numCols <= 30) detectedTeams = info.numCols;
+    }
+    if(!detectedTeams || detectedTeams <= 0){
+      const sidebarTeams = document.querySelectorAll('tr.ys-team, .ys-team[data-id]');
+      if(sidebarTeams.length >= 4 && sidebarTeams.length <= 30){
+        detectedTeams = sidebarTeams.length;
+      }
+    }
+
+    let detectedSlots = 0;
+    const teamRows = document.querySelectorAll('tr.ys-team');
+    for(let r of teamRows){
+      const text = r.textContent || '';
+      const sm = text.match(/\b\d+\/(\d+)\b/);
+      if(sm){
+        const val = parseInt(sm[1], 10);
+        if(val >= 5 && val <= 25){
+          detectedSlots = val;
+          break;
+        }
+      }
+    }
+
+    let changed = false;
+    if(detectedTeams && detectedTeams !== config.numTeams){
+      config.numTeams = detectedTeams;
+      changed = true;
+    }
+    if(detectedSlots && detectedSlots !== config.rosterSlots){
+      config.rosterSlots = detectedSlots;
+      changed = true;
+    }
+    if(changed){
+      if(typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local){
+        chrome.storage.local.set({ config });
+      }
+      render();
+    }
   }
 
   let lastAutoNominatedId = null;
@@ -192,7 +304,8 @@
     const img = nominationDiv.querySelector('img[title]');
     const rawName = img ? img.getAttribute('title') : null;
     if(!rawName) return;
-    const player = matchPlayer(rawName, PLAYERS, nameIndex);
+    const matcher = _matchPlayer || matchPlayer;
+    const player = matcher(rawName, PLAYERS, nameIndex);
     if(!player || picks.some(p=>p.rk===player.rk)) return;
     lastAutoNominatedId = dataId;
     if(!els.search) return;
@@ -227,17 +340,32 @@
 
   function handleScrapedPick(rawName, price, teamGuess, dataId){
     if(!rawName || !isFinite(price) || price<=0) return;
-    const player = matchPlayer(rawName, PLAYERS, nameIndex);
+    const matcher = _matchPlayer || matchPlayer;
+    const player = matcher(rawName, PLAYERS, nameIndex);
     if(!player) return; // unmatched — left for the manual field to log, not guessed at
-    const sig = (dataId || player.rk) + '|' + price + '|' + (teamGuess||'');
+    const normTeam = normalizeTeamName(teamGuess);
+    const existing = picks.find(p=>p.rk===player.rk);
+    if(existing){
+      // Self-heal previously misassigned auto picks (e.g. from an earlier incorrect team count)
+      if(existing.source==='auto' && (existing.teamName!==normTeam || existing.price!==price)){
+        existing.teamName = normTeam;
+        existing.price = price;
+        const sig = (dataId || player.rk) + '|' + price + '|' + normTeam;
+        seenSignatures.add(sig);
+        save();
+        render(true);
+      }
+      return;
+    }
+    const sig = (dataId || player.rk) + '|' + price + '|' + normTeam;
     if(seenSignatures.has(sig)) return;
-    if(picks.some(p=>p.rk===player.rk)) { seenSignatures.add(sig); return; }
     seenSignatures.add(sig);
     logPick(player.rk, teamGuess, price, 'auto');
   }
 
   let observer = null;
   function runAllScans(){
+    autoDetectLeague();
     const nominationDiv = scanForPicks();
     scanBoardGrid();
     genericScan(document.body);
@@ -638,5 +766,23 @@
     });
   }
 
-  loadThenInit();
+  if(typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local){
+    loadThenInit();
+  }
+
+  if(typeof module !== 'undefined' && module.exports){
+    module.exports = {
+      getGridInfo,
+      scanBoardGrid,
+      autoDetectLeague,
+      handleScrapedPick,
+      normalizeTeamName,
+      BOARD_CELL_TITLE_RE,
+      getConfig: () => config,
+      setConfig: (c) => { config = Object.assign({}, DEFAULTS, c); },
+      getPicks: () => picks,
+      setPicks: (p) => { picks = p; },
+      runAllScans
+    };
+  }
 })();
