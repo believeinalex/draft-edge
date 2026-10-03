@@ -45,7 +45,8 @@ test('normalizeNameOrder flips Last, First to First Last correctly', () => {
 
 test('analyzeMockDraft calculates correct power rankings and surplus for mock export', () => {
   const { runAnalysisFromFile } = require('../utils/analyze_mock.js');
-  const analysis = runAnalysisFromFile(require('path').join(__dirname, '../utils/mock.txt'), 'Alex');
+  const fixturePath = require('path').join(__dirname, '../drafts/2026_09_30_mock_1.txt');
+  const analysis = runAnalysisFromFile(fixturePath, 'Alex');
   assert.equal(analysis.powerRankings.length, 12);
   assert.equal(analysis.targetUserTeam, 'Alex');
   assert.ok(analysis.userPicks.length === 13);
