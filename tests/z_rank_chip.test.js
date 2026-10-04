@@ -55,6 +55,16 @@ class MockElement {
     return newChild;
   }
 
+  remove() {
+    if (this.parentElement) {
+      const idx = this.parentElement.children.indexOf(this);
+      if (idx !== -1) {
+        this.parentElement.children.splice(idx, 1);
+      }
+      this.parentElement = null;
+    }
+  }
+
   get previousElementSibling() {
     if (!this.parentElement) return null;
     const idx = this.parentElement.children.indexOf(this);
@@ -289,4 +299,51 @@ test('injectZRankChips works with img[title] and disambiguates Ausar Thompson vi
 
   delete global.document;
 });
+
+test('matchPlayer rejects different first name/initial even when last name matches a single player', () => {
+  const byNorm = buildNameIndex(PLAYERS);
+
+  // Thanasis Antetokounmpo (T.) should not match Giannis Antetokounmpo (G.)
+  const thanasis = matchPlayer('T. Antetokounmpo', PLAYERS, byNorm, 'PF · MIL');
+  assert.equal(thanasis, null, 'T. Antetokounmpo should not match Giannis');
+
+  // Giannis Antetokounmpo should still match
+  const giannisInit = matchPlayer('G. Antetokounmpo', PLAYERS, byNorm, 'PF · MIL');
+  assert.ok(giannisInit);
+  assert.equal(giannisInit.rk, 25);
+
+  const giannisFull = matchPlayer('Giannis Antetokounmpo', PLAYERS, byNorm);
+  assert.ok(giannisFull);
+  assert.equal(giannisFull.rk, 25);
+});
+
+test('injectZRankChips removes existing badge when row is recycled for an unranked player', () => {
+  const doc = new MockDocument();
+  global.document = doc;
+
+  const playerDiv = doc.createElement('div', 'ys-player');
+  const nameWrap = doc.createElement('div');
+  const nameSpan = doc.createElement('span', '_ys_name', 'Giannis Antetokounmpo');
+  const notesSpan = doc.createElement('span', 'ys-player-notes');
+
+  nameWrap.appendChild(nameSpan);
+  nameWrap.appendChild(notesSpan);
+  playerDiv.appendChild(nameWrap);
+  doc.body.appendChild(playerDiv);
+
+  injectZRankChips();
+  let badge = playerDiv.querySelector('.de-name-rank-badge');
+  assert.ok(badge);
+  assert.equal(badge.textContent, '#25');
+
+  // Row is recycled in virtual scroll for an unranked player (e.g. Joe Ingles or Thanasis)
+  nameSpan.textContent = 'J. Ingles';
+  injectZRankChips();
+
+  badge = playerDiv.querySelector('.de-name-rank-badge');
+  assert.equal(badge, null, 'Stale badge should be removed when row is recycled for unranked player');
+
+  delete global.document;
+});
+
 

@@ -391,11 +391,19 @@
         const notes = playerDiv.querySelector('.ys-player-notes');
         const nameEl = (notes && notes.previousElementSibling) || playerDiv.querySelector('span:not([class*="de-"])');
         const rawName = (img && img.getAttribute('title')) || (nameEl ? nameEl.textContent.trim() : null);
-        if(!rawName) return;
+        if(!rawName){
+          const existing = playerDiv.querySelector('.de-name-rank-badge');
+          if(existing && existing.remove) existing.remove();
+          return;
+        }
 
         const teamHint = playerDiv.textContent || '';
         const player = matcher(rawName, PLAYERS, nameIndex, teamHint);
-        if(!player) return;
+        if(!player){
+          const existing = playerDiv.querySelector('.de-name-rank-badge');
+          if(existing && existing.remove) existing.remove();
+          return;
+        }
 
         const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
         const targetAnchor = nameEl || notes;
@@ -413,16 +421,27 @@
 
         const outerPlayer = notes.closest ? notes.closest('.ys-player') : null;
         if(outerPlayer && outerPlayer.querySelector('.de-name-rank-badge')) return;
-        if(parent.querySelector('.de-name-rank-badge')) return;
 
         const nameEl = notes.previousElementSibling;
-        if(!nameEl) return;
+        if(!nameEl){
+          const existing = parent.querySelector('.de-name-rank-badge');
+          if(existing && existing.remove) existing.remove();
+          return;
+        }
         const rawName = nameEl.textContent.trim();
-        if(!rawName) return;
+        if(!rawName){
+          const existing = parent.querySelector('.de-name-rank-badge');
+          if(existing && existing.remove) existing.remove();
+          return;
+        }
 
         const teamHint = (parent.parentElement && parent.parentElement.textContent) || parent.textContent || '';
         const player = matcher(rawName, PLAYERS, nameIndex, teamHint);
-        if(!player) return;
+        if(!player){
+          const existing = parent.querySelector('.de-name-rank-badge');
+          if(existing && existing.remove) existing.remove();
+          return;
+        }
 
         const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
         attachOrUpdateBadge(parent, nameEl, player.rk, zRank);
