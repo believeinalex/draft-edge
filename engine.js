@@ -580,6 +580,23 @@ function matchPlayer(rawName, PLAYERS, byNorm, teamOrPosHint){
     const pn = normName(p.name).split(' ');
     return pn[pn.length-1] === last;
   });
+
+  if(parts.length > 1){
+    const first = parts[0];
+    const compatible = candidates.filter(p => {
+      const candFirst = normName(p.name).split(' ')[0];
+      return candFirst === first ||
+             candFirst.startsWith(first) ||
+             first.startsWith(candFirst) ||
+             (candFirst.length > 0 && first.length > 0 && candFirst[0] === first[0]);
+    });
+    if(compatible.length > 0){
+      candidates = compatible;
+    } else {
+      return null;
+    }
+  }
+
   if(candidates.length===1) return candidates[0];
   if(candidates.length>1){
     if(teamOrPosHint){
