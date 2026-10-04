@@ -111,21 +111,31 @@
 #de-overlay .de-punt-tag.lagging{ background:#3a1c1c; color:#e2685f; }
 
 /* Hashtag Basketball style Z-Score Rank Badge & Stat Breakdown Table */
+.de-name-rank-badge,
 #de-overlay .de-name-rank-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #000000;
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 11px;
-  padding: 1px 7px;
-  border-radius: 10px;
-  margin-right: 6px;
-  font-family: ui-monospace, monospace;
-  letter-spacing: -0.02em;
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 11px !important;
+  padding: 1px 6px !important;
+  border-radius: 10px !important;
+  margin-right: 5px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  letter-spacing: -0.02em !important;
+  border: 1px solid rgba(255,255,255,0.25) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  user-select: none !important;
+}
+
+.de-name-rank-badge:hover {
+  border-color: #4fbf85 !important;
 }
 
 #de-overlay .de-player-up-banner {
