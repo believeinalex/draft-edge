@@ -138,6 +138,16 @@
   border-color: #4fbf85 !important;
 }
 
+/* Allow enough width for player name and Z-rank badge in Yahoo draft table */
+th[data-id="fname"] {
+  min-width: 175px !important;
+}
+td div[class*="W(150px)"] {
+  width: auto !important;
+  min-width: 170px !important;
+  overflow: visible !important;
+}
+
 #de-overlay .de-player-up-banner {
   background: linear-gradient(135deg, #1b2432 0%, #172a20 100%);
   border: 1px solid #4fbf85;
