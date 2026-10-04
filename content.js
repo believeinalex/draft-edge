@@ -20,6 +20,7 @@
   const PLAYERS = typeof DRAFT_EDGE_PLAYERS !== 'undefined' ? DRAFT_EDGE_PLAYERS : (typeof require !== 'undefined' ? require('./players.js') : []);
   const _buildNameIndex = typeof buildNameIndex === 'function' ? buildNameIndex : (typeof require !== 'undefined' ? require('./engine.js').buildNameIndex : null);
   const _matchPlayer = typeof matchPlayer === 'function' ? matchPlayer : (typeof require !== 'undefined' ? require('./engine.js').matchPlayer : null);
+  const _computeAll = typeof computeAll === 'function' ? computeAll : (typeof require !== 'undefined' ? require('./engine.js').computeAll : null);
   const _CATS = typeof CATS !== 'undefined' ? CATS : (typeof require !== 'undefined' ? require('./engine.js').CATS : ['fgPct','ftPct','tpm','pts','treb','ast','stl','blk']);
   const _CAT_LABEL = typeof CAT_LABEL !== 'undefined' ? CAT_LABEL : (typeof require !== 'undefined' ? require('./engine.js').CAT_LABEL : {});
   const nameIndex = _buildNameIndex ? _buildNameIndex(PLAYERS) : null;
@@ -137,7 +138,7 @@
       const teamNameRaw = teamEl ? teamEl.textContent.trim() : '';
       if(teamEl && teamNameRaw && !teamNameRaw.startsWith('$')){
         const img = playerDiv.querySelector('img[title]');
-        const nameSpan = playerDiv.querySelector('span');
+        const nameSpan = playerDiv.querySelector('span:not([class*="de-"])');
         const rawName = img ? img.getAttribute('title') : (nameSpan ? nameSpan.textContent.trim() : null);
         if(!rawName) return;
         // price sits one level further up: playerDiv -> wrap div -> row div
@@ -148,7 +149,7 @@
         if(!priceMatch) return;
         const price = parseInt(priceMatch[1],10);
         const dataId = playerDiv.getAttribute('data-id');
-        handleScrapedPick(rawName, price, teamNameRaw, dataId);
+        handleScrapedPick(rawName, price, teamNameRaw, dataId, playerDiv.textContent);
         return;
       }
       // No team-name sibling: either the "Last:" summary widget, or the
@@ -302,10 +303,11 @@
     const dataId = nominationDiv.getAttribute('data-id');
     if(dataId === lastAutoNominatedId) return;
     const img = nominationDiv.querySelector('img[title]');
-    const rawName = img ? img.getAttribute('title') : null;
+    const nameSpan = nominationDiv.querySelector('span:not([class*="de-"])');
+    const rawName = img ? img.getAttribute('title') : (nameSpan ? nameSpan.textContent.trim() : null);
     if(!rawName) return;
     const matcher = _matchPlayer || matchPlayer;
-    const player = matcher(rawName, PLAYERS, nameIndex);
+    const player = matcher(rawName, PLAYERS, nameIndex, nominationDiv.textContent);
     if(!player || picks.some(p=>p.rk===player.rk)) return;
     lastAutoNominatedId = dataId;
     if(!els.search) return;
@@ -334,14 +336,14 @@
       let leftover = text.replace(rawName, '').replace(priceMatch[0], '').trim();
       leftover = leftover.replace(/[|•·,-]+/g,' ').replace(/\s+/g,' ').trim();
       const teamGuess = leftover.split(' ').slice(0,4).join(' ');
-      handleScrapedPick(rawName, parseInt(priceMatch[1],10), teamGuess, null);
+      handleScrapedPick(rawName, parseInt(priceMatch[1],10), teamGuess, null, text);
     });
   }
 
-  function handleScrapedPick(rawName, price, teamGuess, dataId){
+  function handleScrapedPick(rawName, price, teamGuess, dataId, teamHint){
     if(!rawName || !isFinite(price) || price<=0) return;
     const matcher = _matchPlayer || matchPlayer;
-    const player = matcher(rawName, PLAYERS, nameIndex);
+    const player = matcher(rawName, PLAYERS, nameIndex, teamHint);
     if(!player) return; // unmatched — left for the manual field to log, not guessed at
     const normTeam = normalizeTeamName(teamGuess);
     const existing = picks.find(p=>p.rk===player.rk);
@@ -363,6 +365,99 @@
     logPick(player.rk, teamGuess, price, 'auto');
   }
 
+  /* ---------------------------------------------------------------------
+   * 2b. In-page player Z-Rank chip injection (Players board / Draft room)
+   * ------------------------------------------------------------------- */
+  let isInjectingChips = false;
+  function injectZRankChips(){
+    if(isInjectingChips) return;
+    if(typeof document === 'undefined') return;
+    if(!PLAYERS || !PLAYERS.length) return;
+    const matcher = _matchPlayer || (typeof matchPlayer === 'function' ? matchPlayer : null);
+    if(!matcher) return;
+
+    isInjectingChips = true;
+    try {
+      const compute = _computeAll || (typeof computeAll === 'function' ? computeAll : null);
+      const C = compute ? compute(state(), PLAYERS) : { zRankMap: new Map() };
+      const zRankMap = C.zRankMap || new Map();
+
+      // 1. Process all .ys-player elements across the page (players table, nomination widget, etc.)
+      const playerDivs = document.querySelectorAll('.ys-player');
+      playerDivs.forEach(playerDiv => {
+        if(playerDiv.closest && playerDiv.closest('#de-overlay')) return;
+
+        const img = playerDiv.querySelector('img[title]');
+        const notes = playerDiv.querySelector('.ys-player-notes');
+        const nameEl = (notes && notes.previousElementSibling) || playerDiv.querySelector('span:not([class*="de-"])');
+        const rawName = (img && img.getAttribute('title')) || (nameEl ? nameEl.textContent.trim() : null);
+        if(!rawName) return;
+
+        const teamHint = playerDiv.textContent || '';
+        const player = matcher(rawName, PLAYERS, nameIndex, teamHint);
+        if(!player) return;
+
+        const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
+        const targetAnchor = nameEl || notes;
+        if(targetAnchor){
+          attachOrUpdateBadge(playerDiv, targetAnchor, player.rk, zRank);
+        }
+      });
+
+      // 2. Also check .ys-player-notes elements in case any player row in the players board doesn't have an outer .ys-player
+      const notesEls = document.querySelectorAll('.ys-player-notes');
+      notesEls.forEach(notes => {
+        if(notes.closest && notes.closest('#de-overlay')) return;
+        const parent = notes.parentElement;
+        if(!parent) return;
+
+        const outerPlayer = notes.closest ? notes.closest('.ys-player') : null;
+        if(outerPlayer && outerPlayer.querySelector('.de-name-rank-badge')) return;
+        if(parent.querySelector('.de-name-rank-badge')) return;
+
+        const nameEl = notes.previousElementSibling;
+        if(!nameEl) return;
+        const rawName = nameEl.textContent.trim();
+        if(!rawName) return;
+
+        const teamHint = (parent.parentElement && parent.parentElement.textContent) || parent.textContent || '';
+        const player = matcher(rawName, PLAYERS, nameIndex, teamHint);
+        if(!player) return;
+
+        const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
+        attachOrUpdateBadge(parent, nameEl, player.rk, zRank);
+      });
+    } finally {
+      isInjectingChips = false;
+    }
+  }
+
+  function attachOrUpdateBadge(container, anchorEl, rk, zRank){
+    if(!container || !anchorEl) return;
+    const existing = container.querySelector('.de-name-rank-badge');
+    const badgeText = '#' + zRank;
+    const badgeTitle = `Z-Score Rank #${zRank}`;
+
+    if(existing){
+      if(existing.textContent !== badgeText || existing.dataset.rk !== String(rk)){
+        existing.textContent = badgeText;
+        existing.title = badgeTitle;
+        existing.dataset.rk = String(rk);
+      }
+      return;
+    }
+
+    const badge = document.createElement('span');
+    badge.className = 'de-name-rank-badge';
+    badge.textContent = badgeText;
+    badge.title = badgeTitle;
+    badge.dataset.rk = String(rk);
+
+    if(anchorEl.parentElement){
+      anchorEl.parentElement.insertBefore(badge, anchorEl);
+    }
+  }
+
   let observer = null;
   function runAllScans(){
     autoDetectLeague();
@@ -370,6 +465,7 @@
     scanBoardGrid();
     genericScan(document.body);
     syncNomination(nominationDiv);
+    injectZRankChips();
   }
   function startObserving(){
     if(observer) return;
@@ -378,10 +474,20 @@
     // this is also what recovers full history from the Board tab if it's
     // already open when the extension loads)
     runAllScans();
-    observer = new MutationObserver(()=>{
-      // Re-scanning the whole (small, ≤~180-entry) pick set on every batch is
-      // simpler and more robust than diffing individual added nodes —
-      // logPick()/seenSignatures make repeat scans free no-ops.
+    observer = new MutationObserver((mutations)=>{
+      if(isInjectingChips) return;
+      if(mutations && mutations.length){
+        const allOurs = mutations.every(m => {
+          if(!m.addedNodes || !m.addedNodes.length) return false;
+          return Array.prototype.every.call(m.addedNodes, n => {
+            return n.nodeType === 1 && (
+              (n.classList && n.classList.contains('de-name-rank-badge')) ||
+              (n.querySelector && n.querySelector('.de-name-rank-badge'))
+            );
+          });
+        });
+        if(allOurs) return;
+      }
       runAllScans();
     });
     observer.observe(document.body, { childList:true, subtree:true });
@@ -718,6 +824,7 @@
         btn.addEventListener('click', ()=>undoPick(parseInt(btn.dataset.rk,10)));
       });
     }
+    injectZRankChips();
   }
 
   function renderPuntUI(C){
@@ -777,6 +884,7 @@
       autoDetectLeague,
       handleScrapedPick,
       normalizeTeamName,
+      injectZRankChips,
       BOARD_CELL_TITLE_RE,
       getConfig: () => config,
       setConfig: (c) => { config = Object.assign({}, DEFAULTS, c); },

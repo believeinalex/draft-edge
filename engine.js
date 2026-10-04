@@ -569,19 +569,27 @@ function normName(s){
   return NAME_ALIASES[n] || n;
 }
 
-function matchPlayer(rawName, PLAYERS, byNorm){
+function matchPlayer(rawName, PLAYERS, byNorm, teamOrPosHint){
   const n = normName(rawName);
   if(!n) return null;
   if(byNorm.has(n)) return byNorm.get(n);
   // token-overlap fallback: last name must match, first name may be truncated/nicknamed
   const parts = n.split(' ');
   const last = parts[parts.length-1];
-  const candidates = PLAYERS.filter(p=>{
+  let candidates = PLAYERS.filter(p=>{
     const pn = normName(p.name).split(' ');
     return pn[pn.length-1] === last;
   });
   if(candidates.length===1) return candidates[0];
   if(candidates.length>1){
+    if(teamOrPosHint){
+      const hint = String(teamOrPosHint).toUpperCase();
+      const byTeam = candidates.filter(p => p.team && hint.includes(p.team.toUpperCase()));
+      if(byTeam.length === 1) return byTeam[0];
+      if(byTeam.length > 1) {
+        candidates = byTeam;
+      }
+    }
     const first = parts[0];
     const exact = candidates.find(p=> normName(p.name).split(' ')[0] === first);
     if(exact) return exact;
