@@ -8,19 +8,25 @@ const engine = require('../engine.js');
 if (isMainThread) {
   const args = process.argv.slice(2);
   let runs = 10;
+  let mode = 'baseline';
   for (const arg of args) {
     if (arg.startsWith('--runs=')) {
       runs = parseInt(arg.split('=')[1], 10);
     } else if (arg === '--runs') {
       const idx = process.argv.indexOf('--runs');
       if (idx + 1 < process.argv.length) runs = parseInt(process.argv[idx + 1], 10);
+    } else if (arg.startsWith('--mode=')) {
+      mode = arg.split('=')[1];
+    } else if (arg === '--mode') {
+      const idx = process.argv.indexOf('--mode');
+      if (idx + 1 < process.argv.length) mode = process.argv[idx + 1];
     }
   }
 
   const numCpus = Math.max(1, os.cpus().length - 1);
   const numWorkers = Math.min(runs, numCpus);
   
-  console.log(`Starting Monte Carlo Simulation with ${runs} runs across ${numWorkers} workers...`);
+  console.log(`Starting Monte Carlo Simulation (${mode} mode) with ${runs} runs across ${numWorkers} workers...`);
   
   let runsCompleted = 0;
   let ourWins = 0;
@@ -37,6 +43,11 @@ if (isMainThread) {
   let totalPos = { PG: 0, SG: 0, SF: 0, PF: 0, C: 0 };
   let totalPacing = { 50: 0, 100: 0, 150: 0 };
   
+  let ourTotalCatRanks = {};
+  engine.CATS.forEach(c => ourTotalCatRanks[c] = 0);
+  let losses = [];
+  let finishCounts = {};
+  
   let firstRunLog = [];
   const t0 = Date.now();
   let workersActive = 0;
@@ -44,7 +55,7 @@ if (isMainThread) {
 
   function dispatch(worker) {
     if (runsDispatched < runs) {
-      worker.postMessage({ runIndex: runsDispatched });
+      worker.postMessage({ runIndex: runsDispatched, centerMode: mode });
       runsDispatched++;
     } else {
       worker.postMessage('exit');
@@ -62,8 +73,15 @@ if (isMainThread) {
       ourTotalUnspent += msg.ourUnspent;
       archetypeWins[msg.winningArchetype]++;
       if (msg.winningArchetype === 'ours') ourWins++;
+      finishCounts[msg.ourFinishRank] = (finishCounts[msg.ourFinishRank] || 0) + 1;
+      if (msg.lossDetail) losses.push(msg.lossDetail);
       
-      engine.CATS.forEach(c => { ourTotalCats[c] += msg.ourCats[c]; });
+      engine.CATS.forEach(c => {
+        ourTotalCats[c] += msg.ourCats[c];
+        if (msg.ourCatRanks && msg.ourCatRanks[c]) {
+          ourTotalCatRanks[c] += msg.ourCatRanks[c].rank;
+        }
+      });
       
       for (const rk in msg.playerDraftCounts) {
         playerDraftCounts[rk] = (playerDraftCounts[rk] || 0) + msg.playerDraftCounts[rk];
@@ -85,19 +103,23 @@ if (isMainThread) {
         const elapsed = ((Date.now() - t0) / 1000).toFixed(1);
         console.log(`\n\nSimulation completed in ${elapsed}s.\n`);
 
-        const playerNames = {};
-        for(const p of players) playerNames[p.rk] = p.name;
+        const playerMap = {};
+        for(const p of players) playerMap[p.rk] = p;
         
-        let report = `Monte Carlo Simulation Report (${runs} runs)\n`;
+        let report = `Monte Carlo Simulation Report (${runs} runs, Mode: ${mode})\n`;
         report += `=========================================\n`;
         report += `Overall Win Rates (by archetype):\n`;
-        report += `  - Our Bot (The Edge): ${((archetypeWins['ours'] / runs) * 100).toFixed(1)}%\n`;
-        report += `  - Market Value Bots: ${((archetypeWins['market'] / runs) * 100).toFixed(1)}%\n`;
-        report += `  - Stars & Scrubs Bots: ${((archetypeWins['stars_scrubs'] / runs) * 100).toFixed(1)}%\n`;
-        report += `  - Strict Budget Bots: ${((archetypeWins['budget'] / runs) * 100).toFixed(1)}%\n`;
-        report += `  - Homer Bots: ${((archetypeWins['homer'] / runs) * 100).toFixed(1)}%\n\n`;
+        report += `  - Our Bot (The Edge): ${((archetypeWins['ours'] / runs) * 100).toFixed(1)}% (${ourWins}/${runs} wins)\n`;
+        report += `  - Market Value Bots: ${((archetypeWins['market'] / runs) * 100).toFixed(1)}% (${archetypeWins['market']} wins)\n`;
+        report += `  - Stars & Scrubs Bots: ${((archetypeWins['stars_scrubs'] / runs) * 100).toFixed(1)}% (${archetypeWins['stars_scrubs']} wins)\n`;
+        report += `  - Strict Budget Bots: ${((archetypeWins['budget'] / runs) * 100).toFixed(1)}% (${archetypeWins['budget']} wins)\n`;
+        report += `  - Homer Bots: ${((archetypeWins['homer'] / runs) * 100).toFixed(1)}% (${archetypeWins['homer']} wins)\n\n`;
 
-        report += `Our Average Final Power Points: ${(ourTotalZ / runs).toFixed(1)}\n`;
+        report += `Finish Distribution:\n`;
+        Object.keys(finishCounts).sort((a,b) => Number(a) - Number(b)).forEach(rk => {
+          report += `  #${rk} Place: ${finishCounts[rk]} times (${(finishCounts[rk] / runs * 100).toFixed(1)}%)\n`;
+        });
+        report += `\nOur Average Final Power Points: ${(ourTotalZ / runs).toFixed(1)}\n`;
         report += `Our Average Unspent Budget: $${(ourTotalUnspent / runs).toFixed(1)}\n\n`;
         
         report += `--- Budget Pacing ---\n`;
@@ -108,19 +130,37 @@ if (isMainThread) {
         report += `--- Positional Breakdown ---\n`;
         report += `  PG: ${(totalPos.PG / runs).toFixed(1)}   SG: ${(totalPos.SG / runs).toFixed(1)}   SF: ${(totalPos.SF / runs).toFixed(1)}   PF: ${(totalPos.PF / runs).toFixed(1)}   C: ${(totalPos.C / runs).toFixed(1)}\n\n`;
 
-        report += `--- Average Z-Scores by Category (Baseline Initial) ---\n`;
-        engine.CATS.forEach(c => { report += `  ${c.padEnd(8)} : ${(ourTotalCats[c] / runs).toFixed(3)}\n`; });
+        report += `--- Category Statistics (Avg Z-Score & Avg League Rank out of 14) ---\n`;
+        engine.CATS.forEach(c => {
+          const avgZ = (ourTotalCats[c] / runs).toFixed(3);
+          const avgRk = (ourTotalCatRanks[c] / runs).toFixed(2);
+          report += `  ${c.padEnd(8)} : Z = ${avgZ.padStart(6)} | Avg League Rank: #${avgRk}\n`;
+        });
 
-        report += `\n--- Top 20 Most Drafted Players (with Avg Profit) ---\n`;
+        report += `\n--- Top 30 Most Drafted Players (with Pos, MktCost, & Avg Profit) ---\n`;
         const sortedPlayers = Object.keys(playerDraftCounts).map(rk => {
           const count = playerDraftCounts[rk];
           const avgProfit = playerTotalROIs[rk] / count;
-          return { rk, name: playerNames[rk], count, avgProfit };
+          const pObj = playerMap[rk] || { name: 'Unknown', pos: [], mktCost: 1 };
+          return { rk, name: pObj.name, pos: (pObj.pos || []).join(','), mktCost: pObj.mktCost || 1, count, avgProfit };
         }).sort((a, b) => b.count - a.count);
 
-        sortedPlayers.slice(0, 20).forEach((p, idx) => {
+        sortedPlayers.slice(0, 30).forEach((p, idx) => {
           const sign = p.avgProfit > 0 ? '+' : '';
-          report += `${String(idx + 1).padStart(2)}. ${p.name.padEnd(25)} : ${(p.count / runs * 100).toFixed(1)}% | Avg ROI: ${sign}$${p.avgProfit.toFixed(1)}\n`;
+          report += `${String(idx + 1).padStart(2)}. ${p.name.padEnd(25)} (${p.pos.padEnd(8)} Mkt:$${String(p.mktCost).padStart(2)}) : ${(p.count / runs * 100).toFixed(1).padStart(5)}% (${String(p.count).padStart(3)}x) | Avg ROI: ${sign}$${p.avgProfit.toFixed(1)}\n`;
+        });
+
+        report += `\n=========================================\n`;
+        report += `--- LOSS RECORDS (${losses.length} Total Losses out of ${runs} Runs) ---\n`;
+        report += `=========================================\n`;
+        losses.sort((a, b) => a.runIndex - b.runIndex).forEach((loss, idx) => {
+          report += `\n[Loss #${idx + 1} - Run #${loss.runIndex + 1}]\n`;
+          report += `  Winner: ${loss.winnerName} (${loss.winnerArchetype}) with ${loss.winnerPoints} pts (Spent: $${loss.winnerSpent})\n`;
+          report += `  Our Finish: #${loss.ourFinishRank} with ${loss.ourPoints} pts (Deficit: -${loss.winnerPoints - loss.ourPoints} pts, Spent: $${loss.ourSpent})\n`;
+          report += `  Category Comparison (Our Rank vs Winner Rank):\n    `;
+          report += engine.CATS.map(c => `${c}: #${loss.ourCatRanks[c].rank} vs #${loss.winnerCatRanks[c].rank}`).join(' | ') + `\n`;
+          report += `  Winner Top Picks: ${loss.winnerPicks.slice(0, 6).map(p => `${p.name} ($${p.price}/Mkt$${p.mkt})`).join(', ')}\n`;
+          report += `  Our Top Picks   : ${loss.ourPicks.slice(0, 6).map(p => `${p.name} ($${p.price}/Mkt$${p.mkt})`).join(', ')}\n`;
         });
         
         console.log(report);
@@ -159,7 +199,8 @@ if (isMainThread) {
         else maxBid = baseBid;
       }
     }
-    return Math.max(1, Math.min(budgetLeft, Math.round(maxBid)));
+    const maxLegal = Math.max(1, budgetLeft - (slotsLeft - 1));
+    return Math.max(1, Math.min(maxLegal, Math.round(maxBid)));
   }
 
   function getBotNomination(bot, C, availablePool) {
@@ -187,7 +228,9 @@ if (isMainThread) {
     const state = {
       numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'Alex',
       weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
-      picks: [], starterSlots: 9, benchWeight: 0.3
+      picks: [], starterSlots: 9, benchWeight: 0.3,
+      centerMode: msg.centerMode || 'baseline',
+      hillClimbConfig: msg.hillClimbConfig || {}
     };
 
     // Calculate baseline Z-scores and prices against the empty draft pool
@@ -253,6 +296,10 @@ if (isMainThread) {
         nominatorIdx = nextIdx; continue;
       }
 
+      const winnerInfo = C.teamBudgetAndSlotsLeft(winner.bot);
+      const winnerMaxLegal = Math.max(1, winnerInfo.budgetLeft - (winnerInfo.slotsLeft - 1));
+      winningPrice = Math.max(1, Math.min(winningPrice, winnerMaxLegal));
+
       state.picks.push({ rk: nominatedPlayer.rk, teamName: winner.bot, price: winningPrice, ts: Date.now() });
       if (runIndex === 0) picksLog.push(`${String(state.picks.length).padStart(3)}. ${nominatedPlayer.name.padEnd(25)} -> ${winner.bot.padEnd(15)} for $${winningPrice}`);
       nominatorIdx = nextIdx;
@@ -294,12 +341,42 @@ if (isMainThread) {
       }
     }
 
+    const ourFinishRank = finalC.powerRankings.findIndex(r => r.teamName === 'Alex') + 1;
+    let lossDetail = null;
+    if (ourFinishRank > 1) {
+      const wPicks = state.picks.filter(p => p.teamName === winnerRanks.teamName).map(p => {
+        const pl = players.find(x => x.rk === p.rk) || { name: 'Unknown', mktCost: 1 };
+        return { name: pl.name, price: p.price, mkt: pl.mktCost || 1 };
+      }).sort((a,b) => b.price - a.price);
+      const oPicks = ourPicks.map(p => {
+        const pl = players.find(x => x.rk === p.rk) || { name: 'Unknown', mktCost: 1 };
+        return { name: pl.name, price: p.price, mkt: pl.mktCost || 1 };
+      }).sort((a,b) => b.price - a.price);
+      lossDetail = {
+        runIndex,
+        ourFinishRank,
+        ourPoints: ourRanks.total,
+        ourSpent: 200 - ourRanks.budgetLeft,
+        ourCatRanks: ourRanks.catRanks,
+        ourPicks: oPicks,
+        winnerName: winnerRanks.teamName,
+        winnerArchetype: winningArchetype,
+        winnerPoints: winnerRanks.total,
+        winnerSpent: 200 - winnerRanks.budgetLeft,
+        winnerCatRanks: winnerRanks.catRanks,
+        winnerPicks: wPicks
+      };
+    }
+
     parentPort.postMessage({
       runIndex,
       winningArchetype,
+      ourFinishRank,
       ourZ: ourRanks.total,
       ourUnspent: ourRanks.budgetLeft,
       ourCats: runCats,
+      ourCatRanks: ourRanks.catRanks,
+      lossDetail,
       playerDraftCounts,
       playerROIs,
       posCounts,

@@ -1,0 +1,167 @@
+Monte Carlo Simulation Report (150 runs, Mode: hybrid)
+=========================================
+Overall Win Rates (by archetype):
+  - Our Bot (The Edge): 92.0% (138/150 wins)
+  - Market Value Bots: 5.3% (8 wins)
+  - Stars & Scrubs Bots: 0.0% (0 wins)
+  - Strict Budget Bots: 1.3% (2 wins)
+  - Homer Bots: 1.3% (2 wins)
+
+Finish Distribution:
+  #1 Place: 138 times (92.0%)
+  #2 Place: 9 times (6.0%)
+  #3 Place: 2 times (1.3%)
+  #4 Place: 1 times (0.7%)
+
+Our Average Final Power Points: 87.9
+Our Average Unspent Budget: $0.5
+
+--- Budget Pacing ---
+  Budget remaining at Pick 50: $75.4
+  Budget remaining at Pick 100: $12.1
+  Budget remaining at Pick 150: $0.5
+
+--- Positional Breakdown ---
+  PG: 4.5   SG: 4.5   SF: 4.0   PF: 6.8   C: 4.3
+
+--- Category Statistics (Avg Z-Score & Avg League Rank out of 14) ---
+  fgPct    : Z =  0.435 | Avg League Rank: #1.43
+  ftPct    : Z = -0.822 | Avg League Rank: #2.37
+  tpm      : Z =  0.963 | Avg League Rank: #7.16
+  pts      : Z =  5.042 | Avg League Rank: #1.54
+  treb     : Z =  1.717 | Avg League Rank: #4.87
+  ast      : Z =  2.849 | Avg League Rank: #3.94
+  stl      : Z =  1.705 | Avg League Rank: #5.38
+  blk      : Z =  0.735 | Avg League Rank: #5.40
+
+--- Top 30 Most Drafted Players (with Pos, MktCost, & Avg Profit) ---
+ 1. Pascal Siakam             (PF,C     Mkt:$15) :  84.7% (127x) | Avg ROI: +$1.1
+ 2. Evan Mobley               (PF,C     Mkt:$24) :  73.3% (110x) | Avg ROI: +$0.7
+ 3. Jalen Williams            (SF,PF    Mkt:$22) :  50.7% ( 76x) | Avg ROI: +$1.2
+ 4. Dejounte Murray           (PG       Mkt:$26) :  48.7% ( 73x) | Avg ROI: +$1.1
+ 5. Zion Williamson           (PF,C     Mkt:$10) :  44.0% ( 66x) | Avg ROI: +$1.1
+ 6. Chet Holmgren             (PF,C     Mkt:$30) :  42.7% ( 64x) | Avg ROI: +$1.2
+ 7. Amen Thompson             (PG,SG    Mkt:$25) :  42.7% ( 64x) | Avg ROI: +$1.0
+ 8. Trae Young                (PG       Mkt:$33) :  40.0% ( 60x) | Avg ROI: +$0.9
+ 9. Tyler Herro               (PG,SG    Mkt:$21) :  38.0% ( 57x) | Avg ROI: +$1.4
+10. Lauri Markkanen           (SF,PF    Mkt:$23) :  33.3% ( 50x) | Avg ROI: +$1.0
+11. Darius Garland            (PG       Mkt:$24) :  32.7% ( 49x) | Avg ROI: +$1.5
+12. Franz Wagner              (SF,PF    Mkt:$21) :  32.7% ( 49x) | Avg ROI: +$1.4
+13. De'Andre Hunter           (SF,PF    Mkt:$ 7) :  30.7% ( 46x) | Avg ROI: +$3.5
+14. Brandon Ingram            (SG,SF,PF Mkt:$14) :  29.3% ( 44x) | Avg ROI: +$1.1
+15. Domantas Sabonis          (PF,C     Mkt:$23) :  28.0% ( 42x) | Avg ROI: +$1.4
+16. Jalen Duren               (C        Mkt:$22) :  28.0% ( 42x) | Avg ROI: +$0.9
+17. Trey Murphy III           (SG,SF    Mkt:$29) :  26.7% ( 40x) | Avg ROI: +$1.1
+18. James Harden              (PG,SG    Mkt:$31) :  24.0% ( 36x) | Avg ROI: +$0.9
+19. Brandon Miller            (SF,PF    Mkt:$19) :  24.0% ( 36x) | Avg ROI: +$1.6
+20. Paul George               (SF,PF    Mkt:$19) :  23.3% ( 35x) | Avg ROI: +$1.1
+21. Brandin Podziemski        (PG,SG    Mkt:$ 7) :  23.3% ( 35x) | Avg ROI: +$4.0
+22. Jabari Smith Jr.          (PF,C     Mkt:$ 7) :  20.0% ( 30x) | Avg ROI: +$4.4
+23. Derrick White             (PG,SG    Mkt:$21) :  19.3% ( 29x) | Avg ROI: +$1.3
+24. Kevin Porter Jr.          (PG,SG    Mkt:$ 6) :  18.7% ( 28x) | Avg ROI: +$3.6
+25. Stephon Castle            (PG,SG    Mkt:$ 7) :  18.7% ( 28x) | Avg ROI: +$4.4
+26. Alexandre Sarr            (C        Mkt:$ 8) :  18.0% ( 27x) | Avg ROI: +$3.8
+27. Caleb Wilson              (PF       Mkt:$ 7) :  18.0% ( 27x) | Avg ROI: +$3.8
+28. Jaren Jackson Jr.         (PF,C     Mkt:$25) :  17.3% ( 26x) | Avg ROI: +$1.3
+29. Jalen Green               (SG,SF    Mkt:$ 4) :  17.3% ( 26x) | Avg ROI: +$1.8
+30. Keyonte George            (PG,SG    Mkt:$14) :  16.0% ( 24x) | Avg ROI: +$1.6
+
+=========================================
+--- LOSS RECORDS (12 Total Losses out of 150 Runs) ---
+=========================================
+
+[Loss #1 - Run #6]
+  Winner: Bot12_budget (budget) with 83 pts (Spent: $183)
+  Our Finish: #2 with 75 pts (Deficit: -8 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #8 vs #2 | ftPct: #4 vs #1 | tpm: #10 vs #2 | pts: #7 vs #1 | treb: #5 vs #13 | ast: #1 vs #2 | stl: #5 vs #2 | blk: #5 vs #14
+  Winner Top Picks: Josh Giddey ($32/Mkt$33), LaMelo Ball ($27/Mkt$29), Jaylen Brown ($27/Mkt$29), Paolo Banchero ($16/Mkt$18), Jaden McDaniels ($12/Mkt$15), Jimmy Butler III ($12/Mkt$14)
+  Our Top Picks   : Trae Young ($33/Mkt$33), James Harden ($31/Mkt$31), Jaren Jackson Jr. ($24/Mkt$25), Domantas Sabonis ($22/Mkt$23), Darius Garland ($22/Mkt$24), Jalen Williams ($21/Mkt$22)
+
+[Loss #2 - Run #35]
+  Winner: Bot7_market (market) with 78 pts (Spent: $200)
+  Our Finish: #4 with 71 pts (Deficit: -7 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #5 vs #4 | ftPct: #5 vs #2 | tpm: #11 vs #1 | pts: #5 vs #1 | treb: #10 vs #13 | ast: #3 vs #6 | stl: #4 vs #8 | blk: #6 vs #7
+  Winner Top Picks: Shai Gilgeous-Alexander ($69/Mkt$67), Stephen Curry ($38/Mkt$37), Jaylen Brown ($28/Mkt$29), Matas Buzelis ($18/Mkt$20), John Collins ($14/Mkt$15), Keyonte George ($13/Mkt$14)
+  Our Top Picks   : James Harden ($32/Mkt$31), Amen Thompson ($26/Mkt$25), Darius Garland ($24/Mkt$24), Evan Mobley ($24/Mkt$24), Jalen Williams ($22/Mkt$22), Walker Kessler ($21/Mkt$20)
+
+[Loss #3 - Run #36]
+  Winner: Bot7_market (market) with 82 pts (Spent: $200)
+  Our Finish: #2 with 79 pts (Deficit: -3 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #6 vs #1 | ftPct: #4 vs #2 | tpm: #7 vs #8 | pts: #5 vs #2 | treb: #3 vs #9 | ast: #2 vs #4 | stl: #8 vs #2 | blk: #6 vs #10
+  Winner Top Picks: Giannis Antetokounmpo ($57/Mkt$58), Cooper Flagg ($51/Mkt$52), Donovan Mitchell ($44/Mkt$45), Amen Thompson ($23/Mkt$25), Ryan Rollins ($14/Mkt$16), Darryn Peterson ($3/Mkt$10)
+  Our Top Picks   : James Harden ($30/Mkt$31), Trey Murphy III ($28/Mkt$29), Evan Mobley ($23/Mkt$24), Dejounte Murray ($23/Mkt$26), Domantas Sabonis ($22/Mkt$23), LeBron James ($20/Mkt$23)
+
+[Loss #4 - Run #40]
+  Winner: Bot8_market (market) with 83 pts (Spent: $200)
+  Our Finish: #3 with 78 pts (Deficit: -5 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #4 vs #2 | ftPct: #9 vs #5 | tpm: #7 vs #2 | pts: #5 vs #3 | treb: #4 vs #7 | ast: #6 vs #2 | stl: #4 vs #7 | blk: #3 vs #9
+  Winner Top Picks: Stephen Curry ($36/Mkt$37), Anthony Davis ($31/Mkt$35), Josh Giddey ($29/Mkt$33), Devin Booker ($24/Mkt$26), Ty Jerome ($14/Mkt$16), Ryan Rollins ($14/Mkt$16)
+  Our Top Picks   : Austin Reaves ($32/Mkt$32), Domantas Sabonis ($23/Mkt$23), Amen Thompson ($22/Mkt$25), Darius Garland ($22/Mkt$24), Jalen Williams ($20/Mkt$22), Matas Buzelis ($20/Mkt$20)
+
+[Loss #5 - Run #44]
+  Winner: Bot10_market (market) with 80 pts (Spent: $200)
+  Our Finish: #2 with 79 pts (Deficit: -1 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #1 vs #3 | ftPct: #3 vs #7 | tpm: #6 vs #3 | pts: #1 vs #3 | treb: #7 vs #6 | ast: #7 vs #4 | stl: #10 vs #6 | blk: #6 vs #8
+  Winner Top Picks: Giannis Antetokounmpo ($55/Mkt$58), Josh Giddey ($33/Mkt$33), Trey Murphy III ($26/Mkt$29), Darius Garland ($22/Mkt$24), Lauri Markkanen ($21/Mkt$23), Zach Edey ($20/Mkt$22)
+  Our Top Picks   : Stephen Curry ($36/Mkt$37), Chet Holmgren ($28/Mkt$30), Amen Thompson ($25/Mkt$25), Desmond Bane ($21/Mkt$24), Jalen Williams ($20/Mkt$22), Tyler Herro ($19/Mkt$21)
+
+[Loss #6 - Run #77]
+  Winner: Bot5_market (market) with 89 pts (Spent: $200)
+  Our Finish: #2 with 82 pts (Deficit: -7 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #1 vs #4 | ftPct: #5 vs #1 | tpm: #7 vs #1 | pts: #4 vs #2 | treb: #5 vs #11 | ast: #3 vs #2 | stl: #9 vs #4 | blk: #4 vs #6
+  Winner Top Picks: Giannis Antetokounmpo ($55/Mkt$58), Trae Young ($32/Mkt$33), Matas Buzelis ($17/Mkt$20), Jalen Suggs ($17/Mkt$20), Damian Lillard ($15/Mkt$18), Ty Jerome ($14/Mkt$16)
+  Our Top Picks   : Chet Holmgren ($29/Mkt$30), Trey Murphy III ($27/Mkt$29), Dejounte Murray ($26/Mkt$26), Evan Mobley ($23/Mkt$24), Darius Garland ($23/Mkt$24), Domantas Sabonis ($21/Mkt$23)
+
+[Loss #7 - Run #79]
+  Winner: Bot12_homer (homer) with 81 pts (Spent: $200)
+  Our Finish: #2 with 80 pts (Deficit: -1 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #3 vs #1 | ftPct: #2 vs #5 | tpm: #9 vs #1 | pts: #3 vs #1 | treb: #5 vs #11 | ast: #2 vs #4 | stl: #8 vs #2 | blk: #8 vs #14
+  Winner Top Picks: Jamal Murray ($36/Mkt$36), Alperen Sengün ($29/Mkt$31), Trey Murphy III ($27/Mkt$29), Darius Garland ($22/Mkt$24), Jalen Williams ($20/Mkt$22), Bam Adebayo ($20/Mkt$23)
+  Our Top Picks   : Trae Young ($33/Mkt$33), Chet Holmgren ($30/Mkt$30), Amen Thompson ($24/Mkt$25), LeBron James ($20/Mkt$23), Tyler Herro ($20/Mkt$21), Paul George ($18/Mkt$19)
+
+[Loss #8 - Run #92]
+  Winner: Bot7_market (market) with 81 pts (Spent: $200)
+  Our Finish: #2 with 80 pts (Deficit: -1 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #1 vs #2 | ftPct: #4 vs #1 | tpm: #10 vs #3 | pts: #2 vs #1 | treb: #7 vs #8 | ast: #8 vs #2 | stl: #4 vs #8 | blk: #4 vs #14
+  Winner Top Picks: LaMelo Ball ($27/Mkt$29), Desmond Bane ($23/Mkt$24), Amen Thompson ($23/Mkt$25), Kyrie Irving ($22/Mkt$25), Bam Adebayo ($19/Mkt$23), Deni Avdija ($14/Mkt$16)
+  Our Top Picks   : Trey Murphy III ($29/Mkt$29), Dejounte Murray ($26/Mkt$26), Evan Mobley ($25/Mkt$24), Zach Edey ($22/Mkt$22), Darius Garland ($22/Mkt$24), Jalen Williams ($22/Mkt$22)
+
+[Loss #9 - Run #93]
+  Winner: Bot10_market (market) with 88 pts (Spent: $200)
+  Our Finish: #2 with 87 pts (Deficit: -1 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #2 vs #1 | ftPct: #4 vs #1 | tpm: #9 vs #5 | pts: #2 vs #1 | treb: #5 vs #3 | ast: #4 vs #8 | stl: #3 vs #7 | blk: #4 vs #6
+  Winner Top Picks: Donovan Mitchell ($41/Mkt$45), Jaren Jackson Jr. ($23/Mkt$25), Brandon Miller ($16/Mkt$19), Paolo Banchero ($16/Mkt$18), Cameron Boozer ($15/Mkt$17), Deni Avdija ($14/Mkt$16)
+  Our Top Picks   : Chet Holmgren ($29/Mkt$30), Dejounte Murray ($26/Mkt$26), Amen Thompson ($24/Mkt$25), Darius Garland ($23/Mkt$24), Lauri Markkanen ($21/Mkt$23), Domantas Sabonis ($21/Mkt$23)
+
+[Loss #10 - Run #104]
+  Winner: Bot8_market (market) with 81 pts (Spent: $200)
+  Our Finish: #3 with 74 pts (Deficit: -7 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #1 vs #2 | ftPct: #1 vs #3 | tpm: #5 vs #7 | pts: #1 vs #2 | treb: #10 vs #5 | ast: #9 vs #4 | stl: #9 vs #2 | blk: #10 vs #14
+  Winner Top Picks: Giannis Antetokounmpo ($60/Mkt$58), Tyrese Maxey ($57/Mkt$58), Darius Garland ($23/Mkt$24), Domantas Sabonis ($21/Mkt$23), Cameron Boozer ($16/Mkt$17), OG Anunoby ($15/Mkt$17)
+  Our Top Picks   : Shai Gilgeous-Alexander ($67/Mkt$67), Evan Mobley ($24/Mkt$24), Lauri Markkanen ($21/Mkt$23), Franz Wagner ($20/Mkt$21), Brandon Miller ($18/Mkt$19), Pascal Siakam ($14/Mkt$15)
+
+[Loss #11 - Run #120]
+  Winner: Bot7_budget (budget) with 74 pts (Spent: $186)
+  Our Finish: #2 with 74 pts (Deficit: -0 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #5 vs #7 | ftPct: #3 vs #2 | tpm: #6 vs #2 | pts: #3 vs #1 | treb: #6 vs #11 | ast: #4 vs #1 | stl: #10 vs #11 | blk: #9 vs #11
+  Winner Top Picks: Trae Young ($33/Mkt$33), Josh Giddey ($32/Mkt$33), Devin Booker ($24/Mkt$26), Nickeil Alexander-Walker ($19/Mkt$21), Tyler Herro ($18/Mkt$21), OG Anunoby ($14/Mkt$17)
+  Our Top Picks   : Chet Holmgren ($29/Mkt$30), Trey Murphy III ($28/Mkt$29), Evan Mobley ($24/Mkt$24), Darius Garland ($23/Mkt$24), Jalen Williams ($22/Mkt$22), Domantas Sabonis ($22/Mkt$23)
+
+[Loss #12 - Run #148]
+  Winner: Bot7_homer (homer) with 82 pts (Spent: $200)
+  Our Finish: #2 with 81 pts (Deficit: -1 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #1 vs #2 | ftPct: #4 vs #1 | tpm: #9 vs #2 | pts: #2 vs #1 | treb: #5 vs #14 | ast: #9 vs #5 | stl: #3 vs #1 | blk: #6 vs #12
+  Winner Top Picks: Shai Gilgeous-Alexander ($70/Mkt$67), Trey Murphy III ($28/Mkt$29), Devin Booker ($24/Mkt$26), Kyrie Irving ($24/Mkt$25), Desmond Bane ($23/Mkt$24), VJ Edgecombe ($12/Mkt$12)
+  Our Top Picks   : Dejounte Murray ($25/Mkt$26), Jaren Jackson Jr. ($24/Mkt$25), Darius Garland ($24/Mkt$24), Jalen Duren ($23/Mkt$22), Lauri Markkanen ($23/Mkt$23), Jalen Williams ($22/Mkt$22)

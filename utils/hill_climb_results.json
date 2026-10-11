@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Iter 0: Baseline Hybrid Prototype",
+    "config": {
+      "centerMode": "hybrid",
+      "alpha": 0.2,
+      "wMin": 0.5,
+      "wMax": 1.8,
+      "targetPerPick": 0.1,
+      "ftGuardrail": 1,
+      "starterTolerance": 0,
+      "useMaxOppBid": false
+    },
+    "runs": 15,
+    "elapsed": "179.4",
+    "winRate": 46.666666666666664,
+    "avgPowerPoints": 82.06666666666666,
+    "avgCats": {
+      "fgPct": 0.6009217544413634,
+      "ftPct": -0.8738941675130281,
+      "tpm": 0.5763217275804574,
+      "pts": 3.0084465139950782,
+      "treb": 1.612050572721269,
+      "ast": 2.2512918762277465,
+      "stl": 2.4710319897752724,
+      "blk": 1.4165387724376937
+    },
+    "balancePenalty": 2.096952727503904,
+    "fitness": 45.60304727249609
+  },
+  {
+    "name": "Iter 1: Hybrid + Opponent Max-Bid Capping",
+    "config": {
+      "centerMode": "hybrid",
+      "alpha": 0.2,
+      "wMin": 0.5,
+      "wMax": 1.8,
+      "targetPerPick": 0.1,
+      "ftGuardrail": 1,
+      "starterTolerance": 0,
+      "useMaxOppBid": true
+    },
+    "runs": 15,
+    "elapsed": "198.4",
+    "winRate": 80,
+    "avgPowerPoints": 81.93333333333334,
+    "avgCats": {
+      "fgPct": 1.0825631082795548,
+      "ftPct": -0.5377583399438411,
+      "tpm": 1.217244390203051,
+      "pts": 3.2987295289142646,
+      "treb": 2.301742312596863,
+      "ast": 0.6059081228627855,
+      "stl": 1.4428753227009272,
+      "blk": 1.9800873503763765
+    },
+    "balancePenalty": 0.021385383529720046,
+    "fitness": 80.94528128313695
+  },
+  {
+    "name": "Iter 2: + Volume FT% Guardrail (ftGuardrail: 1.35)",
+    "config": {
+      "centerMode": "hybrid",
+      "alpha": 0.2,
+      "wMin": 0.5,
+      "wMax": 1.8,
+      "targetPerPick": 0.1,
+      "ftGuardrail": 1.35,
+      "starterTolerance": 0,
+      "useMaxOppBid": true
+    },
+    "runs": 15,
+    "elapsed": "199.2",
+    "winRate": 20,
+    "avgPowerPoints": 73.8,
+    "avgCats": {
+      "fgPct": -0.23568180830860866,
+      "ftPct": 1.8738079419390392,
+      "tpm": 1.4380066406619447,
+      "pts": 1.5038992804184026,
+      "treb": 1.9970592146598538,
+      "ast": 0.7372622880473829,
+      "stl": 1.8460740156712592,
+      "blk": 1.1481823067526071
+    },
+    "balancePenalty": 0,
+    "fitness": 16.9
+  },
+  {
+    "name": "Iter 3: + Starter Tolerance 0.12 + Smoothed Deficit",
+    "config": {
+      "centerMode": "hybrid",
+      "alpha": 0.12,
+      "wMin": 0.7,
+      "wMax": 1.5,
+      "targetPerPick": 0.1,
+      "ftGuardrail": 1.35,
+      "starterTolerance": 0.12,
+      "useMaxOppBid": true
+    },
+    "runs": 15,
+    "elapsed": "212.0",
+    "winRate": 73.33333333333333,
+    "avgPowerPoints": 82.4,
+    "avgCats": {
+      "fgPct": -1.5188295590035719,
+      "ftPct": 2.9668888807929474,
+      "tpm": 1.252851204793195,
+      "pts": 2.348830198843892,
+      "treb": 1.6369791898252062,
+      "ast": 1.9885835458585508,
+      "stl": 2.7532710748545046,
+      "blk": 1.3897031258691854
+    },
+    "balancePenalty": 15.57020505449119,
+    "fitness": 58.96312827884214
+  },
+  {
+    "name": "Iter 4: Starter Tolerance 0.16 + Tuned Balance",
+    "config": {
+      "centerMode": "hybrid",
+      "alpha": 0.14,
+      "wMin": 0.65,
+      "wMax": 1.6,
+      "targetPerPick": 0.1,
+      "ftGuardrail": 1.25,
+      "starterTolerance": 0.16,
+      "useMaxOppBid": true
+    },
+    "runs": 15,
+    "elapsed": "220.0",
+    "winRate": 73.33333333333333,
+    "avgPowerPoints": 82.93333333333334,
+    "avgCats": {
+      "fgPct": -0.9370898128766083,
+      "ftPct": 2.2605086802048864,
+      "tpm": 1.587555261940549,
+      "pts": 2.8646009128520884,
+      "treb": 1.4098517895448905,
+      "ast": 0.9999706184165784,
+      "stl": 1.5235150612949926,
+      "blk": 2.074012113366157
+    },
+    "balancePenalty": 2.865712567807627,
+    "fitness": 71.93428743219238
+  }
+]

@@ -230,7 +230,7 @@ function computeAll(state, PLAYERS){
     poolSize, rosterPool, availableInPool, zAll, compositeZ, baseCompositeZ, replZ,
     fairPrice, remainingBudgetAllTeams, remainingSlots, draftedCount, inflation,
     myBudgetLeft: my.budgetLeft, mySlotsLeft: my.slotsLeft, myPicksMade: my.picksMade,
-    missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap
+    missingPos, teamBudgetAndSlotsLeft, powerRankings, zRankMap, teamNamesAll: teamNames
   };
 }
 
@@ -244,21 +244,92 @@ function computeAll(state, PLAYERS){
 // auction, so it's ported in full rather than approximated.
 const FULL_COVERAGE = (1<<CORE_POS.length)-1;
 const COVERAGE_STATES = 1<<CORE_POS.length;
+const FULL_COVERAGE_2C = (1<<6)-1;
+const COVERAGE_STATES_2C = 1<<6;
 
-function reachableCoverage(players){
-  const reach = new Uint8Array(COVERAGE_STATES);
-  reach[0] = 1;
-  for(const p of players){
-    const pm = posMaskOf(p);
-    if(!pm) continue;
-    for(let mask=reach.length-1; mask>=0; mask--){
-      if(!reach[mask]) continue;
-      for(let j=0;j<CORE_POS.length;j++){
-        if((pm & (1<<j)) && !(mask & (1<<j))) reach[mask | (1<<j)] = 1;
-      }
+function getDynamicCategoryWeights(state, PLAYERS, zAll){
+  const cfg = state.hillClimbConfig || {};
+  const alpha = typeof cfg.alpha === 'number' ? cfg.alpha : 0.10;
+  const wMin = typeof cfg.wMin === 'number' ? cfg.wMin : 0.75;
+  const wMax = typeof cfg.wMax === 'number' ? cfg.wMax : 1.45;
+  const targetPerPick = typeof cfg.targetPerPick === 'number' ? cfg.targetPerPick : 0.08;
+
+  const baseWeights = {
+    fgPct: typeof cfg.baseFgPct === 'number' ? cfg.baseFgPct : 1.08,
+    ftPct: 1.00,
+    tpm: 1.00,
+    pts: 1.00,
+    treb: typeof cfg.baseTreb === 'number' ? cfg.baseTreb : 1.10,
+    ast: 1.00,
+    stl: 1.00,
+    blk: typeof cfg.baseBlk === 'number' ? cfg.baseBlk : 1.15
+  };
+  const userWeights = state.weights || {};
+  const weights = {};
+  for(const c of CATS){
+    const uW = (typeof userWeights[c] === 'number') ? userWeights[c] : 1.0;
+    weights[c] = (baseWeights[c] || 1.0) * uW;
+  }
+  const myPicks = (state.picks || []).filter(pk=>pk.teamName===state.myTeamName);
+  const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
+  const picksMade = myPlayers.length;
+  if(picksMade === 0) return weights;
+
+  const currentZ = {};
+  for(const c of CATS) currentZ[c] = 0;
+  for(const p of myPlayers){
+    const zc = zAll.get(p.rk);
+    if(zc){
+      for(const c of CATS) currentZ[c] += zc[c];
     }
   }
-  return reach;
+
+  const targetZ = picksMade * targetPerPick;
+  for(const c of CATS){
+    const deficit = targetZ - currentZ[c];
+    const adj = deficit * alpha;
+    weights[c] = clamp(weights[c] + adj, wMin, wMax);
+  }
+  return weights;
+}
+
+function reachableCoverage(players, multiCenter = false){
+  if(!multiCenter){
+    const reach = new Uint8Array(COVERAGE_STATES);
+    reach[0] = 1;
+    for(const p of players){
+      const pm = posMaskOf(p);
+      if(!pm) continue;
+      for(let mask=reach.length-1; mask>=0; mask--){
+        if(!reach[mask]) continue;
+        for(let j=0;j<CORE_POS.length;j++){
+          if((pm & (1<<j)) && !(mask & (1<<j))) reach[mask | (1<<j)] = 1;
+        }
+      }
+    }
+    return reach;
+  } else {
+    const reach = new Uint8Array(COVERAGE_STATES_2C);
+    reach[0] = 1;
+    const C1 = 1 << 4;
+    const C2 = 1 << 5;
+    for(const p of players){
+      if(!p.pos) continue;
+      const pm = posMaskOf(p);
+      const canC = p.pos.includes('C');
+      for(let mask=COVERAGE_STATES_2C-1; mask>=0; mask--){
+        if(!reach[mask]) continue;
+        for(let j=0;j<4;j++){
+          if((pm & (1<<j)) && !(mask & (1<<j))) reach[mask | (1<<j)] = 1;
+        }
+        if(canC){
+          if(!(mask & C1)) reach[mask | C1] = 1;
+          else if(!(mask & C2)) reach[mask | C2] = 1;
+        }
+      }
+    }
+    return reach;
+  }
 }
 function missingCorePositions(players){
   const reach = reachableCoverage(players);
@@ -269,11 +340,11 @@ function missingCorePositions(players){
   return zeroEligible.length ? zeroEligible : ['(position conflict)'];
 }
 
-function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight){
+function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight, multiCenter = false){
   const n = pool.length;
   const B = Math.max(0, Math.floor(capBudget));
   const K = Math.max(0, Math.floor(capSlots));
-  const M = COVERAGE_STATES;
+  const M = multiCenter ? COVERAGE_STATES_2C : COVERAGE_STATES;
   const NEG = -1e15;
   const reach0 = baseReach || (()=>{ const r = new Uint8Array(M); r[0]=1; return r; })();
   const idx = (k,b,mask) => (k*(B+1)+b)*M+mask;
@@ -282,11 +353,14 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
   const choice = new Array(n);
   const sSlots = (starterSlotsLeft !== undefined) ? starterSlotsLeft : K;
   const bWeight = (benchWeight !== undefined) ? benchWeight : 0.3;
+  const C1 = 1 << 4;
+  const C2 = 1 << 5;
 
   for(let i=0;i<n;i++){
     const cost = Math.round(costFn(pool[i]));
     const baseVal = valFn(pool[i]);
     const pm = posMaskOf(pool[i]);
+    const canC = pool[i].pos && pool[i].pos.includes('C');
     const newDp = dp.slice();
     const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
     if(cost <= B){
@@ -299,10 +373,28 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
             const withItem = srcVal + itemVal;
             const t0 = idx(k,b,mask);
             if(withItem > newDp[t0]){ newDp[t0] = withItem; take[t0] = mask; }
-            for(let j=0;j<CORE_POS.length;j++){
-              if((pm & (1<<j)) && !(mask & (1<<j))){
-                const t1 = idx(k,b,mask|(1<<j));
-                if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+            if(!multiCenter){
+              for(let j=0;j<CORE_POS.length;j++){
+                if((pm & (1<<j)) && !(mask & (1<<j))){
+                  const t1 = idx(k,b,mask|(1<<j));
+                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                }
+              }
+            } else {
+              for(let j=0;j<4;j++){
+                if((pm & (1<<j)) && !(mask & (1<<j))){
+                  const t1 = idx(k,b,mask|(1<<j));
+                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                }
+              }
+              if(canC){
+                if(!(mask & C1)){
+                  const t1 = idx(k,b,mask|C1);
+                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                } else if(!(mask & C2)){
+                  const t1 = idx(k,b,mask|C2);
+                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                }
               }
             }
           }
@@ -312,9 +404,12 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     dp = newDp;
     choice[i] = take;
   }
-  return {dp, choice, pool, B, K, M, idx};
+  return {dp, choice, pool, B, K, M, idx, multiCenter};
 }
-function bestFeasible(res, k, b){ return res.dp[res.idx(k,b,FULL_COVERAGE)]; }
+function bestFeasible(res, k, b){
+  const targetMask = res.multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
+  return res.dp[res.idx(k,b,targetMask)];
+}
 function bestAny(res, k, b){
   let best = -1e15, bestMask = 0;
   for(let mask=0; mask<res.M; mask++){
@@ -349,35 +444,65 @@ function checkPrice(state, PLAYERS, rk){
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { player:p, full:true };
   const costFn = x=>C.fairPrice(x.rk);
+
+  const centerMode = state.centerMode || 'hybrid';
+  const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
+  const useDynamicWeights = centerMode === 'dynamic_weights' || centerMode === 'hybrid';
+  const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
   
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
-  const valFn = x => {
-    let z = C.compositeZ(C.zAll.get(x.rk));
-    // ONLY apply the positional bonus to the nominated player (p) to prevent suppressing bids on non-centers
-    if (x.rk === p.rk) {
-      if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
-      else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
-    }
-    return z;
-  };
+
+  const cfg = state.hillClimbConfig || {};
+  let valFn;
+  if(useDynamicWeights){
+    const dynW = getDynamicCategoryWeights(state, PLAYERS, C.zAll);
+    const ftGuardrail = typeof cfg.ftGuardrail === 'number' ? cfg.ftGuardrail : 1.0;
+    valFn = x => {
+      let z = 0;
+      const zc = C.zAll.get(x.rk);
+      if(zc){
+        for(const c of CATS) {
+          let w = dynW[c];
+          if(c === 'ftPct' && zc[c] < 0 && ftGuardrail > 1.0){
+            const pObj = (x && typeof x.fta === 'number') ? x : PLAYERS.find(pl => pl.rk === x.rk);
+            const volumeScale = (pObj && pObj.fta > 3.0) ? Math.min(2.0, pObj.fta / 3.0) : 1.0;
+            w *= ftGuardrail * volumeScale;
+          }
+          z += w * zc[c];
+        }
+      }
+      return z;
+    };
+  } else if(multiCenter){
+    valFn = x => C.compositeZ(C.zAll.get(x.rk));
+  } else {
+    valFn = x => {
+      let z = C.compositeZ(C.zAll.get(x.rk));
+      // ONLY apply the positional bonus to the nominated player (p) to prevent suppressing bids on non-centers
+      if (x.rk === p.rk) {
+        if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
+        else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+      }
+      return z;
+    };
+  }
   
-  const pZc = C.zAll.get(p.rk);
-  const pVal = C.compositeZ(pZc);
+  const pVal = valFn(p);
   const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
   const B = Math.max(budgetLeft, 0);
-  const baseReach = reachableCoverage(myPlayers);
+  const baseReach = reachableCoverage(myPlayers, multiCenter);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
-  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
+  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   resExcl.costOf = costFn;
 
   let baseline = bestFeasible(resExcl, slotsLeft, resExcl.B);
   let baselineInfeasible = baseline < -1e14;
-  let baselineMask = FULL_COVERAGE;
+  let baselineMask = fullCoverage;
   if(baselineInfeasible){
     const fb = bestAny(resExcl, slotsLeft, resExcl.B);
     baseline = fb.value;
@@ -392,15 +517,29 @@ function checkPrice(state, PLAYERS, rk){
   let bestX = 0;
   let bestXChosen = [];
   if(slotsLeft - 1 >= 0 && B >= 1){
-    let low = 1, high = B;
+    const useMaxOppBid = typeof cfg.useMaxOppBid === 'boolean' ? cfg.useMaxOppBid : true;
+    let maxOppBid = 0;
+    if(useMaxOppBid && C.teamNamesAll){
+      for(const t of C.teamNamesAll){
+        if(t === state.myTeamName) continue;
+        const tInfo = C.teamBudgetAndSlotsLeft(t);
+        if(tInfo.slotsLeft > 0){
+          const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
+          if(tMax > maxOppBid) maxOppBid = tMax;
+        }
+      }
+    }
+    const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
+    let low = 1, high = (useMaxOppBid && maxOppBid > 0) ? Math.min(myMaxLegal, maxOppBid + 1) : myMaxLegal;
+    const starterTol = (starterSlotsLeft > 0 && typeof cfg.starterTolerance === 'number') ? cfg.starterTolerance : 0.0;
     while(low <= high){
       const X = Math.floor((low + high) / 2);
       const customCostFn = x => (x.rk === rk ? X : costFn(x));
-      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
+      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
       resWithP.costOf = customCostFn;
 
       let valWithP = bestFeasible(resWithP, slotsLeft, B);
-      let maskToUse = FULL_COVERAGE;
+      let maskToUse = fullCoverage;
       if(valWithP < -1e14){
         const fb = bestAny(resWithP, slotsLeft, B);
         valWithP = fb.value;
@@ -410,7 +549,7 @@ function checkPrice(state, PLAYERS, rk){
       const chosen = knapsackReconstruct(resWithP, slotsLeft, B, maskToUse);
       const pWasTaken = chosen.some(x => x.rk === rk);
 
-      if(pWasTaken && valWithP >= baseline){
+      if(pWasTaken && (valWithP >= baseline - starterTol)){
         bestX = X;
         bestXChosen = chosen;
         low = X + 1;
@@ -449,21 +588,54 @@ function runOptimizer(state, PLAYERS){
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { full: true };
   const costFn = p=>C.fairPrice(p.rk);
+
+  const centerMode = state.centerMode || 'hybrid';
+  const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
+  const useDynamicWeights = centerMode === 'dynamic_weights' || centerMode === 'hybrid';
+  const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
+
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
-  const valFn = p => {
-    let z = C.compositeZ(C.zAll.get(p.rk));
-    if (numCenters === 0 && p.pos && p.pos.includes('C')) z += 4.0;
-    else if (numCenters === 1 && p.pos && p.pos.includes('C')) z += 2.0;
-    return z;
-  };
-  const baseReach = reachableCoverage(myPlayers);
+
+  const cfg = state.hillClimbConfig || {};
+  let valFn;
+  if(useDynamicWeights){
+    const dynW = getDynamicCategoryWeights(state, PLAYERS, C.zAll);
+    const ftGuardrail = typeof cfg.ftGuardrail === 'number' ? cfg.ftGuardrail : 1.0;
+    valFn = p => {
+      let z = 0;
+      const zc = C.zAll.get(p.rk);
+      if(zc){
+        for(const c of CATS) {
+          let w = dynW[c];
+          if(c === 'ftPct' && zc[c] < 0 && ftGuardrail > 1.0){
+            const pObj = (p && typeof p.fta === 'number') ? p : PLAYERS.find(pl => pl.rk === p.rk);
+            const volumeScale = (pObj && pObj.fta > 3.0) ? Math.min(2.0, pObj.fta / 3.0) : 1.0;
+            w *= ftGuardrail * volumeScale;
+          }
+          z += w * zc[c];
+        }
+      }
+      return z;
+    };
+  } else if(multiCenter){
+    valFn = p => C.compositeZ(C.zAll.get(p.rk));
+  } else {
+    valFn = p => {
+      let z = C.compositeZ(C.zAll.get(p.rk));
+      if (numCenters === 0 && p.pos && p.pos.includes('C')) z += 4.0;
+      else if (numCenters === 1 && p.pos && p.pos.includes('C')) z += 2.0;
+      return z;
+    };
+  }
+
+  const baseReach = reachableCoverage(myPlayers, multiCenter);
   const B = Math.max(budgetLeft,0);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
-  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight);
+  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
@@ -480,7 +652,7 @@ function runOptimizer(state, PLAYERS){
       : `The highest-value build within your budget/slots can't cover every named position — this is the best fully-legal fallback found.`;
     chosen = knapsackReconstruct(res, slotsLeft, res.B, fallback.mask);
   } else {
-    chosen = knapsackReconstruct(res, slotsLeft, res.B, FULL_COVERAGE);
+    chosen = knapsackReconstruct(res, slotsLeft, res.B, fullCoverage);
   }
   const existingZ = myPicks.reduce((a,pk)=>{ const zc=C.zAll.get(pk.rk); return a + (zc?C.compositeZ(zc):0); },0);
   const totalCost = chosen.reduce((a,p)=>a+costFn(p),0);

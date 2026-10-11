@@ -37,8 +37,86 @@ We originally prototyped 5 ideas. Combining all 5 caused the bot to regress (73.
 
 ---
 
-## Future Tweak Recommendations
-If you wish to attempt further tweaks based on real-world draft performance:
-1. **Adjust the Roto-Curve Floor:** Currently set to `0.6`. Lowering it (e.g., `0.3`) will make the bot more aggressive in punting categories. Raising it (e.g., `0.8`) will make the bot more balanced.
-2. **Re-visit Positional Scarcity:** If you find the bot misses out on top-tier Point Guards or Centers, you could implement a softer, linear positional scarcity multiplier instead of the exponential one we reverted.
-3. **Draft-Stage Transitions:** You could dynamically lower the Roto-Curve floor as the draft progresses (e.g., strict balance in the first 50 picks, heavy punting in the last 50 picks).
+## v2.1: Balanced Multi-Center DP & Dynamic Category Deficit Engine (Autonomous Hill-Climbing)
+
+### The Motivation
+The v2.0 engine frequently won by soft-punting `FG%` (-2.31σ), `BLK` (-1.14σ), and `TREB` (-0.38σ). An arbitrary static center bonus (`+4.0 / +2.0` in commit `2c859f7`) was a blunt fix that distorted bids regardless of whether a center actually blocked shots or rebounded.
+
+### The Solution (Champion Configuration)
+Through autonomous coordinate hill-climbing evaluated against a constrained multi-objective fitness function (requiring all 8 categories $\ge -0.50\sigma$), we replaced the blunt center bonus with two structural, stat-driven mechanisms:
+
+1. **Multi-Slot 2-Center DP Constraint**:
+   Expanded the 0/1 Knapsack DP bitmask to 6 slots (`PG`, `SG`, `SF`, `PF`, `C1`, `C2` / 64 states). The solver is structurally required to draft $\ge 2$ center-eligible players, eliminating the single-center loophole without altering individual player valuations.
+
+2. **Smoothed Dynamic Category Deficit Weighting**:
+   Category weights dynamically adapt based on live team deficits against a target pace ($0.10\sigma$ per pick):
+   - **$\alpha = 0.12$**: Smooth deficit sensitivity preventing round-to-round oscillation.
+   - **$[w_{\min} = 0.70, w_{\max} = 1.50]$**: Prevents the bot from zeroing out perimeter stats or overpaying for extreme specialists.
+   - **FT% Guardrail ($\beta_{\text{ft}} = 1.35$)**: Multiplies negative FT% impact for poor free-throw shooters, protecting team FT% (+1.09σ) when drafting interior bigs.
+   - **Opponent Max-Bid Ceiling (`useMaxOppBid = true`)**: Bounds binary search to $\min(B, \max(\text{OppBid}) + 1)$, cutting search time and stopping overbids.
+
+### Empirical Validation Results
+- **Peak Win Rate**: **93.3%** (14/15 wins in 15-run evaluation)
+- **Large-Sample Win Rate**: **86.7% across 45 simulated drafts** (39 wins)
+- **Average Power Points**: **85.2 – 87.5**
+- **Category Profile (Zero Punting)**:
+  - `FT%`: **+1.092**
+  - `3PM`: **+1.484**
+  - `PTS`: **+3.553**
+  - `REB`: **+1.450** (swung from -0.38σ)
+  - `AST`: **+1.935**
+  - `STL`: **+1.362**
+  - `BLK`: **+1.182** (swung from -1.14σ / -3.59σ)
+  - `FG%`: **-0.570** (swung from -2.31σ)
+
+---
+
+## v2.2: Yahoo $200 Hard Budget Cap Compliance & Loss-Mode Tuning
+
+### 1. Yahoo Hard Budget Constraint Fix
+- **Constraint Rule**: In Yahoo Fantasy auctions, every unfilled roster slot must reserve at least \$1.00. Therefore, a team's absolute maximum legal bid is:
+  $$\text{maxLegalBid} = \max(1, \text{budgetLeft} - (\text{slotsLeft} - 1))$$
+- **Fix Applied**:
+  - In `engine.js` `checkPrice()`: Bounded binary search upper bound `high` to `myMaxLegal` so Alex never bids more than legally allowed.
+  - In `simulate_parallel.js`, `simulate.js`, and `analyze_losses.js`: Enforced `maxLegal` on opponent bot max bids and winning bid resolutions, completely eliminating illegal competitor budget leaks (previously teams overspent up to \$204).
+
+### 2. Hill-Climbing Evaluation under Yahoo Cap
+With all teams strictly bound to \$200, testing clean mild deficit slopes (`ftGuardrail: 1.0`, `starterTolerance: 0.0`) against the original 2-center baseline (30 runs per configuration):
+
+| Configuration (30 Drafts Each) | Win Rate | Avg Power Pts | `FG%` | `FT%` | `3PM` | `PTS` | `REB` | `AST` | `STL` | `BLK` |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Original 2-Center Baseline (`+4.0 / +2.0`)** | 86.7% | 83.0 | -1.90σ | +2.25σ | +1.63σ | +5.28σ | -0.30σ | +4.67σ | +1.01σ | -2.46σ |
+| **Clean Iter 3 (`alpha: 0.12, [0.70, 1.50]`)** | 86.7% | 86.3 | +0.95σ | -1.33σ | +0.29σ | +4.93σ | +2.11σ | +1.99σ | +1.63σ | +1.59σ |
+| **Mild Iter A (`alpha: 0.08, [0.75, 1.40]`)** | **90.0%** | **88.2** | **+0.82σ** | -1.26σ | +0.49σ | +4.74σ | **+2.65σ** | +1.75σ | +1.41σ | **+2.05σ** |
+| **Mild Iter B (`alpha: 0.10, [0.75, 1.45], mild base`)** | **96.7%** | **90.0** | **+0.13σ** | **-0.65σ** | **+0.72σ** | **+4.95σ** | **+1.58σ** | **+3.46σ** | **+2.30σ** | **+0.88σ** |
+
+- **New Champion Configuration (`Mild Iter B`, default in `engine.js`)**:
+  - `centerMode: 'hybrid'`
+  - `alpha: 0.10`, `wMin: 0.75`, `wMax: 1.45`, `targetPerPick: 0.08`
+  - `baseFgPct: 1.08`, `baseTreb: 1.10`, `baseBlk: 1.15`
+  - `ftGuardrail: 1.00`, `starterTolerance: 0.00`, `useMaxOppBid: true`
+- **Why It Dominates (29/30 Wins, 96.7% Win Rate, 90.0 Power Points)**:
+  - Gently moderating the base interior priors (`1.08 / 1.10 / 1.15` instead of `1.10 / 1.15 / 1.25`) and using a mild deficit slope (`alpha = 0.10` with `[0.75, 1.45]` bounds) keeps 7 of 8 categories strictly positive (`FG% +0.13σ`, `3PM +0.72σ`, `PTS +4.95σ`, `REB +1.58σ`, `AST +3.46σ`, `STL +2.30σ`, `BLK +0.88σ`) while holding `FT%` to `-0.65σ`—completely avoiding the `-1.90σ FG%` and `-2.46σ BLK` punts of the original baseline while jumping from **86.7% → 96.7% win rate** and **83.0 → 90.0 Power Points**.
+
+### 3. 150-Draft Large-Sample Stress Test (`utils/report_150.txt`)
+Running 150 full 14-team auction simulations (27,300 picks) confirmed the stability of the `Mild Iter B` hybrid configuration:
+- **Overall Win Rate (#1 Finish)**: **92.0%** (138 / 150 wins)
+- **Top-2 Finish Rate**: **98.0%** (147 / 150 drafts finished #1 or #2)
+- **Top-3 Finish Rate**: **99.3%** (149 / 150 drafts finished top 3; worst finish was a single #4)
+- **Average Power Points**: **87.9 pts** | **Average Unspent Budget**: **\$0.50**
+- **Average Category Z-Scores & League Ranks (out of 14 teams)**:
+  - `FG%`: **+0.435σ** (Avg Rank: **#1.43**)
+  - `PTS`: **+5.042σ** (Avg Rank: **#1.54**)
+  - `FT%`: **-0.822σ** (Avg Rank: **#2.37** — high FTM guard volume anchors true team FT%)
+  - `AST`: **+2.849σ** (Avg Rank: **#3.94**)
+  - `TREB`: **+1.717σ** (Avg Rank: **#4.87**)
+  - `STL`: **+1.705σ** (Avg Rank: **#5.38**)
+  - `BLK`: **+0.735σ** (Avg Rank: **#5.40**)
+  - `3PM`: **+0.963σ** (Avg Rank: **#7.16**)
+
+### 4. New Benchmarking & Forensic Utilities
+- `utils/hill_climb.js`: Multi-threaded autonomous hill-climbing runner evaluating candidate hyperparameter sets against a balanced-roster fitness objective.
+- `utils/analyze_losses.js`: Forensic loss analyzer that captures exact rosters, bid prices, and category rank differentials for any simulated draft where the bot does not finish #1.
+- `utils/simulate_parallel.js`: Enhanced with `--mode=<baseline|dynamic_weights|multi_center|hybrid>`, finish distribution tracking, average category league ranks, top 30 drafted player ROI breakdowns, and full loss logs.
+
+

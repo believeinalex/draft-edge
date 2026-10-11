@@ -77,7 +77,8 @@ function getBotMaxBid(bot, player, C, state) {
     }
   }
 
-  return Math.max(1, Math.min(budgetLeft, Math.round(maxBid)));
+  const maxLegal = Math.max(1, budgetLeft - (slotsLeft - 1));
+  return Math.max(1, Math.min(maxLegal, Math.round(maxBid)));
 }
 
 function getBotNomination(bot, C, availablePool) {
@@ -173,6 +174,10 @@ async function runSimulation(runIndex) {
       nominatorIdx = nextIdx;
       continue;
     }
+
+    const winnerInfo = C.teamBudgetAndSlotsLeft(winner.bot);
+    const winnerMaxLegal = Math.max(1, winnerInfo.budgetLeft - (winnerInfo.slotsLeft - 1));
+    winningPrice = Math.max(1, Math.min(winningPrice, winnerMaxLegal));
 
     state.picks.push({
       rk: nominatedPlayer.rk,
