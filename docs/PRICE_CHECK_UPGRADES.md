@@ -119,4 +119,19 @@ Running 150 full 14-team auction simulations (27,300 picks) confirmed the stabil
 - `utils/analyze_losses.js`: Forensic loss analyzer that captures exact rosters, bid prices, and category rank differentials for any simulated draft where the bot does not finish #1.
 - `utils/simulate_parallel.js`: Enhanced with `--mode=<baseline|dynamic_weights|multi_center|hybrid>`, finish distribution tracking, average category league ranks, top 30 drafted player ROI breakdowns, and full loss logs.
 
+---
 
+## v2.3: Overnight Hill-Climbing — 3PM Floor Prior, Second-Half Deficit Urgency & Live `maxOppBid` Guard (`e171ae4`)
+
+See [`docs/OVERNIGHT_HILL_CLIMB_REPORT.md`](OVERNIGHT_HILL_CLIMB_REPORT.md) for the complete experiment log and 300-draft validation report.
+
+### Key Changes
+1. **3PM Floor Prior (`baseTpm = 1.06`) & Tuned Base Priors (`baseFgPct = 1.08`, `baseTreb = 1.10`, `baseBlk = 1.15`)**:
+   - Prevents `3PM` from being systematically under-prioritized (`#9.00` in 15-team / 12-slot drafts), lifting average `3PM` rank to `#6.27` (14T/13S) and `#7.57` (15T/12S) without sacrificing `FG%` (`#1.35` / `#1.33`).
+2. **Second-Half Deficit Urgency (`lateDeficitBoost = 1.25`)**:
+   - Once the draft enters its second half (`picksMade >= Math.floor(rosterSlots * 0.4)`), positive category deficits receive a `1.25x` urgency boost so the solver actively pivots to fill remaining weak categories with mid-tier and endgame picks (`$2–$15`).
+3. **Live Draft `maxOppBid` Early-Draft Guard**:
+   - In live drafts (`C.teamNamesAll.length < state.numTeams`), unobserved managers who haven't won a player yet are assumed to hold their full starting budget (`state.startingBudget - (rosterSlots - 1)`), preventing premature bid capping on Pick #1.
+4. **300-Draft Stress Test Results**:
+   - **14-Team / 13-Slot (150 Runs)**: **93.3% 1st Place** (140/150), **99.3% Top-2** (149/150), **100.0% Top-3** (150/150), **88.1 Avg Power Points**.
+   - **15-Team / 12-Slot (150 Runs)**: **92.0% 1st Place** (138/150), **98.7% Top-2** (148/150), **99.3% Top-3** (149/150), **93.3 Avg Power Points**.

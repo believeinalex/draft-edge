@@ -8,23 +8,33 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 
 ### 1. Parallel Draft Simulator
 - **File**: `utils/simulate_parallel.js`
-- **Usage**: `node utils/simulate_parallel.js --runs=30`
-- **Purpose**: Runs a Monte Carlo simulation pitting the Draft Edge bot against a league of automated opponents with different archetypes (Homer, Market Value, Stars & Scrubs). 
-- **Output**: Generates a statistical report of the bot's Win Rate, positional breakdown, average Z-scores, and most-drafted players. Use this to verify that engine changes actually result in stronger teams.
+- **Usage**:
+  - Standard 14-team / 13-slot: `node utils/simulate_parallel.js --mode=hybrid --runs=30`
+  - Upcoming 15-team / 12-slot (9 starters, 3 bench): `node utils/simulate_parallel.js --mode=hybrid --teams=15 --slots=12 --starters=9 --runs=30`
+  - Supported `--mode` values: `hybrid` (default v2.3 champion), `multi_center`, `dynamic_weights`, `baseline` (legacy static `+4.0/+2.0` center bonus).
+- **Purpose**: Runs a multi-worker Monte Carlo simulation pitting the Draft Edge bot against a league of automated opponents (Market Value, Stars & Scrubs, Strict Budget, Homer) under strict Yahoo $200 hard salary cap rules ($\text{maxLegalBid} = \max(1, \text{budgetLeft} - (\text{slotsLeft} - 1))$).
+- **Output**: Generates Win Rate, Finish Place Distribution, average category Z-scores & League Ranks, Top 30 drafted players with Surplus ROI, and full forensic breakdowns for every loss.
 
-### 2. Live/Mock Draft Analyzer & Historical Tracker
+### 2. Autonomous Hill-Climbing & Loss Forensics
+- **Hill-Climbing Runner**: `node utils/hill_climb.js` — Evaluates candidate hyperparameter configurations (`state.hillClimbConfig`) across parallel workers against a multi-objective fitness function (Win Rate + Power Points - Category Rank Balance Penalty).
+- **Forensic Loss Analyzer**: `node utils/analyze_losses.js` — Captures exact rosters, prices paid, and category rank differentials for any simulated draft where the bot finishes #2 or lower.
+
+### 3. Live/Mock Draft Analyzer & Historical Tracker
 - **File**: `utils/analyze_mock.js`
 - **Usage**: `node utils/analyze_mock.js` (reads from `utils/mock.txt`) or `node utils/analyze_mock.js <path-to-file>`
 - **Purpose**: Parses a raw text export from a real Yahoo/ESPN draft (or mock draft) and calculates the final Power Rankings and Surplus Value for every team.
-- **Auto-Archive Feature**: When you run `analyze_mock.js`, it automatically saves a timestamped copy of the draft into the `drafts/` directory.
-- **Historical Analysis**: After analyzing the single draft, it automatically runs `utils/analyze_history.js` to parse ALL drafts in the `drafts/` directory. This outputs a macro-analysis of the user's historical Win Rate, average category finishes, and most profitable players across all tracked drafts.
+- **Auto-Archive Feature**: When you run `analyze_mock.js`, it automatically saves a timestamped copy of the draft into the `drafts/` directory and runs `utils/analyze_history.js`.
 
-### 3. Modifying the Engine
-- `engine.js` contains the core valuation logic. 
-- Important functions:
-  - `checkPrice(state, PLAYERS, rk)`: Computes the absolute Maximum Bid the bot should make on a nominated player. This uses a dynamic programming knapsack algorithm.
-  - `runOptimizer(state, PLAYERS)`: Computes the optimal target list of players to nominate/draft when the bot is on the clock.
-- **Warning**: When modifying `valFn` in `checkPrice`, be careful not to apply positional bonuses or artificial weights to the entire pool. Only apply target-specific bonuses to the nominated player (`p`), otherwise the knapsack algorithm will hoard budget to hunt the artificially inflated players in the remaining pool, suppressing the Max Bid of the current player.
+### 4. Valuation Engine Architecture (`engine.js` — v2.3 Hybrid Default)
+- **6-Slot Multi-Center Knapsack DP (`PG, SG, SF, PF, C1, C2` — 64 Coverage States)**:
+  - `reachableCoverage()`, `knapsackDP()`, and `knapsackReconstruct()` track two distinct center slots (`C1` and `C2`) in the DP bitmask when `multiCenter` is active (`centerMode === 'hybrid'`), structurally guaranteeing a multi-center roster without arbitrary Z-score inflation.
+- **Dynamic Category Deficit Weighting (`getDynamicCategoryWeights`)**:
+  - Dynamically adjusts category weights around base priors (`FG%: 1.08, 3PM: 1.06, REB: 1.10, BLK: 1.15`) using a smoothed deficit slope (`alpha: 0.10, targetPerPick: 0.08, [wMin: 0.75, wMax: 1.48]`) and **Second-Half Deficit Urgency** (`lateDeficitBoost: 1.25` once 40% of roster slots are filled).
+- **Yahoo $200 Hard Cap & Opponent Max-Bid Ceiling (`checkPrice`)**:
+  - Bounds binary search in `checkPrice()` by `myMaxLegal = Math.max(1, B - (slotsLeft - 1))` and `maxOppBid + 1` (with a guard when `C.teamNamesAll.length < state.numTeams` so un-logged teams in early live drafts are assumed to hold full starting budget).
+- **Reference Docs**:
+  - See `docs/PRICE_CHECK_UPGRADES.md` and `docs/OVERNIGHT_HILL_CLIMB_REPORT.md` for full mathematical details and 300-draft stress test benchmarks (**93.3% win rate / 100% Top-3 in 14T/13S; 92.0% win rate in 15T/12S**).
 
 ## League Rules
-Refer to `LEAGUE_RULES.md` for the specific league configuration (14 teams, $200 budget, 8-cat Roto, specific roster constraints). Always ensure your simulations run with these constraints.
+Refer to `LEAGUE_RULES.md` for the specific league configuration (14–15 teams, $200 budget, 8-cat Roto, 12–13 roster slots with 9 starters). Always ensure your simulations run with these constraints.
+
