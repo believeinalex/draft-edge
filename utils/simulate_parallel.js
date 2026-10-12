@@ -9,24 +9,27 @@ if (isMainThread) {
   const args = process.argv.slice(2);
   let runs = 10;
   let mode = 'baseline';
-  for (const arg of args) {
-    if (arg.startsWith('--runs=')) {
-      runs = parseInt(arg.split('=')[1], 10);
-    } else if (arg === '--runs') {
-      const idx = process.argv.indexOf('--runs');
-      if (idx + 1 < process.argv.length) runs = parseInt(process.argv[idx + 1], 10);
-    } else if (arg.startsWith('--mode=')) {
-      mode = arg.split('=')[1];
-    } else if (arg === '--mode') {
-      const idx = process.argv.indexOf('--mode');
-      if (idx + 1 < process.argv.length) mode = process.argv[idx + 1];
-    }
+  let numTeams = 14;
+  let rosterSlots = 13;
+  let starterSlots = 9;
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if (arg.startsWith('--runs=')) runs = parseInt(arg.split('=')[1], 10);
+    else if (arg === '--runs' && i + 1 < args.length) runs = parseInt(args[++i], 10);
+    else if (arg.startsWith('--mode=')) mode = arg.split('=')[1];
+    else if (arg === '--mode' && i + 1 < args.length) mode = args[++i];
+    else if (arg.startsWith('--teams=')) numTeams = parseInt(arg.split('=')[1], 10);
+    else if (arg === '--teams' && i + 1 < args.length) numTeams = parseInt(args[++i], 10);
+    else if (arg.startsWith('--slots=')) rosterSlots = parseInt(arg.split('=')[1], 10);
+    else if (arg === '--slots' && i + 1 < args.length) rosterSlots = parseInt(args[++i], 10);
+    else if (arg.startsWith('--starters=')) starterSlots = parseInt(arg.split('=')[1], 10);
+    else if (arg === '--starters' && i + 1 < args.length) starterSlots = parseInt(args[++i], 10);
   }
 
   const numCpus = Math.max(1, os.cpus().length - 1);
   const numWorkers = Math.min(runs, numCpus);
   
-  console.log(`Starting Monte Carlo Simulation (${mode} mode) with ${runs} runs across ${numWorkers} workers...`);
+  console.log(`Starting Monte Carlo Simulation (${mode} mode, ${numTeams} teams, ${rosterSlots} slots [${starterSlots} starters]) with ${runs} runs across ${numWorkers} workers...`);
   
   let runsCompleted = 0;
   let ourWins = 0;
@@ -55,7 +58,7 @@ if (isMainThread) {
 
   function dispatch(worker) {
     if (runsDispatched < runs) {
-      worker.postMessage({ runIndex: runsDispatched, centerMode: mode });
+      worker.postMessage({ runIndex: runsDispatched, centerMode: mode, numTeams, rosterSlots, starterSlots });
       runsDispatched++;
     } else {
       worker.postMessage('exit');
@@ -106,7 +109,7 @@ if (isMainThread) {
         const playerMap = {};
         for(const p of players) playerMap[p.rk] = p;
         
-        let report = `Monte Carlo Simulation Report (${runs} runs, Mode: ${mode})\n`;
+        let report = `Monte Carlo Simulation Report (${runs} runs, Mode: ${mode}, ${numTeams} Teams, ${rosterSlots} Slots [${starterSlots} Starters])\n`;
         report += `=========================================\n`;
         report += `Overall Win Rates (by archetype):\n`;
         report += `  - Our Bot (The Edge): ${((archetypeWins['ours'] / runs) * 100).toFixed(1)}% (${ourWins}/${runs} wins)\n`;
@@ -130,7 +133,7 @@ if (isMainThread) {
         report += `--- Positional Breakdown ---\n`;
         report += `  PG: ${(totalPos.PG / runs).toFixed(1)}   SG: ${(totalPos.SG / runs).toFixed(1)}   SF: ${(totalPos.SF / runs).toFixed(1)}   PF: ${(totalPos.PF / runs).toFixed(1)}   C: ${(totalPos.C / runs).toFixed(1)}\n\n`;
 
-        report += `--- Category Statistics (Avg Z-Score & Avg League Rank out of 14) ---\n`;
+        report += `--- Category Statistics (Avg Z-Score & Avg League Rank out of ${numTeams}) ---\n`;
         engine.CATS.forEach(c => {
           const avgZ = (ourTotalCats[c] / runs).toFixed(3);
           const avgRk = (ourTotalCatRanks[c] / runs).toFixed(2);
@@ -224,11 +227,14 @@ if (isMainThread) {
   parentPort.on('message', (msg) => {
     if (msg === 'exit') process.exit(0);
     const runIndex = msg.runIndex;
+    const numTeams = msg.numTeams || 14;
+    const rosterSlots = msg.rosterSlots || 13;
+    const starterSlots = msg.starterSlots !== undefined ? msg.starterSlots : Math.min(9, rosterSlots);
     
     const state = {
-      numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'Alex',
+      numTeams, rosterSlots, budget: 200, myTeamName: 'Alex',
       weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
-      picks: [], starterSlots: 9, benchWeight: 0.3,
+      picks: [], starterSlots, benchWeight: 0.3,
       centerMode: msg.centerMode || 'baseline',
       hillClimbConfig: msg.hillClimbConfig || {}
     };
@@ -239,7 +245,7 @@ if (isMainThread) {
     // Randomize opponents for this run
     const botTypes = [BOT_TYPES.MARKET, BOT_TYPES.STARS_SCRUBS, BOT_TYPES.BUDGET, BOT_TYPES.HOMER];
     const TEAMS = [ { name: 'Alex', type: BOT_TYPES.OURS } ];
-    for(let i = 1; i <= 13; i++) {
+    for(let i = 1; i < numTeams; i++) {
       const bType = botTypes[Math.floor(Math.random() * botTypes.length)];
       let t = { name: `Bot${i}_${bType}`, type: bType };
       if (bType === BOT_TYPES.HOMER) {
@@ -251,7 +257,7 @@ if (isMainThread) {
 
     let nominatorIdx = 0;
     let picksLog = [];
-    const totalPicks = 14 * 13;
+    const totalPicks = numTeams * rosterSlots;
     
     let pacing = { 50: 0, 100: 0, 150: 0 };
 
