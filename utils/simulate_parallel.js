@@ -179,7 +179,7 @@ if (isMainThread) {
   // Worker Thread
   const BOT_TYPES = { OURS: 'ours', MARKET: 'market', STARS_SCRUBS: 'stars_scrubs', BUDGET: 'budget', HOMER: 'homer' };
 
-  function getBotMaxBid(bot, player, C, state) {
+  function getBotMaxBid(bot, player, C, state, isNominator = false) {
     const { budgetLeft, slotsLeft } = C.teamBudgetAndSlotsLeft(bot.name);
     if (slotsLeft <= 0) return 0;
     let maxBid = 0;
@@ -187,6 +187,9 @@ if (isMainThread) {
       const cp = engine.checkPrice(state, players, player.rk);
       if (!cp || cp.full) return 0;
       maxBid = cp.maxBid;
+      if (maxBid <= 0 && cp.isMonopoly && !isNominator) {
+        return 0;
+      }
     } else {
       const fairPrice = C.fairPrice(player.rk);
       const fuzzy = 0.9 + Math.random() * 0.2;
@@ -206,11 +209,21 @@ if (isMainThread) {
     return Math.max(1, Math.min(maxLegal, Math.round(maxBid)));
   }
 
-  function getBotNomination(bot, C, availablePool) {
+  function getBotNomination(bot, C, availablePool, state) {
     if (availablePool.length === 0) return null;
     const poolSortedByVal = [...availablePool].sort((a,b) => C.fairPrice(b.rk) - C.fairPrice(a.rk));
     const top10 = poolSortedByVal.slice(0, 10);
     if (bot.type === BOT_TYPES.OURS) {
+      if (state) {
+        const myInfo = C.teamBudgetAndSlotsLeft(bot.name);
+        if (myInfo.slotsLeft <= 5 && myInfo.budgetLeft > myInfo.slotsLeft) {
+          const opt = engine.runOptimizer(state, players);
+          if (opt && !opt.full && !opt.infeasible && opt.isMonopoly && opt.dreamPlayers && opt.dreamPlayers.length > 0) {
+            const dreamTarget = availablePool.find(p => p.rk === opt.dreamPlayers[0].rk);
+            if (dreamTarget) return dreamTarget;
+          }
+        }
+      }
       const top15 = poolSortedByVal.slice(0, 15);
       return top15[Math.floor(Math.random() * top15.length)];
     } else if (bot.type === BOT_TYPES.STARS_SCRUBS || bot.type === BOT_TYPES.BUDGET) {
@@ -273,14 +286,18 @@ if (isMainThread) {
 
       if (nominatorInfo.slotsLeft <= 0) { nominatorIdx = nextIdx; continue; }
 
-      const nominatedPlayer = getBotNomination(nominator, C, C.availableInPool);
+      const nominatedPlayer = getBotNomination(nominator, C, C.availableInPool, state);
       if (!nominatedPlayer) break;
 
       let bids = [];
       for (const bot of TEAMS) {
         const { slotsLeft } = C.teamBudgetAndSlotsLeft(bot.name);
         if (slotsLeft > 0) {
-          bids.push({ bot: bot.name, bid: getBotMaxBid(bot, nominatedPlayer, C, state) });
+          const isNom = bot.name === nominator.name;
+          const bVal = getBotMaxBid(bot, nominatedPlayer, C, state, isNom);
+          if (bVal > 0) {
+            bids.push({ bot: bot.name, bid: bVal });
+          }
         }
       }
       bids.sort((a, b) => b.bid - a.bid);

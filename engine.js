@@ -448,6 +448,118 @@ function knapsackReconstruct(res, k, b, mask){
   return chosen;
 }
 
+function getMaxOppBid(state, C){
+  let maxOppBid = 0;
+  const knownOppNames = (C.teamNamesAll || []).filter(t => t !== state.myTeamName);
+  for(const t of knownOppNames){
+    const tInfo = C.teamBudgetAndSlotsLeft(t);
+    if(tInfo.slotsLeft > 0){
+      const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
+      if(tMax > maxOppBid) maxOppBid = tMax;
+    }
+  }
+  const unseenOpponents = Math.max(0, ((state.numTeams || 12) - 1) - knownOppNames.length);
+  if(unseenOpponents > 0){
+    const unseenMax = Math.max(1, (state.budget || 200) - ((state.rosterSlots || 13) - 1));
+    if(unseenMax > maxOppBid) maxOppBid = unseenMax;
+  }
+  return maxOppBid;
+}
+
+function buildEffectiveCostMap(state, C, targetPlayers){
+  const cfg = state.hillClimbConfig || {};
+  const useEffectiveCost = typeof cfg.useEffectiveCost === 'boolean' ? cfg.useEffectiveCost : true;
+  const costMap = new Map();
+  if(!useEffectiveCost){
+    for(const p of C.availableInPool) costMap.set(p.rk, C.fairPrice(p.rk));
+    return costMap;
+  }
+
+  const oppStates = [];
+  const knownOppNames = (C.teamNamesAll || []).filter(t => t !== state.myTeamName);
+  for(const t of knownOppNames){
+    const info = C.teamBudgetAndSlotsLeft(t);
+    if(info.slotsLeft > 0 && info.budgetLeft > 0){
+      oppStates.push({ budgetLeft: info.budgetLeft, slotsLeft: info.slotsLeft });
+    }
+  }
+  const unseenOpponents = Math.max(0, ((state.numTeams || 12) - 1) - knownOppNames.length);
+  for(let i = 0; i < unseenOpponents; i++){
+    oppStates.push({
+      budgetLeft: state.budget || 200,
+      slotsLeft: state.rosterSlots || 13
+    });
+  }
+
+  // First match the target (Dream Build) players sorted by fairPrice descending against the highest opponent bids,
+  // then match the remaining available pool players sorted by fairPrice descending.
+  const targetRks = new Set((targetPlayers || []).map(p => p.rk));
+  const sortedPool = C.availableInPool.slice().sort((a, b) => {
+    const aInT = targetRks.has(a.rk) ? 1 : 0;
+    const bInT = targetRks.has(b.rk) ? 1 : 0;
+    if(aInT !== bInT) return bInT - aInT;
+    const fpDiff = C.fairPrice(b.rk) - C.fairPrice(a.rk);
+    return fpDiff !== 0 ? fpDiff : a.rk - b.rk;
+  });
+
+  for(const p of sortedPool){
+    const fp = C.fairPrice(p.rk);
+    if(fp <= 1){
+      costMap.set(p.rk, 1);
+      continue;
+    }
+    let bestOppIdx = -1;
+    let bestMaxLegal = 0;
+    for(let i = 0; i < oppStates.length; i++){
+      const opp = oppStates[i];
+      if(opp.slotsLeft <= 0) continue;
+      const maxLegal = Math.max(1, opp.budgetLeft - (opp.slotsLeft - 1));
+      if(maxLegal > bestMaxLegal){
+        bestMaxLegal = maxLegal;
+        bestOppIdx = i;
+      }
+    }
+
+    if(bestOppIdx === -1){
+      costMap.set(p.rk, 1);
+    } else {
+      const effCost = Math.max(1, Math.min(fp, bestMaxLegal + 1));
+      costMap.set(p.rk, effCost);
+
+      const opp = oppStates[bestOppIdx];
+      const spentByOpp = Math.max(1, Math.min(fp, bestMaxLegal));
+      opp.budgetLeft = Math.max(0, opp.budgetLeft - spentByOpp);
+      opp.slotsLeft = Math.max(0, opp.slotsLeft - 1);
+    }
+  }
+
+  return costMap;
+}
+
+function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn){
+  if(slotsLeft <= 0 || C.availableInPool.length < slotsLeft){
+    return { dreamPlayers: [], dreamVal: -1e15, dreamRks: new Set() };
+  }
+  const baseReach = reachableCoverage(myPlayers, multiCenter);
+  const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
+  const unitCost = () => 1;
+  const resDream = knapsackDP(C.availableInPool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  resDream.costOf = unitCost;
+  let dreamVal = bestFeasible(resDream, slotsLeft, slotsLeft);
+  let dreamMask = fullCoverage;
+  if(dreamVal < -1e14){
+    const fb = bestAny(resDream, slotsLeft, slotsLeft);
+    dreamVal = fb.value;
+    dreamMask = fb.mask;
+  }
+  if(dreamVal < -1e14){
+    return { dreamPlayers: [], dreamVal: -1e15, dreamRks: new Set() };
+  }
+  const dreamPlayers = knapsackReconstruct(resDream, slotsLeft, slotsLeft, dreamMask);
+  const dreamRks = new Set(dreamPlayers.map(p => p.rk));
+  return { dreamPlayers, dreamVal, dreamRks };
+}
+
 // Returns null if the player isn't found or the roster is already full.
 // Otherwise: { player, maxBid, soloZ, mktNow, baselineZ, baselineInfeasible,
 //              alternativeNames, positionWarning }
@@ -457,7 +569,6 @@ function checkPrice(state, PLAYERS, rk){
   if(!p) return null;
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { player:p, full:true };
-  const costFn = x=>C.fairPrice(x.rk);
 
   const centerMode = state.centerMode || 'hybrid';
   const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
@@ -470,6 +581,7 @@ function checkPrice(state, PLAYERS, rk){
 
   const cfg = state.hillClimbConfig || {};
   let valFn;
+  let rankValFn;
   if(useDynamicWeights){
     const dynW = getDynamicCategoryWeights(state, PLAYERS, C.zAll);
     const ftGuardrail = typeof cfg.ftGuardrail === 'number' ? cfg.ftGuardrail : 1.0;
@@ -489,8 +601,10 @@ function checkPrice(state, PLAYERS, rk){
       }
       return z;
     };
+    rankValFn = valFn;
   } else if(multiCenter){
     valFn = x => C.compositeZ(C.zAll.get(x.rk));
+    rankValFn = valFn;
   } else {
     valFn = x => {
       let z = C.compositeZ(C.zAll.get(x.rk));
@@ -501,8 +615,14 @@ function checkPrice(state, PLAYERS, rk){
       }
       return z;
     };
+    rankValFn = x => {
+      let z = C.compositeZ(C.zAll.get(x.rk));
+      if (numCenters === 0 && x.pos && x.pos.includes('C')) z += 4.0;
+      else if (numCenters === 1 && x.pos && x.pos.includes('C')) z += 2.0;
+      return z;
+    };
   }
-  
+
   const pVal = valFn(p);
   const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
   const B = Math.max(budgetLeft, 0);
@@ -510,6 +630,17 @@ function checkPrice(state, PLAYERS, rk){
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
+
+  const maxOppBid = getMaxOppBid(state, C);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, rankValFn);
+  const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
+  const effCostFn = x => costMap.get(x.rk) !== undefined ? costMap.get(x.rk) : C.fairPrice(x.rk);
+  const dreamTotalCost = dreamPlayers.reduce((a, dp) => a + effCostFn(dp), 0);
+  const isMonopoly = dreamPlayers.length === slotsLeft && dreamTotalCost <= B;
+
+  // Only pivot costFn to rank-matched opponent bid ceiling once we have Endgame Monopoly purchasing power!
+  // Before Monopoly is reached, pricing future players at fairPrice preserves mid-draft budget discipline.
+  const costFn = isMonopoly ? effCostFn : (x => C.fairPrice(x.rk));
 
   const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   resExcl.costOf = costFn;
@@ -532,21 +663,6 @@ function checkPrice(state, PLAYERS, rk){
   let bestXChosen = [];
   if(slotsLeft - 1 >= 0 && B >= 1){
     const useMaxOppBid = typeof cfg.useMaxOppBid === 'boolean' ? cfg.useMaxOppBid : true;
-    let maxOppBid = 0;
-    if(useMaxOppBid && C.teamNamesAll){
-      if(C.teamNamesAll.length < (state.numTeams || 12)){
-        maxOppBid = Math.max(1, (state.budget || 200) - ((state.rosterSlots || 13) - 1));
-      } else {
-        for(const t of C.teamNamesAll){
-          if(t === state.myTeamName) continue;
-          const tInfo = C.teamBudgetAndSlotsLeft(t);
-          if(tInfo.slotsLeft > 0){
-            const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
-            if(tMax > maxOppBid) maxOppBid = tMax;
-          }
-        }
-      }
-    }
     const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
     let low = 1, high = (useMaxOppBid && maxOppBid > 0) ? Math.min(myMaxLegal, maxOppBid + 1) : myMaxLegal;
     const starterTol = (starterSlotsLeft > 0 && typeof cfg.starterTolerance === 'number') ? cfg.starterTolerance : 0.0;
@@ -577,18 +693,53 @@ function checkPrice(state, PLAYERS, rk){
     }
   }
 
+  const breakEvenBid = bestX;
+  let buildBid = null;
+  if(isMonopoly){
+    if(dreamRks.has(rk)){
+      const dreamMarketCost = dreamPlayers.reduce((a, dp) => a + C.fairPrice(dp.rk), 0);
+      const otherDreamPlayers = dreamPlayers.filter(x => x.rk !== rk);
+      const otherCostMap = buildEffectiveCostMap(state, C, otherDreamPlayers);
+      const otherDreamEffCost = otherDreamPlayers.reduce((a, dp) => a + (otherCostMap.get(dp.rk) !== undefined ? otherCostMap.get(dp.rk) : C.fairPrice(dp.rk)), 0);
+      const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
+      const oppCap = maxOppBid > 0 ? maxOppBid + 1 : myMaxLegal;
+      let maxToKeepDream;
+      if(dreamMarketCost <= B && slotsLeft > 1){
+        const otherMarketCost = dreamMarketCost - C.fairPrice(rk);
+        const propShare = Math.round(C.fairPrice(rk) * (B / Math.max(1, dreamMarketCost)) * 1.15);
+        maxToKeepDream = Math.max(C.fairPrice(rk), Math.min(B - otherMarketCost, propShare));
+      } else {
+        maxToKeepDream = Math.max(effCostFn(p), B - otherDreamEffCost);
+      }
+      buildBid = Math.min(myMaxLegal, oppCap, maxToKeepDream);
+      bestX = Math.min(bestX, buildBid);
+    } else {
+      bestX = 0;
+    }
+  }
+
   const passRoster = (baseline < -1e14) ? [] : knapsackReconstruct(resExcl, slotsLeft, resExcl.B, baselineMask);
-  const restAtBestX = bestXChosen.filter(x => x.rk !== rk);
+  const passRosterSorted = passRoster.slice().sort((a,b)=>costFn(b)-costFn(a) || rankValFn(b)-rankValFn(a));
   const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
   const zc = C.zAll.get(p.rk);
+  const dreamSorted = dreamPlayers.slice().sort((a,b) => rankValFn(b) - rankValFn(a));
+  const myMaxBid = Math.max(1, B - (slotsLeft - 1));
+  const isEndgame = isMonopoly || myMaxBid > maxOppBid || maxOppBid <= 25 || slotsLeft <= 5;
 
   return {
-    player: p, maxBid: bestX, soloZ: pVal, mktNow: C.fairPrice(rk),
+    player: p, maxBid: bestX, buildBid, breakEvenBid, soloZ: pVal, mktNow: C.fairPrice(rk),
+    effCost: effCostFn(p),
     zRank, zc,
     baselineZ: baseline > -1e14 ? baseline : null, baselineInfeasible,
-    passRoster: passRoster.slice().sort((a,b)=>costFn(b)-costFn(a)),
-    alternativeNames: restAtBestX.slice(0,2).map(x=>x.name),
-    alternativeMore: restAtBestX.length>2,
+    passRoster: passRosterSorted,
+    alternativeNames: passRosterSorted.slice(0,2).map(x=>x.name),
+    alternativeMore: passRosterSorted.length>2,
+    inDreamBuild: dreamRks.has(rk),
+    isMonopoly,
+    isEndgame,
+    maxOppBid,
+    dreamAlternativeNames: dreamSorted.filter(x => x.rk !== rk).slice(0, 3).map(x => x.name),
+    dreamAlternativeMore: dreamSorted.filter(x => x.rk !== rk).length > 3,
   };
 }
 
@@ -605,7 +756,6 @@ function runOptimizer(state, PLAYERS){
   const C = computeAll(state, PLAYERS);
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { full: true };
-  const costFn = p=>C.fairPrice(p.rk);
 
   const centerMode = state.centerMode || 'hybrid';
   const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
@@ -653,6 +803,16 @@ function runOptimizer(state, PLAYERS){
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
   const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
+
+  const maxOppBid = getMaxOppBid(state, C);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn);
+  const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
+  const effCostFn = p => costMap.get(p.rk) !== undefined ? costMap.get(p.rk) : C.fairPrice(p.rk);
+  const dreamTotalCost = dreamPlayers.reduce((a, p) => a + effCostFn(p), 0);
+  const dreamMarketCost = dreamPlayers.reduce((a, p) => a + C.fairPrice(p.rk), 0);
+  const canSweepDream = dreamPlayers.length === slotsLeft && dreamTotalCost <= B;
+
+  const costFn = canSweepDream ? effCostFn : (p => C.fairPrice(p.rk));
   const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
@@ -683,26 +843,36 @@ function runOptimizer(state, PLAYERS){
   const posCoverage = CORE_POS.map(pos=>({
     pos, covered: fullyCovered || myPlayers.concat(chosen).some(p=>p.pos && p.pos.includes(pos)),
   }));
+
+  const chosenRks = new Set(chosen.map(p => p.rk));
+  const sameAsDream = dreamPlayers.length > 0 && chosen.length === dreamPlayers.length && dreamPlayers.every(dp => chosenRks.has(dp.rk));
+  const isMonopoly = canSweepDream || sameAsDream || (dreamVal > -1e14 && Math.abs(bestVal - dreamVal) < 1e-6);
+  const myMaxBid = Math.max(1, B - (slotsLeft - 1));
+  const isEndgame = isMonopoly || myMaxBid > maxOppBid || maxOppBid <= 25 || slotsLeft <= 5;
+
+  const baitPlayers = [];
+  if(isEndgame && !isMonopoly && maxOppBid >= 2){
+    for(const p of C.availableInPool){
+      if(dreamRks.has(p.rk) || chosenRks.has(p.rk)) continue;
+      const fp = C.fairPrice(p.rk);
+      if(fp >= 3){
+        baitPlayers.push({
+          rk: p.rk,
+          name: p.name,
+          pos: p.pos,
+          team: p.team,
+          fairPrice: fp,
+          z: C.baseCompositeZ(C.zAll.get(p.rk)),
+        });
+      }
+    }
+    baitPlayers.sort((a,b) => b.fairPrice - a.fairPrice || a.rk - b.rk);
+  }
+  const topBaitPlayers = baitPlayers.slice(0, 3);
+
   // --- Snipe Detection Pass ---
   // Identify high-value players acquirable well below market value because
   // opponents lack the budget to compete.
-  let maxOppBid = 0;
-  const knownOppCount = (C.teamNamesAll || []).filter(t => t !== state.myTeamName).length;
-  for(const t of C.teamNamesAll || []) {
-    if(t === state.myTeamName) continue;
-    const tInfo = C.teamBudgetAndSlotsLeft(t);
-    if(tInfo.slotsLeft > 0) {
-      const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
-      if(tMax > maxOppBid) maxOppBid = tMax;
-    }
-  }
-  // Account for opponents who haven't made any picks yet (not in teamNamesAll)
-  const unseenOpponents = Math.max(0, (state.numTeams - 1) - knownOppCount);
-  if(unseenOpponents > 0) {
-    const unseenMax = state.budget - (state.rosterSlots - 1);
-    if(unseenMax > maxOppBid) maxOppBid = unseenMax;
-  }
-
   const snipes = [];
   for(const p of C.availableInPool) {
     const fp = C.fairPrice(p.rk);
@@ -727,9 +897,19 @@ function runOptimizer(state, PLAYERS){
   return {
     posWarning, budgetLeft, slotsLeft, bestVal, totalCost, existingZ,
     catTotals, posCoverage,
-    players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a)).map(p=>({
-      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), z: C.baseCompositeZ(C.zAll.get(p.rk)),
+    isMonopoly,
+    isEndgame,
+    maxOppBid,
+    players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a) || C.fairPrice(b.rk)-C.fairPrice(a.rk)).map(p=>({
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inDreamBuild: dreamRks.has(p.rk),
     })),
+    dreamVal: dreamVal > -1e14 ? dreamVal : bestVal,
+    dreamTotalCost,
+    dreamMarketCost,
+    dreamPlayers: isEndgame ? dreamPlayers.slice().sort((a,b)=>C.fairPrice(b.rk)-C.fairPrice(a.rk) || valFn(b)-valFn(a)).map(p=>({
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: effCostFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inBudgetBuild: chosenRks.has(p.rk),
+    })) : [],
+    baitPlayers: topBaitPlayers,
     snipes: topSnipes,
   };
 }

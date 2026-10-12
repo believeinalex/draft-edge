@@ -624,10 +624,42 @@
     if(opt.infeasible){ box.innerHTML = `<div class="de-empty">No feasible build — you need ~$${opt.slotsLeft} minimum ($1/slot) for ${opt.slotsLeft} open slots but only have $${opt.budgetLeft} left.</div>`; return; }
     const posStrip = opt.posCoverage.map(pc=>`<span class="de-poschip ${pc.covered?'ok':'bad'}">${pc.pos}</span>`).join('');
     const C_opt = computeAll(state(), PLAYERS);
+    const monopolyBanner = opt.isMonopoly
+      ? `<div class="de-monopoly-banner">👑 <b>Endgame Monopoly</b> — Your $${opt.budgetLeft} budget covers the absolute best ${opt.slotsLeft}-player finish regardless of money (max opp bid: $${opt.maxOppBid}). Pass on everyone else!</div>`
+      : '';
     const rows = opt.players.map(p=> {
       const zR = (C_opt.zRankMap && C_opt.zRankMap.get(p.rk)) || p.rk;
-      return `<div class="de-opt-row"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(p.name)}<span class="de-opt-meta">${p.pos.join('/')} · ${p.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost">$${p.cost}</span><span class="de-opt-z">${p.z.toFixed(2)}z</span></span></div>`;
+      const starHtml = (opt.isEndgame && p.inDreamBuild) ? `<span class="de-dream-star" title="In Dream Build (Best Team Regardless of $)">★</span>` : '';
+      const costHtml = (p.fairPrice && p.cost < p.fairPrice)
+        ? `<span class="de-opt-cost de-snipe-market"><s>$${p.fairPrice}</s></span><span class="de-opt-cost de-snipe-cost">$${p.cost}</span>`
+        : `<span class="de-opt-cost">$${p.cost}</span>`;
+      return `<div class="de-opt-row"><span><span class="de-name-rank-badge">#${zR}</span>${starHtml}${escapeHtml(p.name)}<span class="de-opt-meta">${p.pos.join('/')} · ${p.team||'FA'}</span></span><span class="de-opt-right">${costHtml}<span class="de-opt-z">${p.z.toFixed(2)}z</span></span></div>`;
     }).join('');
+
+    const dreamRows = (!opt.isMonopoly && opt.dreamPlayers && opt.dreamPlayers.length > 0)
+      ? opt.dreamPlayers.map(dp => {
+          const zR = (C_opt.zRankMap && C_opt.zRankMap.get(dp.rk)) || dp.rk;
+          const upgTag = !dp.inBudgetBuild ? `<span class="de-dream-upg-tag">UPGRADE</span>` : '';
+          const costHtml = (dp.fairPrice && dp.cost < dp.fairPrice)
+            ? `<span class="de-opt-cost de-snipe-market"><s>$${dp.fairPrice}</s></span><span class="de-opt-cost">$${dp.cost}</span>`
+            : `<span class="de-opt-cost">$${dp.fairPrice || dp.cost}</span>`;
+          return `<div class="de-opt-row ${!dp.inBudgetBuild ? 'de-dream-row' : ''}"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(dp.name)}${upgTag}<span class="de-opt-meta">${dp.pos.join('/')} · ${dp.team||'FA'}</span></span><span class="de-opt-right">${costHtml}<span class="de-opt-z">${dp.z.toFixed(2)}z</span></span></div>`;
+        }).join('')
+      : '';
+    const dreamSection = dreamRows
+      ? `<div class="de-dream-header">✨ Dream Build (Regardless of $) <span class="de-snipe-subtitle">+${Math.max(0, opt.dreamVal - opt.bestVal).toFixed(2)}z · eff $${opt.dreamTotalCost} (mkt $${opt.dreamMarketCost})</span></div><div class="de-opt-list de-dream-list">${dreamRows}</div>`
+      : '';
+
+    const baitRows = (!opt.isMonopoly && opt.baitPlayers && opt.baitPlayers.length > 0)
+      ? opt.baitPlayers.map(b => {
+          const zR = (C_opt.zRankMap && C_opt.zRankMap.get(b.rk)) || b.rk;
+          return `<div class="de-opt-row de-bait-row"><span><span class="de-name-rank-badge">#${zR}</span>${escapeHtml(b.name)}<span class="de-opt-meta">${b.pos.join('/')} · ${b.team||'FA'}</span></span><span class="de-opt-right"><span class="de-opt-cost">mkt $${b.fairPrice}</span><span class="de-opt-z">${b.z.toFixed(2)}z</span></span></div>`;
+        }).join('')
+      : '';
+    const baitSection = baitRows
+      ? `<div class="de-bait-header">🪤 Bait nominations <span class="de-snipe-subtitle">not in your builds — drain opponents (max opp $${opt.maxOppBid})</span></div><div class="de-opt-list de-bait-list">${baitRows}</div>`
+      : '';
+
     const snipeRows = (opt.snipes && opt.snipes.length > 0)
       ? opt.snipes.map(s => {
           const zR = (C_opt.zRankMap && C_opt.zRankMap.get(s.rk)) || s.rk;
@@ -639,8 +671,11 @@
       : '';
     box.innerHTML = `
       ${opt.posWarning ? `<div class="de-alert">${escapeHtml(opt.posWarning)}</div>` : ''}
+      ${monopolyBanner}
       <div class="de-poscoverage">${posStrip}</div>
       <div class="de-opt-list">${rows}</div>
+      ${dreamSection}
+      ${baitSection}
       ${snipeSection}
       <div class="de-opt-summary">Fill: ${opt.bestVal.toFixed(2)}z for $${opt.totalCost} of $${opt.budgetLeft} left across ${opt.slotsLeft} slots. Whole team incl. drafted: <b>${(opt.existingZ+opt.bestVal).toFixed(2)}z</b>.</div>
     `;
@@ -737,20 +772,32 @@
       `;
       return;
     }
-    const altTxt = result.alternativeNames.length
-      ? `Above $${result.maxBid}, passing and building around ${result.alternativeNames.join(' + ')}${result.alternativeMore?' + others':''} instead comes out ahead.`
-      : '';
+    let altTxt = '';
+    if(result.maxBid > 0 && result.alternativeNames.length){
+      altTxt = `Above $${result.maxBid}, passing and building around ${result.alternativeNames.join(' + ')}${result.alternativeMore?' + others':''} instead comes out ahead.`;
+    } else if(result.isEndgame && result.maxBid <= 0 && result.dreamAlternativeNames && result.dreamAlternativeNames.length){
+      altTxt = `Saving slot & budget for Dream Build targets: ${result.dreamAlternativeNames.join(' + ')}${result.dreamAlternativeMore?' + others':''}.`;
+    }
 
     const upBannerHtml = isUpNow ? `<div class="de-player-up-tag">⚡ Player Up For Bidding</div>` : '';
+    const dreamBadgeHtml = (result.isEndgame && result.inDreamBuild)
+      ? `<span class="de-dream-badge">${result.isMonopoly ? '👑 Endgame Monopoly Target' : '★ In Dream Build'}</span>`
+      : '';
     const rankBadgeHtml = `<span class="de-name-rank-badge">#${result.zRank}</span>`;
+
+    const hasBreakEvenCap = result.maxBid > 0 && result.breakEvenBid && result.breakEvenBid > result.maxBid;
+    const bidLabel = hasBreakEvenCap ? 'Max worth bidding (keeps Dream Build)' : 'Max worth bidding';
+    const breakEvenSpan = hasBreakEvenCap
+      ? ` <span style="font-size:11px; font-weight:500; color:#8a93a5; margin-left:6px;">(break-even ceiling: $${result.breakEvenBid})</span>`
+      : '';
 
     els.checkResult.innerHTML = `
       <div class="de-check-result ${isUpNow ? 'de-player-up-banner' : ''}">
         ${upBannerHtml}
-        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}</div>
-        <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · Z-Score Rank #${result.zRank} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}</div>
-        <div class="p"><span class="lbl">Max worth bidding</span>${result.maxBid>0 ? '$'+result.maxBid : 'pass'}</div>
-        ${altTxt ? `<div class="m" style="margin-top:4px;">${altTxt}</div>` : ''}
+        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}${dreamBadgeHtml}</div>
+        <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · Z-Score Rank #${result.zRank} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}${result.isEndgame && result.effCost && result.effCost < result.mktNow ? ` (eff $${result.effCost})` : ''}</div>
+        <div class="p"><span class="lbl">${bidLabel}</span>${result.maxBid>0 ? '$'+result.maxBid : 'pass'}${breakEvenSpan}</div>
+        ${altTxt ? `<div class="m" style="margin-top:4px;">${escapeHtml(altTxt)}</div>` : ''}
         ${renderStatBreakdownTable(p, result.zc)}
         <div class="de-check-actions">
           <input type="text" id="deLogTeam" placeholder="Team" value="${config.myTeamName ? escapeHtml(config.myTeamName) : ''}">

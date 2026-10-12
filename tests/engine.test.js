@@ -329,3 +329,185 @@ test('runOptimizer surfaces snipe targets when opponents are nearly broke', () =
     assert.ok(res.snipes.length <= 5, `Snipes should be capped at 5, got ${res.snipes.length}`);
   }
 });
+
+// =========================================================================
+// Endgame Monopoly ("Best Player Regardless of Money") & Dream Build Tests
+// =========================================================================
+
+test('Endgame Monopoly: recognizes dominant purchasing power even when Dream Build market cost exceeds budget, bids maxOppBid+1 on Dream targets, and passes on filler', () => {
+  const picks = [];
+  const numTeams = 14;
+  const rosterSlots = 13;
+  const pool = PLAYERS.slice(0, numTeams * rosterSlots);
+  // Leave 5 mid-round value targets (Coby White, De'Aaron Fox, Onyeka Okongwu, etc.) undrafted on the board
+  const undraftedTargets = new Set([65, 70, 75, 80, 85].map(i => pool[i].rk));
+  const availToDraft = pool.filter(p => !undraftedTargets.has(p.rk));
+
+  // 12 opponents have 1 slot left and $1 left (maxBid = $1)
+  // 1 opponent (Opp1) has 1 slot left and $5 left (maxBid = $5)
+  let playerIdx = 0;
+  for (let t = 1; t <= numTeams - 1; t++) {
+    const teamName = `Opp${t}`;
+    const totalSpent = t === 1 ? 195 : 199;
+    for (let s = 0; s < rosterSlots - 1; s++) {
+      const perPick = s === 0 ? totalSpent - 15 * (rosterSlots - 2) : 15;
+      picks.push({ rk: availToDraft[playerIdx++].rk, teamName, price: perPick });
+    }
+  }
+
+  // "You" have 10 picks made spending $185 -> $15 left for 3 slots
+  // Dream Build market cost is $17 (> $15 budget!), but rank-matched effective cost is $9 (<= $15 budget!)
+  for (let s = 0; s < rosterSlots - 3; s++) {
+    const perPick = s === 0 ? 185 - 18 * (rosterSlots - 4) : 18;
+    picks.push({ rk: availToDraft[playerIdx++].rk, teamName: 'You', price: perPick });
+  }
+
+  const monopolyState = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 9,
+    benchWeight: 0.3,
+  };
+
+  const opt = runOptimizer(monopolyState, PLAYERS);
+  assert.ok(opt, 'runOptimizer should return a result');
+  assert.ok(opt.dreamMarketCost > opt.budgetLeft, `Dream market cost ($${opt.dreamMarketCost}) should exceed remaining budget ($${opt.budgetLeft})`);
+  assert.ok(opt.totalCost <= opt.budgetLeft, `Effective cost ($${opt.totalCost}) should fit within remaining budget ($${opt.budgetLeft})`);
+  assert.equal(opt.isMonopoly, true, 'Should detect Endgame Monopoly when $15 covers rank-matched Dream Build');
+  assert.equal(opt.maxOppBid, 5, 'Highest opponent max bid should be $5');
+  assert.equal(opt.players.length, 3);
+  assert.ok(opt.players.every(p => p.inDreamBuild), 'All chosen players in Monopoly mode must be Dream Build players');
+
+  // Every Dream Build player should get maxBid == maxOppBid + 1 ($6) in checkPrice
+  for (const dp of opt.players) {
+    const cp = checkPrice(monopolyState, PLAYERS, dp.rk);
+    assert.ok(cp);
+    assert.equal(cp.inDreamBuild, true);
+    assert.equal(cp.isMonopoly, true);
+    assert.equal(cp.maxBid, 6, `Dream Build target ${dp.name} should get maxBid = $6 (maxOppBid + 1), got $${cp.maxBid}`);
+  }
+
+  // A mediocre filler player remaining at the bottom of the pool (not in Dream Build) must be a strict PASS ($0)
+  const dreamRks = new Set(opt.players.map(p => p.rk));
+  const C = computeAll(monopolyState, PLAYERS);
+  const fillerCandidates = C.availableInPool.filter(p => !dreamRks.has(p.rk));
+  const worstFiller = fillerCandidates[fillerCandidates.length - 1];
+  const cpFiller = checkPrice(monopolyState, PLAYERS, worstFiller.rk);
+  assert.ok(cpFiller);
+  assert.equal(cpFiller.inDreamBuild, false);
+  assert.equal(cpFiller.maxBid, 0, `Filler player ${worstFiller.name} should be a PASS ($0) in Monopoly mode, got $${cpFiller.maxBid}`);
+  assert.ok(cpFiller.dreamAlternativeNames.length > 0, 'Pass on filler should list Dream Build targets to save for');
+});
+
+test('Dream Build & Bait Nominations surface when one opponent still out-prices full Dream Build', () => {
+  const picks = [];
+  const numTeams = 14;
+  const rosterSlots = 13;
+
+  // Opp1 has $14 left with 1 slot (maxBid = $14), everyone else has $1 left
+  let playerIdx = 0;
+  for (let t = 1; t <= numTeams - 1; t++) {
+    const teamName = `Opp${t}`;
+    const totalSpent = t === 1 ? 186 : 199;
+    for (let s = 0; s < rosterSlots - 1; s++) {
+      const perPick = s === 0 ? totalSpent - 15 * (rosterSlots - 2) : 15;
+      picks.push({ rk: PLAYERS[playerIdx].rk, teamName, price: perPick });
+      playerIdx++;
+    }
+  }
+
+  // "You" have $8 left for 3 slots (enough to beat $1 opponents [$2+$2+$2=$6], but not enough if Opp1 bids $14 on our #1 Dream target)
+  for (let s = 0; s < rosterSlots - 3; s++) {
+    const perPick = s === 0 ? 192 - 18 * (rosterSlots - 4) : 18;
+    picks.push({ rk: PLAYERS[playerIdx].rk, teamName: 'You', price: perPick });
+    playerIdx++;
+  }
+
+  const nearMonopolyState = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 9,
+    benchWeight: 0.3,
+  };
+
+  const opt = runOptimizer(nearMonopolyState, PLAYERS);
+  assert.ok(opt);
+  assert.equal(opt.dreamPlayers.length, 3, 'Should return 3 Dream Build players');
+  assert.ok(opt.dreamVal >= opt.bestVal, 'Dream Build value should be >= budget-constrained value');
+  if (!opt.isMonopoly) {
+    assert.ok(opt.dreamPlayers.some(p => !p.inBudgetBuild), 'Dream Build should highlight at least one upgrade over budget build');
+    assert.ok(Array.isArray(opt.baitPlayers), 'Should return baitPlayers array');
+  }
+});
+
+test('Monopoly Build Protection: caps maxBid at buildBid to preserve rest of Dream Build instead of gutting bench, and uses top passRoster for alternativeNames', () => {
+  // Reproduce the Kawhi Leonard screenshot scenario:
+  // 12 teams, 13 slots, 52% inflation: top ~20 stars drafted by opponents spending almost all their budgets,
+  // one opponent (Jacobsman13) has $66 left for 9 slots (maxOppBid = $58),
+  // "You" have 3 picks made spending $79 -> $121 left for 10 slots (6 starters + 4 bench).
+  const picks = [];
+  const numTeams = 12;
+  const rosterSlots = 13;
+
+  // Draft top 17 players (rk 1..17) + several mid players across opponents so Kawhi (#18) is the top remaining player
+  const oppConfigs = [
+    { name: 'Ning', picks: 4, spent: 188 },
+    { name: 'BILAL', picks: 5, spent: 190 },
+    { name: 'Team 10', picks: 5, spent: 185 },
+    { name: 'G', picks: 3, spent: 183 },
+    { name: 'Quam', picks: 5, spent: 188 },
+    { name: 'Alex', picks: 3, spent: 169 },
+    { name: 'Team 11', picks: 4, spent: 183 },
+    { name: 'Michael', picks: 5, spent: 174 },
+    { name: 'Jacobsman13', picks: 4, spent: 134 }, // $66 left
+    { name: 'Opp10', picks: 4, spent: 190 },
+    { name: 'Opp11', picks: 4, spent: 190 },
+  ];
+
+  // Keep Kawhi (#18), Dejounte (#24), JJJ (#28), Kyrie (#29), Garland (#34), LeBron (#35), PG (#53), Rollins (#60), Siakam (#70), Dyson (#72) available
+  const keepUndrafted = new Set([18, 24, 28, 29, 34, 35, 53, 60, 70, 72]);
+  const draftableForOpps = PLAYERS.filter(p => !keepUndrafted.has(p.rk));
+  let idx = 0;
+
+  // "You" have 3 picks for $79 ($121 left, 10 slots left)
+  picks.push({ rk: draftableForOpps[idx++].rk, teamName: 'You', price: 30 });
+  picks.push({ rk: draftableForOpps[idx++].rk, teamName: 'You', price: 25 });
+  picks.push({ rk: draftableForOpps[idx++].rk, teamName: 'You', price: 24 });
+
+  for (const oc of oppConfigs) {
+    for (let s = 0; s < oc.picks; s++) {
+      const price = s === 0 ? oc.spent - 20 * (oc.picks - 1) : 20;
+      picks.push({ rk: draftableForOpps[idx++].rk, teamName: oc.name, price });
+    }
+  }
+
+  const kawhiState = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 9,
+    benchWeight: 0.3,
+  };
+
+  const cp = checkPrice(kawhiState, PLAYERS, 18); // Kawhi Leonard
+  assert.ok(cp);
+  assert.equal(cp.isMonopoly, true, 'Should be in Monopoly mode when $121 covers the entire 10-player Dream Build');
+  assert.ok(cp.breakEvenBid > 35, `Unconstrained break-even bid should be high ($${cp.breakEvenBid}) due to 0.3x bench weight`);
+  assert.ok(cp.maxBid <= 30, `Protected maxBid ($${cp.maxBid}) should preserve budget for the other 9 Dream Build players instead of bidding $${cp.breakEvenBid}`);
+  assert.equal(cp.maxBid, cp.buildBid, 'maxBid should equal buildBid in Monopoly mode');
+  assert.ok(!cp.alternativeNames.includes('Tari Eason') && !cp.alternativeNames.includes('Mitchell Robinson'),
+    `alternativeNames (${cp.alternativeNames.join(', ')}) should list top passRoster stars, not $1 bench fillers`);
+});
+
+

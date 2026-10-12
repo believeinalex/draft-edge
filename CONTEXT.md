@@ -25,15 +25,20 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 - **Purpose**: Parses a raw text export from a real Yahoo/ESPN draft (or mock draft) and calculates the final Power Rankings and Surplus Value for every team.
 - **Auto-Archive Feature**: When you run `analyze_mock.js`, it automatically saves a timestamped copy of the draft into the `drafts/` directory and runs `utils/analyze_history.js`.
 
-### 4. Valuation Engine Architecture (`engine.js` — v2.3 Hybrid Default)
+### 4. Valuation Engine Architecture (`engine.js` — v2.4 Hybrid Default)
 - **6-Slot Multi-Center Knapsack DP (`PG, SG, SF, PF, C1, C2` — 64 Coverage States)**:
   - `reachableCoverage()`, `knapsackDP()`, and `knapsackReconstruct()` track two distinct center slots (`C1` and `C2`) in the DP bitmask when `multiCenter` is active (`centerMode === 'hybrid'`), structurally guaranteeing a multi-center roster without arbitrary Z-score inflation.
 - **Dynamic Category Deficit Weighting (`getDynamicCategoryWeights`)**:
   - Dynamically adjusts category weights around base priors (`FG%: 1.08, 3PM: 1.06, REB: 1.10, BLK: 1.15`) using a smoothed deficit slope (`alpha: 0.10, targetPerPick: 0.08, [wMin: 0.75, wMax: 1.48]`) and **Second-Half Deficit Urgency** (`lateDeficitBoost: 1.25` once 40% of roster slots are filled).
+- **Rank-Matched Opponent Bid Ceiling & Endgame Monopoly Mode (`buildEffectiveCostMap` & `solveDreamBuild`)**:
+  - `buildEffectiveCostMap()` sorts the remaining pool by player valuation (`valFn`) and matches players against the sorted remaining opponent max-bids (`bestMaxLegal + 1`) whenever opponent budgets become a binding constraint (`bestMaxLegal <= fairPrice * 1.5`), depleting each opponent's budget/slots as they contest top targets.
+  - `solveDreamBuild()` runs an unconstrained (`$1/slot`) 6-slot Knapsack DP to identify the **Best Team Regardless of Money** (`dreamPlayers`).
+  - When `budgetLeft` covers the rank-matched effective cost of `dreamPlayers` (`isMonopoly === true`), the solver enters **Endgame Monopoly** mode: bidding up to `maxOppBid + 1` on every `dreamPlayers` target and strictly returning `pass ($0)` on all non-Dream filler players.
+  - When `!isMonopoly`, `runOptimizer()` surfaces both the **Dream Build (Regardless of $)** upgrade targets and top-market **Bait Nominations** (`baitPlayers` not in either build) to drain remaining opponent cash.
 - **Yahoo $200 Hard Cap & Opponent Max-Bid Ceiling (`checkPrice`)**:
-  - Bounds binary search in `checkPrice()` by `myMaxLegal = Math.max(1, B - (slotsLeft - 1))` and `maxOppBid + 1` (with a guard when `C.teamNamesAll.length < state.numTeams` so un-logged teams in early live drafts are assumed to hold full starting budget).
+  - Bounds binary search in `checkPrice()` by `myMaxLegal = Math.max(1, B - (slotsLeft - 1))` and `maxOppBid + 1` (with `getMaxOppBid()` accounting for un-logged teams in early live drafts).
 - **Reference Docs**:
-  - See `docs/PRICE_CHECK_UPGRADES.md` and `docs/OVERNIGHT_HILL_CLIMB_REPORT.md` for full mathematical details and 300-draft stress test benchmarks (**93.3% win rate / 100% Top-3 in 14T/13S; 92.0% win rate in 15T/12S**).
+  - See `docs/PRICE_CHECK_UPGRADES.md` and `docs/OVERNIGHT_HILL_CLIMB_REPORT.md` for full mathematical details and simulation benchmarks.
 
 ## League Rules
 Refer to `LEAGUE_RULES.md` for the specific league configuration (14–15 teams, $200 budget, 8-cat Roto, 12–13 roster slots with 9 starters). Always ensure your simulations run with these constraints.

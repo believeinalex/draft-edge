@@ -239,4 +239,70 @@ td div[class*="W(150px)"] {
   margin-top: 1px;
 }
 
+#de-overlay .de-monopoly-banner {
+  background: linear-gradient(135deg, #173324 0%, #243818 100%);
+  border: 1px solid #4fbf85;
+  color: #a8e6a1;
+  border-radius: 7px;
+  padding: 7px 9px;
+  font-size: 11.5px;
+  margin-bottom: 8px;
+}
 
+#de-overlay .de-dream-star {
+  color: #e8a33d;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+#de-overlay .de-dream-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4fbf85;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #3a3f4b;
+}
+
+#de-overlay .de-dream-row {
+  background: rgba(79, 191, 133, 0.08);
+}
+
+#de-overlay .de-dream-upg-tag {
+  display: inline-block;
+  background: #173324;
+  color: #4fbf85;
+  border: 1px solid #4fbf85;
+  font-size: 8.5px;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: 4px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+#de-overlay .de-bait-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e2685f;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #3a3f4b;
+}
+
+#de-overlay .de-bait-row {
+  background: rgba(226, 104, 95, 0.06);
+}
+
+#de-overlay .de-dream-badge {
+  display: inline-block;
+  background: #3a2c14;
+  color: #e8a33d;
+  border: 1px solid #e8a33d;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 99px;
+  margin-left: 6px;
+  vertical-align: middle;
+}

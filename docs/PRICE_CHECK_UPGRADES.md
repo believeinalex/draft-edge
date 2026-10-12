@@ -135,3 +135,26 @@ See [`docs/OVERNIGHT_HILL_CLIMB_REPORT.md`](OVERNIGHT_HILL_CLIMB_REPORT.md) for 
 4. **300-Draft Stress Test Results**:
    - **14-Team / 13-Slot (150 Runs)**: **93.3% 1st Place** (140/150), **99.3% Top-2** (149/150), **100.0% Top-3** (150/150), **88.1 Avg Power Points**.
    - **15-Team / 12-Slot (150 Runs)**: **92.0% 1st Place** (138/150), **98.7% Top-2** (148/150), **99.3% Top-3** (149/150), **93.3 Avg Power Points**.
+
+---
+
+## v2.4: Rank-Matched Opponent Bid Ceiling, Dream Build & Endgame Monopoly Mode
+
+### The Motivation
+In live and mock drafts (`drafts/mock_2026-10-11_human.txt`), the bot frequently enters the final 3–5 rounds with dominant purchasing power (e.g., `$15–$25` left while 9–12 opponents are stuck at `$1–$2` max bids and 1–2 opponents have `$5–$10`). Previously:
+1. `computeAll()` included our own unspent budget in `remainingBudgetAllTeams`, inflating `fairPrice` against ourselves in the endgame.
+2. `knapsackDP()` in `checkPrice()` and `runOptimizer()` priced every remaining pool player at `fairPrice(x)`, making the solver think three `$8–$12` market players (`$30` combined `fairPrice`) were unaffordable on a `$15` budget—even when no opponent in the league could bid more than `$2–$5`!
+
+### Key Changes
+1. **Rank-Matched Opponent Bid Ceiling (`buildEffectiveCostMap`)**:
+   - Evaluates the `dreamPlayers` sorted by `fairPrice` descending against the highest remaining opponent legal max bids (`bestMaxLegal + 1`), depleting each opponent's budget and open slots as they contest top targets.
+   - If only one opponent has `$6` left and everyone else is at `$1`, only the #1 remaining player can be pushed to `$7`, while the rest of the Dream Build is priced at `$2`.
+2. **Dream Build ("Best Team Regardless of Money" — `solveDreamBuild`) & Endgame Monopoly Pivot**:
+   - Runs an unconstrained (`$1/slot`, `capBudget = slotsLeft`) 6-slot Multi-Center Knapsack DP to solve for the exact highest-value legal finish (`dreamPlayers`).
+   - **Mid-Draft Isolation Guard**: During early/mid-draft (`!isMonopoly`), `knapsackDP` retains `costFn = C.fairPrice(x.rk)` so opponent-cap projections never trick the solver into thinking future picks only cost `$2` and overbidding on mid-draft stars. The moment `dreamTotalCost <= budgetLeft` (`isMonopoly === true`), the engine pivots cleanly to `effCostFn` (**Endgame Monopoly** mode): `checkPrice()` bids up to `maxOppBid + 1` on every `dreamPlayers` target and strictly returns `pass ($0)` on all non-Dream filler players.
+3. **Overlay UI & Bait Nominations (`content.js`, `overlay.css`)**:
+   - **Check Player Card**: Badges Dream Build players (`★ In Dream Build` / `👑 Endgame Monopoly Target`), shows effective opponent-capped cost (`eff $X`), and explains when passing on filler to save slots/budget for Dream Build targets.
+   - **Team Optimizer Panel**: Displays an **Endgame Monopoly** banner when `isMonopoly` is active, or displays the **✨ Dream Build (Regardless of $)** upgrade section alongside **🪤 Bait Nominations** (high-market players not in either build to drain remaining opponent cash).
+4. **Validation Benchmarks (150-Draft Monte Carlo, 14T/13S)**:
+   - **Unit Tests**: All 40/40 unit tests pass (`npm test`), including dedicated Endgame Monopoly & Dream Build tests verifying that `runOptimizer` and `checkPrice` sweep `$17+` market-cost Dream Builds on a `$15` budget (`effCost = $9`) and return `$0` (`pass`) on filler.
+   - **150-Draft Monte Carlo Benchmark**: **92.7% 1st Place (139/150 wins, plus 1 exact tie for 1st at 83 pts)**, **98.7% Top-2 (148/150)**, **88.0 Avg Power Points**, and **\$0.50 Avg Unspent Budget** (improved from \$0.70 in v2.3), preserving full mid-draft star ROIs while capturing endgame monopoly steals (`Cedric Coward +$5.3 ROI`, `Stephon Castle +$4.7 ROI`, `Jabari Smith Jr. +$4.6 ROI`).
