@@ -251,13 +251,17 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
   const cfg = state.hillClimbConfig || {};
   const alpha = typeof cfg.alpha === 'number' ? cfg.alpha : 0.10;
   const wMin = typeof cfg.wMin === 'number' ? cfg.wMin : 0.75;
-  const wMax = typeof cfg.wMax === 'number' ? cfg.wMax : 1.45;
+  const wMax = typeof cfg.wMax === 'number' ? cfg.wMax : 1.48;
   const targetPerPick = typeof cfg.targetPerPick === 'number' ? cfg.targetPerPick : 0.08;
+  const satThreshold = typeof cfg.satThreshold === 'number' ? cfg.satThreshold : 99.0;
+  const satDecay = typeof cfg.satDecay === 'number' ? cfg.satDecay : 0.0;
+  const satMin = typeof cfg.satMin === 'number' ? cfg.satMin : 0.45;
+  const lateDeficitBoost = typeof cfg.lateDeficitBoost === 'number' ? cfg.lateDeficitBoost : 1.25;
 
   const baseWeights = {
     fgPct: typeof cfg.baseFgPct === 'number' ? cfg.baseFgPct : 1.08,
-    ftPct: 1.00,
-    tpm: 1.00,
+    ftPct: typeof cfg.baseFtPct === 'number' ? cfg.baseFtPct : 1.00,
+    tpm: typeof cfg.baseTpm === 'number' ? cfg.baseTpm : 1.06,
     pts: 1.00,
     treb: typeof cfg.baseTreb === 'number' ? cfg.baseTreb : 1.10,
     ast: 1.00,
@@ -285,10 +289,20 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
   }
 
   const targetZ = picksMade * targetPerPick;
+  const isLateHalf = picksMade >= Math.floor((state.rosterSlots || 13) * 0.4);
   for(const c of CATS){
     const deficit = targetZ - currentZ[c];
-    const adj = deficit * alpha;
-    weights[c] = clamp(weights[c] + adj, wMin, wMax);
+    let effAlpha = alpha;
+    if(deficit > 0 && isLateHalf && lateDeficitBoost > 1.0){
+      effAlpha *= lateDeficitBoost;
+    }
+    const adj = deficit * effAlpha;
+    let w = clamp(weights[c] + adj, wMin, wMax);
+    if(currentZ[c] > satThreshold && satDecay > 0){
+      const excess = currentZ[c] - satThreshold;
+      w = Math.max(satMin, w - excess * satDecay);
+    }
+    weights[c] = w;
   }
   return weights;
 }
@@ -520,12 +534,16 @@ function checkPrice(state, PLAYERS, rk){
     const useMaxOppBid = typeof cfg.useMaxOppBid === 'boolean' ? cfg.useMaxOppBid : true;
     let maxOppBid = 0;
     if(useMaxOppBid && C.teamNamesAll){
-      for(const t of C.teamNamesAll){
-        if(t === state.myTeamName) continue;
-        const tInfo = C.teamBudgetAndSlotsLeft(t);
-        if(tInfo.slotsLeft > 0){
-          const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
-          if(tMax > maxOppBid) maxOppBid = tMax;
+      if(C.teamNamesAll.length < (state.numTeams || 12)){
+        maxOppBid = Math.max(1, (state.budget || 200) - ((state.rosterSlots || 13) - 1));
+      } else {
+        for(const t of C.teamNamesAll){
+          if(t === state.myTeamName) continue;
+          const tInfo = C.teamBudgetAndSlotsLeft(t);
+          if(tInfo.slotsLeft > 0){
+            const tMax = tInfo.budgetLeft - (tInfo.slotsLeft - 1);
+            if(tMax > maxOppBid) maxOppBid = tMax;
+          }
         }
       }
     }
