@@ -31,11 +31,22 @@ function parseMockDraftText(text, PLAYERS_LIST) {
   const picks = [];
   const unmatched = [];
   let userTeamName = null;
+  const yourTeamRks = new Set();
 
+  // Optional "Your Team" section: 1. Collins, John (DET - PF,C) $6
+  const yourTeamRegex = /^\d+\.\s+(.+?)\s+\([^)]+\)\s+\$(\d+)$/;
   // Pattern 1: (1) Ryan - Haliburton, Tyrese (IND - PG,SG) - $52
   const pickRegex = /^\((\d+)\)\s+([^-]+)\s+-\s+(.+?)\s+\([^)]+\)\s+-\s+\$(\d+)/;
 
   for (const line of lines) {
+    const ytMatch = line.match(yourTeamRegex);
+    if (ytMatch && picks.length === 0) {
+      const cleanYtName = normalizeNameOrder(ytMatch[1].trim());
+      const ytPlayer = matchPlayer(cleanYtName, playersPool, nameIndex);
+      if (ytPlayer) yourTeamRks.add(ytPlayer.rk);
+      continue;
+    }
+
     const match = line.match(pickRegex);
     if (match) {
       const pickNum = parseInt(match[1], 10);
@@ -62,6 +73,38 @@ function parseMockDraftText(text, PLAYERS_LIST) {
         });
       } else {
         unmatched.push({ pickNum, teamName, rawName: rawPlayerName, price });
+      }
+    }
+  }
+
+  // Disambiguate duplicate team names (e.g., two managers named "Alex" in the same room)
+  const byTeam = new Map();
+  for (const p of picks) {
+    if (!byTeam.has(p.teamName)) byTeam.set(p.teamName, []);
+    byTeam.get(p.teamName).push(p);
+  }
+  for (const [tName, tPicks] of byTeam.entries()) {
+    if (tPicks.length > 13 && tPicks.length % 13 === 0) {
+      const numChunks = tPicks.length / 13;
+      let userChunkIdx = 0;
+      if (yourTeamRks.size > 0) {
+        let bestOverlap = -1;
+        for (let c = 0; c < numChunks; c++) {
+          const chunk = tPicks.slice(c * 13, (c + 1) * 13);
+          const overlap = chunk.filter(p => yourTeamRks.has(p.rk)).length;
+          if (overlap > bestOverlap) {
+            bestOverlap = overlap;
+            userChunkIdx = c;
+          }
+        }
+      }
+      let rivalCounter = 2;
+      for (let c = 0; c < numChunks; c++) {
+        if (c === userChunkIdx) continue;
+        const suffixName = `${tName} (${rivalCounter++})`;
+        for (let i = c * 13; i < (c + 1) * 13; i++) {
+          tPicks[i].teamName = suffixName;
+        }
       }
     }
   }

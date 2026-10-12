@@ -510,4 +510,59 @@ test('Monopoly Build Protection: caps maxBid at buildBid to preserve rest of Dre
     `alternativeNames (${cp.alternativeNames.join(', ')}) should list top passRoster stars, not $1 bench fillers`);
 });
 
+test('Bench Optimization Pass: demotes early low-Z pick (e.g. John Collins Pick #1) to bench when better starters are drafted later', () => {
+  // 1. computeAll Power Rankings should be invariant to pick order (Collins #1 + Suggs #13 == Suggs #1 + Collins #13)
+  const alexRks = [76, 8, 26, 18, 39, 33, 34, 24, 70, 79, 80, 74, 50]; // Collins (#76) first, Suggs (#50) 13th
+  const alexRksReversed = alexRks.slice().reverse();
+  const oppRks = [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14];
+
+  const stateOrderA = Object.assign({}, defaultState, {
+    myTeamName: 'Alex',
+    picks: alexRks.map(rk => ({ rk, teamName: 'Alex', price: 10 }))
+      .concat(oppRks.map(rk => ({ rk, teamName: 'Rival', price: 10 }))),
+  });
+  const stateOrderB = Object.assign({}, defaultState, {
+    myTeamName: 'Alex',
+    picks: alexRksReversed.map(rk => ({ rk, teamName: 'Alex', price: 10 }))
+      .concat(oppRks.map(rk => ({ rk, teamName: 'Rival', price: 10 }))),
+  });
+
+  const cA = computeAll(stateOrderA, PLAYERS);
+  const cB = computeAll(stateOrderB, PLAYERS);
+  const prA = cA.powerRankings.find(p => p.teamName === 'Alex');
+  const prB = cB.powerRankings.find(p => p.teamName === 'Alex');
+  assert.deepEqual(prA.catRanks, prB.catRanks, 'Power rankings should assign starters by Z-score, not draft nomination order');
+
+  // 2. Live Optimizer & checkPrice: when 10 picks are made (9 starters + John Collins #76),
+  // whole-team value (existingZ + bestVal) must equal the exact top-10 starter + 3 bench weighted sum
+  const earlyCollinsPicks = [76, 8, 26, 18, 39, 33, 34, 24, 70, 79].map(rk => ({
+    rk,
+    teamName: 'Alex',
+    price: 15,
+  }));
+  const stateWithEarlyCollins = Object.assign({}, defaultState, {
+    myTeamName: 'Alex',
+    centerMode: 'multi_center',
+    picks: earlyCollinsPicks,
+    starterSlots: 10,
+    benchWeight: 0.3,
+  });
+
+  const opt = runOptimizer(stateWithEarlyCollins, PLAYERS);
+  const C = computeAll(stateWithEarlyCollins, PLAYERS);
+  const combinedRks = earlyCollinsPicks.map(p => p.rk).concat(opt.players.map(p => p.rk));
+  const combinedSortedZ = combinedRks
+    .map(rk => ({ rk, z: C.compositeZ(C.zAll.get(rk)) }))
+    .sort((a, b) => (b.z - a.z) || (a.rk - b.rk));
+  const expectedWholeTeamZ = combinedSortedZ.reduce(
+    (sum, item, idx) => sum + (idx < 10 ? 1.0 : 0.3) * item.z,
+    0
+  );
+  assert.ok(
+    Math.abs((opt.existingZ + opt.bestVal) - expectedWholeTeamZ) < 1e-6,
+    `Whole team Z (${(opt.existingZ + opt.bestVal).toFixed(4)}) should equal exact bench-optimized Z (${expectedWholeTeamZ.toFixed(4)})`
+  );
+});
+
+
 

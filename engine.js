@@ -170,7 +170,12 @@ function computeAll(state, PLAYERS){
     const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
     const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
     const teamProjZ = teamNames.map(name=>{
-      const picksOfTeam = state.picks.filter(pk=>pk.teamName===name);
+      const picksOfTeam = state.picks.filter(pk=>pk.teamName===name).slice().sort((a,b)=>{
+        const za = zAll.get(a.rk), zb = zAll.get(b.rk);
+        const ca = za ? baseCompositeZ(za) : -1e9;
+        const cb = zb ? baseCompositeZ(zb) : -1e9;
+        return (cb - ca) || (a.rk - b.rk);
+      });
       const proj = {};
       const numPicks = picksOfTeam.length;
       const emptyStarters = Math.max(0, starterSlots - numPicks);
@@ -279,14 +284,24 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
   const picksMade = myPlayers.length;
   if(picksMade === 0) return weights;
 
+  const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
+  const benchWeight = state.benchWeight !== undefined ? state.benchWeight : 0.3;
+  const sortedMy = myPlayers.slice().sort((a, b) => {
+    const za = zAll.get(a.rk), zb = zAll.get(b.rk);
+    const sa = za ? CATS.reduce((acc, c) => acc + weights[c] * za[c], 0) : -1e9;
+    const sb = zb ? CATS.reduce((acc, c) => acc + weights[c] * zb[c], 0) : -1e9;
+    return (sb - sa) || (a.rk - b.rk);
+  });
+
   const currentZ = {};
   for(const c of CATS) currentZ[c] = 0;
-  for(const p of myPlayers){
+  sortedMy.forEach((p, idx) => {
     const zc = zAll.get(p.rk);
     if(zc){
-      for(const c of CATS) currentZ[c] += zc[c];
+      const w = (idx < starterSlots) ? 1.0 : benchWeight;
+      for(const c of CATS) currentZ[c] += w * zc[c];
     }
-  }
+  });
 
   const targetZ = picksMade * targetPerPick;
   const isLateHalf = picksMade >= Math.floor((state.rosterSlots || 13) * 0.4);
@@ -354,8 +369,13 @@ function missingCorePositions(players){
   return zeroEligible.length ? zeroEligible : ['(position conflict)'];
 }
 
-function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight, multiCenter = false){
-  const n = pool.length;
+function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight, multiCenter = false, myPlayers = null, totalStarterSlots = null){
+  const hasMyPlayers = Array.isArray(myPlayers) && typeof totalStarterSlots === 'number';
+  const sortedPool = hasMyPlayers ? pool.slice().sort((a, b) => {
+    const diff = valFn(b) - valFn(a);
+    return Math.abs(diff) > 1e-12 ? diff : (a.rk - b.rk);
+  }) : pool;
+  const n = sortedPool.length;
   const B = Math.max(0, Math.floor(capBudget));
   const K = Math.max(0, Math.floor(capSlots));
   const M = multiCenter ? COVERAGE_STATES_2C : COVERAGE_STATES;
@@ -370,16 +390,51 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
   const C1 = 1 << 4;
   const C2 = 1 << 5;
 
+  const sortedMy = (hasMyPlayers && myPlayers.length > 0) ? myPlayers.slice().sort((a, b) => {
+    const diff = valFn(b) - valFn(a);
+    return Math.abs(diff) > 1e-12 ? diff : (a.rk - b.rk);
+  }) : [];
+  const effStarterSlots = hasMyPlayers ? Math.min(totalStarterSlots, sortedMy.length + K) : sSlots;
+  let mIdx = 0;
+
+  function applyMyPlayerDemotion(mPlayer, mRank1Based){
+    if(mRank1Based > effStarterSlots || bWeight === 1.0) return;
+    const mVal = valFn(mPlayer);
+    const demotionDelta = (1.0 - bWeight) * mVal;
+    if(Math.abs(demotionDelta) < 1e-12) return;
+    const minKForDemotion = Math.max(1, effStarterSlots - mRank1Based + 1);
+    for(let k=minKForDemotion; k<=K; k++){
+      for(let b=0; b<=B; b++){
+        const baseOffset = (k*(B+1)+b)*M;
+        for(let mask=0; mask<M; mask++){
+          if(dp[baseOffset + mask] > NEG/2){
+            dp[baseOffset + mask] -= demotionDelta;
+          }
+        }
+      }
+    }
+  }
+
   for(let i=0;i<n;i++){
-    const cost = Math.round(costFn(pool[i]));
-    const baseVal = valFn(pool[i]);
-    const pm = posMaskOf(pool[i]);
-    const canC = pool[i].pos && pool[i].pos.includes('C');
+    const baseVal = valFn(sortedPool[i]);
+    while(mIdx < sortedMy.length){
+      const mVal = valFn(sortedMy[mIdx]);
+      if(mVal > baseVal + 1e-12 || (Math.abs(mVal - baseVal) <= 1e-12 && sortedMy[mIdx].rk < sortedPool[i].rk)){
+        mIdx++;
+        applyMyPlayerDemotion(sortedMy[mIdx - 1], mIdx);
+      } else {
+        break;
+      }
+    }
+
+    const cost = Math.round(costFn(sortedPool[i]));
+    const pm = posMaskOf(sortedPool[i]);
+    const canC = sortedPool[i].pos && sortedPool[i].pos.includes('C');
     const newDp = dp.slice();
     const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
     if(cost <= B){
       for(let k=K;k>=1;k--){
-        const itemVal = (k <= sSlots) ? baseVal : baseVal * bWeight;
+        const itemVal = ((k + mIdx) <= effStarterSlots) ? baseVal : baseVal * bWeight;
         for(let b=B;b>=cost;b--){
           for(let mask=0;mask<M;mask++){
             const srcVal = dp[idx(k-1,b-cost,mask)];
@@ -418,7 +473,11 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     dp = newDp;
     choice[i] = take;
   }
-  return {dp, choice, pool, B, K, M, idx, multiCenter};
+  while(mIdx < sortedMy.length){
+    mIdx++;
+    applyMyPlayerDemotion(sortedMy[mIdx - 1], mIdx);
+  }
+  return {dp, choice, pool: sortedPool, B, K, M, idx, multiCenter};
 }
 function bestFeasible(res, k, b){
   const targetMask = res.multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
@@ -536,14 +595,15 @@ function buildEffectiveCostMap(state, C, targetPlayers){
   return costMap;
 }
 
-function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn){
+function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn, starterSlots){
   if(slotsLeft <= 0 || C.availableInPool.length < slotsLeft){
     return { dreamPlayers: [], dreamVal: -1e15, dreamRks: new Set() };
   }
   const baseReach = reachableCoverage(myPlayers, multiCenter);
   const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
   const unitCost = () => 1;
-  const resDream = knapsackDP(C.availableInPool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  const totalStarterSlots = typeof starterSlots === 'number' ? starterSlots : (myPlayers.length + starterSlotsLeft);
+  const resDream = knapsackDP(C.availableInPool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, totalStarterSlots);
   resDream.costOf = unitCost;
   let dreamVal = bestFeasible(resDream, slotsLeft, slotsLeft);
   let dreamMask = fullCoverage;
@@ -632,7 +692,7 @@ function checkPrice(state, PLAYERS, rk){
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
   const maxOppBid = getMaxOppBid(state, C);
-  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, rankValFn);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, rankValFn, starterSlots);
   const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
   const effCostFn = x => costMap.get(x.rk) !== undefined ? costMap.get(x.rk) : C.fairPrice(x.rk);
   const dreamTotalCost = dreamPlayers.reduce((a, dp) => a + effCostFn(dp), 0);
@@ -642,7 +702,7 @@ function checkPrice(state, PLAYERS, rk){
   // Before Monopoly is reached, pricing future players at fairPrice preserves mid-draft budget discipline.
   const costFn = isMonopoly ? effCostFn : (x => C.fairPrice(x.rk));
 
-  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
   resExcl.costOf = costFn;
 
   let baseline = bestFeasible(resExcl, slotsLeft, resExcl.B);
@@ -665,11 +725,16 @@ function checkPrice(state, PLAYERS, rk){
     const useMaxOppBid = typeof cfg.useMaxOppBid === 'boolean' ? cfg.useMaxOppBid : true;
     const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
     let low = 1, high = (useMaxOppBid && maxOppBid > 0) ? Math.min(myMaxLegal, maxOppBid + 1) : myMaxLegal;
-    const starterTol = (starterSlotsLeft > 0 && typeof cfg.starterTolerance === 'number') ? cfg.starterTolerance : 0.0;
+    const betterInMy = myPlayers.filter(m => {
+      const diff = valFn(m) - pVal;
+      return diff > 1e-12 || (Math.abs(diff) <= 1e-12 && m.rk < p.rk);
+    }).length;
+    const pWouldStart = (starterSlotsLeft > 0) || (betterInMy < starterSlots);
+    const starterTol = (pWouldStart && typeof cfg.starterTolerance === 'number') ? cfg.starterTolerance : 0.0;
     while(low <= high){
       const X = Math.floor((low + high) / 2);
       const customCostFn = x => (x.rk === rk ? X : costFn(x));
-      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
       resWithP.costOf = customCostFn;
 
       let valWithP = bestFeasible(resWithP, slotsLeft, B);
@@ -805,7 +870,7 @@ function runOptimizer(state, PLAYERS){
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
   const maxOppBid = getMaxOppBid(state, C);
-  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn, starterSlots);
   const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
   const effCostFn = p => costMap.get(p.rk) !== undefined ? costMap.get(p.rk) : C.fairPrice(p.rk);
   const dreamTotalCost = dreamPlayers.reduce((a, p) => a + effCostFn(p), 0);
@@ -813,7 +878,7 @@ function runOptimizer(state, PLAYERS){
   const canSweepDream = dreamPlayers.length === slotsLeft && dreamTotalCost <= B;
 
   const costFn = canSweepDream ? effCostFn : (p => C.fairPrice(p.rk));
-  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
@@ -832,7 +897,15 @@ function runOptimizer(state, PLAYERS){
   } else {
     chosen = knapsackReconstruct(res, slotsLeft, res.B, fullCoverage);
   }
-  const existingZ = myPicks.reduce((a,pk)=>{ const zc=C.zAll.get(pk.rk); return a + (zc?C.compositeZ(zc):0); },0);
+  const sortedMyForExisting = myPlayers.slice().sort((a, b) => {
+    const diff = valFn(b) - valFn(a);
+    return Math.abs(diff) > 1e-12 ? diff : (a.rk - b.rk);
+  });
+  const existingZ = sortedMyForExisting.reduce((a, p, idx)=>{
+    const zc = C.zAll.get(p.rk);
+    const w = (idx < starterSlots) ? 1.0 : benchWeight;
+    return a + w * (zc ? C.compositeZ(zc) : 0);
+  }, 0);
   const totalCost = chosen.reduce((a,p)=>a+costFn(p),0);
   const catTotals = {};
   for(const c of CATS){
