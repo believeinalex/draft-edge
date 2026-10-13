@@ -633,8 +633,10 @@
     const posStrip = opt.posCoverage.map(pc=>`<span class="de-poschip ${pc.covered?'ok':'bad'}">${pc.pos}</span>`).join('');
     const C_opt = computeAll(state(), PLAYERS);
     const monopolyBanner = opt.isMonopoly
-      ? `<div class="de-monopoly-banner">👑 <b>Endgame Monopoly</b> — Your $${opt.budgetLeft} budget covers the absolute best ${opt.slotsLeft}-player finish regardless of money (max opp bid: $${opt.maxOppBid}). Pass on everyone else!</div>`
-      : '';
+      ? `<div class="de-monopoly-banner">👑 <b>Endgame Monopoly</b> — Your $${opt.budgetLeft} budget covers the absolute best ${opt.slotsLeft}-player finish regardless of money (max opp bid: $${opt.maxOppBid}). Nominate your top Dream targets &amp; pass on everyone else!</div>`
+      : (opt.budgetLeft <= opt.slotsLeft
+          ? `<div class="de-monopoly-banner">💵 <b>$1/Slot Endgame</b> — Nominate from your optimal $1 targets below (sorted highest value first) to lock them in uncontested at $1.</div>`
+          : '');
     const rows = opt.players.map(p=> {
       const zR = (C_opt.zRankMap && C_opt.zRankMap.get(p.rk)) || p.rk;
       const starHtml = (opt.isEndgame && p.inDreamBuild) ? `<span class="de-dream-star" title="In Dream Build (Best Team Regardless of $)">★</span>` : '';
