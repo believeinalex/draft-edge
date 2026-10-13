@@ -510,4 +510,55 @@ test('Monopoly Build Protection: caps maxBid at buildBid to preserve rest of Dre
     `alternativeNames (${cp.alternativeNames.join(', ')}) should list top passRoster stars, not $1 bench fillers`);
 });
 
+test('Endgame Monopoly: every Dream Build player receives positive maxBid equal to buildBid, never zeroing out as pass', () => {
+  const picks = [];
+  const numTeams = 14;
+  const rosterSlots = 13;
+  const pool = PLAYERS.slice(0, numTeams * rosterSlots);
+  const undraftedTargets = new Set([65, 70, 75, 80, 85].map(i => pool[i].rk));
+  const availToDraft = pool.filter(p => !undraftedTargets.has(p.rk));
+
+  let playerIdx = 0;
+  for (let t = 1; t <= numTeams - 1; t++) {
+    const teamName = `Opp${t}`;
+    const totalSpent = t === 1 ? 195 : 199;
+    for (let s = 0; s < rosterSlots - 1; s++) {
+      const perPick = s === 0 ? totalSpent - 15 * (rosterSlots - 2) : 15;
+      picks.push({ rk: availToDraft[playerIdx++].rk, teamName, price: perPick });
+    }
+  }
+
+  // 10 picks made, 3 slots left with $15
+  for (let s = 0; s < rosterSlots - 3; s++) {
+    const perPick = s === 0 ? 185 - 18 * (rosterSlots - 4) : 18;
+    picks.push({ rk: availToDraft[playerIdx++].rk, teamName: 'You', price: perPick });
+  }
+
+  const state = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 10, // Remaining slots are bench slots!
+    benchWeight: 0.3,
+  };
+
+  const opt = runOptimizer(state, PLAYERS);
+  assert.equal(opt.isMonopoly, true);
+  assert.equal(opt.players.length, 3);
+
+  // Even for bench players where unconstrained binary search might return 0,
+  // Monopoly mode must always assign maxBid = buildBid > 0 so the bot bids on Dream targets.
+  for (const dp of opt.players) {
+    const cp = checkPrice(state, PLAYERS, dp.rk);
+    assert.equal(cp.inDreamBuild, true);
+    assert.ok(cp.maxBid > 0, `Target ${dp.name} must have positive maxBid, got ${cp.maxBid}`);
+    assert.equal(cp.maxBid, cp.buildBid, `Target ${dp.name} maxBid must equal buildBid`);
+    assert.ok(cp.breakEvenBid >= cp.maxBid, `Target ${dp.name} breakEvenBid must be >= maxBid`);
+  }
+});
+
+
 

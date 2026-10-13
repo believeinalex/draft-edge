@@ -693,7 +693,7 @@ function checkPrice(state, PLAYERS, rk){
     }
   }
 
-  const breakEvenBid = bestX;
+  let breakEvenBid = bestX;
   let buildBid = null;
   if(isMonopoly){
     if(dreamRks.has(rk)){
@@ -712,7 +712,8 @@ function checkPrice(state, PLAYERS, rk){
         maxToKeepDream = Math.max(effCostFn(p), B - otherDreamEffCost);
       }
       buildBid = Math.min(myMaxLegal, oppCap, maxToKeepDream);
-      bestX = Math.min(bestX, buildBid);
+      bestX = buildBid;
+      breakEvenBid = Math.max(breakEvenBid, buildBid);
     } else {
       bestX = 0;
     }

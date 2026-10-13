@@ -775,7 +775,7 @@
     let altTxt = '';
     if(result.maxBid > 0 && result.alternativeNames.length){
       altTxt = `Above $${result.maxBid}, passing and building around ${result.alternativeNames.join(' + ')}${result.alternativeMore?' + others':''} instead comes out ahead.`;
-    } else if(result.isEndgame && result.maxBid <= 0 && result.dreamAlternativeNames && result.dreamAlternativeNames.length){
+    } else if(result.isEndgame && !result.inDreamBuild && result.maxBid <= 0 && result.dreamAlternativeNames && result.dreamAlternativeNames.length){
       altTxt = `Saving slot & budget for Dream Build targets: ${result.dreamAlternativeNames.join(' + ')}${result.dreamAlternativeMore?' + others':''}.`;
     }
 
