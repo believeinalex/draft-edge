@@ -306,3 +306,35 @@ td div[class*="W(150px)"] {
   margin-left: 6px;
   vertical-align: middle;
 }
+
+#de-overlay .de-dnd-banner {
+  background: #3a1c1c;
+  border: 1px solid #e2685f;
+  color: #ff857d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+#de-overlay .de-dnd-badge {
+  display: inline-block;
+  background: #3a1c1c;
+  color: #ff857d;
+  border: 1px solid #e2685f;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 99px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.de-name-rank-badge.de-dnd-chip {
+  background: #471919 !important;
+  color: #ff857d !important;
+  border: 1px solid #e2685f !important;
+}
+

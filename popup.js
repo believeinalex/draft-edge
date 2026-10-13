@@ -1,7 +1,7 @@
 const DEFAULTS = { numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
 
 function load(){
-  chrome.storage.local.get(['config','picks'], (res)=>{
+  chrome.storage.local.get(['config','picks','doNotDraft'], (res)=>{
     const cfg = Object.assign({}, DEFAULTS, res.config||{});
     document.getElementById('numTeams').value = cfg.numTeams;
     document.getElementById('rosterSlots').value = cfg.rosterSlots;
@@ -9,6 +9,8 @@ function load(){
     document.getElementById('myTeamName').value = cfg.myTeamName;
     document.getElementById('starterSlots').value = cfg.starterSlots !== undefined ? cfg.starterSlots : DEFAULTS.starterSlots;
     document.getElementById('benchWeight').value = cfg.benchWeight !== undefined ? cfg.benchWeight : DEFAULTS.benchWeight;
+    const dnd = Array.isArray(res.doNotDraft) ? res.doNotDraft : [];
+    document.getElementById('doNotDraft').value = dnd.join('\n');
     const n = (res.picks||[]).length;
     document.getElementById('status').textContent = n
       ? `${n} pick${n===1?'':'s'} logged this draft. Reopen the draft tab to see the overlay.`
@@ -27,7 +29,9 @@ document.getElementById('save').addEventListener('click', ()=>{
     starterSlots: isNaN(ss) ? DEFAULTS.starterSlots : ss,
     benchWeight: isNaN(bw) ? DEFAULTS.benchWeight : bw,
   };
-  chrome.storage.local.set({ config }, ()=>{
+  const dndText = document.getElementById('doNotDraft').value;
+  const doNotDraft = dndText.split('\n').map(s=>s.trim()).filter(Boolean);
+  chrome.storage.local.set({ config, doNotDraft }, ()=>{
     document.getElementById('status').textContent = 'Saved. Refresh the draft tab to apply.';
   });
 });

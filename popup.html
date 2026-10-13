@@ -43,6 +43,9 @@
   <label>Your team label (as Yahoo shows it in the draft room)</label>
   <input type="text" id="myTeamName" placeholder="You">
   <div class="status" style="margin-top:2px;">Yahoo labels your own picks "You" in the live draft feed — leave this as-is unless yours shows differently.</div>
+  <label>Do Not Draft List (one name per line)</label>
+  <textarea id="doNotDraft" rows="3" placeholder="e.g. Ben Simmons&#10;Lonzo Ball" style="width:100%; box-sizing:border-box; padding:6px 8px; border-radius:6px; border:1px solid #2d3441; background:#222834; color:#e9ecf1; font-size:12px; font-family:inherit; resize:vertical;"></textarea>
+  <div class="status" style="margin-top:2px;">Players on this list will default to Pass ($0) and show a ⛔ DND badge.</div>
   <button id="save">Save &amp; apply</button>
   <button class="danger" id="reset">Reset this draft's picks</button>
   <div class="status" id="status"></div>

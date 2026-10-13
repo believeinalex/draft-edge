@@ -536,14 +536,17 @@ function buildEffectiveCostMap(state, C, targetPlayers){
   return costMap;
 }
 
-function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn){
-  if(slotsLeft <= 0 || C.availableInPool.length < slotsLeft){
+function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn, state){
+  const pool = (state && (state.doNotDraft || C.availableInPool.some(p => p.doNotDraft)))
+    ? C.availableInPool.filter(p => !isDoNotDraft(p, state))
+    : C.availableInPool;
+  if(slotsLeft <= 0 || pool.length < slotsLeft){
     return { dreamPlayers: [], dreamVal: -1e15, dreamRks: new Set() };
   }
   const baseReach = reachableCoverage(myPlayers, multiCenter);
   const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
   const unitCost = () => 1;
-  const resDream = knapsackDP(C.availableInPool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  const resDream = knapsackDP(pool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   resDream.costOf = unitCost;
   let dreamVal = bestFeasible(resDream, slotsLeft, slotsLeft);
   let dreamMask = fullCoverage;
@@ -562,13 +565,41 @@ function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight,
 
 // Returns null if the player isn't found or the roster is already full.
 // Otherwise: { player, maxBid, soloZ, mktNow, baselineZ, baselineInfeasible,
-//              alternativeNames, positionWarning }
+//              alternativeNames, positionWarning, doNotDraft }
 function checkPrice(state, PLAYERS, rk){
   const C = computeAll(state, PLAYERS);
   const p = PLAYERS.find(x=>x.rk===rk);
   if(!p) return null;
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { player:p, full:true };
+
+  if(isDoNotDraft(p, state)){
+    const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
+    const zc = C.zAll.get(p.rk);
+    return {
+      player: p,
+      maxBid: 0,
+      buildBid: 0,
+      breakEvenBid: 0,
+      soloZ: 0,
+      mktNow: C.fairPrice(rk),
+      effCost: C.fairPrice(rk),
+      zRank,
+      zc,
+      baselineZ: null,
+      baselineInfeasible: false,
+      passRoster: [],
+      alternativeNames: [],
+      alternativeMore: false,
+      inDreamBuild: false,
+      isMonopoly: false,
+      isEndgame: false,
+      maxOppBid: getMaxOppBid(state, C),
+      doNotDraft: true,
+      dreamAlternativeNames: [],
+      dreamAlternativeMore: false
+    };
+  }
 
   const centerMode = state.centerMode || 'hybrid';
   const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
@@ -632,7 +663,7 @@ function checkPrice(state, PLAYERS, rk){
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
   const maxOppBid = getMaxOppBid(state, C);
-  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, rankValFn);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, rankValFn, state);
   const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
   const effCostFn = x => costMap.get(x.rk) !== undefined ? costMap.get(x.rk) : C.fairPrice(x.rk);
   const dreamTotalCost = dreamPlayers.reduce((a, dp) => a + effCostFn(dp), 0);
@@ -805,7 +836,7 @@ function runOptimizer(state, PLAYERS){
   const starterSlotsLeft = Math.max(0, starterSlots - picksMade);
 
   const maxOppBid = getMaxOppBid(state, C);
-  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn);
+  const { dreamPlayers, dreamVal, dreamRks } = solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight, multiCenter, valFn, state);
   const costMap = buildEffectiveCostMap(state, C, dreamPlayers);
   const effCostFn = p => costMap.get(p.rk) !== undefined ? costMap.get(p.rk) : C.fairPrice(p.rk);
   const dreamTotalCost = dreamPlayers.reduce((a, p) => a + effCostFn(p), 0);
@@ -813,7 +844,10 @@ function runOptimizer(state, PLAYERS){
   const canSweepDream = dreamPlayers.length === slotsLeft && dreamTotalCost <= B;
 
   const costFn = canSweepDream ? effCostFn : (p => C.fairPrice(p.rk));
-  const res = knapsackDP(C.availableInPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
+  const optPool = (state && (state.doNotDraft || C.availableInPool.some(p => p.doNotDraft)))
+    ? C.availableInPool.filter(p => !isDoNotDraft(p, state))
+    : C.availableInPool;
+  const res = knapsackDP(optPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
@@ -875,6 +909,7 @@ function runOptimizer(state, PLAYERS){
   // opponents lack the budget to compete.
   const snipes = [];
   for(const p of C.availableInPool) {
+    if(isDoNotDraft(p, state)) continue;
     const fp = C.fairPrice(p.rk);
     const snipeCost = Math.min(fp, maxOppBid + 1);
     if(snipeCost < fp * 0.5) {
@@ -924,6 +959,10 @@ const NAME_ALIASES = {
   'cam thomas': 'cameron thomas',
   'herb jones': 'herbert jones',
   'og anunoby': 'og anunoby',
+  'porzingus': 'kristaps porzingis',
+  'kristaps porzingus': 'kristaps porzingis',
+  'embiid': 'joel embiid',
+  'jimmy butler': 'jimmy butler iii',
 };
 
 function stripDiacritics(s){
@@ -992,6 +1031,35 @@ function buildNameIndex(PLAYERS){
   return byNorm;
 }
 
-if(typeof module !== 'undefined'){
-  module.exports = { computeAll, checkPrice, runOptimizer, matchPlayer, buildNameIndex, normName, CATS, CAT_LABEL, CORE_POS };
+function isDoNotDraft(p, state){
+  if(!p) return false;
+  if(p.doNotDraft) return true;
+  if(!state) return false;
+  const dnd = state.doNotDraft;
+  if(!dnd) return false;
+  if(dnd instanceof Set){
+    if(dnd.has(p.rk) || dnd.has(p.name)) return true;
+    const pNorm = normName(p.name);
+    for(const item of dnd){
+      if(typeof item === 'string' && normName(item) === pNorm) return true;
+    }
+    return false;
+  }
+  if(Array.isArray(dnd)){
+    if(dnd.includes(p.rk) || dnd.includes(p.name)) return true;
+    const pNorm = normName(p.name);
+    return dnd.some(item => {
+      if(typeof item === 'string') return normName(item) === pNorm;
+      if(item && typeof item === 'object' && (item.name || item.player)){
+        return normName(item.name || item.player) === pNorm || item.rk === p.rk;
+      }
+      return false;
+    });
+  }
+  return false;
 }
+
+if(typeof module !== 'undefined'){
+  module.exports = { computeAll, checkPrice, runOptimizer, matchPlayer, buildNameIndex, normName, isDoNotDraft, CATS, CAT_LABEL, CORE_POS };
+}
+

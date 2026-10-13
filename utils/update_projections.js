@@ -31,14 +31,58 @@ function parsePctWithAtt(str) {
   };
 }
 
+const NAME_ALIASES = {
+  'nic claxton': 'nicolas claxton',
+  'alex sarr': 'alexandre sarr',
+  'cam thomas': 'cameron thomas',
+  'herb jones': 'herbert jones',
+  'og anunoby': 'og anunoby',
+  'porzingus': 'kristaps porzingis',
+  'kristaps porzingus': 'kristaps porzingis',
+  'embiid': 'joel embiid',
+  'jimmy butler': 'jimmy butler iii',
+};
+
 function normName(s) {
   if (!s) return '';
   let n = s.normalize ? s.normalize('NFD').replace(/[̀-ͯ]/g, '') : s;
-  n = n.toLowerCase().replace(/[.'']/g, '').replace(/[^a-z\s-]/g, ' ').replace(/\s+/g, ' ').trim();
-  return n;
+  n = n.toLowerCase().replace(/[.'']/g, '');
+  n = n.replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g, '');
+  n = n.replace(/[^a-z\s-]/g, ' ').replace(/\s+/g, ' ').trim();
+  return NAME_ALIASES[n] || n;
 }
 
-function updateProjections(csvPath, targetPlayersPath) {
+function loadDoNotDraftList(dndPath) {
+  const candidates = [
+    dndPath,
+    path.join(__dirname, 'do_not_draft.json'),
+    path.join(__dirname, '..', 'do_not_draft.json')
+  ].filter(Boolean);
+
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(p, 'utf8'));
+        const list = Array.isArray(raw) ? raw : (Array.isArray(raw.players) ? raw.players : []);
+        const map = new Map();
+        for (const item of list) {
+          if (typeof item === 'string') {
+            map.set(normName(item), { name: item });
+          } else if (item && typeof item === 'object' && (item.name || item.player)) {
+            const name = item.name || item.player;
+            map.set(normName(name), Object.assign({}, item, { name }));
+          }
+        }
+        return { map, filePath: p };
+      } catch (e) {
+        console.warn(`Warning: Could not parse Do Not Draft list at ${p}:`, e.message);
+      }
+    }
+  }
+  return { map: new Map(), filePath: null };
+}
+
+function updateProjections(csvPath, targetPlayersPath, dndPath) {
   csvPath = csvPath || path.join(__dirname, 'projections.csv');
   targetPlayersPath = targetPlayersPath || path.join(__dirname, '..', 'players.js');
 
@@ -46,7 +90,7 @@ function updateProjections(csvPath, targetPlayersPath) {
   const lines = content.split(/\r?\n/).filter(line => line.trim().length > 0);
   if (lines.length === 0) throw new Error('CSV file is empty');
 
-  // Load existing players if available to preserve mktCost and notes
+  // Load existing players if available to preserve mktCost, notes, and previous DND flags
   let existingMap = new Map();
   if (fs.existsSync(targetPlayersPath)) {
     try {
@@ -60,6 +104,9 @@ function updateProjections(csvPath, targetPlayersPath) {
       // Ignore if cannot require
     }
   }
+
+  const { map: dndMap, filePath: loadedDndPath } = loadDoNotDraftList(dndPath);
+  let dndAppliedCount = 0;
 
   const header = parseCSVLine(lines[0]);
   const newPlayers = [];
@@ -82,14 +129,26 @@ function updateProjections(csvPath, targetPlayersPath) {
     const ast = parseFloat(cols[header.indexOf('AST')]) || 0;
     const stl = parseFloat(cols[header.indexOf('STL')]) || 0;
     const blk = parseFloat(cols[header.indexOf('BLK')]) || 0;
-    const totalZ = header.indexOf('TOTAL') !== -1 ? (parseFloat(cols[header.indexOf('TOTAL')]) || 0) : 0;
+    const rawTotalZ = header.indexOf('TOTAL') !== -1 ? (parseFloat(cols[header.indexOf('TOTAL')]) || 0) : 0;
 
     const pos = rawPos ? rawPos.split(',').map(s => s.trim()).filter(Boolean) : [];
     const adp = rawAdp && !isNaN(parseFloat(rawAdp)) ? parseFloat(rawAdp) : null;
     const rk = newPlayers.length + 1;
 
-    const existing = existingMap.get(normName(name));
+    const norm = normName(name);
+    const existing = existingMap.get(norm);
     const mktCost = existing && existing.mktCost !== undefined ? existing.mktCost : Math.max(1, Math.round(75 * Math.exp(-0.02 * (rk - 1))));
+
+    const dndEntry = dndMap.get(norm);
+    const isDnd = !!(dndEntry || (existing && existing.doNotDraft && dndMap.size === 0));
+
+    let totalZ = rawTotalZ;
+    let originalTotalZ = undefined;
+    if (isDnd) {
+      totalZ = 0;
+      originalTotalZ = rawTotalZ;
+      dndAppliedCount++;
+    }
 
     const playerObj = {
       rk,
@@ -115,6 +174,18 @@ function updateProjections(csvPath, targetPlayersPath) {
       mktCost
     };
 
+    if (isDnd) {
+      playerObj.doNotDraft = true;
+      if (originalTotalZ !== undefined) {
+        playerObj.originalTotalZ = originalTotalZ;
+      }
+      if (dndEntry && dndEntry.reason) {
+        playerObj.dndReason = dndEntry.reason;
+      } else if (existing && existing.dndReason) {
+        playerObj.dndReason = existing.dndReason;
+      }
+    }
+
     if (existing && existing.note) {
       playerObj.note = existing.note;
     }
@@ -123,13 +194,16 @@ function updateProjections(csvPath, targetPlayersPath) {
   }
 
   const fileContent = `// Auto-generated from Draft Edge updated PLAYERS dataset (${newPlayers.length}-player pool)
-const DRAFT_EDGE_PLAYERS = ${JSON.stringify(newPlayers)};
+const DRAFT_EDGE_PLAYERS = ${JSON.stringify(newPlayers, null, 2)};
 
 if(typeof module !== 'undefined'){ module.exports = DRAFT_EDGE_PLAYERS; }
 `;
 
   fs.writeFileSync(targetPlayersPath, fileContent, 'utf8');
   console.log(`Successfully updated ${newPlayers.length} players in ${targetPlayersPath}`);
+  if (dndAppliedCount > 0) {
+    console.log(`Applied Do Not Draft list (${loadedDndPath || 'configured'}): dropped totalZ to 0 and flagged doNotDraft for ${dndAppliedCount} player(s).`);
+  }
   return newPlayers;
 }
 
@@ -137,4 +211,4 @@ if (require.main === module) {
   updateProjections();
 }
 
-module.exports = { updateProjections, parseCSVLine, parsePctWithAtt };
+module.exports = { updateProjections, parseCSVLine, parsePctWithAtt, loadDoNotDraftList, normName };

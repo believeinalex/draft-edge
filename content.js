@@ -21,6 +21,7 @@
   const _buildNameIndex = typeof buildNameIndex === 'function' ? buildNameIndex : (typeof require !== 'undefined' ? require('./engine.js').buildNameIndex : null);
   const _matchPlayer = typeof matchPlayer === 'function' ? matchPlayer : (typeof require !== 'undefined' ? require('./engine.js').matchPlayer : null);
   const _computeAll = typeof computeAll === 'function' ? computeAll : (typeof require !== 'undefined' ? require('./engine.js').computeAll : null);
+  const _isDoNotDraft = typeof isDoNotDraft === 'function' ? isDoNotDraft : (typeof require !== 'undefined' ? require('./engine.js').isDoNotDraft : null);
   const _CATS = typeof CATS !== 'undefined' ? CATS : (typeof require !== 'undefined' ? require('./engine.js').CATS : ['fgPct','ftPct','tpm','pts','treb','ast','stl','blk']);
   const _CAT_LABEL = typeof CAT_LABEL !== 'undefined' ? CAT_LABEL : (typeof require !== 'undefined' ? require('./engine.js').CAT_LABEL : {});
   const nameIndex = _buildNameIndex ? _buildNameIndex(PLAYERS) : null;
@@ -29,28 +30,30 @@
   let picks = []; // {rk, teamName, price, ts, source: 'auto'|'manual'}
   let seenSignatures = new Set();
   let weights = Object.fromEntries(_CATS.map(c=>[c,1]));
+  let doNotDraft = [];
 
   function state(){
     return { numTeams: config.numTeams, rosterSlots: config.rosterSlots, budget: config.budget,
              myTeamName: config.myTeamName, starterSlots: config.starterSlots, benchWeight: config.benchWeight,
-             weights, picks };
+             weights, picks, doNotDraft };
   }
 
   function save(){
     if(typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local){
-      chrome.storage.local.set({ picks, seenSignatures: Array.from(seenSignatures), weights });
+      chrome.storage.local.set({ picks, seenSignatures: Array.from(seenSignatures), weights, doNotDraft });
     }
   }
 
   function loadThenInit(){
     if(typeof chrome === 'undefined' || !chrome.storage || !chrome.storage.local) return;
-    chrome.storage.local.get(['config','picks','seenSignatures','weights'], (res)=>{
+    chrome.storage.local.get(['config','picks','seenSignatures','weights','doNotDraft'], (res)=>{
       config = Object.assign({}, DEFAULTS, res.config||{});
       picks = Array.isArray(res.picks) ? res.picks : [];
       seenSignatures = new Set(res.seenSignatures||[]);
       if(res.weights && typeof res.weights === 'object'){
         weights = Object.assign(Object.fromEntries(_CATS.map(c=>[c,1])), res.weights);
       }
+      doNotDraft = Array.isArray(res.doNotDraft) ? res.doNotDraft : [];
       buildOverlay();
       render();
       startObserving();
@@ -64,6 +67,7 @@
       if(changes.config){ config = Object.assign({}, DEFAULTS, changes.config.newValue||{}); dirty = true; }
       if(changes.picks){ picks = Array.isArray(changes.picks.newValue) ? changes.picks.newValue : []; dirty = true; }
       if(changes.weights){ weights = Object.assign(Object.fromEntries(_CATS.map(c=>[c,1])), changes.weights.newValue||{}); dirty = true; }
+      if(changes.doNotDraft){ doNotDraft = Array.isArray(changes.doNotDraft.newValue) ? changes.doNotDraft.newValue : []; dirty = true; }
       if(dirty) render();
     });
   }
@@ -408,7 +412,8 @@
         const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
         const targetAnchor = nameEl || notes;
         if(targetAnchor){
-          attachOrUpdateBadge(playerDiv, targetAnchor, player.rk, zRank);
+          const isDnd = _isDoNotDraft ? _isDoNotDraft(player, state()) : (player.doNotDraft || false);
+          attachOrUpdateBadge(playerDiv, targetAnchor, player.rk, zRank, isDnd);
         }
       });
 
@@ -444,21 +449,24 @@
         }
 
         const zRank = (zRankMap && zRankMap.get(player.rk)) || player.rk;
-        attachOrUpdateBadge(parent, nameEl, player.rk, zRank);
+        const isDnd = _isDoNotDraft ? _isDoNotDraft(player, state()) : (player.doNotDraft || false);
+        attachOrUpdateBadge(parent, nameEl, player.rk, zRank, isDnd);
       });
     } finally {
       isInjectingChips = false;
     }
   }
 
-  function attachOrUpdateBadge(container, anchorEl, rk, zRank){
+  function attachOrUpdateBadge(container, anchorEl, rk, zRank, isDnd){
     if(!container || !anchorEl) return;
     const existing = container.querySelector('.de-name-rank-badge');
-    const badgeText = '#' + zRank;
-    const badgeTitle = `Z-Score Rank #${zRank}`;
+    const badgeText = isDnd ? `#${zRank} ⛔` : '#' + zRank;
+    const badgeTitle = isDnd ? `Z-Score Rank #${zRank} (DO NOT DRAFT)` : `Z-Score Rank #${zRank}`;
+    const badgeClass = isDnd ? 'de-name-rank-badge de-dnd-chip' : 'de-name-rank-badge';
 
     if(existing){
-      if(existing.textContent !== badgeText || existing.dataset.rk !== String(rk)){
+      if(existing.textContent !== badgeText || existing.dataset.rk !== String(rk) || existing.className !== badgeClass){
+        existing.className = badgeClass;
         existing.textContent = badgeText;
         existing.title = badgeTitle;
         existing.dataset.rk = String(rk);
@@ -467,7 +475,7 @@
     }
 
     const badge = document.createElement('span');
-    badge.className = 'de-name-rank-badge';
+    badge.className = badgeClass;
     badge.textContent = badgeText;
     badge.title = badgeTitle;
     badge.dataset.rk = String(rk);
@@ -777,16 +785,26 @@
       altTxt = `Above $${result.maxBid}, passing and building around ${result.alternativeNames.join(' + ')}${result.alternativeMore?' + others':''} instead comes out ahead.`;
     } else if(result.isEndgame && result.maxBid <= 0 && result.dreamAlternativeNames && result.dreamAlternativeNames.length){
       altTxt = `Saving slot & budget for Dream Build targets: ${result.dreamAlternativeNames.join(' + ')}${result.dreamAlternativeMore?' + others':''}.`;
+    } else if(result.doNotDraft){
+      altTxt = p.dndReason ? `Do Not Draft reason: ${p.dndReason}` : `Player is on your Do Not Draft list. Automatic pass ($0).`;
     }
 
     const upBannerHtml = isUpNow ? `<div class="de-player-up-tag">⚡ Player Up For Bidding</div>` : '';
+    const dndBannerHtml = result.doNotDraft
+      ? `<div class="de-dnd-banner">⛔ DO NOT DRAFT${p.dndReason ? ` — ${escapeHtml(p.dndReason)}` : ''}</div>`
+      : '';
     const dreamBadgeHtml = (result.isEndgame && result.inDreamBuild)
       ? `<span class="de-dream-badge">${result.isMonopoly ? '👑 Endgame Monopoly Target' : '★ In Dream Build'}</span>`
       : '';
-    const rankBadgeHtml = `<span class="de-name-rank-badge">#${result.zRank}</span>`;
+    const dndBadgeHtml = result.doNotDraft
+      ? `<span class="de-dnd-badge">⛔ DO NOT DRAFT</span>`
+      : '';
+    const rankBadgeHtml = `<span class="de-name-rank-badge ${result.doNotDraft ? 'de-dnd-chip' : ''}">#${result.zRank}${result.doNotDraft ? ' ⛔' : ''}</span>`;
 
     const hasBreakEvenCap = result.maxBid > 0 && result.breakEvenBid && result.breakEvenBid > result.maxBid;
-    const bidLabel = hasBreakEvenCap ? 'Max worth bidding (keeps Dream Build)' : 'Max worth bidding';
+    const bidLabel = result.doNotDraft
+      ? 'Max worth bidding (Do Not Draft)'
+      : (hasBreakEvenCap ? 'Max worth bidding (keeps Dream Build)' : 'Max worth bidding');
     const breakEvenSpan = hasBreakEvenCap
       ? ` <span style="font-size:11px; font-weight:500; color:#8a93a5; margin-left:6px;">(break-even ceiling: $${result.breakEvenBid})</span>`
       : '';
@@ -794,7 +812,8 @@
     els.checkResult.innerHTML = `
       <div class="de-check-result ${isUpNow ? 'de-player-up-banner' : ''}">
         ${upBannerHtml}
-        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}${dreamBadgeHtml}</div>
+        ${dndBannerHtml}
+        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}${dreamBadgeHtml}${dndBadgeHtml}</div>
         <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · Z-Score Rank #${result.zRank} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}${result.isEndgame && result.effCost && result.effCost < result.mktNow ? ` (eff $${result.effCost})` : ''}</div>
         <div class="p"><span class="lbl">${bidLabel}</span>${result.maxBid>0 ? '$'+result.maxBid : 'pass'}${breakEvenSpan}</div>
         ${altTxt ? `<div class="m" style="margin-top:4px;">${escapeHtml(altTxt)}</div>` : ''}
