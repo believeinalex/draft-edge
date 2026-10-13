@@ -120,9 +120,11 @@ if (isMainThread) {
 
     const botTypes = [BOT_TYPES.MARKET, BOT_TYPES.STARS_SCRUBS, BOT_TYPES.BUDGET, BOT_TYPES.HOMER];
     const TEAMS = [{ name: 'Alex', type: BOT_TYPES.OURS }];
+    const guaranteedRandomNomIdx = 1 + Math.floor(Math.random() * 13);
     for (let i = 1; i <= 13; i++) {
       const bType = botTypes[Math.floor(Math.random() * botTypes.length)];
-      let t = { name: `Bot${i}_${bType}`, type: bType };
+      const randomNom = (i === guaranteedRandomNomIdx) || (Math.random() < 0.15);
+      let t = { name: `Bot${i}_${bType}${randomNom ? '_rndNom' : ''}`, type: bType, randomNom };
       if (bType === BOT_TYPES.HOMER) {
         const teams = ['NYK', 'BOS', 'LAL', 'GSW', 'PHI'];
         t.favoriteTeam = teams[Math.floor(Math.random() * teams.length)];
@@ -130,7 +132,7 @@ if (isMainThread) {
       TEAMS.push(t);
     }
 
-    function getBotMaxBid(bot, player, C) {
+    function getBotMaxBid(bot, player, C, isNominator = false) {
       const { budgetLeft, slotsLeft } = C.teamBudgetAndSlotsLeft(bot.name);
       if (slotsLeft <= 0) return 0;
       let maxBid = 0;
@@ -138,6 +140,7 @@ if (isMainThread) {
         const cp = engine.checkPrice(state, players, player.rk);
         if (!cp || cp.full) return 0;
         maxBid = cp.maxBid;
+        if (maxBid <= 0 && !isNominator) return 0;
       } else {
         const fairPrice = C.fairPrice(player.rk);
         const fuzzy = 0.9 + Math.random() * 0.2;
@@ -159,6 +162,9 @@ if (isMainThread) {
 
     function getBotNomination(bot, C, availablePool) {
       if (availablePool.length === 0) return null;
+      if (bot.randomNom) {
+        return availablePool[Math.floor(Math.random() * availablePool.length)];
+      }
       const poolSortedByVal = [...availablePool].sort((a,b) => C.fairPrice(b.rk) - C.fairPrice(a.rk));
       const top10 = poolSortedByVal.slice(0, 10);
       if (bot.type === BOT_TYPES.OURS) {

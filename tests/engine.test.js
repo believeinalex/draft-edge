@@ -564,5 +564,33 @@ test('Bench Optimization Pass: demotes early low-Z pick (e.g. John Collins Pick 
   );
 });
 
+test('$1/Slot Endgame: suppresses baitPlayers when budgetLeft <= slotsLeft and sorts $1 targets by highest value', () => {
+  const picks = [];
+  const numTeams = 12;
+  const rosterSlots = 13;
 
+  // Give "You" 11 picks spending $198 -> $2 left for 2 slots ($1/slot)
+  for (let i = 0; i < 11; i++) {
+    picks.push({ rk: PLAYERS[i].rk, teamName: 'You', price: i === 0 ? 18 : 18 });
+  }
+  // Give an opponent picks so maxOppBid >= 2
+  picks.push({ rk: PLAYERS[11].rk, teamName: 'Opp1', price: 50 });
 
+  const dollarEndgameState = {
+    numTeams,
+    rosterSlots,
+    budget: 200,
+    myTeamName: 'You',
+    weights: Object.fromEntries(CATS.map(c => [c, 1])),
+    picks,
+    starterSlots: 9,
+    benchWeight: 0.3,
+  };
+
+  const opt = runOptimizer(dollarEndgameState, PLAYERS);
+  assert.ok(opt);
+  assert.equal(opt.budgetLeft, 2);
+  assert.equal(opt.slotsLeft, 2);
+  assert.equal(opt.baitPlayers.length, 0, 'Should not suggest bait nominations when down to $1 per slot');
+  assert.equal(opt.players.length, 2);
+});

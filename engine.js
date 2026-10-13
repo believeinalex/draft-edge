@@ -769,10 +769,11 @@ function checkPrice(state, PLAYERS, rk){
       const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
       const oppCap = maxOppBid > 0 ? maxOppBid + 1 : myMaxLegal;
       let maxToKeepDream;
+      const minDefend = Math.min(2, B - otherDreamEffCost);
       if(dreamMarketCost <= B && slotsLeft > 1){
         const otherMarketCost = dreamMarketCost - C.fairPrice(rk);
         const propShare = Math.round(C.fairPrice(rk) * (B / Math.max(1, dreamMarketCost)) * 1.15);
-        maxToKeepDream = Math.max(C.fairPrice(rk), Math.min(B - otherMarketCost, propShare));
+        maxToKeepDream = Math.max(C.fairPrice(rk), minDefend, Math.min(B - otherMarketCost, propShare));
       } else {
         maxToKeepDream = Math.max(effCostFn(p), B - otherDreamEffCost);
       }
@@ -924,7 +925,7 @@ function runOptimizer(state, PLAYERS){
   const isEndgame = isMonopoly || myMaxBid > maxOppBid || maxOppBid <= 25 || slotsLeft <= 5;
 
   const baitPlayers = [];
-  if(isEndgame && !isMonopoly && maxOppBid >= 2){
+  if(isEndgame && !isMonopoly && maxOppBid >= 2 && myMaxBid >= 2){
     for(const p of C.availableInPool){
       if(dreamRks.has(p.rk) || chosenRks.has(p.rk)) continue;
       const fp = C.fairPrice(p.rk);
@@ -973,7 +974,7 @@ function runOptimizer(state, PLAYERS){
     isMonopoly,
     isEndgame,
     maxOppBid,
-    players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a) || C.fairPrice(b.rk)-C.fairPrice(a.rk)).map(p=>({
+    players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a) || C.fairPrice(b.rk)-C.fairPrice(a.rk) || valFn(b)-valFn(a)).map(p=>({
       rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inDreamBuild: dreamRks.has(p.rk),
     })),
     dreamVal: dreamVal > -1e14 ? dreamVal : bestVal,

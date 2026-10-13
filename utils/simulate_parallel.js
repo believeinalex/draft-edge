@@ -187,7 +187,7 @@ if (isMainThread) {
       const cp = engine.checkPrice(state, players, player.rk);
       if (!cp || cp.full) return 0;
       maxBid = cp.maxBid;
-      if (maxBid <= 0 && cp.isMonopoly && !isNominator) {
+      if (maxBid <= 0 && !isNominator) {
         return 0;
       }
     } else {
@@ -206,21 +206,35 @@ if (isMainThread) {
       }
     }
     const maxLegal = Math.max(1, budgetLeft - (slotsLeft - 1));
-    return Math.max(1, Math.min(maxLegal, Math.round(maxBid)));
+    const rounded = Math.min(maxLegal, Math.round(maxBid));
+    // Nominator opens at $1; non-nominators must be willing & able to bid at least $2 to outbid the opening $1 bid
+    if (isNominator) return Math.max(1, rounded);
+    return rounded >= 2 ? rounded : 0;
   }
 
   function getBotNomination(bot, C, availablePool, state) {
     if (availablePool.length === 0) return null;
+    if (bot.randomNom) {
+      // Nominate uniformly at random from the remaining top X (numTeams * rosterSlots) eligible pool
+      return availablePool[Math.floor(Math.random() * availablePool.length)];
+    }
     const poolSortedByVal = [...availablePool].sort((a,b) => C.fairPrice(b.rk) - C.fairPrice(a.rk));
     const top10 = poolSortedByVal.slice(0, 10);
     if (bot.type === BOT_TYPES.OURS) {
       if (state) {
         const myInfo = C.teamBudgetAndSlotsLeft(bot.name);
-        if (myInfo.slotsLeft <= 5 && myInfo.budgetLeft > myInfo.slotsLeft) {
+        if (myInfo.slotsLeft <= 5) {
           const opt = engine.runOptimizer(state, players);
-          if (opt && !opt.full && !opt.infeasible && opt.isMonopoly && opt.dreamPlayers && opt.dreamPlayers.length > 0) {
-            const dreamTarget = availablePool.find(p => p.rk === opt.dreamPlayers[0].rk);
-            if (dreamTarget) return dreamTarget;
+          if (opt && !opt.full && !opt.infeasible) {
+            if (opt.isMonopoly && opt.dreamPlayers && opt.dreamPlayers.length > 0) {
+              const dreamTarget = availablePool.find(p => p.rk === opt.dreamPlayers[0].rk);
+              if (dreamTarget) return dreamTarget;
+            }
+            if (myInfo.budgetLeft <= myInfo.slotsLeft && opt.players && opt.players.length > 0) {
+              const dollarTarget = opt.players.find(c => C.fairPrice(c.rk) <= 1) || opt.players[0];
+              const targetObj = availablePool.find(p => p.rk === dollarTarget.rk);
+              if (targetObj) return targetObj;
+            }
           }
         }
       }
@@ -255,12 +269,14 @@ if (isMainThread) {
     // Calculate baseline Z-scores and prices against the empty draft pool
     const initialC = engine.computeAll(state, players);
     
-    // Randomize opponents for this run
+    // Randomize opponents for this run (guarantee at least 1 random-pool nominator)
     const botTypes = [BOT_TYPES.MARKET, BOT_TYPES.STARS_SCRUBS, BOT_TYPES.BUDGET, BOT_TYPES.HOMER];
     const TEAMS = [ { name: 'Alex', type: BOT_TYPES.OURS } ];
+    const guaranteedRandomNomIdx = 1 + Math.floor(Math.random() * (numTeams - 1));
     for(let i = 1; i < numTeams; i++) {
       const bType = botTypes[Math.floor(Math.random() * botTypes.length)];
-      let t = { name: `Bot${i}_${bType}`, type: bType };
+      const randomNom = (i === guaranteedRandomNomIdx) || (Math.random() < 0.15);
+      let t = { name: `Bot${i}_${bType}${randomNom ? '_rndNom' : ''}`, type: bType, randomNom };
       if (bType === BOT_TYPES.HOMER) {
          const teams = ['NYK', 'BOS', 'LAL', 'GSW', 'PHI'];
          t.favoriteTeam = teams[Math.floor(Math.random() * teams.length)];

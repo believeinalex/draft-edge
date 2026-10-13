@@ -32,7 +32,7 @@ const TEAMS = [
   { name: 'Market2', type: BOT_TYPES.MARKET },
   { name: 'Market3', type: BOT_TYPES.MARKET },
   { name: 'Market4', type: BOT_TYPES.MARKET },
-  { name: 'Market5', type: BOT_TYPES.MARKET },
+  { name: 'Market5_rndNom', type: BOT_TYPES.MARKET, randomNom: true },
   { name: 'SnS1', type: BOT_TYPES.STARS_SCRUBS },
   { name: 'SnS2', type: BOT_TYPES.STARS_SCRUBS },
   { name: 'Budget1', type: BOT_TYPES.BUDGET },
@@ -83,6 +83,9 @@ function getBotMaxBid(bot, player, C, state) {
 
 function getBotNomination(bot, C, availablePool) {
   if (availablePool.length === 0) return null;
+  if (bot.randomNom) {
+    return availablePool[Math.floor(Math.random() * availablePool.length)];
+  }
 
   const poolSortedByVal = [...availablePool].sort((a,b) => C.fairPrice(b.rk) - C.fairPrice(a.rk));
   const top10 = poolSortedByVal.slice(0, 10);
