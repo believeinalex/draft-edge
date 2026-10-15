@@ -125,7 +125,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.8,
     "adp": 6,
     "totalZ": 8.42,
-    "mktCost": 62
+    "mktCost": 61
   },
   {
     "rk": 6,
@@ -177,7 +177,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.7,
     "adp": 7.8,
     "totalZ": 7.92,
-    "mktCost": 58
+    "mktCost": 57
   },
   {
     "rk": 8,
@@ -202,7 +202,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.4,
     "adp": 22.9,
     "totalZ": 7.75,
-    "mktCost": 35
+    "mktCost": 34
   },
   {
     "rk": 9,
@@ -488,7 +488,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 35.4,
     "totalZ": 6.2,
-    "mktCost": 30
+    "mktCost": 29
   },
   {
     "rk": 20,
@@ -515,7 +515,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.3,
     "adp": 15.1,
     "totalZ": 6.19,
-    "mktCost": 48
+    "mktCost": 47
   },
   {
     "rk": 21,
@@ -594,7 +594,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.4,
     "adp": 34.1,
     "totalZ": 5.33,
-    "mktCost": 28
+    "mktCost": 29
   },
   {
     "rk": 24,
@@ -620,7 +620,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.1,
     "adp": 6.3,
     "totalZ": 4.98,
-    "mktCost": 61
+    "mktCost": 62
   },
   {
     "rk": 25,
@@ -826,7 +826,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 60.8,
     "totalZ": 4.55,
-    "mktCost": 19
+    "mktCost": 18
   },
   {
     "rk": 33,
@@ -1961,7 +1961,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.1,
     "adp": 95.9,
     "totalZ": 2.37,
-    "mktCost": 8
+    "mktCost": 7
   },
   {
     "rk": 77,
@@ -2067,7 +2067,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.7,
     "adp": 74.4,
     "totalZ": 0,
-    "mktCost": 9,
+    "mktCost": 8,
     "doNotDraft": true,
     "originalTotalZ": 2.25
   },
@@ -2585,7 +2585,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1,
     "adp": 79.6,
     "totalZ": 1.33,
-    "mktCost": 7
+    "mktCost": 9
   },
   {
     "rk": 101,
@@ -2815,7 +2815,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.5,
     "adp": 73.9,
     "totalZ": 0.84,
-    "mktCost": 7
+    "mktCost": 8
   },
   {
     "rk": 110,

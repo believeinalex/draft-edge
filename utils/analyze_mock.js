@@ -325,6 +325,13 @@ function runAnalysisFromFile(filePath, userTeamName = 'Alex', options = {}) {
   return analysis;
 }
 
+module.exports = {
+  parseMockDraftText,
+  analyzeMockDraft,
+  normalizeNameOrder,
+  runAnalysisFromFile
+};
+
 if (require.main === module) {
   const args = process.argv.slice(2);
   const fileArg = args.find(a => !a.startsWith('--'));
@@ -342,10 +349,3 @@ if (require.main === module) {
     // Silently ignore if analyze_history is not available or fails
   }
 }
-
-module.exports = {
-  parseMockDraftText,
-  analyzeMockDraft,
-  normalizeNameOrder,
-  runAnalysisFromFile
-};
