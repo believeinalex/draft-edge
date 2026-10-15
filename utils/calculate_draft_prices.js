@@ -34,6 +34,7 @@ function calculateDraftPrices(options = {}) {
     throw new Error(`Target players.js not found at ${targetPlayersPath}`);
   }
 
+  delete require.cache[require.resolve(targetPlayersPath)];
   const existingPlayers = require(targetPlayersPath);
 
   // 1. Deduplicate draft files by content MD5 hash

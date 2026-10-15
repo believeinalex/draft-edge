@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Watches a live Yahoo Fantasy Basketball auction draft and overlays budget, inflation, and value-pick recommendations in real time.",
   "scripts": {
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "analyze": "node utils/analyze_mock.js",
+    "prices": "node utils/calculate_draft_prices.js"
   },
   "keywords": [
     "fantasy-basketball",

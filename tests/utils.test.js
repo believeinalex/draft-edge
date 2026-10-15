@@ -64,4 +64,16 @@ test('analyzeMockDraft calculates correct power rankings and surplus for mock ex
   assert.equal(userRank, 0); // Ranked #1 in league
 });
 
+test('runAnalysisFromFile automatically recalculates draft average and median prices', () => {
+  const { runAnalysisFromFile } = require('../utils/analyze_mock.js');
+  const fixturePath = require('path').join(__dirname, '../drafts/2026_09_30_mock_1.txt');
+  const analysis = runAnalysisFromFile(fixturePath, 'Alex', { updatePrices: true });
+  assert.ok(analysis);
+  delete require.cache[require.resolve('../players.js')];
+  const players = require('../players.js');
+  const jokic = players.find(p => p.name === 'Nikola Jokic');
+  assert.ok(jokic);
+  assert.equal(jokic.mktCost, 80);
+});
+
 

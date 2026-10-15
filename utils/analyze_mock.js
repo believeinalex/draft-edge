@@ -133,7 +133,8 @@ function analyzeMockDraft(mockData, options = {}) {
     benchWeight: options.benchWeight || 0.3
   };
 
-  const C = computeAll(state, PLAYERS);
+  const playersPool = options.playersPool || PLAYERS;
+  const C = computeAll(state, playersPool);
 
   // Group picks by team
   const teamsMap = new Map();
@@ -275,18 +276,15 @@ function printReport(analysis) {
   console.log('\n================================================================================\n');
 }
 
-function runAnalysisFromFile(filePath, userTeamName = 'Alex') {
+function runAnalysisFromFile(filePath, userTeamName = 'Alex', options = {}) {
   const mockPath = filePath || path.join(__dirname, 'mock.txt');
   if (!fs.existsSync(mockPath)) {
     throw new Error(`Mock draft file not found at ${mockPath}`);
   }
   const text = fs.readFileSync(mockPath, 'utf8');
-  const parsed = parseMockDraftText(text);
-  const analysis = analyzeMockDraft(parsed, { userTeamName });
-  printReport(analysis);
-  
+
   // Archive to drafts dir if it's not already there
-  const draftsDir = path.join(__dirname, '..', 'drafts');
+  const draftsDir = (options && options.draftsDir) || path.join(__dirname, '..', 'drafts');
   const isAlreadyInDrafts = path.resolve(mockPath).startsWith(path.resolve(draftsDir));
   
   if (!isAlreadyInDrafts) {
@@ -297,6 +295,32 @@ function runAnalysisFromFile(filePath, userTeamName = 'Alex') {
     fs.writeFileSync(path.join(draftsDir, destName), text);
     console.log(`[Auto-Archive] Saved a copy to drafts/${destName}`);
   }
+
+  // Recalculate and update draft average & median prices across all mock drafts
+  const shouldUpdatePrices = (options && options.updatePrices !== undefined) ? options.updatePrices : true;
+  if (shouldUpdatePrices) {
+    try {
+      const { calculateDraftPrices } = require('./calculate_draft_prices.js');
+      const priceRes = calculateDraftPrices({ draftsDir });
+      console.log(`[Auto-Pricing] Recalculated empirical average & median prices across ${priceRes.uniqueDraftsCount} drafts in players.js and prices.csv.`);
+    } catch (err) {
+      console.warn('[Auto-Pricing] Warning: failed to recalculate draft prices:', err.message);
+    }
+  }
+
+  // Reload fresh players if updated
+  const playersPath = path.join(__dirname, '..', 'players.js');
+  let playersPool = PLAYERS;
+  try {
+    delete require.cache[require.resolve(playersPath)];
+    playersPool = require(playersPath);
+  } catch (e) {
+    playersPool = PLAYERS;
+  }
+
+  const parsed = parseMockDraftText(text, playersPool);
+  const analysis = analyzeMockDraft(parsed, { userTeamName, playersPool, ...(options || {}) });
+  printReport(analysis);
   
   return analysis;
 }
@@ -305,8 +329,9 @@ if (require.main === module) {
   const args = process.argv.slice(2);
   const fileArg = args.find(a => !a.startsWith('--'));
   const userArg = args.find(a => a.startsWith('--user='));
+  const noPricesArg = args.includes('--no-update-prices');
   const userTeamName = userArg ? userArg.split('=')[1] : 'Alex';
-  runAnalysisFromFile(fileArg, userTeamName);
+  runAnalysisFromFile(fileArg, userTeamName, { updatePrices: !noPricesArg });
   
   // Try to run historical analysis automatically
   try {
