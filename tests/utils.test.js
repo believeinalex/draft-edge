@@ -27,13 +27,23 @@ test('parsePrice correctly strips currency symbols and handles values', () => {
   assert.equal(parsePrice(' 45.5 '), 45.5);
 });
 
-test('updatePrices updates players array with maximum price across sources (excluding ESPN)', () => {
+test('updatePrices updates players array with empirical draft median price when available', () => {
   const res = updatePrices();
   assert.ok(res.updatedCount > 250);
   const players = require('../players.js');
   const jokic = players.find(p => p.name === 'Nikola Jokic');
   assert.ok(jokic);
-  assert.equal(jokic.mktCost, 75); // Math.max(74.60, 70.00) rounded = 75
+  assert.equal(jokic.mktCost, 80); // Empirical draft median across mock drafts
+});
+
+test('calculateDraftPrices computes median prices from draft history', () => {
+  const { calculateDraftPrices } = require('../utils/calculate_draft_prices.js');
+  const res = calculateDraftPrices();
+  assert.ok(res.uniqueDraftsCount >= 12);
+  const jokic = res.statsMap.get(1);
+  assert.ok(jokic);
+  assert.equal(jokic.med, 80);
+  assert.equal(jokic.mktCost, 80);
 });
 
 test('normalizeNameOrder flips Last, First to First Last correctly', () => {

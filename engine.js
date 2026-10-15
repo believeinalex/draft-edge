@@ -715,7 +715,7 @@ function checkPrice(state, PLAYERS, rk){
   }
 
   const pVal = valFn(p);
-  const poolExcl = C.availableInPool.filter(x=>x.rk!==rk);
+  const poolExcl = C.availableInPool.filter(x => x.rk !== rk && !isDoNotDraft(x, state));
   const B = Math.max(budgetLeft, 0);
   const baseReach = reachableCoverage(myPlayers, multiCenter);
   const starterSlots = state.starterSlots !== undefined ? state.starterSlots : 10;
@@ -746,9 +746,7 @@ function checkPrice(state, PLAYERS, rk){
   }
 
   // Preserve natural rk sorting in poolWithP so knapsackDP evaluates starter vs bench weights consistently with runOptimizer
-  const poolWithP = C.availableInPool.some(x => x.rk === rk)
-    ? C.availableInPool
-    : poolExcl.concat([p]).sort((a,b) => a.rk - b.rk);
+  const poolWithP = poolExcl.concat([p]).sort((a,b) => a.rk - b.rk);
 
   let bestX = 0;
   let bestXChosen = [];
@@ -761,7 +759,9 @@ function checkPrice(state, PLAYERS, rk){
       return diff > 1e-12 || (Math.abs(diff) <= 1e-12 && m.rk < p.rk);
     }).length;
     const pWouldStart = (starterSlotsLeft > 0) || (betterInMy < starterSlots);
-    const starterTol = (pWouldStart && typeof cfg.starterTolerance === 'number') ? cfg.starterTolerance : 0.0;
+    const starterTol = (pWouldStart && typeof cfg.starterTolerance === 'number')
+      ? cfg.starterTolerance
+      : (typeof cfg.benchTolerance === 'number' ? cfg.benchTolerance : 0.005);
     while(low <= high){
       const X = Math.floor((low + high) / 2);
       const customCostFn = x => (x.rk === rk ? X : costFn(x));
