@@ -152,7 +152,7 @@ test('injectZRankChips attaches Z rank chip next to player name in .ys-player', 
   const doc = new MockDocument();
   global.document = doc;
 
-  // Simulate a player row in the players board (e.g. Payton Pritchard, rk 93)
+  // Simulate a player row in the players board (e.g. Payton Pritchard, rk 92)
   const playerDiv = doc.createElement('div');
   playerDiv.className = 'ys-player';
   playerDiv.setAttribute('data-id', '1001');
@@ -173,9 +173,9 @@ test('injectZRankChips attaches Z rank chip next to player name in .ys-player', 
 
   const badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge, 'Badge should be injected');
-  assert.equal(badge.textContent, '#93');
-  assert.equal(badge.title, 'Z-Score Rank #93');
-  assert.equal(badge.dataset.rk, '93');
+  assert.equal(badge.textContent, '#92');
+  assert.equal(badge.title, 'Z-Score Rank #92');
+  assert.equal(badge.dataset.rk, '92');
 
   // Verify badge is positioned before player name
   assert.equal(nameWrap.children[0], badge);
@@ -194,7 +194,7 @@ test('injectZRankChips handles players without .ys-player wrapper via .ys-player
   const doc = new MockDocument();
   global.document = doc;
 
-  // Simulate Mikal Bridges (rk 103)
+  // Simulate Mikal Bridges (rk 104)
   const row = doc.createElement('div');
   row.className = 'custom-player-row';
 
@@ -211,8 +211,8 @@ test('injectZRankChips handles players without .ys-player wrapper via .ys-player
 
   const badge = row.querySelector('.de-name-rank-badge');
   assert.ok(badge, 'Badge should be injected for .ys-player-notes fallback');
-  assert.equal(badge.textContent, '#103');
-  assert.equal(badge.dataset.rk, '103');
+  assert.equal(badge.textContent, '#104');
+  assert.equal(badge.dataset.rk, '104');
 
   delete global.document;
 });
@@ -255,16 +255,16 @@ test('injectZRankChips updates existing badge when player row is recycled in vir
 
   injectZRankChips();
   let badge = playerDiv.querySelector('.de-name-rank-badge');
-  assert.equal(badge.textContent, '#93');
-  assert.equal(badge.dataset.rk, '93');
+  assert.equal(badge.textContent, '#92');
+  assert.equal(badge.dataset.rk, '92');
 
-  // Virtual scroll recycles row for Mikal Bridges (rk 103)
+  // Virtual scroll recycles row for Mikal Bridges (rk 104)
   nameSpan.textContent = 'M. Bridges';
   injectZRankChips();
 
   badge = playerDiv.querySelector('.de-name-rank-badge');
-  assert.equal(badge.textContent, '#103');
-  assert.equal(badge.dataset.rk, '103');
+  assert.equal(badge.textContent, '#104');
+  assert.equal(badge.dataset.rk, '104');
 
   delete global.document;
 });
@@ -293,9 +293,9 @@ test('injectZRankChips works with img[title] and disambiguates Ausar Thompson vi
 
   const badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge);
-  // Ausar Thompson is rk 99, Amen Thompson is rk 30
-  assert.equal(badge.textContent, '#99');
-  assert.equal(badge.dataset.rk, '99');
+  // Ausar Thompson is rk 100, Amen Thompson is rk 29
+  assert.equal(badge.textContent, '#100');
+  assert.equal(badge.dataset.rk, '100');
 
   delete global.document;
 });
@@ -310,11 +310,11 @@ test('matchPlayer rejects different first name/initial even when last name match
   // Giannis Antetokounmpo should still match
   const giannisInit = matchPlayer('G. Antetokounmpo', PLAYERS, byNorm, 'PF · MIL');
   assert.ok(giannisInit);
-  assert.equal(giannisInit.rk, 25);
+  assert.equal(giannisInit.rk, 24);
 
   const giannisFull = matchPlayer('Giannis Antetokounmpo', PLAYERS, byNorm);
   assert.ok(giannisFull);
-  assert.equal(giannisFull.rk, 25);
+  assert.equal(giannisFull.rk, 24);
 });
 
 test('injectZRankChips removes existing badge when row is recycled for an unranked player', () => {
@@ -334,7 +334,7 @@ test('injectZRankChips removes existing badge when row is recycled for an unrank
   injectZRankChips();
   let badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge);
-  assert.equal(badge.textContent, '#25');
+  assert.equal(badge.textContent, '#24');
 
   // Row is recycled in virtual scroll for an unranked player (e.g. Joe Ingles or Thanasis)
   nameSpan.textContent = 'J. Ingles';

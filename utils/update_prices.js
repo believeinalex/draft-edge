@@ -55,9 +55,11 @@ function updatePrices(csvPath, targetPlayersPath) {
   const yAvgIdx = header.findIndex(h => h.toUpperCase().includes('Y!') || h.toUpperCase().includes('Y AVG'));
   const espnAvgIdx = header.findIndex(h => h.toUpperCase().includes('ESPN'));
 
+  const draftMedIdx = header.findIndex(h => h.toUpperCase().includes('DRAFT MED'));
+
   if (playerIdx === -1) throw new Error('PLAYER column not found in price CSV header');
-  if (valuedAtIdx === -1 && yAvgIdx === -1 && espnAvgIdx === -1) {
-    throw new Error('No price columns (VALUED AT, Y! AVG, ESPN AVG) found in price CSV header');
+  if (valuedAtIdx === -1 && yAvgIdx === -1 && espnAvgIdx === -1 && draftMedIdx === -1) {
+    throw new Error('No price columns (DRAFT MED, VALUED AT, Y! AVG, ESPN AVG) found in price CSV header');
   }
 
   const priceMap = new Map();
@@ -68,20 +70,27 @@ function updatePrices(csvPath, targetPlayersPath) {
     const rawName = cols[playerIdx];
     if (!rawName) continue;
 
+    const pDraftMed = draftMedIdx !== -1 ? parsePrice(cols[draftMedIdx]) : 0;
     const pValuedAt = valuedAtIdx !== -1 ? parsePrice(cols[valuedAtIdx]) : 0;
     const pYAvg = yAvgIdx !== -1 ? parsePrice(cols[yAvgIdx]) : 0;
     const pEspnAvg = espnAvgIdx !== -1 ? parsePrice(cols[espnAvgIdx]) : 0;
 
-    // Drop ESPN from max price calculation per user preference
-    const maxVal = Math.max(pValuedAt, pYAvg);
-    const estimatedPrice = maxVal > 0 ? Math.max(1, Math.round(maxVal)) : 1;
+    // Use empirical draft median if available (> 0), otherwise fallback to Yahoo average or valued at
+    let estimatedPrice = 1;
+    if (pDraftMed > 0) {
+      estimatedPrice = Math.max(1, Math.round(pDraftMed));
+    } else if (pYAvg > 0) {
+      estimatedPrice = Math.max(1, Math.round(pYAvg));
+    } else if (pValuedAt > 0) {
+      estimatedPrice = Math.max(1, Math.round(pValuedAt));
+    }
 
     priceMap.set(normName(rawName), {
       rawName,
+      draftMed: pDraftMed,
       valuedAt: pValuedAt,
       yAvg: pYAvg,
       espnAvg: pEspnAvg,
-      maxVal,
       estimatedPrice
     });
   }
@@ -108,7 +117,9 @@ const DRAFT_EDGE_PLAYERS = ${JSON.stringify(updatedPlayers, null, 2)};
 if (typeof module !== 'undefined') { module.exports = DRAFT_EDGE_PLAYERS; }
 `;
 
-  fs.writeFileSync(targetPlayersPath, fileContent, 'utf8');
+  const tmpPath = targetPlayersPath + '.tmp';
+  fs.writeFileSync(tmpPath, fileContent, 'utf8');
+  fs.renameSync(tmpPath, targetPlayersPath);
   console.log(`Updated market costs in ${targetPlayersPath}: ${updatedCount} matched & updated, ${unmatchedCount} unmatched.`);
   return { updatedPlayers, updatedCount, unmatchedCount };
 }

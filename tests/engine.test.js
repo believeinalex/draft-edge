@@ -339,8 +339,8 @@ test('Endgame Monopoly: recognizes dominant purchasing power even when Dream Bui
   const numTeams = 14;
   const rosterSlots = 13;
   const pool = PLAYERS.slice(0, numTeams * rosterSlots);
-  // Leave 5 mid-round value targets (Coby White, De'Aaron Fox, Onyeka Okongwu, etc.) undrafted on the board
-  const undraftedTargets = new Set([65, 70, 75, 80, 85].map(i => pool[i].rk));
+  // Leave 5 mid-round value targets (Brandon Miller, Damian Lillard, Onyeka Okongwu, etc.) undrafted on the board
+  const undraftedTargets = new Set([50, 55, 65, 70, 75].map(i => pool[i].rk));
   const availToDraft = pool.filter(p => !undraftedTargets.has(p.rk));
 
   // 12 opponents have 1 slot left and $1 left (maxBid = $1)
@@ -356,7 +356,7 @@ test('Endgame Monopoly: recognizes dominant purchasing power even when Dream Bui
   }
 
   // "You" have 10 picks made spending $185 -> $15 left for 3 slots
-  // Dream Build market cost is $17 (> $15 budget!), but rank-matched effective cost is $9 (<= $15 budget!)
+  // Dream Build market cost is $22 (> $15 budget!), but rank-matched effective cost is $10 (<= $15 budget!)
   for (let s = 0; s < rosterSlots - 3; s++) {
     const perPick = s === 0 ? 185 - 18 * (rosterSlots - 4) : 18;
     picks.push({ rk: availToDraft[playerIdx++].rk, teamName: 'You', price: perPick });
