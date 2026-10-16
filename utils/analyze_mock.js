@@ -181,6 +181,24 @@ function analyzeMockDraft(mockData, options = {}) {
   const steals = allSurplusPicks.slice().sort((a, b) => b.surplus - a.surplus);
   const overpays = allSurplusPicks.slice().sort((a, b) => a.surplus - b.surplus);
 
+  // Calculate major market price moves (Stock Watch)
+  const priceMoves = picks.map(p => {
+    const mkt = p.player.mktCost || 1;
+    const delta = p.price - mkt;
+    const pctDelta = mkt > 0 ? Math.round((delta / mkt) * 100) : 0;
+    return {
+      pickNum: p.pickNum,
+      teamName: p.teamName,
+      playerName: p.player.name,
+      paidPrice: p.price,
+      mktCost: mkt,
+      delta,
+      pctDelta
+    };
+  });
+  const surges = priceMoves.slice().sort((a, b) => b.delta - a.delta || b.pctDelta - a.pctDelta);
+  const dips = priceMoves.slice().sort((a, b) => a.delta - b.delta || a.pctDelta - b.pctDelta);
+
   // User team breakdown
   const userPicks = picks.filter(p => p.teamName.toLowerCase() === targetUserTeam.toLowerCase());
 
@@ -191,6 +209,8 @@ function analyzeMockDraft(mockData, options = {}) {
     teamSummaries,
     steals: steals.slice(0, 10),
     overpays: overpays.slice(0, 10),
+    surges: surges.slice(0, 10),
+    dips: dips.slice(0, 10),
     userPicks,
     targetUserTeam,
     unmatched
@@ -267,6 +287,20 @@ function printReport(analysis) {
   console.log('================================================================================');
   overpays.slice(0, 5).forEach((o, i) => {
     console.log(`${i + 1}. ${o.playerName} (${o.teamName}): Paid $${o.paidPrice} vs $${o.mktCost} Mkt Value (-$${Math.abs(o.surplus)} Surplus)`);
+  });
+
+  console.log('\n================================================================================');
+  console.log('                 MAJOR MARKET PRICE MOVES (Stock Watch)');
+  console.log('================================================================================');
+  console.log('--- Top Price Surges (Stock Rising / Bullish Price Spikes) ---');
+  (analysis.surges || []).filter(p => p.delta > 0).slice(0, 5).forEach((p, i) => {
+    const pctStr = p.pctDelta >= 0 ? `+${p.pctDelta}%` : `${p.pctDelta}%`;
+    console.log(`${i + 1}. ${p.playerName} (${p.teamName}): Paid $${p.paidPrice} vs $${p.mktCost} Mkt Median (+$${p.delta}, ${pctStr})`);
+  });
+  console.log('\n--- Top Price Drops (Stock Falling / Value Dips) ---');
+  (analysis.dips || []).filter(p => p.delta < 0).slice(0, 5).forEach((p, i) => {
+    const pctStr = p.pctDelta >= 0 ? `+${p.pctDelta}%` : `${p.pctDelta}%`;
+    console.log(`${i + 1}. ${p.playerName} (${p.teamName}): Paid $${p.paidPrice} vs $${p.mktCost} Mkt Median (-$${Math.abs(p.delta)}, ${pctStr})`);
   });
 
   if (unmatched.length > 0) {

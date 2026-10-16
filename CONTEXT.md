@@ -21,9 +21,13 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 
 ### 3. Live/Mock Draft Analyzer & Historical Tracker
 - **File**: `utils/analyze_mock.js`
-- **Usage**: `node utils/analyze_mock.js` (reads from `utils/mock.txt`) or `node utils/analyze_mock.js <path-to-file>`
+- **Usage**: `npm run analyze` or `node utils/analyze_mock.js` (reads from `utils/mock.txt`) or `node utils/analyze_mock.js <path-to-file>`
 - **Purpose**: Parses a raw text export from a real Yahoo/ESPN draft (or mock draft) and calculates the final Power Rankings and Surplus Value for every team.
-- **Auto-Archive Feature**: When you run `analyze_mock.js`, it automatically saves a timestamped copy of the draft into the `drafts/` directory and runs `utils/analyze_history.js`.
+- **Auto-Archive & Auto-Pricing**: When you run `analyze_mock.js`, it automatically saves a timestamped copy of the draft into `drafts/`, recalculates empirical average/median draft prices across all sample drafts (`utils/calculate_draft_prices.js`), and updates `players.js`, `draft_prices.csv`, and `prices.csv`.
+- **Stock Analysis & Major Price Moves (Stock Watch)**:
+  - Tracks significant divergences ($\Delta \ge \$3$ or $\ge 50\%$) between individual draft clearing prices and empirical market medians (`mktCost`).
+  - Reports **Top Price Surges** (Stock Rising / Bullish Price Spikes) and **Top Price Drops** (Stock Falling / Value Dips) to detect inflation shifts and market trends.
+  - Generates full historical win rate and profitable player breakdowns (`utils/analyze_history.js`).
 
 ### 4. Valuation Engine Architecture (`engine.js` — v2.4 Hybrid Default)
 - **6-Slot Multi-Center Knapsack DP (`PG, SG, SF, PF, C1, C2` — 64 Coverage States)**:

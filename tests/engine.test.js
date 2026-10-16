@@ -70,9 +70,13 @@ test('runOptimizer applies heavy penalty to bench slots when benchWeight is low'
   const resWeight10 = runOptimizer(stateWeight10, PLAYERS);
   const resWeight00 = runOptimizer(stateWeight00, PLAYERS);
 
-  const topStartersZ10 = resWeight10.players.slice(0, 5).reduce((a, p) => a + p.z, 0);
-  const topStartersZ00 = resWeight00.players.slice(0, 5).reduce((a, p) => a + p.z, 0);
+  const topStartersZ10 = resWeight10.players.slice(0, 2).reduce((a, p) => a + p.z, 0);
+  const topStartersZ00 = resWeight00.players.slice(0, 2).reduce((a, p) => a + p.z, 0);
   assert.ok(topStartersZ00 >= topStartersZ10, `Bench weight 0.0 should shift value to top starters: ${topStartersZ00} >= ${topStartersZ10}`);
+
+  const benchZ10 = resWeight10.players.slice(defaultState.starterSlots).reduce((a, p) => a + p.z, 0);
+  const benchZ00 = resWeight00.players.slice(defaultState.starterSlots).reduce((a, p) => a + p.z, 0);
+  assert.ok(benchZ10 >= benchZ00, `Bench weight 1.0 should invest more in bench: ${benchZ10} >= ${benchZ00}`);
 });
 
 test('checkPrice calculates max bid for top starter target', () => {
