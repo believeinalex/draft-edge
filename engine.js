@@ -268,7 +268,7 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
     ftPct: typeof cfg.baseFtPct === 'number' ? cfg.baseFtPct : 1.00,
     tpm: typeof cfg.baseTpm === 'number' ? cfg.baseTpm : 1.06,
     pts: 1.00,
-    treb: typeof cfg.baseTreb === 'number' ? cfg.baseTreb : 1.10,
+    treb: typeof cfg.baseTreb === 'number' ? cfg.baseTreb : 1.22,
     ast: 1.00,
     stl: 1.00,
     blk: typeof cfg.baseBlk === 'number' ? cfg.baseBlk : 1.15
@@ -310,6 +310,9 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
     let effAlpha = alpha;
     if(deficit > 0 && isLateHalf && lateDeficitBoost > 1.0){
       effAlpha *= lateDeficitBoost;
+    }
+    if(c === 'treb' && deficit > 0){
+      effAlpha *= 1.20;
     }
     const adj = deficit * effAlpha;
     let w = clamp(weights[c] + adj, wMin, wMax);
@@ -754,6 +757,16 @@ function checkPrice(state, PLAYERS, rk){
     const useMaxOppBid = typeof cfg.useMaxOppBid === 'boolean' ? cfg.useMaxOppBid : true;
     const myMaxLegal = Math.max(1, B - (slotsLeft - 1));
     let low = 1, high = (useMaxOppBid && maxOppBid > 0) ? Math.min(myMaxLegal, maxOppBid + 1) : myMaxLegal;
+
+    // Dual Mega-Anchor Spend Ceiling:
+    // If our roster already contains an anchor who cost >= $65, cap the max bid on any secondary star
+    // such that total top-2 spend does not exceed $138, preserving at least $62 for the remaining 11 slots.
+    const maxSpentOnPlayer = myPicks.reduce((m, pk) => Math.max(m, pk.price || 0), 0);
+    const topTwoMaxSpend = typeof cfg.topTwoMaxSpend === 'number' ? cfg.topTwoMaxSpend : 138;
+    if (maxSpentOnPlayer >= 65) {
+      const maxAllowedForSecond = Math.max(1, topTwoMaxSpend - maxSpentOnPlayer);
+      high = Math.min(high, maxAllowedForSecond);
+    }
     const betterInMy = myPlayers.filter(m => {
       const diff = valFn(m) - pVal;
       return diff > 1e-12 || (Math.abs(diff) <= 1e-12 && m.rk < p.rk);
@@ -960,11 +973,12 @@ function runOptimizer(state, PLAYERS){
   const isEndgame = isMonopoly || myMaxBid > maxOppBid || maxOppBid <= 25 || slotsLeft <= 5;
 
   const baitPlayers = [];
-  if(isEndgame && !isMonopoly && maxOppBid >= 2 && myMaxBid >= 2){
+  if(!isMonopoly && maxOppBid >= 2 && myMaxBid >= 2){
+    const minBaitPrice = isEndgame ? 3 : 15;
     for(const p of C.availableInPool){
       if(dreamRks.has(p.rk) || chosenRks.has(p.rk)) continue;
       const fp = C.fairPrice(p.rk);
-      if(fp >= 3){
+      if(fp >= minBaitPrice){
         baitPlayers.push({
           rk: p.rk,
           name: p.name,
