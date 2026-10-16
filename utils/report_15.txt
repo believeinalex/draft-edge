@@ -1,51 +1,80 @@
-Monte Carlo Simulation Report (15 runs)
+Monte Carlo Simulation Report (15 runs, Mode: hybrid, 14 Teams, 13 Slots [9 Starters])
 =========================================
 Overall Win Rates (by archetype):
-  - Our Bot (The Edge): 93.3%
-  - Market Value Bots: 0.0%
-  - Stars & Scrubs Bots: 0.0%
-  - Strict Budget Bots: 0.0%
-  - Homer Bots: 6.7%
+  - Our Bot (The Edge): 93.3% (14/15 wins)
+  - Market Value Bots: 0.0% (0 wins)
+  - Punt Strategy Bots: 0.0% (0 wins)
+  - Price Enforcer Bots: 6.7% (1 wins)
+  - Panic Spender Bots: 0.0% (0 wins)
+  - Stars & Scrubs Bots: 0.0% (0 wins)
+  - Strict Budget Bots: 0.0% (0 wins)
+  - Homer Bots: 0.0% (0 wins)
 
-Our Average Final Power Points: 85.3
-Our Average Unspent Budget: $0.3
+Finish Distribution:
+  #1 Place: 14 times (93.3%)
+  #2 Place: 1 times (6.7%)
+
+Our Average Final Power Points: 86.3
+Our Average Unspent Budget: $0.1
 
 --- Budget Pacing ---
-  Budget remaining at Pick 50: $77.5
-  Budget remaining at Pick 100: $6.7
-  Budget remaining at Pick 150: $1.1
+  Budget remaining at Pick 50: $85.3
+  Budget remaining at Pick 100: $10.1
+  Budget remaining at Pick 150: $0.4
 
 --- Positional Breakdown ---
-  PG: 4.9   SG: 4.4   SF: 4.5   PF: 6.8   C: 3.5
+  PG: 5.2   SG: 5.4   SF: 4.1   PF: 4.9   C: 3.6
 
---- Average Z-Scores by Category (Baseline Initial) ---
-  fgPct    : -1.848
-  ftPct    : 3.532
-  tpm      : 2.499
-  pts      : 5.010
-  treb     : -1.436
-  ast      : 3.890
-  stl      : 0.890
-  blk      : -1.495
+--- Category Statistics (Avg Z-Score & Avg League Rank out of 14) ---
+  fgPct    : Z =  0.266 | Avg League Rank: #2.20
+  ftPct    : Z =  3.170 | Avg League Rank: #4.67
+  tpm      : Z =  2.364 | Avg League Rank: #3.87
+  pts      : Z =  3.793 | Avg League Rank: #2.53
+  treb     : Z =  1.243 | Avg League Rank: #7.53
+  ast      : Z =  2.676 | Avg League Rank: #3.60
+  stl      : Z =  3.747 | Avg League Rank: #2.60
+  blk      : Z =  0.622 | Avg League Rank: #6.67
 
---- Top 20 Most Drafted Players (with Avg Profit) ---
- 1. Franz Wagner              : 73.3% | Avg ROI: +$1.1
- 2. Anthony Davis             : 66.7% | Avg ROI: $-0.1
- 3. Jalen Williams            : 66.7% | Avg ROI: +$1.2
- 4. Tyler Herro               : 66.7% | Avg ROI: +$1.2
- 5. Darius Garland            : 60.0% | Avg ROI: +$0.8
- 6. Keyonte George            : 60.0% | Avg ROI: +$1.0
- 7. Pascal Siakam             : 53.3% | Avg ROI: +$0.9
- 8. Trae Young                : 40.0% | Avg ROI: +$0.7
- 9. Jaren Jackson Jr.         : 40.0% | Avg ROI: +$0.3
-10. Cam Spencer               : 40.0% | Avg ROI: +$2.3
-11. Evan Mobley               : 33.3% | Avg ROI: +$1.2
-12. Brandon Miller            : 33.3% | Avg ROI: +$1.8
-13. Trey Murphy III           : 26.7% | Avg ROI: +$1.3
-14. Dejounte Murray           : 26.7% | Avg ROI: +$1.0
-15. Julius Randle             : 26.7% | Avg ROI: +$0.8
-16. Devin Vassell             : 26.7% | Avg ROI: +$3.0
-17. DeMar DeRozan             : 26.7% | Avg ROI: +$2.3
-18. Chet Holmgren             : 20.0% | Avg ROI: $-0.3
-19. Lauri Markkanen           : 20.0% | Avg ROI: $0.0
-20. Zion Williamson           : 20.0% | Avg ROI: +$0.7
+--- Top 30 Most Drafted Players (with Pos, MktCost, & Avg Profit) ---
+ 1. Anthony Davis             (PF,C     Mkt:$25) :  66.7% ( 10x) | Avg ROI: $-4.1
+ 2. Tyler Herro               (PG,SG    Mkt:$13) :  66.7% ( 10x) | Avg ROI: $-3.2
+ 3. Jalen Suggs               (PG,SG    Mkt:$ 3) :  66.7% ( 10x) | Avg ROI: $-1.6
+ 4. Ja Morant                 (PG       Mkt:$ 2) :  66.7% ( 10x) | Avg ROI: $-1.2
+ 5. Paul George               (SF,PF    Mkt:$10) :  60.0% (  9x) | Avg ROI: $-2.8
+ 6. Andrew Wiggins            (SG,SF,PF Mkt:$ 1) :  60.0% (  9x) | Avg ROI: $-0.3
+ 7. John Collins              (PF,C     Mkt:$ 1) :  53.3% (  8x) | Avg ROI: $-0.6
+ 8. Josh Hart                 (SG,SF    Mkt:$ 1) :  53.3% (  8x) | Avg ROI: $-1.0
+ 9. Stephen Curry             (PG       Mkt:$34) :  40.0% (  6x) | Avg ROI: $-3.8
+10. Zach Edey                 (C        Mkt:$14) :  40.0% (  6x) | Avg ROI: $-2.5
+11. Kawhi Leonard             (SG,SF,PF Mkt:$29) :  33.3% (  5x) | Avg ROI: $-5.2
+12. Dejounte Murray           (PG       Mkt:$18) :  33.3% (  5x) | Avg ROI: $-2.2
+13. Keegan Murray             (SF,PF    Mkt:$ 1) :  33.3% (  5x) | Avg ROI: $-0.2
+14. Nikola Jokic              (C        Mkt:$80) :  26.7% (  4x) | Avg ROI: $-7.8
+15. Luka Doncic               (PG,SG    Mkt:$69) :  26.7% (  4x) | Avg ROI: $-8.5
+16. Darius Garland            (PG       Mkt:$18) :  26.7% (  4x) | Avg ROI: $-2.5
+17. Kyrie Irving              (PG       Mkt:$22) :  20.0% (  3x) | Avg ROI: $-2.3
+18. Evan Mobley               (PF,C     Mkt:$32) :  20.0% (  3x) | Avg ROI: $-2.0
+19. LeBron James              (SF,PF    Mkt:$23) :  20.0% (  3x) | Avg ROI: $-1.3
+20. Matas Buzelis             (SF,PF    Mkt:$17) :  20.0% (  3x) | Avg ROI: $-3.0
+21. Zach LaVine               (PG,SG,SF Mkt:$ 2) :  20.0% (  3x) | Avg ROI: $-1.7
+22. Day'Ron Sharpe            (C        Mkt:$ 4) :  20.0% (  3x) | Avg ROI: $-1.3
+23. Shai Gilgeous-Alexander   (PG       Mkt:$69) :  13.3% (  2x) | Avg ROI: $-6.5
+24. James Harden              (PG,SG    Mkt:$29) :  13.3% (  2x) | Avg ROI: $-6.0
+25. Trey Murphy III           (SG,SF    Mkt:$30) :  13.3% (  2x) | Avg ROI: $-2.0
+26. Domantas Sabonis          (PF,C     Mkt:$29) :  13.3% (  2x) | Avg ROI: $-1.0
+27. Kel'el Ware               (C        Mkt:$13) :  13.3% (  2x) | Avg ROI: $-1.5
+28. Ryan Rollins              (PG,SG    Mkt:$12) :  13.3% (  2x) | Avg ROI: $-1.5
+29. Ty Jerome                 (PG,SG    Mkt:$ 4) :  13.3% (  2x) | Avg ROI: $-1.0
+30. Coby White                (PG,SG    Mkt:$ 4) :  13.3% (  2x) | Avg ROI: $-3.0
+
+=========================================
+--- LOSS RECORDS (1 Total Losses out of 15 Runs) ---
+=========================================
+
+[Loss #1 - Run #15]
+  Winner: Bot2_price_enforcer (price_enforcer) with 80 pts (Spent: $170)
+  Our Finish: #2 with 78 pts (Deficit: -2 pts, Spent: $200)
+  Category Comparison (Our Rank vs Winner Rank):
+    fgPct: #3 vs #1 | ftPct: #7 vs #1 | tpm: #2 vs #13 | pts: #3 vs #2 | treb: #9 vs #7 | ast: #9 vs #1 | stl: #4 vs #3 | blk: #5 vs #12
+  Winner Top Picks: Trae Young ($40/Mkt$40), Jaylen Brown ($25/Mkt$25), LeBron James ($24/Mkt$23), Cameron Boozer ($18/Mkt$17), Pascal Siakam ($12/Mkt$15), Kel'el Ware ($12/Mkt$13)
+  Our Top Picks   : Karl-Anthony Towns ($44/Mkt$43), Stephen Curry ($35/Mkt$34), Evan Mobley ($35/Mkt$32), Tyler Herro ($21/Mkt$13), Dejounte Murray ($20/Mkt$18), Matas Buzelis ($18/Mkt$17)

@@ -39,7 +39,16 @@ if (isMainThread) {
   let ourTotalCats = {};
   engine.CATS.forEach(c => ourTotalCats[c] = 0);
   
-  let archetypeWins = { ours: 0, market: 0, stars_scrubs: 0, budget: 0, homer: 0 };
+  let archetypeWins = {
+    ours: 0,
+    market: 0,
+    stars_scrubs: 0,
+    budget: 0,
+    homer: 0,
+    punt: 0,
+    panic_spender: 0,
+    price_enforcer: 0
+  };
   let playerDraftCounts = {};
   let playerTotalROIs = {}; // { rk: total profit }
   
@@ -113,10 +122,13 @@ if (isMainThread) {
         report += `=========================================\n`;
         report += `Overall Win Rates (by archetype):\n`;
         report += `  - Our Bot (The Edge): ${((archetypeWins['ours'] / runs) * 100).toFixed(1)}% (${ourWins}/${runs} wins)\n`;
-        report += `  - Market Value Bots: ${((archetypeWins['market'] / runs) * 100).toFixed(1)}% (${archetypeWins['market']} wins)\n`;
-        report += `  - Stars & Scrubs Bots: ${((archetypeWins['stars_scrubs'] / runs) * 100).toFixed(1)}% (${archetypeWins['stars_scrubs']} wins)\n`;
-        report += `  - Strict Budget Bots: ${((archetypeWins['budget'] / runs) * 100).toFixed(1)}% (${archetypeWins['budget']} wins)\n`;
-        report += `  - Homer Bots: ${((archetypeWins['homer'] / runs) * 100).toFixed(1)}% (${archetypeWins['homer']} wins)\n\n`;
+        report += `  - Market Value Bots: ${(((archetypeWins['market'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['market'] || 0} wins)\n`;
+        report += `  - Punt Strategy Bots: ${(((archetypeWins['punt'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['punt'] || 0} wins)\n`;
+        report += `  - Price Enforcer Bots: ${(((archetypeWins['price_enforcer'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['price_enforcer'] || 0} wins)\n`;
+        report += `  - Panic Spender Bots: ${(((archetypeWins['panic_spender'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['panic_spender'] || 0} wins)\n`;
+        report += `  - Stars & Scrubs Bots: ${(((archetypeWins['stars_scrubs'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['stars_scrubs'] || 0} wins)\n`;
+        report += `  - Strict Budget Bots: ${(((archetypeWins['budget'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['budget'] || 0} wins)\n`;
+        report += `  - Homer Bots: ${(((archetypeWins['homer'] || 0) / runs) * 100).toFixed(1)}% (${archetypeWins['homer'] || 0} wins)\n\n`;
 
         report += `Finish Distribution:\n`;
         Object.keys(finishCounts).sort((a,b) => Number(a) - Number(b)).forEach(rk => {
@@ -158,7 +170,7 @@ if (isMainThread) {
         report += `=========================================\n`;
         losses.sort((a, b) => a.runIndex - b.runIndex).forEach((loss, idx) => {
           report += `\n[Loss #${idx + 1} - Run #${loss.runIndex + 1}]\n`;
-          report += `  Winner: ${loss.winnerName} (${loss.winnerArchetype}) with ${loss.winnerPoints} pts (Spent: $${loss.winnerSpent})\n`;
+          report += `  Winner: ${loss.winnerName} (${loss.winnerArchetype}${loss.winnerPuntDetail || ''}) with ${loss.winnerPoints} pts (Spent: $${loss.winnerSpent})\n`;
           report += `  Our Finish: #${loss.ourFinishRank} with ${loss.ourPoints} pts (Deficit: -${loss.winnerPoints - loss.ourPoints} pts, Spent: $${loss.ourSpent})\n`;
           report += `  Category Comparison (Our Rank vs Winner Rank):\n    `;
           report += engine.CATS.map(c => `${c}: #${loss.ourCatRanks[c].rank} vs #${loss.winnerCatRanks[c].rank}`).join(' | ') + `\n`;
@@ -177,9 +189,18 @@ if (isMainThread) {
 
 } else {
   // Worker Thread
-  const BOT_TYPES = { OURS: 'ours', MARKET: 'market', STARS_SCRUBS: 'stars_scrubs', BUDGET: 'budget', HOMER: 'homer' };
+  const BOT_TYPES = {
+    OURS: 'ours',
+    MARKET: 'market',
+    STARS_SCRUBS: 'stars_scrubs',
+    BUDGET: 'budget',
+    HOMER: 'homer',
+    PUNT: 'punt',
+    PANIC_SPENDER: 'panic_spender',
+    PRICE_ENFORCER: 'price_enforcer'
+  };
 
-  function getBotMaxBid(bot, player, C, state, isNominator = false) {
+  function getBotMaxBid(bot, player, C, state, isNominator = false, initialC = null) {
     const { budgetLeft, slotsLeft } = C.teamBudgetAndSlotsLeft(bot.name);
     if (slotsLeft <= 0) return 0;
     let maxBid = 0;
@@ -203,6 +224,60 @@ if (isMainThread) {
       } else if (bot.type === BOT_TYPES.HOMER) {
         if (player.team === bot.favoriteTeam) maxBid = baseBid * 1.3;
         else maxBid = baseBid;
+      } else if (bot.type === BOT_TYPES.PUNT) {
+        if (bot.anchorBought && bot.puntCats && bot.puntCats.length > 0) {
+          const zc = (initialC && initialC.zAll) ? initialC.zAll.get(player.rk) : null;
+          if (zc) {
+            let totalZ = 0;
+            let activeZ = 0;
+            const activeCatsCount = engine.CATS.length - bot.puntCats.length;
+            engine.CATS.forEach(c => {
+              totalZ += zc[c];
+              if (!bot.puntCats.includes(c)) {
+                activeZ += zc[c];
+              }
+            });
+            const meanTotal = totalZ / engine.CATS.length;
+            const meanActive = activeZ / activeCatsCount;
+            let puntRatio = 1.0;
+            if (meanTotal > 0.05) {
+              puntRatio = meanActive / meanTotal;
+            } else {
+              puntRatio = 1.0 + (meanActive - meanTotal) * 0.3;
+            }
+            puntRatio = Math.max(0.5, Math.min(1.4, puntRatio));
+            maxBid = baseBid * puntRatio;
+          } else {
+            maxBid = baseBid;
+          }
+        } else {
+          maxBid = baseBid;
+        }
+      } else if (bot.type === BOT_TYPES.PANIC_SPENDER) {
+        const totalPicksMade = state.picks.length;
+        const totalLeagueBudgetRemaining = state.numTeams * 200 - state.picks.reduce((sum, p) => sum + p.price, 0);
+        const totalLeagueSlotsRemaining = Math.max(1, (state.numTeams * state.rosterSlots) - totalPicksMade);
+        const leaguePace = totalLeagueBudgetRemaining / totalLeagueSlotsRemaining;
+        const myPace = budgetLeft / slotsLeft;
+
+        if (totalPicksMade < 45 && myPace <= leaguePace * 1.15) {
+          maxBid = baseBid * 0.78;
+        } else {
+          const urgency = Math.max(1.20, Math.min(1.40, 1.0 + 0.35 * (myPace / Math.max(1, leaguePace))));
+          maxBid = baseBid * urgency;
+        }
+      } else if (bot.type === BOT_TYPES.PRICE_ENFORCER) {
+        if (slotsLeft <= 4 || budgetLeft < slotsLeft * 3) {
+          maxBid = baseBid;
+        } else {
+          if ((player.mktCost || 0) >= 10 || player.rk <= 60) {
+            const enforcerFuzzy = 0.92 + Math.random() * 0.05;
+            const enforcerBid = fairPrice * enforcerFuzzy;
+            maxBid = Math.max(baseBid, enforcerBid);
+          } else {
+            maxBid = baseBid;
+          }
+        }
       }
     }
     const maxLegal = Math.max(1, budgetLeft - (slotsLeft - 1));
@@ -212,7 +287,7 @@ if (isMainThread) {
     return rounded >= 2 ? rounded : 0;
   }
 
-  function getBotNomination(bot, C, availablePool, state) {
+  function getBotNomination(bot, C, availablePool, state, initialC = null) {
     if (availablePool.length === 0) return null;
     if (bot.randomNom) {
       // Nominate uniformly at random from the remaining top X (numTeams * rosterSlots) eligible pool
@@ -223,9 +298,9 @@ if (isMainThread) {
     if (bot.type === BOT_TYPES.OURS) {
       if (state) {
         const myInfo = C.teamBudgetAndSlotsLeft(bot.name);
-        if (myInfo.slotsLeft <= 5) {
-          const opt = engine.runOptimizer(state, players);
-          if (opt && !opt.full && !opt.infeasible) {
+        const opt = engine.runOptimizer(state, players);
+        if (opt && !opt.full && !opt.infeasible) {
+          if (myInfo.slotsLeft <= 5) {
             if (opt.isMonopoly && opt.dreamPlayers && opt.dreamPlayers.length > 0) {
               const dreamTarget = availablePool.find(p => p.rk === opt.dreamPlayers[0].rk);
               if (dreamTarget) return dreamTarget;
@@ -234,6 +309,13 @@ if (isMainThread) {
               const dollarTarget = opt.players.find(c => C.fairPrice(c.rk) <= 1) || opt.players[0];
               const targetObj = availablePool.find(p => p.rk === dollarTarget.rk);
               if (targetObj) return targetObj;
+            }
+          } else {
+            // Early / Mid-draft: Strategic Bait Nomination
+            // Nominate expensive players outside our build to bleed opponent capital (especially Price Enforcers)
+            if (opt.topBaitPlayers && opt.topBaitPlayers.length > 0 && Math.random() < 0.65) {
+              const baitTarget = availablePool.find(p => p.rk === opt.topBaitPlayers[0].rk);
+              if (baitTarget) return baitTarget;
             }
           }
         }
@@ -245,6 +327,41 @@ if (isMainThread) {
     } else if (bot.type === BOT_TYPES.HOMER) {
       const homers = availablePool.filter(p => p.team === bot.favoriteTeam);
       if (homers.length > 0) return homers[Math.floor(Math.random() * homers.length)];
+      return top10[Math.floor(Math.random() * top10.length)];
+    } else if (bot.type === BOT_TYPES.PRICE_ENFORCER) {
+      return poolSortedByVal[0];
+    } else if (bot.type === BOT_TYPES.PANIC_SPENDER) {
+      const totalPicksMade = state ? state.picks.length : 0;
+      if (totalPicksMade < 45) {
+        return poolSortedByVal[0];
+      }
+      return top10[Math.floor(Math.random() * top10.length)];
+    } else if (bot.type === BOT_TYPES.PUNT) {
+      if (bot.anchorBought && bot.puntCats && bot.puntCats.length > 0 && initialC && initialC.zAll) {
+        const top25 = poolSortedByVal.slice(0, 25);
+        if (Math.random() < 0.5) {
+          // Bait nomination: pick player in top 25 with highest contribution in bot.puntCats
+          const baitCandidates = [...top25].sort((a, b) => {
+            const zcA = initialC.zAll.get(a.rk) || {};
+            const zcB = initialC.zAll.get(b.rk) || {};
+            const puntScoreA = bot.puntCats.reduce((sum, c) => sum + (zcA[c] || 0), 0);
+            const puntScoreB = bot.puntCats.reduce((sum, c) => sum + (zcB[c] || 0), 0);
+            return puntScoreB - puntScoreA;
+          });
+          if (baitCandidates.length > 0) return baitCandidates[0];
+        } else {
+          // Target nomination: pick player in top 25 with highest active category score
+          const targetCandidates = [...top25].sort((a, b) => {
+            const zcA = initialC.zAll.get(a.rk) || {};
+            const zcB = initialC.zAll.get(b.rk) || {};
+            const activeCats = engine.CATS.filter(c => !bot.puntCats.includes(c));
+            const activeScoreA = activeCats.reduce((sum, c) => sum + (zcA[c] || 0), 0);
+            const activeScoreB = activeCats.reduce((sum, c) => sum + (zcB[c] || 0), 0);
+            return activeScoreB - activeScoreA;
+          });
+          if (targetCandidates.length > 0) return targetCandidates[0];
+        }
+      }
       return top10[Math.floor(Math.random() * top10.length)];
     } else {
       return top10[Math.floor(Math.random() * top10.length)];
@@ -269,17 +386,36 @@ if (isMainThread) {
     // Calculate baseline Z-scores and prices against the empty draft pool
     const initialC = engine.computeAll(state, players);
     
-    // Randomize opponents for this run (guarantee at least 1 random-pool nominator)
-    const botTypes = [BOT_TYPES.MARKET, BOT_TYPES.STARS_SCRUBS, BOT_TYPES.BUDGET, BOT_TYPES.HOMER];
+    // Randomize opponents for this run
+    // Guaranteed slots: Slot 0 = Alex (OURS), Slot 1 = PUNT, Slot 2 = PRICE_ENFORCER
+    const botTypes = [
+      BOT_TYPES.MARKET,
+      BOT_TYPES.STARS_SCRUBS,
+      BOT_TYPES.BUDGET,
+      BOT_TYPES.HOMER,
+      BOT_TYPES.PUNT,
+      BOT_TYPES.PANIC_SPENDER,
+      BOT_TYPES.PRICE_ENFORCER
+    ];
     const TEAMS = [ { name: 'Alex', type: BOT_TYPES.OURS } ];
-    const guaranteedRandomNomIdx = 1 + Math.floor(Math.random() * (numTeams - 1));
-    for(let i = 1; i < numTeams; i++) {
+    if (numTeams > 1) {
+      TEAMS.push({ name: 'Bot1_punt', type: BOT_TYPES.PUNT, puntCats: [], anchorBought: false, picksCount: 0 });
+    }
+    if (numTeams > 2) {
+      TEAMS.push({ name: 'Bot2_price_enforcer', type: BOT_TYPES.PRICE_ENFORCER });
+    }
+    const guaranteedRandomNomIdx = TEAMS.length < numTeams ? TEAMS.length + Math.floor(Math.random() * (numTeams - TEAMS.length)) : -1;
+    for(let i = TEAMS.length; i < numTeams; i++) {
       const bType = botTypes[Math.floor(Math.random() * botTypes.length)];
       const randomNom = (i === guaranteedRandomNomIdx) || (Math.random() < 0.15);
       let t = { name: `Bot${i}_${bType}${randomNom ? '_rndNom' : ''}`, type: bType, randomNom };
       if (bType === BOT_TYPES.HOMER) {
-         const teams = ['NYK', 'BOS', 'LAL', 'GSW', 'PHI'];
-         t.favoriteTeam = teams[Math.floor(Math.random() * teams.length)];
+        const teams = ['NYK', 'BOS', 'LAL', 'GSW', 'PHI'];
+        t.favoriteTeam = teams[Math.floor(Math.random() * teams.length)];
+      } else if (bType === BOT_TYPES.PUNT) {
+        t.puntCats = [];
+        t.anchorBought = false;
+        t.picksCount = 0;
       }
       TEAMS.push(t);
     }
@@ -302,7 +438,7 @@ if (isMainThread) {
 
       if (nominatorInfo.slotsLeft <= 0) { nominatorIdx = nextIdx; continue; }
 
-      const nominatedPlayer = getBotNomination(nominator, C, C.availableInPool, state);
+      const nominatedPlayer = getBotNomination(nominator, C, C.availableInPool, state, initialC);
       if (!nominatedPlayer) break;
 
       let bids = [];
@@ -310,7 +446,7 @@ if (isMainThread) {
         const { slotsLeft } = C.teamBudgetAndSlotsLeft(bot.name);
         if (slotsLeft > 0) {
           const isNom = bot.name === nominator.name;
-          const bVal = getBotMaxBid(bot, nominatedPlayer, C, state, isNom);
+          const bVal = getBotMaxBid(bot, nominatedPlayer, C, state, isNom, initialC);
           if (bVal > 0) {
             bids.push({ bot: bot.name, bid: bVal });
           }
@@ -340,6 +476,23 @@ if (isMainThread) {
       winningPrice = Math.max(1, Math.min(winningPrice, winnerMaxLegal));
 
       state.picks.push({ rk: nominatedPlayer.rk, teamName: winner.bot, price: winningPrice, ts: Date.now() });
+
+      const winningBotObj = TEAMS.find(t => t.name === winner.bot);
+      if (winningBotObj && winningBotObj.type === BOT_TYPES.PUNT) {
+        winningBotObj.picksCount = (winningBotObj.picksCount || 0) + 1;
+        if (!winningBotObj.anchorBought && (winningPrice >= 20 || winningBotObj.picksCount >= 3)) {
+          const zc = initialC.zAll.get(nominatedPlayer.rk);
+          if (zc) {
+            const sortedCats = [...engine.CATS].sort((a, b) => (zc[a] || 0) - (zc[b] || 0));
+            winningBotObj.puntCats = [sortedCats[0]];
+            if ((zc[sortedCats[1]] || 0) < -1.0) {
+              winningBotObj.puntCats.push(sortedCats[1]);
+            }
+            winningBotObj.anchorBought = true;
+          }
+        }
+      }
+
       if (runIndex === 0) picksLog.push(`${String(state.picks.length).padStart(3)}. ${nominatedPlayer.name.padEnd(25)} -> ${winner.bot.padEnd(15)} for $${winningPrice}`);
       nominatorIdx = nextIdx;
     }
@@ -348,8 +501,16 @@ if (isMainThread) {
     
     const winnerRanks = finalC.powerRankings[0];
     let winningArchetype = 'unknown';
-    if (winnerRanks.teamName === 'Alex') winningArchetype = 'ours';
-    else winningArchetype = TEAMS.find(t => t.name === winnerRanks.teamName).type;
+    let winnerPuntDetail = '';
+    if (winnerRanks.teamName === 'Alex') {
+      winningArchetype = 'ours';
+    } else {
+      const wBot = TEAMS.find(t => t.name === winnerRanks.teamName);
+      winningArchetype = wBot ? wBot.type : 'unknown';
+      if (wBot && wBot.type === BOT_TYPES.PUNT && wBot.puntCats && wBot.puntCats.length > 0) {
+        winnerPuntDetail = ` [Punt: ${wBot.puntCats.join(', ')}]`;
+      }
+    }
 
     const ourRanks = finalC.powerRankings.find(r => r.teamName === 'Alex');
     
@@ -400,6 +561,7 @@ if (isMainThread) {
         ourPicks: oPicks,
         winnerName: winnerRanks.teamName,
         winnerArchetype: winningArchetype,
+        winnerPuntDetail: winnerPuntDetail,
         winnerPoints: winnerRanks.total,
         winnerSpent: 200 - winnerRanks.budgetLeft,
         winnerCatRanks: winnerRanks.catRanks,

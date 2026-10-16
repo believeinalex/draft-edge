@@ -20,7 +20,7 @@ function runCandidate(candidateName, config, runs = 15, geometry = { numTeams: 1
       ourTotalCats[c] = 0;
       ourTotalCatRanks[c] = 0;
     });
-    let archetypeWins = { ours: 0, market: 0, stars_scrubs: 0, budget: 0, homer: 0 };
+    let archetypeWins = { ours: 0, market: 0, stars_scrubs: 0, budget: 0, homer: 0, punt: 0, panic_spender: 0, price_enforcer: 0 };
     let workersActive = 0;
     let runsDispatched = 0;
     const t0 = Date.now();
