@@ -868,6 +868,61 @@ function runOptimizer(state, PLAYERS){
   const {budgetLeft, slotsLeft, picksMade} = C.teamBudgetAndSlotsLeft(state.myTeamName);
   if(slotsLeft<=0) return { full: true };
 
+  // Dual Mega-Anchor Guardrail for Team Optimizer:
+  // A viable 8-cat roster should never build around multiple $65+ anchors (e.g. Jokic + Wemby),
+  // which leaves only $3-4/slot for depth. Constrain the optimizer to at most one $65+ anchor.
+  if(!state._skipAnchorConstraint){
+    const myPicks = (state.picks || []).filter(pk => pk.teamName === state.myTeamName);
+    const myMegaAnchors = myPicks.filter(pk => (pk.price || 0) >= 65 || C.fairPrice(pk.rk) >= 65);
+    const availableMegaAnchors = C.availableInPool.filter(p => !isDoNotDraft(p, state) && C.fairPrice(p.rk) >= 65);
+    const existingDnd = Array.isArray(state.doNotDraft)
+      ? state.doNotDraft
+      : (state.doNotDraft instanceof Set ? Array.from(state.doNotDraft) : []);
+
+    if(myMegaAnchors.length >= 1){
+      if(availableMegaAnchors.length > 0){
+        const subState = {
+          ...state,
+          _skipAnchorConstraint: true,
+          doNotDraft: [...existingDnd, ...availableMegaAnchors.map(m => m.rk)]
+        };
+        return runOptimizer(subState, PLAYERS);
+      }
+    } else if(availableMegaAnchors.length > 1){
+      let bestResult = null;
+      const allAnchorsRks = availableMegaAnchors.map(m => m.rk);
+      const balancedState = {
+        ...state,
+        _skipAnchorConstraint: true,
+        doNotDraft: [...existingDnd, ...allAnchorsRks]
+      };
+      const balancedOpt = runOptimizer(balancedState, PLAYERS);
+      if(balancedOpt && !balancedOpt.infeasible && !balancedOpt.full){
+        bestResult = balancedOpt;
+      }
+
+      for(const anchor of availableMegaAnchors){
+        const otherAnchors = availableMegaAnchors.filter(m => m.rk !== anchor.rk).map(m => m.rk);
+        const subState = {
+          ...state,
+          _skipAnchorConstraint: true,
+          doNotDraft: [...existingDnd, ...otherAnchors]
+        };
+        const candidateOpt = runOptimizer(subState, PLAYERS);
+        if(candidateOpt && !candidateOpt.infeasible && !candidateOpt.full){
+          const cVal = typeof candidateOpt.bestVal === 'number' ? candidateOpt.bestVal : (candidateOpt.val || 0);
+          const bVal = bestResult ? (typeof bestResult.bestVal === 'number' ? bestResult.bestVal : (bestResult.val || 0)) : -1e14;
+          if(!bestResult || cVal > bVal){
+            bestResult = candidateOpt;
+          }
+        }
+      }
+      if(bestResult){
+        return bestResult;
+      }
+    }
+  }
+
   const centerMode = state.centerMode || 'hybrid';
   const multiCenter = centerMode === 'multi_center' || centerMode === 'hybrid';
   const useDynamicWeights = centerMode === 'dynamic_weights' || centerMode === 'hybrid';

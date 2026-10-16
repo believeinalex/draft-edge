@@ -161,8 +161,9 @@ function getBotNomination(bot, C, availablePool, state, initialC = null) {
             if (targetObj) return targetObj;
           }
         } else {
-          if (opt.topBaitPlayers && opt.topBaitPlayers.length > 0 && Math.random() < 0.65) {
-            const baitTarget = availablePool.find(p => p.rk === opt.topBaitPlayers[0].rk);
+          const baits = opt.baitPlayers || opt.topBaitPlayers;
+          if (baits && baits.length > 0 && Math.random() < 0.65) {
+            const baitTarget = availablePool.find(p => p.rk === baits[0].rk);
             if (baitTarget) return baitTarget;
           }
         }
