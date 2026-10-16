@@ -46,8 +46,8 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 
 ### 5. Fragility Budgeting & Cap System ($\le 1.0$)
 - **Player Fragility Tiers (`players.js` & `engine.js`)**:
-  - **Tier 1 (1.0)**: High injury/games-missed risk (`Kawhi Leonard`, `Joel Embiid`, `Jimmy Butler`, `Kyrie Irving`, `LaMelo Ball`, `Lauri Markkanen`, `Zion Williamson`). Drafting one Tier 1 player consumes the entire fragility budget.
-  - **Tier 2 (0.5)**: Moderate durability/load management/age concerns (`Stephen Curry`, `LeBron James`, `Kevin Durant`, `Anthony Davis`, `Zach Edey`, `Jayson Tatum`, `Dejounte Murray`, `Paul George`, `Tyrese Haliburton`, `Domantas Sabonis`, `Damian Lillard`, `Walker Kessler`, `Jalen Suggs`, `Kon Knueppel`). You can draft at most two Tier 2 players (if no Tier 1 is rostered).
+  - **Tier 1 (1.0)**: High injury/games-missed risk (`Kawhi Leonard`, `Joel Embiid`, `Jimmy Butler`, `Kyrie Irving`, `LaMelo Ball`, `Lauri Markkanen`, `Zion Williamson`, `Ja Morant`). Drafting one Tier 1 player consumes the entire fragility budget.
+  - **Tier 2 (0.5)**: Moderate durability/load management/age concerns (`Giannis Antetokounmpo`, `Stephen Curry`, `LeBron James`, `Kevin Durant`, `Anthony Davis`, `Tyler Herro`, `Zach Edey`, `Jayson Tatum`, `Dejounte Murray`, `Paul George`, `Tyrese Haliburton`, `Domantas Sabonis`, `Damian Lillard`, `Walker Kessler`, `Jalen Suggs`, `Kon Knueppel`). You can draft at most two Tier 2 players (if no Tier 1 is rostered).
   - **DND ($\infty$)**: Unviable for draft (`Brandon Ingram`, `Kristaps Porziņģis`). Assigned `fragUnits = 999` and automatically excluded by the DP solver.
   - **Durable (0.0)**: All other players.
 - **Multi-Dimensional Knapsack DP Enforcement**:

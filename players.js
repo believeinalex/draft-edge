@@ -625,7 +625,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.1,
     "adp": 6.3,
     "totalZ": 4.98,
-    "mktCost": 63
+    "mktCost": 63,
+    "fragility": 0.5
   },
   {
     "rk": 25,
@@ -1146,7 +1147,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.3,
     "adp": 68.4,
     "totalZ": 3.97,
-    "mktCost": 14
+    "mktCost": 14,
+    "fragility": 0.5
   },
   {
     "rk": 45,
@@ -1898,7 +1900,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 88.9,
     "totalZ": 2.5,
-    "mktCost": 2
+    "mktCost": 2,
+    "fragility": 1
   },
   {
     "rk": 74,
