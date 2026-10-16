@@ -16,7 +16,7 @@
 (function(){
   'use strict';
 
-  const DEFAULTS = { numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
+  const DEFAULTS = { numTeams: 15, rosterSlots: 12, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
   const PLAYERS = typeof DRAFT_EDGE_PLAYERS !== 'undefined' ? DRAFT_EDGE_PLAYERS : (typeof require !== 'undefined' ? require('./players.js') : []);
   const _buildNameIndex = typeof buildNameIndex === 'function' ? buildNameIndex : (typeof require !== 'undefined' ? require('./engine.js').buildNameIndex : null);
   const _matchPlayer = typeof matchPlayer === 'function' ? matchPlayer : (typeof require !== 'undefined' ? require('./engine.js').matchPlayer : null);
@@ -213,7 +213,7 @@
     }
 
     if(!numCols || numCols <= 0){
-      numCols = config.numTeams || 14;
+      numCols = config.numTeams || 15;
     }
 
     const headers = [];
@@ -789,24 +789,37 @@
       altTxt = `Saving slot & budget for Dream Build targets: ${result.dreamAlternativeNames.join(' + ')}${result.dreamAlternativeMore?' + others':''}.`;
     } else if(result.doNotDraft){
       altTxt = p.dndReason ? `Do Not Draft reason: ${p.dndReason}` : `Player is on your Do Not Draft list. Automatic pass ($0).`;
+    } else if(result.fragilityCapped){
+      altTxt = `Roster already has ${result.currentRosterFragility} fragility points (cap is ${result.maxFragility}). Cannot add another risk player (${result.fragility}). Automatic pass ($0).`;
     }
 
     const upBannerHtml = isUpNow ? `<div class="de-player-up-tag">⚡ Player Up For Bidding</div>` : '';
+    const pFrag = typeof result.fragility === 'number' ? result.fragility : (p.fragility || 0);
     const dndBannerHtml = result.doNotDraft
       ? `<div class="de-dnd-banner">⛔ DO NOT DRAFT${p.dndReason ? ` — ${escapeHtml(p.dndReason)}` : ''}</div>`
-      : '';
+      : (result.fragilityCapped
+          ? `<div class="de-dnd-banner" style="background:#451a03; border-color:#d97706; color:#fef3c7;">⚠️ FRAGILITY CAP REACHED — Roster risk at ${result.currentRosterFragility}/${result.maxFragility}. Automatic pass ($0).</div>`
+          : '');
     const dreamBadgeHtml = (result.isEndgame && result.inDreamBuild)
       ? `<span class="de-dream-badge">${result.isMonopoly ? '👑 Endgame Monopoly Target' : '★ In Dream Build'}</span>`
       : '';
     const dndBadgeHtml = result.doNotDraft
       ? `<span class="de-dnd-badge">⛔ DO NOT DRAFT</span>`
       : '';
+    const fragBadgeHtml = (!result.doNotDraft && pFrag > 0)
+      ? `<span class="de-dream-badge" style="background:${pFrag >= 1.0 ? '#450a0a' : '#451a03'}; color:${pFrag >= 1.0 ? '#fca5a5' : '#fef3c7'}; border:1px solid ${pFrag >= 1.0 ? '#dc2626' : '#d97706'}; font-weight:600;">⚠️ Risk ${pFrag}</span>`
+      : '';
     const rankBadgeHtml = `<span class="de-name-rank-badge ${result.doNotDraft ? 'de-dnd-chip' : ''}">#${result.zRank}${result.doNotDraft ? ' ⛔' : ''}</span>`;
 
     const hasBreakEvenCap = result.maxBid > 0 && result.breakEvenBid && result.breakEvenBid > result.maxBid;
-    const bidLabel = result.doNotDraft
-      ? 'Max worth bidding (Do Not Draft)'
-      : (hasBreakEvenCap ? 'Max worth bidding (keeps Dream Build)' : 'Max worth bidding');
+    let bidLabel = 'Max worth bidding';
+    if(result.doNotDraft){
+      bidLabel = 'Max worth bidding (Do Not Draft)';
+    } else if(result.fragilityCapped){
+      bidLabel = 'Max worth bidding (Fragility Cap Reached)';
+    } else if(hasBreakEvenCap){
+      bidLabel = 'Max worth bidding (keeps Dream Build)';
+    }
     const breakEvenSpan = hasBreakEvenCap
       ? ` <span style="font-size:11px; font-weight:500; color:#8a93a5; margin-left:6px;">(break-even ceiling: $${result.breakEvenBid})</span>`
       : '';
@@ -815,7 +828,7 @@
       <div class="de-check-result ${isUpNow ? 'de-player-up-banner' : ''}">
         ${upBannerHtml}
         ${dndBannerHtml}
-        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}${dreamBadgeHtml}${dndBadgeHtml}</div>
+        <div class="n">${rankBadgeHtml}${escapeHtml(p.name)}${dreamBadgeHtml}${dndBadgeHtml}${fragBadgeHtml}</div>
         <div class="m">${p.pos.join('/')} · ${p.team||'FA'} · Z-Score Rank #${result.zRank} · solo ${result.soloZ.toFixed(2)}z · mkt now $${result.mktNow}${result.isEndgame && result.effCost && result.effCost < result.mktNow ? ` (eff $${result.effCost})` : ''}</div>
         <div class="p"><span class="lbl">${bidLabel}</span>${result.maxBid>0 ? '$'+result.maxBid : 'pass'}${breakEvenSpan}</div>
         ${altTxt ? `<div class="m" style="margin-top:4px;">${escapeHtml(altTxt)}</div>` : ''}

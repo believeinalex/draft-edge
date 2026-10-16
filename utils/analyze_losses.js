@@ -106,8 +106,8 @@ if (isMainThread) {
     const { runIndex, config } = msg;
 
     const state = {
-      numTeams: 14,
-      rosterSlots: 13,
+      numTeams: 15,
+      rosterSlots: 12,
       budget: 200,
       myTeamName: 'Alex',
       weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
@@ -120,8 +120,9 @@ if (isMainThread) {
 
     const botTypes = [BOT_TYPES.MARKET, BOT_TYPES.STARS_SCRUBS, BOT_TYPES.BUDGET, BOT_TYPES.HOMER];
     const TEAMS = [{ name: 'Alex', type: BOT_TYPES.OURS }];
-    const guaranteedRandomNomIdx = 1 + Math.floor(Math.random() * 13);
-    for (let i = 1; i <= 13; i++) {
+    const numOpponents = state.numTeams - 1;
+    const guaranteedRandomNomIdx = 1 + Math.floor(Math.random() * numOpponents);
+    for (let i = 1; i <= numOpponents; i++) {
       const bType = botTypes[Math.floor(Math.random() * botTypes.length)];
       const randomNom = (i === guaranteedRandomNomIdx) || (Math.random() < 0.15);
       let t = { name: `Bot${i}_${bType}${randomNom ? '_rndNom' : ''}`, type: bType, randomNom };
@@ -182,7 +183,7 @@ if (isMainThread) {
     }
 
     let nominatorIdx = 0;
-    const totalPicks = 14 * 13;
+    const totalPicks = state.numTeams * state.rosterSlots;
 
     while (state.picks.length < totalPicks) {
       const C = engine.computeAll(state, players);

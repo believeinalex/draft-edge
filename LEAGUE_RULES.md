@@ -5,7 +5,7 @@ This document outlines the core rules and settings for the "LePrawn" Yahoo Fanta
 ## Core Draft Details
 * **Draft Type:** Live Salary Cap Draft (Auction)
 * **Budget:** $200
-* **Max Teams:** 18 (Expected Draft Size: 14)
+* **Confirmed League Size:** 15 teams
 * **Scoring Type:** Rotisserie (Roto)
 * **Stat Categories (8-Cat):**
   * Field Goal Percentage (FG%)
@@ -18,17 +18,21 @@ This document outlines the core rules and settings for the "LePrawn" Yahoo Fanta
   * Blocked Shots (BLK)
 
 ## Roster Settings
-**Total Drafted Roster Size:** 12–13 players (12 slots in 15-team format; 13 slots in 14-team format)
-* **Active Slots (9):** PG, SG, SF, PF, C, Util, Util, Util, Util
-* **Bench Slots (3–4):** BN, BN, BN (, BN)
+**Total Drafted Roster Size:** 12 players per team (180 total players drafted league-wide)
+* **Active Slots (9):** PG, SG, SF, PF, C, Util, Util, Util, Util (75% of total roster active weekly)
+* **Bench Slots (3):** BN, BN, BN (Down from 4 — severe bench squeeze)
 * **Injury Slots (2):** IL, IL (Not drafted)
 
 ## Key Strategic Implications for the Bot
-1. **14–15 Team Depth:** With 14 teams × 13 slots (**182 players**) or 15 teams × 12 slots (**180 players**), the draft pool depth is ~180–182 players, increasing the value of mid-tier efficiency and late-round contributors.
-2. **Weekly Lineups & Positional Limits:** Roster changes lock **Weekly on Monday**. This means flexibility and maximizing games played via daily streaming is not possible. You must start a valid lineup for the whole week.
-3. **Strict Acquisition Limit:** **Max 18 acquisitions for the ENTIRE SEASON**. This is the most critical setting. It means "streaming" (picking up players for a few games and dropping them) is completely unviable. The team drafted is largely the team you will have all year. Drafted depth and avoiding injury-prone players becomes exponentially more valuable.
-4. **Positional Requirements & Multi-Center Enforcement:** While we only strictly need 1 PG, 1 SG, 1 SF, 1 PF, and 1 C, the 4 Util spots offer flexibility. Our v2.3 Hybrid Engine enforces a **6-slot (`PG, SG, SF, PF, C1, C2`) Knapsack DP bitmask** paired with dynamic category deficit weighting (typically drafting ~3.9–4.3 center-eligible players) to protect against injury and dominate interior categories (`FG%`, `TREB`, `BLK`).
-5. **Turnovers (TO) are NOT a category:** The league uses standard 8-cat, not 9-cat. High usage guards who turn the ball over frequently (like Trae Young, Luka Doncic) get a significant value boost in this format.
+1. **15-Team Pool Depth (180 Players):** With 15 teams × 12 slots, 180 total players are drafted. The talent threshold remains deep, but league dollars per drafted player increase from $15.38 to $16.67 (+$1.29/player, or ~9% inflation in spendable discretionary cash per player: $188 / 12 = $15.67 vs $187 / 13 = $14.38).
+2. **The Triple Squeeze (Weekly Lock + 18 Max Moves + 3 Bench Spots):**
+   * Roster changes lock **Weekly on Monday**. Daily streaming is impossible.
+   * **Max 18 acquisitions for the entire season**: Averaging ~0.8 moves per week across 22 weeks. The drafted team is essentially your roster for the entire year.
+   * **Only 3 Bench spots to cover 9 starting positions**: You cannot afford to stash zero-production flyers, long-term injured players, or single-position specialists who cause lineup gridlock.
+3. **Multi-Position Eligibility is King:** With only 3 bench spots, players with dual and triple eligibility (PG/SG, SG/SF, SF/PF, PF/C) are vital to ensure 9 active starters can be fielded regardless of weekly NBA scheduling variations and short-term injuries.
+4. **Positional Requirements & Multi-Center Enforcement:** While we only strictly need 1 PG, 1 SG, 1 SF, 1 PF, and 1 C, the 4 Util spots offer flexibility. Our Hybrid Engine enforces a **6-slot (`PG, SG, SF, PF, C1, C2`) Knapsack DP bitmask** paired with dynamic category deficit weighting (typically drafting ~3.8–4.2 center-eligible players) to protect against injury and dominate interior categories (`FG%`, `TREB`, `BLK`).
+5. **15-Team Roto Point Spreads (1–15 pts):** A last-place finish in any category yields only 1 point, creating a punishing 14-point deficit against category leaders (compared to 13 points in 14-team format). Punting is significantly more dangerous in a 15-team format; balanced, high-floor profiles that place top-6 in 6+ categories reliably win the league.
+6. **Turnovers (TO) are NOT a category:** Standard 8-cat roto boosts high-usage playmaking anchors (Luka Doncic, Shai Gilgeous-Alexander, Trae Young, James Harden) without punishing high turnover totals.
 
 ## Draft Timers
 * **Nomination Time:** 30 seconds

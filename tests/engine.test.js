@@ -200,7 +200,7 @@ test('Edge case: late draft pool scarcity (available players < remaining roster 
 });
 
 test('Joel Embiid per-game rate valuation and max bid', () => {
-  const nonDndPlayers = PLAYERS.map(p => p.rk === 47 ? Object.assign({}, p, { doNotDraft: false }) : p);
+  const nonDndPlayers = PLAYERS.map(p => p.rk === 47 ? Object.assign({}, p, { doNotDraft: false, fragility: 0 }) : p);
   const embiidPrice = checkPrice(defaultState, nonDndPlayers, 47);
   assert.ok(embiidPrice);
   assert.ok(embiidPrice.soloZ > -1.0, `Embiid soloZ should be sane, got ${embiidPrice.soloZ}`);

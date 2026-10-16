@@ -1,4 +1,4 @@
-const DEFAULTS = { numTeams: 14, rosterSlots: 13, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
+const DEFAULTS = { numTeams: 15, rosterSlots: 12, budget: 200, myTeamName: 'You', starterSlots: 9, benchWeight: 0.3 };
 
 function load(){
   chrome.storage.local.get(['config','picks','doNotDraft'], (res)=>{

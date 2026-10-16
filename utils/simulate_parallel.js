@@ -9,8 +9,8 @@ if (isMainThread) {
   const args = process.argv.slice(2);
   let runs = 10;
   let mode = 'baseline';
-  let numTeams = 14;
-  let rosterSlots = 13;
+  let numTeams = 15;
+  let rosterSlots = 12;
   let starterSlots = 9;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
@@ -372,8 +372,8 @@ if (isMainThread) {
   parentPort.on('message', (msg) => {
     if (msg === 'exit') process.exit(0);
     const runIndex = msg.runIndex;
-    const numTeams = msg.numTeams || 14;
-    const rosterSlots = msg.rosterSlots || 13;
+    const numTeams = msg.numTeams || 15;
+    const rosterSlots = msg.rosterSlots || 12;
     const starterSlots = msg.starterSlots !== undefined ? msg.starterSlots : Math.min(9, rosterSlots);
     
     const state = {

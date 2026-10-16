@@ -8,13 +8,13 @@ const text = fs.readFileSync(path.join(__dirname, 'mock.txt'), 'utf8');
 const parsed = analyzeMock.parseMockDraftText(text);
 
 const baselineState = {
-  numTeams: 14,
-  rosterSlots: 13,
+  numTeams: 15,
+  rosterSlots: 12,
   budget: 200,
   myTeamName: 'Alex',
   weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
   picks: [],
-  starterSlots: 10,
+  starterSlots: 9,
   benchWeight: 0.3
 };
 

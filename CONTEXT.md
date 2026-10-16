@@ -9,9 +9,9 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 ### 1. Parallel Draft Simulator
 - **File**: `utils/simulate_parallel.js`
 - **Usage**:
-  - Standard 14-team / 13-slot: `node utils/simulate_parallel.js --mode=hybrid --runs=30`
-  - Upcoming 15-team / 12-slot (9 starters, 3 bench): `node utils/simulate_parallel.js --mode=hybrid --teams=15 --slots=12 --starters=9 --runs=30`
-  - Supported `--mode` values: `hybrid` (default v2.3 champion), `multi_center`, `dynamic_weights`, `baseline` (legacy static `+4.0/+2.0` center bonus).
+  - Confirmed 15-team / 12-slot (9 starters, 3 bench): `node utils/simulate_parallel.js --mode=hybrid --runs=30`
+  - Custom overrides: `node utils/simulate_parallel.js --mode=hybrid --teams=15 --slots=12 --starters=9 --runs=30`
+  - Supported `--mode` values: `hybrid` (default v2.4 champion), `multi_center`, `dynamic_weights`, `baseline` (legacy static `+4.0/+2.0` center bonus).
 - **Purpose**: Runs a multi-worker Monte Carlo simulation pitting the Draft Edge bot against a league of automated opponents (Market Value, Stars & Scrubs, Strict Budget, Homer) under strict Yahoo $200 hard salary cap rules ($\text{maxLegalBid} = \max(1, \text{budgetLeft} - (\text{slotsLeft} - 1))$).
 - **Output**: Generates Win Rate, Finish Place Distribution, average category Z-scores & League Ranks, Top 30 drafted players with Surplus ROI, and full forensic breakdowns for every loss.
 
@@ -44,6 +44,19 @@ The `utils/` directory contains several crucial scripts for evaluating the perfo
 - **Reference Docs**:
   - See `docs/PRICE_CHECK_UPGRADES.md` and `docs/OVERNIGHT_HILL_CLIMB_REPORT.md` for full mathematical details and simulation benchmarks.
 
+### 5. Fragility Budgeting & Cap System ($\le 1.0$)
+- **Player Fragility Tiers (`players.js` & `engine.js`)**:
+  - **Tier 1 (1.0)**: High injury/games-missed risk (`Kawhi Leonard`, `Joel Embiid`, `Jimmy Butler`, `Kyrie Irving`, `LaMelo Ball`, `Lauri Markkanen`, `Zion Williamson`). Drafting one Tier 1 player consumes the entire fragility budget.
+  - **Tier 2 (0.5)**: Moderate durability/load management/age concerns (`Stephen Curry`, `LeBron James`, `Kevin Durant`, `Anthony Davis`, `Zach Edey`, `Jayson Tatum`, `Dejounte Murray`, `Paul George`, `Tyrese Haliburton`, `Domantas Sabonis`, `Damian Lillard`, `Walker Kessler`, `Jalen Suggs`, `Kon Knueppel`). You can draft at most two Tier 2 players (if no Tier 1 is rostered).
+  - **DND ($\infty$)**: Unviable for draft (`Brandon Ingram`, `Kristaps Porziņģis`). Assigned `fragUnits = 999` and automatically excluded by the DP solver.
+  - **Durable (0.0)**: All other players.
+- **Multi-Dimensional Knapsack DP Enforcement**:
+  - `knapsackDP()` tracks a discrete fragility dimension $F = \text{maxFragUnits} + 1 \in \{0, 1, 2\}$ representing half-units of fragility ($0.0, 0.5, 1.0$).
+  - Any combination of players whose total fragility exceeds `maxFragility` (default $1.0$) is mathematically unreachable in the state space.
+- **Real-Time Live Auction Overrides (`checkPrice` & `content.js`)**:
+  - `checkPrice()` checks `currentRosterFragility + pFragility > maxFragility`. If exceeded, it immediately returns `maxBid: 0`, `fragilityCapped: true`.
+  - The live Yahoo overlay renders an amber/red warning banner, disables bidding recommendations, and badges the player as `⚠️ Risk ${pFrag} (Capped: Fragility Limit Reached)`.
+
 ## League Rules
-Refer to `LEAGUE_RULES.md` for the specific league configuration (14–15 teams, $200 budget, 8-cat Roto, 12–13 roster slots with 9 starters). Always ensure your simulations run with these constraints.
+Refer to `LEAGUE_RULES.md` for the specific league configuration (15 teams, $200 budget, 8-cat Roto, 12 roster slots with 9 starters and 3 bench). Always ensure your simulations run with these constraints.
 

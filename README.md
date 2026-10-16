@@ -35,7 +35,7 @@ A Chrome extension that integrates directly into the Yahoo Fantasy Basketball li
 
 ## Usage
 
-1. **Configure League**: Click the extension icon in the toolbar to set your league size (e.g., 12 teams), budget ($200), roster slots (13), and your exact team name.
+1. **Configure League**: Click the extension icon in the toolbar to set your league size (e.g., 15 teams), budget ($200), roster slots (12), and your exact team name.
 2. **Join Yahoo Draft**: Open your Yahoo Fantasy Basketball live auction draft room.
 3. **Overlay Control**: The Draft Edge overlay will render automatically in the live draft room.
 4. **Draft Tracking**: Picks will auto-log as players are won. Open the **Board tab** at least once if rejoining mid-draft to sync past pick history.

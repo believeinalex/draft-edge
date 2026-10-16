@@ -304,7 +304,7 @@ function getDynamicCategoryWeights(state, PLAYERS, zAll){
   });
 
   const targetZ = picksMade * targetPerPick;
-  const isLateHalf = picksMade >= Math.floor((state.rosterSlots || 13) * 0.4);
+  const isLateHalf = picksMade >= Math.floor((state.rosterSlots || 12) * 0.4);
   for(const c of CATS){
     const deficit = targetZ - currentZ[c];
     let effAlpha = alpha;
@@ -372,7 +372,7 @@ function missingCorePositions(players){
   return zeroEligible.length ? zeroEligible : ['(position conflict)'];
 }
 
-function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight, multiCenter = false, myPlayers = null, totalStarterSlots = null){
+function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starterSlotsLeft, benchWeight, multiCenter = false, myPlayers = null, totalStarterSlots = null, maxFragility = 1.0, state = null){
   const hasMyPlayers = Array.isArray(myPlayers) && typeof totalStarterSlots === 'number';
   const sortedPool = hasMyPlayers ? pool.slice().sort((a, b) => {
     const diff = valFn(b) - valFn(a);
@@ -382,11 +382,16 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
   const B = Math.max(0, Math.floor(capBudget));
   const K = Math.max(0, Math.floor(capSlots));
   const M = multiCenter ? COVERAGE_STATES_2C : COVERAGE_STATES;
+  const effMaxFrag = (state && typeof state.maxFragility === 'number') ? state.maxFragility : (typeof maxFragility === 'number' ? maxFragility : 1.0);
+  const maxFragUnits = Math.round(effMaxFrag * 2);
+  const curFragUnits = (myPlayers || []).reduce((sum, p) => sum + getFragUnits(p, state), 0);
+  const maxNewUnits = Math.max(0, maxFragUnits - curFragUnits);
+  const F = maxFragUnits + 1;
   const NEG = -1e15;
   const reach0 = baseReach || (()=>{ const r = new Uint8Array(M); r[0]=1; return r; })();
-  const idx = (k,b,mask) => (k*(B+1)+b)*M+mask;
-  let dp = new Float64Array((K+1)*(B+1)*M).fill(NEG);
-  for(let b=0;b<=B;b++) for(let mask=0;mask<M;mask++) if(reach0[mask]) dp[idx(0,b,mask)] = 0;
+  const idx = (k,b,mask,f) => ((k*(B+1)+b)*M+mask)*F + f;
+  let dp = new Float64Array((K+1)*(B+1)*M*F).fill(NEG);
+  for(let b=0;b<=B;b++) for(let mask=0;mask<M;mask++) if(reach0[mask]) dp[idx(0,b,mask,0)] = 0;
   const choice = new Array(n);
   const sSlots = (starterSlotsLeft !== undefined) ? starterSlotsLeft : K;
   const bWeight = (benchWeight !== undefined) ? benchWeight : 0.3;
@@ -408,10 +413,12 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     const minKForDemotion = Math.max(1, effStarterSlots - mRank1Based + 1);
     for(let k=minKForDemotion; k<=K; k++){
       for(let b=0; b<=B; b++){
-        const baseOffset = (k*(B+1)+b)*M;
         for(let mask=0; mask<M; mask++){
-          if(dp[baseOffset + mask] > NEG/2){
-            dp[baseOffset + mask] -= demotionDelta;
+          for(let f=0; f<=maxNewUnits; f++){
+            const t = idx(k,b,mask,f);
+            if(dp[t] > NEG/2){
+              dp[t] -= demotionDelta;
+            }
           }
         }
       }
@@ -431,41 +438,45 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     }
 
     const cost = Math.round(costFn(sortedPool[i]));
+    const pFragUnits = getFragUnits(sortedPool[i], state);
     const pm = posMaskOf(sortedPool[i]);
     const canC = sortedPool[i].pos && sortedPool[i].pos.includes('C');
     const newDp = dp.slice();
-    const take = new Int8Array((K+1)*(B+1)*M).fill(-1);
-    if(cost <= B){
+    const take = new Int8Array((K+1)*(B+1)*M*F).fill(-1);
+    if(cost <= B && pFragUnits <= maxNewUnits){
       for(let k=K;k>=1;k--){
         const itemVal = ((k + mIdx) <= effStarterSlots) ? baseVal : baseVal * bWeight;
         for(let b=B;b>=cost;b--){
-          for(let mask=0;mask<M;mask++){
-            const srcVal = dp[idx(k-1,b-cost,mask)];
-            if(srcVal <= NEG/2) continue;
-            const withItem = srcVal + itemVal;
-            const t0 = idx(k,b,mask);
-            if(withItem > newDp[t0]){ newDp[t0] = withItem; take[t0] = mask; }
-            if(!multiCenter){
-              for(let j=0;j<CORE_POS.length;j++){
-                if((pm & (1<<j)) && !(mask & (1<<j))){
-                  const t1 = idx(k,b,mask|(1<<j));
-                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+          for(let f=maxNewUnits; f>=pFragUnits; f--){
+            const srcF = f - pFragUnits;
+            for(let mask=0;mask<M;mask++){
+              const srcVal = dp[idx(k-1,b-cost,mask,srcF)];
+              if(srcVal <= NEG/2) continue;
+              const withItem = srcVal + itemVal;
+              const t0 = idx(k,b,mask,f);
+              if(withItem > newDp[t0]){ newDp[t0] = withItem; take[t0] = mask; }
+              if(!multiCenter){
+                for(let j=0;j<CORE_POS.length;j++){
+                  if((pm & (1<<j)) && !(mask & (1<<j))){
+                    const t1 = idx(k,b,mask|(1<<j),f);
+                    if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                  }
                 }
-              }
-            } else {
-              for(let j=0;j<4;j++){
-                if((pm & (1<<j)) && !(mask & (1<<j))){
-                  const t1 = idx(k,b,mask|(1<<j));
-                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+              } else {
+                for(let j=0;j<4;j++){
+                  if((pm & (1<<j)) && !(mask & (1<<j))){
+                    const t1 = idx(k,b,mask|(1<<j),f);
+                    if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                  }
                 }
-              }
-              if(canC){
-                if(!(mask & C1)){
-                  const t1 = idx(k,b,mask|C1);
-                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
-                } else if(!(mask & C2)){
-                  const t1 = idx(k,b,mask|C2);
-                  if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                if(canC){
+                  if(!(mask & C1)){
+                    const t1 = idx(k,b,mask|C1,f);
+                    if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                  } else if(!(mask & C2)){
+                    const t1 = idx(k,b,mask|C2,f);
+                    if(withItem > newDp[t1]){ newDp[t1] = withItem; take[t1] = mask; }
+                  }
                 }
               }
             }
@@ -480,31 +491,53 @@ function knapsackDP(pool, costFn, valFn, capBudget, capSlots, baseReach, starter
     mIdx++;
     applyMyPlayerDemotion(sortedMy[mIdx - 1], mIdx);
   }
-  return {dp, choice, pool: sortedPool, B, K, M, idx, multiCenter};
+  return {
+    dp, choice, pool: sortedPool, B, K, M, F, idx, multiCenter,
+    maxNewUnits,
+    costOf: (p) => Math.round(costFn(p)),
+    fragUnitsOf: (p) => getFragUnits(p, state)
+  };
 }
 function bestFeasible(res, k, b){
   const targetMask = res.multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
-  return res.dp[res.idx(k,b,targetMask)];
+  let best = -1e15;
+  for(let f=0; f<=res.maxNewUnits; f++){
+    const v = res.dp[res.idx(k,b,targetMask,f)];
+    if(v > best) best = v;
+  }
+  return best;
 }
 function bestAny(res, k, b){
   let best = -1e15, bestMask = 0;
   for(let mask=0; mask<res.M; mask++){
-    const v = res.dp[res.idx(k,b,mask)];
-    if(v > best){ best = v; bestMask = mask; }
+    for(let f=0; f<=res.maxNewUnits; f++){
+      const v = res.dp[res.idx(k,b,mask,f)];
+      if(v > best){ best = v; bestMask = mask; }
+    }
   }
   return {value: best, mask: bestMask};
 }
 function knapsackReconstruct(res, k, b, mask){
-  const {choice, pool} = res;
+  const {choice, pool, maxNewUnits, fragUnitsOf, costOf} = res;
   let ck=k, cb=b, cm=mask;
+  let cf = 0, bestVal = -1e15;
+  for(let f=0; f<=maxNewUnits; f++){
+    const v = res.dp[res.idx(ck, cb, cm, f)];
+    if(v > bestVal){
+      bestVal = v;
+      cf = f;
+    }
+  }
   const chosen = [];
   for(let i=pool.length-1; i>=0 && ck>0; i--){
-    const fromMask = choice[i][res.idx(ck,cb,cm)];
+    const fromMask = choice[i][res.idx(ck,cb,cm,cf)];
     if(fromMask >= 0){
       chosen.push(pool[i]);
       ck -= 1;
-      cb -= res.costOf(pool[i]);
+      cb -= (typeof costOf === 'function' ? costOf(pool[i]) : 0);
       cm = fromMask;
+      cf -= (typeof fragUnitsOf === 'function' ? fragUnitsOf(pool[i]) : 0);
+      if(cf < 0) cf = 0;
     }
   }
   return chosen;
@@ -520,9 +553,9 @@ function getMaxOppBid(state, C){
       if(tMax > maxOppBid) maxOppBid = tMax;
     }
   }
-  const unseenOpponents = Math.max(0, ((state.numTeams || 12) - 1) - knownOppNames.length);
+  const unseenOpponents = Math.max(0, ((state.numTeams || 15) - 1) - knownOppNames.length);
   if(unseenOpponents > 0){
-    const unseenMax = Math.max(1, (state.budget || 200) - ((state.rosterSlots || 13) - 1));
+    const unseenMax = Math.max(1, (state.budget || 200) - ((state.rosterSlots || 12) - 1));
     if(unseenMax > maxOppBid) maxOppBid = unseenMax;
   }
   return maxOppBid;
@@ -545,11 +578,11 @@ function buildEffectiveCostMap(state, C, targetPlayers){
       oppStates.push({ budgetLeft: info.budgetLeft, slotsLeft: info.slotsLeft });
     }
   }
-  const unseenOpponents = Math.max(0, ((state.numTeams || 12) - 1) - knownOppNames.length);
+  const unseenOpponents = Math.max(0, ((state.numTeams || 15) - 1) - knownOppNames.length);
   for(let i = 0; i < unseenOpponents; i++){
     oppStates.push({
       budgetLeft: state.budget || 200,
-      slotsLeft: state.rosterSlots || 13
+      slotsLeft: state.rosterSlots || 12
     });
   }
 
@@ -609,7 +642,8 @@ function solveDreamBuild(C, myPlayers, slotsLeft, starterSlotsLeft, benchWeight,
   const fullCoverage = multiCenter ? FULL_COVERAGE_2C : FULL_COVERAGE;
   const unitCost = () => 1;
   const totalStarterSlots = typeof starterSlots === 'number' ? starterSlots : (myPlayers.length + starterSlotsLeft);
-  const resDream = knapsackDP(pool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, totalStarterSlots);
+  const maxFragility = (state && typeof state.maxFragility === 'number') ? state.maxFragility : 1.0;
+  const resDream = knapsackDP(pool, unitCost, valFn, slotsLeft, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, totalStarterSlots, maxFragility, state);
   resDream.costOf = unitCost;
   let dreamVal = bestFeasible(resDream, slotsLeft, slotsLeft);
   let dreamMask = fullCoverage;
@@ -672,6 +706,44 @@ function checkPrice(state, PLAYERS, rk){
   const myPicks = state.picks.filter(pk=>pk.teamName===state.myTeamName);
   const myPlayers = myPicks.map(pk=>PLAYERS.find(x=>x.rk===pk.rk)).filter(Boolean);
   const numCenters = myPlayers.filter(pl => pl.pos && pl.pos.includes('C')).length;
+
+  const maxFragility = (state && typeof state.maxFragility === 'number') ? state.maxFragility : 1.0;
+  const pFragility = getFragility(p, state);
+  const currentRosterFragility = myPlayers.reduce((sum, mp) => sum + getFragility(mp, state), 0);
+
+  if (currentRosterFragility + pFragility > maxFragility + 1e-6) {
+    const zRank = (C.zRankMap && C.zRankMap.get(rk)) || p.rk;
+    const zc = C.zAll.get(p.rk);
+    const soloZ = (zc && C.compositeZ) ? C.compositeZ(zc) : 0;
+    return {
+      player: p,
+      maxBid: 0,
+      buildBid: 0,
+      breakEvenBid: 0,
+      fairPrice: C.fairPrice(rk),
+      mktNow: C.fairPrice(rk),
+      soloZ,
+      effCost: C.fairPrice(rk),
+      val: soloZ,
+      zRank,
+      zc,
+      baselineZ: null,
+      baselineInfeasible: false,
+      passRoster: [],
+      alternativeNames: [],
+      alternativeMore: false,
+      inDreamBuild: false,
+      isMonopoly: false,
+      isEndgame: false,
+      maxOppBid: getMaxOppBid(state, C),
+      fragilityCapped: true,
+      fragility: pFragility,
+      currentRosterFragility,
+      maxFragility,
+      dreamAlternativeNames: [],
+      dreamAlternativeMore: false
+    };
+  }
 
   const cfg = state.hillClimbConfig || {};
   let valFn;
@@ -736,7 +808,7 @@ function checkPrice(state, PLAYERS, rk){
   // Before Monopoly is reached, pricing future players at fairPrice preserves mid-draft budget discipline.
   const costFn = isMonopoly ? effCostFn : (x => C.fairPrice(x.rk));
 
-  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
+  const resExcl = knapsackDP(poolExcl, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots, maxFragility, state);
   resExcl.costOf = costFn;
 
   let baseline = bestFeasible(resExcl, slotsLeft, resExcl.B);
@@ -760,7 +832,7 @@ function checkPrice(state, PLAYERS, rk){
 
     // Dual Mega-Anchor Spend Ceiling:
     // If our roster already contains an anchor who cost >= $65, cap the max bid on any secondary star
-    // such that total top-2 spend does not exceed $138, preserving at least $62 for the remaining 11 slots.
+    // such that total top-2 spend does not exceed $138, preserving at least $62 for the remaining 10 slots.
     const maxSpentOnPlayer = myPicks.reduce((m, pk) => Math.max(m, pk.price || 0), 0);
     const topTwoMaxSpend = typeof cfg.topTwoMaxSpend === 'number' ? cfg.topTwoMaxSpend : 138;
     if (maxSpentOnPlayer >= 65) {
@@ -778,7 +850,7 @@ function checkPrice(state, PLAYERS, rk){
     while(low <= high){
       const X = Math.floor((low + high) / 2);
       const customCostFn = x => (x.rk === rk ? X : costFn(x));
-      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
+      const resWithP = knapsackDP(poolWithP, customCostFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots, maxFragility, state);
       resWithP.costOf = customCostFn;
 
       let valWithP = bestFeasible(resWithP, slotsLeft, B);
@@ -851,6 +923,10 @@ function checkPrice(state, PLAYERS, rk){
     maxOppBid,
     dreamAlternativeNames: dreamSorted.filter(x => x.rk !== rk).slice(0, 3).map(x => x.name),
     dreamAlternativeMore: dreamSorted.filter(x => x.rk !== rk).length > 3,
+    fragility: pFragility,
+    currentRosterFragility,
+    maxFragility,
+    fragilityCapped: false
   };
 }
 
@@ -982,7 +1058,8 @@ function runOptimizer(state, PLAYERS){
   const optPool = (state && (state.doNotDraft || C.availableInPool.some(p => p.doNotDraft)))
     ? C.availableInPool.filter(p => !isDoNotDraft(p, state))
     : C.availableInPool;
-  const res = knapsackDP(optPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots);
+  const maxFragility = (state && typeof state.maxFragility === 'number') ? state.maxFragility : 1.0;
+  const res = knapsackDP(optPool, costFn, valFn, B, slotsLeft, baseReach, starterSlotsLeft, benchWeight, multiCenter, myPlayers, starterSlots, maxFragility, state);
   res.costOf = costFn;
   let bestVal = bestFeasible(res, slotsLeft, res.B);
   let posWarning = null;
@@ -1079,14 +1156,16 @@ function runOptimizer(state, PLAYERS){
     isMonopoly,
     isEndgame,
     maxOppBid,
+    totalFragility: (chosen || []).concat(myPlayers || []).reduce((sum, p) => sum + getFragility(p, state), 0),
+    maxFragility,
     players: chosen.slice().sort((a,b)=>costFn(b)-costFn(a) || C.fairPrice(b.rk)-C.fairPrice(a.rk) || valFn(b)-valFn(a)).map(p=>({
-      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inDreamBuild: dreamRks.has(p.rk),
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: costFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inDreamBuild: dreamRks.has(p.rk), fragility: getFragility(p, state)
     })),
     dreamVal: dreamVal > -1e14 ? dreamVal : bestVal,
     dreamTotalCost,
     dreamMarketCost,
     dreamPlayers: isEndgame ? dreamPlayers.slice().sort((a,b)=>C.fairPrice(b.rk)-C.fairPrice(a.rk) || valFn(b)-valFn(a)).map(p=>({
-      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: effCostFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inBudgetBuild: chosenRks.has(p.rk),
+      rk: p.rk, name: p.name, pos: p.pos, team: p.team, cost: effCostFn(p), fairPrice: C.fairPrice(p.rk), z: C.baseCompositeZ(C.zAll.get(p.rk)), inBudgetBuild: chosenRks.has(p.rk), fragility: getFragility(p, state)
     })) : [],
     baitPlayers: topBaitPlayers,
     snipes: topSnipes,
@@ -1203,7 +1282,41 @@ function isDoNotDraft(p, state){
   return false;
 }
 
-if(typeof module !== 'undefined'){
-  module.exports = { computeAll, checkPrice, runOptimizer, matchPlayer, buildNameIndex, normName, isDoNotDraft, CATS, CAT_LABEL, CORE_POS };
+const FRAGILITY_TIERS = {
+  1.0: new Set([
+    'kawhi leonard', 'joel embiid', 'jimmy butler iii', 'kyrie irving',
+    'lamelo ball', 'lauri markkanen', 'zion williamson'
+  ]),
+  0.5: new Set([
+    'stephen curry', 'lebron james', 'kevin durant', 'anthony davis',
+    'zach edey', 'jayson tatum', 'dejounte murray', 'paul george',
+    'tyrese haliburton', 'domantas sabonis', 'damian lillard',
+    'walker kessler', 'jalen suggs', 'kon knueppel'
+  ])
+};
+
+function getFragility(p, state){
+  if(!p) return 0;
+  if(isDoNotDraft(p, state)) return Infinity;
+  if(typeof p.fragility === 'number') return p.fragility;
+  const pNorm = normName(p.name);
+  if(FRAGILITY_TIERS[1.0].has(pNorm)) return 1.0;
+  if(FRAGILITY_TIERS[0.5].has(pNorm)) return 0.5;
+  return 0;
 }
+
+function getFragUnits(p, state){
+  const f = getFragility(p, state);
+  if(f === Infinity) return 999;
+  return Math.round(f * 2);
+}
+
+if(typeof module !== 'undefined'){
+  module.exports = {
+    computeAll, checkPrice, runOptimizer, matchPlayer, buildNameIndex,
+    normName, isDoNotDraft, getFragility, getFragUnits, FRAGILITY_TIERS,
+    CATS, CAT_LABEL, CORE_POS
+  };
+}
+
 

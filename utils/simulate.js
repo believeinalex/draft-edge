@@ -104,8 +104,8 @@ function getBotMaxBid(bot, player, C, state, isNominator = false, initialC = nul
       }
     } else if (bot.type === BOT_TYPES.PANIC_SPENDER) {
       const totalPicksMade = state.picks.length;
-      const totalLeagueBudgetRemaining = 14 * 200 - state.picks.reduce((sum, p) => sum + p.price, 0);
-      const totalLeagueSlotsRemaining = Math.max(1, (14 * 13) - totalPicksMade);
+      const totalLeagueBudgetRemaining = (state.numTeams || 15) * 200 - state.picks.reduce((sum, p) => sum + p.price, 0);
+      const totalLeagueSlotsRemaining = Math.max(1, ((state.numTeams || 15) * (state.rosterSlots || 12)) - totalPicksMade);
       const leaguePace = totalLeagueBudgetRemaining / totalLeagueSlotsRemaining;
       const myPace = budgetLeft / slotsLeft;
 
@@ -226,8 +226,8 @@ async function runSimulation(runIndex) {
   });
 
   const state = {
-    numTeams: 14,
-    rosterSlots: 13,
+    numTeams: 15,
+    rosterSlots: 12,
     budget: 200,
     myTeamName: 'Alex',
     weights: Object.fromEntries(engine.CATS.map(c => [c, 1])),
@@ -241,7 +241,7 @@ async function runSimulation(runIndex) {
   let nominatorIdx = 0;
   let picksLog = [];
 
-  const totalPicks = 14 * 13;
+  const totalPicks = (state.numTeams || 15) * (state.rosterSlots || 12);
   let picksMade = 0;
 
   process.stdout.write(`Run ${runIndex + 1}/${runs} [`);

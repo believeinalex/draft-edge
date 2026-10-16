@@ -118,8 +118,9 @@ function parseMockDraftText(text, PLAYERS_LIST) {
 function analyzeMockDraft(mockData, options = {}) {
   const { picks, unmatched, userTeamName } = mockData;
   const targetUserTeam = options.userTeamName || userTeamName || 'Alex';
-  const numTeams = options.numTeams || new Set(picks.map(p => p.teamName)).size || 14;
-  const rosterSlots = options.rosterSlots || 13;
+  const numTeams = options.numTeams || new Set(picks.map(p => p.teamName)).size || 15;
+  const inferredSlots = (picks.length > 0 && numTeams > 0) ? Math.round(picks.length / numTeams) : 12;
+  const rosterSlots = options.rosterSlots || inferredSlots;
   const budget = options.budget || 200;
 
   const state = {
@@ -129,7 +130,7 @@ function analyzeMockDraft(mockData, options = {}) {
     myTeamName: targetUserTeam,
     weights: Object.fromEntries(CATS.map(c => [c, 1])),
     picks: picks.map(p => ({ rk: p.rk, teamName: p.teamName, price: p.price })),
-    starterSlots: options.starterSlots || 10,
+    starterSlots: options.starterSlots || 9,
     benchWeight: options.benchWeight || 0.3
   };
 

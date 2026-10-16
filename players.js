@@ -151,7 +151,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 8.3,
     "totalZ": 7.93,
-    "mktCost": 58
+    "mktCost": 58,
+    "fragility": 0.5
   },
   {
     "rk": 7,
@@ -202,7 +203,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.4,
     "adp": 22.9,
     "totalZ": 7.75,
-    "mktCost": 35
+    "mktCost": 35,
+    "fragility": 0.5
   },
   {
     "rk": 9,
@@ -254,7 +256,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1,
     "adp": 16,
     "totalZ": 7.51,
-    "mktCost": 43
+    "mktCost": 45,
+    "fragility": 0.5
   },
   {
     "rk": 11,
@@ -462,7 +465,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.6,
     "adp": 13.2,
     "totalZ": 6.21,
-    "mktCost": 52
+    "mktCost": 52,
+    "fragility": 0.5
   },
   {
     "rk": 19,
@@ -515,7 +519,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.3,
     "adp": 15.1,
     "totalZ": 6.19,
-    "mktCost": 49
+    "mktCost": 47
   },
   {
     "rk": 21,
@@ -594,7 +598,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.4,
     "adp": 34.1,
     "totalZ": 5.33,
-    "mktCost": 29
+    "mktCost": 29,
+    "fragility": 1
   },
   {
     "rk": 24,
@@ -646,7 +651,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.7,
     "adp": 42.8,
     "totalZ": 4.9,
-    "mktCost": 25
+    "mktCost": 25,
+    "fragility": 0.5
   },
   {
     "rk": 26,
@@ -698,7 +704,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.5,
     "adp": 47.4,
     "totalZ": 4.87,
-    "mktCost": 24
+    "mktCost": 25
   },
   {
     "rk": 28,
@@ -723,7 +729,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.4,
     "adp": 48.8,
     "totalZ": 4.84,
-    "mktCost": 22
+    "mktCost": 23,
+    "fragility": 1
   },
   {
     "rk": 29,
@@ -826,7 +833,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 60.8,
     "totalZ": 4.55,
-    "mktCost": 19
+    "mktCost": 20
   },
   {
     "rk": 33,
@@ -877,7 +884,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.3,
     "adp": 67.6,
     "totalZ": 4.44,
-    "mktCost": 18
+    "mktCost": 18,
+    "fragility": 0.5
   },
   {
     "rk": 35,
@@ -903,7 +911,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 38.1,
     "totalZ": 4.44,
-    "mktCost": 23
+    "mktCost": 23,
+    "fragility": 0.5
   },
   {
     "rk": 36,
@@ -929,7 +938,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 36.3,
     "totalZ": 4.42,
-    "mktCost": 29
+    "mktCost": 30,
+    "fragility": 1
   },
   {
     "rk": 37,
@@ -955,7 +965,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.3,
     "adp": 29.1,
     "totalZ": 4.33,
-    "mktCost": 29
+    "mktCost": 29,
+    "fragility": 0.5
   },
   {
     "rk": 38,
@@ -1031,7 +1042,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.8,
     "adp": 74.7,
     "totalZ": 4.23,
-    "mktCost": 16
+    "mktCost": 16,
+    "fragility": 0.5
   },
   {
     "rk": 41,
@@ -1056,7 +1068,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.1,
     "adp": 21.5,
     "totalZ": 4.14,
-    "mktCost": 32
+    "mktCost": 31
   },
   {
     "rk": 42,
@@ -1081,7 +1093,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 25.5,
     "totalZ": 4,
-    "mktCost": 34
+    "mktCost": 34,
+    "fragility": 1
   },
   {
     "rk": 43,
@@ -1107,7 +1120,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.2,
     "adp": 45.1,
     "totalZ": 3.97,
-    "mktCost": 24
+    "mktCost": 25
   },
   {
     "rk": 44,
@@ -1133,7 +1146,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.3,
     "adp": 68.4,
     "totalZ": 3.97,
-    "mktCost": 13
+    "mktCost": 14
   },
   {
     "rk": 45,
@@ -1209,10 +1222,9 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.5,
     "blk": 1,
     "adp": 50.6,
-    "totalZ": 0,
+    "totalZ": 3.88,
     "mktCost": 17,
-    "doNotDraft": true,
-    "originalTotalZ": 3.88
+    "fragility": 1
   },
   {
     "rk": 48,
@@ -1263,7 +1275,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 2.2,
     "adp": 41.7,
     "totalZ": 3.78,
-    "mktCost": 27
+    "mktCost": 27,
+    "fragility": 0.5
   },
   {
     "rk": 50,
@@ -1289,7 +1302,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.8,
     "adp": 106.7,
     "totalZ": 3.68,
-    "mktCost": 3
+    "mktCost": 3,
+    "fragility": 0.5
   },
   {
     "rk": 51,
@@ -1367,7 +1381,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 80.5,
     "totalZ": 3.52,
-    "mktCost": 11
+    "mktCost": 11,
+    "fragility": 0.5
   },
   {
     "rk": 54,
@@ -1393,7 +1408,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.7,
     "adp": 26.5,
     "totalZ": 3.4,
-    "mktCost": 33
+    "mktCost": 34
   },
   {
     "rk": 55,
@@ -1468,10 +1483,9 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 0.7,
     "blk": 0.2,
     "adp": 51.1,
-    "totalZ": 0,
+    "totalZ": 3.07,
     "mktCost": 14,
-    "doNotDraft": true,
-    "originalTotalZ": 3.07
+    "fragility": 0.5
   },
   {
     "rk": 58,
@@ -1574,7 +1588,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.8,
     "adp": 44.1,
     "totalZ": 2.76,
-    "mktCost": 21
+    "mktCost": 23
   },
   {
     "rk": 62,
@@ -1600,7 +1614,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 107.7,
     "totalZ": 2.75,
-    "mktCost": 4
+    "mktCost": 6
   },
   {
     "rk": 63,
@@ -1625,7 +1639,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1.1,
     "adp": 55.2,
     "totalZ": 2.71,
-    "mktCost": 20
+    "mktCost": 21
   },
   {
     "rk": 64,
@@ -1706,7 +1720,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.5,
     "adp": 31.2,
     "totalZ": 2.68,
-    "mktCost": 25
+    "mktCost": 24
   },
   {
     "rk": 67,
@@ -1833,7 +1847,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.1,
     "adp": 69.6,
     "totalZ": 2.51,
-    "mktCost": 12
+    "mktCost": 12,
+    "fragility": 0.5
   },
   {
     "rk": 72,
@@ -2037,10 +2052,9 @@ const DRAFT_EDGE_PLAYERS = [
     "stl": 1.3,
     "blk": 0.3,
     "adp": 115.7,
-    "totalZ": 0,
+    "totalZ": 2.25,
     "mktCost": 1,
-    "doNotDraft": true,
-    "originalTotalZ": 2.25
+    "fragility": 1
   },
   {
     "rk": 80,
@@ -2069,7 +2083,8 @@ const DRAFT_EDGE_PLAYERS = [
     "totalZ": 0,
     "mktCost": 8,
     "doNotDraft": true,
-    "originalTotalZ": 2.25
+    "originalTotalZ": 2.25,
+    "fragility": 2
   },
   {
     "rk": 81,
@@ -2120,7 +2135,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.8,
     "adp": 70.8,
     "totalZ": 1.94,
-    "mktCost": 8
+    "mktCost": 9
   },
   {
     "rk": 83,
@@ -2197,7 +2212,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.6,
     "adp": 35.8,
     "totalZ": 1.82,
-    "mktCost": 18
+    "mktCost": 19
   },
   {
     "rk": 86,
@@ -2222,7 +2237,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 68.3,
     "totalZ": 1.78,
-    "mktCost": 10
+    "mktCost": 11
   },
   {
     "rk": 87,
@@ -2376,7 +2391,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.2,
     "adp": 82.4,
     "totalZ": 1.63,
-    "mktCost": 7
+    "mktCost": 9
   },
   {
     "rk": 93,
@@ -2506,7 +2521,8 @@ const DRAFT_EDGE_PLAYERS = [
     "totalZ": 0,
     "mktCost": 1,
     "doNotDraft": true,
-    "originalTotalZ": 1.4
+    "originalTotalZ": 1.4,
+    "fragility": 2
   },
   {
     "rk": 98,
@@ -2532,7 +2548,8 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.7,
     "adp": 67.8,
     "totalZ": 1.33,
-    "mktCost": 6
+    "mktCost": 6,
+    "fragility": 1
   },
   {
     "rk": 99,
@@ -2866,7 +2883,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 1,
     "adp": 79.1,
     "totalZ": 0.72,
-    "mktCost": 6
+    "mktCost": 7
   },
   {
     "rk": 112,
@@ -3489,7 +3506,7 @@ const DRAFT_EDGE_PLAYERS = [
     "blk": 0.3,
     "adp": 54.6,
     "totalZ": -0.17,
-    "mktCost": 5
+    "mktCost": 6
   },
   {
     "rk": 136,
