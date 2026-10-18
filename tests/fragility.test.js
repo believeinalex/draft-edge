@@ -19,11 +19,10 @@ test('getFragility correctly identifies Tier 1 (1.0), Tier 2 (0.5), Durable (0.0
   // Tier 1 (1.0)
   assert.equal(getFragility({ name: 'Kawhi Leonard' }, defaultState), 1.0);
   assert.equal(getFragility({ name: 'Joel Embiid' }, defaultState), 1.0);
-  assert.equal(getFragility({ name: 'Jimmy Butler III' }, defaultState), 1.0);
   assert.equal(getFragility({ name: 'Kyrie Irving' }, defaultState), 1.0);
   assert.equal(getFragility({ name: 'LaMelo Ball' }, defaultState), 1.0);
-  assert.equal(getFragility({ name: 'Lauri Markkanen' }, defaultState), 1.0);
   assert.equal(getFragility({ name: 'Zion Williamson' }, defaultState), 1.0);
+  assert.equal(getFragility({ name: 'Ja Morant' }, defaultState), 1.0);
 
   // Tier 2 (0.5)
   assert.equal(getFragility({ name: 'Stephen Curry' }, defaultState), 0.5);
@@ -47,10 +46,12 @@ test('getFragility correctly identifies Tier 1 (1.0), Tier 2 (0.5), Durable (0.0
   assert.equal(getFragility({ name: 'Shai Gilgeous-Alexander' }, defaultState), 0.0);
   assert.equal(getFragility({ name: "Kel'el Ware" }, defaultState), 0.0);
   assert.equal(getFragility({ name: 'Brandon Miller' }, defaultState), 0.0);
+  assert.equal(getFragility({ name: 'Lauri Markkanen' }, defaultState), 0.0);
 
   // DND (Infinity)
   assert.equal(getFragility({ name: 'Brandon Ingram', doNotDraft: true }, defaultState), Infinity);
   assert.equal(getFragility({ name: 'Kristaps Porzingis', doNotDraft: true }, defaultState), Infinity);
+  assert.equal(getFragility({ name: 'Jimmy Butler III', doNotDraft: true }, defaultState), Infinity);
   assert.equal(getFragility({ name: 'Nikola Jokic' }, { doNotDraft: ['Nikola Jokic'] }), Infinity);
 });
 

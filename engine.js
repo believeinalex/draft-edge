@@ -1284,8 +1284,8 @@ function isDoNotDraft(p, state){
 
 const FRAGILITY_TIERS = {
   1.0: new Set([
-    'kawhi leonard', 'joel embiid', 'jimmy butler iii', 'kyrie irving',
-    'lamelo ball', 'lauri markkanen', 'zion williamson'
+    'kawhi leonard', 'joel embiid', 'kyrie irving',
+    'lamelo ball', 'zion williamson', 'ja morant'
   ]),
   0.5: new Set([
     'stephen curry', 'lebron james', 'kevin durant', 'anthony davis',
