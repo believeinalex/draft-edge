@@ -36,7 +36,7 @@ function parseMockDraftText(text, PLAYERS_LIST) {
   // Optional "Your Team" section: 1. Collins, John (DET - PF,C) $6
   const yourTeamRegex = /^\d+\.\s+(.+?)\s+\([^)]+\)\s+\$(\d+)$/;
   // Pattern 1: (1) Ryan - Haliburton, Tyrese (IND - PG,SG) - $52
-  const pickRegex = /^\((\d+)\)\s+([^-]+)\s+-\s+(.+?)\s+\([^)]+\)\s+-\s+\$(\d+)/;
+  const pickRegex = /^\((\d+)\)\s+(.+?)\s+-\s+(.+?)\s+\([^)]+\)\s+-\s+\$(\d+)/;
 
   for (const line of lines) {
     const ytMatch = line.match(yourTeamRegex);
