@@ -93,3 +93,46 @@ test('attachSeasonStats does not fuzzy-match a different player on another team'
   assert.equal(teams[0].actualTotals.pts, 28);
   assert.deepEqual(fa.map(p => p.name), ['Chaney Johnson']);
 });
+
+test('parseLineupText reads slots, status tags, games today and a block with no team name', () => {
+  const { parseLineupText } = require('../season/parse_lineups.js');
+  const text = [
+    'Pos', 'Player',
+    'PG\t', 'Keyonte GeorgeNew Player Note', 'UTA - PG,SG',
+    'Finn will cook Burt ', 'Pos', 'Player',
+    'SG\t', 'Donovan MitchellPlayer Note', 'CLE - PG,SG', '7:00 pm @ PHI',
+    'BN\t', 'Kevin LoveNANo new player Notes', 'UTA - PF,C',
+    'IL\t', 'Jusuf NurkićONo new player Notes', 'UTA - C'
+  ].join('\n');
+  const blocks = parseLineupText(text);
+  assert.equal(blocks.length, 2);
+  assert.equal(blocks[0].team, null);
+  assert.equal(blocks[0].players[0].name, 'Keyonte George');
+  assert.equal(blocks[1].team, 'Finn will cook Burt');
+  assert.deepEqual(blocks[1].players.map(p => [p.slot, p.name, p.status]), [
+    ['SG', 'Donovan Mitchell', null], ['BN', 'Kevin Love', 'NA'], ['IL', 'Jusuf Nurkić', 'O']
+  ]);
+  assert.equal(blocks[1].players[0].gameToday, '7:00 pm @ PHI');
+});
+
+test('attachLineups infers a missing team name, expands abbreviations and flags unlogged differences', () => {
+  const { attachLineups } = require('../season/build_season.js');
+  const r = name => ({ name });
+  const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8'].map(r);
+  const teams = [
+    { name: 'Maru', roster: [r('Nickeil Alexander-Walker'), ...nine], moveLog: [] },
+    { name: 'Finn', roster: [r('Malik Monk'), r('Ghost Player'), ...nine.map(p => r('F' + p.name))],
+      moveLog: [{ name: 'Malik Monk', dir: 'in' }, { name: 'Kevin Love', dir: 'out' }] }
+  ];
+  const lp = (name, slot = 'Util') => ({ slot, name, status: null, gameToday: null });
+  const issues = attachLineups(teams, { asOf: '2026-10-22', teams: [
+    { team: null, players: [lp('N. Alexander-Walker'), ...nine.map(p => lp(p.name))] },
+    { team: 'Finn', players: [lp('Kevin Love', 'BN'), ...nine.map(p => lp('F' + p.name))] }
+  ] });
+  assert.equal(teams[0].lineup.teamNameInferred, true);
+  assert.equal(teams[0].roster[0].thisWeek.slot, 'Util');
+  assert.deepEqual(teams[1].pendingIn, ['Malik Monk', 'Ghost Player']);
+  assert.deepEqual(teams[1].pendingOut, ['Kevin Love']);
+  assert.equal(issues.length, 1);
+  assert.match(issues[0], /Ghost Player/);
+});

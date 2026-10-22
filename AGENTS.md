@@ -8,6 +8,7 @@ The league draft is complete and the project is now focused on in-season managem
 
 ### Session-Start Workflow
 - When the user pastes Yahoo season stats, save them verbatim to `stats/raw/YYYY-MM-DD.txt` (today's date; never overwrite an older snapshot) and run `npm run stats`.
+- When the user pastes Yahoo weekly rosters/lineups (League > Rosters page), save them verbatim to `season/lineups/raw/YYYY-MM-DD.txt` and run `npm run lineups`. Any `WARNING` printed means a transaction is missing from `season/transactions.json`: ask the user for it rather than editing rosters by hand.
 - When the user pastes Yahoo transactions, append them to `season/transactions.json` and run `npm run season`.
 - Base advice on `season/league.json`: current rosters, projections, season-to-date stats and standings.
 

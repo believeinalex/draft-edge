@@ -7,7 +7,8 @@
     "analyze": "node utils/analyze_mock.js",
     "prices": "node utils/calculate_draft_prices.js",
     "season": "node season/build_season.js",
-    "stats": "node stats/parse_stats.js && node season/build_season.js"
+    "stats": "node stats/parse_stats.js && node season/build_season.js",
+    "lineups": "node season/parse_lineups.js && node season/build_season.js"
   },
   "keywords": [
     "fantasy-basketball",

@@ -16,6 +16,7 @@ const DRAFT_FILE = process.argv[2] || path.join(__dirname, 'draft_2026-10-18.txt
 const TXN_FILE = path.join(__dirname, 'transactions.json');
 const OUT_FILE = path.join(__dirname, 'league.json');
 const STATS_FILE = path.join(__dirname, '..', 'stats', 'latest.json');
+const LINEUP_DIR = path.join(__dirname, 'lineups');
 
 // The user's own team, plus other teams the user manages (their son Finn's team)
 const MY_TEAM = 'Shut Up and Jam Gaiden';
@@ -172,14 +173,21 @@ function applyTransactions(teams, transactions) {
     };
   };
 
+  const log = (team, name, dir, how, date) => {
+    (team.moveLog = team.moveLog || []).push({ date, name, dir, how });
+  };
   const sorted = [...transactions].sort((a, b) => a.date.localeCompare(b.date));
   for (const t of sorted) {
     if (t.type === 'add_drop') {
       const team = getTeam(t.team);
-      for (const d of t.drop || []) removeFrom(team, d.name);
+      for (const d of t.drop || []) {
+        removeFrom(team, d.name);
+        log(team, d.name, 'out', 'drop', t.date);
+      }
       for (const a of t.add || []) {
         team.roster.push(entryFor(a, a.via, t.date));
         team.acquisitions++;
+        log(team, a.name, 'in', a.via, t.date);
       }
     } else if (t.type === 'trade') {
       // Resolve every from-team before moving anyone, so a two-way swap works
@@ -193,11 +201,84 @@ function applyTransactions(teams, transactions) {
         entry.acquired = 'trade';
         entry.acquiredDate = t.date;
         getTeam(m.to).roster.push(entry);
+        log(from, m.name, 'out', 'trade', t.date);
+        log(getTeam(m.to), m.name, 'in', 'trade', t.date);
       }
     } else {
       throw new Error(`Unknown transaction type: ${t.type}`);
     }
   }
+}
+
+// Fewer listed players than starting slots means the paste was cut off mid-team
+const MIN_COMPLETE_LINEUP = 9;
+
+/**
+ * Attaches this week's locked lineup (season/lineups/*.json) to current rosters.
+ * Each rostered player gets thisWeek: { slot, status, gameToday }, or null when
+ * they joined the team after the lineup locked. Differences between ownership and
+ * the lineup must be explained by a logged transaction; anything else is returned
+ * in `unexplained`, which usually means a transaction is missing from transactions.json.
+ */
+function attachLineups(teams, snapshot) {
+  const unexplained = [];
+  const blocks = snapshot.teams.map(b => ({ ...b, players: b.players.map(p => ({ ...p })) }));
+  // A block whose team name was cut off: pick the team whose roster overlaps it most
+  for (const b of blocks.filter(bl => !bl.team)) {
+    const names = new Set(b.players.map(p => normName(p.name)));
+    const taken = new Set(blocks.map(bl => bl.team).filter(Boolean));
+    let best = null, bestOverlap = 0;
+    for (const t of teams.filter(tm => !taken.has(tm.name))) {
+      const overlap = t.roster.filter(r => names.has(normName(r.name))).length;
+      if (overlap > bestOverlap) { best = t; bestOverlap = overlap; }
+    }
+    if (best) { b.team = best.name; b.inferred = true; }
+  }
+  for (const b of blocks) {
+    const t = teams.find(tm => tm.name === b.team);
+    if (!t) {
+      unexplained.push(`Lineup block for unknown team "${b.team}"`);
+      continue;
+    }
+    const complete = b.players.length >= MIN_COMPLETE_LINEUP;
+    // Yahoo abbreviates long names ("N. Alexander-Walker"): expand from this team's roster
+    const fullName = name => {
+      const m = name.match(/^([A-Za-z])\.\s+(.+)$/);
+      if (!m) return name;
+      const hit = t.roster.find(r => {
+        const n = normName(r.name);
+        return n.startsWith(m[1].toLowerCase()) && n.endsWith(' ' + normName(m[2]));
+      });
+      return hit ? hit.name : name;
+    };
+    for (const p of b.players) p.name = fullName(p.name);
+    const lineupByName = new Map(b.players.map(p => [normName(p.name), p]));
+    const ownedNames = new Set(t.roster.map(r => normName(r.name)));
+    const moved = dir => new Set((t.moveLog || []).filter(m => m.dir === dir).map(m => normName(m.name)));
+    const movedIn = moved('in'), movedOut = moved('out');
+
+    t.lineup = { asOf: snapshot.asOf, complete, teamNameInferred: !!b.inferred };
+    t.pendingIn = [];
+    for (const r of t.roster) {
+      const p = lineupByName.get(normName(r.name));
+      r.thisWeek = p ? { slot: p.slot, status: p.status, gameToday: p.gameToday } : null;
+      if (!p && complete) {
+        t.pendingIn.push(r.name);
+        if (!movedIn.has(normName(r.name))) unexplained.push(`${t.name}: owns ${r.name}, but not in this week's lineup and no add/trade is logged`);
+      }
+    }
+    t.pendingOut = b.players.filter(p => !ownedNames.has(normName(p.name))).map(p => p.name);
+    for (const name of t.pendingOut) {
+      if (!movedOut.has(normName(name))) unexplained.push(`${t.name}: ${name} is in this week's lineup, but not on the roster and no drop/trade is logged`);
+    }
+  }
+  return unexplained;
+}
+
+function latestLineupSnapshot() {
+  if (!fs.existsSync(LINEUP_DIR)) return null;
+  const files = fs.readdirSync(LINEUP_DIR).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
+  return files.length ? JSON.parse(fs.readFileSync(path.join(LINEUP_DIR, files[files.length - 1]), 'utf8')) : null;
 }
 
 function main() {
@@ -238,6 +319,8 @@ function main() {
 
   const stats = fs.existsSync(STATS_FILE) ? JSON.parse(fs.readFileSync(STATS_FILE, 'utf8')) : null;
   const freeAgentLines = stats ? attachSeasonStats(teams, stats.players) : [];
+  const lineupSnap = latestLineupSnapshot();
+  const lineupIssues = lineupSnap ? attachLineups(teams, lineupSnap) : [];
 
   const league = {
     league: 'LePrawn',
@@ -250,6 +333,7 @@ function main() {
     transactionsApplied: txns.transactions.length,
     asOf: txns.transactions.reduce((m, t) => (t.date > m ? t.date : m), '2026-10-18'),
     statsAsOf: stats ? stats.asOf : null,
+    lineupAsOf: lineupSnap ? lineupSnap.asOf : null,
     teams: teams.sort((a, b) => a.projRank - b.projRank),
     draft: picks
   };
@@ -277,6 +361,24 @@ function main() {
     );
   }
 
+  if (lineupSnap) {
+    console.log(`\nThis week's locked lineups (${lineupSnap.asOf}); moves since lock take effect next week:`);
+    for (const t of teams) {
+      if (!t.lineup) continue;
+      const notes = [];
+      if (t.lineup.teamNameInferred) notes.push('team name inferred');
+      if (!t.lineup.complete) notes.push('paste cut off, partial check only');
+      if (t.pendingIn.length) notes.push(`joining: ${t.pendingIn.join(', ')}`);
+      if (t.pendingOut.length) notes.push(`leaving: ${t.pendingOut.join(', ')}`);
+      const hurt = t.roster.filter(r => r.thisWeek && r.thisWeek.status).map(r => `${r.name} (${r.thisWeek.status}, ${r.thisWeek.slot})`);
+      if (hurt.length) notes.push(`injury tags: ${hurt.join(', ')}`);
+      if (notes.length) console.log(`  ${t.name}: ${notes.join('; ')}`);
+    }
+    const missing = teams.filter(t => !t.lineup).map(t => t.name);
+    if (missing.length) console.log(`  No lineup in snapshot for: ${missing.join(', ')}`);
+    for (const issue of lineupIssues) console.log(`  WARNING: ${issue}`);
+  }
+
   if (!stats) return;
   console.log(`\nSeason-to-Date Roto (stats as of ${stats.asOf}, all rostered players counted):`);
   console.log('Rk   Team                              GP  ' + CATS.map(c => c.padStart(6)).join('') + '   Total  (Proj)');
@@ -299,4 +401,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { parseDraft, sumTotals, projectTeam, rotoPoints, applyTransactions, attachSeasonStats };
+module.exports = { parseDraft, sumTotals, projectTeam, rotoPoints, applyTransactions, attachSeasonStats, attachLineups };
