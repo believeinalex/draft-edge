@@ -50,7 +50,7 @@
             "ast": 7,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 14.47,
+            "valueTotal": 14.47,
             "rank": 4
           },
           "thisWeek": {
@@ -87,7 +87,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 4,
-            "yahooTotal": 8.91,
+            "valueTotal": 8.91,
             "rank": 25
           },
           "thisWeek": {
@@ -124,7 +124,7 @@
             "ast": 5,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 4.69,
+            "valueTotal": 4.69,
             "rank": 98
           },
           "thisWeek": {
@@ -160,7 +160,7 @@
             "ast": 4,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 5.78,
+            "valueTotal": 5.78,
             "rank": 80
           },
           "thisWeek": {
@@ -196,7 +196,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 3,
-            "yahooTotal": 5.73,
+            "valueTotal": 5.73,
             "rank": 82
           },
           "thisWeek": {
@@ -232,7 +232,7 @@
             "ast": 7,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 11.09,
+            "valueTotal": 11.09,
             "rank": 14
           },
           "thisWeek": {
@@ -269,7 +269,7 @@
             "ast": 7,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 10.13,
+            "valueTotal": 10.13,
             "rank": 18
           },
           "thisWeek": {
@@ -306,7 +306,7 @@
             "ast": 5,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 2.6,
+            "valueTotal": 2.6,
             "rank": 146
           },
           "thisWeek": {
@@ -342,7 +342,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 1.06,
+            "valueTotal": 1.06,
             "rank": 188
           },
           "thisWeek": {
@@ -379,7 +379,7 @@
             "ast": 6,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.94,
+            "valueTotal": 0.94,
             "rank": 190
           },
           "thisWeek": {
@@ -436,7 +436,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 2.89,
+            "valueTotal": 2.89,
             "rank": 140
           },
           "thisWeek": {
@@ -536,7 +536,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 2.33,
+            "valueTotal": 2.33,
             "rank": 153
           },
           "thisWeek": {
@@ -573,7 +573,7 @@
             "ast": 1,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 6.11,
+            "valueTotal": 6.11,
             "rank": 64
           },
           "thisWeek": {
@@ -609,7 +609,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 7.53,
+            "valueTotal": 7.53,
             "rank": 44
           },
           "thisWeek": {
@@ -646,7 +646,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": -0.61,
+            "valueTotal": -0.61,
             "rank": 245
           },
           "thisWeek": {
@@ -682,7 +682,7 @@
             "ast": 5,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.57,
+            "valueTotal": 0.57,
             "rank": 203
           },
           "thisWeek": {
@@ -719,7 +719,7 @@
             "ast": 2,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 5.07,
+            "valueTotal": 5.07,
             "rank": 91
           },
           "thisWeek": {
@@ -756,7 +756,7 @@
             "ast": 3,
             "stl": 5,
             "blk": 0,
-            "yahooTotal": 7.38,
+            "valueTotal": 7.38,
             "rank": 47
           },
           "thisWeek": {
@@ -793,7 +793,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 9.84,
+            "valueTotal": 9.84,
             "rank": 22
           },
           "thisWeek": {
@@ -830,7 +830,7 @@
             "ast": 3,
             "stl": 5,
             "blk": 0,
-            "yahooTotal": 16.9,
+            "valueTotal": 16.9,
             "rank": 2
           },
           "thisWeek": {
@@ -866,7 +866,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 3.6,
+            "valueTotal": 3.6,
             "rank": 116
           },
           "thisWeek": {
@@ -923,7 +923,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 2.09,
+            "valueTotal": 2.09,
             "rank": 161
           },
           "thisWeek": {
@@ -1024,7 +1024,7 @@
             "ast": 5,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 6.23,
+            "valueTotal": 6.23,
             "rank": 63
           },
           "thisWeek": {
@@ -1061,7 +1061,7 @@
             "ast": 8,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 6.76,
+            "valueTotal": 6.76,
             "rank": 51
           },
           "thisWeek": {
@@ -1118,7 +1118,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 1.47,
+            "valueTotal": 1.47,
             "rank": 173
           },
           "thisWeek": {
@@ -1154,7 +1154,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 2,
-            "yahooTotal": 3.83,
+            "valueTotal": 3.83,
             "rank": 111
           },
           "thisWeek": {
@@ -1190,7 +1190,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 2,
-            "yahooTotal": 2.19,
+            "valueTotal": 2.19,
             "rank": 158
           },
           "thisWeek": {
@@ -1227,7 +1227,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 0.76,
+            "valueTotal": 0.76,
             "rank": 198
           },
           "thisWeek": {
@@ -1264,7 +1264,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 1,
+            "valueTotal": 1,
             "rank": 189
           },
           "thisWeek": {
@@ -1301,7 +1301,7 @@
             "ast": 2,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 1.08,
+            "valueTotal": 1.08,
             "rank": 186
           },
           "thisWeek": {
@@ -1357,7 +1357,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": -0.71,
+            "valueTotal": -0.71,
             "rank": 249
           },
           "thisWeek": {
@@ -1393,7 +1393,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -2.13,
+            "valueTotal": -2.13,
             "rank": 291
           },
           "thisWeek": null
@@ -1425,7 +1425,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 2.22,
+            "valueTotal": 2.22,
             "rank": 157
           },
           "thisWeek": null
@@ -1545,7 +1545,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 6,
-            "yahooTotal": 9.96,
+            "valueTotal": 9.96,
             "rank": 20
           },
           "thisWeek": {
@@ -1601,7 +1601,7 @@
             "ast": 13,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 5.27,
+            "valueTotal": 5.27,
             "rank": 89
           },
           "thisWeek": {
@@ -1638,7 +1638,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 5.89,
+            "valueTotal": 5.89,
             "rank": 76
           },
           "thisWeek": {
@@ -1675,7 +1675,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": -0.01,
+            "valueTotal": -0.01,
             "rank": 226
           },
           "thisWeek": {
@@ -1712,7 +1712,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.68,
+            "valueTotal": 0.68,
             "rank": 200
           },
           "thisWeek": {
@@ -1789,7 +1789,7 @@
             "ast": 8,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 3.86,
+            "valueTotal": 3.86,
             "rank": 110
           },
           "thisWeek": {
@@ -1826,7 +1826,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 2.84,
+            "valueTotal": 2.84,
             "rank": 141
           },
           "thisWeek": {
@@ -1989,7 +1989,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 5.03,
+            "valueTotal": 5.03,
             "rank": 93
           },
           "thisWeek": {
@@ -2025,7 +2025,7 @@
             "ast": 6,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 7.41,
+            "valueTotal": 7.41,
             "rank": 46
           },
           "thisWeek": {
@@ -2061,7 +2061,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 4.98,
+            "valueTotal": 4.98,
             "rank": 94
           },
           "thisWeek": {
@@ -2097,7 +2097,7 @@
             "ast": 10,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 13.37,
+            "valueTotal": 13.37,
             "rank": 5
           },
           "thisWeek": {
@@ -2134,7 +2134,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 2.69,
+            "valueTotal": 2.69,
             "rank": 144
           },
           "thisWeek": {
@@ -2170,7 +2170,7 @@
             "ast": 8,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 9.7,
+            "valueTotal": 9.7,
             "rank": 24
           },
           "thisWeek": {
@@ -2226,7 +2226,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.78,
+            "valueTotal": 0.78,
             "rank": 196
           },
           "thisWeek": {
@@ -2264,7 +2264,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 0.44,
+            "valueTotal": 0.44,
             "rank": 209
           },
           "thisWeek": {
@@ -2300,7 +2300,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 2,
-            "yahooTotal": 0.55,
+            "valueTotal": 0.55,
             "rank": 204
           },
           "thisWeek": {
@@ -2337,7 +2337,7 @@
             "ast": 4,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 1.54,
+            "valueTotal": 1.54,
             "rank": 169
           },
           "thisWeek": {
@@ -2458,7 +2458,7 @@
             "ast": 2,
             "stl": 3,
             "blk": 1,
-            "yahooTotal": 10.99,
+            "valueTotal": 10.99,
             "rank": 15
           },
           "thisWeek": {
@@ -2496,7 +2496,7 @@
             "ast": 6,
             "stl": 2,
             "blk": 1,
-            "yahooTotal": 11.39,
+            "valueTotal": 11.39,
             "rank": 13
           },
           "thisWeek": {
@@ -2532,7 +2532,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 1.27,
+            "valueTotal": 1.27,
             "rank": 180
           },
           "thisWeek": {
@@ -2569,7 +2569,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 2,
-            "yahooTotal": 3.51,
+            "valueTotal": 3.51,
             "rank": 119
           },
           "thisWeek": {
@@ -2607,7 +2607,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 6.51,
+            "valueTotal": 6.51,
             "rank": 56
           },
           "thisWeek": {
@@ -2643,7 +2643,7 @@
             "ast": 0,
             "stl": 3,
             "blk": 1,
-            "yahooTotal": 2.75,
+            "valueTotal": 2.75,
             "rank": 142
           },
           "thisWeek": {
@@ -2680,7 +2680,7 @@
             "ast": 7,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 7.45,
+            "valueTotal": 7.45,
             "rank": 45
           },
           "thisWeek": {
@@ -2717,7 +2717,7 @@
             "ast": 6,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 16.44,
+            "valueTotal": 16.44,
             "rank": 3
           },
           "thisWeek": {
@@ -2753,7 +2753,7 @@
             "ast": 1,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 7.8,
+            "valueTotal": 7.8,
             "rank": 40
           },
           "thisWeek": {
@@ -2791,7 +2791,7 @@
             "ast": 4,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 4.93,
+            "valueTotal": 4.93,
             "rank": 95
           },
           "thisWeek": {
@@ -2827,7 +2827,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 0.42,
+            "valueTotal": 0.42,
             "rank": 212
           },
           "thisWeek": {
@@ -2863,7 +2863,7 @@
             "ast": 3,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": -2.67,
+            "valueTotal": -2.67,
             "rank": 311
           },
           "thisWeek": {
@@ -2962,7 +2962,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 2,
-            "yahooTotal": 8.79,
+            "valueTotal": 8.79,
             "rank": 28
           },
           "thisWeek": {
@@ -2999,7 +2999,7 @@
             "ast": 4,
             "stl": 2,
             "blk": 1,
-            "yahooTotal": 12.05,
+            "valueTotal": 12.05,
             "rank": 11
           },
           "thisWeek": {
@@ -3036,7 +3036,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 6.04,
+            "valueTotal": 6.04,
             "rank": 68
           },
           "thisWeek": {
@@ -3073,7 +3073,7 @@
             "ast": 5,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 5.8,
+            "valueTotal": 5.8,
             "rank": 79
           },
           "thisWeek": {
@@ -3110,7 +3110,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 3.91,
+            "valueTotal": 3.91,
             "rank": 109
           },
           "thisWeek": {
@@ -3146,7 +3146,7 @@
             "ast": 7,
             "stl": 2,
             "blk": 3,
-            "yahooTotal": 12.14,
+            "valueTotal": 12.14,
             "rank": 9
           },
           "thisWeek": {
@@ -3183,7 +3183,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.79,
+            "valueTotal": 0.79,
             "rank": 195
           },
           "thisWeek": {
@@ -3220,7 +3220,7 @@
             "ast": 5,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 4.59,
+            "valueTotal": 4.59,
             "rank": 100
           },
           "thisWeek": {
@@ -3256,7 +3256,7 @@
             "ast": 6,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 11.49,
+            "valueTotal": 11.49,
             "rank": 12
           },
           "thisWeek": {
@@ -3293,7 +3293,7 @@
             "ast": 3,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 8.06,
+            "valueTotal": 8.06,
             "rank": 37
           },
           "thisWeek": {
@@ -3330,7 +3330,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 6.53,
+            "valueTotal": 6.53,
             "rank": 55
           },
           "thisWeek": {
@@ -3463,7 +3463,7 @@
             "ast": 4,
             "stl": 3,
             "blk": 3,
-            "yahooTotal": 13.35,
+            "valueTotal": 13.35,
             "rank": 7
           },
           "thisWeek": {
@@ -3500,7 +3500,7 @@
             "ast": 7,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 5.45,
+            "valueTotal": 5.45,
             "rank": 87
           },
           "thisWeek": {
@@ -3555,7 +3555,7 @@
             "ast": 7,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 3.1,
+            "valueTotal": 3.1,
             "rank": 135
           },
           "thisWeek": {
@@ -3592,7 +3592,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 3.38,
+            "valueTotal": 3.38,
             "rank": 122
           },
           "thisWeek": {
@@ -3649,7 +3649,7 @@
             "ast": 9,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 6.59,
+            "valueTotal": 6.59,
             "rank": 53
           },
           "thisWeek": {
@@ -3687,7 +3687,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 1.37,
+            "valueTotal": 1.37,
             "rank": 177
           },
           "thisWeek": {
@@ -3723,7 +3723,7 @@
             "ast": 3,
             "stl": 5,
             "blk": 0,
-            "yahooTotal": 10.08,
+            "valueTotal": 10.08,
             "rank": 19
           },
           "thisWeek": {
@@ -3801,7 +3801,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 1.84,
+            "valueTotal": 1.84,
             "rank": 165
           },
           "thisWeek": {
@@ -3901,7 +3901,7 @@
             "ast": 8,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 8.79,
+            "valueTotal": 8.79,
             "rank": 27
           },
           "thisWeek": {
@@ -3939,7 +3939,7 @@
             "ast": 2,
             "stl": 4,
             "blk": 1,
-            "yahooTotal": 10.8,
+            "valueTotal": 10.8,
             "rank": 16
           },
           "thisWeek": {
@@ -3976,7 +3976,7 @@
             "ast": 6,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 6.44,
+            "valueTotal": 6.44,
             "rank": 59
           },
           "thisWeek": {
@@ -4014,7 +4014,7 @@
             "ast": 5,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 6.43,
+            "valueTotal": 6.43,
             "rank": 60
           },
           "thisWeek": {
@@ -4050,7 +4050,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": -1.07,
+            "valueTotal": -1.07,
             "rank": 263
           },
           "thisWeek": {
@@ -4087,7 +4087,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": -1.82,
+            "valueTotal": -1.82,
             "rank": 278
           },
           "thisWeek": {
@@ -4123,7 +4123,7 @@
             "ast": 11,
             "stl": 3,
             "blk": 1,
-            "yahooTotal": 7.63,
+            "valueTotal": 7.63,
             "rank": 43
           },
           "thisWeek": {
@@ -4161,7 +4161,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 5.9,
+            "valueTotal": 5.9,
             "rank": 74
           },
           "thisWeek": {
@@ -4216,7 +4216,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 2.26,
+            "valueTotal": 2.26,
             "rank": 154
           },
           "thisWeek": {
@@ -4252,7 +4252,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 2,
-            "yahooTotal": 1.14,
+            "valueTotal": 1.14,
             "rank": 182
           },
           "thisWeek": {
@@ -4289,7 +4289,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.17,
+            "valueTotal": 0.17,
             "rank": 219
           },
           "thisWeek": {
@@ -4326,7 +4326,7 @@
             "ast": 2,
             "stl": 5,
             "blk": 0,
-            "yahooTotal": 4.53,
+            "valueTotal": 4.53,
             "rank": 101
           },
           "thisWeek": null
@@ -4432,7 +4432,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 2,
-            "yahooTotal": 8.55,
+            "valueTotal": 8.55,
             "rank": 30
           },
           "thisWeek": {
@@ -4489,7 +4489,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 2,
-            "yahooTotal": 6.45,
+            "valueTotal": 6.45,
             "rank": 58
           },
           "thisWeek": {
@@ -4527,7 +4527,7 @@
             "ast": 4,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 5.92,
+            "valueTotal": 5.92,
             "rank": 73
           },
           "thisWeek": {
@@ -4563,7 +4563,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 4.78,
+            "valueTotal": 4.78,
             "rank": 97
           },
           "thisWeek": {
@@ -4599,7 +4599,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 2.38,
+            "valueTotal": 2.38,
             "rank": 151
           },
           "thisWeek": {
@@ -4635,7 +4635,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 2,
-            "yahooTotal": 5.9,
+            "valueTotal": 5.9,
             "rank": 75
           },
           "thisWeek": {
@@ -4691,7 +4691,7 @@
             "ast": 1,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 9.86,
+            "valueTotal": 9.86,
             "rank": 21
           },
           "thisWeek": {
@@ -4728,7 +4728,7 @@
             "ast": 2,
             "stl": 4,
             "blk": 0,
-            "yahooTotal": -1.12,
+            "valueTotal": -1.12,
             "rank": 266
           },
           "thisWeek": {
@@ -4765,7 +4765,7 @@
             "ast": 4,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 4.16,
+            "valueTotal": 4.16,
             "rank": 105
           },
           "thisWeek": {
@@ -4802,7 +4802,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 1.08,
+            "valueTotal": 1.08,
             "rank": 185
           },
           "thisWeek": {
@@ -4902,7 +4902,7 @@
             "ast": 3,
             "stl": 2,
             "blk": 1,
-            "yahooTotal": 18.33,
+            "valueTotal": 18.33,
             "rank": 1
           },
           "thisWeek": {
@@ -4938,7 +4938,7 @@
             "ast": 6,
             "stl": 2,
             "blk": 3,
-            "yahooTotal": 9.72,
+            "valueTotal": 9.72,
             "rank": 23
           },
           "thisWeek": {
@@ -4975,7 +4975,7 @@
             "ast": 8,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 12.12,
+            "valueTotal": 12.12,
             "rank": 10
           },
           "thisWeek": {
@@ -5012,7 +5012,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 2.43,
+            "valueTotal": 2.43,
             "rank": 150
           },
           "thisWeek": {
@@ -5048,7 +5048,7 @@
             "ast": 7,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 5.93,
+            "valueTotal": 5.93,
             "rank": 72
           },
           "thisWeek": {
@@ -5105,7 +5105,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 3.82,
+            "valueTotal": 3.82,
             "rank": 112
           },
           "thisWeek": {
@@ -5142,7 +5142,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 2.13,
+            "valueTotal": 2.13,
             "rank": 160
           },
           "thisWeek": {
@@ -5198,7 +5198,7 @@
             "ast": 1,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 3.23,
+            "valueTotal": 3.23,
             "rank": 129
           },
           "thisWeek": {
@@ -5235,7 +5235,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 1.86,
+            "valueTotal": 1.86,
             "rank": 164
           },
           "thisWeek": {
@@ -5366,7 +5366,7 @@
             "ast": 5,
             "stl": 3,
             "blk": 3,
-            "yahooTotal": 13.35,
+            "valueTotal": 13.35,
             "rank": 6
           },
           "thisWeek": {
@@ -5403,7 +5403,7 @@
             "ast": 12,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 10.37,
+            "valueTotal": 10.37,
             "rank": 17
           },
           "thisWeek": {
@@ -5440,7 +5440,7 @@
             "ast": 6,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -2.04,
+            "valueTotal": -2.04,
             "rank": 287
           },
           "thisWeek": {
@@ -5476,7 +5476,7 @@
             "ast": 2,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 1.14,
+            "valueTotal": 1.14,
             "rank": 183
           },
           "thisWeek": {
@@ -5533,7 +5533,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 4.12,
+            "valueTotal": 4.12,
             "rank": 106
           },
           "thisWeek": {
@@ -5570,7 +5570,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 1.59,
+            "valueTotal": 1.59,
             "rank": 168
           },
           "thisWeek": {
@@ -5608,7 +5608,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": -0.98,
+            "valueTotal": -0.98,
             "rank": 258
           },
           "thisWeek": {
@@ -5644,7 +5644,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -1.77,
+            "valueTotal": -1.77,
             "rank": 276
           },
           "thisWeek": {
@@ -5681,7 +5681,7 @@
             "ast": 4,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 8.5,
+            "valueTotal": 8.5,
             "rank": 32
           },
           "thisWeek": {
@@ -5718,7 +5718,7 @@
             "ast": 1,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 8.87,
+            "valueTotal": 8.87,
             "rank": 26
           },
           "thisWeek": {
@@ -5755,7 +5755,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 6.28,
+            "valueTotal": 6.28,
             "rank": 62
           },
           "thisWeek": {
@@ -5880,7 +5880,7 @@
             "ast": 1,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 6.72,
+            "valueTotal": 6.72,
             "rank": 52
           },
           "thisWeek": {
@@ -5936,7 +5936,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 7.84,
+            "valueTotal": 7.84,
             "rank": 39
           },
           "thisWeek": {
@@ -5973,7 +5973,7 @@
             "ast": 5,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 8.04,
+            "valueTotal": 8.04,
             "rank": 38
           },
           "thisWeek": {
@@ -6011,7 +6011,7 @@
             "ast": 6,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 8.45,
+            "valueTotal": 8.45,
             "rank": 33
           },
           "thisWeek": {
@@ -6047,7 +6047,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 1.06,
+            "valueTotal": 1.06,
             "rank": 187
           },
           "thisWeek": {
@@ -6084,7 +6084,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 3,
-            "yahooTotal": 6.55,
+            "valueTotal": 6.55,
             "rank": 54
           },
           "thisWeek": {
@@ -6120,7 +6120,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 2.34,
+            "valueTotal": 2.34,
             "rank": 152
           },
           "thisWeek": {
@@ -6157,7 +6157,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -0.09,
+            "valueTotal": -0.09,
             "rank": 230
           },
           "thisWeek": {
@@ -6194,7 +6194,7 @@
             "ast": 0,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -0.83,
+            "valueTotal": -0.83,
             "rank": 252
           },
           "thisWeek": {
@@ -6231,7 +6231,7 @@
             "ast": 3,
             "stl": 4,
             "blk": 1,
-            "yahooTotal": 6.96,
+            "valueTotal": 6.96,
             "rank": 49
           },
           "thisWeek": {
@@ -6268,7 +6268,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 8.25,
+            "valueTotal": 8.25,
             "rank": 36
           },
           "thisWeek": null
@@ -6401,7 +6401,7 @@
             "ast": 11,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 2.14,
+            "valueTotal": 2.14,
             "rank": 159
           },
           "thisWeek": {
@@ -6438,7 +6438,7 @@
             "ast": 4,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 6.46,
+            "valueTotal": 6.46,
             "rank": 57
           },
           "thisWeek": {
@@ -6475,7 +6475,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 6.08,
+            "valueTotal": 6.08,
             "rank": 66
           },
           "thisWeek": {
@@ -6511,7 +6511,7 @@
             "ast": 11,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 6.02,
+            "valueTotal": 6.02,
             "rank": 69
           },
           "thisWeek": {
@@ -6547,7 +6547,7 @@
             "ast": 5,
             "stl": 2,
             "blk": 3,
-            "yahooTotal": 12.21,
+            "valueTotal": 12.21,
             "rank": 8
           },
           "thisWeek": {
@@ -6584,7 +6584,7 @@
             "ast": 1,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 2.73,
+            "valueTotal": 2.73,
             "rank": 143
           },
           "thisWeek": {
@@ -6641,7 +6641,7 @@
             "ast": 4,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 2.46,
+            "valueTotal": 2.46,
             "rank": 148
           },
           "thisWeek": {
@@ -6677,7 +6677,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.3,
+            "valueTotal": 0.3,
             "rank": 217
           },
           "thisWeek": {
@@ -6714,7 +6714,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 3.54,
+            "valueTotal": 3.54,
             "rank": 117
           },
           "thisWeek": {
@@ -6750,7 +6750,7 @@
             "ast": 5,
             "stl": 3,
             "blk": 0,
-            "yahooTotal": 3.74,
+            "valueTotal": 3.74,
             "rank": 113
           },
           "thisWeek": {
@@ -6851,7 +6851,7 @@
             "ast": 3,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 4.19,
+            "valueTotal": 4.19,
             "rank": 103
           },
           "thisWeek": {
@@ -6889,7 +6889,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 1,
-            "yahooTotal": 8.63,
+            "valueTotal": 8.63,
             "rank": 29
           },
           "thisWeek": {
@@ -6926,7 +6926,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 1.7,
+            "valueTotal": 1.7,
             "rank": 167
           },
           "thisWeek": {
@@ -6982,7 +6982,7 @@
             "ast": 9,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 8.54,
+            "valueTotal": 8.54,
             "rank": 31
           },
           "thisWeek": null
@@ -7016,7 +7016,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": 0.46,
+            "valueTotal": 0.46,
             "rank": 208
           },
           "thisWeek": null
@@ -7048,7 +7048,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 1,
-            "yahooTotal": 0.51,
+            "valueTotal": 0.51,
             "rank": 206
           },
           "thisWeek": null
@@ -7080,7 +7080,7 @@
             "ast": 0,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 7.67,
+            "valueTotal": 7.67,
             "rank": 42
           },
           "thisWeek": null
@@ -7113,7 +7113,7 @@
             "ast": 4,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 4.93,
+            "valueTotal": 4.93,
             "rank": 96
           },
           "thisWeek": {
@@ -7150,7 +7150,7 @@
             "ast": 1,
             "stl": 0,
             "blk": 0,
-            "yahooTotal": -1.33,
+            "valueTotal": -1.33,
             "rank": 268
           },
           "thisWeek": null
@@ -7183,7 +7183,7 @@
             "ast": 1,
             "stl": 2,
             "blk": 0,
-            "yahooTotal": 3.41,
+            "valueTotal": 3.41,
             "rank": 121
           },
           "thisWeek": null
@@ -7216,7 +7216,7 @@
             "ast": 2,
             "stl": 1,
             "blk": 0,
-            "yahooTotal": 5.83,
+            "valueTotal": 5.83,
             "rank": 78
           },
           "thisWeek": null

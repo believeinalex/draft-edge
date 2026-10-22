@@ -103,7 +103,7 @@ function rotoPoints(teams, prefix = 'proj') {
     .forEach((t, i) => { t[rankKey] = i + 1; });
 }
 
-const STAT_KEYS = ['gp', 'mpg', 'fgPct', 'fgm', 'fga', 'ftPct', 'ftm', 'fta', 'tpm', 'pts', 'treb', 'ast', 'stl', 'blk', 'yahooTotal', 'rank'];
+const STAT_KEYS = ['gp', 'mpg', 'fgPct', 'fgm', 'fga', 'ftPct', 'ftm', 'fta', 'tpm', 'pts', 'treb', 'ast', 'stl', 'blk', 'valueTotal', 'rank'];
 
 /**
  * Attaches season-to-date stats (stats/latest.json) to every rostered player and
@@ -393,9 +393,9 @@ function main() {
     const dnp = t.roster.filter(r => !r.stats).map(r => r.name);
     if (dnp.length) console.log(`No stats yet for ${t.name}: ${dnp.join(', ')}`);
   }
-  console.log('\nTop unrostered players by Yahoo season-to-date value:');
+  console.log('\nTop unrostered players by Hashtag Basketball season-to-date value:');
   for (const p of freeAgentLines.slice(0, 10)) {
-    console.log(`  ${String(p.rank).padStart(3)}  ${p.name} (${p.nbaTeam} ${p.pos.join('/')}) GP ${p.gp}, ${p.mpg} mpg, total ${p.yahooTotal}`);
+    console.log(`  ${String(p.rank).padStart(3)}  ${p.name} (${p.nbaTeam} ${p.pos.join('/')}) GP ${p.gp}, ${p.mpg} mpg, total ${p.valueTotal}`);
   }
 }
 

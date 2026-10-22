@@ -4,8 +4,8 @@ const { normName } = require('../engine.js');
 /**
  * Booms & busts: season-to-date production vs. draft price.
  *
- * "Earned $" is rank-matched to the draft: the k-th best player by Yahoo's
- * season-to-date total is worth the k-th highest price paid at the draft, and
+ * "Earned $" is rank-matched to the draft: the k-th best player by Hashtag
+ * Basketball's season-to-date value total (8-cat, no TO) is worth the k-th highest price paid at the draft, and
  * anyone outside the top 180 (the number drafted) is worth $0. Surplus = earned − paid.
  *
  * Drafted players whose NBA team hasn't played yet are left out. Drafted players
@@ -19,7 +19,7 @@ const normTeam = t => NBA_TEAM_ALIASES[t] || t;
 
 function valueReport(league, stats) {
   const prices = league.draft.map(p => p.price).sort((a, b) => b - a);
-  const ranked = [...stats.players].sort((a, b) => b.yahooTotal - a.yahooTotal);
+  const ranked = [...stats.players].sort((a, b) => b.valueTotal - a.valueTotal);
   const earnedByName = new Map(ranked.map((p, i) => [normName(p.name), i < prices.length ? prices[i] : 0]));
   const teamsPlayed = new Set(stats.players.map(p => p.nbaTeam));
 
@@ -51,8 +51,8 @@ function valueReport(league, stats) {
       paid,
       earned,
       surplus: earned - paid,
-      yahooRank: statLine ? statLine.rank : null,
-      yahooTotal: statLine ? statLine.yahooTotal : null,
+      valueRank: statLine ? statLine.rank : null,
+      valueTotal: statLine ? statLine.valueTotal : null,
       line: statLine
     });
   }
@@ -72,14 +72,14 @@ function main() {
   const mark = r => (r.owner === league.myTeam ? '*' : (league.managedTeams || []).includes(r.owner) ? '+' : ' ');
   const show = (title, list) => {
     console.log(`\n${title}`);
-    console.log('   Player                     Paid  Earned  Surplus  YRk  Owner                       Line');
+    console.log('   Player                     Paid  Earned  Surplus  VRk  Owner                       Line');
     for (const r of list) {
       const owner = r.draftedBy && r.draftedBy !== r.owner ? `${r.owner} (via ${r.draftedBy})` : r.owner;
       console.log(`${mark(r)}  ${r.name.padEnd(25).slice(0, 25)} ${('$' + r.paid).padStart(5)} ${('$' + r.earned).padStart(7)} ` +
-        `${((r.surplus >= 0 ? '+' : '') + r.surplus).padStart(8)}  ${String(r.yahooRank ?? '-').padStart(4)}  ${owner.padEnd(27)} ${fmtLine(r.line)}`);
+        `${((r.surplus >= 0 ? '+' : '') + r.surplus).padStart(8)}  ${String(r.valueRank ?? '-').padStart(4)}  ${owner.padEnd(27)} ${fmtLine(r.line)}`);
     }
   };
-  console.log(`Stats as of ${stats.asOf}. Earned $ = draft price at the same rank as Yahoo season-to-date total (* mine, + managed).`);
+  console.log(`Stats as of ${stats.asOf}. Earned $ = draft price at the same rank as Hashtag Basketball season-to-date value (* mine, + managed).`);
   const draftedRows = rows.filter(r => r.draftedBy);
   show(`Top ${n} booms (drafted players):`, [...draftedRows].sort((a, b) => b.surplus - a.surplus).slice(0, n));
   show(`Top ${n} busts (drafted players):`, [...draftedRows].sort((a, b) => a.surplus - b.surplus).slice(0, n));

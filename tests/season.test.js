@@ -58,7 +58,7 @@ test('applyTransactions handles add/drops, two-way trades, and counts acquisitio
   ]), /not on B's roster/);
 });
 
-test('parseStatsText handles rank notes, blank positions, shooting splits and duplicate rows', () => {
+test('parseStatsText handles rank moves, blank positions, shooting splits and duplicate rows', () => {
   const { parseStatsText } = require('../stats/parse_stats.js');
   const text = [
     'R#\tPLAYER\tPOS\tTEAM\tGP\tMPG\tFG%\tFT%\t3PM\tPTS\tTREB\tAST\tSTL\tBLK\tTOTAL',
@@ -72,12 +72,13 @@ test('parseStatsText handles rank notes, blank positions, shooting splits and du
   assert.equal(players.length, 4);
   assert.deepEqual(duplicates, ['Chaney Johnson']);
   assert.equal(players[0].rank, 5);
-  assert.equal(players[0].rankNote, 2);
+  assert.equal(players[0].rankMove, 2);
+  assert.equal(players[0].rankMoveSigned, false);
   assert.equal(players[0].fgm, 10);
   assert.equal(players[0].fta, 16);
-  assert.equal(players[1].rankNote, null);
+  assert.equal(players[1].rankMove, null);
   assert.deepEqual(players[2].pos, []);
-  assert.equal(players[3].yahooTotal, -2.49);
+  assert.equal(players[3].valueTotal, -2.49);
 });
 
 test('attachSeasonStats does not fuzzy-match a different player on another team', () => {
@@ -139,7 +140,7 @@ test('attachLineups infers a missing team name, expands abbreviations and flags 
 
 test('valueReport rank-matches earned $ to draft prices and skips teams that have not played', () => {
   const { valueReport } = require('../season/value_report.js');
-  const line = (rank, name, nbaTeam, yahooTotal) => ({ rank, name, nbaTeam, yahooTotal, gp: 1 });
+  const line = (rank, name, nbaTeam, valueTotal) => ({ rank, name, nbaTeam, valueTotal, gp: 1 });
   const stats = { players: [line(1, 'Cheap Star', 'BOS', 10), line(2, 'Pricey Flop', 'LAL', 1)] };
   const draft = [
     { name: 'Pricey Flop', nbaTeam: 'LAL', price: 50, team: 'A' },
@@ -160,4 +161,31 @@ test('valueReport rank-matches earned $ to draft prices and skips teams that hav
   assert.equal(by('Pricey Flop').earned, 30);  // second-best earns the second price
   assert.equal(by('Hurt Guy').earned, 0);      // team played, he didn't
   assert.deepEqual(waiting, ['Idle Guy']);     // DEN hasn't played
+});
+
+test('fetch_htb tableToText matches the pasted format, with signed rank moves and full names', () => {
+  const { tableToText, formFields } = require('../stats/fetch_htb.js');
+  const { parseStatsText } = require('../stats/parse_stats.js');
+  const head = ['R#', 'PLAYER', 'POS', 'TEAM', 'GP', 'MPG', 'FG%', 'FT%', '3PM', 'PTS', 'TREB', 'AST', 'STL', 'BLK', 'TOTAL'];
+  const shoot = (p, m, a) => `<input type="hidden" name="x" value="1" /><span class="float-start">${p}</span> <span class="float-end small">(${m}/${a})</span>`;
+  const row = (rankCell, nameCell, pos) => `<tr><td> ${rankCell} </td><td>${nameCell}</td><td>${pos}</td><td>ORL</td><td>1</td><td>41.2</td>` +
+    `<td>${shoot('0.833', '10.0', '12.0')}</td><td>${shoot('0.750', '12.0', '16.0')}</td>` +
+    ['3.0', '35.0', '7.0', '10.0', '1.0', '0.0', '13.37'].map(v => `<td><span>${v}</span></td>`).join('') + '</tr>';
+  const html = `<form><input type="hidden" name="__VIEWSTATE" value="abc" /><input type="checkbox" name="CBTO" checked="checked" />` +
+    `<select name="DDSHOW"><option value="200" selected="selected">200</option><option value="900">All</option></select></form>` +
+    `<table id="ContentPlaceHolder1_GridView1"><tr>${head.map(h => `<th>${h}</th>`).join('')}</tr>` +
+    row('5 <span class="small text-muted"><i class="fa fa-arrow-circle-up"></i> 2</span>',
+      '<a id="x_HyperLink1_0" class="d-none">Paolo Banchero</a><a id="x_HyperLinkShort_0">P.Banchero</a>', 'PF') +
+    row('6 <span class="small text-muted"><i class="fa fa-arrow-circle-down"></i> 1</span>',
+      '<a id="x_HyperLink1_1">Tobe Awaka</a><a id="x_HyperLinkShort_1">T.Awaka</a>', '') +
+    '</table>';
+  const txt = tableToText(html);
+  assert.equal(txt.split('\n')[1], '5  +2\tPaolo Banchero\tPF\tORL\t1\t41.2\t0.833(10.0/12.0)\t0.750(12.0/16.0)\t3.0\t35.0\t7.0\t10.0\t1.0\t0.0\t13.37');
+  const { players } = parseStatsText(txt);
+  assert.deepEqual(players.map(p => [p.name, p.rankMove, p.rankMoveSigned]), [['Paolo Banchero', 2, true], ['Tobe Awaka', -1, true]]);
+  assert.deepEqual(players[1].pos, []);
+  const f = formFields(html);
+  assert.equal(f.get('__VIEWSTATE'), 'abc');
+  assert.equal(f.get('CBTO'), 'on');
+  assert.equal(f.get('DDSHOW'), '200');
 });

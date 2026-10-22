@@ -8,6 +8,7 @@
     "prices": "node utils/calculate_draft_prices.js",
     "season": "node season/build_season.js",
     "stats": "node stats/parse_stats.js && node season/build_season.js",
+    "fetch-stats": "NODE_USE_ENV_PROXY=1 node --no-warnings stats/fetch_htb.js && npm run -s stats",
     "lineups": "node season/parse_lineups.js && node season/build_season.js",
     "value": "node season/value_report.js"
   },

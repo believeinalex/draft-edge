@@ -2,15 +2,18 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Parses Yahoo player-list stat exports (copied from the Players page) into JSON.
+ * Parses Hashtag Basketball rankings tables (pasted or fetched) into JSON.
  *
  * Raw snapshots live in stats/raw/YYYY-MM-DD.txt. Each one is parsed to
  * stats/snapshots/YYYY-MM-DD.json, and the newest is copied to stats/latest.json.
  *
- * Row format (tab-separated; header rows repeat every 12 lines and are skipped):
- *   5  2	Paolo Banchero	PF	ORL	1	41.2	0.833(10.0/12.0)	0.750(12.0/16.0)	3.0	35.0	7.0	10.0	1.0	0.0	13.37
- * The R# column is the Yahoo rank, optionally followed by a second number whose
- * meaning is unclear (kept as `rankNote`). Stat columns are per-game averages.
+ * Row format (tab-separated; repeated header rows are skipped):
+ *   5  +2	Paolo Banchero	PF	ORL	1	41.2	0.833(10.0/12.0)	0.750(12.0/16.0)	3.0	35.0	7.0	10.0	1.0	0.0	13.37
+ * The data comes from Hashtag Basketball's rankings page (pasted, or fetched by
+ * stats/fetch_htb.js). The R# column is the rank, optionally followed by the rank
+ * movement since Hashtag's previous update, kept as `rankMove`. Fetched files are
+ * signed (+2 = up two places); pasted ones lose the arrow, so only the size is known
+ * (`rankMoveSigned: false`). Stat columns are per-game averages.
  *
  * Usage: node stats/parse_stats.js
  */
@@ -35,7 +38,8 @@ function parseStatsText(text) {
     const cols = line.split('\t');
     if (cols.length < 15) throw new Error(`Expected 15 columns, got ${cols.length}: ${line}`);
     const [rankCol, name, pos, nbaTeam, gp, mpg, fg, ft, tpm, pts, treb, ast, stl, blk, total] = cols;
-    const [rank, rankNote] = rankCol.trim().split(/\s+/).map(n => parseInt(n, 10));
+    const [rankStr, moveStr] = rankCol.trim().split(/\s+/);
+    const rank = parseInt(rankStr, 10);
     const key = name.trim();
     if (seen.has(key)) {
       duplicates.push(key);
@@ -46,7 +50,8 @@ function parseStatsText(text) {
     const ftS = parseShooting(ft);
     players.push({
       rank,
-      rankNote: Number.isNaN(rankNote) || rankNote === undefined ? null : rankNote,
+      rankMove: moveStr ? parseInt(moveStr, 10) : null,
+      rankMoveSigned: moveStr ? /^[+-]/.test(moveStr) : null,
       name: key,
       pos: pos.trim() ? pos.trim().split(',') : [],
       nbaTeam: nbaTeam.trim(),
@@ -60,7 +65,7 @@ function parseStatsText(text) {
       ast: parseFloat(ast),
       stl: parseFloat(stl),
       blk: parseFloat(blk),
-      yahooTotal: parseFloat(total)
+      valueTotal: parseFloat(total)
     });
   }
   return { players, duplicates: [...new Set(duplicates)] };

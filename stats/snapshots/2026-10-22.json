@@ -5,7 +5,8 @@
   "players": [
     {
       "rank": 1,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Anthony Edwards",
       "pos": [
         "PG",
@@ -26,11 +27,12 @@
       "ast": 3,
       "stl": 2,
       "blk": 1,
-      "yahooTotal": 18.33
+      "valueTotal": 18.33
     },
     {
       "rank": 2,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Paul George",
       "pos": [
         "SF",
@@ -51,11 +53,12 @@
       "ast": 3,
       "stl": 5,
       "blk": 0,
-      "yahooTotal": 16.9
+      "valueTotal": 16.9
     },
     {
       "rank": 3,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Ty Jerome",
       "pos": [
         "PG",
@@ -76,11 +79,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 16.44
+      "valueTotal": 16.44
     },
     {
       "rank": 4,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Luka Doncic",
       "pos": [
         "PG",
@@ -101,11 +105,12 @@
       "ast": 7,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 14.47
+      "valueTotal": 14.47
     },
     {
       "rank": 5,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Paolo Banchero",
       "pos": [
         "PF"
@@ -125,11 +130,12 @@
       "ast": 10,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 13.37
+      "valueTotal": 13.37
     },
     {
       "rank": 6,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Tyrese Maxey",
       "pos": [
         "PG"
@@ -149,11 +155,12 @@
       "ast": 5,
       "stl": 3,
       "blk": 3,
-      "yahooTotal": 13.35
+      "valueTotal": 13.35
     },
     {
       "rank": 7,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Shai Gilgeous-Alexander",
       "pos": [
         "PG"
@@ -173,11 +180,12 @@
       "ast": 4,
       "stl": 3,
       "blk": 3,
-      "yahooTotal": 13.35
+      "valueTotal": 13.35
     },
     {
       "rank": 8,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Yves Missi",
       "pos": [
         "C"
@@ -197,11 +205,12 @@
       "ast": 5,
       "stl": 2,
       "blk": 3,
-      "yahooTotal": 12.21
+      "valueTotal": 12.21
     },
     {
       "rank": 9,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Dejounte Murray",
       "pos": [
         "PG"
@@ -221,11 +230,12 @@
       "ast": 7,
       "stl": 2,
       "blk": 3,
-      "yahooTotal": 12.14
+      "valueTotal": 12.14
     },
     {
       "rank": 10,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Domantas Sabonis",
       "pos": [
         "PF",
@@ -246,11 +256,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 12.12
+      "valueTotal": 12.12
     },
     {
       "rank": 11,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Anthony Davis",
       "pos": [
         "PF",
@@ -271,11 +282,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 1,
-      "yahooTotal": 12.05
+      "valueTotal": 12.05
     },
     {
       "rank": 12,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Damian Lillard",
       "pos": [
         "PG"
@@ -295,11 +307,12 @@
       "ast": 6,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 11.49
+      "valueTotal": 11.49
     },
     {
       "rank": 13,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Austin Reaves",
       "pos": [
         "PG",
@@ -321,11 +334,12 @@
       "ast": 6,
       "stl": 2,
       "blk": 1,
-      "yahooTotal": 11.39
+      "valueTotal": 11.39
     },
     {
       "rank": 14,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Julius Randle",
       "pos": [
         "PF"
@@ -345,11 +359,12 @@
       "ast": 7,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 11.09
+      "valueTotal": 11.09
     },
     {
       "rank": 15,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Cooper Flagg",
       "pos": [
         "SG",
@@ -371,11 +386,12 @@
       "ast": 2,
       "stl": 3,
       "blk": 1,
-      "yahooTotal": 10.99
+      "valueTotal": 10.99
     },
     {
       "rank": 16,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Kawhi Leonard",
       "pos": [
         "SG",
@@ -397,11 +413,12 @@
       "ast": 2,
       "stl": 4,
       "blk": 1,
-      "yahooTotal": 10.8
+      "valueTotal": 10.8
     },
     {
       "rank": 17,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Tyrese Haliburton",
       "pos": [
         "PG",
@@ -422,11 +439,12 @@
       "ast": 12,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 10.37
+      "valueTotal": 10.37
     },
     {
       "rank": 18,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Immanuel Quickley",
       "pos": [
         "PG",
@@ -447,11 +465,12 @@
       "ast": 7,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 10.13
+      "valueTotal": 10.13
     },
     {
       "rank": 19,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Moussa Diabaté",
       "pos": [
         "C"
@@ -471,11 +490,12 @@
       "ast": 3,
       "stl": 5,
       "blk": 0,
-      "yahooTotal": 10.08
+      "valueTotal": 10.08
     },
     {
       "rank": 20,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Victor Wembanyama",
       "pos": [
         "C"
@@ -495,11 +515,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 6,
-      "yahooTotal": 9.96
+      "valueTotal": 9.96
     },
     {
       "rank": 21,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jabari Smith Jr.",
       "pos": [
         "PF",
@@ -520,11 +541,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 9.86
+      "valueTotal": 9.86
     },
     {
       "rank": 22,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Nickeil Alexander-Walker",
       "pos": [
         "PG",
@@ -545,11 +567,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 9.84
+      "valueTotal": 9.84
     },
     {
       "rank": 23,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Joel Embiid",
       "pos": [
         "C"
@@ -569,11 +592,12 @@
       "ast": 6,
       "stl": 2,
       "blk": 3,
-      "yahooTotal": 9.72
+      "valueTotal": 9.72
     },
     {
       "rank": 24,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Ja Morant",
       "pos": [
         "PG"
@@ -593,11 +617,12 @@
       "ast": 8,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 9.7
+      "valueTotal": 9.7
     },
     {
       "rank": 25,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Chet Holmgren",
       "pos": [
         "PF",
@@ -618,11 +643,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 4,
-      "yahooTotal": 8.91
+      "valueTotal": 8.91
     },
     {
       "rank": 26,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Michael Porter Jr.",
       "pos": [
         "SF",
@@ -643,11 +669,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 8.87
+      "valueTotal": 8.87
     },
     {
       "rank": 27,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Cade Cunningham",
       "pos": [
         "PG",
@@ -668,11 +695,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 8.79
+      "valueTotal": 8.79
     },
     {
       "rank": 28,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Walker Kessler",
       "pos": [
         "C"
@@ -692,11 +720,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 8.79
+      "valueTotal": 8.79
     },
     {
       "rank": 29,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Kevin Durant",
       "pos": [
         "SG",
@@ -718,11 +747,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 8.63
+      "valueTotal": 8.63
     },
     {
       "rank": 30,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Karl-Anthony Towns",
       "pos": [
         "PF",
@@ -743,11 +773,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 8.55
+      "valueTotal": 8.55
     },
     {
       "rank": 31,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Tyler Herro",
       "pos": [
         "PG",
@@ -768,11 +799,12 @@
       "ast": 9,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 8.54
+      "valueTotal": 8.54
     },
     {
       "rank": 32,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Grayson Allen",
       "pos": [
         "SG",
@@ -793,11 +825,12 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 8.5
+      "valueTotal": 8.5
     },
     {
       "rank": 33,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Jaylen Brown",
       "pos": [
         "SG",
@@ -819,11 +852,12 @@
       "ast": 6,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 8.45
+      "valueTotal": 8.45
     },
     {
       "rank": 34,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Kris Dunn",
       "pos": [
         "PG",
@@ -844,11 +878,12 @@
       "ast": 7,
       "stl": 3,
       "blk": 2,
-      "yahooTotal": 8.36
+      "valueTotal": 8.36
     },
     {
       "rank": 35,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Keaton Wagler",
       "pos": [
         "SG"
@@ -868,11 +903,12 @@
       "ast": 5,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 8.32
+      "valueTotal": 8.32
     },
     {
       "rank": 36,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Jared McCain",
       "pos": [
         "PG",
@@ -893,11 +929,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 8.25
+      "valueTotal": 8.25
     },
     {
       "rank": 37,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Zion Williamson",
       "pos": [
         "PF",
@@ -918,11 +955,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 8.06
+      "valueTotal": 8.06
     },
     {
       "rank": 38,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Alperen Sengün",
       "pos": [
         "PF",
@@ -943,11 +981,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 8.04
+      "valueTotal": 8.04
     },
     {
       "rank": 39,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Devin Booker",
       "pos": [
         "PG",
@@ -968,11 +1007,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 7.84
+      "valueTotal": 7.84
     },
     {
       "rank": 40,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jaden McDaniels",
       "pos": [
         "SF"
@@ -992,11 +1032,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 7.8
+      "valueTotal": 7.8
     },
     {
       "rank": 41,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Brook Lopez",
       "pos": [
         "C"
@@ -1016,11 +1057,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 7.75
+      "valueTotal": 7.75
     },
     {
       "rank": 42,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Wendell Carter Jr.",
       "pos": [
         "C"
@@ -1040,11 +1082,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 7.67
+      "valueTotal": 7.67
     },
     {
       "rank": 43,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Fred VanVleet",
       "pos": [
         "PG"
@@ -1064,11 +1107,12 @@
       "ast": 11,
       "stl": 3,
       "blk": 1,
-      "yahooTotal": 7.63
+      "valueTotal": 7.63
     },
     {
       "rank": 44,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jalen Duren",
       "pos": [
         "C"
@@ -1088,11 +1132,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 7.53
+      "valueTotal": 7.53
     },
     {
       "rank": 45,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Naz Reid",
       "pos": [
         "PF",
@@ -1113,11 +1158,12 @@
       "ast": 7,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 7.45
+      "valueTotal": 7.45
     },
     {
       "rank": 46,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "LaMelo Ball",
       "pos": [
         "PG"
@@ -1137,11 +1183,12 @@
       "ast": 6,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 7.41
+      "valueTotal": 7.41
     },
     {
       "rank": 47,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Dyson Daniels",
       "pos": [
         "SG",
@@ -1162,11 +1209,12 @@
       "ast": 3,
       "stl": 5,
       "blk": 0,
-      "yahooTotal": 7.38
+      "valueTotal": 7.38
     },
     {
       "rank": 48,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jaxson Hayes",
       "pos": [
         "C"
@@ -1186,11 +1234,12 @@
       "ast": 3,
       "stl": 2,
       "blk": 6,
-      "yahooTotal": 7.25
+      "valueTotal": 7.25
     },
     {
       "rank": 49,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jonathan Kuminga",
       "pos": [
         "SF",
@@ -1211,11 +1260,12 @@
       "ast": 3,
       "stl": 4,
       "blk": 1,
-      "yahooTotal": 6.96
+      "valueTotal": 6.96
     },
     {
       "rank": 50,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Bilal Coulibaly",
       "pos": [
         "SG",
@@ -1236,11 +1286,12 @@
       "ast": 1,
       "stl": 4,
       "blk": 2,
-      "yahooTotal": 6.91
+      "valueTotal": 6.91
     },
     {
       "rank": 51,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Derrick White",
       "pos": [
         "PG",
@@ -1261,11 +1312,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 6.76
+      "valueTotal": 6.76
     },
     {
       "rank": 52,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Stephen Curry",
       "pos": [
         "PG"
@@ -1285,11 +1337,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 6.72
+      "valueTotal": 6.72
     },
     {
       "rank": 53,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Andrew Nembhard",
       "pos": [
         "PG",
@@ -1310,11 +1363,12 @@
       "ast": 9,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 6.59
+      "valueTotal": 6.59
     },
     {
       "rank": 54,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Ace Bailey",
       "pos": [
         "SF",
@@ -1335,11 +1389,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 3,
-      "yahooTotal": 6.55
+      "valueTotal": 6.55
     },
     {
       "rank": 55,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "CJ McCollum",
       "pos": [
         "PG",
@@ -1360,11 +1415,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 6.53
+      "valueTotal": 6.53
     },
     {
       "rank": 56,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Kyshawn George",
       "pos": [
         "SG",
@@ -1386,11 +1442,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 6.51
+      "valueTotal": 6.51
     },
     {
       "rank": 57,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Bam Adebayo",
       "pos": [
         "PF",
@@ -1411,11 +1468,12 @@
       "ast": 4,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 6.46
+      "valueTotal": 6.46
     },
     {
       "rank": 58,
-      "rankNote": 12,
+      "rankMove": 12,
+      "rankMoveSigned": false,
       "name": "Jaren Jackson Jr.",
       "pos": [
         "PF",
@@ -1436,11 +1494,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 6.45
+      "valueTotal": 6.45
     },
     {
       "rank": 59,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jalen Johnson",
       "pos": [
         "SF",
@@ -1461,11 +1520,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 6.44
+      "valueTotal": 6.44
     },
     {
       "rank": 60,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Ausar Thompson",
       "pos": [
         "SG",
@@ -1487,11 +1547,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 6.43
+      "valueTotal": 6.43
     },
     {
       "rank": 61,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Obi Toppin",
       "pos": [
         "SF",
@@ -1512,11 +1573,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 6.34
+      "valueTotal": 6.34
     },
     {
       "rank": 62,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Stephon Castle",
       "pos": [
         "PG",
@@ -1537,11 +1599,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 6.28
+      "valueTotal": 6.28
     },
     {
       "rank": 63,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Scottie Barnes",
       "pos": [
         "SF",
@@ -1563,11 +1626,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 6.23
+      "valueTotal": 6.23
     },
     {
       "rank": 64,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Derik Queen",
       "pos": [
         "PF",
@@ -1588,11 +1652,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 6.11
+      "valueTotal": 6.11
     },
     {
       "rank": 65,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Andre Drummond",
       "pos": [
         "C"
@@ -1612,11 +1677,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 6.1
+      "valueTotal": 6.1
     },
     {
       "rank": 66,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Toumani Camara",
       "pos": [
         "SF",
@@ -1637,11 +1703,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 6.08
+      "valueTotal": 6.08
     },
     {
       "rank": 67,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Julian Champagnie",
       "pos": [
         "SF",
@@ -1662,11 +1729,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 3,
-      "yahooTotal": 6.08
+      "valueTotal": 6.08
     },
     {
       "rank": 68,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Lauri Markkanen",
       "pos": [
         "SF",
@@ -1687,11 +1755,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 6.04
+      "valueTotal": 6.04
     },
     {
       "rank": 69,
-      "rankNote": 18,
+      "rankMove": 18,
+      "rankMoveSigned": false,
       "name": "Davion Mitchell",
       "pos": [
         "PG"
@@ -1711,11 +1780,12 @@
       "ast": 11,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 6.02
+      "valueTotal": 6.02
     },
     {
       "rank": 70,
-      "rankNote": 13,
+      "rankMove": 13,
+      "rankMoveSigned": false,
       "name": "GG Jackson",
       "pos": [
         "SF",
@@ -1737,11 +1807,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 5.99
+      "valueTotal": 5.99
     },
     {
       "rank": 71,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Javonte Green",
       "pos": [
         "SG",
@@ -1762,11 +1833,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 5.98
+      "valueTotal": 5.98
     },
     {
       "rank": 72,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "De'Aaron Fox",
       "pos": [
         "PG"
@@ -1786,11 +1858,12 @@
       "ast": 7,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.93
+      "valueTotal": 5.93
     },
     {
       "rank": 73,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Deni Avdija",
       "pos": [
         "SG",
@@ -1812,11 +1885,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 5.92
+      "valueTotal": 5.92
     },
     {
       "rank": 74,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jaime Jaquez Jr.",
       "pos": [
         "SG",
@@ -1838,11 +1912,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 5.9
+      "valueTotal": 5.9
     },
     {
       "rank": 75,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Ivica Zubac",
       "pos": [
         "C"
@@ -1862,11 +1937,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 5.9
+      "valueTotal": 5.9
     },
     {
       "rank": 76,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Josh Hart",
       "pos": [
         "SG",
@@ -1887,11 +1963,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 5.89
+      "valueTotal": 5.89
     },
     {
       "rank": 77,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Tristan da Silva",
       "pos": [
         "SF",
@@ -1912,11 +1989,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 5.83
+      "valueTotal": 5.83
     },
     {
       "rank": 78,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Duncan Robinson",
       "pos": [
         "SG",
@@ -1937,11 +2015,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.83
+      "valueTotal": 5.83
     },
     {
       "rank": 79,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Keyonte George",
       "pos": [
         "PG",
@@ -1962,11 +2041,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.8
+      "valueTotal": 5.8
     },
     {
       "rank": 80,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Darius Garland",
       "pos": [
         "PG"
@@ -1986,11 +2066,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.78
+      "valueTotal": 5.78
     },
     {
       "rank": 81,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Aaron Wiggins",
       "pos": [
         "SG",
@@ -2011,11 +2092,12 @@
       "ast": 0,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 5.75
+      "valueTotal": 5.75
     },
     {
       "rank": 82,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Day'Ron Sharpe",
       "pos": [
         "C"
@@ -2035,11 +2117,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 3,
-      "yahooTotal": 5.73
+      "valueTotal": 5.73
     },
     {
       "rank": 83,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Marcus Sasser",
       "pos": [
         "PG"
@@ -2059,11 +2142,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.73
+      "valueTotal": 5.73
     },
     {
       "rank": 84,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Kasparas Jakucionis",
       "pos": [
         "PG",
@@ -2084,11 +2168,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 5.69
+      "valueTotal": 5.69
     },
     {
       "rank": 85,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Brandon Williams",
       "pos": [
         "PG"
@@ -2108,11 +2193,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 5.68
+      "valueTotal": 5.68
     },
     {
       "rank": 86,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Dennis Schröder",
       "pos": [
         "PG",
@@ -2133,11 +2219,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 5.68
+      "valueTotal": 5.68
     },
     {
       "rank": 87,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "LeBron James",
       "pos": [
         "SF",
@@ -2158,11 +2245,12 @@
       "ast": 7,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 5.45
+      "valueTotal": 5.45
     },
     {
       "rank": 88,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Naji Marshall",
       "pos": [
         "SG",
@@ -2184,11 +2272,12 @@
       "ast": 6,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.44
+      "valueTotal": 5.44
     },
     {
       "rank": 89,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Trae Young",
       "pos": [
         "PG"
@@ -2208,11 +2297,12 @@
       "ast": 13,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 5.27
+      "valueTotal": 5.27
     },
     {
       "rank": 90,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Precious Achiuwa",
       "pos": [
         "PF",
@@ -2233,11 +2323,12 @@
       "ast": 2,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 5.25
+      "valueTotal": 5.25
     },
     {
       "rank": 91,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Desmond Bane",
       "pos": [
         "SG",
@@ -2258,11 +2349,12 @@
       "ast": 2,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 5.07
+      "valueTotal": 5.07
     },
     {
       "rank": 92,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Svi Mykhailiuk",
       "pos": [
         "SG",
@@ -2283,11 +2375,12 @@
       "ast": 2,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 5.07
+      "valueTotal": 5.07
     },
     {
       "rank": 93,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Giannis Antetokounmpo",
       "pos": [
         "PF",
@@ -2308,11 +2401,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 5.03
+      "valueTotal": 5.03
     },
     {
       "rank": 94,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Myles Turner",
       "pos": [
         "C"
@@ -2332,11 +2426,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 4.98
+      "valueTotal": 4.98
     },
     {
       "rank": 95,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Zach LaVine",
       "pos": [
         "PG",
@@ -2358,11 +2453,12 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 4.93
+      "valueTotal": 4.93
     },
     {
       "rank": 96,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Amen Thompson",
       "pos": [
         "PG",
@@ -2383,11 +2479,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 4.93
+      "valueTotal": 4.93
     },
     {
       "rank": 97,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Kyrie Irving",
       "pos": [
         "PG"
@@ -2407,11 +2504,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 4.78
+      "valueTotal": 4.78
     },
     {
       "rank": 98,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Franz Wagner",
       "pos": [
         "SF",
@@ -2432,11 +2530,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 4.69
+      "valueTotal": 4.69
     },
     {
       "rank": 99,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Bub Carrington",
       "pos": [
         "PG",
@@ -2457,11 +2556,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 4.66
+      "valueTotal": 4.66
     },
     {
       "rank": 100,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Dylan Harper",
       "pos": [
         "PG",
@@ -2482,11 +2582,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 4.59
+      "valueTotal": 4.59
     },
     {
       "rank": 101,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Zaccharie Risacher",
       "pos": [
         "SF",
@@ -2507,11 +2608,12 @@
       "ast": 2,
       "stl": 5,
       "blk": 0,
-      "yahooTotal": 4.53
+      "valueTotal": 4.53
     },
     {
       "rank": 102,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Ja'Kobe Walter",
       "pos": [
         "PG",
@@ -2532,11 +2634,12 @@
       "ast": 4,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 4.19
+      "valueTotal": 4.19
     },
     {
       "rank": 103,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jalen Brunson",
       "pos": [
         "PG"
@@ -2556,11 +2659,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 4.19
+      "valueTotal": 4.19
     },
     {
       "rank": 104,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Keon Ellis",
       "pos": [
         "SG",
@@ -2581,11 +2685,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 1,
-      "yahooTotal": 4.16
+      "valueTotal": 4.16
     },
     {
       "rank": 105,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Quentin Grimes",
       "pos": [
         "SG",
@@ -2606,11 +2711,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 4.16
+      "valueTotal": 4.16
     },
     {
       "rank": 106,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jalen Smith",
       "pos": [
         "PF",
@@ -2631,11 +2737,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 4.12
+      "valueTotal": 4.12
     },
     {
       "rank": 107,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Jerami Grant",
       "pos": [
         "SF",
@@ -2656,11 +2763,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 4.08
+      "valueTotal": 4.08
     },
     {
       "rank": 108,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Derrick Jones Jr.",
       "pos": [
         "SF",
@@ -2681,11 +2789,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 4.03
+      "valueTotal": 4.03
     },
     {
       "rank": 109,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Collin Murray-Boyles",
       "pos": [
         "PF",
@@ -2706,11 +2815,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 3.91
+      "valueTotal": 3.91
     },
     {
       "rank": 110,
-      "rankNote": 14,
+      "rankMove": 14,
+      "rankMoveSigned": false,
       "name": "Draymond Green",
       "pos": [
         "PF",
@@ -2731,11 +2841,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 3.86
+      "valueTotal": 3.86
     },
     {
       "rank": 111,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Zach Edey",
       "pos": [
         "C"
@@ -2755,11 +2866,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 3.83
+      "valueTotal": 3.83
     },
     {
       "rank": 112,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Ayo Dosunmu",
       "pos": [
         "PG",
@@ -2780,11 +2892,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 3.82
+      "valueTotal": 3.82
     },
     {
       "rank": 113,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Scotty Pippen Jr.",
       "pos": [
         "PG"
@@ -2804,11 +2917,12 @@
       "ast": 5,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 3.74
+      "valueTotal": 3.74
     },
     {
       "rank": 114,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jose Alvarado",
       "pos": [
         "PG"
@@ -2828,11 +2942,12 @@
       "ast": 3,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 3.72
+      "valueTotal": 3.72
     },
     {
       "rank": 115,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Quenton Jackson",
       "pos": [
         "PG",
@@ -2853,11 +2968,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 3.69
+      "valueTotal": 3.69
     },
     {
       "rank": 116,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Payton Pritchard",
       "pos": [
         "PG"
@@ -2877,11 +2993,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 3.6
+      "valueTotal": 3.6
     },
     {
       "rank": 117,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jake LaRavia",
       "pos": [
         "SF",
@@ -2902,11 +3019,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.54
+      "valueTotal": 3.54
     },
     {
       "rank": 118,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Ryan Kalkbrenner",
       "pos": [
         "C"
@@ -2926,11 +3044,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 3.52
+      "valueTotal": 3.52
     },
     {
       "rank": 119,
-      "rankNote": 15,
+      "rankMove": 15,
+      "rankMoveSigned": false,
       "name": "Matas Buzelis",
       "pos": [
         "SF",
@@ -2951,11 +3070,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 3.51
+      "valueTotal": 3.51
     },
     {
       "rank": 120,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jock Landale",
       "pos": [
         "C"
@@ -2975,11 +3095,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 3.42
+      "valueTotal": 3.42
     },
     {
       "rank": 121,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Keldon Johnson",
       "pos": [
         "SF",
@@ -3000,11 +3121,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 3.41
+      "valueTotal": 3.41
     },
     {
       "rank": 122,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Cedric Coward",
       "pos": [
         "SG",
@@ -3025,11 +3147,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 3.38
+      "valueTotal": 3.38
     },
     {
       "rank": 123,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Royce O'Neale",
       "pos": [
         "SF",
@@ -3050,11 +3173,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 3.33
+      "valueTotal": 3.33
     },
     {
       "rank": 124,
-      "rankNote": 14,
+      "rankMove": 14,
+      "rankMoveSigned": false,
       "name": "Kyle Kuzma",
       "pos": [
         "SF",
@@ -3075,11 +3199,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 3.31
+      "valueTotal": 3.31
     },
     {
       "rank": 125,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jaylen Wells",
       "pos": [
         "SG",
@@ -3100,11 +3225,12 @@
       "ast": 0,
       "stl": 4,
       "blk": 0,
-      "yahooTotal": 3.31
+      "valueTotal": 3.31
     },
     {
       "rank": 126,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Gradey Dick",
       "pos": [
         "SG",
@@ -3125,11 +3251,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 3.28
+      "valueTotal": 3.28
     },
     {
       "rank": 127,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Ziaire Williams",
       "pos": [
         "SG",
@@ -3150,11 +3277,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.27
+      "valueTotal": 3.27
     },
     {
       "rank": 128,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Marcus Smart",
       "pos": [
         "PG",
@@ -3175,11 +3303,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.24
+      "valueTotal": 3.24
     },
     {
       "rank": 129,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Bobby Portis Jr.",
       "pos": [
         "PF",
@@ -3200,11 +3329,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 3.23
+      "valueTotal": 3.23
     },
     {
       "rank": 130,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Tobe Awaka",
       "pos": [],
       "nbaTeam": "CHI",
@@ -3222,11 +3352,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 3.23
+      "valueTotal": 3.23
     },
     {
       "rank": 131,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Noah Clowney",
       "pos": [
         "PF",
@@ -3247,11 +3378,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.21
+      "valueTotal": 3.21
     },
     {
       "rank": 132,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Alex Caruso",
       "pos": [
         "SG",
@@ -3272,11 +3404,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.19
+      "valueTotal": 3.19
     },
     {
       "rank": 133,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Justin Champagnie",
       "pos": [
         "SF",
@@ -3297,11 +3430,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 3.15
+      "valueTotal": 3.15
     },
     {
       "rank": 134,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Allen Graves",
       "pos": [
         "PF"
@@ -3321,11 +3455,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 3,
-      "yahooTotal": 3.13
+      "valueTotal": 3.13
     },
     {
       "rank": 135,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Onyeka Okongwu",
       "pos": [
         "C"
@@ -3345,11 +3480,12 @@
       "ast": 7,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 3.1
+      "valueTotal": 3.1
     },
     {
       "rank": 136,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Jamison Battle",
       "pos": [
         "SF",
@@ -3370,11 +3506,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 3.09
+      "valueTotal": 3.09
     },
     {
       "rank": 137,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Kentavious Caldwell-Pope",
       "pos": [
         "SG",
@@ -3395,11 +3532,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 3.08
+      "valueTotal": 3.08
     },
     {
       "rank": 138,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Deandre Ayton",
       "pos": [
         "C"
@@ -3419,11 +3557,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "yahooTotal": 3.05
+      "valueTotal": 3.05
     },
     {
       "rank": 139,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Sam Hauser",
       "pos": [
         "SF",
@@ -3444,11 +3583,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 3.05
+      "valueTotal": 3.05
     },
     {
       "rank": 140,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Paul Reed",
       "pos": [
         "PF",
@@ -3469,11 +3609,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 2.89
+      "valueTotal": 2.89
     },
     {
       "rank": 141,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Saddiq Bey",
       "pos": [
         "SF",
@@ -3494,11 +3635,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 2.84
+      "valueTotal": 2.84
     },
     {
       "rank": 142,
-      "rankNote": 32,
+      "rankMove": 32,
+      "rankMoveSigned": false,
       "name": "Caleb Wilson",
       "pos": [
         "PF"
@@ -3518,11 +3660,12 @@
       "ast": 0,
       "stl": 3,
       "blk": 1,
-      "yahooTotal": 2.75
+      "valueTotal": 2.75
     },
     {
       "rank": 143,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Jrue Holiday",
       "pos": [
         "PG",
@@ -3543,11 +3686,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 2.73
+      "valueTotal": 2.73
     },
     {
       "rank": 144,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Pascal Siakam",
       "pos": [
         "PF",
@@ -3568,11 +3712,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 2.69
+      "valueTotal": 2.69
     },
     {
       "rank": 145,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Jase Richardson",
       "pos": [
         "PG",
@@ -3593,11 +3738,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 2.61
+      "valueTotal": 2.61
     },
     {
       "rank": 146,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Jalen Suggs",
       "pos": [
         "PG",
@@ -3618,11 +3764,12 @@
       "ast": 5,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 2.6
+      "valueTotal": 2.6
     },
     {
       "rank": 147,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Graham Ike",
       "pos": [
         "PF"
@@ -3642,11 +3789,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.54
+      "valueTotal": 2.54
     },
     {
       "rank": 148,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Pelle Larsson",
       "pos": [
         "SG",
@@ -3667,11 +3815,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.46
+      "valueTotal": 2.46
     },
     {
       "rank": 149,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Baylor Scheierman",
       "pos": [
         "SG",
@@ -3692,11 +3841,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 2.45
+      "valueTotal": 2.45
     },
     {
       "rank": 150,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jalen Williams",
       "pos": [
         "SF",
@@ -3717,11 +3867,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.43
+      "valueTotal": 2.43
     },
     {
       "rank": 151,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Donovan Clingan",
       "pos": [
         "C"
@@ -3741,11 +3892,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 2.38
+      "valueTotal": 2.38
     },
     {
       "rank": 152,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Isaiah Hartenstein",
       "pos": [
         "C"
@@ -3765,11 +3917,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.34
+      "valueTotal": 2.34
     },
     {
       "rank": 153,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "OG Anunoby",
       "pos": [
         "SF",
@@ -3790,11 +3943,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.33
+      "valueTotal": 2.33
     },
     {
       "rank": 154,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Isaiah Jackson",
       "pos": [
         "C"
@@ -3814,11 +3968,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 2.26
+      "valueTotal": 2.26
     },
     {
       "rank": 155,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Robert Williams III",
       "pos": [
         "C"
@@ -3838,11 +3993,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 2.25
+      "valueTotal": 2.25
     },
     {
       "rank": 156,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Scoot Henderson",
       "pos": [
         "PG"
@@ -3862,11 +4018,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 2.24
+      "valueTotal": 2.24
     },
     {
       "rank": 157,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Brayden Burries",
       "pos": [
         "SG"
@@ -3886,11 +4043,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 2.22
+      "valueTotal": 2.22
     },
     {
       "rank": 158,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Neemias Queta",
       "pos": [
         "C"
@@ -3910,11 +4068,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 2.19
+      "valueTotal": 2.19
     },
     {
       "rank": 159,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jayson Tatum",
       "pos": [
         "SF",
@@ -3935,11 +4094,12 @@
       "ast": 11,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 2.14
+      "valueTotal": 2.14
     },
     {
       "rank": 160,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "John Collins",
       "pos": [
         "PF",
@@ -3960,11 +4120,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.13
+      "valueTotal": 2.13
     },
     {
       "rank": 161,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jalen Green",
       "pos": [
         "SG",
@@ -3985,11 +4146,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 2.09
+      "valueTotal": 2.09
     },
     {
       "rank": 162,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Pat Spencer",
       "pos": [
         "PG",
@@ -4010,11 +4172,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 2.05
+      "valueTotal": 2.05
     },
     {
       "rank": 163,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Anfernee Simons",
       "pos": [
         "PG",
@@ -4035,11 +4198,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.98
+      "valueTotal": 1.98
     },
     {
       "rank": 164,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Luguentz Dort",
       "pos": [
         "SG",
@@ -4060,11 +4224,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.86
+      "valueTotal": 1.86
     },
     {
       "rank": 165,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Bennedict Mathurin",
       "pos": [
         "SG",
@@ -4085,11 +4250,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.84
+      "valueTotal": 1.84
     },
     {
       "rank": 166,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Kelly Oubre Jr.",
       "pos": [
         "SF",
@@ -4110,11 +4276,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1.72
+      "valueTotal": 1.72
     },
     {
       "rank": 167,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Brandon Miller",
       "pos": [
         "SF",
@@ -4135,11 +4302,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 1.7
+      "valueTotal": 1.7
     },
     {
       "rank": 168,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Gui Santos",
       "pos": [
         "SF",
@@ -4160,11 +4328,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.59
+      "valueTotal": 1.59
     },
     {
       "rank": 169,
-      "rankNote": 12,
+      "rankMove": 12,
+      "rankMoveSigned": false,
       "name": "Reed Sheppard",
       "pos": [
         "PG",
@@ -4185,11 +4354,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 1.54
+      "valueTotal": 1.54
     },
     {
       "rank": 170,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Isaiah Joe",
       "pos": [
         "SG",
@@ -4210,11 +4380,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1.54
+      "valueTotal": 1.54
     },
     {
       "rank": 171,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Klay Thompson",
       "pos": [
         "SG",
@@ -4235,11 +4406,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.53
+      "valueTotal": 1.53
     },
     {
       "rank": 172,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Georges Niang",
       "pos": [
         "PF"
@@ -4259,11 +4431,12 @@
       "ast": 2,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 1.48
+      "valueTotal": 1.48
     },
     {
       "rank": 173,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Trey Murphy III",
       "pos": [
         "SG",
@@ -4284,11 +4457,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.47
+      "valueTotal": 1.47
     },
     {
       "rank": 174,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Matisse Thybulle",
       "pos": [
         "SG",
@@ -4309,11 +4483,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1.45
+      "valueTotal": 1.45
     },
     {
       "rank": 175,
-      "rankNote": 15,
+      "rankMove": 15,
+      "rankMoveSigned": false,
       "name": "Jamal Shead",
       "pos": [
         "PG"
@@ -4333,11 +4508,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.4
+      "valueTotal": 1.4
     },
     {
       "rank": 176,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Will Richard",
       "pos": [
         "SG",
@@ -4358,11 +4534,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.38
+      "valueTotal": 1.38
     },
     {
       "rank": 177,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "RJ Barrett",
       "pos": [
         "SG",
@@ -4384,11 +4561,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.37
+      "valueTotal": 1.37
     },
     {
       "rank": 178,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Jordan Walsh",
       "pos": [
         "SF",
@@ -4409,11 +4587,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1.31
+      "valueTotal": 1.31
     },
     {
       "rank": 179,
-      "rankNote": 16,
+      "rankMove": 16,
+      "rankMoveSigned": false,
       "name": "Jarace Walker",
       "pos": [
         "SF",
@@ -4434,11 +4613,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 1.3
+      "valueTotal": 1.3
     },
     {
       "rank": 180,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Khaman Maluach",
       "pos": [
         "C"
@@ -4458,11 +4638,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 1.27
+      "valueTotal": 1.27
     },
     {
       "rank": 181,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Emanuel Sharp",
       "pos": [
         "SG"
@@ -4482,11 +4663,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 1.21
+      "valueTotal": 1.21
     },
     {
       "rank": 182,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Mitchell Robinson",
       "pos": [
         "C"
@@ -4506,11 +4688,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 1.14
+      "valueTotal": 1.14
     },
     {
       "rank": 183,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Alexandre Sarr",
       "pos": [
         "C"
@@ -4530,11 +4713,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.14
+      "valueTotal": 1.14
     },
     {
       "rank": 184,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jordan Goodwin",
       "pos": [
         "PG",
@@ -4555,11 +4739,12 @@
       "ast": 0,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 1.12
+      "valueTotal": 1.12
     },
     {
       "rank": 185,
-      "rankNote": 19,
+      "rankMove": 19,
+      "rankMoveSigned": false,
       "name": "P.J. Washington",
       "pos": [
         "PF",
@@ -4580,11 +4765,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 1.08
+      "valueTotal": 1.08
     },
     {
       "rank": 186,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Sandro Mamukelashvili",
       "pos": [
         "PF",
@@ -4605,11 +4791,12 @@
       "ast": 2,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 1.08
+      "valueTotal": 1.08
     },
     {
       "rank": 187,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Rudy Gobert",
       "pos": [
         "C"
@@ -4629,11 +4816,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 1.06
+      "valueTotal": 1.06
     },
     {
       "rank": 188,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Miles Bridges",
       "pos": [
         "PF"
@@ -4653,11 +4841,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1.06
+      "valueTotal": 1.06
     },
     {
       "rank": 189,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Rui Hachimura",
       "pos": [
         "SF",
@@ -4678,11 +4867,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 1
+      "valueTotal": 1
     },
     {
       "rank": 190,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Ajay Mitchell",
       "pos": [
         "PG",
@@ -4703,11 +4893,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.94
+      "valueTotal": 0.94
     },
     {
       "rank": 191,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Kobe Sanders",
       "pos": [
         "SG",
@@ -4728,11 +4919,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": 0.9
+      "valueTotal": 0.9
     },
     {
       "rank": 192,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "LJ Cryer",
       "pos": [
         "PG"
@@ -4752,11 +4944,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.89
+      "valueTotal": 0.89
     },
     {
       "rank": 193,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Sidy Cissoko",
       "pos": [
         "SF",
@@ -4777,11 +4970,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.81
+      "valueTotal": 0.81
     },
     {
       "rank": 194,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Ousmane Dieng",
       "pos": [
         "SF",
@@ -4802,11 +4996,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.79
+      "valueTotal": 0.79
     },
     {
       "rank": 195,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Ryan Rollins",
       "pos": [
         "PG",
@@ -4827,11 +5022,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.79
+      "valueTotal": 0.79
     },
     {
       "rank": 196,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Darryn Peterson",
       "pos": [
         "SG"
@@ -4851,11 +5047,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.78
+      "valueTotal": 0.78
     },
     {
       "rank": 197,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Vít Krejcí",
       "pos": [
         "SG",
@@ -4876,11 +5073,12 @@
       "ast": 3,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": 0.76
+      "valueTotal": 0.76
     },
     {
       "rank": 198,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Norman Powell",
       "pos": [
         "SG",
@@ -4901,11 +5099,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.76
+      "valueTotal": 0.76
     },
     {
       "rank": 199,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Cam Spencer",
       "pos": [
         "PG",
@@ -4926,11 +5125,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.7
+      "valueTotal": 0.7
     },
     {
       "rank": 200,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Tre Jones",
       "pos": [
         "PG",
@@ -4951,11 +5151,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.68
+      "valueTotal": 0.68
     },
     {
       "rank": 201,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Tre Johnson",
       "pos": [
         "PG",
@@ -4977,11 +5178,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.68
+      "valueTotal": 0.68
     },
     {
       "rank": 202,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Kevon Looney",
       "pos": [
         "PF",
@@ -5002,11 +5204,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.64
+      "valueTotal": 0.64
     },
     {
       "rank": 203,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Cameron Boozer",
       "pos": [
         "PF"
@@ -5026,11 +5229,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.57
+      "valueTotal": 0.57
     },
     {
       "rank": 204,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Daniel Gafford",
       "pos": [
         "C"
@@ -5050,11 +5254,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 2,
-      "yahooTotal": 0.55
+      "valueTotal": 0.55
     },
     {
       "rank": 205,
-      "rankNote": 17,
+      "rankMove": 17,
+      "rankMoveSigned": false,
       "name": "Nique Clifford",
       "pos": [
         "SG",
@@ -5075,11 +5280,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.52
+      "valueTotal": 0.52
     },
     {
       "rank": 206,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Aday Mara",
       "pos": [
         "C"
@@ -5099,11 +5305,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.51
+      "valueTotal": 0.51
     },
     {
       "rank": 207,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Goga Bitadze",
       "pos": [
         "C"
@@ -5123,11 +5330,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.47
+      "valueTotal": 0.47
     },
     {
       "rank": 208,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Andrew Wiggins",
       "pos": [
         "SG",
@@ -5149,11 +5357,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.46
+      "valueTotal": 0.46
     },
     {
       "rank": 209,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Cason Wallace",
       "pos": [
         "PG",
@@ -5175,11 +5384,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.44
+      "valueTotal": 0.44
     },
     {
       "rank": 210,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Herbert Jones",
       "pos": [
         "SG",
@@ -5200,11 +5410,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.43
+      "valueTotal": 0.43
     },
     {
       "rank": 211,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Moritz Wagner",
       "pos": [
         "C"
@@ -5224,11 +5435,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.43
+      "valueTotal": 0.43
     },
     {
       "rank": 212,
-      "rankNote": 12,
+      "rankMove": 12,
+      "rankMoveSigned": false,
       "name": "Yaxel Lendeborg",
       "pos": [
         "PF"
@@ -5248,11 +5460,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.42
+      "valueTotal": 0.42
     },
     {
       "rank": 213,
-      "rankNote": 11,
+      "rankMove": 11,
+      "rankMoveSigned": false,
       "name": "AJ Green",
       "pos": [
         "PG",
@@ -5274,11 +5487,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.4
+      "valueTotal": 0.4
     },
     {
       "rank": 214,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Jakob Poeltl",
       "pos": [
         "C"
@@ -5298,11 +5512,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": 0.37
+      "valueTotal": 0.37
     },
     {
       "rank": 215,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Daeqwon Plowden",
       "pos": [
         "SG",
@@ -5323,11 +5538,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": 0.33
+      "valueTotal": 0.33
     },
     {
       "rank": 216,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Bogdan Bogdanovic",
       "pos": [
         "PG",
@@ -5349,11 +5565,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.32
+      "valueTotal": 0.32
     },
     {
       "rank": 217,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Mikel Brown Jr.",
       "pos": [
         "PG"
@@ -5373,11 +5590,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.3
+      "valueTotal": 0.3
     },
     {
       "rank": 218,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Trayce Jackson-Davis",
       "pos": [
         "C"
@@ -5397,11 +5615,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.26
+      "valueTotal": 0.26
     },
     {
       "rank": 219,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Daniss Jenkins",
       "pos": [
         "PG",
@@ -5422,11 +5641,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.17
+      "valueTotal": 0.17
     },
     {
       "rank": 220,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Luke Kornet",
       "pos": [
         "C"
@@ -5446,11 +5666,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.13
+      "valueTotal": 0.13
     },
     {
       "rank": 221,
-      "rankNote": 11,
+      "rankMove": 11,
+      "rankMoveSigned": false,
       "name": "Nikola Jovic",
       "pos": [
         "PF",
@@ -5471,11 +5692,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.12
+      "valueTotal": 0.12
     },
     {
       "rank": 222,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Quinten Post",
       "pos": [
         "C"
@@ -5495,11 +5717,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.07
+      "valueTotal": 0.07
     },
     {
       "rank": 223,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Harrison Barnes",
       "pos": [
         "PF"
@@ -5519,11 +5742,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.05
+      "valueTotal": 0.05
     },
     {
       "rank": 224,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Adem Bona",
       "pos": [
         "C"
@@ -5543,11 +5767,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": 0.03
+      "valueTotal": 0.03
     },
     {
       "rank": 225,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Baba Miller",
       "pos": [
         "PF"
@@ -5567,11 +5792,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": 0.02
+      "valueTotal": 0.02
     },
     {
       "rank": 226,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "VJ Edgecombe",
       "pos": [
         "PG",
@@ -5592,11 +5818,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.01
+      "valueTotal": -0.01
     },
     {
       "rank": 227,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Jamaree Bouyea",
       "pos": [
         "PG"
@@ -5616,11 +5843,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.03
+      "valueTotal": -0.03
     },
     {
       "rank": 228,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Jaylin Williams",
       "pos": [
         "PF",
@@ -5641,11 +5869,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.05
+      "valueTotal": -0.05
     },
     {
       "rank": 229,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Christian Anderson",
       "pos": [
         "PG"
@@ -5665,11 +5894,12 @@
       "ast": 2,
       "stl": 2,
       "blk": 0,
-      "yahooTotal": -0.09
+      "valueTotal": -0.09
     },
     {
       "rank": 230,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Devin Vassell",
       "pos": [
         "SG",
@@ -5690,11 +5920,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.09
+      "valueTotal": -0.09
     },
     {
       "rank": 231,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jordan Poole",
       "pos": [
         "PG",
@@ -5715,11 +5946,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.09
+      "valueTotal": -0.09
     },
     {
       "rank": 232,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Myron Gardner",
       "pos": [
         "SG",
@@ -5740,11 +5972,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.14
+      "valueTotal": -0.14
     },
     {
       "rank": 233,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Yang Hansen",
       "pos": [
         "C"
@@ -5764,11 +5997,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.17
+      "valueTotal": -0.17
     },
     {
       "rank": 234,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jalen Pickett",
       "pos": [
         "PG",
@@ -5789,11 +6023,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.19
+      "valueTotal": -0.19
     },
     {
       "rank": 235,
-      "rankNote": 20,
+      "rankMove": 20,
+      "rankMoveSigned": false,
       "name": "Leonard Miller",
       "pos": [
         "SF",
@@ -5814,11 +6049,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.19
+      "valueTotal": -0.19
     },
     {
       "rank": 236,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Kevin Huerter",
       "pos": [
         "SG",
@@ -5839,11 +6075,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.22
+      "valueTotal": -0.22
     },
     {
       "rank": 237,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Tim Hardaway Jr.",
       "pos": [
         "SG",
@@ -5864,11 +6101,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.29
+      "valueTotal": -0.29
     },
     {
       "rank": 238,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Kingston Flemings",
       "pos": [
         "PG"
@@ -5888,11 +6126,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": -0.32
+      "valueTotal": -0.32
     },
     {
       "rank": 239,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Al Horford",
       "pos": [
         "PF",
@@ -5913,11 +6152,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.37
+      "valueTotal": -0.37
     },
     {
       "rank": 240,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Miles McBride",
       "pos": [
         "PG",
@@ -5938,11 +6178,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": -0.42
+      "valueTotal": -0.42
     },
     {
       "rank": 241,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Kenrich Williams",
       "pos": [
         "PF",
@@ -5963,11 +6204,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.47
+      "valueTotal": -0.47
     },
     {
       "rank": 242,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Gary Payton II",
       "pos": [
         "SG",
@@ -5988,11 +6230,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.49
+      "valueTotal": -0.49
     },
     {
       "rank": 243,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Duop Reath",
       "pos": [
         "PF",
@@ -6013,11 +6256,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.51
+      "valueTotal": -0.51
     },
     {
       "rank": 244,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Max Christie",
       "pos": [
         "SG",
@@ -6038,11 +6282,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.54
+      "valueTotal": -0.54
     },
     {
       "rank": 245,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Mikal Bridges",
       "pos": [
         "SF",
@@ -6063,11 +6308,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": -0.61
+      "valueTotal": -0.61
     },
     {
       "rank": 246,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Isaac Okoro",
       "pos": [
         "SG",
@@ -6088,11 +6334,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.66
+      "valueTotal": -0.66
     },
     {
       "rank": 247,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Micah Potter",
       "pos": [
         "PF",
@@ -6113,11 +6360,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.69
+      "valueTotal": -0.69
     },
     {
       "rank": 248,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "De'Anthony Melton",
       "pos": [
         "PG",
@@ -6138,11 +6386,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.71
+      "valueTotal": -0.71
     },
     {
       "rank": 249,
-      "rankNote": 14,
+      "rankMove": 14,
+      "rankMoveSigned": false,
       "name": "Egor Demin",
       "pos": [
         "PG",
@@ -6163,11 +6412,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.71
+      "valueTotal": -0.71
     },
     {
       "rank": 250,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Kyle Anderson",
       "pos": [
         "SF",
@@ -6188,11 +6438,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.73
+      "valueTotal": -0.73
     },
     {
       "rank": 251,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Joan Beringer",
       "pos": [
         "PF",
@@ -6213,11 +6464,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.77
+      "valueTotal": -0.77
     },
     {
       "rank": 252,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Dillon Brooks",
       "pos": [
         "SF",
@@ -6238,11 +6490,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.83
+      "valueTotal": -0.83
     },
     {
       "rank": 253,
-      "rankNote": 14,
+      "rankMove": 14,
+      "rankMoveSigned": false,
       "name": "Isaiah Collier",
       "pos": [
         "PG",
@@ -6263,11 +6516,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.86
+      "valueTotal": -0.86
     },
     {
       "rank": 254,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jaylin Sellers",
       "pos": [],
       "nbaTeam": "CHI",
@@ -6285,11 +6539,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.86
+      "valueTotal": -0.86
     },
     {
       "rank": 255,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Kyle Filipowski",
       "pos": [
         "PF",
@@ -6310,11 +6565,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.87
+      "valueTotal": -0.87
     },
     {
       "rank": 256,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Zach Collins",
       "pos": [
         "C"
@@ -6334,11 +6590,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -0.91
+      "valueTotal": -0.91
     },
     {
       "rank": 257,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Ron Holland II",
       "pos": [
         "SF",
@@ -6359,11 +6616,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": -0.91
+      "valueTotal": -0.91
     },
     {
       "rank": 258,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Tari Eason",
       "pos": [
         "SG",
@@ -6385,11 +6643,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -0.98
+      "valueTotal": -0.98
     },
     {
       "rank": 259,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Oso Ighodaro",
       "pos": [
         "C"
@@ -6409,11 +6668,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.02
+      "valueTotal": -1.02
     },
     {
       "rank": 260,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Sion James",
       "pos": [
         "SG",
@@ -6434,11 +6694,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -1.03
+      "valueTotal": -1.03
     },
     {
       "rank": 261,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Nick Richards",
       "pos": [
         "C"
@@ -6458,11 +6719,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.03
+      "valueTotal": -1.03
     },
     {
       "rank": 262,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jaden Hardy",
       "pos": [
         "PG",
@@ -6484,11 +6746,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.07
+      "valueTotal": -1.07
     },
     {
       "rank": 263,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Kel'el Ware",
       "pos": [
         "C"
@@ -6508,11 +6771,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -1.07
+      "valueTotal": -1.07
     },
     {
       "rank": 264,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Bones Hyland",
       "pos": [
         "PG",
@@ -6533,11 +6797,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.09
+      "valueTotal": -1.09
     },
     {
       "rank": 265,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Isaiah Crawford",
       "pos": [],
       "nbaTeam": "HOU",
@@ -6555,11 +6820,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.11
+      "valueTotal": -1.11
     },
     {
       "rank": 266,
-      "rankNote": 10,
+      "rankMove": 10,
+      "rankMoveSigned": false,
       "name": "Collin Gillespie",
       "pos": [
         "PG",
@@ -6580,11 +6846,12 @@
       "ast": 2,
       "stl": 4,
       "blk": 0,
-      "yahooTotal": -1.12
+      "valueTotal": -1.12
     },
     {
       "rank": 267,
-      "rankNote": 5,
+      "rankMove": 5,
+      "rankMoveSigned": false,
       "name": "Jordan Clarkson",
       "pos": [
         "SG",
@@ -6605,11 +6872,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.22
+      "valueTotal": -1.22
     },
     {
       "rank": 268,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jeremiah Fears",
       "pos": [
         "PG",
@@ -6630,11 +6898,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.33
+      "valueTotal": -1.33
     },
     {
       "rank": 269,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Simone Fontecchio",
       "pos": [
         "SF",
@@ -6655,11 +6924,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "yahooTotal": -1.35
+      "valueTotal": -1.35
     },
     {
       "rank": 270,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Ben Sheppard",
       "pos": [
         "SG",
@@ -6680,11 +6950,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.39
+      "valueTotal": -1.39
     },
     {
       "rank": 271,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Terrence Shannon Jr.",
       "pos": [
         "SG",
@@ -6705,11 +6976,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.47
+      "valueTotal": -1.47
     },
     {
       "rank": 272,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Clint Capela",
       "pos": [
         "C"
@@ -6729,11 +7001,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.55
+      "valueTotal": -1.55
     },
     {
       "rank": 273,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Khris Middleton",
       "pos": [
         "SF",
@@ -6754,11 +7027,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.59
+      "valueTotal": -1.59
     },
     {
       "rank": 274,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Koa Peat",
       "pos": [
         "PF"
@@ -6778,11 +7052,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.63
+      "valueTotal": -1.63
     },
     {
       "rank": 275,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Sergio de Larrea",
       "pos": [
         "PG"
@@ -6802,11 +7077,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.75
+      "valueTotal": -1.75
     },
     {
       "rank": 276,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Nikola Vucevic",
       "pos": [
         "C"
@@ -6826,11 +7102,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.77
+      "valueTotal": -1.77
     },
     {
       "rank": 277,
-      "rankNote": 11,
+      "rankMove": 11,
+      "rankMoveSigned": false,
       "name": "Brice Sensabaugh",
       "pos": [
         "SG",
@@ -6852,11 +7129,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.78
+      "valueTotal": -1.78
     },
     {
       "rank": 278,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Keegan Murray",
       "pos": [
         "SF",
@@ -6877,11 +7155,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -1.82
+      "valueTotal": -1.82
     },
     {
       "rank": 279,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Hugo González",
       "pos": [
         "SG",
@@ -6902,11 +7181,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.85
+      "valueTotal": -1.85
     },
     {
       "rank": 280,
-      "rankNote": 12,
+      "rankMove": 12,
+      "rankMoveSigned": false,
       "name": "Landry Shamet",
       "pos": [
         "SG",
@@ -6927,11 +7207,12 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.87
+      "valueTotal": -1.87
     },
     {
       "rank": 281,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Luka Garza",
       "pos": [
         "C"
@@ -6951,11 +7232,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.89
+      "valueTotal": -1.89
     },
     {
       "rank": 282,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Rasheer Fleming",
       "pos": [
         "PF",
@@ -6976,11 +7258,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "yahooTotal": -1.92
+      "valueTotal": -1.92
     },
     {
       "rank": 283,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Bronny James",
       "pos": [
         "PG",
@@ -7001,11 +7284,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.93
+      "valueTotal": -1.93
     },
     {
       "rank": 284,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Ryan Dunn",
       "pos": [
         "SF",
@@ -7026,11 +7310,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.94
+      "valueTotal": -1.94
     },
     {
       "rank": 285,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "David Jones Garcia",
       "pos": [
         "SG"
@@ -7050,11 +7335,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.94
+      "valueTotal": -1.94
     },
     {
       "rank": 286,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Ryan Conwell",
       "pos": [
         "SG"
@@ -7074,11 +7360,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -1.98
+      "valueTotal": -1.98
     },
     {
       "rank": 287,
-      "rankNote": 25,
+      "rankMove": 25,
+      "rankMoveSigned": false,
       "name": "Josh Giddey",
       "pos": [
         "PG",
@@ -7099,11 +7386,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.04
+      "valueTotal": -2.04
     },
     {
       "rank": 288,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Nick Martinelli",
       "pos": [],
       "nbaTeam": "LAC",
@@ -7121,11 +7409,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.07
+      "valueTotal": -2.07
     },
     {
       "rank": 289,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Jabari Walker",
       "pos": [
         "PF"
@@ -7145,11 +7434,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.09
+      "valueTotal": -2.09
     },
     {
       "rank": 290,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Maliq Brown",
       "pos": [
         "SF"
@@ -7169,11 +7459,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.09
+      "valueTotal": -2.09
     },
     {
       "rank": 291,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Morez Johnson Jr.",
       "pos": [
         "PF"
@@ -7193,11 +7484,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.13
+      "valueTotal": -2.13
     },
     {
       "rank": 292,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Noa Essengue",
       "pos": [
         "PF"
@@ -7217,11 +7509,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.18
+      "valueTotal": -2.18
     },
     {
       "rank": 293,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Isaiah Evans",
       "pos": [
         "SG"
@@ -7241,11 +7534,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.19
+      "valueTotal": -2.19
     },
     {
       "rank": 294,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Chris Mañon",
       "pos": [],
       "nbaTeam": "LAL",
@@ -7263,11 +7557,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.21
+      "valueTotal": -2.21
     },
     {
       "rank": 295,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Ja'Kobi Gillespie",
       "pos": [
         "PG"
@@ -7287,11 +7582,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.23
+      "valueTotal": -2.23
     },
     {
       "rank": 296,
-      "rankNote": 8,
+      "rankMove": 8,
+      "rankMoveSigned": false,
       "name": "Buddy Hield",
       "pos": [
         "SG",
@@ -7312,11 +7608,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.24
+      "valueTotal": -2.24
     },
     {
       "rank": 297,
-      "rankNote": 13,
+      "rankMove": 13,
+      "rankMoveSigned": false,
       "name": "Jayson Kent",
       "pos": [],
       "nbaTeam": "POR",
@@ -7334,11 +7631,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -2.46
+      "valueTotal": -2.46
     },
     {
       "rank": 298,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Malevy Leons",
       "pos": [
         "PF"
@@ -7358,11 +7656,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "yahooTotal": -2.46
+      "valueTotal": -2.46
     },
     {
       "rank": 299,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Liam McNeeley",
       "pos": [
         "SF"
@@ -7382,11 +7681,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.49
+      "valueTotal": -2.49
     },
     {
       "rank": 300,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Josh Okogie",
       "pos": [
         "SG",
@@ -7407,11 +7707,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.49
+      "valueTotal": -2.49
     },
     {
       "rank": 301,
-      "rankNote": 15,
+      "rankMove": 15,
+      "rankMoveSigned": false,
       "name": "Chaney Johnson",
       "pos": [
         "PF"
@@ -7431,11 +7732,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.49
+      "valueTotal": -2.49
     },
     {
       "rank": 303,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jonathan Mogbo",
       "pos": [
         "PF",
@@ -7456,11 +7758,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 304,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Brooks Barnhizer",
       "pos": [],
       "nbaTeam": "OKC",
@@ -7478,11 +7781,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 305,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Bennett Stirtz",
       "pos": [
         "PG"
@@ -7502,11 +7806,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 306,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Tarris Reed Jr.",
       "pos": [
         "C"
@@ -7526,11 +7831,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 307,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Jericho Sims",
       "pos": [
         "PF",
@@ -7551,11 +7857,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 308,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Cam Christie",
       "pos": [
         "SG",
@@ -7576,11 +7883,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.51
+      "valueTotal": -2.51
     },
     {
       "rank": 309,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Moussa Cisse",
       "pos": [
         "C"
@@ -7600,11 +7908,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.57
+      "valueTotal": -2.57
     },
     {
       "rank": 310,
-      "rankNote": 3,
+      "rankMove": 3,
+      "rankMoveSigned": false,
       "name": "Alijah Martin",
       "pos": [
         "PG",
@@ -7625,11 +7934,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.57
+      "valueTotal": -2.57
     },
     {
       "rank": 311,
-      "rankNote": 9,
+      "rankMove": 9,
+      "rankMoveSigned": false,
       "name": "Darius Acuff Jr.",
       "pos": [
         "PG"
@@ -7649,11 +7959,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "yahooTotal": -2.67
+      "valueTotal": -2.67
     },
     {
       "rank": 312,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Jaden Bradley",
       "pos": [],
       "nbaTeam": "TOR",
@@ -7671,11 +7982,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.81
+      "valueTotal": -2.81
     },
     {
       "rank": 313,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Larry Nance Jr.",
       "pos": [
         "PF",
@@ -7696,11 +8008,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.81
+      "valueTotal": -2.81
     },
     {
       "rank": 314,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Bruce Thornton",
       "pos": [
         "PG"
@@ -7720,11 +8033,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.81
+      "valueTotal": -2.81
     },
     {
       "rank": 315,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Cody Williams",
       "pos": [
         "SG",
@@ -7745,11 +8059,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.81
+      "valueTotal": -2.81
     },
     {
       "rank": 316,
-      "rankNote": 7,
+      "rankMove": 7,
+      "rankMoveSigned": false,
       "name": "Jae'Sean Tate",
       "pos": [
         "SG",
@@ -7771,11 +8086,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.81
+      "valueTotal": -2.81
     },
     {
       "rank": 317,
-      "rankNote": 6,
+      "rankMove": 6,
+      "rankMoveSigned": false,
       "name": "Alex Karaban",
       "pos": [
         "SF"
@@ -7795,11 +8111,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.82
+      "valueTotal": -2.82
     },
     {
       "rank": 318,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Nolan Traoré",
       "pos": [
         "PG"
@@ -7819,11 +8136,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.84
+      "valueTotal": -2.84
     },
     {
       "rank": 319,
-      "rankNote": 4,
+      "rankMove": 4,
+      "rankMoveSigned": false,
       "name": "Carter Bryant",
       "pos": [
         "SF",
@@ -7844,11 +8162,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -2.99
+      "valueTotal": -2.99
     },
     {
       "rank": 320,
-      "rankNote": 2,
+      "rankMove": 2,
+      "rankMoveSigned": false,
       "name": "Trey Lyles",
       "pos": [
         "PF"
@@ -7868,11 +8187,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -3.12
+      "valueTotal": -3.12
     },
     {
       "rank": 321,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "Jamal Cain",
       "pos": [
         "SG",
@@ -7893,11 +8213,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -3.41
+      "valueTotal": -3.41
     },
     {
       "rank": 322,
-      "rankNote": 1,
+      "rankMove": 1,
+      "rankMoveSigned": false,
       "name": "De'Andre Hunter",
       "pos": [
         "SF",
@@ -7918,11 +8239,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -3.51
+      "valueTotal": -3.51
     },
     {
       "rank": 323,
-      "rankNote": null,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jaylen Clark",
       "pos": [
         "SG",
@@ -7943,7 +8265,7 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "yahooTotal": -4.85
+      "valueTotal": -4.85
     }
   ]
 }
