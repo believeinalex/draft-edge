@@ -15,6 +15,7 @@ const { buildNameIndex, matchPlayer, normName, CATS } = require('../engine.js');
 const DRAFT_FILE = process.argv[2] || path.join(__dirname, 'draft_2026-10-18.txt');
 const TXN_FILE = path.join(__dirname, 'transactions.json');
 const OUT_FILE = path.join(__dirname, 'league.json');
+const STATS_FILE = path.join(__dirname, '..', 'stats', 'latest.json');
 
 // The user's own team, plus other teams the user manages (their son Finn's team)
 const MY_TEAM = 'Shut Up and Jam Gaiden';
@@ -53,13 +54,10 @@ function parseDraft(text) {
   return { picks, unmatched };
 }
 
-// Projected season totals: per-game stats x projected games played
-function projectTeam(roster) {
-  const byRk = new Map(PLAYERS.map(p => [p.rk, p]));
+// Season totals from per-game stat lines: sum of per-game x games played
+function sumTotals(lines) {
   const tot = { fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
-  for (const r of roster) {
-    const p = byRk.get(r.rk);
-    if (!p) continue;
+  for (const p of lines) {
     for (const k of Object.keys(tot)) tot[k] += (p[k] || 0) * (p.gp || 0);
   }
   return {
@@ -74,26 +72,69 @@ function projectTeam(roster) {
   };
 }
 
-// Roto points: best team in a category gets N points, worst gets 1 (ties share the average)
-function rotoPoints(teams) {
+// Projected season totals: players.js per-game stats x projected games played
+function projectTeam(roster) {
+  const byRk = new Map(PLAYERS.map(p => [p.rk, p]));
+  return sumTotals(roster.map(r => byRk.get(r.rk)).filter(Boolean));
+}
+
+// Roto points: best team in a category gets N points, worst gets 1 (ties share the average).
+// prefix 'proj' reads projTotals and writes projRoto/projRank; 'actual' does the same for actuals.
+function rotoPoints(teams, prefix = 'proj') {
+  const totalsKey = `${prefix}Totals`, rotoKey = `${prefix}Roto`, rankKey = `${prefix}Rank`;
   const n = teams.length;
-  for (const t of teams) t.projRoto = { total: 0 };
+  for (const t of teams) t[rotoKey] = { total: 0 };
   for (const c of CATS) {
-    const sorted = [...teams].sort((a, b) => a.projTotals[c] - b.projTotals[c]);
+    const sorted = [...teams].sort((a, b) => a[totalsKey][c] - b[totalsKey][c]);
     let i = 0;
     while (i < n) {
       let j = i;
-      while (j + 1 < n && sorted[j + 1].projTotals[c] === sorted[i].projTotals[c]) j++;
+      while (j + 1 < n && sorted[j + 1][totalsKey][c] === sorted[i][totalsKey][c]) j++;
       const pts = (i + 1 + j + 1) / 2;
-      for (let k = i; k <= j; k++) sorted[k].projRoto[c] = pts;
+      for (let k = i; k <= j; k++) sorted[k][rotoKey][c] = pts;
       i = j + 1;
     }
   }
   for (const t of teams) {
-    t.projRoto.total = CATS.reduce((s, c) => s + t.projRoto[c], 0);
+    t[rotoKey].total = CATS.reduce((s, c) => s + t[rotoKey][c], 0);
   }
-  [...teams].sort((a, b) => b.projRoto.total - a.projRoto.total)
-    .forEach((t, i) => { t.projRank = i + 1; });
+  [...teams].sort((a, b) => b[rotoKey].total - a[rotoKey].total)
+    .forEach((t, i) => { t[rankKey] = i + 1; });
+}
+
+const STAT_KEYS = ['gp', 'mpg', 'fgPct', 'fgm', 'fga', 'ftPct', 'ftm', 'fta', 'tpm', 'pts', 'treb', 'ast', 'stl', 'blk', 'yahooTotal', 'rank'];
+
+/**
+ * Attaches season-to-date stats (stats/latest.json) to every rostered player and
+ * computes each team's actual totals and roto standings. Rostered players with no
+ * stat line (haven't played yet) get stats: null. Returns the stat lines no team rosters.
+ */
+// Yahoo's draft results and player list use different team abbreviations
+const NBA_TEAM_ALIASES = { SAS: 'SA', PHX: 'PHO', NYK: 'NY', GSW: 'GS', NOP: 'NO' };
+const normTeam = t => NBA_TEAM_ALIASES[t] || t;
+
+function attachSeasonStats(teams, statsPlayers) {
+  const index = buildNameIndex(statsPlayers);
+  const claimed = new Set();
+  // Exact (accent-insensitive) name match first; the fuzzy fallback must also agree on
+  // NBA team, otherwise e.g. Cameron Johnson would match Chaney Johnson.
+  const findLine = r => {
+    const exact = index.get(normName(r.name));
+    if (exact) return exact;
+    const fuzzy = matchPlayer(r.name, statsPlayers, index);
+    return fuzzy && normTeam(fuzzy.nbaTeam) === normTeam(r.nbaTeam) ? fuzzy : null;
+  };
+  for (const t of teams) {
+    for (const r of t.roster) {
+      const line = findLine(r);
+      if (line) claimed.add(line);
+      r.stats = line ? Object.fromEntries(STAT_KEYS.map(k => [k, line[k]])) : null;
+    }
+    t.actualTotals = sumTotals(t.roster.map(r => r.stats).filter(Boolean));
+    t.gamesPlayed = t.roster.reduce((s, r) => s + (r.stats ? r.stats.gp : 0), 0);
+  }
+  rotoPoints(teams, 'actual');
+  return statsPlayers.filter(p => !claimed.has(p));
 }
 
 /**
@@ -195,6 +236,9 @@ function main() {
   }
   rotoPoints(teams);
 
+  const stats = fs.existsSync(STATS_FILE) ? JSON.parse(fs.readFileSync(STATS_FILE, 'utf8')) : null;
+  const freeAgentLines = stats ? attachSeasonStats(teams, stats.players) : [];
+
   const league = {
     league: 'LePrawn',
     yahooLeagueId: 45771,
@@ -205,6 +249,7 @@ function main() {
     generatedFrom: path.relative(path.join(__dirname, '..'), DRAFT_FILE),
     transactionsApplied: txns.transactions.length,
     asOf: txns.transactions.reduce((m, t) => (t.date > m ? t.date : m), '2026-10-18'),
+    statsAsOf: stats ? stats.asOf : null,
     teams: teams.sort((a, b) => a.projRank - b.projRank),
     draft: picks
   };
@@ -231,8 +276,27 @@ function main() {
       `   ${String(t.projRoto.total).padStart(5)}  ${String(t.acquisitions).padStart(2)}/${txns.acquisitionLimit}`
     );
   }
+
+  if (!stats) return;
+  console.log(`\nSeason-to-Date Roto (stats as of ${stats.asOf}, all rostered players counted):`);
+  console.log('Rk   Team                              GP  ' + CATS.map(c => c.padStart(6)).join('') + '   Total  (Proj)');
+  for (const t of [...teams].sort((a, b) => a.actualRank - b.actualRank)) {
+    console.log(
+      `${String(t.actualRank).padStart(2)}${t.isMine ? '*' : t.isManaged ? '+' : ' '} ${t.name.padEnd(32).slice(0, 32)} ${String(t.gamesPlayed).padStart(4)}  ` +
+      CATS.map(c => String(t.actualRoto[c]).padStart(6)).join('') +
+      `   ${String(t.actualRoto.total).padStart(5)}  (${t.projRank})`
+    );
+  }
+  for (const t of teams.filter(tm => tm.isManaged)) {
+    const dnp = t.roster.filter(r => !r.stats).map(r => r.name);
+    if (dnp.length) console.log(`No stats yet for ${t.name}: ${dnp.join(', ')}`);
+  }
+  console.log('\nTop unrostered players by Yahoo season-to-date value:');
+  for (const p of freeAgentLines.slice(0, 10)) {
+    console.log(`  ${String(p.rank).padStart(3)}  ${p.name} (${p.nbaTeam} ${p.pos.join('/')}) GP ${p.gp}, ${p.mpg} mpg, total ${p.yahooTotal}`);
+  }
 }
 
 if (require.main === module) main();
 
-module.exports = { parseDraft, projectTeam, rotoPoints, applyTransactions };
+module.exports = { parseDraft, sumTotals, projectTeam, rotoPoints, applyTransactions, attachSeasonStats };

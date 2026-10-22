@@ -57,3 +57,39 @@ test('applyTransactions handles add/drops, two-way trades, and counts acquisitio
     { date: '2026-10-22', type: 'add_drop', team: 'B', add: [], drop: [{ name: 'Nobody Real' }] }
   ]), /not on B's roster/);
 });
+
+test('parseStatsText handles rank notes, blank positions, shooting splits and duplicate rows', () => {
+  const { parseStatsText } = require('../stats/parse_stats.js');
+  const text = [
+    'R#\tPLAYER\tPOS\tTEAM\tGP\tMPG\tFG%\tFT%\t3PM\tPTS\tTREB\tAST\tSTL\tBLK\tTOTAL',
+    '5  2\tPaolo Banchero\tPF\tORL\t1\t41.2\t0.833(10.0/12.0)\t0.750(12.0/16.0)\t3.0\t35.0\t7.0\t10.0\t1.0\t0.0\t13.37',
+    '1\tAnthony Edwards\tPG,SG\tMIN\t1\t32.6\t0.552(16.0/29.0)\t0.800(4.0/5.0)\t9.0\t45.0\t10.0\t3.0\t2.0\t1.0\t18.33',
+    '130  9\tTobe Awaka\t \tCHI\t1\t14.2\t1.000(1.0/1.0)\t0.000(0.0/0.0)\t0.0\t2.0\t7.0\t2.0\t1.0\t1.0\t3.23',
+    '301  15\tChaney Johnson\tPF\tBKN\t2\t5.0\t0.000(0.0/1.0)\t0.000(0.0/0.0)\t0.0\t0.0\t1.0\t0.0\t0.0\t0.0\t-2.49',
+    '302  14\tChaney Johnson\tPF\tBKN\t2\t5.0\t0.000(0.0/1.0)\t0.000(0.0/0.0)\t0.0\t0.0\t1.0\t0.0\t0.0\t0.0\t-2.49'
+  ].join('\n');
+  const { players, duplicates } = parseStatsText(text);
+  assert.equal(players.length, 4);
+  assert.deepEqual(duplicates, ['Chaney Johnson']);
+  assert.equal(players[0].rank, 5);
+  assert.equal(players[0].rankNote, 2);
+  assert.equal(players[0].fgm, 10);
+  assert.equal(players[0].fta, 16);
+  assert.equal(players[1].rankNote, null);
+  assert.deepEqual(players[2].pos, []);
+  assert.equal(players[3].yahooTotal, -2.49);
+});
+
+test('attachSeasonStats does not fuzzy-match a different player on another team', () => {
+  const { attachSeasonStats } = require('../season/build_season.js');
+  const line = (name, nbaTeam, pts) => ({ name, nbaTeam, gp: 1, pts, fgm: 1, fga: 2, ftm: 1, fta: 1, tpm: 0, treb: 0, ast: 0, stl: 0, blk: 0 });
+  const teams = [{ name: 'A', roster: [
+    { name: 'Cameron Johnson', nbaTeam: 'DEN' },
+    { name: 'Luka Dončić', nbaTeam: 'LAL' }
+  ] }];
+  const fa = attachSeasonStats(teams, [line('Chaney Johnson', 'BKN', 0), line('Luka Doncic', 'LAL', 28)]);
+  assert.equal(teams[0].roster[0].stats, null);
+  assert.equal(teams[0].roster[1].stats.pts, 28);
+  assert.equal(teams[0].actualTotals.pts, 28);
+  assert.deepEqual(fa.map(p => p.name), ['Chaney Johnson']);
+});

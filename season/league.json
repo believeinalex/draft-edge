@@ -11,6 +11,7 @@
   "generatedFrom": "season/draft_2026-10-18.txt",
   "transactionsApplied": 12,
   "asOf": "2026-10-22 09:33",
+  "statsAsOf": "2026-10-22",
   "teams": [
     {
       "name": "Shut Up and Jam Gaiden",
@@ -32,7 +33,25 @@
           "pick": 4,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 12.2
+          "projZ": 12.2,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.7,
+            "fgPct": 0.389,
+            "fgm": 7,
+            "fga": 18,
+            "ftPct": 1,
+            "ftm": 9,
+            "fta": 9,
+            "tpm": 5,
+            "pts": 28,
+            "treb": 8,
+            "ast": 7,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 14.47,
+            "rank": 4
+          }
         },
         {
           "name": "Chet Holmgren",
@@ -46,7 +65,25 @@
           "pick": 29,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 5.72
+          "projZ": 5.72,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.5,
+            "fgPct": 0.375,
+            "fgm": 3,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 8,
+            "fta": 8,
+            "tpm": 0,
+            "pts": 14,
+            "treb": 7,
+            "ast": 2,
+            "stl": 0,
+            "blk": 4,
+            "yahooTotal": 8.91,
+            "rank": 25
+          }
         },
         {
           "name": "Franz Wagner",
@@ -60,7 +97,25 @@
           "pick": 66,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.93
+          "projZ": 3.93,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.5,
+            "fgPct": 0.45,
+            "fgm": 9,
+            "fga": 20,
+            "ftPct": 0.5,
+            "ftm": 2,
+            "fta": 4,
+            "tpm": 2,
+            "pts": 22,
+            "treb": 6,
+            "ast": 5,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 4.69,
+            "rank": 98
+          }
         },
         {
           "name": "Darius Garland",
@@ -73,7 +128,25 @@
           "pick": 69,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.55
+          "projZ": 4.55,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.1,
+            "fgPct": 0.579,
+            "fgm": 11,
+            "fga": 19,
+            "ftPct": 0.625,
+            "ftm": 5,
+            "fta": 8,
+            "tpm": 3,
+            "pts": 30,
+            "treb": 1,
+            "ast": 4,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 5.78,
+            "rank": 80
+          }
         },
         {
           "name": "Day'Ron Sharpe",
@@ -86,7 +159,25 @@
           "pick": 98,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.3
+          "projZ": 2.3,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.7,
+            "fgPct": 0.8,
+            "fgm": 4,
+            "fga": 5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 1,
+            "tpm": 0,
+            "pts": 8,
+            "treb": 8,
+            "ast": 3,
+            "stl": 0,
+            "blk": 3,
+            "yahooTotal": 5.73,
+            "rank": 82
+          }
         },
         {
           "name": "Julius Randle",
@@ -99,7 +190,25 @@
           "pick": 99,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.78
+          "projZ": 1.78,
+          "stats": {
+            "gp": 1,
+            "mpg": 37.8,
+            "fgPct": 0.611,
+            "fgm": 11,
+            "fga": 18,
+            "ftPct": 0.727,
+            "ftm": 8,
+            "fta": 11,
+            "tpm": 3,
+            "pts": 33,
+            "treb": 8,
+            "ast": 7,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 11.09,
+            "rank": 14
+          }
         },
         {
           "name": "Immanuel Quickley",
@@ -113,7 +222,25 @@
           "pick": 109,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.37
+          "projZ": 2.37,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.2,
+            "fgPct": 0.462,
+            "fgm": 6,
+            "fga": 13,
+            "ftPct": 0.875,
+            "ftm": 7,
+            "fta": 8,
+            "tpm": 4,
+            "pts": 23,
+            "treb": 4,
+            "ast": 7,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 10.13,
+            "rank": 18
+          }
         },
         {
           "name": "Jalen Suggs",
@@ -127,7 +254,25 @@
           "pick": 110,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.68
+          "projZ": 3.68,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.1,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 3,
+            "ast": 5,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 2.6,
+            "rank": 146
+          }
         },
         {
           "name": "Miles Bridges",
@@ -140,7 +285,25 @@
           "pick": 125,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.03
+          "projZ": 1.03,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.7,
+            "fgPct": 0.273,
+            "fgm": 3,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 8,
+            "treb": 4,
+            "ast": 0,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 1.06,
+            "rank": 188
+          }
         },
         {
           "name": "Ajay Mitchell",
@@ -154,7 +317,25 @@
           "pick": 126,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.73
+          "projZ": 1.73,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.7,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 5,
+            "ast": 6,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.94,
+            "rank": 190
+          }
         },
         {
           "name": "Cameron Johnson",
@@ -168,7 +349,8 @@
           "pick": 140,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.51
+          "projZ": 1.51,
+          "stats": null
         },
         {
           "name": "Paul Reed",
@@ -182,7 +364,25 @@
           "pick": 151,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.25
+          "projZ": 0.25,
+          "stats": {
+            "gp": 1,
+            "mpg": 16.7,
+            "fgPct": 0.667,
+            "fgm": 2,
+            "fga": 3,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 6,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 2.89,
+            "rank": 140
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -207,7 +407,30 @@
         "stl": 13,
         "blk": 7
       },
-      "projRank": 1
+      "projRank": 1,
+      "actualTotals": {
+        "fgPct": 0.458,
+        "ftPct": 0.8182,
+        "tpm": 17,
+        "pts": 182,
+        "treb": 60,
+        "ast": 48,
+        "stl": 11,
+        "blk": 9
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 83.5,
+        "fgPct": 8,
+        "ftPct": 9,
+        "tpm": 9,
+        "pts": 11,
+        "treb": 9,
+        "ast": 14,
+        "stl": 8.5,
+        "blk": 15
+      },
+      "actualRank": 3
     },
     {
       "name": "Team Maru",
@@ -229,7 +452,25 @@
           "pick": 23,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.99
+          "projZ": 2.99,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.6,
+            "fgPct": 0.25,
+            "fgm": 3,
+            "fga": 12,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 1,
+            "pts": 10,
+            "treb": 5,
+            "ast": 0,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 2.33,
+            "rank": 153
+          }
         },
         {
           "name": "Derik Queen",
@@ -243,7 +484,25 @@
           "pick": 30,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.66
+          "projZ": 1.66,
+          "stats": {
+            "gp": 1,
+            "mpg": 18.1,
+            "fgPct": 0.5,
+            "fgm": 2,
+            "fga": 4,
+            "ftPct": 1,
+            "ftm": 6,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 10,
+            "treb": 10,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 6.11,
+            "rank": 64
+          }
         },
         {
           "name": "Jalen Duren",
@@ -256,7 +515,25 @@
           "pick": 46,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.29
+          "projZ": 4.29,
+          "stats": {
+            "gp": 1,
+            "mpg": 28,
+            "fgPct": 0.615,
+            "fgm": 8,
+            "fga": 13,
+            "ftPct": 0.857,
+            "ftm": 6,
+            "fta": 7,
+            "tpm": 0,
+            "pts": 22,
+            "treb": 9,
+            "ast": 1,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 7.53,
+            "rank": 44
+          }
         },
         {
           "name": "Mikal Bridges",
@@ -270,7 +547,25 @@
           "pick": 57,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.04
+          "projZ": 1.04,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.1,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 3,
+            "ast": 1,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": -0.61,
+            "rank": 245
+          }
         },
         {
           "name": "Cameron Boozer",
@@ -283,7 +578,25 @@
           "pick": 59,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.1
+          "projZ": 3.1,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.1,
+            "fgPct": 0.133,
+            "fgm": 2,
+            "fga": 15,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 7,
+            "treb": 11,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.57,
+            "rank": 203
+          }
         },
         {
           "name": "Desmond Bane",
@@ -297,7 +610,25 @@
           "pick": 64,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.55
+          "projZ": 4.55,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.1,
+            "fgPct": 0.333,
+            "fgm": 5,
+            "fga": 15,
+            "ftPct": 0.714,
+            "ftm": 5,
+            "fta": 7,
+            "tpm": 3,
+            "pts": 18,
+            "treb": 5,
+            "ast": 2,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 5.07,
+            "rank": 91
+          }
         },
         {
           "name": "Dyson Daniels",
@@ -311,7 +642,25 @@
           "pick": 71,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.61
+          "projZ": 2.61,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.6,
+            "fgPct": 0.615,
+            "fgm": 8,
+            "fga": 13,
+            "ftPct": 0.667,
+            "ftm": 4,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 20,
+            "treb": 4,
+            "ast": 3,
+            "stl": 5,
+            "blk": 0,
+            "yahooTotal": 7.38,
+            "rank": 47
+          }
         },
         {
           "name": "Nickeil Alexander-Walker",
@@ -325,7 +674,25 @@
           "pick": 81,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.9
+          "projZ": 3.9,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.7,
+            "fgPct": 0.533,
+            "fgm": 8,
+            "fga": 15,
+            "ftPct": 0.769,
+            "ftm": 10,
+            "fta": 13,
+            "tpm": 5,
+            "pts": 31,
+            "treb": 4,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 9.84,
+            "rank": 22
+          }
         },
         {
           "name": "Paul George",
@@ -339,7 +706,25 @@
           "pick": 87,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.52
+          "projZ": 3.52,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.6,
+            "fgPct": 0.571,
+            "fgm": 12,
+            "fga": 21,
+            "ftPct": 0.875,
+            "ftm": 7,
+            "fta": 8,
+            "tpm": 7,
+            "pts": 38,
+            "treb": 5,
+            "ast": 3,
+            "stl": 5,
+            "blk": 0,
+            "yahooTotal": 16.9,
+            "rank": 2
+          }
         },
         {
           "name": "Payton Pritchard",
@@ -352,7 +737,25 @@
           "pick": 89,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.63
+          "projZ": 1.63,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.5,
+            "fgPct": 0.444,
+            "fgm": 4,
+            "fga": 9,
+            "ftPct": 0.875,
+            "ftm": 7,
+            "fta": 8,
+            "tpm": 2,
+            "pts": 17,
+            "treb": 4,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 3.6,
+            "rank": 116
+          }
         },
         {
           "name": "Brandin Podziemski",
@@ -366,7 +769,8 @@
           "pick": 90,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33
+          "projZ": 1.33,
+          "stats": null
         },
         {
           "name": "Jalen Green",
@@ -380,7 +784,25 @@
           "pick": 116,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.04
+          "projZ": -0.04,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.9,
+            "fgPct": 0.333,
+            "fgm": 4,
+            "fga": 12,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 10,
+            "treb": 2,
+            "ast": 3,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 2.09,
+            "rank": 161
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -405,7 +827,30 @@
         "stl": 15,
         "blk": 6
       },
-      "projRank": 2
+      "projRank": 2,
+      "actualTotals": {
+        "fgPct": 0.4234,
+        "ftPct": 0.8226,
+        "tpm": 20,
+        "pts": 187,
+        "treb": 62,
+        "ast": 23,
+        "stl": 18,
+        "blk": 5
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 72.5,
+        "fgPct": 4,
+        "ftPct": 11,
+        "tpm": 13,
+        "pts": 12,
+        "treb": 10,
+        "ast": 2,
+        "stl": 14.5,
+        "blk": 6
+      },
+      "actualRank": 4
     },
     {
       "name": "Fishy Achilles",
@@ -428,7 +873,25 @@
           "pick": 25,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.19
+          "projZ": 6.19,
+          "stats": {
+            "gp": 1,
+            "mpg": 26.1,
+            "fgPct": 0.421,
+            "fgm": 8,
+            "fga": 19,
+            "ftPct": 1,
+            "ftm": 6,
+            "fta": 6,
+            "tpm": 1,
+            "pts": 23,
+            "treb": 6,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 6.23,
+            "rank": 63
+          }
         },
         {
           "name": "Derrick White",
@@ -442,7 +905,25 @@
           "pick": 37,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.97
+          "projZ": 3.97,
+          "stats": {
+            "gp": 1,
+            "mpg": 35.9,
+            "fgPct": 0.538,
+            "fgm": 7,
+            "fga": 13,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 3,
+            "pts": 17,
+            "treb": 1,
+            "ast": 8,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 6.76,
+            "rank": 51
+          }
         },
         {
           "name": "James Harden",
@@ -456,7 +937,8 @@
           "pick": 48,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.2
+          "projZ": 6.2,
+          "stats": null
         },
         {
           "name": "Trey Murphy III",
@@ -470,7 +952,25 @@
           "pick": 49,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 5.92
+          "projZ": 5.92,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.6,
+            "fgPct": 0.364,
+            "fgm": 4,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 2,
+            "pts": 11,
+            "treb": 4,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 1.47,
+            "rank": 173
+          }
         },
         {
           "name": "Zach Edey",
@@ -483,7 +983,25 @@
           "pick": 92,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.23
+          "projZ": 4.23,
+          "stats": {
+            "gp": 1,
+            "mpg": 21.1,
+            "fgPct": 0.6,
+            "fgm": 3,
+            "fga": 5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 9,
+            "ast": 0,
+            "stl": 0,
+            "blk": 2,
+            "yahooTotal": 3.83,
+            "rank": 111
+          }
         },
         {
           "name": "Neemias Queta",
@@ -496,7 +1014,25 @@
           "pick": 105,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.2
+          "projZ": 1.2,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.1,
+            "fgPct": 0.333,
+            "fgm": 1,
+            "fga": 3,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 3,
+            "treb": 4,
+            "ast": 2,
+            "stl": 1,
+            "blk": 2,
+            "yahooTotal": 2.19,
+            "rank": 158
+          }
         },
         {
           "name": "Norman Powell",
@@ -510,7 +1046,25 @@
           "pick": 111,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.54
+          "projZ": 1.54,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.3,
+            "fgPct": 0.333,
+            "fgm": 3,
+            "fga": 9,
+            "ftPct": 0.636,
+            "ftm": 7,
+            "fta": 11,
+            "tpm": 2,
+            "pts": 15,
+            "treb": 5,
+            "ast": 1,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 0.76,
+            "rank": 198
+          }
         },
         {
           "name": "Rui Hachimura",
@@ -524,7 +1078,25 @@
           "pick": 121,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.91
+          "projZ": -1.91,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.6,
+            "fgPct": 0.231,
+            "fgm": 3,
+            "fga": 13,
+            "ftPct": 0.4,
+            "ftm": 2,
+            "fta": 5,
+            "tpm": 2,
+            "pts": 10,
+            "treb": 8,
+            "ast": 2,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 1,
+            "rank": 189
+          }
         },
         {
           "name": "Sandro Mamukelashvili",
@@ -538,7 +1110,25 @@
           "pick": 127,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.88
+          "projZ": 0.88,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.2,
+            "fgPct": 0.4,
+            "fgm": 2,
+            "fga": 5,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 5,
+            "treb": 4,
+            "ast": 2,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 1.08,
+            "rank": 186
+          }
         },
         {
           "name": "Nic Claxton",
@@ -551,7 +1141,8 @@
           "pick": 128,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.64
+          "projZ": -0.64,
+          "stats": null
         },
         {
           "name": "Egor Dëmin",
@@ -565,7 +1156,25 @@
           "pick": 146,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.05
+          "projZ": -0.05,
+          "stats": {
+            "gp": 1,
+            "mpg": 26.8,
+            "fgPct": 0.2,
+            "fgm": 2,
+            "fga": 10,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 4,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": -0.71,
+            "rank": 249
+          }
         },
         {
           "name": "Morez Johnson Jr.",
@@ -578,7 +1187,25 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": null
+          "projZ": null,
+          "stats": {
+            "gp": 1,
+            "mpg": 13.8,
+            "fgPct": 0.6,
+            "fgm": 3,
+            "fga": 5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 3,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -2.13,
+            "rank": 291
+          }
         },
         {
           "name": "Brayden Burries",
@@ -591,7 +1218,25 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -3.99
+          "projZ": -3.99,
+          "stats": {
+            "gp": 1,
+            "mpg": 15.5,
+            "fgPct": 0.5,
+            "fgm": 3,
+            "fga": 6,
+            "ftPct": 0.8,
+            "ftm": 4,
+            "fta": 5,
+            "tpm": 2,
+            "pts": 12,
+            "treb": 5,
+            "ast": 0,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 2.22,
+            "rank": 157
+          }
         }
       ],
       "acquisitionsLeft": 16,
@@ -616,7 +1261,30 @@
         "stl": 9,
         "blk": 13
       },
-      "projRank": 3
+      "projRank": 3,
+      "actualTotals": {
+        "fgPct": 0.3939,
+        "ftPct": 0.6471,
+        "tpm": 12,
+        "pts": 112,
+        "treb": 53,
+        "ast": 24,
+        "stl": 7,
+        "blk": 5
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 30.5,
+        "fgPct": 2,
+        "ftPct": 3,
+        "tpm": 5,
+        "pts": 3,
+        "treb": 6,
+        "ast": 3,
+        "stl": 2.5,
+        "blk": 6
+      },
+      "actualRank": 14
     },
     {
       "name": "Finn will cook Burt",
@@ -637,7 +1305,25 @@
           "pick": 3,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 14.59
+          "projZ": 14.59,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.2,
+            "fgPct": 0.077,
+            "fgm": 1,
+            "fga": 13,
+            "ftPct": 0.833,
+            "ftm": 10,
+            "fta": 12,
+            "tpm": 0,
+            "pts": 12,
+            "treb": 13,
+            "ast": 3,
+            "stl": 1,
+            "blk": 6,
+            "yahooTotal": 9.96,
+            "rank": 20
+          }
         },
         {
           "name": "Donovan Mitchell",
@@ -651,7 +1337,8 @@
           "pick": 12,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.01
+          "projZ": 7.01,
+          "stats": null
         },
         {
           "name": "Trae Young",
@@ -664,7 +1351,25 @@
           "pick": 26,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.82
+          "projZ": 6.82,
+          "stats": {
+            "gp": 1,
+            "mpg": 38.4,
+            "fgPct": 0.308,
+            "fgm": 4,
+            "fga": 13,
+            "ftPct": 0.75,
+            "ftm": 12,
+            "fta": 16,
+            "tpm": 0,
+            "pts": 20,
+            "treb": 0,
+            "ast": 13,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 5.27,
+            "rank": 89
+          }
         },
         {
           "name": "Josh Hart",
@@ -678,7 +1383,25 @@
           "pick": 101,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.93
+          "projZ": 1.93,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.3,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0.667,
+            "ftm": 2,
+            "fta": 3,
+            "tpm": 2,
+            "pts": 14,
+            "treb": 7,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 5.89,
+            "rank": 76
+          }
         },
         {
           "name": "VJ Edgecombe",
@@ -692,7 +1415,25 @@
           "pick": 107,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.85
+          "projZ": 1.85,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.8,
+            "fgPct": 0.4,
+            "fgm": 4,
+            "fga": 10,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 9,
+            "treb": 4,
+            "ast": 1,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": -0.01,
+            "rank": 226
+          }
         },
         {
           "name": "Tre Jones",
@@ -706,7 +1447,25 @@
           "pick": 120,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.7
+          "projZ": 0.7,
+          "stats": {
+            "gp": 1,
+            "mpg": 13.4,
+            "fgPct": 0.625,
+            "fgm": 5,
+            "fga": 8,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 13,
+            "treb": 3,
+            "ast": 0,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.68,
+            "rank": 200
+          }
         },
         {
           "name": "Christian Braun",
@@ -721,7 +1480,8 @@
           "pick": 145,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.61
+          "projZ": 0.61,
+          "stats": null
         },
         {
           "name": "Jusuf Nurkić",
@@ -734,7 +1494,8 @@
           "pick": 156,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.12
+          "projZ": -0.12,
+          "stats": null
         },
         {
           "name": "Draymond Green",
@@ -748,7 +1509,25 @@
           "pick": 163,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.59
+          "projZ": 0.59,
+          "stats": {
+            "gp": 1,
+            "mpg": 21.2,
+            "fgPct": 0.25,
+            "fgm": 1,
+            "fga": 4,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 4,
+            "ast": 8,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 3.86,
+            "rank": 110
+          }
         },
         {
           "name": "Saddiq Bey",
@@ -762,7 +1541,25 @@
           "pick": 169,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.2
+          "projZ": -0.2,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.6,
+            "fgPct": 0.444,
+            "fgm": 4,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 2,
+            "pts": 13,
+            "treb": 5,
+            "ast": 0,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 2.84,
+            "rank": 141
+          }
         },
         {
           "name": "Malik Monk",
@@ -776,7 +1573,8 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -0.35
+          "projZ": -0.35,
+          "stats": null
         },
         {
           "name": "Santi Aldama",
@@ -789,7 +1587,8 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -0.99
+          "projZ": -0.99,
+          "stats": null
         }
       ],
       "acquisitionsLeft": 16,
@@ -814,7 +1613,30 @@
         "stl": 12,
         "blk": 8
       },
-      "projRank": 4
+      "projRank": 4,
+      "actualTotals": {
+        "fgPct": 0.3582,
+        "ftPct": 0.775,
+        "tpm": 4,
+        "pts": 83,
+        "treb": 36,
+        "ast": 28,
+        "stl": 6,
+        "blk": 8
+      },
+      "gamesPlayed": 7,
+      "actualRoto": {
+        "total": 30,
+        "fgPct": 1,
+        "ftPct": 6,
+        "tpm": 1.5,
+        "pts": 1,
+        "treb": 1,
+        "ast": 6,
+        "stl": 1,
+        "blk": 12.5
+      },
+      "actualRank": 15
     },
     {
       "name": "#WashedAutoDraftKing",
@@ -836,7 +1658,25 @@
           "pick": 5,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.98
+          "projZ": 4.98,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.8,
+            "fgPct": 0.684,
+            "fgm": 13,
+            "fga": 19,
+            "ftPct": 0.643,
+            "ftm": 9,
+            "fta": 14,
+            "tpm": 0,
+            "pts": 35,
+            "treb": 6,
+            "ast": 1,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 5.03,
+            "rank": 93
+          }
         },
         {
           "name": "LaMelo Ball",
@@ -849,7 +1689,25 @@
           "pick": 22,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4
+          "projZ": 4,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.6,
+            "fgPct": 0.412,
+            "fgm": 7,
+            "fga": 17,
+            "ftPct": 0.667,
+            "ftm": 2,
+            "fta": 3,
+            "tpm": 5,
+            "pts": 21,
+            "treb": 2,
+            "ast": 6,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 7.41,
+            "rank": 46
+          }
         },
         {
           "name": "Myles Turner",
@@ -862,7 +1720,25 @@
           "pick": 43,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.45
+          "projZ": 1.45,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.3,
+            "fgPct": 0.571,
+            "fgm": 4,
+            "fga": 7,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 2,
+            "pts": 11,
+            "treb": 5,
+            "ast": 3,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 4.98,
+            "rank": 94
+          }
         },
         {
           "name": "Paolo Banchero",
@@ -875,7 +1751,25 @@
           "pick": 56,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.82
+          "projZ": 1.82,
+          "stats": {
+            "gp": 1,
+            "mpg": 41.2,
+            "fgPct": 0.833,
+            "fgm": 10,
+            "fga": 12,
+            "ftPct": 0.75,
+            "ftm": 12,
+            "fta": 16,
+            "tpm": 3,
+            "pts": 35,
+            "treb": 7,
+            "ast": 10,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 13.37,
+            "rank": 5
+          }
         },
         {
           "name": "Pascal Siakam",
@@ -889,7 +1783,25 @@
           "pick": 72,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.65
+          "projZ": 2.65,
+          "stats": {
+            "gp": 1,
+            "mpg": 35.3,
+            "fgPct": 0.565,
+            "fgm": 13,
+            "fga": 23,
+            "ftPct": 0.375,
+            "ftm": 3,
+            "fta": 8,
+            "tpm": 1,
+            "pts": 30,
+            "treb": 8,
+            "ast": 1,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 2.69,
+            "rank": 144
+          }
         },
         {
           "name": "Ja Morant",
@@ -902,7 +1814,25 @@
           "pick": 78,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.5
+          "projZ": 2.5,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.6,
+            "fgPct": 0.75,
+            "fgm": 6,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 14,
+            "treb": 5,
+            "ast": 8,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 9.7,
+            "rank": 24
+          }
         },
         {
           "name": "Kon Knueppel",
@@ -916,7 +1846,8 @@
           "pick": 80,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.07
+          "projZ": 3.07,
+          "stats": null
         },
         {
           "name": "Darryn Peterson",
@@ -929,7 +1860,25 @@
           "pick": 100,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.67
+          "projZ": -0.67,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.1,
+            "fgPct": 0.429,
+            "fgm": 3,
+            "fga": 7,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 9,
+            "treb": 4,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.78,
+            "rank": 196
+          }
         },
         {
           "name": "Cason Wallace",
@@ -944,7 +1893,25 @@
           "pick": 112,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.99
+          "projZ": 0.99,
+          "stats": {
+            "gp": 1,
+            "mpg": 19.3,
+            "fgPct": 0.375,
+            "fgm": 3,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 3,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 0.44,
+            "rank": 209
+          }
         },
         {
           "name": "Daniel Gafford",
@@ -957,7 +1924,25 @@
           "pick": 123,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.76
+          "projZ": -1.76,
+          "stats": {
+            "gp": 1,
+            "mpg": 21.5,
+            "fgPct": 0,
+            "fgm": 0,
+            "fga": 1,
+            "ftPct": 0.5,
+            "ftm": 2,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 3,
+            "ast": 1,
+            "stl": 1,
+            "blk": 2,
+            "yahooTotal": 0.55,
+            "rank": 204
+          }
         },
         {
           "name": "Reed Sheppard",
@@ -971,7 +1956,25 @@
           "pick": 139,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.38
+          "projZ": 0.38,
+          "stats": {
+            "gp": 1,
+            "mpg": 15.8,
+            "fgPct": 0.167,
+            "fgm": 1,
+            "fga": 6,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 3,
+            "treb": 2,
+            "ast": 4,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 1.54,
+            "rank": 169
+          }
         },
         {
           "name": "Aaron Gordon",
@@ -985,7 +1988,8 @@
           "pick": 150,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.53
+          "projZ": -0.53,
+          "stats": null
         }
       ],
       "acquisitionsLeft": 18,
@@ -1010,7 +2014,30 @@
         "stl": 10,
         "blk": 9
       },
-      "projRank": 5
+      "projRank": 5,
+      "actualTotals": {
+        "fgPct": 0.5556,
+        "ftPct": 0.64,
+        "tpm": 14,
+        "pts": 166,
+        "treb": 45,
+        "ast": 39,
+        "stl": 12,
+        "blk": 3
+      },
+      "gamesPlayed": 10,
+      "actualRoto": {
+        "total": 60.5,
+        "fgPct": 15,
+        "ftPct": 2,
+        "tpm": 6,
+        "pts": 10,
+        "treb": 4,
+        "ast": 11,
+        "stl": 11,
+        "blk": 1.5
+      },
+      "actualRank": 9
     },
     {
       "name": "Billy Hoyle's Boy-les",
@@ -1033,7 +2060,25 @@
           "pick": 16,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.43
+          "projZ": 6.43,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.9,
+            "fgPct": 0.588,
+            "fgm": 10,
+            "fga": 17,
+            "ftPct": 0.846,
+            "ftm": 11,
+            "fta": 13,
+            "tpm": 1,
+            "pts": 32,
+            "treb": 5,
+            "ast": 2,
+            "stl": 3,
+            "blk": 1,
+            "yahooTotal": 10.99,
+            "rank": 15
+          }
         },
         {
           "name": "Austin Reaves",
@@ -1048,7 +2093,25 @@
           "pick": 28,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.51
+          "projZ": 6.51,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.9,
+            "fgPct": 0.545,
+            "fgm": 6,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 10,
+            "fta": 10,
+            "tpm": 1,
+            "pts": 23,
+            "treb": 4,
+            "ast": 6,
+            "stl": 2,
+            "blk": 1,
+            "yahooTotal": 11.39,
+            "rank": 13
+          }
         },
         {
           "name": "Khaman Maluach",
@@ -1061,7 +2124,25 @@
           "pick": 60,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.07
+          "projZ": 1.07,
+          "stats": {
+            "gp": 1,
+            "mpg": 16.9,
+            "fgPct": 0.5,
+            "fgm": 1,
+            "fga": 2,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 6,
+            "ast": 1,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 1.27,
+            "rank": 180
+          }
         },
         {
           "name": "Matas Buzelis",
@@ -1075,7 +2156,25 @@
           "pick": 65,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.81
+          "projZ": 3.81,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.8,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 0.813,
+            "ftm": 13,
+            "fta": 16,
+            "tpm": 0,
+            "pts": 17,
+            "treb": 6,
+            "ast": 0,
+            "stl": 0,
+            "blk": 2,
+            "yahooTotal": 3.51,
+            "rank": 119
+          }
         },
         {
           "name": "Kyshawn George",
@@ -1090,7 +2189,25 @@
           "pick": 73,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.23
+          "projZ": -0.23,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.7,
+            "fgPct": 0.571,
+            "fgm": 8,
+            "fga": 14,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 1,
+            "pts": 18,
+            "treb": 5,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 6.51,
+            "rank": 56
+          }
         },
         {
           "name": "Caleb Wilson",
@@ -1103,7 +2220,25 @@
           "pick": 82,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.72
+          "projZ": 0.72,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.5,
+            "fgPct": 0.333,
+            "fgm": 7,
+            "fga": 21,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 16,
+            "treb": 4,
+            "ast": 0,
+            "stl": 3,
+            "blk": 1,
+            "yahooTotal": 2.75,
+            "rank": 142
+          }
         },
         {
           "name": "Naz Reid",
@@ -1117,7 +2252,25 @@
           "pick": 86,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.4
+          "projZ": 2.4,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.7,
+            "fgPct": 0.421,
+            "fgm": 8,
+            "fga": 19,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 1,
+            "tpm": 4,
+            "pts": 20,
+            "treb": 11,
+            "ast": 7,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 7.45,
+            "rank": 45
+          }
         },
         {
           "name": "Ty Jerome",
@@ -1131,7 +2284,25 @@
           "pick": 95,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.75
+          "projZ": 2.75,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.7,
+            "fgPct": 0.68,
+            "fgm": 17,
+            "fga": 25,
+            "ftPct": 0.857,
+            "ftm": 6,
+            "fta": 7,
+            "tpm": 5,
+            "pts": 45,
+            "treb": 7,
+            "ast": 6,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 16.44,
+            "rank": 3
+          }
         },
         {
           "name": "Jaden McDaniels",
@@ -1144,7 +2315,25 @@
           "pick": 103,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.51
+          "projZ": 2.51,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.7,
+            "fgPct": 0.727,
+            "fgm": 8,
+            "fga": 11,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 17,
+            "treb": 8,
+            "ast": 1,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 7.8,
+            "rank": 40
+          }
         },
         {
           "name": "Zach LaVine",
@@ -1159,7 +2348,25 @@
           "pick": 104,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.68
+          "projZ": 2.68,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.2,
+            "fgPct": 0.526,
+            "fgm": 10,
+            "fga": 19,
+            "ftPct": 0.625,
+            "ftm": 5,
+            "fta": 8,
+            "tpm": 3,
+            "pts": 28,
+            "treb": 4,
+            "ast": 4,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 4.93,
+            "rank": 95
+          }
         },
         {
           "name": "Yaxel Lendeborg",
@@ -1172,7 +2379,25 @@
           "pick": 118,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.04
+          "projZ": 0.04,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.7,
+            "fgPct": 0.455,
+            "fgm": 5,
+            "fga": 11,
+            "ftPct": 0.333,
+            "ftm": 1,
+            "fta": 3,
+            "tpm": 1,
+            "pts": 12,
+            "treb": 3,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 0.42,
+            "rank": 212
+          }
         },
         {
           "name": "Darius Acuff Jr.",
@@ -1185,7 +2410,25 @@
           "pick": 131,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.98
+          "projZ": -1.98,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.9,
+            "fgPct": 0.208,
+            "fgm": 5,
+            "fga": 24,
+            "ftPct": 0.4,
+            "ftm": 2,
+            "fta": 5,
+            "tpm": 0,
+            "pts": 12,
+            "treb": 3,
+            "ast": 3,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": -2.67,
+            "rank": 311
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -1210,7 +2453,30 @@
         "stl": 5.5,
         "blk": 14
       },
-      "projRank": 6
+      "projRank": 6,
+      "actualTotals": {
+        "fgPct": 0.478,
+        "ftPct": 0.7576,
+        "tpm": 18,
+        "pts": 242,
+        "treb": 66,
+        "ast": 35,
+        "stl": 16,
+        "blk": 8
+      },
+      "gamesPlayed": 12,
+      "actualRoto": {
+        "total": 87,
+        "fgPct": 10,
+        "ftPct": 4,
+        "tpm": 10.5,
+        "pts": 15,
+        "treb": 13,
+        "ast": 9,
+        "stl": 13,
+        "blk": 12.5
+      },
+      "actualRank": 2
     },
     {
       "name": "vincemvpcarter",
@@ -1231,7 +2497,25 @@
           "pick": 40,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.78
+          "projZ": 3.78,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.8,
+            "fgPct": 1,
+            "fgm": 12,
+            "fga": 12,
+            "ftPct": 0.5,
+            "ftm": 2,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 26,
+            "treb": 9,
+            "ast": 1,
+            "stl": 0,
+            "blk": 2,
+            "yahooTotal": 8.79,
+            "rank": 28
+          }
         },
         {
           "name": "Anthony Davis",
@@ -1245,7 +2529,25 @@
           "pick": 41,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.9
+          "projZ": 4.9,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.8,
+            "fgPct": 0.55,
+            "fgm": 11,
+            "fga": 20,
+            "ftPct": 0.786,
+            "ftm": 11,
+            "fta": 14,
+            "tpm": 1,
+            "pts": 34,
+            "treb": 12,
+            "ast": 4,
+            "stl": 2,
+            "blk": 1,
+            "yahooTotal": 12.05,
+            "rank": 11
+          }
         },
         {
           "name": "Lauri Markkanen",
@@ -1259,7 +2561,25 @@
           "pick": 51,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.42
+          "projZ": 4.42,
+          "stats": {
+            "gp": 1,
+            "mpg": 36.3,
+            "fgPct": 0.308,
+            "fgm": 4,
+            "fga": 13,
+            "ftPct": 0.9,
+            "ftm": 9,
+            "fta": 10,
+            "tpm": 1,
+            "pts": 18,
+            "treb": 9,
+            "ast": 3,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 6.04,
+            "rank": 68
+          }
         },
         {
           "name": "Keyonte George",
@@ -1273,7 +2593,25 @@
           "pick": 61,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.37
+          "projZ": 2.37,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.6,
+            "fgPct": 0.583,
+            "fgm": 7,
+            "fga": 12,
+            "ftPct": 0.571,
+            "ftm": 4,
+            "fta": 7,
+            "tpm": 4,
+            "pts": 22,
+            "treb": 3,
+            "ast": 5,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 5.8,
+            "rank": 79
+          }
         },
         {
           "name": "Collin Murray-Boyles",
@@ -1287,7 +2625,25 @@
           "pick": 75,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.83
+          "projZ": 0.83,
+          "stats": {
+            "gp": 1,
+            "mpg": 19.6,
+            "fgPct": 0.286,
+            "fgm": 2,
+            "fga": 7,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 8,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 3.91,
+            "rank": 109
+          }
         },
         {
           "name": "Dejounte Murray",
@@ -1300,7 +2656,25 @@
           "pick": 79,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.44
+          "projZ": 4.44,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.4,
+            "fgPct": 0.5,
+            "fgm": 9,
+            "fga": 18,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 2,
+            "pts": 23,
+            "treb": 3,
+            "ast": 7,
+            "stl": 2,
+            "blk": 3,
+            "yahooTotal": 12.14,
+            "rank": 9
+          }
         },
         {
           "name": "Ryan Rollins",
@@ -1314,7 +2688,25 @@
           "pick": 84,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.84
+          "projZ": 2.84,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.6,
+            "fgPct": 0.286,
+            "fgm": 4,
+            "fga": 14,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 9,
+            "treb": 6,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.79,
+            "rank": 195
+          }
         },
         {
           "name": "Dylan Harper",
@@ -1328,7 +2720,25 @@
           "pick": 85,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.12
+          "projZ": 1.12,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.7,
+            "fgPct": 0.412,
+            "fgm": 7,
+            "fga": 17,
+            "ftPct": 1,
+            "ftm": 4,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 18,
+            "treb": 7,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 4.59,
+            "rank": 100
+          }
         },
         {
           "name": "Damian Lillard",
@@ -1341,7 +2751,25 @@
           "pick": 88,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.51
+          "projZ": 2.51,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.9,
+            "fgPct": 0.583,
+            "fgm": 7,
+            "fga": 12,
+            "ftPct": 1,
+            "ftm": 5,
+            "fta": 5,
+            "tpm": 6,
+            "pts": 25,
+            "treb": 3,
+            "ast": 6,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 11.49,
+            "rank": 12
+          }
         },
         {
           "name": "Zion Williamson",
@@ -1355,7 +2783,25 @@
           "pick": 93,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33
+          "projZ": 1.33,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.1,
+            "fgPct": 0.438,
+            "fgm": 7,
+            "fga": 16,
+            "ftPct": 1,
+            "ftm": 6,
+            "fta": 6,
+            "tpm": 2,
+            "pts": 22,
+            "treb": 3,
+            "ast": 3,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 8.06,
+            "rank": 37
+          }
         },
         {
           "name": "CJ McCollum",
@@ -1369,7 +2815,25 @@
           "pick": 124,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.06
+          "projZ": -0.06,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.7,
+            "fgPct": 0.778,
+            "fgm": 7,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 4,
+            "pts": 19,
+            "treb": 2,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 6.53,
+            "rank": 55
+          }
         },
         {
           "name": "Kevin Porter Jr.",
@@ -1383,7 +2847,8 @@
           "pick": 143,
           "acquired": "trade",
           "acquiredDate": "2026-10-20 07:41",
-          "projZ": 0.54
+          "projZ": 0.54,
+          "stats": null
         }
       ],
       "acquisitionsLeft": 18,
@@ -1408,7 +2873,30 @@
         "stl": 11,
         "blk": 11
       },
-      "projRank": 7
+      "projRank": 7,
+      "actualTotals": {
+        "fgPct": 0.5133,
+        "ftPct": 0.8393,
+        "tpm": 21,
+        "pts": 222,
+        "treb": 65,
+        "ast": 43,
+        "stl": 10,
+        "blk": 8
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 99,
+        "fgPct": 13,
+        "ftPct": 14,
+        "tpm": 15,
+        "pts": 14,
+        "treb": 11.5,
+        "ast": 13,
+        "stl": 6,
+        "blk": 12.5
+      },
+      "actualRank": 1
     },
     {
       "name": "Bitsketball Stars",
@@ -1429,7 +2917,25 @@
           "pick": 6,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 14.26
+          "projZ": 14.26,
+          "stats": {
+            "gp": 1,
+            "mpg": 36.1,
+            "fgPct": 0.481,
+            "fgm": 13,
+            "fga": 27,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 3,
+            "pts": 32,
+            "treb": 6,
+            "ast": 4,
+            "stl": 3,
+            "blk": 3,
+            "yahooTotal": 13.35,
+            "rank": 7
+          }
         },
         {
           "name": "LeBron James",
@@ -1443,7 +2949,25 @@
           "pick": 33,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.44
+          "projZ": 4.44,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.8,
+            "fgPct": 0.385,
+            "fgm": 5,
+            "fga": 13,
+            "ftPct": 0.667,
+            "ftm": 4,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 14,
+            "treb": 9,
+            "ast": 7,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 5.45,
+            "rank": 87
+          }
         },
         {
           "name": "Jamal Murray",
@@ -1456,7 +2980,8 @@
           "pick": 34,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.55
+          "projZ": 6.55,
+          "stats": null
         },
         {
           "name": "Onyeka Okongwu",
@@ -1469,7 +2994,25 @@
           "pick": 50,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.71
+          "projZ": 2.71,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.3,
+            "fgPct": 0.375,
+            "fgm": 3,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 8,
+            "treb": 5,
+            "ast": 7,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 3.1,
+            "rank": 135
+          }
         },
         {
           "name": "Cedric Coward",
@@ -1483,7 +3026,25 @@
           "pick": 94,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.7
+          "projZ": 0.7,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.8,
+            "fgPct": 0.5,
+            "fgm": 3,
+            "fga": 6,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 7,
+            "treb": 7,
+            "ast": 2,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 3.38,
+            "rank": 122
+          }
         },
         {
           "name": "DeMar DeRozan",
@@ -1497,7 +3058,8 @@
           "pick": 117,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.07
+          "projZ": -0.07,
+          "stats": null
         },
         {
           "name": "Andrew Nembhard",
@@ -1511,7 +3073,25 @@
           "pick": 132,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.05
+          "projZ": -0.05,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.7,
+            "fgPct": 0.6,
+            "fgm": 6,
+            "fga": 10,
+            "ftPct": 0.857,
+            "ftm": 6,
+            "fta": 7,
+            "tpm": 0,
+            "pts": 18,
+            "treb": 2,
+            "ast": 9,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 6.59,
+            "rank": 53
+          }
         },
         {
           "name": "RJ Barrett",
@@ -1526,7 +3106,25 @@
           "pick": 155,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.11
+          "projZ": -1.11,
+          "stats": {
+            "gp": 1,
+            "mpg": 26.2,
+            "fgPct": 0.571,
+            "fgm": 8,
+            "fga": 14,
+            "ftPct": 0.571,
+            "ftm": 4,
+            "fta": 7,
+            "tpm": 0,
+            "pts": 20,
+            "treb": 4,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 1.37,
+            "rank": 177
+          }
         },
         {
           "name": "Moussa Diabaté",
@@ -1539,7 +3137,25 @@
           "pick": 162,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.45
+          "projZ": -1.45,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.6,
+            "fgPct": 0.636,
+            "fgm": 7,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 0,
+            "pts": 17,
+            "treb": 8,
+            "ast": 3,
+            "stl": 5,
+            "blk": 0,
+            "yahooTotal": 10.08,
+            "rank": 19
+          }
         },
         {
           "name": "Anthony Black",
@@ -1554,7 +3170,8 @@
           "pick": 168,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.21
+          "projZ": -0.21,
+          "stats": null
         },
         {
           "name": "Aaron Nesmith",
@@ -1568,7 +3185,8 @@
           "pick": 173,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.17
+          "projZ": -0.17,
+          "stats": null
         },
         {
           "name": "Bennedict Mathurin",
@@ -1582,7 +3200,25 @@
           "pick": 177,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -2.45
+          "projZ": -2.45,
+          "stats": {
+            "gp": 1,
+            "mpg": 17.9,
+            "fgPct": 0.429,
+            "fgm": 3,
+            "fga": 7,
+            "ftPct": 0.833,
+            "ftm": 5,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 11,
+            "treb": 3,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 1.84,
+            "rank": 165
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -1607,7 +3243,30 @@
         "stl": 5.5,
         "blk": 4
       },
-      "projRank": 8
+      "projRank": 8,
+      "actualTotals": {
+        "fgPct": 0.5,
+        "ftPct": 0.7714,
+        "tpm": 4,
+        "pts": 127,
+        "treb": 44,
+        "ast": 37,
+        "stl": 11,
+        "blk": 5
+      },
+      "gamesPlayed": 8,
+      "actualRoto": {
+        "total": 50,
+        "fgPct": 12,
+        "ftPct": 5,
+        "tpm": 1.5,
+        "pts": 4,
+        "treb": 3,
+        "ast": 10,
+        "stl": 8.5,
+        "blk": 6
+      },
+      "actualRank": 13
     },
     {
       "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
@@ -1629,7 +3288,25 @@
           "pick": 9,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 8.42
+          "projZ": 8.42,
+          "stats": {
+            "gp": 1,
+            "mpg": 35.3,
+            "fgPct": 0.444,
+            "fgm": 8,
+            "fga": 18,
+            "ftPct": 1,
+            "ftm": 5,
+            "fta": 5,
+            "tpm": 1,
+            "pts": 22,
+            "treb": 4,
+            "ast": 8,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 8.79,
+            "rank": 27
+          }
         },
         {
           "name": "Kawhi Leonard",
@@ -1644,7 +3321,25 @@
           "pick": 13,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 5.33
+          "projZ": 5.33,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.9,
+            "fgPct": 0.294,
+            "fgm": 5,
+            "fga": 17,
+            "ftPct": 1,
+            "ftm": 11,
+            "fta": 11,
+            "tpm": 2,
+            "pts": 23,
+            "treb": 6,
+            "ast": 2,
+            "stl": 4,
+            "blk": 1,
+            "yahooTotal": 10.8,
+            "rank": 16
+          }
         },
         {
           "name": "Jalen Johnson",
@@ -1658,7 +3353,25 @@
           "pick": 19,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.76
+          "projZ": 6.76,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.8,
+            "fgPct": 0.368,
+            "fgm": 7,
+            "fga": 19,
+            "ftPct": 0.857,
+            "ftm": 6,
+            "fta": 7,
+            "tpm": 0,
+            "pts": 20,
+            "treb": 14,
+            "ast": 6,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 6.44,
+            "rank": 59
+          }
         },
         {
           "name": "Ausar Thompson",
@@ -1673,7 +3386,25 @@
           "pick": 62,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33
+          "projZ": 1.33,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.3,
+            "fgPct": 0.5,
+            "fgm": 4,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 0,
+            "pts": 11,
+            "treb": 11,
+            "ast": 5,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 6.43,
+            "rank": 60
+          }
         },
         {
           "name": "Kel'el Ware",
@@ -1686,7 +3417,25 @@
           "pick": 96,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.21
+          "projZ": 3.21,
+          "stats": {
+            "gp": 1,
+            "mpg": 13.7,
+            "fgPct": 0.5,
+            "fgm": 3,
+            "fga": 6,
+            "ftPct": 0.333,
+            "ftm": 1,
+            "fta": 3,
+            "tpm": 0,
+            "pts": 7,
+            "treb": 3,
+            "ast": 1,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": -1.07,
+            "rank": 263
+          }
         },
         {
           "name": "Keegan Murray",
@@ -1700,7 +3449,25 @@
           "pick": 119,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.4
+          "projZ": 1.4,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.4,
+            "fgPct": 0.125,
+            "fgm": 1,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 4,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": -1.82,
+            "rank": 278
+          }
         },
         {
           "name": "Fred VanVleet",
@@ -1713,7 +3480,25 @@
           "pick": 130,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.29
+          "projZ": -0.29,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.6,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 6,
+            "treb": 2,
+            "ast": 11,
+            "stl": 3,
+            "blk": 1,
+            "yahooTotal": 7.63,
+            "rank": 43
+          }
         },
         {
           "name": "Jaime Jaquez Jr.",
@@ -1728,7 +3513,25 @@
           "pick": 154,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.31
+          "projZ": -0.31,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.4,
+            "fgPct": 0.667,
+            "fgm": 8,
+            "fga": 12,
+            "ftPct": 0.833,
+            "ftm": 5,
+            "fta": 6,
+            "tpm": 1,
+            "pts": 22,
+            "treb": 7,
+            "ast": 2,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 5.9,
+            "rank": 74
+          }
         },
         {
           "name": "Kristaps Porziņģis",
@@ -1741,7 +3544,8 @@
           "pick": 161,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0
+          "projZ": 0,
+          "stats": null
         },
         {
           "name": "Isaiah Jackson",
@@ -1754,7 +3558,25 @@
           "pick": 167,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.99
+          "projZ": -0.99,
+          "stats": {
+            "gp": 1,
+            "mpg": 14.9,
+            "fgPct": 0.75,
+            "fgm": 6,
+            "fga": 8,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 13,
+            "treb": 5,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 2.26,
+            "rank": 154
+          }
         },
         {
           "name": "Mitchell Robinson",
@@ -1767,7 +3589,25 @@
           "pick": 172,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.58
+          "projZ": -0.58,
+          "stats": {
+            "gp": 1,
+            "mpg": 18.1,
+            "fgPct": 1,
+            "fgm": 2,
+            "fga": 2,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 3,
+            "ast": 1,
+            "stl": 1,
+            "blk": 2,
+            "yahooTotal": 1.14,
+            "rank": 182
+          }
         },
         {
           "name": "Daniss Jenkins",
@@ -1781,7 +3621,25 @@
           "pick": 176,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.51
+          "projZ": -1.51,
+          "stats": {
+            "gp": 1,
+            "mpg": 15.3,
+            "fgPct": 0.333,
+            "fgm": 1,
+            "fga": 3,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 3,
+            "treb": 2,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.17,
+            "rank": 219
+          }
         },
         {
           "name": "Zaccharie Risacher",
@@ -1795,7 +3653,25 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-21 10:25",
-          "projZ": -3.43
+          "projZ": -3.43,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.1,
+            "fgPct": 0.286,
+            "fgm": 2,
+            "fga": 7,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 6,
+            "ast": 2,
+            "stl": 5,
+            "blk": 0,
+            "yahooTotal": 4.53,
+            "rank": 101
+          }
         }
       ],
       "acquisitionsLeft": 17,
@@ -1820,7 +3696,30 @@
         "stl": 14,
         "blk": 12
       },
-      "projRank": 9
+      "projRank": 9,
+      "actualTotals": {
+        "fgPct": 0.4224,
+        "ftPct": 0.8205,
+        "tpm": 7,
+        "pts": 137,
+        "treb": 67,
+        "ast": 41,
+        "stl": 18,
+        "blk": 5
+      },
+      "gamesPlayed": 12,
+      "actualRoto": {
+        "total": 68.5,
+        "fgPct": 3,
+        "ftPct": 10,
+        "tpm": 3,
+        "pts": 6,
+        "treb": 14,
+        "ast": 12,
+        "stl": 14.5,
+        "blk": 6
+      },
+      "actualRank": 7
     },
     {
       "name": "The New Day Co-op",
@@ -1842,7 +3741,25 @@
           "pick": 20,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.9
+          "projZ": 6.9,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.6,
+            "fgPct": 0.667,
+            "fgm": 6,
+            "fga": 9,
+            "ftPct": 0.571,
+            "ftm": 4,
+            "fta": 7,
+            "tpm": 3,
+            "pts": 19,
+            "treb": 12,
+            "ast": 1,
+            "stl": 1,
+            "blk": 2,
+            "yahooTotal": 8.55,
+            "rank": 30
+          }
         },
         {
           "name": "Evan Mobley",
@@ -1856,7 +3773,8 @@
           "pick": 39,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.72
+          "projZ": 4.72,
+          "stats": null
         },
         {
           "name": "Jaren Jackson Jr.",
@@ -1870,7 +3788,25 @@
           "pick": 52,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.87
+          "projZ": 4.87,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.1,
+            "fgPct": 0.6,
+            "fgm": 6,
+            "fga": 10,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 2,
+            "pts": 15,
+            "treb": 5,
+            "ast": 2,
+            "stl": 1,
+            "blk": 2,
+            "yahooTotal": 6.45,
+            "rank": 58
+          }
         },
         {
           "name": "Deni Avdija",
@@ -1885,7 +3821,25 @@
           "pick": 53,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.69
+          "projZ": 2.69,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.5,
+            "fgPct": 0.438,
+            "fgm": 7,
+            "fga": 16,
+            "ftPct": 0.5,
+            "ftm": 2,
+            "fta": 4,
+            "tpm": 2,
+            "pts": 18,
+            "treb": 10,
+            "ast": 4,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 5.92,
+            "rank": 73
+          }
         },
         {
           "name": "Kyrie Irving",
@@ -1898,7 +3852,25 @@
           "pick": 54,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.84
+          "projZ": 4.84,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.8,
+            "fgPct": 0.667,
+            "fgm": 6,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 15,
+            "treb": 4,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 4.78,
+            "rank": 97
+          }
         },
         {
           "name": "Donovan Clingan",
@@ -1911,7 +3883,25 @@
           "pick": 55,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.76
+          "projZ": 2.76,
+          "stats": {
+            "gp": 1,
+            "mpg": 20.7,
+            "fgPct": 0.444,
+            "fgm": 4,
+            "fga": 9,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 2,
+            "pts": 11,
+            "treb": 7,
+            "ast": 2,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 2.38,
+            "rank": 151
+          }
         },
         {
           "name": "Ivica Zubac",
@@ -1924,7 +3914,25 @@
           "pick": 58,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.54
+          "projZ": 2.54,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.6,
+            "fgPct": 0.583,
+            "fgm": 7,
+            "fga": 12,
+            "ftPct": 0.5,
+            "ftm": 2,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 16,
+            "treb": 15,
+            "ast": 0,
+            "stl": 0,
+            "blk": 2,
+            "yahooTotal": 5.9,
+            "rank": 75
+          }
         },
         {
           "name": "Mark Williams",
@@ -1937,7 +3945,8 @@
           "pick": 83,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -2.11
+          "projZ": -2.11,
+          "stats": null
         },
         {
           "name": "Jabari Smith Jr.",
@@ -1951,7 +3960,25 @@
           "pick": 106,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.59
+          "projZ": 0.59,
+          "stats": {
+            "gp": 1,
+            "mpg": 36.5,
+            "fgPct": 0.647,
+            "fgm": 11,
+            "fga": 17,
+            "ftPct": 0.8,
+            "ftm": 4,
+            "fta": 5,
+            "tpm": 4,
+            "pts": 30,
+            "treb": 5,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 9.86,
+            "rank": 21
+          }
         },
         {
           "name": "Collin Gillespie",
@@ -1965,7 +3992,25 @@
           "pick": 137,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.12
+          "projZ": 0.12,
+          "stats": {
+            "gp": 1,
+            "mpg": 21.3,
+            "fgPct": 0,
+            "fgm": 0,
+            "fga": 8,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 1,
+            "tpm": 0,
+            "pts": 0,
+            "treb": 1,
+            "ast": 2,
+            "stl": 4,
+            "blk": 0,
+            "yahooTotal": -1.12,
+            "rank": 266
+          }
         },
         {
           "name": "Quentin Grimes",
@@ -1979,7 +4024,25 @@
           "pick": 148,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.44
+          "projZ": 0.44,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.5,
+            "fgPct": 0.571,
+            "fgm": 4,
+            "fga": 7,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 10,
+            "treb": 2,
+            "ast": 4,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 4.16,
+            "rank": 105
+          }
         },
         {
           "name": "P.J. Washington",
@@ -1993,7 +4056,25 @@
           "pick": 158,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.35
+          "projZ": -0.35,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.6,
+            "fgPct": 0.444,
+            "fgm": 4,
+            "fga": 9,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 2,
+            "tpm": 2,
+            "pts": 10,
+            "treb": 4,
+            "ast": 2,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 1.08,
+            "rank": 185
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -2018,7 +4099,30 @@
         "stl": 1,
         "blk": 15
       },
-      "projRank": 10
+      "projRank": 10,
+      "actualTotals": {
+        "fgPct": 0.5189,
+        "ftPct": 0.5806,
+        "tpm": 16,
+        "pts": 144,
+        "treb": 65,
+        "ast": 20,
+        "stl": 12,
+        "blk": 8
+      },
+      "gamesPlayed": 10,
+      "actualRoto": {
+        "total": 65.5,
+        "fgPct": 14,
+        "ftPct": 1,
+        "tpm": 7.5,
+        "pts": 7,
+        "treb": 11.5,
+        "ast": 1,
+        "stl": 11,
+        "blk": 12.5
+      },
+      "actualRank": 8
     },
     {
       "name": "Super Maru",
@@ -2040,7 +4144,25 @@
           "pick": 10,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.92
+          "projZ": 7.92,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.6,
+            "fgPct": 0.552,
+            "fgm": 16,
+            "fga": 29,
+            "ftPct": 0.8,
+            "ftm": 4,
+            "fta": 5,
+            "tpm": 9,
+            "pts": 45,
+            "treb": 10,
+            "ast": 3,
+            "stl": 2,
+            "blk": 1,
+            "yahooTotal": 18.33,
+            "rank": 1
+          }
         },
         {
           "name": "Joel Embiid",
@@ -2053,7 +4175,25 @@
           "pick": 31,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.88
+          "projZ": 3.88,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.4,
+            "fgPct": 0.267,
+            "fgm": 4,
+            "fga": 15,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 2,
+            "pts": 13,
+            "treb": 11,
+            "ast": 6,
+            "stl": 2,
+            "blk": 3,
+            "yahooTotal": 9.72,
+            "rank": 23
+          }
         },
         {
           "name": "Domantas Sabonis",
@@ -2067,7 +4207,25 @@
           "pick": 32,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.33
+          "projZ": 4.33,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.6,
+            "fgPct": 1,
+            "fgm": 5,
+            "fga": 5,
+            "ftPct": 1,
+            "ftm": 4,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 14,
+            "treb": 18,
+            "ast": 8,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 12.12,
+            "rank": 10
+          }
         },
         {
           "name": "Jalen Williams",
@@ -2081,7 +4239,25 @@
           "pick": 42,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.26
+          "projZ": 4.26,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.9,
+            "fgPct": 0.313,
+            "fgm": 5,
+            "fga": 16,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 12,
+            "treb": 7,
+            "ast": 2,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 2.43,
+            "rank": 150
+          }
         },
         {
           "name": "De'Aaron Fox",
@@ -2094,7 +4270,25 @@
           "pick": 47,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.62
+          "projZ": 2.62,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.9,
+            "fgPct": 0.667,
+            "fgm": 6,
+            "fga": 9,
+            "ftPct": 0.667,
+            "ftm": 2,
+            "fta": 3,
+            "tpm": 0,
+            "pts": 14,
+            "treb": 7,
+            "ast": 7,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 5.93,
+            "rank": 72
+          }
         },
         {
           "name": "Coby White",
@@ -2108,7 +4302,8 @@
           "pick": 77,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.06
+          "projZ": 2.06,
+          "stats": null
         },
         {
           "name": "Ayo Dosunmu",
@@ -2122,7 +4317,25 @@
           "pick": 108,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.52
+          "projZ": -0.52,
+          "stats": {
+            "gp": 1,
+            "mpg": 29,
+            "fgPct": 0.462,
+            "fgm": 6,
+            "fga": 13,
+            "ftPct": 1,
+            "ftm": 3,
+            "fta": 3,
+            "tpm": 1,
+            "pts": 16,
+            "treb": 5,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 3.82,
+            "rank": 112
+          }
         },
         {
           "name": "John Collins",
@@ -2136,7 +4349,25 @@
           "pick": 115,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.46
+          "projZ": 2.46,
+          "stats": {
+            "gp": 1,
+            "mpg": 25.5,
+            "fgPct": 0.429,
+            "fgm": 3,
+            "fga": 7,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 5,
+            "ast": 1,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 2.13,
+            "rank": 160
+          }
         },
         {
           "name": "Tobias Harris",
@@ -2149,7 +4380,8 @@
           "pick": 135,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.9
+          "projZ": -0.9,
+          "stats": null
         },
         {
           "name": "Bobby Portis Jr.",
@@ -2163,7 +4395,25 @@
           "pick": 157,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.62
+          "projZ": -0.62,
+          "stats": {
+            "gp": 1,
+            "mpg": 25,
+            "fgPct": 0.6,
+            "fgm": 3,
+            "fga": 5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 7,
+            "treb": 4,
+            "ast": 1,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 3.23,
+            "rank": 129
+          }
         },
         {
           "name": "Luguentz Dort",
@@ -2177,7 +4427,25 @@
           "pick": 164,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.62
+          "projZ": -3.62,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.3,
+            "fgPct": 0.286,
+            "fgm": 2,
+            "fga": 7,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 2,
+            "pts": 8,
+            "treb": 4,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 1.86,
+            "rank": 164
+          }
         },
         {
           "name": "Collin Sexton",
@@ -2191,7 +4459,8 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -1.17
+          "projZ": -1.17,
+          "stats": null
         }
       ],
       "acquisitionsLeft": 17,
@@ -2216,7 +4485,30 @@
         "stl": 3,
         "blk": 1
       },
-      "projRank": 11
+      "projRank": 11,
+      "actualTotals": {
+        "fgPct": 0.4717,
+        "ftPct": 0.8261,
+        "tpm": 16,
+        "pts": 135,
+        "treb": 71,
+        "ast": 31,
+        "stl": 10,
+        "blk": 7
+      },
+      "gamesPlayed": 9,
+      "actualRoto": {
+        "total": 71,
+        "fgPct": 9,
+        "ftPct": 12,
+        "tpm": 7.5,
+        "pts": 5,
+        "treb": 15,
+        "ast": 7,
+        "stl": 6,
+        "blk": 9.5
+      },
+      "actualRank": 6
     },
     {
       "name": "Grilled Teampura",
@@ -2237,7 +4529,25 @@
           "pick": 1,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.63
+          "projZ": 7.63,
+          "stats": {
+            "gp": 1,
+            "mpg": 39.6,
+            "fgPct": 0.474,
+            "fgm": 9,
+            "fga": 19,
+            "ftPct": 0.889,
+            "ftm": 8,
+            "fta": 9,
+            "tpm": 2,
+            "pts": 28,
+            "treb": 4,
+            "ast": 5,
+            "stl": 3,
+            "blk": 3,
+            "yahooTotal": 13.35,
+            "rank": 6
+          }
         },
         {
           "name": "Tyrese Haliburton",
@@ -2251,7 +4561,25 @@
           "pick": 14,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.21
+          "projZ": 6.21,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.5,
+            "fgPct": 0.533,
+            "fgm": 8,
+            "fga": 15,
+            "ftPct": 1,
+            "ftm": 5,
+            "fta": 5,
+            "tpm": 2,
+            "pts": 23,
+            "treb": 2,
+            "ast": 12,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 10.37,
+            "rank": 17
+          }
         },
         {
           "name": "Josh Giddey",
@@ -2265,7 +4593,25 @@
           "pick": 18,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.8
+          "projZ": 4.8,
+          "stats": {
+            "gp": 1,
+            "mpg": 24,
+            "fgPct": 0.1,
+            "fgm": 1,
+            "fga": 10,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 7,
+            "ast": 6,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -2.04,
+            "rank": 287
+          }
         },
         {
           "name": "Alex Sarr",
@@ -2278,7 +4624,25 @@
           "pick": 68,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.86
+          "projZ": 0.86,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.3,
+            "fgPct": 0.333,
+            "fgm": 3,
+            "fga": 9,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 6,
+            "treb": 9,
+            "ast": 2,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 1.14,
+            "rank": 183
+          }
         },
         {
           "name": "Peyton Watson",
@@ -2292,7 +4656,8 @@
           "pick": 138,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.36
+          "projZ": -0.36,
+          "stats": null
         },
         {
           "name": "Jalen Smith",
@@ -2306,7 +4671,25 @@
           "pick": 149,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.64
+          "projZ": -1.64,
+          "stats": {
+            "gp": 1,
+            "mpg": 19,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0.833,
+            "ftm": 5,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 15,
+            "treb": 8,
+            "ast": 1,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 4.12,
+            "rank": 106
+          }
         },
         {
           "name": "Gui Santos",
@@ -2320,7 +4703,25 @@
           "pick": 159,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.3
+          "projZ": 0.3,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.7,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 12,
+            "treb": 5,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 1.59,
+            "rank": 168
+          }
         },
         {
           "name": "Tari Eason",
@@ -2335,7 +4736,25 @@
           "pick": 165,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.56
+          "projZ": -0.56,
+          "stats": {
+            "gp": 1,
+            "mpg": 3.1,
+            "fgPct": 0.5,
+            "fgm": 1,
+            "fga": 2,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 1,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": -0.98,
+            "rank": 258
+          }
         },
         {
           "name": "Nikola Vučević",
@@ -2348,7 +4767,25 @@
           "pick": 174,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.73
+          "projZ": -1.73,
+          "stats": {
+            "gp": 1,
+            "mpg": 5.3,
+            "fgPct": 0,
+            "fgm": 0,
+            "fga": 0,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 0,
+            "treb": 1,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -1.77,
+            "rank": 276
+          }
         },
         {
           "name": "Grayson Allen",
@@ -2362,7 +4799,25 @@
           "pick": 178,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.89
+          "projZ": -0.89,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.8,
+            "fgPct": 0.667,
+            "fgm": 6,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 4,
+            "fta": 4,
+            "tpm": 5,
+            "pts": 21,
+            "treb": 3,
+            "ast": 4,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 8.5,
+            "rank": 32
+          }
         },
         {
           "name": "Michael Porter Jr.",
@@ -2376,7 +4831,25 @@
           "pick": 74,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": 2.8
+          "projZ": 2.8,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.2,
+            "fgPct": 0.476,
+            "fgm": 10,
+            "fga": 21,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 5,
+            "pts": 26,
+            "treb": 7,
+            "ast": 1,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 8.87,
+            "rank": 26
+          }
         },
         {
           "name": "Stephon Castle",
@@ -2390,7 +4863,25 @@
           "pick": 45,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": -0.17
+          "projZ": -0.17,
+          "stats": {
+            "gp": 1,
+            "mpg": 28.4,
+            "fgPct": 0.429,
+            "fgm": 9,
+            "fga": 21,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 5,
+            "pts": 24,
+            "treb": 7,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 6.28,
+            "rank": 62
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -2415,7 +4906,30 @@
         "stl": 7,
         "blk": 10
       },
-      "projRank": 12
+      "projRank": 12,
+      "actualTotals": {
+        "fgPct": 0.4524,
+        "ftPct": 0.8065,
+        "tpm": 20,
+        "pts": 159,
+        "treb": 54,
+        "ast": 33,
+        "stl": 9,
+        "blk": 4
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 58,
+        "fgPct": 6,
+        "ftPct": 8,
+        "tpm": 13,
+        "pts": 9,
+        "treb": 7,
+        "ast": 8,
+        "stl": 4,
+        "blk": 3
+      },
+      "actualRank": 11
     },
     {
       "name": "Full Court Rex",
@@ -2436,7 +4950,25 @@
           "pick": 7,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.75
+          "projZ": 7.75,
+          "stats": {
+            "gp": 1,
+            "mpg": 21.2,
+            "fgPct": 0.467,
+            "fgm": 7,
+            "fga": 15,
+            "ftPct": 1,
+            "ftm": 7,
+            "fta": 7,
+            "tpm": 2,
+            "pts": 23,
+            "treb": 2,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 6.72,
+            "rank": 52
+          }
         },
         {
           "name": "AJ Dybantsa",
@@ -2449,7 +4981,8 @@
           "pick": 8,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.35
+          "projZ": -3.35,
+          "stats": null
         },
         {
           "name": "Devin Booker",
@@ -2463,7 +4996,25 @@
           "pick": 27,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.88
+          "projZ": 4.88,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.4,
+            "fgPct": 0.538,
+            "fgm": 7,
+            "fga": 13,
+            "ftPct": 1,
+            "ftm": 9,
+            "fta": 9,
+            "tpm": 0,
+            "pts": 23,
+            "treb": 4,
+            "ast": 2,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 7.84,
+            "rank": 39
+          }
         },
         {
           "name": "Alperen Şengün",
@@ -2477,7 +5028,25 @@
           "pick": 36,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.52
+          "projZ": 3.52,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.9,
+            "fgPct": 0.6,
+            "fgm": 9,
+            "fga": 15,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 2,
+            "pts": 23,
+            "treb": 10,
+            "ast": 5,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 8.04,
+            "rank": 38
+          }
         },
         {
           "name": "Jaylen Brown",
@@ -2492,7 +5061,25 @@
           "pick": 44,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.68
+          "projZ": 2.68,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.9,
+            "fgPct": 0.5,
+            "fgm": 7,
+            "fga": 14,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 2,
+            "pts": 19,
+            "treb": 8,
+            "ast": 6,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 8.45,
+            "rank": 33
+          }
         },
         {
           "name": "Rudy Gobert",
@@ -2505,7 +5092,25 @@
           "pick": 67,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.84
+          "projZ": 0.84,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.5,
+            "fgPct": 0,
+            "fgm": 0,
+            "fga": 2,
+            "ftPct": 0.625,
+            "ftm": 5,
+            "fta": 8,
+            "tpm": 0,
+            "pts": 5,
+            "treb": 15,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 1.06,
+            "rank": 187
+          }
         },
         {
           "name": "Ace Bailey",
@@ -2519,7 +5124,25 @@
           "pick": 97,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.48
+          "projZ": -1.48,
+          "stats": {
+            "gp": 1,
+            "mpg": 24.3,
+            "fgPct": 0.455,
+            "fgm": 5,
+            "fga": 11,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 12,
+            "treb": 5,
+            "ast": 3,
+            "stl": 0,
+            "blk": 3,
+            "yahooTotal": 6.55,
+            "rank": 54
+          }
         },
         {
           "name": "Isaiah Hartenstein",
@@ -2532,7 +5155,25 @@
           "pick": 102,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.65
+          "projZ": 1.65,
+          "stats": {
+            "gp": 1,
+            "mpg": 17.4,
+            "fgPct": 0.5,
+            "fgm": 2,
+            "fga": 4,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 0,
+            "pts": 4,
+            "treb": 3,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 2.34,
+            "rank": 152
+          }
         },
         {
           "name": "Devin Vassell",
@@ -2546,7 +5187,25 @@
           "pick": 129,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.04
+          "projZ": -0.04,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.9,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 7,
+            "treb": 3,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -0.09,
+            "rank": 230
+          }
         },
         {
           "name": "Dillon Brooks",
@@ -2560,7 +5219,25 @@
           "pick": 142,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.53
+          "projZ": -1.53,
+          "stats": {
+            "gp": 1,
+            "mpg": 26.7,
+            "fgPct": 0.364,
+            "fgm": 4,
+            "fga": 11,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 10,
+            "treb": 4,
+            "ast": 0,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -0.83,
+            "rank": 252
+          }
         },
         {
           "name": "Jonathan Kuminga",
@@ -2574,7 +5251,25 @@
           "pick": 153,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -2.27
+          "projZ": -2.27,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.5,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 12,
+            "treb": 1,
+            "ast": 3,
+            "stl": 4,
+            "blk": 1,
+            "yahooTotal": 6.96,
+            "rank": 49
+          }
         },
         {
           "name": "Jared McCain",
@@ -2588,7 +5283,25 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-21 23:09",
-          "projZ": -1.82
+          "projZ": -1.82,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.2,
+            "fgPct": 0.778,
+            "fgm": 7,
+            "fga": 9,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 6,
+            "pts": 20,
+            "treb": 2,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 8.25,
+            "rank": 36
+          }
         }
       ],
       "acquisitionsLeft": 17,
@@ -2613,7 +5326,30 @@
         "stl": 4,
         "blk": 5
       },
-      "projRank": 13
+      "projRank": 13,
+      "actualTotals": {
+        "fgPct": 0.4911,
+        "ftPct": 0.8333,
+        "tpm": 18,
+        "pts": 158,
+        "treb": 57,
+        "ast": 27,
+        "stl": 10,
+        "blk": 7
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 71,
+        "fgPct": 11,
+        "ftPct": 13,
+        "tpm": 10.5,
+        "pts": 8,
+        "treb": 8,
+        "ast": 5,
+        "stl": 6,
+        "blk": 9.5
+      },
+      "actualRank": 5
     },
     {
       "name": "Herb's Astonishing Team",
@@ -2634,7 +5370,8 @@
           "pick": 2,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 16.43
+          "projZ": 16.43,
+          "stats": null
         },
         {
           "name": "Jayson Tatum",
@@ -2648,7 +5385,25 @@
           "pick": 11,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.93
+          "projZ": 7.93,
+          "stats": {
+            "gp": 1,
+            "mpg": 37.8,
+            "fgPct": 0.261,
+            "fgm": 6,
+            "fga": 23,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 0,
+            "pts": 13,
+            "treb": 4,
+            "ast": 11,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 2.14,
+            "rank": 159
+          }
         },
         {
           "name": "Bam Adebayo",
@@ -2662,7 +5417,25 @@
           "pick": 35,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.4
+          "projZ": 3.4,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.5,
+            "fgPct": 0.5,
+            "fgm": 6,
+            "fga": 12,
+            "ftPct": 0.667,
+            "ftm": 2,
+            "fta": 3,
+            "tpm": 1,
+            "pts": 15,
+            "treb": 7,
+            "ast": 4,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 6.46,
+            "rank": 57
+          }
         },
         {
           "name": "Toumani Camara",
@@ -2676,7 +5449,25 @@
           "pick": 122,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.2
+          "projZ": 0.2,
+          "stats": {
+            "gp": 1,
+            "mpg": 22.6,
+            "fgPct": 0.667,
+            "fgm": 6,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 4,
+            "pts": 18,
+            "treb": 2,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 6.08,
+            "rank": 66
+          }
         },
         {
           "name": "Davion Mitchell",
@@ -2689,7 +5480,25 @@
           "pick": 141,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.36
+          "projZ": -1.36,
+          "stats": {
+            "gp": 1,
+            "mpg": 32.8,
+            "fgPct": 0.5,
+            "fgm": 4,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 11,
+            "treb": 0,
+            "ast": 11,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 6.02,
+            "rank": 69
+          }
         },
         {
           "name": "Yves Missi",
@@ -2702,7 +5511,25 @@
           "pick": 152,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.56
+          "projZ": -3.56,
+          "stats": {
+            "gp": 1,
+            "mpg": 29.9,
+            "fgPct": 0.833,
+            "fgm": 5,
+            "fga": 6,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 13,
+            "treb": 14,
+            "ast": 5,
+            "stl": 2,
+            "blk": 3,
+            "yahooTotal": 12.21,
+            "rank": 8
+          }
         },
         {
           "name": "Jrue Holiday",
@@ -2716,7 +5543,25 @@
           "pick": 160,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.23
+          "projZ": 0.23,
+          "stats": {
+            "gp": 1,
+            "mpg": 20.6,
+            "fgPct": 0.333,
+            "fgm": 2,
+            "fga": 6,
+            "ftPct": 1,
+            "ftm": 4,
+            "fta": 4,
+            "tpm": 0,
+            "pts": 8,
+            "treb": 4,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 2.73,
+            "rank": 143
+          }
         },
         {
           "name": "Jimmy Butler III",
@@ -2730,7 +5575,8 @@
           "pick": 166,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0
+          "projZ": 0,
+          "stats": null
         },
         {
           "name": "Pelle Larsson",
@@ -2744,7 +5590,25 @@
           "pick": 171,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.77
+          "projZ": -3.77,
+          "stats": {
+            "gp": 1,
+            "mpg": 23.9,
+            "fgPct": 0,
+            "fgm": 0,
+            "fga": 2,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 2,
+            "treb": 3,
+            "ast": 4,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 2.46,
+            "rank": 148
+          }
         },
         {
           "name": "Mikel Brown Jr.",
@@ -2757,7 +5621,25 @@
           "pick": 175,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.66
+          "projZ": -1.66,
+          "stats": {
+            "gp": 1,
+            "mpg": 19.8,
+            "fgPct": 0.25,
+            "fgm": 2,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 1,
+            "pts": 6,
+            "treb": 3,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.3,
+            "rank": 217
+          }
         },
         {
           "name": "Jake LaRavia",
@@ -2771,7 +5653,25 @@
           "pick": 179,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -4.16
+          "projZ": -4.16,
+          "stats": {
+            "gp": 1,
+            "mpg": 17.9,
+            "fgPct": 0.8,
+            "fgm": 4,
+            "fga": 5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 2,
+            "pts": 10,
+            "treb": 2,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 3.54,
+            "rank": 117
+          }
         },
         {
           "name": "Scotty Pippen Jr.",
@@ -2784,7 +5684,25 @@
           "pick": 180,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.74
+          "projZ": -1.74,
+          "stats": {
+            "gp": 1,
+            "mpg": 20.2,
+            "fgPct": 0.286,
+            "fgm": 2,
+            "fga": 7,
+            "ftPct": 0.833,
+            "ftm": 5,
+            "fta": 6,
+            "tpm": 0,
+            "pts": 9,
+            "treb": 2,
+            "ast": 5,
+            "stl": 3,
+            "blk": 0,
+            "yahooTotal": 3.74,
+            "rank": 113
+          }
         }
       ],
       "acquisitionsLeft": 18,
@@ -2809,7 +5727,30 @@
         "stl": 8,
         "blk": 2
       },
-      "projRank": 14
+      "projRank": 14,
+      "actualTotals": {
+        "fgPct": 0.4302,
+        "ftPct": 0.88,
+        "tpm": 9,
+        "pts": 105,
+        "treb": 41,
+        "ast": 49,
+        "stl": 12,
+        "blk": 5
+      },
+      "gamesPlayed": 10,
+      "actualRoto": {
+        "total": 60,
+        "fgPct": 5,
+        "ftPct": 15,
+        "tpm": 4,
+        "pts": 2,
+        "treb": 2,
+        "ast": 15,
+        "stl": 11,
+        "blk": 6
+      },
+      "actualRank": 10
     },
     {
       "name": "Cole is like that",
@@ -2832,7 +5773,25 @@
           "pick": 17,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.14
+          "projZ": 4.14,
+          "stats": {
+            "gp": 1,
+            "mpg": 34.1,
+            "fgPct": 0.316,
+            "fgm": 6,
+            "fga": 19,
+            "ftPct": 1,
+            "ftm": 8,
+            "fta": 8,
+            "tpm": 1,
+            "pts": 21,
+            "treb": 5,
+            "ast": 3,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 4.19,
+            "rank": 103
+          }
         },
         {
           "name": "Kevin Durant",
@@ -2847,7 +5806,25 @@
           "pick": 21,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.51
+          "projZ": 7.51,
+          "stats": {
+            "gp": 1,
+            "mpg": 37.4,
+            "fgPct": 0.625,
+            "fgm": 10,
+            "fga": 16,
+            "ftPct": 0.727,
+            "ftm": 8,
+            "fta": 11,
+            "tpm": 2,
+            "pts": 30,
+            "treb": 6,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1,
+            "yahooTotal": 8.63,
+            "rank": 29
+          }
         },
         {
           "name": "Brandon Miller",
@@ -2861,7 +5838,25 @@
           "pick": 38,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.59
+          "projZ": 3.59,
+          "stats": {
+            "gp": 1,
+            "mpg": 35.7,
+            "fgPct": 0.333,
+            "fgm": 7,
+            "fga": 21,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 3,
+            "pts": 18,
+            "treb": 3,
+            "ast": 1,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 1.7,
+            "rank": 167
+          }
         },
         {
           "name": "Jarrett Allen",
@@ -2874,7 +5869,8 @@
           "pick": 70,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.94
+          "projZ": 1.94,
+          "stats": null
         },
         {
           "name": "Tyler Herro",
@@ -2888,7 +5884,25 @@
           "pick": 76,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.97
+          "projZ": 3.97,
+          "stats": {
+            "gp": 1,
+            "mpg": 31.9,
+            "fgPct": 0.429,
+            "fgm": 9,
+            "fga": 21,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 4,
+            "pts": 24,
+            "treb": 2,
+            "ast": 9,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 8.54,
+            "rank": 31
+          }
         },
         {
           "name": "Andrew Wiggins",
@@ -2903,7 +5917,25 @@
           "pick": 114,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.76
+          "projZ": 1.76,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.3,
+            "fgPct": 0.455,
+            "fgm": 5,
+            "fga": 11,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 1,
+            "pts": 11,
+            "treb": 2,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": 0.46,
+            "rank": 208
+          }
         },
         {
           "name": "Aday Mara",
@@ -2916,7 +5948,25 @@
           "pick": 136,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": null
+          "projZ": null,
+          "stats": {
+            "gp": 1,
+            "mpg": 11.7,
+            "fgPct": 0.75,
+            "fgm": 3,
+            "fga": 4,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 7,
+            "treb": 2,
+            "ast": 1,
+            "stl": 0,
+            "blk": 1,
+            "yahooTotal": 0.51,
+            "rank": 206
+          }
         },
         {
           "name": "Wendell Carter Jr.",
@@ -2929,7 +5979,25 @@
           "pick": 144,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.72
+          "projZ": -0.72,
+          "stats": {
+            "gp": 1,
+            "mpg": 30.9,
+            "fgPct": 0.8,
+            "fgm": 8,
+            "fga": 10,
+            "ftPct": 1,
+            "ftm": 5,
+            "fta": 5,
+            "tpm": 1,
+            "pts": 22,
+            "treb": 7,
+            "ast": 0,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 7.67,
+            "rank": 42
+          }
         },
         {
           "name": "Amen Thompson",
@@ -2943,7 +6011,25 @@
           "pick": 24,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": 4.81
+          "projZ": 4.81,
+          "stats": {
+            "gp": 1,
+            "mpg": 33.4,
+            "fgPct": 0.5,
+            "fgm": 6,
+            "fga": 12,
+            "ftPct": 0.6,
+            "ftm": 3,
+            "fta": 5,
+            "tpm": 1,
+            "pts": 16,
+            "treb": 10,
+            "ast": 4,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 4.93,
+            "rank": 96
+          }
         },
         {
           "name": "Jeremiah Fears",
@@ -2957,7 +6043,25 @@
           "pick": 170,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": -2
+          "projZ": -2,
+          "stats": {
+            "gp": 1,
+            "mpg": 20.9,
+            "fgPct": 0.2,
+            "fgm": 2,
+            "fga": 10,
+            "ftPct": 0.75,
+            "ftm": 3,
+            "fta": 4,
+            "tpm": 1,
+            "pts": 8,
+            "treb": 3,
+            "ast": 1,
+            "stl": 0,
+            "blk": 0,
+            "yahooTotal": -1.33,
+            "rank": 268
+          }
         },
         {
           "name": "Keldon Johnson",
@@ -2971,7 +6075,25 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -2.75
+          "projZ": -2.75,
+          "stats": {
+            "gp": 1,
+            "mpg": 19.6,
+            "fgPct": 0.5,
+            "fgm": 4,
+            "fga": 8,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 1,
+            "pts": 10,
+            "treb": 4,
+            "ast": 1,
+            "stl": 2,
+            "blk": 0,
+            "yahooTotal": 3.41,
+            "rank": 121
+          }
         },
         {
           "name": "Duncan Robinson",
@@ -2985,7 +6107,25 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-22 09:33",
-          "projZ": -1.92
+          "projZ": -1.92,
+          "stats": {
+            "gp": 1,
+            "mpg": 27.8,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0.75,
+            "ftm": 6,
+            "fta": 8,
+            "tpm": 5,
+            "pts": 21,
+            "treb": 2,
+            "ast": 2,
+            "stl": 1,
+            "blk": 0,
+            "yahooTotal": 5.83,
+            "rank": 78
+          }
         }
       ],
       "acquisitionsLeft": 16,
@@ -3010,7 +6150,30 @@
         "stl": 2,
         "blk": 3
       },
-      "projRank": 15
+      "projRank": 15,
+      "actualTotals": {
+        "fgPct": 0.4577,
+        "ftPct": 0.7917,
+        "tpm": 20,
+        "pts": 188,
+        "treb": 46,
+        "ast": 26,
+        "stl": 7,
+        "blk": 3
+      },
+      "gamesPlayed": 11,
+      "actualRoto": {
+        "total": 53,
+        "fgPct": 7,
+        "ftPct": 7,
+        "tpm": 13,
+        "pts": 13,
+        "treb": 5,
+        "ast": 4,
+        "stl": 2.5,
+        "blk": 1.5
+      },
+      "actualRank": 12
     }
   ],
   "draft": [
