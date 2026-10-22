@@ -15,8 +15,9 @@ const { buildNameIndex, matchPlayer, CATS } = require('../engine.js');
 const DRAFT_FILE = process.argv[2] || path.join(__dirname, 'draft_2026-10-18.txt');
 const OUT_FILE = path.join(__dirname, 'league.json');
 
-// The user's fantasy team name (unknown at time of import)
-const MY_TEAM = null;
+// The user's own team, plus other teams the user manages (their son Finn's team)
+const MY_TEAM = 'Shut Up and Jam Gaiden';
+const MANAGED_TEAMS = [MY_TEAM, 'Finn will cook Burt'];
 
 // Teams renamed since the draft: current name -> earlier names
 const TEAM_ALIASES = {
@@ -112,6 +113,8 @@ function main() {
     return {
       name,
       previousNames: TEAM_ALIASES[name] || [],
+      isMine: name === MY_TEAM,
+      isManaged: MANAGED_TEAMS.includes(name),
       spent: roster.reduce((s, r) => s + r.price, 0),
       roster,
       projTotals: projectTeam(roster)
@@ -125,6 +128,7 @@ function main() {
     season: '2026-27',
     draftDate: '2026-10-18',
     myTeam: MY_TEAM,
+    managedTeams: MANAGED_TEAMS,
     generatedFrom: path.relative(path.join(__dirname, '..'), DRAFT_FILE),
     teams: teams.sort((a, b) => a.projRank - b.projRank),
     draft: picks
@@ -138,11 +142,12 @@ function main() {
   if (unmatched.length) {
     console.log(`Notice: ${unmatched.length} picks could not be matched to players.js: ${unmatched.join(', ')}`);
   }
-  console.log('\nProjected Roto Standings (draft-day rosters, full-season projections):');
-  console.log('Rk  Team                              $    ' + CATS.map(c => c.padStart(6)).join('') + '   Total');
+  console.log('\n(* = my team, + = also managed by me)');
+  console.log('Projected Roto Standings (draft-day rosters, full-season projections):');
+  console.log('Rk   Team                              $    ' + CATS.map(c => c.padStart(6)).join('') + '   Total');
   for (const t of teams) {
     console.log(
-      `${String(t.projRank).padStart(2)}  ${t.name.padEnd(32).slice(0, 32)} ${String(t.spent).padStart(4)}  ` +
+      `${String(t.projRank).padStart(2)}${t.isMine ? '*' : t.isManaged ? '+' : ' '} ${t.name.padEnd(32).slice(0, 32)} ${String(t.spent).padStart(4)}  ` +
       CATS.map(c => String(t.projRoto[c]).padStart(6)).join('') +
       `   ${String(t.projRoto.total).padStart(5)}`
     );

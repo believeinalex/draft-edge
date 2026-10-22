@@ -3,12 +3,18 @@
   "yahooLeagueId": 45771,
   "season": "2026-27",
   "draftDate": "2026-10-18",
-  "myTeam": null,
+  "myTeam": "Shut Up and Jam Gaiden",
+  "managedTeams": [
+    "Shut Up and Jam Gaiden",
+    "Finn will cook Burt"
+  ],
   "generatedFrom": "season/draft_2026-10-18.txt",
   "teams": [
     {
       "name": "Shut Up and Jam Gaiden",
       "previousNames": [],
+      "isMine": true,
+      "isManaged": true,
       "spent": 200,
       "roster": [
         {
@@ -178,6 +184,8 @@
     {
       "name": "Team Maru",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 195,
       "roster": [
         {
@@ -348,6 +356,8 @@
     {
       "name": "Fishy Achilles",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -518,6 +528,8 @@
     {
       "name": "#WashedAutoDraftKing",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -686,6 +698,8 @@
     {
       "name": "Billy Hoyle's Boy-les",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 178,
       "roster": [
         {
@@ -858,6 +872,8 @@
     {
       "name": "vincemvpcarter",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 198,
       "roster": [
         {
@@ -1027,6 +1043,8 @@
     {
       "name": "The New Day Co-op",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -1197,6 +1215,8 @@
     {
       "name": "Bitsketball Stars",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -1368,6 +1388,8 @@
     {
       "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -1539,6 +1561,8 @@
     {
       "name": "Grilled Teampura",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -1710,6 +1734,8 @@
     {
       "name": "Full Court Rex",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 199,
       "roster": [
         {
@@ -1881,6 +1907,8 @@
     {
       "name": "Super Maru",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -2051,6 +2079,8 @@
     {
       "name": "Herb's Astonishing Team",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {
@@ -2219,6 +2249,8 @@
     {
       "name": "Finn will cook Burt",
       "previousNames": [],
+      "isMine": false,
+      "isManaged": true,
       "spent": 200,
       "roster": [
         {
@@ -2392,6 +2424,8 @@
       "previousNames": [
         "Cole's aura tuff team"
       ],
+      "isMine": false,
+      "isManaged": false,
       "spent": 200,
       "roster": [
         {

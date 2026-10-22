@@ -9,7 +9,7 @@ The draft is over and the project is now used for in-season management. This dir
 | `build_season.js` | Regenerates `league.json` (`npm run season`). |
 
 ## Notes
-- **`myTeam` is not set yet.** Set `MY_TEAM` in `build_season.js` and regenerate once the user's team is known.
+- **Managed teams:** The user's team is **Shut Up and Jam Gaiden** (`myTeam`, `isMine`). The user also manages **Finn will cook Burt**, their son Finn's team (`managedTeams`, `isManaged`). Default to Shut Up and Jam Gaiden; look at Finn's roster when asked. Both teams are in the same league, so any trade between them should be fair to Finn's team as well.
 - **Team renames:** "Cole is like that" was named "Cole's aura tuff team" at draft time (see `TEAM_ALIASES`).
 - **Unmatched picks:** Amir Coffey, Bronny James, Kevin Love, Aday Mara and Corey Kispert ($1–3 each) are outside the 300-player `players.js` pool, so they have `rk: null` and add nothing to projections.
 - **Projections** are draft-day `players.js` per-game stats × projected GP, summed over all 12 rostered players. Bench usage, injuries and the weekly lineup lock are not modeled. Treat this as a starting baseline, not a forecast.
