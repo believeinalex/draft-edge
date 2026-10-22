@@ -1,0 +1,95 @@
+{
+  "_format": "Chronological Yahoo transactions. 'add_drop': players added via FA or Waiver, and/or dropped to waivers. 'trade': each player moves to the 'to' team (the from-team is resolved from current rosters). Times are as shown in Yahoo. status = Yahoo injury tag at the time (Q questionable, O out, NA not active).",
+  "acquisitionLimit": 18,
+  "transactions": [
+    {
+      "date": "2026-10-18 18:09",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [],
+      "drop": [{ "name": "Corey Kispert", "nbaTeam": "ATL", "pos": ["SG", "SF"] }]
+    },
+    {
+      "date": "2026-10-19 20:33",
+      "type": "trade",
+      "note": "Yahoo shows '( Bert )' next to both teams.",
+      "moves": [
+        { "name": "Michael Porter Jr.", "nbaTeam": "BKN", "pos": ["SF", "PF"], "to": "Grilled Teampura" },
+        { "name": "Stephon Castle", "nbaTeam": "SAS", "pos": ["PG", "SG"], "to": "Grilled Teampura" },
+        { "name": "Amen Thompson", "nbaTeam": "HOU", "pos": ["PG", "SG"], "to": "Cole is like that" },
+        { "name": "Jeremiah Fears", "nbaTeam": "NOP", "pos": ["PG", "SG"], "to": "Cole is like that" }
+      ]
+    },
+    {
+      "date": "2026-10-20 07:41",
+      "type": "trade",
+      "moves": [
+        { "name": "Kevin Porter Jr.", "nbaTeam": "MIL", "pos": ["PG", "SG"], "status": "NA", "to": "vincemvpcarter" },
+        { "name": "Jakob Poeltl", "nbaTeam": "TOR", "pos": ["C"], "to": "Cole is like that" }
+      ]
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Finn will cook Burt",
+      "add": [{ "name": "Malik Monk", "nbaTeam": "SAC", "pos": ["PG", "SG"], "status": "Q", "via": "Waiver" }],
+      "drop": [{ "name": "Amir Coffey", "nbaTeam": "PHX", "pos": ["SG", "SF"], "status": "NA" }]
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Cole is like that",
+      "add": [{ "name": "Keldon Johnson", "nbaTeam": "SAS", "pos": ["SF", "PF"], "via": "Waiver" }],
+      "drop": [{ "name": "Bronny James", "nbaTeam": "LAL", "pos": ["PG", "SG"] }]
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [{ "name": "Collin Sexton", "nbaTeam": "LAL", "pos": ["PG", "SG"], "status": "Q", "via": "Waiver" }],
+      "drop": []
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [{ "name": "Morez Johnson Jr.", "nbaTeam": "DAL", "pos": ["PF"], "via": "Waiver" }],
+      "drop": [{ "name": "Ben Simmons", "nbaTeam": "SAC", "pos": ["PG"], "status": "O" }]
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Finn will cook Burt",
+      "add": [{ "name": "Santi Aldama", "nbaTeam": "DAL", "pos": ["PF"], "status": "Q", "via": "Waiver" }],
+      "drop": [{ "name": "Kevin Love", "nbaTeam": "UTA", "pos": ["PF", "C"], "status": "NA" }]
+    },
+    {
+      "date": "2026-10-21 04:06",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [{ "name": "Brayden Burries", "nbaTeam": "MIL", "pos": ["SG"], "via": "Waiver" }],
+      "drop": []
+    },
+    {
+      "date": "2026-10-21 10:25",
+      "type": "add_drop",
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "add": [{ "name": "Zaccharie Risacher", "nbaTeam": "DAL", "pos": ["SF", "PF"], "via": "FA" }],
+      "drop": []
+    },
+    {
+      "date": "2026-10-21 23:09",
+      "type": "add_drop",
+      "team": "Full Court Rex",
+      "add": [{ "name": "Jared McCain", "nbaTeam": "OKC", "pos": ["PG", "SG"], "via": "FA" }],
+      "drop": [{ "name": "Brandon Ingram", "nbaTeam": "LAC", "pos": ["SG", "SF", "PF"], "status": "O" }]
+    },
+    {
+      "date": "2026-10-22 09:33",
+      "type": "add_drop",
+      "team": "Cole is like that",
+      "add": [{ "name": "Duncan Robinson", "nbaTeam": "DET", "pos": ["SG", "SF"], "via": "FA" }],
+      "drop": [{ "name": "Jakob Poeltl", "nbaTeam": "TOR", "pos": ["C"] }]
+    }
+  ]
+}

@@ -9,6 +9,8 @@
     "Finn will cook Burt"
   ],
   "generatedFrom": "season/draft_2026-10-18.txt",
+  "transactionsApplied": 12,
+  "asOf": "2026-10-22 09:33",
   "teams": [
     {
       "name": "Shut Up and Jam Gaiden",
@@ -16,6 +18,7 @@
       "isMine": true,
       "isManaged": true,
       "spent": 200,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Luka Dončić",
@@ -27,6 +30,8 @@
           ],
           "price": 73,
           "pick": 4,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 12.2
         },
         {
@@ -39,6 +44,8 @@
           ],
           "price": 38,
           "pick": 29,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 5.72
         },
         {
@@ -51,6 +58,8 @@
           ],
           "price": 25,
           "pick": 66,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.93
         },
         {
@@ -62,6 +71,8 @@
           ],
           "price": 26,
           "pick": 69,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.55
         },
         {
@@ -73,6 +84,8 @@
           ],
           "price": 5,
           "pick": 98,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.3
         },
         {
@@ -84,6 +97,8 @@
           ],
           "price": 10,
           "pick": 99,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.78
         },
         {
@@ -96,6 +111,8 @@
           ],
           "price": 8,
           "pick": 109,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.37
         },
         {
@@ -108,6 +125,8 @@
           ],
           "price": 7,
           "pick": 110,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.68
         },
         {
@@ -119,6 +138,8 @@
           ],
           "price": 2,
           "pick": 125,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.03
         },
         {
@@ -131,6 +152,8 @@
           ],
           "price": 3,
           "pick": 126,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.73
         },
         {
@@ -143,6 +166,8 @@
           ],
           "price": 1,
           "pick": 140,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.51
         },
         {
@@ -155,9 +180,12 @@
           ],
           "price": 2,
           "pick": 151,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.25
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4765,
         "ftPct": 0.8124,
@@ -169,15 +197,15 @@
         "blk": 515
       },
       "projRoto": {
-        "total": 92,
+        "total": 90,
         "fgPct": 4,
-        "ftPct": 12,
+        "ftPct": 13,
         "tpm": 14,
         "pts": 15,
         "treb": 10,
-        "ast": 15,
-        "stl": 14,
-        "blk": 8
+        "ast": 14,
+        "stl": 13,
+        "blk": 7
       },
       "projRank": 1
     },
@@ -187,6 +215,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 195,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "OG Anunoby",
@@ -198,6 +227,8 @@
           ],
           "price": 22,
           "pick": 23,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.99
         },
         {
@@ -210,6 +241,8 @@
           ],
           "price": 10,
           "pick": 30,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.66
         },
         {
@@ -221,6 +254,8 @@
           ],
           "price": 27,
           "pick": 46,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.29
         },
         {
@@ -233,6 +268,8 @@
           ],
           "price": 19,
           "pick": 57,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.04
         },
         {
@@ -244,6 +281,8 @@
           ],
           "price": 19,
           "pick": 59,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.1
         },
         {
@@ -256,6 +295,8 @@
           ],
           "price": 25,
           "pick": 64,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.55
         },
         {
@@ -268,6 +309,8 @@
           ],
           "price": 17,
           "pick": 71,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.61
         },
         {
@@ -280,6 +323,8 @@
           ],
           "price": 25,
           "pick": 81,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.9
         },
         {
@@ -292,6 +337,8 @@
           ],
           "price": 13,
           "pick": 87,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.52
         },
         {
@@ -303,6 +350,8 @@
           ],
           "price": 10,
           "pick": 89,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.63
         },
         {
@@ -315,6 +364,8 @@
           ],
           "price": 5,
           "pick": 90,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.33
         },
         {
@@ -327,9 +378,12 @@
           ],
           "price": 3,
           "pick": 116,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.04
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4815,
         "ftPct": 0.8066,
@@ -341,8 +395,8 @@
         "blk": 480
       },
       "projRoto": {
-        "total": 89,
-        "fgPct": 5,
+        "total": 90,
+        "fgPct": 6,
         "ftPct": 10,
         "tpm": 15,
         "pts": 14,
@@ -359,6 +413,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 2,
       "roster": [
         {
           "name": "Scottie Barnes",
@@ -371,6 +426,8 @@
           ],
           "price": 52,
           "pick": 25,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.19
         },
         {
@@ -383,6 +440,8 @@
           ],
           "price": 33,
           "pick": 37,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.97
         },
         {
@@ -395,6 +454,8 @@
           ],
           "price": 36,
           "pick": 48,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.2
         },
         {
@@ -407,6 +468,8 @@
           ],
           "price": 34,
           "pick": 49,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 5.92
         },
         {
@@ -418,6 +481,8 @@
           ],
           "price": 24,
           "pick": 92,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.23
         },
         {
@@ -429,6 +494,8 @@
           ],
           "price": 4,
           "pick": 105,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.2
         },
         {
@@ -441,6 +508,8 @@
           ],
           "price": 8,
           "pick": 111,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.54
         },
         {
@@ -453,6 +522,8 @@
           ],
           "price": 2,
           "pick": 121,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.91
         },
         {
@@ -465,6 +536,8 @@
           ],
           "price": 2,
           "pick": 127,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.88
         },
         {
@@ -476,18 +549,9 @@
           ],
           "price": 2,
           "pick": 128,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.64
-        },
-        {
-          "name": "Ben Simmons",
-          "rk": 250,
-          "nbaTeam": "SAC",
-          "pos": [
-            "PG"
-          ],
-          "price": 2,
-          "pick": 134,
-          "projZ": -3.88
         },
         {
           "name": "Egor Dëmin",
@@ -499,31 +563,258 @@
           ],
           "price": 1,
           "pick": 146,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.05
+        },
+        {
+          "name": "Morez Johnson Jr.",
+          "rk": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": null
+        },
+        {
+          "name": "Brayden Burries",
+          "rk": 254,
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": -3.99
         }
       ],
+      "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.485,
-        "ftPct": 0.8016,
-        "tpm": 1365,
-        "pts": 12642,
-        "treb": 4972,
-        "ast": 2950,
-        "stl": 814,
-        "blk": 701
+        "fgPct": 0.4835,
+        "ftPct": 0.8029,
+        "tpm": 1441,
+        "pts": 13107,
+        "treb": 4927,
+        "ast": 2866,
+        "stl": 840,
+        "blk": 686
       },
       "projRoto": {
-        "total": 76.5,
-        "fgPct": 10.5,
-        "ftPct": 8,
+        "total": 73.5,
+        "fgPct": 7.5,
+        "ftPct": 9,
         "tpm": 11,
-        "pts": 6,
+        "pts": 5,
         "treb": 13,
-        "ast": 7,
-        "stl": 8,
+        "ast": 6,
+        "stl": 9,
         "blk": 13
       },
       "projRank": 3
+    },
+    {
+      "name": "Finn will cook Burt",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": true,
+      "spent": 200,
+      "acquisitions": 2,
+      "roster": [
+        {
+          "name": "Victor Wembanyama",
+          "rk": 2,
+          "nbaTeam": "SAS",
+          "pos": [
+            "C"
+          ],
+          "price": 87,
+          "pick": 3,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 14.59
+        },
+        {
+          "name": "Donovan Mitchell",
+          "rk": 11,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 55,
+          "pick": 12,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 7.01
+        },
+        {
+          "name": "Trae Young",
+          "rk": 13,
+          "nbaTeam": "WAS",
+          "pos": [
+            "PG"
+          ],
+          "price": 39,
+          "pick": 26,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 6.82
+        },
+        {
+          "name": "Josh Hart",
+          "rk": 83,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 5,
+          "pick": 101,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 1.93
+        },
+        {
+          "name": "VJ Edgecombe",
+          "rk": 84,
+          "nbaTeam": "PHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 5,
+          "pick": 107,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 1.85
+        },
+        {
+          "name": "Tre Jones",
+          "rk": 112,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 120,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.7
+        },
+        {
+          "name": "Christian Braun",
+          "rk": 114,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 145,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.61
+        },
+        {
+          "name": "Jusuf Nurkić",
+          "rk": 133,
+          "nbaTeam": "UTA",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 156,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.12
+        },
+        {
+          "name": "Draymond Green",
+          "rk": 116,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 163,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.59
+        },
+        {
+          "name": "Saddiq Bey",
+          "rk": 136,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 169,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.2
+        },
+        {
+          "name": "Malik Monk",
+          "rk": 142,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": -0.35
+        },
+        {
+          "name": "Santi Aldama",
+          "rk": 156,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": -0.99
+        }
+      ],
+      "acquisitionsLeft": 16,
+      "projTotals": {
+        "fgPct": 0.473,
+        "ftPct": 0.8093,
+        "tpm": 1438,
+        "pts": 13213,
+        "treb": 4645,
+        "ast": 3792,
+        "stl": 894,
+        "blk": 521
+      },
+      "projRoto": {
+        "total": 73,
+        "fgPct": 2,
+        "ftPct": 12,
+        "tpm": 10,
+        "pts": 6,
+        "treb": 8,
+        "ast": 15,
+        "stl": 12,
+        "blk": 8
+      },
+      "projRank": 4
     },
     {
       "name": "#WashedAutoDraftKing",
@@ -531,6 +822,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Giannis Antetokounmpo",
@@ -542,6 +834,8 @@
           ],
           "price": 68,
           "pick": 5,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.98
         },
         {
@@ -553,6 +847,8 @@
           ],
           "price": 41,
           "pick": 22,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4
         },
         {
@@ -564,6 +860,8 @@
           ],
           "price": 10,
           "pick": 43,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.45
         },
         {
@@ -575,6 +873,8 @@
           ],
           "price": 22,
           "pick": 56,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.82
         },
         {
@@ -587,6 +887,8 @@
           ],
           "price": 14,
           "pick": 72,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.65
         },
         {
@@ -598,6 +900,8 @@
           ],
           "price": 7,
           "pick": 78,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.5
         },
         {
@@ -610,6 +914,8 @@
           ],
           "price": 26,
           "pick": 80,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.07
         },
         {
@@ -621,6 +927,8 @@
           ],
           "price": 5,
           "pick": 100,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.67
         },
         {
@@ -634,6 +942,8 @@
           ],
           "price": 3,
           "pick": 112,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.99
         },
         {
@@ -645,6 +955,8 @@
           ],
           "price": 2,
           "pick": 123,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.76
         },
         {
@@ -657,6 +969,8 @@
           ],
           "price": 1,
           "pick": 139,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.38
         },
         {
@@ -669,9 +983,12 @@
           ],
           "price": 1,
           "pick": 150,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.53
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4865,
         "ftPct": 0.7502,
@@ -683,17 +1000,17 @@
         "blk": 538
       },
       "projRoto": {
-        "total": 76,
-        "fgPct": 12,
+        "total": 71,
+        "fgPct": 11,
         "ftPct": 1,
-        "tpm": 12,
+        "tpm": 9,
         "pts": 13,
         "treb": 7,
         "ast": 11,
-        "stl": 11,
+        "stl": 10,
         "blk": 9
       },
-      "projRank": 4
+      "projRank": 5
     },
     {
       "name": "Billy Hoyle's Boy-les",
@@ -701,6 +1018,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 178,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Cooper Flagg",
@@ -713,6 +1031,8 @@
           ],
           "price": 51,
           "pick": 16,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.43
         },
         {
@@ -726,6 +1046,8 @@
           ],
           "price": 45,
           "pick": 28,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.51
         },
         {
@@ -737,6 +1059,8 @@
           ],
           "price": 4,
           "pick": 60,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.07
         },
         {
@@ -749,6 +1073,8 @@
           ],
           "price": 22,
           "pick": 65,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.81
         },
         {
@@ -762,6 +1088,8 @@
           ],
           "price": 7,
           "pick": 73,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.23
         },
         {
@@ -773,6 +1101,8 @@
           ],
           "price": 9,
           "pick": 82,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.72
         },
         {
@@ -785,6 +1115,8 @@
           ],
           "price": 7,
           "pick": 86,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.4
         },
         {
@@ -797,6 +1129,8 @@
           ],
           "price": 12,
           "pick": 95,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.75
         },
         {
@@ -808,6 +1142,8 @@
           ],
           "price": 9,
           "pick": 103,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.51
         },
         {
@@ -821,6 +1157,8 @@
           ],
           "price": 5,
           "pick": 104,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.68
         },
         {
@@ -832,6 +1170,8 @@
           ],
           "price": 6,
           "pick": 118,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.04
         },
         {
@@ -843,9 +1183,12 @@
           ],
           "price": 1,
           "pick": 131,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.98
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4758,
         "ftPct": 0.8024,
@@ -857,17 +1200,17 @@
         "blk": 721
       },
       "projRoto": {
-        "total": 69,
-        "fgPct": 2.5,
-        "ftPct": 9,
+        "total": 66.5,
+        "fgPct": 3,
+        "ftPct": 8,
         "tpm": 13,
-        "pts": 10,
+        "pts": 9,
         "treb": 9,
         "ast": 5,
-        "stl": 6.5,
+        "stl": 5.5,
         "blk": 14
       },
-      "projRank": 5
+      "projRank": 6
     },
     {
       "name": "vincemvpcarter",
@@ -875,6 +1218,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 198,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Walker Kessler",
@@ -885,6 +1229,8 @@
           ],
           "price": 26,
           "pick": 40,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.78
         },
         {
@@ -897,6 +1243,8 @@
           ],
           "price": 31,
           "pick": 41,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.9
         },
         {
@@ -909,6 +1257,8 @@
           ],
           "price": 29,
           "pick": 51,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.42
         },
         {
@@ -921,6 +1271,8 @@
           ],
           "price": 23,
           "pick": 61,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.37
         },
         {
@@ -933,6 +1285,8 @@
           ],
           "price": 8,
           "pick": 75,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.83
         },
         {
@@ -944,6 +1298,8 @@
           ],
           "price": 15,
           "pick": 79,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.44
         },
         {
@@ -956,6 +1312,8 @@
           ],
           "price": 17,
           "pick": 84,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.84
         },
         {
@@ -968,6 +1326,8 @@
           ],
           "price": 14,
           "pick": 85,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.12
         },
         {
@@ -979,6 +1339,8 @@
           ],
           "price": 20,
           "pick": 88,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.51
         },
         {
@@ -991,18 +1353,9 @@
           ],
           "price": 9,
           "pick": 93,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.33
-        },
-        {
-          "name": "Jakob Poeltl",
-          "rk": 89,
-          "nbaTeam": "TOR",
-          "pos": [
-            "C"
-          ],
-          "price": 3,
-          "pick": 113,
-          "projZ": 1.68
         },
         {
           "name": "CJ McCollum",
@@ -1014,201 +1367,46 @@
           ],
           "price": 3,
           "pick": 124,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.06
-        }
-      ],
-      "projTotals": {
-        "fgPct": 0.4986,
-        "ftPct": 0.7688,
-        "tpm": 1173,
-        "pts": 13389,
-        "treb": 4730,
-        "ast": 3051,
-        "stl": 826,
-        "blk": 603
-      },
-      "projRoto": {
-        "total": 67,
-        "fgPct": 15,
-        "ftPct": 5,
-        "tpm": 3,
-        "pts": 9,
-        "treb": 8,
-        "ast": 8,
-        "stl": 9,
-        "blk": 10
-      },
-      "projRank": 6
-    },
-    {
-      "name": "The New Day Co-op",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": false,
-      "spent": 200,
-      "roster": [
-        {
-          "name": "Karl-Anthony Towns",
-          "rk": 12,
-          "nbaTeam": "NYK",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 52,
-          "pick": 20,
-          "projZ": 6.9
         },
         {
-          "name": "Evan Mobley",
-          "rk": 31,
-          "nbaTeam": "CLE",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 30,
-          "pick": 39,
-          "projZ": 4.72
-        },
-        {
-          "name": "Jaren Jackson Jr.",
-          "rk": 27,
-          "nbaTeam": "UTA",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 24,
-          "pick": 52,
-          "projZ": 4.87
-        },
-        {
-          "name": "Deni Avdija",
-          "rk": 64,
-          "nbaTeam": "POR",
-          "pos": [
-            "SG",
-            "SF",
-            "PF"
-          ],
-          "price": 24,
-          "pick": 53,
-          "projZ": 2.69
-        },
-        {
-          "name": "Kyrie Irving",
-          "rk": 28,
-          "nbaTeam": "DAL",
-          "pos": [
-            "PG"
-          ],
-          "price": 24,
-          "pick": 54,
-          "projZ": 4.84
-        },
-        {
-          "name": "Donovan Clingan",
-          "rk": 61,
-          "nbaTeam": "POR",
-          "pos": [
-            "C"
-          ],
-          "price": 18,
-          "pick": 55,
-          "projZ": 2.76
-        },
-        {
-          "name": "Ivica Zubac",
-          "rk": 70,
-          "nbaTeam": "IND",
-          "pos": [
-            "C"
-          ],
-          "price": 17,
-          "pick": 58,
-          "projZ": 2.54
-        },
-        {
-          "name": "Mark Williams",
-          "rk": 198,
-          "nbaTeam": "PHX",
-          "pos": [
-            "C"
-          ],
-          "price": 5,
-          "pick": 83,
-          "projZ": -2.11
-        },
-        {
-          "name": "Jabari Smith Jr.",
-          "rk": 115,
-          "nbaTeam": "HOU",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 3,
-          "pick": 106,
-          "projZ": 0.59
-        },
-        {
-          "name": "Collin Gillespie",
-          "rk": 124,
-          "nbaTeam": "PHX",
+          "name": "Kevin Porter Jr.",
+          "rk": 117,
+          "nbaTeam": "MIL",
           "pos": [
             "PG",
             "SG"
           ],
-          "price": 1,
-          "pick": 137,
-          "projZ": 0.12
-        },
-        {
-          "name": "Quentin Grimes",
-          "rk": 118,
-          "nbaTeam": "LAL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 148,
-          "projZ": 0.44
-        },
-        {
-          "name": "P.J. Washington",
-          "rk": 141,
-          "nbaTeam": "DAL",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 158,
-          "projZ": -0.35
+          "price": 2,
+          "pick": 143,
+          "acquired": "trade",
+          "acquiredDate": "2026-10-20 07:41",
+          "projZ": 0.54
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
-        "fgPct": 0.4923,
-        "ftPct": 0.7679,
-        "tpm": 1277,
-        "pts": 13043,
-        "treb": 6031,
-        "ast": 2435,
-        "stl": 704,
-        "blk": 723
+        "fgPct": 0.4884,
+        "ftPct": 0.7773,
+        "tpm": 1227,
+        "pts": 13443,
+        "treb": 4513,
+        "ast": 3200,
+        "stl": 858,
+        "blk": 563
       },
       "projRoto": {
-        "total": 66,
-        "fgPct": 14,
-        "ftPct": 3,
-        "tpm": 7,
-        "pts": 8,
-        "treb": 15,
-        "ast": 1,
-        "stl": 3,
-        "blk": 15
+        "total": 64,
+        "fgPct": 13,
+        "ftPct": 5,
+        "tpm": 3,
+        "pts": 7,
+        "treb": 6,
+        "ast": 8,
+        "stl": 11,
+        "blk": 11
       },
       "projRank": 7
     },
@@ -1218,6 +1416,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Shai Gilgeous-Alexander",
@@ -1228,6 +1427,8 @@
           ],
           "price": 88,
           "pick": 6,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 14.26
         },
         {
@@ -1240,6 +1441,8 @@
           ],
           "price": 30,
           "pick": 33,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.44
         },
         {
@@ -1251,6 +1454,8 @@
           ],
           "price": 47,
           "pick": 34,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.55
         },
         {
@@ -1262,6 +1467,8 @@
           ],
           "price": 23,
           "pick": 50,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.71
         },
         {
@@ -1274,6 +1481,8 @@
           ],
           "price": 4,
           "pick": 94,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.7
         },
         {
@@ -1286,6 +1495,8 @@
           ],
           "price": 2,
           "pick": 117,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.07
         },
         {
@@ -1298,6 +1509,8 @@
           ],
           "price": 1,
           "pick": 132,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.05
         },
         {
@@ -1311,6 +1524,8 @@
           ],
           "price": 1,
           "pick": 155,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.11
         },
         {
@@ -1322,6 +1537,8 @@
           ],
           "price": 1,
           "pick": 162,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.45
         },
         {
@@ -1335,6 +1552,8 @@
           ],
           "price": 1,
           "pick": 168,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.21
         },
         {
@@ -1347,6 +1566,8 @@
           ],
           "price": 1,
           "pick": 173,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.17
         },
         {
@@ -1359,9 +1580,12 @@
           ],
           "price": 1,
           "pick": 177,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -2.45
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4847,
         "ftPct": 0.8161,
@@ -1373,15 +1597,15 @@
         "blk": 461
       },
       "projRoto": {
-        "total": 65.5,
-        "fgPct": 9,
-        "ftPct": 15,
-        "tpm": 6,
+        "total": 60.5,
+        "fgPct": 10,
+        "ftPct": 14,
+        "tpm": 4,
         "pts": 11,
-        "treb": 3,
+        "treb": 2,
         "ast": 10,
-        "stl": 6.5,
-        "blk": 5
+        "stl": 5.5,
+        "blk": 4
       },
       "projRank": 8
     },
@@ -1391,6 +1615,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 1,
       "roster": [
         {
           "name": "Cade Cunningham",
@@ -1402,6 +1627,8 @@
           ],
           "price": 66,
           "pick": 9,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 8.42
         },
         {
@@ -1415,6 +1642,8 @@
           ],
           "price": 38,
           "pick": 13,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 5.33
         },
         {
@@ -1427,6 +1656,8 @@
           ],
           "price": 49,
           "pick": 19,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.76
         },
         {
@@ -1440,6 +1671,8 @@
           ],
           "price": 21,
           "pick": 62,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.33
         },
         {
@@ -1451,6 +1684,8 @@
           ],
           "price": 17,
           "pick": 96,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.21
         },
         {
@@ -1463,6 +1698,8 @@
           ],
           "price": 3,
           "pick": 119,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.4
         },
         {
@@ -1474,6 +1711,8 @@
           ],
           "price": 1,
           "pick": 130,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.29
         },
         {
@@ -1487,6 +1726,8 @@
           ],
           "price": 1,
           "pick": 154,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.31
         },
         {
@@ -1498,6 +1739,8 @@
           ],
           "price": 1,
           "pick": 161,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0
         },
         {
@@ -1509,6 +1752,8 @@
           ],
           "price": 1,
           "pick": 167,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.99
         },
         {
@@ -1520,6 +1765,8 @@
           ],
           "price": 1,
           "pick": 172,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.58
         },
         {
@@ -1532,31 +1779,444 @@
           ],
           "price": 1,
           "pick": 176,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.51
+        },
+        {
+          "name": "Zaccharie Risacher",
+          "rk": 236,
+          "nbaTeam": "DAL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-21 10:25",
+          "projZ": -3.43
         }
       ],
+      "acquisitionsLeft": 17,
       "projTotals": {
-        "fgPct": 0.485,
-        "ftPct": 0.7667,
-        "tpm": 961,
-        "pts": 11559,
-        "treb": 5117,
-        "ast": 2921,
-        "stl": 938,
-        "blk": 640
+        "fgPct": 0.4835,
+        "ftPct": 0.7638,
+        "tpm": 1073,
+        "pts": 12364,
+        "treb": 5383,
+        "ast": 3005,
+        "stl": 994,
+        "blk": 675
       },
       "projRoto": {
-        "total": 61.5,
-        "fgPct": 10.5,
+        "total": 60.5,
+        "fgPct": 7.5,
         "ftPct": 2,
         "tpm": 1,
         "pts": 3,
         "treb": 14,
-        "ast": 6,
-        "stl": 13,
+        "ast": 7,
+        "stl": 14,
         "blk": 12
       },
       "projRank": 9
+    },
+    {
+      "name": "The New Day Co-op",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
+      "spent": 200,
+      "acquisitions": 0,
+      "roster": [
+        {
+          "name": "Karl-Anthony Towns",
+          "rk": 12,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 52,
+          "pick": 20,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 6.9
+        },
+        {
+          "name": "Evan Mobley",
+          "rk": 31,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 30,
+          "pick": 39,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.72
+        },
+        {
+          "name": "Jaren Jackson Jr.",
+          "rk": 27,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 24,
+          "pick": 52,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.87
+        },
+        {
+          "name": "Deni Avdija",
+          "rk": 64,
+          "nbaTeam": "POR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 24,
+          "pick": 53,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.69
+        },
+        {
+          "name": "Kyrie Irving",
+          "rk": 28,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PG"
+          ],
+          "price": 24,
+          "pick": 54,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.84
+        },
+        {
+          "name": "Donovan Clingan",
+          "rk": 61,
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "price": 18,
+          "pick": 55,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.76
+        },
+        {
+          "name": "Ivica Zubac",
+          "rk": 70,
+          "nbaTeam": "IND",
+          "pos": [
+            "C"
+          ],
+          "price": 17,
+          "pick": 58,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.54
+        },
+        {
+          "name": "Mark Williams",
+          "rk": 198,
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "price": 5,
+          "pick": 83,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -2.11
+        },
+        {
+          "name": "Jabari Smith Jr.",
+          "rk": 115,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 106,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.59
+        },
+        {
+          "name": "Collin Gillespie",
+          "rk": 124,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 137,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.12
+        },
+        {
+          "name": "Quentin Grimes",
+          "rk": 118,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 148,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.44
+        },
+        {
+          "name": "P.J. Washington",
+          "rk": 141,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 158,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.35
+        }
+      ],
+      "acquisitionsLeft": 18,
+      "projTotals": {
+        "fgPct": 0.4923,
+        "ftPct": 0.7679,
+        "tpm": 1277,
+        "pts": 13043,
+        "treb": 6031,
+        "ast": 2435,
+        "stl": 704,
+        "blk": 723
+      },
+      "projRoto": {
+        "total": 59,
+        "fgPct": 15,
+        "ftPct": 3,
+        "tpm": 5,
+        "pts": 4,
+        "treb": 15,
+        "ast": 1,
+        "stl": 1,
+        "blk": 15
+      },
+      "projRank": 10
+    },
+    {
+      "name": "Super Maru",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
+      "spent": 200,
+      "acquisitions": 1,
+      "roster": [
+        {
+          "name": "Anthony Edwards",
+          "rk": 7,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 65,
+          "pick": 10,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 7.92
+        },
+        {
+          "name": "Joel Embiid",
+          "rk": 47,
+          "nbaTeam": "PHI",
+          "pos": [
+            "C"
+          ],
+          "price": 25,
+          "pick": 31,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 3.88
+        },
+        {
+          "name": "Domantas Sabonis",
+          "rk": 37,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 37,
+          "pick": 32,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.33
+        },
+        {
+          "name": "Jalen Williams",
+          "rk": 39,
+          "nbaTeam": "OKC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 31,
+          "pick": 42,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.26
+        },
+        {
+          "name": "De'Aaron Fox",
+          "rk": 68,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG"
+          ],
+          "price": 20,
+          "pick": 47,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.62
+        },
+        {
+          "name": "Coby White",
+          "rk": 81,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 13,
+          "pick": 77,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.06
+        },
+        {
+          "name": "Ayo Dosunmu",
+          "rk": 145,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 2,
+          "pick": 108,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.52
+        },
+        {
+          "name": "John Collins",
+          "rk": 74,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 115,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.46
+        },
+        {
+          "name": "Tobias Harris",
+          "rk": 154,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PF"
+          ],
+          "price": 1,
+          "pick": 135,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.9
+        },
+        {
+          "name": "Bobby Portis Jr.",
+          "rk": 149,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 157,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.62
+        },
+        {
+          "name": "Luguentz Dort",
+          "rk": 241,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 164,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -3.62
+        },
+        {
+          "name": "Collin Sexton",
+          "rk": 162,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": -1.17
+        }
+      ],
+      "acquisitionsLeft": 17,
+      "projTotals": {
+        "fgPct": 0.4893,
+        "ftPct": 0.8181,
+        "tpm": 1407,
+        "pts": 13798,
+        "treb": 4426,
+        "ast": 2795,
+        "stl": 747,
+        "blk": 372
+      },
+      "projRoto": {
+        "total": 58,
+        "fgPct": 14,
+        "ftPct": 15,
+        "tpm": 8,
+        "pts": 10,
+        "treb": 3,
+        "ast": 4,
+        "stl": 3,
+        "blk": 1
+      },
+      "projRank": 11
     },
     {
       "name": "Grilled Teampura",
@@ -1564,6 +2224,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Tyrese Maxey",
@@ -1574,6 +2235,8 @@
           ],
           "price": 54,
           "pick": 1,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 7.63
         },
         {
@@ -1586,6 +2249,8 @@
           ],
           "price": 45,
           "pick": 14,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 6.21
         },
         {
@@ -1598,19 +2263,9 @@
           ],
           "price": 36,
           "pick": 18,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.8
-        },
-        {
-          "name": "Amen Thompson",
-          "rk": 29,
-          "nbaTeam": "HOU",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 43,
-          "pick": 24,
-          "projZ": 4.81
         },
         {
           "name": "Alex Sarr",
@@ -1621,6 +2276,8 @@
           ],
           "price": 15,
           "pick": 68,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.86
         },
         {
@@ -1633,6 +2290,8 @@
           ],
           "price": 1,
           "pick": 138,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.36
         },
         {
@@ -1645,6 +2304,8 @@
           ],
           "price": 1,
           "pick": 149,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.64
         },
         {
@@ -1657,6 +2318,8 @@
           ],
           "price": 1,
           "pick": 159,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.3
         },
         {
@@ -1670,19 +2333,9 @@
           ],
           "price": 1,
           "pick": 165,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.56
-        },
-        {
-          "name": "Jeremiah Fears",
-          "rk": 193,
-          "nbaTeam": "NOP",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 1,
-          "pick": 170,
-          "projZ": -2
         },
         {
           "name": "Nikola Vučević",
@@ -1693,6 +2346,8 @@
           ],
           "price": 1,
           "pick": 174,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.73
         },
         {
@@ -1705,31 +2360,62 @@
           ],
           "price": 1,
           "pick": 178,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.89
+        },
+        {
+          "name": "Michael Porter Jr.",
+          "rk": 60,
+          "nbaTeam": "BKN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 19,
+          "pick": 74,
+          "acquired": "trade",
+          "acquiredDate": "2026-10-19 20:33",
+          "projZ": 2.8
+        },
+        {
+          "name": "Stephon Castle",
+          "rk": 135,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 16,
+          "pick": 45,
+          "acquired": "trade",
+          "acquiredDate": "2026-10-19 20:33",
+          "projZ": -0.17
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
-        "fgPct": 0.4668,
-        "ftPct": 0.784,
-        "tpm": 1318,
-        "pts": 11850,
-        "treb": 4558,
-        "ast": 3178,
-        "stl": 892,
-        "blk": 612
+        "fgPct": 0.4617,
+        "ftPct": 0.7845,
+        "tpm": 1464,
+        "pts": 11906,
+        "treb": 4456,
+        "ast": 3207,
+        "stl": 829,
+        "blk": 551
       },
       "projRoto": {
-        "total": 59,
+        "total": 51,
         "fgPct": 1,
         "ftPct": 6,
-        "tpm": 10,
-        "pts": 4,
-        "treb": 6,
+        "tpm": 12,
+        "pts": 2,
+        "treb": 4,
         "ast": 9,
-        "stl": 12,
-        "blk": 11
+        "stl": 7,
+        "blk": 10
       },
-      "projRank": 10
+      "projRank": 12
     },
     {
       "name": "Full Court Rex",
@@ -1737,6 +2423,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 199,
+      "acquisitions": 1,
       "roster": [
         {
           "name": "Stephen Curry",
@@ -1747,6 +2434,8 @@
           ],
           "price": 51,
           "pick": 7,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 7.75
         },
         {
@@ -1758,6 +2447,8 @@
           ],
           "price": 11,
           "pick": 8,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -3.35
         },
         {
@@ -1770,6 +2461,8 @@
           ],
           "price": 40,
           "pick": 27,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.88
         },
         {
@@ -1782,6 +2475,8 @@
           ],
           "price": 38,
           "pick": 36,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.52
         },
         {
@@ -1795,6 +2490,8 @@
           ],
           "price": 27,
           "pick": 44,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 2.68
         },
         {
@@ -1806,20 +2503,9 @@
           ],
           "price": 14,
           "pick": 67,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.84
-        },
-        {
-          "name": "Brandon Ingram",
-          "rk": 80,
-          "nbaTeam": "LAC",
-          "pos": [
-            "SG",
-            "SF",
-            "PF"
-          ],
-          "price": 7,
-          "pick": 91,
-          "projZ": 0
         },
         {
           "name": "Ace Bailey",
@@ -1831,6 +2517,8 @@
           ],
           "price": 4,
           "pick": 97,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.48
         },
         {
@@ -1842,6 +2530,8 @@
           ],
           "price": 4,
           "pick": 102,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.65
         },
         {
@@ -1854,6 +2544,8 @@
           ],
           "price": 1,
           "pick": 129,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.04
         },
         {
@@ -1866,6 +2558,8 @@
           ],
           "price": 1,
           "pick": 142,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.53
         },
         {
@@ -1878,203 +2572,48 @@
           ],
           "price": 1,
           "pick": 153,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -2.27
-        }
-      ],
-      "projTotals": {
-        "fgPct": 0.4818,
-        "ftPct": 0.7687,
-        "tpm": 1219,
-        "pts": 14083,
-        "treb": 4862,
-        "ast": 2700,
-        "stl": 733,
-        "blk": 492
-      },
-      "projRoto": {
-        "total": 53,
-        "fgPct": 6,
-        "ftPct": 4,
-        "tpm": 5,
-        "pts": 12,
-        "treb": 11,
-        "ast": 4,
-        "stl": 4,
-        "blk": 7
-      },
-      "projRank": 11
-    },
-    {
-      "name": "Super Maru",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": false,
-      "spent": 200,
-      "roster": [
-        {
-          "name": "Anthony Edwards",
-          "rk": 7,
-          "nbaTeam": "MIN",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 65,
-          "pick": 10,
-          "projZ": 7.92
         },
         {
-          "name": "Joel Embiid",
-          "rk": 47,
-          "nbaTeam": "PHI",
-          "pos": [
-            "C"
-          ],
-          "price": 25,
-          "pick": 31,
-          "projZ": 3.88
-        },
-        {
-          "name": "Domantas Sabonis",
-          "rk": 37,
-          "nbaTeam": "SAC",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 37,
-          "pick": 32,
-          "projZ": 4.33
-        },
-        {
-          "name": "Jalen Williams",
-          "rk": 39,
+          "name": "Jared McCain",
+          "rk": 187,
           "nbaTeam": "OKC",
           "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 31,
-          "pick": 42,
-          "projZ": 4.26
-        },
-        {
-          "name": "De'Aaron Fox",
-          "rk": 68,
-          "nbaTeam": "SAS",
-          "pos": [
-            "PG"
-          ],
-          "price": 20,
-          "pick": 47,
-          "projZ": 2.62
-        },
-        {
-          "name": "Coby White",
-          "rk": 81,
-          "nbaTeam": "CHA",
-          "pos": [
             "PG",
             "SG"
           ],
-          "price": 13,
-          "pick": 77,
-          "projZ": 2.06
-        },
-        {
-          "name": "Ayo Dosunmu",
-          "rk": 145,
-          "nbaTeam": "MIN",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 2,
-          "pick": 108,
-          "projZ": -0.52
-        },
-        {
-          "name": "John Collins",
-          "rk": 74,
-          "nbaTeam": "DET",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 3,
-          "pick": 115,
-          "projZ": 2.46
-        },
-        {
-          "name": "Tobias Harris",
-          "rk": 154,
-          "nbaTeam": "SAS",
-          "pos": [
-            "PF"
-          ],
-          "price": 1,
-          "pick": 135,
-          "projZ": -0.9
-        },
-        {
-          "name": "Corey Kispert",
-          "rk": null,
-          "nbaTeam": "ATL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 147,
-          "projZ": null
-        },
-        {
-          "name": "Bobby Portis Jr.",
-          "rk": 149,
-          "nbaTeam": "MIA",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 157,
-          "projZ": -0.62
-        },
-        {
-          "name": "Luguentz Dort",
-          "rk": 241,
-          "nbaTeam": "ATL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 164,
-          "projZ": -3.62
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-21 23:09",
+          "projZ": -1.82
         }
       ],
+      "acquisitionsLeft": 17,
       "projTotals": {
-        "fgPct": 0.49,
-        "ftPct": 0.8127,
-        "tpm": 1302,
-        "pts": 12776,
-        "treb": 4272,
-        "ast": 2571,
-        "stl": 691,
-        "blk": 365
+        "fgPct": 0.4788,
+        "ftPct": 0.771,
+        "tpm": 1312,
+        "pts": 14235,
+        "treb": 4854,
+        "ast": 2709,
+        "stl": 757,
+        "blk": 470
       },
       "projRoto": {
-        "total": 51,
-        "fgPct": 13,
-        "ftPct": 13,
-        "tpm": 9,
-        "pts": 7,
-        "treb": 4,
-        "ast": 2,
-        "stl": 2,
-        "blk": 1
+        "total": 50,
+        "fgPct": 5,
+        "ftPct": 4,
+        "tpm": 6,
+        "pts": 12,
+        "treb": 11,
+        "ast": 3,
+        "stl": 4,
+        "blk": 5
       },
-      "projRank": 12
+      "projRank": 13
     },
     {
       "name": "Herb's Astonishing Team",
@@ -2082,6 +2621,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 0,
       "roster": [
         {
           "name": "Nikola Jokić",
@@ -2092,6 +2632,8 @@
           ],
           "price": 90,
           "pick": 2,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 16.43
         },
         {
@@ -2104,6 +2646,8 @@
           ],
           "price": 64,
           "pick": 11,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 7.93
         },
         {
@@ -2116,6 +2660,8 @@
           ],
           "price": 36,
           "pick": 35,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.4
         },
         {
@@ -2128,6 +2674,8 @@
           ],
           "price": 2,
           "pick": 122,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.2
         },
         {
@@ -2139,6 +2687,8 @@
           ],
           "price": 1,
           "pick": 141,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.36
         },
         {
@@ -2150,6 +2700,8 @@
           ],
           "price": 1,
           "pick": 152,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -3.56
         },
         {
@@ -2162,6 +2714,8 @@
           ],
           "price": 1,
           "pick": 160,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0.23
         },
         {
@@ -2174,6 +2728,8 @@
           ],
           "price": 1,
           "pick": 166,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 0
         },
         {
@@ -2186,6 +2742,8 @@
           ],
           "price": 1,
           "pick": 171,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -3.77
         },
         {
@@ -2197,6 +2755,8 @@
           ],
           "price": 1,
           "pick": 175,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.66
         },
         {
@@ -2209,6 +2769,8 @@
           ],
           "price": 1,
           "pick": 179,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -4.16
         },
         {
@@ -2220,9 +2782,12 @@
           ],
           "price": 1,
           "pick": 180,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -1.74
         }
       ],
+      "acquisitionsLeft": 18,
       "projTotals": {
         "fgPct": 0.4846,
         "ftPct": 0.7939,
@@ -2234,188 +2799,15 @@
         "blk": 379
       },
       "projRoto": {
-        "total": 49,
-        "fgPct": 8,
+        "total": 47,
+        "fgPct": 9,
         "ftPct": 7,
         "tpm": 2,
         "pts": 1,
         "treb": 5,
-        "ast": 14,
-        "stl": 10,
-        "blk": 2
-      },
-      "projRank": 13
-    },
-    {
-      "name": "Finn will cook Burt",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": true,
-      "spent": 200,
-      "roster": [
-        {
-          "name": "Victor Wembanyama",
-          "rk": 2,
-          "nbaTeam": "SAS",
-          "pos": [
-            "C"
-          ],
-          "price": 87,
-          "pick": 3,
-          "projZ": 14.59
-        },
-        {
-          "name": "Donovan Mitchell",
-          "rk": 11,
-          "nbaTeam": "CLE",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 55,
-          "pick": 12,
-          "projZ": 7.01
-        },
-        {
-          "name": "Amir Coffey",
-          "rk": null,
-          "nbaTeam": "PHX",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 3,
-          "pick": 15,
-          "projZ": null
-        },
-        {
-          "name": "Trae Young",
-          "rk": 13,
-          "nbaTeam": "WAS",
-          "pos": [
-            "PG"
-          ],
-          "price": 39,
-          "pick": 26,
-          "projZ": 6.82
-        },
-        {
-          "name": "Josh Hart",
-          "rk": 83,
-          "nbaTeam": "NYK",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 5,
-          "pick": 101,
-          "projZ": 1.93
-        },
-        {
-          "name": "VJ Edgecombe",
-          "rk": 84,
-          "nbaTeam": "PHI",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 5,
-          "pick": 107,
-          "projZ": 1.85
-        },
-        {
-          "name": "Tre Jones",
-          "rk": 112,
-          "nbaTeam": "CHI",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 1,
-          "pick": 120,
-          "projZ": 0.7
-        },
-        {
-          "name": "Kevin Love",
-          "rk": null,
-          "nbaTeam": "UTA",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 133,
-          "projZ": null
-        },
-        {
-          "name": "Christian Braun",
-          "rk": 114,
-          "nbaTeam": "DEN",
-          "pos": [
-            "SG",
-            "SF",
-            "PF"
-          ],
-          "price": 1,
-          "pick": 145,
-          "projZ": 0.61
-        },
-        {
-          "name": "Jusuf Nurkić",
-          "rk": 133,
-          "nbaTeam": "UTA",
-          "pos": [
-            "C"
-          ],
-          "price": 1,
-          "pick": 156,
-          "projZ": -0.12
-        },
-        {
-          "name": "Draymond Green",
-          "rk": 116,
-          "nbaTeam": "GSW",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 163,
-          "projZ": 0.59
-        },
-        {
-          "name": "Saddiq Bey",
-          "rk": 136,
-          "nbaTeam": "NOP",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 1,
-          "pick": 169,
-          "projZ": -0.2
-        }
-      ],
-      "projTotals": {
-        "fgPct": 0.4758,
-        "ftPct": 0.8141,
-        "tpm": 1187,
-        "pts": 11375,
-        "treb": 4128,
-        "ast": 3321,
-        "stl": 788,
-        "blk": 449
-      },
-      "projRoto": {
-        "total": 46.5,
-        "fgPct": 2.5,
-        "ftPct": 14,
-        "tpm": 4,
-        "pts": 2,
-        "treb": 2,
         "ast": 13,
-        "stl": 5,
-        "blk": 4
+        "stl": 8,
+        "blk": 2
       },
       "projRank": 14
     },
@@ -2427,6 +2819,7 @@
       "isMine": false,
       "isManaged": false,
       "spent": 200,
+      "acquisitions": 2,
       "roster": [
         {
           "name": "Jalen Brunson",
@@ -2437,6 +2830,8 @@
           ],
           "price": 53,
           "pick": 17,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 4.14
         },
         {
@@ -2450,6 +2845,8 @@
           ],
           "price": 50,
           "pick": 21,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 7.51
         },
         {
@@ -2462,31 +2859,9 @@
           ],
           "price": 28,
           "pick": 38,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.59
-        },
-        {
-          "name": "Stephon Castle",
-          "rk": 135,
-          "nbaTeam": "SAS",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 16,
-          "pick": 45,
-          "projZ": -0.17
-        },
-        {
-          "name": "Bronny James",
-          "rk": null,
-          "nbaTeam": "LAL",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 1,
-          "pick": 63,
-          "projZ": null
         },
         {
           "name": "Jarrett Allen",
@@ -2497,19 +2872,9 @@
           ],
           "price": 10,
           "pick": 70,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.94
-        },
-        {
-          "name": "Michael Porter Jr.",
-          "rk": 60,
-          "nbaTeam": "BKN",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 19,
-          "pick": 74,
-          "projZ": 2.8
         },
         {
           "name": "Tyler Herro",
@@ -2521,6 +2886,8 @@
           ],
           "price": 13,
           "pick": 76,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 3.97
         },
         {
@@ -2534,6 +2901,8 @@
           ],
           "price": 5,
           "pick": 114,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": 1.76
         },
         {
@@ -2545,19 +2914,9 @@
           ],
           "price": 1,
           "pick": 136,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": null
-        },
-        {
-          "name": "Kevin Porter Jr.",
-          "rk": 117,
-          "nbaTeam": "MIL",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 2,
-          "pick": 143,
-          "projZ": 0.54
         },
         {
           "name": "Wendell Carter Jr.",
@@ -2568,28 +2927,87 @@
           ],
           "price": 2,
           "pick": 144,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
           "projZ": -0.72
+        },
+        {
+          "name": "Amen Thompson",
+          "rk": 29,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 43,
+          "pick": 24,
+          "acquired": "trade",
+          "acquiredDate": "2026-10-19 20:33",
+          "projZ": 4.81
+        },
+        {
+          "name": "Jeremiah Fears",
+          "rk": 193,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 170,
+          "acquired": "trade",
+          "acquiredDate": "2026-10-19 20:33",
+          "projZ": -2
+        },
+        {
+          "name": "Keldon Johnson",
+          "rk": 217,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-21 04:06",
+          "projZ": -2.75
+        },
+        {
+          "name": "Duncan Robinson",
+          "rk": 190,
+          "nbaTeam": "DET",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-22 09:33",
+          "projZ": -1.92
         }
       ],
+      "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.4819,
-        "ftPct": 0.8097,
-        "tpm": 1286,
-        "pts": 12552,
-        "treb": 3765,
-        "ast": 2683,
-        "stl": 650,
-        "blk": 381
+        "fgPct": 0.4875,
+        "ftPct": 0.8078,
+        "tpm": 1405,
+        "pts": 13674,
+        "treb": 4193,
+        "ast": 2670,
+        "stl": 714,
+        "blk": 454
       },
       "projRoto": {
-        "total": 39,
-        "fgPct": 7,
+        "total": 46,
+        "fgPct": 12,
         "ftPct": 11,
-        "tpm": 8,
-        "pts": 5,
+        "tpm": 7,
+        "pts": 8,
         "treb": 1,
-        "ast": 3,
-        "stl": 1,
+        "ast": 2,
+        "stl": 2,
         "blk": 3
       },
       "projRank": 15
