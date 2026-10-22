@@ -136,3 +136,28 @@ test('attachLineups infers a missing team name, expands abbreviations and flags 
   assert.equal(issues.length, 1);
   assert.match(issues[0], /Ghost Player/);
 });
+
+test('valueReport rank-matches earned $ to draft prices and skips teams that have not played', () => {
+  const { valueReport } = require('../season/value_report.js');
+  const line = (rank, name, nbaTeam, yahooTotal) => ({ rank, name, nbaTeam, yahooTotal, gp: 1 });
+  const stats = { players: [line(1, 'Cheap Star', 'BOS', 10), line(2, 'Pricey Flop', 'LAL', 1)] };
+  const draft = [
+    { name: 'Pricey Flop', nbaTeam: 'LAL', price: 50, team: 'A' },
+    { name: 'Cheap Star', nbaTeam: 'BOS', price: 2, team: 'B' },
+    { name: 'Hurt Guy', nbaTeam: 'LAL', price: 20, team: 'A' },
+    { name: 'Idle Guy', nbaTeam: 'DEN', price: 30, team: 'B' }
+  ];
+  const roster = (team, names) => ({ name: team, roster: names.map(n => {
+    const d = draft.find(x => x.name === n);
+    const s = stats.players.find(p => p.name === n);
+    return { name: n, nbaTeam: d.nbaTeam, acquired: 'draft', stats: s ? { rank: s.rank } : null };
+  }) });
+  const league = { draft, teams: [roster('A', ['Pricey Flop', 'Hurt Guy']), roster('B', ['Cheap Star', 'Idle Guy'])] };
+  const { rows, waiting } = valueReport(league, stats);
+  const by = n => rows.find(r => r.name === n);
+  assert.equal(by('Cheap Star').earned, 50);   // best performer earns the top price
+  assert.equal(by('Cheap Star').surplus, 48);
+  assert.equal(by('Pricey Flop').earned, 30);  // second-best earns the second price
+  assert.equal(by('Hurt Guy').earned, 0);      // team played, he didn't
+  assert.deepEqual(waiting, ['Idle Guy']);     // DEN hasn't played
+});
