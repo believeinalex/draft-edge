@@ -5,7 +5,8 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "analyze": "node utils/analyze_mock.js",
-    "prices": "node utils/calculate_draft_prices.js"
+    "prices": "node utils/calculate_draft_prices.js",
+    "season": "node season/build_season.js"
   },
   "keywords": [
     "fantasy-basketball",

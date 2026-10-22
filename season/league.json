@@ -1,0 +1,4683 @@
+{
+  "league": "LePrawn",
+  "yahooLeagueId": 45771,
+  "season": "2026-27",
+  "draftDate": "2026-10-18",
+  "myTeam": null,
+  "generatedFrom": "season/draft_2026-10-18.txt",
+  "teams": [
+    {
+      "name": "Shut Up and Jam Gaiden",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Luka Dončić",
+          "rk": 4,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 73,
+          "pick": 4,
+          "projZ": 12.2
+        },
+        {
+          "name": "Chet Holmgren",
+          "rk": 22,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 38,
+          "pick": 29,
+          "projZ": 5.72
+        },
+        {
+          "name": "Franz Wagner",
+          "rk": 45,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 25,
+          "pick": 66,
+          "projZ": 3.93
+        },
+        {
+          "name": "Darius Garland",
+          "rk": 32,
+          "nbaTeam": "LAC",
+          "pos": [
+            "PG"
+          ],
+          "price": 26,
+          "pick": 69,
+          "projZ": 4.55
+        },
+        {
+          "name": "Day'Ron Sharpe",
+          "rk": 78,
+          "nbaTeam": "BKN",
+          "pos": [
+            "C"
+          ],
+          "price": 5,
+          "pick": 98,
+          "projZ": 2.3
+        },
+        {
+          "name": "Julius Randle",
+          "rk": 86,
+          "nbaTeam": "BKN",
+          "pos": [
+            "PF"
+          ],
+          "price": 10,
+          "pick": 99,
+          "projZ": 1.78
+        },
+        {
+          "name": "Immanuel Quickley",
+          "rk": 76,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 8,
+          "pick": 109,
+          "projZ": 2.37
+        },
+        {
+          "name": "Jalen Suggs",
+          "rk": 50,
+          "nbaTeam": "ORL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 7,
+          "pick": 110,
+          "projZ": 3.68
+        },
+        {
+          "name": "Miles Bridges",
+          "rk": 105,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PF"
+          ],
+          "price": 2,
+          "pick": 125,
+          "projZ": 1.03
+        },
+        {
+          "name": "Ajay Mitchell",
+          "rk": 88,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 3,
+          "pick": 126,
+          "projZ": 1.73
+        },
+        {
+          "name": "Cameron Johnson",
+          "rk": 94,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 140,
+          "projZ": 1.51
+        },
+        {
+          "name": "Paul Reed",
+          "rk": 121,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 2,
+          "pick": 151,
+          "projZ": 0.25
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4765,
+        "ftPct": 0.8124,
+        "tpm": 1521,
+        "pts": 14722,
+        "treb": 4813,
+        "ast": 3588,
+        "stl": 948,
+        "blk": 515
+      },
+      "projRoto": {
+        "total": 92,
+        "fgPct": 4,
+        "ftPct": 12,
+        "tpm": 14,
+        "pts": 15,
+        "treb": 10,
+        "ast": 15,
+        "stl": 14,
+        "blk": 8
+      },
+      "projRank": 1
+    },
+    {
+      "name": "Team Maru",
+      "previousNames": [],
+      "spent": 195,
+      "roster": [
+        {
+          "name": "OG Anunoby",
+          "rk": 58,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 22,
+          "pick": 23,
+          "projZ": 2.99
+        },
+        {
+          "name": "Derik Queen",
+          "rk": 90,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 10,
+          "pick": 30,
+          "projZ": 1.66
+        },
+        {
+          "name": "Jalen Duren",
+          "rk": 38,
+          "nbaTeam": "DET",
+          "pos": [
+            "C"
+          ],
+          "price": 27,
+          "pick": 46,
+          "projZ": 4.29
+        },
+        {
+          "name": "Mikal Bridges",
+          "rk": 104,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 19,
+          "pick": 57,
+          "projZ": 1.04
+        },
+        {
+          "name": "Cameron Boozer",
+          "rk": 56,
+          "nbaTeam": "MEM",
+          "pos": [
+            "PF"
+          ],
+          "price": 19,
+          "pick": 59,
+          "projZ": 3.1
+        },
+        {
+          "name": "Desmond Bane",
+          "rk": 33,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 25,
+          "pick": 64,
+          "projZ": 4.55
+        },
+        {
+          "name": "Dyson Daniels",
+          "rk": 69,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 17,
+          "pick": 71,
+          "projZ": 2.61
+        },
+        {
+          "name": "Nickeil Alexander-Walker",
+          "rk": 46,
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 25,
+          "pick": 81,
+          "projZ": 3.9
+        },
+        {
+          "name": "Paul George",
+          "rk": 53,
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 13,
+          "pick": 87,
+          "projZ": 3.52
+        },
+        {
+          "name": "Payton Pritchard",
+          "rk": 92,
+          "nbaTeam": "BOS",
+          "pos": [
+            "PG"
+          ],
+          "price": 10,
+          "pick": 89,
+          "projZ": 1.63
+        },
+        {
+          "name": "Brandin Podziemski",
+          "rk": 99,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 5,
+          "pick": 90,
+          "projZ": 1.33
+        },
+        {
+          "name": "Jalen Green",
+          "rk": 127,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 3,
+          "pick": 116,
+          "projZ": -0.04
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4815,
+        "ftPct": 0.8066,
+        "tpm": 1597,
+        "pts": 14495,
+        "treb": 4909,
+        "ast": 3317,
+        "stl": 1063,
+        "blk": 480
+      },
+      "projRoto": {
+        "total": 89,
+        "fgPct": 5,
+        "ftPct": 10,
+        "tpm": 15,
+        "pts": 14,
+        "treb": 12,
+        "ast": 12,
+        "stl": 15,
+        "blk": 6
+      },
+      "projRank": 2
+    },
+    {
+      "name": "Fishy Achilles",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Scottie Barnes",
+          "rk": 20,
+          "nbaTeam": "TOR",
+          "pos": [
+            "SF",
+            "PF",
+            "C"
+          ],
+          "price": 52,
+          "pick": 25,
+          "projZ": 6.19
+        },
+        {
+          "name": "Derrick White",
+          "rk": 43,
+          "nbaTeam": "BOS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 33,
+          "pick": 37,
+          "projZ": 3.97
+        },
+        {
+          "name": "James Harden",
+          "rk": 19,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 36,
+          "pick": 48,
+          "projZ": 6.2
+        },
+        {
+          "name": "Trey Murphy III",
+          "rk": 21,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 34,
+          "pick": 49,
+          "projZ": 5.92
+        },
+        {
+          "name": "Zach Edey",
+          "rk": 40,
+          "nbaTeam": "MEM",
+          "pos": [
+            "C"
+          ],
+          "price": 24,
+          "pick": 92,
+          "projZ": 4.23
+        },
+        {
+          "name": "Neemias Queta",
+          "rk": 101,
+          "nbaTeam": "BOS",
+          "pos": [
+            "C"
+          ],
+          "price": 4,
+          "pick": 105,
+          "projZ": 1.2
+        },
+        {
+          "name": "Norman Powell",
+          "rk": 93,
+          "nbaTeam": "CHI",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 8,
+          "pick": 111,
+          "projZ": 1.54
+        },
+        {
+          "name": "Rui Hachimura",
+          "rk": 189,
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 2,
+          "pick": 121,
+          "projZ": -1.91
+        },
+        {
+          "name": "Sandro Mamukelashvili",
+          "rk": 107,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 2,
+          "pick": 127,
+          "projZ": 0.88
+        },
+        {
+          "name": "Nic Claxton",
+          "rk": 150,
+          "nbaTeam": "CHI",
+          "pos": [
+            "C"
+          ],
+          "price": 2,
+          "pick": 128,
+          "projZ": -0.64
+        },
+        {
+          "name": "Ben Simmons",
+          "rk": 250,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG"
+          ],
+          "price": 2,
+          "pick": 134,
+          "projZ": -3.88
+        },
+        {
+          "name": "Egor Dëmin",
+          "rk": 130,
+          "nbaTeam": "BKN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 146,
+          "projZ": -0.05
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.485,
+        "ftPct": 0.8016,
+        "tpm": 1365,
+        "pts": 12642,
+        "treb": 4972,
+        "ast": 2950,
+        "stl": 814,
+        "blk": 701
+      },
+      "projRoto": {
+        "total": 76.5,
+        "fgPct": 10.5,
+        "ftPct": 8,
+        "tpm": 11,
+        "pts": 6,
+        "treb": 13,
+        "ast": 7,
+        "stl": 8,
+        "blk": 13
+      },
+      "projRank": 3
+    },
+    {
+      "name": "#WashedAutoDraftKing",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Giannis Antetokounmpo",
+          "rk": 24,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 68,
+          "pick": 5,
+          "projZ": 4.98
+        },
+        {
+          "name": "LaMelo Ball",
+          "rk": 42,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG"
+          ],
+          "price": 41,
+          "pick": 22,
+          "projZ": 4
+        },
+        {
+          "name": "Myles Turner",
+          "rk": 95,
+          "nbaTeam": "MIL",
+          "pos": [
+            "C"
+          ],
+          "price": 10,
+          "pick": 43,
+          "projZ": 1.45
+        },
+        {
+          "name": "Paolo Banchero",
+          "rk": 85,
+          "nbaTeam": "ORL",
+          "pos": [
+            "PF"
+          ],
+          "price": 22,
+          "pick": 56,
+          "projZ": 1.82
+        },
+        {
+          "name": "Pascal Siakam",
+          "rk": 67,
+          "nbaTeam": "IND",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 14,
+          "pick": 72,
+          "projZ": 2.65
+        },
+        {
+          "name": "Ja Morant",
+          "rk": 73,
+          "nbaTeam": "POR",
+          "pos": [
+            "PG"
+          ],
+          "price": 7,
+          "pick": 78,
+          "projZ": 2.5
+        },
+        {
+          "name": "Kon Knueppel",
+          "rk": 57,
+          "nbaTeam": "CHA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 26,
+          "pick": 80,
+          "projZ": 3.07
+        },
+        {
+          "name": "Darryn Peterson",
+          "rk": 151,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SG"
+          ],
+          "price": 5,
+          "pick": 100,
+          "projZ": -0.67
+        },
+        {
+          "name": "Cason Wallace",
+          "rk": 106,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "price": 3,
+          "pick": 112,
+          "projZ": 0.99
+        },
+        {
+          "name": "Daniel Gafford",
+          "rk": 184,
+          "nbaTeam": "DAL",
+          "pos": [
+            "C"
+          ],
+          "price": 2,
+          "pick": 123,
+          "projZ": -1.76
+        },
+        {
+          "name": "Reed Sheppard",
+          "rk": 119,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 139,
+          "projZ": 0.38
+        },
+        {
+          "name": "Aaron Gordon",
+          "rk": 146,
+          "nbaTeam": "DEN",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 150,
+          "projZ": -0.53
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4865,
+        "ftPct": 0.7502,
+        "tpm": 1423,
+        "pts": 14367,
+        "treb": 4610,
+        "ast": 3213,
+        "stl": 855,
+        "blk": 538
+      },
+      "projRoto": {
+        "total": 76,
+        "fgPct": 12,
+        "ftPct": 1,
+        "tpm": 12,
+        "pts": 13,
+        "treb": 7,
+        "ast": 11,
+        "stl": 11,
+        "blk": 9
+      },
+      "projRank": 4
+    },
+    {
+      "name": "Billy Hoyle's Boy-les",
+      "previousNames": [],
+      "spent": 178,
+      "roster": [
+        {
+          "name": "Cooper Flagg",
+          "rk": 17,
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 51,
+          "pick": 16,
+          "projZ": 6.43
+        },
+        {
+          "name": "Austin Reaves",
+          "rk": 16,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "price": 45,
+          "pick": 28,
+          "projZ": 6.51
+        },
+        {
+          "name": "Khaman Maluach",
+          "rk": 103,
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "price": 4,
+          "pick": 60,
+          "projZ": 1.07
+        },
+        {
+          "name": "Matas Buzelis",
+          "rk": 48,
+          "nbaTeam": "CHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 22,
+          "pick": 65,
+          "projZ": 3.81
+        },
+        {
+          "name": "Kyshawn George",
+          "rk": 138,
+          "nbaTeam": "WAS",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 7,
+          "pick": 73,
+          "projZ": -0.23
+        },
+        {
+          "name": "Caleb Wilson",
+          "rk": 111,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PF"
+          ],
+          "price": 9,
+          "pick": 82,
+          "projZ": 0.72
+        },
+        {
+          "name": "Naz Reid",
+          "rk": 75,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 7,
+          "pick": 86,
+          "projZ": 2.4
+        },
+        {
+          "name": "Ty Jerome",
+          "rk": 62,
+          "nbaTeam": "MEM",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 12,
+          "pick": 95,
+          "projZ": 2.75
+        },
+        {
+          "name": "Jaden McDaniels",
+          "rk": 72,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SF"
+          ],
+          "price": 9,
+          "pick": 103,
+          "projZ": 2.51
+        },
+        {
+          "name": "Zach LaVine",
+          "rk": 65,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "price": 5,
+          "pick": 104,
+          "projZ": 2.68
+        },
+        {
+          "name": "Yaxel Lendeborg",
+          "rk": 125,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF"
+          ],
+          "price": 6,
+          "pick": 118,
+          "projZ": 0.04
+        },
+        {
+          "name": "Darius Acuff Jr.",
+          "rk": 192,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG"
+          ],
+          "price": 1,
+          "pick": 131,
+          "projZ": -1.98
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4758,
+        "ftPct": 0.8024,
+        "tpm": 1516,
+        "pts": 13748,
+        "treb": 4754,
+        "ast": 2810,
+        "stl": 804,
+        "blk": 721
+      },
+      "projRoto": {
+        "total": 69,
+        "fgPct": 2.5,
+        "ftPct": 9,
+        "tpm": 13,
+        "pts": 10,
+        "treb": 9,
+        "ast": 5,
+        "stl": 6.5,
+        "blk": 14
+      },
+      "projRank": 5
+    },
+    {
+      "name": "vincemvpcarter",
+      "previousNames": [],
+      "spent": 198,
+      "roster": [
+        {
+          "name": "Walker Kessler",
+          "rk": 49,
+          "nbaTeam": "LAL",
+          "pos": [
+            "C"
+          ],
+          "price": 26,
+          "pick": 40,
+          "projZ": 3.78
+        },
+        {
+          "name": "Anthony Davis",
+          "rk": 25,
+          "nbaTeam": "WAS",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 31,
+          "pick": 41,
+          "projZ": 4.9
+        },
+        {
+          "name": "Lauri Markkanen",
+          "rk": 36,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 29,
+          "pick": 51,
+          "projZ": 4.42
+        },
+        {
+          "name": "Keyonte George",
+          "rk": 77,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 23,
+          "pick": 61,
+          "projZ": 2.37
+        },
+        {
+          "name": "Collin Murray-Boyles",
+          "rk": 110,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 8,
+          "pick": 75,
+          "projZ": 0.83
+        },
+        {
+          "name": "Dejounte Murray",
+          "rk": 34,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG"
+          ],
+          "price": 15,
+          "pick": 79,
+          "projZ": 4.44
+        },
+        {
+          "name": "Ryan Rollins",
+          "rk": 59,
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 17,
+          "pick": 84,
+          "projZ": 2.84
+        },
+        {
+          "name": "Dylan Harper",
+          "rk": 102,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 14,
+          "pick": 85,
+          "projZ": 1.12
+        },
+        {
+          "name": "Damian Lillard",
+          "rk": 71,
+          "nbaTeam": "POR",
+          "pos": [
+            "PG"
+          ],
+          "price": 20,
+          "pick": 88,
+          "projZ": 2.51
+        },
+        {
+          "name": "Zion Williamson",
+          "rk": 98,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 9,
+          "pick": 93,
+          "projZ": 1.33
+        },
+        {
+          "name": "Jakob Poeltl",
+          "rk": 89,
+          "nbaTeam": "TOR",
+          "pos": [
+            "C"
+          ],
+          "price": 3,
+          "pick": 113,
+          "projZ": 1.68
+        },
+        {
+          "name": "CJ McCollum",
+          "rk": 131,
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 3,
+          "pick": 124,
+          "projZ": -0.06
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4986,
+        "ftPct": 0.7688,
+        "tpm": 1173,
+        "pts": 13389,
+        "treb": 4730,
+        "ast": 3051,
+        "stl": 826,
+        "blk": 603
+      },
+      "projRoto": {
+        "total": 67,
+        "fgPct": 15,
+        "ftPct": 5,
+        "tpm": 3,
+        "pts": 9,
+        "treb": 8,
+        "ast": 8,
+        "stl": 9,
+        "blk": 10
+      },
+      "projRank": 6
+    },
+    {
+      "name": "The New Day Co-op",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Karl-Anthony Towns",
+          "rk": 12,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 52,
+          "pick": 20,
+          "projZ": 6.9
+        },
+        {
+          "name": "Evan Mobley",
+          "rk": 31,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 30,
+          "pick": 39,
+          "projZ": 4.72
+        },
+        {
+          "name": "Jaren Jackson Jr.",
+          "rk": 27,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 24,
+          "pick": 52,
+          "projZ": 4.87
+        },
+        {
+          "name": "Deni Avdija",
+          "rk": 64,
+          "nbaTeam": "POR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 24,
+          "pick": 53,
+          "projZ": 2.69
+        },
+        {
+          "name": "Kyrie Irving",
+          "rk": 28,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PG"
+          ],
+          "price": 24,
+          "pick": 54,
+          "projZ": 4.84
+        },
+        {
+          "name": "Donovan Clingan",
+          "rk": 61,
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "price": 18,
+          "pick": 55,
+          "projZ": 2.76
+        },
+        {
+          "name": "Ivica Zubac",
+          "rk": 70,
+          "nbaTeam": "IND",
+          "pos": [
+            "C"
+          ],
+          "price": 17,
+          "pick": 58,
+          "projZ": 2.54
+        },
+        {
+          "name": "Mark Williams",
+          "rk": 198,
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "price": 5,
+          "pick": 83,
+          "projZ": -2.11
+        },
+        {
+          "name": "Jabari Smith Jr.",
+          "rk": 115,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 106,
+          "projZ": 0.59
+        },
+        {
+          "name": "Collin Gillespie",
+          "rk": 124,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 137,
+          "projZ": 0.12
+        },
+        {
+          "name": "Quentin Grimes",
+          "rk": 118,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 148,
+          "projZ": 0.44
+        },
+        {
+          "name": "P.J. Washington",
+          "rk": 141,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 158,
+          "projZ": -0.35
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4923,
+        "ftPct": 0.7679,
+        "tpm": 1277,
+        "pts": 13043,
+        "treb": 6031,
+        "ast": 2435,
+        "stl": 704,
+        "blk": 723
+      },
+      "projRoto": {
+        "total": 66,
+        "fgPct": 14,
+        "ftPct": 3,
+        "tpm": 7,
+        "pts": 8,
+        "treb": 15,
+        "ast": 1,
+        "stl": 3,
+        "blk": 15
+      },
+      "projRank": 7
+    },
+    {
+      "name": "Bitsketball Stars",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Shai Gilgeous-Alexander",
+          "rk": 3,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG"
+          ],
+          "price": 88,
+          "pick": 6,
+          "projZ": 14.26
+        },
+        {
+          "name": "LeBron James",
+          "rk": 35,
+          "nbaTeam": "PHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 30,
+          "pick": 33,
+          "projZ": 4.44
+        },
+        {
+          "name": "Jamal Murray",
+          "rk": 15,
+          "nbaTeam": "DEN",
+          "pos": [
+            "PG"
+          ],
+          "price": 47,
+          "pick": 34,
+          "projZ": 6.55
+        },
+        {
+          "name": "Onyeka Okongwu",
+          "rk": 63,
+          "nbaTeam": "ATL",
+          "pos": [
+            "C"
+          ],
+          "price": 23,
+          "pick": 50,
+          "projZ": 2.71
+        },
+        {
+          "name": "Cedric Coward",
+          "rk": 113,
+          "nbaTeam": "MEM",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 4,
+          "pick": 94,
+          "projZ": 0.7
+        },
+        {
+          "name": "DeMar DeRozan",
+          "rk": 132,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 2,
+          "pick": 117,
+          "projZ": -0.07
+        },
+        {
+          "name": "Andrew Nembhard",
+          "rk": 129,
+          "nbaTeam": "IND",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 132,
+          "projZ": -0.05
+        },
+        {
+          "name": "RJ Barrett",
+          "rk": 161,
+          "nbaTeam": "TOR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 155,
+          "projZ": -1.11
+        },
+        {
+          "name": "Moussa Diabaté",
+          "rk": 170,
+          "nbaTeam": "CHA",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 162,
+          "projZ": -1.45
+        },
+        {
+          "name": "Anthony Black",
+          "rk": 137,
+          "nbaTeam": "ORL",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 168,
+          "projZ": -0.21
+        },
+        {
+          "name": "Aaron Nesmith",
+          "rk": 134,
+          "nbaTeam": "IND",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 173,
+          "projZ": -0.17
+        },
+        {
+          "name": "Bennedict Mathurin",
+          "rk": 207,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 177,
+          "projZ": -2.45
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4847,
+        "ftPct": 0.8161,
+        "tpm": 1252,
+        "pts": 13911,
+        "treb": 4229,
+        "ast": 3210,
+        "stl": 804,
+        "blk": 461
+      },
+      "projRoto": {
+        "total": 65.5,
+        "fgPct": 9,
+        "ftPct": 15,
+        "tpm": 6,
+        "pts": 11,
+        "treb": 3,
+        "ast": 10,
+        "stl": 6.5,
+        "blk": 5
+      },
+      "projRank": 8
+    },
+    {
+      "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Cade Cunningham",
+          "rk": 5,
+          "nbaTeam": "DET",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 66,
+          "pick": 9,
+          "projZ": 8.42
+        },
+        {
+          "name": "Kawhi Leonard",
+          "rk": 23,
+          "nbaTeam": "TOR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 38,
+          "pick": 13,
+          "projZ": 5.33
+        },
+        {
+          "name": "Jalen Johnson",
+          "rk": 14,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 49,
+          "pick": 19,
+          "projZ": 6.76
+        },
+        {
+          "name": "Ausar Thompson",
+          "rk": 100,
+          "nbaTeam": "DET",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 21,
+          "pick": 62,
+          "projZ": 1.33
+        },
+        {
+          "name": "Kel'el Ware",
+          "rk": 55,
+          "nbaTeam": "MIL",
+          "pos": [
+            "C"
+          ],
+          "price": 17,
+          "pick": 96,
+          "projZ": 3.21
+        },
+        {
+          "name": "Keegan Murray",
+          "rk": 96,
+          "nbaTeam": "SAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 3,
+          "pick": 119,
+          "projZ": 1.4
+        },
+        {
+          "name": "Fred VanVleet",
+          "rk": 139,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG"
+          ],
+          "price": 1,
+          "pick": 130,
+          "projZ": -0.29
+        },
+        {
+          "name": "Jaime Jaquez Jr.",
+          "rk": 140,
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 154,
+          "projZ": -0.31
+        },
+        {
+          "name": "Kristaps Porziņģis",
+          "rk": 97,
+          "nbaTeam": "GSW",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 161,
+          "projZ": 0
+        },
+        {
+          "name": "Isaiah Jackson",
+          "rk": 157,
+          "nbaTeam": "LAC",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 167,
+          "projZ": -0.99
+        },
+        {
+          "name": "Mitchell Robinson",
+          "rk": 148,
+          "nbaTeam": "BOS",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 172,
+          "projZ": -0.58
+        },
+        {
+          "name": "Daniss Jenkins",
+          "rk": 174,
+          "nbaTeam": "DET",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 176,
+          "projZ": -1.51
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.485,
+        "ftPct": 0.7667,
+        "tpm": 961,
+        "pts": 11559,
+        "treb": 5117,
+        "ast": 2921,
+        "stl": 938,
+        "blk": 640
+      },
+      "projRoto": {
+        "total": 61.5,
+        "fgPct": 10.5,
+        "ftPct": 2,
+        "tpm": 1,
+        "pts": 3,
+        "treb": 14,
+        "ast": 6,
+        "stl": 13,
+        "blk": 12
+      },
+      "projRank": 9
+    },
+    {
+      "name": "Grilled Teampura",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Tyrese Maxey",
+          "rk": 9,
+          "nbaTeam": "PHI",
+          "pos": [
+            "PG"
+          ],
+          "price": 54,
+          "pick": 1,
+          "projZ": 7.63
+        },
+        {
+          "name": "Tyrese Haliburton",
+          "rk": 18,
+          "nbaTeam": "IND",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 45,
+          "pick": 14,
+          "projZ": 6.21
+        },
+        {
+          "name": "Josh Giddey",
+          "rk": 30,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 36,
+          "pick": 18,
+          "projZ": 4.8
+        },
+        {
+          "name": "Amen Thompson",
+          "rk": 29,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 43,
+          "pick": 24,
+          "projZ": 4.81
+        },
+        {
+          "name": "Alex Sarr",
+          "rk": 108,
+          "nbaTeam": "WAS",
+          "pos": [
+            "C"
+          ],
+          "price": 15,
+          "pick": 68,
+          "projZ": 0.86
+        },
+        {
+          "name": "Peyton Watson",
+          "rk": 143,
+          "nbaTeam": "CLE",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 138,
+          "projZ": -0.36
+        },
+        {
+          "name": "Jalen Smith",
+          "rk": 178,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 149,
+          "projZ": -1.64
+        },
+        {
+          "name": "Gui Santos",
+          "rk": 120,
+          "nbaTeam": "GSW",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 159,
+          "projZ": 0.3
+        },
+        {
+          "name": "Tari Eason",
+          "rk": 147,
+          "nbaTeam": "HOU",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 165,
+          "projZ": -0.56
+        },
+        {
+          "name": "Jeremiah Fears",
+          "rk": 193,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 170,
+          "projZ": -2
+        },
+        {
+          "name": "Nikola Vučević",
+          "rk": 182,
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 174,
+          "projZ": -1.73
+        },
+        {
+          "name": "Grayson Allen",
+          "rk": 153,
+          "nbaTeam": "CHA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 178,
+          "projZ": -0.89
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4668,
+        "ftPct": 0.784,
+        "tpm": 1318,
+        "pts": 11850,
+        "treb": 4558,
+        "ast": 3178,
+        "stl": 892,
+        "blk": 612
+      },
+      "projRoto": {
+        "total": 59,
+        "fgPct": 1,
+        "ftPct": 6,
+        "tpm": 10,
+        "pts": 4,
+        "treb": 6,
+        "ast": 9,
+        "stl": 12,
+        "blk": 11
+      },
+      "projRank": 10
+    },
+    {
+      "name": "Full Court Rex",
+      "previousNames": [],
+      "spent": 199,
+      "roster": [
+        {
+          "name": "Stephen Curry",
+          "rk": 8,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG"
+          ],
+          "price": 51,
+          "pick": 7,
+          "projZ": 7.75
+        },
+        {
+          "name": "AJ Dybantsa",
+          "rk": 232,
+          "nbaTeam": "WAS",
+          "pos": [
+            "SF"
+          ],
+          "price": 11,
+          "pick": 8,
+          "projZ": -3.35
+        },
+        {
+          "name": "Devin Booker",
+          "rk": 26,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 40,
+          "pick": 27,
+          "projZ": 4.88
+        },
+        {
+          "name": "Alperen Şengün",
+          "rk": 52,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 38,
+          "pick": 36,
+          "projZ": 3.52
+        },
+        {
+          "name": "Jaylen Brown",
+          "rk": 66,
+          "nbaTeam": "PHI",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 27,
+          "pick": 44,
+          "projZ": 2.68
+        },
+        {
+          "name": "Rudy Gobert",
+          "rk": 109,
+          "nbaTeam": "MIN",
+          "pos": [
+            "C"
+          ],
+          "price": 14,
+          "pick": 67,
+          "projZ": 0.84
+        },
+        {
+          "name": "Brandon Ingram",
+          "rk": 80,
+          "nbaTeam": "LAC",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 7,
+          "pick": 91,
+          "projZ": 0
+        },
+        {
+          "name": "Ace Bailey",
+          "rk": 172,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 4,
+          "pick": 97,
+          "projZ": -1.48
+        },
+        {
+          "name": "Isaiah Hartenstein",
+          "rk": 91,
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "price": 4,
+          "pick": 102,
+          "projZ": 1.65
+        },
+        {
+          "name": "Devin Vassell",
+          "rk": 128,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 129,
+          "projZ": -0.04
+        },
+        {
+          "name": "Dillon Brooks",
+          "rk": 177,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 142,
+          "projZ": -1.53
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "rk": 203,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 153,
+          "projZ": -2.27
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4818,
+        "ftPct": 0.7687,
+        "tpm": 1219,
+        "pts": 14083,
+        "treb": 4862,
+        "ast": 2700,
+        "stl": 733,
+        "blk": 492
+      },
+      "projRoto": {
+        "total": 53,
+        "fgPct": 6,
+        "ftPct": 4,
+        "tpm": 5,
+        "pts": 12,
+        "treb": 11,
+        "ast": 4,
+        "stl": 4,
+        "blk": 7
+      },
+      "projRank": 11
+    },
+    {
+      "name": "Super Maru",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Anthony Edwards",
+          "rk": 7,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 65,
+          "pick": 10,
+          "projZ": 7.92
+        },
+        {
+          "name": "Joel Embiid",
+          "rk": 47,
+          "nbaTeam": "PHI",
+          "pos": [
+            "C"
+          ],
+          "price": 25,
+          "pick": 31,
+          "projZ": 3.88
+        },
+        {
+          "name": "Domantas Sabonis",
+          "rk": 37,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 37,
+          "pick": 32,
+          "projZ": 4.33
+        },
+        {
+          "name": "Jalen Williams",
+          "rk": 39,
+          "nbaTeam": "OKC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 31,
+          "pick": 42,
+          "projZ": 4.26
+        },
+        {
+          "name": "De'Aaron Fox",
+          "rk": 68,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG"
+          ],
+          "price": 20,
+          "pick": 47,
+          "projZ": 2.62
+        },
+        {
+          "name": "Coby White",
+          "rk": 81,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 13,
+          "pick": 77,
+          "projZ": 2.06
+        },
+        {
+          "name": "Ayo Dosunmu",
+          "rk": 145,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 2,
+          "pick": 108,
+          "projZ": -0.52
+        },
+        {
+          "name": "John Collins",
+          "rk": 74,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 115,
+          "projZ": 2.46
+        },
+        {
+          "name": "Tobias Harris",
+          "rk": 154,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PF"
+          ],
+          "price": 1,
+          "pick": 135,
+          "projZ": -0.9
+        },
+        {
+          "name": "Corey Kispert",
+          "rk": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 147,
+          "projZ": null
+        },
+        {
+          "name": "Bobby Portis Jr.",
+          "rk": 149,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 157,
+          "projZ": -0.62
+        },
+        {
+          "name": "Luguentz Dort",
+          "rk": 241,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 164,
+          "projZ": -3.62
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.49,
+        "ftPct": 0.8127,
+        "tpm": 1302,
+        "pts": 12776,
+        "treb": 4272,
+        "ast": 2571,
+        "stl": 691,
+        "blk": 365
+      },
+      "projRoto": {
+        "total": 51,
+        "fgPct": 13,
+        "ftPct": 13,
+        "tpm": 9,
+        "pts": 7,
+        "treb": 4,
+        "ast": 2,
+        "stl": 2,
+        "blk": 1
+      },
+      "projRank": 12
+    },
+    {
+      "name": "Herb's Astonishing Team",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Nikola Jokić",
+          "rk": 1,
+          "nbaTeam": "DEN",
+          "pos": [
+            "C"
+          ],
+          "price": 90,
+          "pick": 2,
+          "projZ": 16.43
+        },
+        {
+          "name": "Jayson Tatum",
+          "rk": 6,
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 64,
+          "pick": 11,
+          "projZ": 7.93
+        },
+        {
+          "name": "Bam Adebayo",
+          "rk": 54,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 36,
+          "pick": 35,
+          "projZ": 3.4
+        },
+        {
+          "name": "Toumani Camara",
+          "rk": 123,
+          "nbaTeam": "POR",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 2,
+          "pick": 122,
+          "projZ": 0.2
+        },
+        {
+          "name": "Davion Mitchell",
+          "rk": 169,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PG"
+          ],
+          "price": 1,
+          "pick": 141,
+          "projZ": -1.36
+        },
+        {
+          "name": "Yves Missi",
+          "rk": 240,
+          "nbaTeam": "NOP",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 152,
+          "projZ": -3.56
+        },
+        {
+          "name": "Jrue Holiday",
+          "rk": 122,
+          "nbaTeam": "POR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 160,
+          "projZ": 0.23
+        },
+        {
+          "name": "Jimmy Butler III",
+          "rk": 79,
+          "nbaTeam": "GSW",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 166,
+          "projZ": 0
+        },
+        {
+          "name": "Pelle Larsson",
+          "rk": 245,
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 171,
+          "projZ": -3.77
+        },
+        {
+          "name": "Mikel Brown Jr.",
+          "rk": 179,
+          "nbaTeam": "BKN",
+          "pos": [
+            "PG"
+          ],
+          "price": 1,
+          "pick": 175,
+          "projZ": -1.66
+        },
+        {
+          "name": "Jake LaRavia",
+          "rk": 260,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 179,
+          "projZ": -4.16
+        },
+        {
+          "name": "Scotty Pippen Jr.",
+          "rk": 183,
+          "nbaTeam": "MEM",
+          "pos": [
+            "PG"
+          ],
+          "price": 1,
+          "pick": 180,
+          "projZ": -1.74
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4846,
+        "ftPct": 0.7939,
+        "tpm": 1158,
+        "pts": 11107,
+        "treb": 4484,
+        "ast": 3323,
+        "stl": 838,
+        "blk": 379
+      },
+      "projRoto": {
+        "total": 49,
+        "fgPct": 8,
+        "ftPct": 7,
+        "tpm": 2,
+        "pts": 1,
+        "treb": 5,
+        "ast": 14,
+        "stl": 10,
+        "blk": 2
+      },
+      "projRank": 13
+    },
+    {
+      "name": "Finn will cook Burt",
+      "previousNames": [],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Victor Wembanyama",
+          "rk": 2,
+          "nbaTeam": "SAS",
+          "pos": [
+            "C"
+          ],
+          "price": 87,
+          "pick": 3,
+          "projZ": 14.59
+        },
+        {
+          "name": "Donovan Mitchell",
+          "rk": 11,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 55,
+          "pick": 12,
+          "projZ": 7.01
+        },
+        {
+          "name": "Amir Coffey",
+          "rk": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 3,
+          "pick": 15,
+          "projZ": null
+        },
+        {
+          "name": "Trae Young",
+          "rk": 13,
+          "nbaTeam": "WAS",
+          "pos": [
+            "PG"
+          ],
+          "price": 39,
+          "pick": 26,
+          "projZ": 6.82
+        },
+        {
+          "name": "Josh Hart",
+          "rk": 83,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 5,
+          "pick": 101,
+          "projZ": 1.93
+        },
+        {
+          "name": "VJ Edgecombe",
+          "rk": 84,
+          "nbaTeam": "PHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 5,
+          "pick": 107,
+          "projZ": 1.85
+        },
+        {
+          "name": "Tre Jones",
+          "rk": 112,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 120,
+          "projZ": 0.7
+        },
+        {
+          "name": "Kevin Love",
+          "rk": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 133,
+          "projZ": null
+        },
+        {
+          "name": "Christian Braun",
+          "rk": 114,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 145,
+          "projZ": 0.61
+        },
+        {
+          "name": "Jusuf Nurkić",
+          "rk": 133,
+          "nbaTeam": "UTA",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 156,
+          "projZ": -0.12
+        },
+        {
+          "name": "Draymond Green",
+          "rk": 116,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 163,
+          "projZ": 0.59
+        },
+        {
+          "name": "Saddiq Bey",
+          "rk": 136,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 169,
+          "projZ": -0.2
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4758,
+        "ftPct": 0.8141,
+        "tpm": 1187,
+        "pts": 11375,
+        "treb": 4128,
+        "ast": 3321,
+        "stl": 788,
+        "blk": 449
+      },
+      "projRoto": {
+        "total": 46.5,
+        "fgPct": 2.5,
+        "ftPct": 14,
+        "tpm": 4,
+        "pts": 2,
+        "treb": 2,
+        "ast": 13,
+        "stl": 5,
+        "blk": 4
+      },
+      "projRank": 14
+    },
+    {
+      "name": "Cole is like that",
+      "previousNames": [
+        "Cole's aura tuff team"
+      ],
+      "spent": 200,
+      "roster": [
+        {
+          "name": "Jalen Brunson",
+          "rk": 41,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PG"
+          ],
+          "price": 53,
+          "pick": 17,
+          "projZ": 4.14
+        },
+        {
+          "name": "Kevin Durant",
+          "rk": 10,
+          "nbaTeam": "HOU",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 50,
+          "pick": 21,
+          "projZ": 7.51
+        },
+        {
+          "name": "Brandon Miller",
+          "rk": 51,
+          "nbaTeam": "CHA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 28,
+          "pick": 38,
+          "projZ": 3.59
+        },
+        {
+          "name": "Stephon Castle",
+          "rk": 135,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 16,
+          "pick": 45,
+          "projZ": -0.17
+        },
+        {
+          "name": "Bronny James",
+          "rk": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 63,
+          "projZ": null
+        },
+        {
+          "name": "Jarrett Allen",
+          "rk": 82,
+          "nbaTeam": "CLE",
+          "pos": [
+            "C"
+          ],
+          "price": 10,
+          "pick": 70,
+          "projZ": 1.94
+        },
+        {
+          "name": "Michael Porter Jr.",
+          "rk": 60,
+          "nbaTeam": "BKN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 19,
+          "pick": 74,
+          "projZ": 2.8
+        },
+        {
+          "name": "Tyler Herro",
+          "rk": 44,
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 13,
+          "pick": 76,
+          "projZ": 3.97
+        },
+        {
+          "name": "Andrew Wiggins",
+          "rk": 87,
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 5,
+          "pick": 114,
+          "projZ": 1.76
+        },
+        {
+          "name": "Aday Mara",
+          "rk": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "price": 1,
+          "pick": 136,
+          "projZ": null
+        },
+        {
+          "name": "Kevin Porter Jr.",
+          "rk": 117,
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 2,
+          "pick": 143,
+          "projZ": 0.54
+        },
+        {
+          "name": "Wendell Carter Jr.",
+          "rk": 152,
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ],
+          "price": 2,
+          "pick": 144,
+          "projZ": -0.72
+        }
+      ],
+      "projTotals": {
+        "fgPct": 0.4819,
+        "ftPct": 0.8097,
+        "tpm": 1286,
+        "pts": 12552,
+        "treb": 3765,
+        "ast": 2683,
+        "stl": 650,
+        "blk": 381
+      },
+      "projRoto": {
+        "total": 39,
+        "fgPct": 7,
+        "ftPct": 11,
+        "tpm": 8,
+        "pts": 5,
+        "treb": 1,
+        "ast": 3,
+        "stl": 1,
+        "blk": 3
+      },
+      "projRank": 15
+    }
+  ],
+  "draft": [
+    {
+      "pick": 1,
+      "name": "Tyrese Maxey",
+      "nbaTeam": "PHI",
+      "pos": [
+        "PG"
+      ],
+      "price": 54,
+      "team": "Grilled Teampura",
+      "rk": 9
+    },
+    {
+      "pick": 2,
+      "name": "Nikola Jokić",
+      "nbaTeam": "DEN",
+      "pos": [
+        "C"
+      ],
+      "price": 90,
+      "team": "Herb's Astonishing Team",
+      "rk": 1
+    },
+    {
+      "pick": 3,
+      "name": "Victor Wembanyama",
+      "nbaTeam": "SAS",
+      "pos": [
+        "C"
+      ],
+      "price": 87,
+      "team": "Finn will cook Burt",
+      "rk": 2
+    },
+    {
+      "pick": 4,
+      "name": "Luka Dončić",
+      "nbaTeam": "LAL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 73,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 4
+    },
+    {
+      "pick": 5,
+      "name": "Giannis Antetokounmpo",
+      "nbaTeam": "MIA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 68,
+      "team": "#WashedAutoDraftKing",
+      "rk": 24
+    },
+    {
+      "pick": 6,
+      "name": "Shai Gilgeous-Alexander",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PG"
+      ],
+      "price": 88,
+      "team": "Bitsketball Stars",
+      "rk": 3
+    },
+    {
+      "pick": 7,
+      "name": "Stephen Curry",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PG"
+      ],
+      "price": 51,
+      "team": "Full Court Rex",
+      "rk": 8
+    },
+    {
+      "pick": 8,
+      "name": "AJ Dybantsa",
+      "nbaTeam": "WAS",
+      "pos": [
+        "SF"
+      ],
+      "price": 11,
+      "team": "Full Court Rex",
+      "rk": 232
+    },
+    {
+      "pick": 9,
+      "name": "Cade Cunningham",
+      "nbaTeam": "DET",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 66,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 5
+    },
+    {
+      "pick": 10,
+      "name": "Anthony Edwards",
+      "nbaTeam": "MIN",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 65,
+      "team": "Super Maru",
+      "rk": 7
+    },
+    {
+      "pick": 11,
+      "name": "Jayson Tatum",
+      "nbaTeam": "BOS",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 64,
+      "team": "Herb's Astonishing Team",
+      "rk": 6
+    },
+    {
+      "pick": 12,
+      "name": "Donovan Mitchell",
+      "nbaTeam": "CLE",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 55,
+      "team": "Finn will cook Burt",
+      "rk": 11
+    },
+    {
+      "pick": 13,
+      "name": "Kawhi Leonard",
+      "nbaTeam": "TOR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 38,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 23
+    },
+    {
+      "pick": 14,
+      "name": "Tyrese Haliburton",
+      "nbaTeam": "IND",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 45,
+      "team": "Grilled Teampura",
+      "rk": 18
+    },
+    {
+      "pick": 15,
+      "name": "Amir Coffey",
+      "nbaTeam": "PHX",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 3,
+      "team": "Finn will cook Burt",
+      "rk": null
+    },
+    {
+      "pick": 16,
+      "name": "Cooper Flagg",
+      "nbaTeam": "DAL",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 51,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 17
+    },
+    {
+      "pick": 17,
+      "name": "Jalen Brunson",
+      "nbaTeam": "NYK",
+      "pos": [
+        "PG"
+      ],
+      "price": 53,
+      "team": "Cole is like that",
+      "rk": 41
+    },
+    {
+      "pick": 18,
+      "name": "Josh Giddey",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 36,
+      "team": "Grilled Teampura",
+      "rk": 30
+    },
+    {
+      "pick": 19,
+      "name": "Jalen Johnson",
+      "nbaTeam": "ATL",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 49,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 14
+    },
+    {
+      "pick": 20,
+      "name": "Karl-Anthony Towns",
+      "nbaTeam": "NYK",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 52,
+      "team": "The New Day Co-op",
+      "rk": 12
+    },
+    {
+      "pick": 21,
+      "name": "Kevin Durant",
+      "nbaTeam": "HOU",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 50,
+      "team": "Cole is like that",
+      "rk": 10
+    },
+    {
+      "pick": 22,
+      "name": "LaMelo Ball",
+      "nbaTeam": "MIN",
+      "pos": [
+        "PG"
+      ],
+      "price": 41,
+      "team": "#WashedAutoDraftKing",
+      "rk": 42
+    },
+    {
+      "pick": 23,
+      "name": "OG Anunoby",
+      "nbaTeam": "NYK",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 22,
+      "team": "Team Maru",
+      "rk": 58
+    },
+    {
+      "pick": 24,
+      "name": "Amen Thompson",
+      "nbaTeam": "HOU",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 43,
+      "team": "Grilled Teampura",
+      "rk": 29
+    },
+    {
+      "pick": 25,
+      "name": "Scottie Barnes",
+      "nbaTeam": "TOR",
+      "pos": [
+        "SF",
+        "PF",
+        "C"
+      ],
+      "price": 52,
+      "team": "Fishy Achilles",
+      "rk": 20
+    },
+    {
+      "pick": 26,
+      "name": "Trae Young",
+      "nbaTeam": "WAS",
+      "pos": [
+        "PG"
+      ],
+      "price": 39,
+      "team": "Finn will cook Burt",
+      "rk": 13
+    },
+    {
+      "pick": 27,
+      "name": "Devin Booker",
+      "nbaTeam": "PHX",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 40,
+      "team": "Full Court Rex",
+      "rk": 26
+    },
+    {
+      "pick": 28,
+      "name": "Austin Reaves",
+      "nbaTeam": "LAL",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "price": 45,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 16
+    },
+    {
+      "pick": 29,
+      "name": "Chet Holmgren",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 38,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 22
+    },
+    {
+      "pick": 30,
+      "name": "Derik Queen",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 10,
+      "team": "Team Maru",
+      "rk": 90
+    },
+    {
+      "pick": 31,
+      "name": "Joel Embiid",
+      "nbaTeam": "PHI",
+      "pos": [
+        "C"
+      ],
+      "price": 25,
+      "team": "Super Maru",
+      "rk": 47
+    },
+    {
+      "pick": 32,
+      "name": "Domantas Sabonis",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 37,
+      "team": "Super Maru",
+      "rk": 37
+    },
+    {
+      "pick": 33,
+      "name": "LeBron James",
+      "nbaTeam": "PHI",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 30,
+      "team": "Bitsketball Stars",
+      "rk": 35
+    },
+    {
+      "pick": 34,
+      "name": "Jamal Murray",
+      "nbaTeam": "DEN",
+      "pos": [
+        "PG"
+      ],
+      "price": 47,
+      "team": "Bitsketball Stars",
+      "rk": 15
+    },
+    {
+      "pick": 35,
+      "name": "Bam Adebayo",
+      "nbaTeam": "MIA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 36,
+      "team": "Herb's Astonishing Team",
+      "rk": 54
+    },
+    {
+      "pick": 36,
+      "name": "Alperen Şengün",
+      "nbaTeam": "HOU",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 38,
+      "team": "Full Court Rex",
+      "rk": 52
+    },
+    {
+      "pick": 37,
+      "name": "Derrick White",
+      "nbaTeam": "BOS",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 33,
+      "team": "Fishy Achilles",
+      "rk": 43
+    },
+    {
+      "pick": 38,
+      "name": "Brandon Miller",
+      "nbaTeam": "CHA",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 28,
+      "team": "Cole is like that",
+      "rk": 51
+    },
+    {
+      "pick": 39,
+      "name": "Evan Mobley",
+      "nbaTeam": "CLE",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 30,
+      "team": "The New Day Co-op",
+      "rk": 31
+    },
+    {
+      "pick": 40,
+      "name": "Walker Kessler",
+      "nbaTeam": "LAL",
+      "pos": [
+        "C"
+      ],
+      "price": 26,
+      "team": "vincemvpcarter",
+      "rk": 49
+    },
+    {
+      "pick": 41,
+      "name": "Anthony Davis",
+      "nbaTeam": "WAS",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 31,
+      "team": "vincemvpcarter",
+      "rk": 25
+    },
+    {
+      "pick": 42,
+      "name": "Jalen Williams",
+      "nbaTeam": "OKC",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 31,
+      "team": "Super Maru",
+      "rk": 39
+    },
+    {
+      "pick": 43,
+      "name": "Myles Turner",
+      "nbaTeam": "MIL",
+      "pos": [
+        "C"
+      ],
+      "price": 10,
+      "team": "#WashedAutoDraftKing",
+      "rk": 95
+    },
+    {
+      "pick": 44,
+      "name": "Jaylen Brown",
+      "nbaTeam": "PHI",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 27,
+      "team": "Full Court Rex",
+      "rk": 66
+    },
+    {
+      "pick": 45,
+      "name": "Stephon Castle",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 16,
+      "team": "Cole is like that",
+      "rk": 135
+    },
+    {
+      "pick": 46,
+      "name": "Jalen Duren",
+      "nbaTeam": "DET",
+      "pos": [
+        "C"
+      ],
+      "price": 27,
+      "team": "Team Maru",
+      "rk": 38
+    },
+    {
+      "pick": 47,
+      "name": "De'Aaron Fox",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PG"
+      ],
+      "price": 20,
+      "team": "Super Maru",
+      "rk": 68
+    },
+    {
+      "pick": 48,
+      "name": "James Harden",
+      "nbaTeam": "CLE",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 36,
+      "team": "Fishy Achilles",
+      "rk": 19
+    },
+    {
+      "pick": 49,
+      "name": "Trey Murphy III",
+      "nbaTeam": "NOP",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 34,
+      "team": "Fishy Achilles",
+      "rk": 21
+    },
+    {
+      "pick": 50,
+      "name": "Onyeka Okongwu",
+      "nbaTeam": "ATL",
+      "pos": [
+        "C"
+      ],
+      "price": 23,
+      "team": "Bitsketball Stars",
+      "rk": 63
+    },
+    {
+      "pick": 51,
+      "name": "Lauri Markkanen",
+      "nbaTeam": "UTA",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 29,
+      "team": "vincemvpcarter",
+      "rk": 36
+    },
+    {
+      "pick": 52,
+      "name": "Jaren Jackson Jr.",
+      "nbaTeam": "UTA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 24,
+      "team": "The New Day Co-op",
+      "rk": 27
+    },
+    {
+      "pick": 53,
+      "name": "Deni Avdija",
+      "nbaTeam": "POR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 24,
+      "team": "The New Day Co-op",
+      "rk": 64
+    },
+    {
+      "pick": 54,
+      "name": "Kyrie Irving",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PG"
+      ],
+      "price": 24,
+      "team": "The New Day Co-op",
+      "rk": 28
+    },
+    {
+      "pick": 55,
+      "name": "Donovan Clingan",
+      "nbaTeam": "POR",
+      "pos": [
+        "C"
+      ],
+      "price": 18,
+      "team": "The New Day Co-op",
+      "rk": 61
+    },
+    {
+      "pick": 56,
+      "name": "Paolo Banchero",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PF"
+      ],
+      "price": 22,
+      "team": "#WashedAutoDraftKing",
+      "rk": 85
+    },
+    {
+      "pick": 57,
+      "name": "Mikal Bridges",
+      "nbaTeam": "NYK",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 19,
+      "team": "Team Maru",
+      "rk": 104
+    },
+    {
+      "pick": 58,
+      "name": "Ivica Zubac",
+      "nbaTeam": "IND",
+      "pos": [
+        "C"
+      ],
+      "price": 17,
+      "team": "The New Day Co-op",
+      "rk": 70
+    },
+    {
+      "pick": 59,
+      "name": "Cameron Boozer",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PF"
+      ],
+      "price": 19,
+      "team": "Team Maru",
+      "rk": 56
+    },
+    {
+      "pick": 60,
+      "name": "Khaman Maluach",
+      "nbaTeam": "PHX",
+      "pos": [
+        "C"
+      ],
+      "price": 4,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 103
+    },
+    {
+      "pick": 61,
+      "name": "Keyonte George",
+      "nbaTeam": "UTA",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 23,
+      "team": "vincemvpcarter",
+      "rk": 77
+    },
+    {
+      "pick": 62,
+      "name": "Ausar Thompson",
+      "nbaTeam": "DET",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 21,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 100
+    },
+    {
+      "pick": 63,
+      "name": "Bronny James",
+      "nbaTeam": "LAL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Cole is like that",
+      "rk": null
+    },
+    {
+      "pick": 64,
+      "name": "Desmond Bane",
+      "nbaTeam": "ORL",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 25,
+      "team": "Team Maru",
+      "rk": 33
+    },
+    {
+      "pick": 65,
+      "name": "Matas Buzelis",
+      "nbaTeam": "CHI",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 22,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 48
+    },
+    {
+      "pick": 66,
+      "name": "Franz Wagner",
+      "nbaTeam": "ORL",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 25,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 45
+    },
+    {
+      "pick": 67,
+      "name": "Rudy Gobert",
+      "nbaTeam": "MIN",
+      "pos": [
+        "C"
+      ],
+      "price": 14,
+      "team": "Full Court Rex",
+      "rk": 109
+    },
+    {
+      "pick": 68,
+      "name": "Alex Sarr",
+      "nbaTeam": "WAS",
+      "pos": [
+        "C"
+      ],
+      "price": 15,
+      "team": "Grilled Teampura",
+      "rk": 108
+    },
+    {
+      "pick": 69,
+      "name": "Darius Garland",
+      "nbaTeam": "LAC",
+      "pos": [
+        "PG"
+      ],
+      "price": 26,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 32
+    },
+    {
+      "pick": 70,
+      "name": "Jarrett Allen",
+      "nbaTeam": "CLE",
+      "pos": [
+        "C"
+      ],
+      "price": 10,
+      "team": "Cole is like that",
+      "rk": 82
+    },
+    {
+      "pick": 71,
+      "name": "Dyson Daniels",
+      "nbaTeam": "ATL",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 17,
+      "team": "Team Maru",
+      "rk": 69
+    },
+    {
+      "pick": 72,
+      "name": "Pascal Siakam",
+      "nbaTeam": "IND",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 14,
+      "team": "#WashedAutoDraftKing",
+      "rk": 67
+    },
+    {
+      "pick": 73,
+      "name": "Kyshawn George",
+      "nbaTeam": "WAS",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 7,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 138
+    },
+    {
+      "pick": 74,
+      "name": "Michael Porter Jr.",
+      "nbaTeam": "BKN",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 19,
+      "team": "Cole is like that",
+      "rk": 60
+    },
+    {
+      "pick": 75,
+      "name": "Collin Murray-Boyles",
+      "nbaTeam": "TOR",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 8,
+      "team": "vincemvpcarter",
+      "rk": 110
+    },
+    {
+      "pick": 76,
+      "name": "Tyler Herro",
+      "nbaTeam": "MIL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 13,
+      "team": "Cole is like that",
+      "rk": 44
+    },
+    {
+      "pick": 77,
+      "name": "Coby White",
+      "nbaTeam": "CHA",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 13,
+      "team": "Super Maru",
+      "rk": 81
+    },
+    {
+      "pick": 78,
+      "name": "Ja Morant",
+      "nbaTeam": "POR",
+      "pos": [
+        "PG"
+      ],
+      "price": 7,
+      "team": "#WashedAutoDraftKing",
+      "rk": 73
+    },
+    {
+      "pick": 79,
+      "name": "Dejounte Murray",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PG"
+      ],
+      "price": 15,
+      "team": "vincemvpcarter",
+      "rk": 34
+    },
+    {
+      "pick": 80,
+      "name": "Kon Knueppel",
+      "nbaTeam": "CHA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 26,
+      "team": "#WashedAutoDraftKing",
+      "rk": 57
+    },
+    {
+      "pick": 81,
+      "name": "Nickeil Alexander-Walker",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 25,
+      "team": "Team Maru",
+      "rk": 46
+    },
+    {
+      "pick": 82,
+      "name": "Caleb Wilson",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PF"
+      ],
+      "price": 9,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 111
+    },
+    {
+      "pick": 83,
+      "name": "Mark Williams",
+      "nbaTeam": "PHX",
+      "pos": [
+        "C"
+      ],
+      "price": 5,
+      "team": "The New Day Co-op",
+      "rk": 198
+    },
+    {
+      "pick": 84,
+      "name": "Ryan Rollins",
+      "nbaTeam": "MIL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 17,
+      "team": "vincemvpcarter",
+      "rk": 59
+    },
+    {
+      "pick": 85,
+      "name": "Dylan Harper",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 14,
+      "team": "vincemvpcarter",
+      "rk": 102
+    },
+    {
+      "pick": 86,
+      "name": "Naz Reid",
+      "nbaTeam": "CHA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 7,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 75
+    },
+    {
+      "pick": 87,
+      "name": "Paul George",
+      "nbaTeam": "BOS",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 13,
+      "team": "Team Maru",
+      "rk": 53
+    },
+    {
+      "pick": 88,
+      "name": "Damian Lillard",
+      "nbaTeam": "POR",
+      "pos": [
+        "PG"
+      ],
+      "price": 20,
+      "team": "vincemvpcarter",
+      "rk": 71
+    },
+    {
+      "pick": 89,
+      "name": "Payton Pritchard",
+      "nbaTeam": "BOS",
+      "pos": [
+        "PG"
+      ],
+      "price": 10,
+      "team": "Team Maru",
+      "rk": 92
+    },
+    {
+      "pick": 90,
+      "name": "Brandin Podziemski",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 5,
+      "team": "Team Maru",
+      "rk": 99
+    },
+    {
+      "pick": 91,
+      "name": "Brandon Ingram",
+      "nbaTeam": "LAC",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 7,
+      "team": "Full Court Rex",
+      "rk": 80
+    },
+    {
+      "pick": 92,
+      "name": "Zach Edey",
+      "nbaTeam": "MEM",
+      "pos": [
+        "C"
+      ],
+      "price": 24,
+      "team": "Fishy Achilles",
+      "rk": 40
+    },
+    {
+      "pick": 93,
+      "name": "Zion Williamson",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 9,
+      "team": "vincemvpcarter",
+      "rk": 98
+    },
+    {
+      "pick": 94,
+      "name": "Cedric Coward",
+      "nbaTeam": "MEM",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 4,
+      "team": "Bitsketball Stars",
+      "rk": 113
+    },
+    {
+      "pick": 95,
+      "name": "Ty Jerome",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 12,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 62
+    },
+    {
+      "pick": 96,
+      "name": "Kel'el Ware",
+      "nbaTeam": "MIL",
+      "pos": [
+        "C"
+      ],
+      "price": 17,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 55
+    },
+    {
+      "pick": 97,
+      "name": "Ace Bailey",
+      "nbaTeam": "UTA",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 4,
+      "team": "Full Court Rex",
+      "rk": 172
+    },
+    {
+      "pick": 98,
+      "name": "Day'Ron Sharpe",
+      "nbaTeam": "BKN",
+      "pos": [
+        "C"
+      ],
+      "price": 5,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 78
+    },
+    {
+      "pick": 99,
+      "name": "Julius Randle",
+      "nbaTeam": "BKN",
+      "pos": [
+        "PF"
+      ],
+      "price": 10,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 86
+    },
+    {
+      "pick": 100,
+      "name": "Darryn Peterson",
+      "nbaTeam": "UTA",
+      "pos": [
+        "SG"
+      ],
+      "price": 5,
+      "team": "#WashedAutoDraftKing",
+      "rk": 151
+    },
+    {
+      "pick": 101,
+      "name": "Josh Hart",
+      "nbaTeam": "NYK",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 5,
+      "team": "Finn will cook Burt",
+      "rk": 83
+    },
+    {
+      "pick": 102,
+      "name": "Isaiah Hartenstein",
+      "nbaTeam": "OKC",
+      "pos": [
+        "C"
+      ],
+      "price": 4,
+      "team": "Full Court Rex",
+      "rk": 91
+    },
+    {
+      "pick": 103,
+      "name": "Jaden McDaniels",
+      "nbaTeam": "MIN",
+      "pos": [
+        "SF"
+      ],
+      "price": 9,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 72
+    },
+    {
+      "pick": 104,
+      "name": "Zach LaVine",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "price": 5,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 65
+    },
+    {
+      "pick": 105,
+      "name": "Neemias Queta",
+      "nbaTeam": "BOS",
+      "pos": [
+        "C"
+      ],
+      "price": 4,
+      "team": "Fishy Achilles",
+      "rk": 101
+    },
+    {
+      "pick": 106,
+      "name": "Jabari Smith Jr.",
+      "nbaTeam": "HOU",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 3,
+      "team": "The New Day Co-op",
+      "rk": 115
+    },
+    {
+      "pick": 107,
+      "name": "VJ Edgecombe",
+      "nbaTeam": "PHI",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 5,
+      "team": "Finn will cook Burt",
+      "rk": 84
+    },
+    {
+      "pick": 108,
+      "name": "Ayo Dosunmu",
+      "nbaTeam": "MIN",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 2,
+      "team": "Super Maru",
+      "rk": 145
+    },
+    {
+      "pick": 109,
+      "name": "Immanuel Quickley",
+      "nbaTeam": "TOR",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 8,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 76
+    },
+    {
+      "pick": 110,
+      "name": "Jalen Suggs",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 7,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 50
+    },
+    {
+      "pick": 111,
+      "name": "Norman Powell",
+      "nbaTeam": "CHI",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 8,
+      "team": "Fishy Achilles",
+      "rk": 93
+    },
+    {
+      "pick": 112,
+      "name": "Cason Wallace",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "price": 3,
+      "team": "#WashedAutoDraftKing",
+      "rk": 106
+    },
+    {
+      "pick": 113,
+      "name": "Jakob Poeltl",
+      "nbaTeam": "TOR",
+      "pos": [
+        "C"
+      ],
+      "price": 3,
+      "team": "vincemvpcarter",
+      "rk": 89
+    },
+    {
+      "pick": 114,
+      "name": "Andrew Wiggins",
+      "nbaTeam": "MIA",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 5,
+      "team": "Cole is like that",
+      "rk": 87
+    },
+    {
+      "pick": 115,
+      "name": "John Collins",
+      "nbaTeam": "DET",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 3,
+      "team": "Super Maru",
+      "rk": 74
+    },
+    {
+      "pick": 116,
+      "name": "Jalen Green",
+      "nbaTeam": "PHX",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 3,
+      "team": "Team Maru",
+      "rk": 127
+    },
+    {
+      "pick": 117,
+      "name": "DeMar DeRozan",
+      "nbaTeam": "DEN",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 2,
+      "team": "Bitsketball Stars",
+      "rk": 132
+    },
+    {
+      "pick": 118,
+      "name": "Yaxel Lendeborg",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PF"
+      ],
+      "price": 6,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 125
+    },
+    {
+      "pick": 119,
+      "name": "Keegan Murray",
+      "nbaTeam": "SAC",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 3,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 96
+    },
+    {
+      "pick": 120,
+      "name": "Tre Jones",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": 112
+    },
+    {
+      "pick": 121,
+      "name": "Rui Hachimura",
+      "nbaTeam": "LAC",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 2,
+      "team": "Fishy Achilles",
+      "rk": 189
+    },
+    {
+      "pick": 122,
+      "name": "Toumani Camara",
+      "nbaTeam": "POR",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 2,
+      "team": "Herb's Astonishing Team",
+      "rk": 123
+    },
+    {
+      "pick": 123,
+      "name": "Daniel Gafford",
+      "nbaTeam": "DAL",
+      "pos": [
+        "C"
+      ],
+      "price": 2,
+      "team": "#WashedAutoDraftKing",
+      "rk": 184
+    },
+    {
+      "pick": 124,
+      "name": "CJ McCollum",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 3,
+      "team": "vincemvpcarter",
+      "rk": 131
+    },
+    {
+      "pick": 125,
+      "name": "Miles Bridges",
+      "nbaTeam": "PHX",
+      "pos": [
+        "PF"
+      ],
+      "price": 2,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 105
+    },
+    {
+      "pick": 126,
+      "name": "Ajay Mitchell",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 3,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 88
+    },
+    {
+      "pick": 127,
+      "name": "Sandro Mamukelashvili",
+      "nbaTeam": "LAL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 2,
+      "team": "Fishy Achilles",
+      "rk": 107
+    },
+    {
+      "pick": 128,
+      "name": "Nic Claxton",
+      "nbaTeam": "CHI",
+      "pos": [
+        "C"
+      ],
+      "price": 2,
+      "team": "Fishy Achilles",
+      "rk": 150
+    },
+    {
+      "pick": 129,
+      "name": "Devin Vassell",
+      "nbaTeam": "SAS",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Full Court Rex",
+      "rk": 128
+    },
+    {
+      "pick": 130,
+      "name": "Fred VanVleet",
+      "nbaTeam": "HOU",
+      "pos": [
+        "PG"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 139
+    },
+    {
+      "pick": 131,
+      "name": "Darius Acuff Jr.",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PG"
+      ],
+      "price": 1,
+      "team": "Billy Hoyle's Boy-les",
+      "rk": 192
+    },
+    {
+      "pick": 132,
+      "name": "Andrew Nembhard",
+      "nbaTeam": "IND",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 129
+    },
+    {
+      "pick": 133,
+      "name": "Kevin Love",
+      "nbaTeam": "UTA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": null
+    },
+    {
+      "pick": 134,
+      "name": "Ben Simmons",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PG"
+      ],
+      "price": 2,
+      "team": "Fishy Achilles",
+      "rk": 250
+    },
+    {
+      "pick": 135,
+      "name": "Tobias Harris",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PF"
+      ],
+      "price": 1,
+      "team": "Super Maru",
+      "rk": 154
+    },
+    {
+      "pick": 136,
+      "name": "Aday Mara",
+      "nbaTeam": "OKC",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "Cole is like that",
+      "rk": null
+    },
+    {
+      "pick": 137,
+      "name": "Collin Gillespie",
+      "nbaTeam": "PHX",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "The New Day Co-op",
+      "rk": 124
+    },
+    {
+      "pick": 138,
+      "name": "Peyton Watson",
+      "nbaTeam": "CLE",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 143
+    },
+    {
+      "pick": 139,
+      "name": "Reed Sheppard",
+      "nbaTeam": "HOU",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "#WashedAutoDraftKing",
+      "rk": 119
+    },
+    {
+      "pick": 140,
+      "name": "Cameron Johnson",
+      "nbaTeam": "DEN",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 94
+    },
+    {
+      "pick": 141,
+      "name": "Davion Mitchell",
+      "nbaTeam": "MIA",
+      "pos": [
+        "PG"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 169
+    },
+    {
+      "pick": 142,
+      "name": "Dillon Brooks",
+      "nbaTeam": "PHX",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Full Court Rex",
+      "rk": 177
+    },
+    {
+      "pick": 143,
+      "name": "Kevin Porter Jr.",
+      "nbaTeam": "MIL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 2,
+      "team": "Cole is like that",
+      "rk": 117
+    },
+    {
+      "pick": 144,
+      "name": "Wendell Carter Jr.",
+      "nbaTeam": "ORL",
+      "pos": [
+        "C"
+      ],
+      "price": 2,
+      "team": "Cole is like that",
+      "rk": 152
+    },
+    {
+      "pick": 145,
+      "name": "Christian Braun",
+      "nbaTeam": "DEN",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": 114
+    },
+    {
+      "pick": 146,
+      "name": "Egor Dëmin",
+      "nbaTeam": "BKN",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Fishy Achilles",
+      "rk": 130
+    },
+    {
+      "pick": 147,
+      "name": "Corey Kispert",
+      "nbaTeam": "ATL",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Super Maru",
+      "rk": null
+    },
+    {
+      "pick": 148,
+      "name": "Quentin Grimes",
+      "nbaTeam": "LAL",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "The New Day Co-op",
+      "rk": 118
+    },
+    {
+      "pick": 149,
+      "name": "Jalen Smith",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 178
+    },
+    {
+      "pick": 150,
+      "name": "Aaron Gordon",
+      "nbaTeam": "DEN",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "#WashedAutoDraftKing",
+      "rk": 146
+    },
+    {
+      "pick": 151,
+      "name": "Paul Reed",
+      "nbaTeam": "DET",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 2,
+      "team": "Shut Up and Jam Gaiden",
+      "rk": 121
+    },
+    {
+      "pick": 152,
+      "name": "Yves Missi",
+      "nbaTeam": "NOP",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 240
+    },
+    {
+      "pick": 153,
+      "name": "Jonathan Kuminga",
+      "nbaTeam": "MIN",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Full Court Rex",
+      "rk": 203
+    },
+    {
+      "pick": 154,
+      "name": "Jaime Jaquez Jr.",
+      "nbaTeam": "MIL",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 140
+    },
+    {
+      "pick": 155,
+      "name": "RJ Barrett",
+      "nbaTeam": "TOR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 161
+    },
+    {
+      "pick": 156,
+      "name": "Jusuf Nurkić",
+      "nbaTeam": "UTA",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": 133
+    },
+    {
+      "pick": 157,
+      "name": "Bobby Portis Jr.",
+      "nbaTeam": "MIA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "Super Maru",
+      "rk": 149
+    },
+    {
+      "pick": 158,
+      "name": "P.J. Washington",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "The New Day Co-op",
+      "rk": 141
+    },
+    {
+      "pick": 159,
+      "name": "Gui Santos",
+      "nbaTeam": "GSW",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 120
+    },
+    {
+      "pick": 160,
+      "name": "Jrue Holiday",
+      "nbaTeam": "POR",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 122
+    },
+    {
+      "pick": 161,
+      "name": "Kristaps Porziņģis",
+      "nbaTeam": "GSW",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 97
+    },
+    {
+      "pick": 162,
+      "name": "Moussa Diabaté",
+      "nbaTeam": "CHA",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 170
+    },
+    {
+      "pick": 163,
+      "name": "Draymond Green",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": 116
+    },
+    {
+      "pick": 164,
+      "name": "Luguentz Dort",
+      "nbaTeam": "ATL",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Super Maru",
+      "rk": 241
+    },
+    {
+      "pick": 165,
+      "name": "Tari Eason",
+      "nbaTeam": "HOU",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 147
+    },
+    {
+      "pick": 166,
+      "name": "Jimmy Butler III",
+      "nbaTeam": "GSW",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 79
+    },
+    {
+      "pick": 167,
+      "name": "Isaiah Jackson",
+      "nbaTeam": "LAC",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 157
+    },
+    {
+      "pick": 168,
+      "name": "Anthony Black",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 137
+    },
+    {
+      "pick": 169,
+      "name": "Saddiq Bey",
+      "nbaTeam": "NOP",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Finn will cook Burt",
+      "rk": 136
+    },
+    {
+      "pick": 170,
+      "name": "Jeremiah Fears",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 193
+    },
+    {
+      "pick": 171,
+      "name": "Pelle Larsson",
+      "nbaTeam": "MIA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 245
+    },
+    {
+      "pick": 172,
+      "name": "Mitchell Robinson",
+      "nbaTeam": "BOS",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 148
+    },
+    {
+      "pick": 173,
+      "name": "Aaron Nesmith",
+      "nbaTeam": "IND",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 134
+    },
+    {
+      "pick": 174,
+      "name": "Nikola Vučević",
+      "nbaTeam": "ORL",
+      "pos": [
+        "C"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 182
+    },
+    {
+      "pick": 175,
+      "name": "Mikel Brown Jr.",
+      "nbaTeam": "BKN",
+      "pos": [
+        "PG"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 179
+    },
+    {
+      "pick": 176,
+      "name": "Daniss Jenkins",
+      "nbaTeam": "DET",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "price": 1,
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "rk": 174
+    },
+    {
+      "pick": 177,
+      "name": "Bennedict Mathurin",
+      "nbaTeam": "NOP",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Bitsketball Stars",
+      "rk": 207
+    },
+    {
+      "pick": 178,
+      "name": "Grayson Allen",
+      "nbaTeam": "CHA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "price": 1,
+      "team": "Grilled Teampura",
+      "rk": 153
+    },
+    {
+      "pick": 179,
+      "name": "Jake LaRavia",
+      "nbaTeam": "LAL",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 260
+    },
+    {
+      "pick": 180,
+      "name": "Scotty Pippen Jr.",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PG"
+      ],
+      "price": 1,
+      "team": "Herb's Astonishing Team",
+      "rk": 183
+    }
+  ]
+}

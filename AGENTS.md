@@ -2,6 +2,10 @@
 
 @[CONTEXT.md](./CONTEXT.md)
 
+## Season Mode (post-draft, from 2026-10-18)
+
+The league draft is complete and the project is now focused on in-season management. League ground truth (draft results, rosters, projected standings) is in `season/`; see `season/README.md`. The official league draft is already archived as `drafts/mock_2026-10-19_00-07-.txt`. Never re-run it through the analyzer, because that double-counts it in the empirical prices.
+
 ## Mandatory Mock Draft Analysis & Price Update Workflow
 
 Whenever the user asks to analyze a mock or live draft export:

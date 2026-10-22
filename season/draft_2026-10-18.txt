@@ -1,0 +1,180 @@
+1.	Tyrese Maxey (PHI - PG)	$54	Grilled Teampura
+2.	Nikola Jokić (DEN - C)	$90	Herb's Astonishing Team
+3.	Victor Wembanyama (SAS - C)	$87	Finn will cook Burt
+4.	Luka Dončić (LAL - PG,SG)	$73	Shut Up and Jam Gaiden
+5.	Giannis Antetokounmpo (MIA - PF,C)	$68	#WashedAutoDraftKing
+6.	Shai Gilgeous-Alexander (OKC - PG)	$88	Bitsketball Stars
+7.	Stephen Curry (GSW - PG)	$51	Full Court Rex
+8.	AJ Dybantsa (WAS - SF)	$11	Full Court Rex
+9.	Cade Cunningham (DET - PG,SG)	$66	the tinkerballers 🧚🏼‍♀️🌸🎀
+10.	Anthony Edwards (MIN - PG,SG)	$65	Super Maru
+11.	Jayson Tatum (BOS - SF,PF)	$64	Herb's Astonishing Team
+12.	Donovan Mitchell (CLE - PG,SG)	$55	Finn will cook Burt
+13.	Kawhi Leonard (TOR - SG,SF,PF)	$38	the tinkerballers 🧚🏼‍♀️🌸🎀
+14.	Tyrese Haliburton (IND - PG,SG)	$45	Grilled Teampura
+15.	Amir Coffey (PHX - SG,SF)	$3	Finn will cook Burt
+16.	Cooper Flagg (DAL - SG,SF,PF)	$51	Billy Hoyle's Boy-les
+17.	Jalen Brunson (NYK - PG)	$53	Cole is like that
+18.	Josh Giddey (CHI - PG,SG)	$36	Grilled Teampura
+19.	Jalen Johnson (ATL - SF,PF)	$49	the tinkerballers 🧚🏼‍♀️🌸🎀
+20.	Karl-Anthony Towns (NYK - PF,C)	$52	The New Day Co-op
+21.	Kevin Durant (HOU - SG,SF,PF)	$50	Cole is like that
+22.	LaMelo Ball (MIN - PG)	$41	#WashedAutoDraftKing
+23.	OG Anunoby (NYK - SF,PF)	$22	Team Maru
+24.	Amen Thompson (HOU - PG,SG)	$43	Grilled Teampura
+25.	Scottie Barnes (TOR - SF,PF,C)	$52	Fishy Achilles
+26.	Trae Young (WAS - PG)	$39	Finn will cook Burt
+27.	Devin Booker (PHX - PG,SG)	$40	Full Court Rex
+28.	Austin Reaves (LAL - PG,SG,SF)	$45	Billy Hoyle's Boy-les
+29.	Chet Holmgren (OKC - PF,C)	$38	Shut Up and Jam Gaiden
+30.	Derik Queen (NOP - PF,C)	$10	Team Maru
+31.	Joel Embiid (PHI - C)	$25	Super Maru
+32.	Domantas Sabonis (SAC - PF,C)	$37	Super Maru
+33.	LeBron James (PHI - SF,PF)	$30	Bitsketball Stars
+34.	Jamal Murray (DEN - PG)	$47	Bitsketball Stars
+35.	Bam Adebayo (MIA - PF,C)	$36	Herb's Astonishing Team
+36.	Alperen Şengün (HOU - PF,C)	$38	Full Court Rex
+37.	Derrick White (BOS - PG,SG)	$33	Fishy Achilles
+38.	Brandon Miller (CHA - SF,PF)	$28	Cole is like that
+39.	Evan Mobley (CLE - PF,C)	$30	The New Day Co-op
+40.	Walker Kessler (LAL - C)	$26	vincemvpcarter
+41.	Anthony Davis (WAS - PF,C)	$31	vincemvpcarter
+42.	Jalen Williams (OKC - SF,PF)	$31	Super Maru
+43.	Myles Turner (MIL - C)	$10	#WashedAutoDraftKing
+44.	Jaylen Brown (PHI - SG,SF,PF)	$27	Full Court Rex
+45.	Stephon Castle (SAS - PG,SG)	$16	Cole is like that
+46.	Jalen Duren (DET - C)	$27	Team Maru
+47.	De'Aaron Fox (SAS - PG)	$20	Super Maru
+48.	James Harden (CLE - PG,SG)	$36	Fishy Achilles
+49.	Trey Murphy III (NOP - SG,SF)	$34	Fishy Achilles
+50.	Onyeka Okongwu (ATL - C)	$23	Bitsketball Stars
+51.	Lauri Markkanen (UTA - SF,PF)	$29	vincemvpcarter
+52.	Jaren Jackson Jr. (UTA - PF,C)	$24	The New Day Co-op
+53.	Deni Avdija (POR - SG,SF,PF)	$24	The New Day Co-op
+54.	Kyrie Irving (DAL - PG)	$24	The New Day Co-op
+55.	Donovan Clingan (POR - C)	$18	The New Day Co-op
+56.	Paolo Banchero (ORL - PF)	$22	#WashedAutoDraftKing
+57.	Mikal Bridges (NYK - SF,PF)	$19	Team Maru
+58.	Ivica Zubac (IND - C)	$17	The New Day Co-op
+59.	Cameron Boozer (MEM - PF)	$19	Team Maru
+60.	Khaman Maluach (PHX - C)	$4	Billy Hoyle's Boy-les
+61.	Keyonte George (UTA - PG,SG)	$23	vincemvpcarter
+62.	Ausar Thompson (DET - SG,SF,PF)	$21	the tinkerballers 🧚🏼‍♀️🌸🎀
+63.	Bronny James (LAL - PG,SG)	$1	Cole is like that
+64.	Desmond Bane (ORL - SG,SF)	$25	Team Maru
+65.	Matas Buzelis (CHI - SF,PF)	$22	Billy Hoyle's Boy-les
+66.	Franz Wagner (ORL - SF,PF)	$25	Shut Up and Jam Gaiden
+67.	Rudy Gobert (MIN - C)	$14	Full Court Rex
+68.	Alex Sarr (WAS - C)	$15	Grilled Teampura
+69.	Darius Garland (LAC - PG)	$26	Shut Up and Jam Gaiden
+70.	Jarrett Allen (CLE - C)	$10	Cole is like that
+71.	Dyson Daniels (ATL - SG,SF)	$17	Team Maru
+72.	Pascal Siakam (IND - PF,C)	$14	#WashedAutoDraftKing
+73.	Kyshawn George (WAS - SG,SF,PF)	$7	Billy Hoyle's Boy-les
+74.	Michael Porter Jr. (BKN - SF,PF)	$19	Cole is like that
+75.	Collin Murray-Boyles (TOR - PF,C)	$8	vincemvpcarter
+76.	Tyler Herro (MIL - PG,SG)	$13	Cole is like that
+77.	Coby White (CHA - PG,SG)	$13	Super Maru
+78.	Ja Morant (POR - PG)	$7	#WashedAutoDraftKing
+79.	Dejounte Murray (NOP - PG)	$15	vincemvpcarter
+80.	Kon Knueppel (CHA - SG,SF)	$26	#WashedAutoDraftKing
+81.	Nickeil Alexander-Walker (ATL - PG,SG)	$25	Team Maru
+82.	Caleb Wilson (CHI - PF)	$9	Billy Hoyle's Boy-les
+83.	Mark Williams (PHX - C)	$5	The New Day Co-op
+84.	Ryan Rollins (MIL - PG,SG)	$17	vincemvpcarter
+85.	Dylan Harper (SAS - PG,SG)	$14	vincemvpcarter
+86.	Naz Reid (CHA - PF,C)	$7	Billy Hoyle's Boy-les
+87.	Paul George (BOS - SF,PF)	$13	Team Maru
+88.	Damian Lillard (POR - PG)	$20	vincemvpcarter
+89.	Payton Pritchard (BOS - PG)	$10	Team Maru
+90.	Brandin Podziemski (GSW - PG,SG)	$5	Team Maru
+91.	Brandon Ingram (LAC - SG,SF,PF)	$7	Full Court Rex
+92.	Zach Edey (MEM - C)	$24	Fishy Achilles
+93.	Zion Williamson (NOP - PF,C)	$9	vincemvpcarter
+94.	Cedric Coward (MEM - SG,SF)	$4	Bitsketball Stars
+95.	Ty Jerome (MEM - PG,SG)	$12	Billy Hoyle's Boy-les
+96.	Kel'el Ware (MIL - C)	$17	the tinkerballers 🧚🏼‍♀️🌸🎀
+97.	Ace Bailey (UTA - SF,PF)	$4	Full Court Rex
+98.	Day'Ron Sharpe (BKN - C)	$5	Shut Up and Jam Gaiden
+99.	Julius Randle (BKN - PF)	$10	Shut Up and Jam Gaiden
+100.	Darryn Peterson (UTA - SG)	$5	#WashedAutoDraftKing
+101.	Josh Hart (NYK - SG,SF)	$5	Finn will cook Burt
+102.	Isaiah Hartenstein (OKC - C)	$4	Full Court Rex
+103.	Jaden McDaniels (MIN - SF)	$9	Billy Hoyle's Boy-les
+104.	Zach LaVine (SAC - PG,SG,SF)	$5	Billy Hoyle's Boy-les
+105.	Neemias Queta (BOS - C)	$4	Fishy Achilles
+106.	Jabari Smith Jr. (HOU - PF,C)	$3	The New Day Co-op
+107.	VJ Edgecombe (PHI - PG,SG)	$5	Finn will cook Burt
+108.	Ayo Dosunmu (MIN - PG,SG)	$2	Super Maru
+109.	Immanuel Quickley (TOR - PG,SG)	$8	Shut Up and Jam Gaiden
+110.	Jalen Suggs (ORL - PG,SG)	$7	Shut Up and Jam Gaiden
+111.	Norman Powell (CHI - SG,SF)	$8	Fishy Achilles
+112.	Cason Wallace (OKC - PG,SG,SF)	$3	#WashedAutoDraftKing
+113.	Jakob Poeltl (TOR - C)	$3	vincemvpcarter
+114.	Andrew Wiggins (MIA - SG,SF,PF)	$5	Cole is like that
+115.	John Collins (DET - PF,C)	$3	Super Maru
+116.	Jalen Green (PHX - SG,SF)	$3	Team Maru
+117.	DeMar DeRozan (DEN - SF,PF)	$2	Bitsketball Stars
+118.	Yaxel Lendeborg (GSW - PF)	$6	Billy Hoyle's Boy-les
+119.	Keegan Murray (SAC - SF,PF)	$3	the tinkerballers 🧚🏼‍♀️🌸🎀
+120.	Tre Jones (CHI - PG,SG)	$1	Finn will cook Burt
+121.	Rui Hachimura (LAC - SF,PF)	$2	Fishy Achilles
+122.	Toumani Camara (POR - SF,PF)	$2	Herb's Astonishing Team
+123.	Daniel Gafford (DAL - C)	$2	#WashedAutoDraftKing
+124.	CJ McCollum (ATL - PG,SG)	$3	vincemvpcarter
+125.	Miles Bridges (PHX - PF)	$2	Shut Up and Jam Gaiden
+126.	Ajay Mitchell (OKC - PG,SG)	$3	Shut Up and Jam Gaiden
+127.	Sandro Mamukelashvili (LAL - PF,C)	$2	Fishy Achilles
+128.	Nic Claxton (CHI - C)	$2	Fishy Achilles
+129.	Devin Vassell (SAS - SG,SF)	$1	Full Court Rex
+130.	Fred VanVleet (HOU - PG)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+131.	Darius Acuff Jr. (SAC - PG)	$1	Billy Hoyle's Boy-les
+132.	Andrew Nembhard (IND - PG,SG)	$1	Bitsketball Stars
+133.	Kevin Love (UTA - PF,C)	$1	Finn will cook Burt
+134.	Ben Simmons (SAC - PG)	$2	Fishy Achilles
+135.	Tobias Harris (SAS - PF)	$1	Super Maru
+136.	Aday Mara (OKC - C)	$1	Cole is like that
+137.	Collin Gillespie (PHX - PG,SG)	$1	The New Day Co-op
+138.	Peyton Watson (CLE - SF,PF)	$1	Grilled Teampura
+139.	Reed Sheppard (HOU - PG,SG)	$1	#WashedAutoDraftKing
+140.	Cameron Johnson (DEN - SF,PF)	$1	Shut Up and Jam Gaiden
+141.	Davion Mitchell (MIA - PG)	$1	Herb's Astonishing Team
+142.	Dillon Brooks (PHX - SF,PF)	$1	Full Court Rex
+143.	Kevin Porter Jr. (MIL - PG,SG)	$2	Cole is like that
+144.	Wendell Carter Jr. (ORL - C)	$2	Cole is like that
+145.	Christian Braun (DEN - SG,SF,PF)	$1	Finn will cook Burt
+146.	Egor Dëmin (BKN - PG,SG)	$1	Fishy Achilles
+147.	Corey Kispert (ATL - SG,SF)	$1	Super Maru
+148.	Quentin Grimes (LAL - SG,SF)	$1	The New Day Co-op
+149.	Jalen Smith (CHI - PF,C)	$1	Grilled Teampura
+150.	Aaron Gordon (DEN - PF,C)	$1	#WashedAutoDraftKing
+151.	Paul Reed (DET - PF,C)	$2	Shut Up and Jam Gaiden
+152.	Yves Missi (NOP - C)	$1	Herb's Astonishing Team
+153.	Jonathan Kuminga (MIN - SF,PF)	$1	Full Court Rex
+154.	Jaime Jaquez Jr. (MIL - SG,SF,PF)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+155.	RJ Barrett (TOR - SG,SF,PF)	$1	Bitsketball Stars
+156.	Jusuf Nurkić (UTA - C)	$1	Finn will cook Burt
+157.	Bobby Portis Jr. (MIA - PF,C)	$1	Super Maru
+158.	P.J. Washington (DAL - PF,C)	$1	The New Day Co-op
+159.	Gui Santos (GSW - SF,PF)	$1	Grilled Teampura
+160.	Jrue Holiday (POR - PG,SG)	$1	Herb's Astonishing Team
+161.	Kristaps Porziņģis (GSW - C)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+162.	Moussa Diabaté (CHA - C)	$1	Bitsketball Stars
+163.	Draymond Green (GSW - PF,C)	$1	Finn will cook Burt
+164.	Luguentz Dort (ATL - SG,SF)	$1	Super Maru
+165.	Tari Eason (HOU - SG,SF,PF)	$1	Grilled Teampura
+166.	Jimmy Butler III (GSW - SF,PF)	$1	Herb's Astonishing Team
+167.	Isaiah Jackson (LAC - C)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+168.	Anthony Black (ORL - PG,SG,SF)	$1	Bitsketball Stars
+169.	Saddiq Bey (NOP - SF,PF)	$1	Finn will cook Burt
+170.	Jeremiah Fears (NOP - PG,SG)	$1	Grilled Teampura
+171.	Pelle Larsson (MIA - SG,SF)	$1	Herb's Astonishing Team
+172.	Mitchell Robinson (BOS - C)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+173.	Aaron Nesmith (IND - SG,SF)	$1	Bitsketball Stars
+174.	Nikola Vučević (ORL - C)	$1	Grilled Teampura
+175.	Mikel Brown Jr. (BKN - PG)	$1	Herb's Astonishing Team
+176.	Daniss Jenkins (DET - PG,SG)	$1	the tinkerballers 🧚🏼‍♀️🌸🎀
+177.	Bennedict Mathurin (NOP - SG,SF)	$1	Bitsketball Stars
+178.	Grayson Allen (CHA - SG,SF)	$1	Grilled Teampura
+179.	Jake LaRavia (LAL - SF,PF)	$1	Herb's Astonishing Team
+180.	Scotty Pippen Jr. (MEM - PG)	$1	Herb's Astonishing Team
