@@ -1,5 +1,5 @@
 {
-  "source": "Yahoo final standings screenshots (Overall Stats), transcribed by hand on 2026-10-23. Which real season each one is has not been confirmed: they are labeled by league size.",
+  "source": "Yahoo final standings screenshots (Overall Stats), transcribed by hand on 2026-10-23. Seasons confirmed by the user.",
   "categories": [
     "fgPct",
     "ftPct",
@@ -12,10 +12,10 @@
   ],
   "seasons": [
     {
-      "label": "prior-12-team",
-      "season": null,
+      "label": "2025-26",
+      "season": "2025-26",
       "teams": 12,
-      "note": "Also showed points for the bottom 3: Herb's 35, #WashedAutoDraftKing 28, Shut Up and Jam Gaiden 21 (last).",
+      "note": "Also showed points for the bottom 3: Herb's 35, #WashedAutoDraftKing 28, Shut Up and Jam Gaiden 21 (last). The user's last-place finish came from injuries and disengaging mid-season (478 GP, lowest in the league), not from a weak draft. Treat their row as an outlier.",
       "standings": [
         {
           "rank": 1,
@@ -176,10 +176,10 @@
       ]
     },
     {
-      "label": "prior-13-team",
-      "season": null,
+      "label": "2024-25",
+      "season": "2024-25",
       "teams": 13,
-      "note": "Jokic in the Door and vincemvpcarter tied for 1st.",
+      "note": "Jokic in the Door and vincemvpcarter tied for 1st. The user finished 5th.",
       "standings": [
         {
           "rank": 1,
