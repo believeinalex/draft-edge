@@ -13,6 +13,7 @@
   "asOf": "2026-10-23",
   "statsAsOf": "2026-10-23",
   "lineupAsOf": "2026-10-22",
+  "standingsAsOf": "2026-10-23",
   "teams": [
     {
       "name": "Team Maru",
@@ -493,6 +494,30 @@
         "blk": 3.5
       },
       "actualRank": 8,
+      "realTotals": {
+        "fgPct": 0.417,
+        "ftPct": 0.815,
+        "tpm": 11,
+        "pts": 135,
+        "treb": 52,
+        "ast": 16,
+        "stl": 13,
+        "blk": 3
+      },
+      "realGp": 8,
+      "yahooRank": 12,
+      "realRoto": {
+        "total": 46,
+        "fgPct": 3,
+        "ftPct": 10,
+        "tpm": 6.5,
+        "pts": 5,
+        "treb": 6,
+        "ast": 1,
+        "stl": 11.5,
+        "blk": 3
+      },
+      "realRank": 12,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -996,6 +1021,30 @@
         "blk": 15
       },
       "actualRank": 1,
+      "realTotals": {
+        "fgPct": 0.474,
+        "ftPct": 0.818,
+        "tpm": 17,
+        "pts": 192,
+        "treb": 67,
+        "ast": 48,
+        "stl": 15,
+        "blk": 13
+      },
+      "realGp": 11,
+      "yahooRank": 1,
+      "realRoto": {
+        "total": 107,
+        "fgPct": 10,
+        "ftPct": 11.5,
+        "tpm": 13,
+        "pts": 15,
+        "treb": 13,
+        "ast": 15,
+        "stl": 14.5,
+        "blk": 15
+      },
+      "realRank": 1,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -1514,6 +1563,30 @@
         "blk": 14
       },
       "actualRank": 14,
+      "realTotals": {
+        "fgPct": 0.393,
+        "ftPct": 0.759,
+        "tpm": 8,
+        "pts": 133,
+        "treb": 59,
+        "ast": 38,
+        "stl": 12,
+        "blk": 9
+      },
+      "realGp": 10,
+      "yahooRank": 10,
+      "realRoto": {
+        "total": 57,
+        "fgPct": 1,
+        "ftPct": 5,
+        "tpm": 2.5,
+        "pts": 4,
+        "treb": 9,
+        "ast": 12,
+        "stl": 9.5,
+        "blk": 14
+      },
+      "realRank": 10,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -2058,6 +2131,30 @@
         "blk": 3.5
       },
       "actualRank": 15,
+      "realTotals": {
+        "fgPct": 0.4,
+        "ftPct": 0.677,
+        "tpm": 13,
+        "pts": 106,
+        "treb": 44,
+        "ast": 26,
+        "stl": 8,
+        "blk": 5
+      },
+      "realGp": 9,
+      "yahooRank": 15,
+      "realRoto": {
+        "total": 31,
+        "fgPct": 2,
+        "ftPct": 2.5,
+        "tpm": 8.5,
+        "pts": 2,
+        "treb": 2,
+        "ast": 5,
+        "stl": 3.5,
+        "blk": 5.5
+      },
+      "realRank": 15,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -2548,6 +2645,30 @@
         "blk": 1
       },
       "actualRank": 7,
+      "realTotals": {
+        "fgPct": 0.576,
+        "ftPct": 0.673,
+        "tpm": 19,
+        "pts": 190,
+        "treb": 47,
+        "ast": 36,
+        "stl": 15,
+        "blk": 2
+      },
+      "realGp": 10,
+      "yahooRank": 4,
+      "realRoto": {
+        "total": 75.5,
+        "fgPct": 15,
+        "ftPct": 1,
+        "tpm": 15,
+        "pts": 14,
+        "treb": 4,
+        "ast": 10.5,
+        "stl": 14.5,
+        "blk": 1.5
+      },
+      "realRank": 4,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -3054,6 +3175,30 @@
         "blk": 11.5
       },
       "actualRank": 3,
+      "realTotals": {
+        "fgPct": 0.489,
+        "ftPct": 0.778,
+        "tpm": 13,
+        "pts": 183,
+        "treb": 50,
+        "ast": 25,
+        "stl": 13,
+        "blk": 6
+      },
+      "realGp": 9,
+      "yahooRank": 7,
+      "realRoto": {
+        "total": 68.5,
+        "fgPct": 13,
+        "ftPct": 6,
+        "tpm": 8.5,
+        "pts": 13,
+        "treb": 5,
+        "ast": 4,
+        "stl": 11.5,
+        "blk": 7.5
+      },
+      "realRank": 7,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -3551,6 +3696,30 @@
         "blk": 11.5
       },
       "actualRank": 2,
+      "realTotals": {
+        "fgPct": 0.488,
+        "ftPct": 0.82,
+        "tpm": 11,
+        "pts": 178,
+        "treb": 60,
+        "ast": 34,
+        "stl": 9,
+        "blk": 8
+      },
+      "realGp": 9,
+      "yahooRank": 3,
+      "realRoto": {
+        "total": 80.5,
+        "fgPct": 12,
+        "ftPct": 13,
+        "tpm": 6.5,
+        "pts": 12,
+        "treb": 10,
+        "ast": 8,
+        "stl": 6,
+        "blk": 13
+      },
+      "realRank": 3,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -4042,6 +4211,30 @@
         "blk": 11.5
       },
       "actualRank": 10,
+      "realTotals": {
+        "fgPct": 0.569,
+        "ftPct": 0.677,
+        "tpm": 15,
+        "pts": 152,
+        "treb": 68,
+        "ast": 18,
+        "stl": 8,
+        "blk": 7
+      },
+      "realGp": 9,
+      "yahooRank": 8,
+      "realRoto": {
+        "total": 64.5,
+        "fgPct": 14,
+        "ftPct": 2.5,
+        "tpm": 11,
+        "pts": 7,
+        "treb": 14,
+        "ast": 2,
+        "stl": 3.5,
+        "blk": 10.5
+      },
+      "realRank": 9,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -4571,6 +4764,30 @@
         "blk": 3.5
       },
       "actualRank": 11,
+      "realTotals": {
+        "fgPct": 0.434,
+        "ftPct": 0.865,
+        "tpm": 5,
+        "pts": 123,
+        "treb": 56,
+        "ast": 27,
+        "stl": 9,
+        "blk": 2
+      },
+      "realGp": 9,
+      "yahooRank": 13,
+      "realRoto": {
+        "total": 45.5,
+        "fgPct": 5,
+        "ftPct": 15,
+        "tpm": 1,
+        "pts": 3,
+        "treb": 8,
+        "ast": 6,
+        "stl": 6,
+        "blk": 1.5
+      },
+      "realRank": 13,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -5044,6 +5261,30 @@
         "blk": 8.5
       },
       "actualRank": 9,
+      "realTotals": {
+        "fgPct": 0.444,
+        "ftPct": 0.729,
+        "tpm": 8,
+        "pts": 169,
+        "treb": 65,
+        "ast": 46,
+        "stl": 14,
+        "blk": 7
+      },
+      "realGp": 11,
+      "yahooRank": 5,
+      "realRoto": {
+        "total": 71.5,
+        "fgPct": 7,
+        "ftPct": 4,
+        "tpm": 2.5,
+        "pts": 9,
+        "treb": 12,
+        "ast": 13.5,
+        "stl": 13,
+        "blk": 10.5
+      },
+      "realRank": 5,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -5507,6 +5748,30 @@
         "blk": 8.5
       },
       "actualRank": 5,
+      "realTotals": {
+        "fgPct": 0.485,
+        "ftPct": 0.806,
+        "tpm": 17,
+        "pts": 172,
+        "treb": 79,
+        "ast": 35,
+        "stl": 9,
+        "blk": 7
+      },
+      "realGp": 10,
+      "yahooRank": 2,
+      "realRoto": {
+        "total": 83.5,
+        "fgPct": 11,
+        "ftPct": 9,
+        "tpm": 13,
+        "pts": 10,
+        "treb": 15,
+        "ast": 9,
+        "stl": 6,
+        "blk": 10.5
+      },
+      "realRank": 2,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -6040,6 +6305,30 @@
         "blk": 3.5
       },
       "actualRank": 6,
+      "realTotals": {
+        "fgPct": 0.441,
+        "ftPct": 0.795,
+        "tpm": 17,
+        "pts": 176,
+        "treb": 53,
+        "ast": 36,
+        "stl": 12,
+        "blk": 5
+      },
+      "realGp": 10,
+      "yahooRank": 6,
+      "realRoto": {
+        "total": 70.5,
+        "fgPct": 6,
+        "ftPct": 8,
+        "tpm": 13,
+        "pts": 11,
+        "treb": 7,
+        "ast": 10.5,
+        "stl": 9.5,
+        "blk": 5.5
+      },
+      "realRank": 6,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -6537,6 +6826,30 @@
         "blk": 11.5
       },
       "actualRank": 4,
+      "realTotals": {
+        "fgPct": 0.464,
+        "ftPct": 0.853,
+        "tpm": 10,
+        "pts": 143,
+        "treb": 64,
+        "ast": 28,
+        "stl": 6,
+        "blk": 7
+      },
+      "realGp": 10,
+      "yahooRank": 8,
+      "realRoto": {
+        "total": 64.5,
+        "fgPct": 9,
+        "ftPct": 14,
+        "tpm": 5,
+        "pts": 6,
+        "treb": 11,
+        "ast": 7,
+        "stl": 2,
+        "blk": 10.5
+      },
+      "realRank": 8,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -7026,6 +7339,30 @@
         "blk": 6.5
       },
       "actualRank": 13,
+      "realTotals": {
+        "fgPct": 0.422,
+        "ftPct": 0.818,
+        "tpm": 9,
+        "pts": 103,
+        "treb": 43,
+        "ast": 46,
+        "stl": 10,
+        "blk": 6
+      },
+      "realGp": 9,
+      "yahooRank": 11,
+      "realRoto": {
+        "total": 50.5,
+        "fgPct": 4,
+        "ftPct": 11.5,
+        "tpm": 4,
+        "pts": 1,
+        "treb": 1,
+        "ast": 13.5,
+        "stl": 8,
+        "blk": 7.5
+      },
+      "realRank": 11,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": true,
@@ -7544,6 +7881,30 @@
         "blk": 6.5
       },
       "actualRank": 12,
+      "realTotals": {
+        "fgPct": 0.454,
+        "ftPct": 0.78,
+        "tpm": 14,
+        "pts": 164,
+        "treb": 45,
+        "ast": 22,
+        "stl": 4,
+        "blk": 4
+      },
+      "realGp": 9,
+      "yahooRank": 14,
+      "realRoto": {
+        "total": 44,
+        "fgPct": 8,
+        "ftPct": 7,
+        "tpm": 10,
+        "pts": 8,
+        "treb": 3,
+        "ast": 3,
+        "stl": 1,
+        "blk": 4
+      },
+      "realRank": 14,
       "lineup": {
         "asOf": "2026-10-22",
         "complete": false,

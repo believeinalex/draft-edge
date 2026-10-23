@@ -1,0 +1,22 @@
+{
+  "asOf": "2026-10-23",
+  "source": "Yahoo league standings screenshot (stat totals), transcribed by hand. gp = Yahoo's GP* column; yahooRank as displayed (ties shown as equal ranks).",
+  "categories": ["fgPct", "ftPct", "tpm", "pts", "treb", "ast", "stl", "blk"],
+  "teams": [
+    { "yahooRank": 1,  "team": "Shut Up and Jam Gaiden",       "gp": 11, "fgPct": 0.474, "ftPct": 0.818, "tpm": 17, "pts": 192, "treb": 67, "ast": 48, "stl": 15, "blk": 13 },
+    { "yahooRank": 2,  "team": "Super Maru",                   "gp": 10, "fgPct": 0.485, "ftPct": 0.806, "tpm": 17, "pts": 172, "treb": 79, "ast": 35, "stl": 9,  "blk": 7 },
+    { "yahooRank": 3,  "team": "vincemvpcarter",               "gp": 9,  "fgPct": 0.488, "ftPct": 0.820, "tpm": 11, "pts": 178, "treb": 60, "ast": 34, "stl": 9,  "blk": 8 },
+    { "yahooRank": 4,  "team": "#WashedAutoDraftKing",         "gp": 10, "fgPct": 0.576, "ftPct": 0.673, "tpm": 19, "pts": 190, "treb": 47, "ast": 36, "stl": 15, "blk": 2 },
+    { "yahooRank": 5,  "team": "Bitsketball Stars",            "gp": 11, "fgPct": 0.444, "ftPct": 0.729, "tpm": 8,  "pts": 169, "treb": 65, "ast": 46, "stl": 14, "blk": 7 },
+    { "yahooRank": 6,  "team": "Grilled Teampura",             "gp": 10, "fgPct": 0.441, "ftPct": 0.795, "tpm": 17, "pts": 176, "treb": 53, "ast": 36, "stl": 12, "blk": 5 },
+    { "yahooRank": 7,  "team": "Billy Hoyle's Boy-les",        "gp": 9,  "fgPct": 0.489, "ftPct": 0.778, "tpm": 13, "pts": 183, "treb": 50, "ast": 25, "stl": 13, "blk": 6 },
+    { "yahooRank": 8,  "team": "The New Day Co-op",            "gp": 9,  "fgPct": 0.569, "ftPct": 0.677, "tpm": 15, "pts": 152, "treb": 68, "ast": 18, "stl": 8,  "blk": 7 },
+    { "yahooRank": 8,  "team": "Full Court Rex",               "gp": 10, "fgPct": 0.464, "ftPct": 0.853, "tpm": 10, "pts": 143, "treb": 64, "ast": 28, "stl": 6,  "blk": 7 },
+    { "yahooRank": 10, "team": "Finn will cook Burt",          "gp": 10, "fgPct": 0.393, "ftPct": 0.759, "tpm": 8,  "pts": 133, "treb": 59, "ast": 38, "stl": 12, "blk": 9 },
+    { "yahooRank": 11, "team": "Herb's Astonishing Team",      "gp": 9,  "fgPct": 0.422, "ftPct": 0.818, "tpm": 9,  "pts": 103, "treb": 43, "ast": 46, "stl": 10, "blk": 6 },
+    { "yahooRank": 12, "team": "Team Maru",                    "gp": 8,  "fgPct": 0.417, "ftPct": 0.815, "tpm": 11, "pts": 135, "treb": 52, "ast": 16, "stl": 13, "blk": 3 },
+    { "yahooRank": 13, "team": "the tinkerballers 🧚🏼‍♀️🌸🎀", "gp": 9,  "fgPct": 0.434, "ftPct": 0.865, "tpm": 5,  "pts": 123, "treb": 56, "ast": 27, "stl": 9,  "blk": 2 },
+    { "yahooRank": 14, "team": "Cole is like that",            "gp": 9,  "fgPct": 0.454, "ftPct": 0.780, "tpm": 14, "pts": 164, "treb": 45, "ast": 22, "stl": 4,  "blk": 4 },
+    { "yahooRank": 15, "team": "Fishy Achilles",               "gp": 9,  "fgPct": 0.400, "ftPct": 0.677, "tpm": 13, "pts": 106, "treb": 44, "ast": 26, "stl": 8,  "blk": 5 }
+  ]
+}

@@ -9,6 +9,7 @@ The league draft is complete and the project is now focused on in-season managem
 ### Session-Start Workflow
 - At session start, run `npm run fetch-stats` to pull the latest Hashtag Basketball season stats; don't ask the user to paste them. If the fetch fails (network or page change), say so. If the user pastes stats instead, save them verbatim to `stats/raw/YYYY-MM-DD.txt` (never overwrite an older snapshot) and run `npm run stats`.
 - When the user pastes Yahoo weekly rosters/lineups (League > Rosters page), save them verbatim to `season/lineups/raw/YYYY-MM-DD.txt` and run `npm run lineups`. Any `WARNING` printed means a transaction is missing from `season/transactions.json`: ask the user for it rather than editing rosters by hand.
+- When the user shares Yahoo standings (text or screenshot), save the category totals to `season/standings/YYYY-MM-DD.json` (same shape as the existing files) and run `npm run season`. Prefer these real standings over the estimated `actualRoto` when advising.
 - When the user pastes Yahoo transactions, append them to `season/transactions.json` and run `npm run season`.
 - Base advice on `season/league.json`: current rosters, projections, season-to-date stats and standings.
 

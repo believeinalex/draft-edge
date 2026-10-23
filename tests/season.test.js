@@ -189,3 +189,15 @@ test('fetch_htb tableToText matches the pasted format, with signed rank moves an
   assert.equal(f.get('CBTO'), 'on');
   assert.equal(f.get('DDSHOW'), '200');
 });
+
+test('attachStandings scores Yahoo category totals into roto points and flags unknown teams', () => {
+  const { attachStandings } = require('../season/build_season.js');
+  const row = (team, pts, blk) => ({ team, yahooRank: 0, gp: 9, fgPct: 0.45, ftPct: 0.8, tpm: 10, pts, treb: 50, ast: 30, stl: 10, blk });
+  const teams = [{ name: 'A' }, { name: 'B' }];
+  const unknown = attachStandings(teams, { teams: [row('A', 200, 5), row('B', 150, 9), row('Ghost', 1, 1)] });
+  assert.deepEqual(unknown, ['Ghost']);
+  assert.equal(teams[0].realRoto.pts, 2);
+  assert.equal(teams[1].realRoto.blk, 2);
+  assert.equal(teams[0].realRoto.fgPct, 1.5); // tie
+  assert.equal(teams[0].realRoto.total, teams[1].realRoto.total);
+});

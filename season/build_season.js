@@ -17,6 +17,7 @@ const TXN_FILE = path.join(__dirname, 'transactions.json');
 const OUT_FILE = path.join(__dirname, 'league.json');
 const STATS_FILE = path.join(__dirname, '..', 'stats', 'latest.json');
 const LINEUP_DIR = path.join(__dirname, 'lineups');
+const STANDINGS_DIR = path.join(__dirname, 'standings');
 
 // The user's own team, plus other teams the user manages (their son Finn's team)
 const MY_TEAM = 'Shut Up and Jam Gaiden';
@@ -275,10 +276,29 @@ function attachLineups(teams, snapshot) {
   return unexplained;
 }
 
-function latestLineupSnapshot() {
-  if (!fs.existsSync(LINEUP_DIR)) return null;
-  const files = fs.readdirSync(LINEUP_DIR).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
-  return files.length ? JSON.parse(fs.readFileSync(path.join(LINEUP_DIR, files[files.length - 1]), 'utf8')) : null;
+function latestSnapshot(dir) {
+  if (!fs.existsSync(dir)) return null;
+  const files = fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort();
+  return files.length ? JSON.parse(fs.readFileSync(path.join(dir, files[files.length - 1]), 'utf8')) : null;
+}
+
+/**
+ * Attaches Yahoo's real standings (season/standings/*.json: category totals per team)
+ * and scores them into roto points (realTotals, realRoto, realRank). Returns team names
+ * in the snapshot that don't match a league team.
+ */
+function attachStandings(teams, snapshot) {
+  const unknown = [];
+  for (const row of snapshot.teams) {
+    const t = teams.find(tm => tm.name === row.team);
+    if (!t) { unknown.push(row.team); continue; }
+    t.realTotals = Object.fromEntries(CATS.map(c => [c, row[c]]));
+    t.realGp = row.gp;
+    t.yahooRank = row.yahooRank;
+  }
+  const scored = teams.filter(t => t.realTotals);
+  if (scored.length) rotoPoints(scored, 'real');
+  return unknown;
 }
 
 function main() {
@@ -319,7 +339,9 @@ function main() {
 
   const stats = fs.existsSync(STATS_FILE) ? JSON.parse(fs.readFileSync(STATS_FILE, 'utf8')) : null;
   const freeAgentLines = stats ? attachSeasonStats(teams, stats.players) : [];
-  const lineupSnap = latestLineupSnapshot();
+  const lineupSnap = latestSnapshot(LINEUP_DIR);
+  const standingsSnap = latestSnapshot(STANDINGS_DIR);
+  const standingsIssues = standingsSnap ? attachStandings(teams, standingsSnap) : [];
   const lineupIssues = lineupSnap ? attachLineups(teams, lineupSnap) : [];
 
   const league = {
@@ -334,6 +356,7 @@ function main() {
     asOf: txns.transactions.reduce((m, t) => (t.date > m ? t.date : m), '2026-10-18'),
     statsAsOf: stats ? stats.asOf : null,
     lineupAsOf: lineupSnap ? lineupSnap.asOf : null,
+    standingsAsOf: standingsSnap ? standingsSnap.asOf : null,
     teams: teams.sort((a, b) => a.projRank - b.projRank),
     draft: picks
   };
@@ -379,6 +402,19 @@ function main() {
     for (const issue of lineupIssues) console.log(`  WARNING: ${issue}`);
   }
 
+  if (standingsSnap) {
+    console.log(`\nYahoo Standings (${standingsSnap.asOf}), scored as roto points:`);
+    console.log('Rk   Team                              ' + CATS.map(c => c.padStart(6)).join('') + '   Total  (Proj)');
+    for (const t of teams.filter(tm => tm.realRoto).sort((a, b) => a.realRank - b.realRank)) {
+      console.log(
+        `${String(t.yahooRank).padStart(2)}${t.isMine ? '*' : t.isManaged ? '+' : ' '} ${t.name.padEnd(32).slice(0, 32)}  ` +
+        CATS.map(c => String(t.realRoto[c]).padStart(6)).join('') +
+        `   ${String(t.realRoto.total).padStart(5)}  (${t.projRank})`
+      );
+    }
+    for (const name of standingsIssues) console.log(`  WARNING: standings team "${name}" doesn't match any league team`);
+  }
+
   if (!stats) return;
   console.log(`\nSeason-to-Date Roto (stats as of ${stats.asOf}, all rostered players counted):`);
   console.log('Rk   Team                              GP  ' + CATS.map(c => c.padStart(6)).join('') + '   Total  (Proj)');
@@ -401,4 +437,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { parseDraft, sumTotals, projectTeam, rotoPoints, applyTransactions, attachSeasonStats, attachLineups };
+module.exports = { parseDraft, sumTotals, projectTeam, rotoPoints, applyTransactions, attachSeasonStats, attachLineups, attachStandings };
