@@ -125,7 +125,8 @@ async function fetchStats() {
 
 async function main() {
   const args = Object.fromEntries(process.argv.slice(2).map(a => a.replace(/^--/, '').split('=')).map(([k, v]) => [k, v ?? true]));
-  const date = args.date || new Date().toISOString().slice(0, 10);
+  // NBA days run on US time: an evening fetch (after midnight UTC) still belongs to that US date
+  const date = args.date || new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
   const out = path.join(RAW_DIR, `${date}.txt`);
   if (fs.existsSync(out) && !args.force) {
     console.log(`${path.relative(process.cwd(), out)} already exists; keeping it (pass --force to replace).`);
@@ -134,7 +135,7 @@ async function main() {
   const raw = await fetchStats();
   fs.mkdirSync(RAW_DIR, { recursive: true });
   fs.writeFileSync(out, raw);
-  console.log(`Saved ${raw.trim().split('\n').length - 1} players -> ${path.relative(process.cwd(), out)}`);
+  console.log(`Saved ${raw.trim().split('\n').filter(l => !l.startsWith('R#')).length} players -> ${path.relative(process.cwd(), out)}`);
 }
 
 if (require.main === module) {

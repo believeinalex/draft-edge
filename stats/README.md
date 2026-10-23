@@ -3,7 +3,7 @@
 Season-to-date player stats from [Hashtag Basketball's rankings](https://hashtagbasketball.com/fantasy-basketball-rankings), using our league's 8 categories (TO off), Standard (roto) valuation, all players, per-game averages.
 
 ## Updating (start of each session)
-- **Automatic:** run `npm run fetch-stats`. It fetches today's rankings into `stats/raw/YYYY-MM-DD.txt` (UTC date), parses every snapshot and rebuilds `season/league.json`. If today's file already exists it is kept. Pass `-- --force` to replace it, or `-- --date=YYYY-MM-DD` to name it.
+- **Automatic:** run `npm run fetch-stats`. It fetches today's rankings into `stats/raw/YYYY-MM-DD.txt` (US Eastern date), parses every snapshot and rebuilds `season/league.json`. If today's file already exists it is kept. Pass `-- --force` to replace it, or `-- --date=YYYY-MM-DD` to name it.
 - **Manual fallback:** paste the rankings table into `stats/raw/YYYY-MM-DD.txt` exactly as copied, then run `npm run stats`. Tabs, repeated `R#` header rows and the rank-movement number are all fine.
 - Never edit or delete old raw files. They are the history used to track player trends.
 
