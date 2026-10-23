@@ -10,6 +10,7 @@ The draft is over and the project is now used for in-season management. This dir
 | (stats) | Season-to-date stats from `stats/latest.json` are attached per player (`stats`), with team `actualTotals`, `actualRoto` and `actualRank`. See `stats/README.md`. |
 | `lineups/raw/YYYY-MM-DD.txt` | Verbatim pastes of Yahoo's League > Rosters page: each team's **locked lineup for the current week** (slots, injury tags, games today). Parsed by `parse_lineups.js` (`npm run lineups`) into `lineups/YYYY-MM-DD.json`. |
 | `standings/YYYY-MM-DD.json` | Yahoo's real standings (category totals per team and GP), transcribed from the Standings page. The latest is scored into roto points as `realTotals`, `realRoto`, `realRank` and `yahooRank` on each team. This is the ground truth; `actualRoto` is only an estimate from player stats. |
+| `history/prior_standings.json` | Final Yahoo standings (category totals + GP) from the two previous seasons: a 12-team and a 13-team year. Use as end-of-season benchmarks, comparing per-GP rates rather than raw totals, since league size and GP differ. |
 | `build_season.js` | Regenerates `league.json` (`npm run season`). |
 
 ## Notes
