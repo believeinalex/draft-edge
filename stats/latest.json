@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-22",
-  "source": "stats/raw/2026-10-22.txt",
+  "asOf": "2026-10-23",
+  "source": "stats/raw/2026-10-23.txt",
   "perGame": true,
   "players": [
     {
@@ -27,7 +27,7 @@
       "ast": 3,
       "stl": 2,
       "blk": 1,
-      "valueTotal": 18.33
+      "valueTotal": 17.61
     },
     {
       "rank": 2,
@@ -53,7 +53,7 @@
       "ast": 3,
       "stl": 5,
       "blk": 0,
-      "valueTotal": 16.9
+      "valueTotal": 16.12
     },
     {
       "rank": 3,
@@ -79,7 +79,7 @@
       "ast": 6,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 16.44
+      "valueTotal": 15.65
     },
     {
       "rank": 4,
@@ -105,12 +105,12 @@
       "ast": 7,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 14.47
+      "valueTotal": 13.61
     },
     {
       "rank": 5,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Paolo Banchero",
       "pos": [
         "PF"
@@ -130,87 +130,12 @@
       "ast": 10,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 13.37
+      "valueTotal": 12.52
     },
     {
       "rank": 6,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Tyrese Maxey",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 39.6,
-      "fgPct": 0.474,
-      "fgm": 9,
-      "fga": 19,
-      "ftPct": 0.889,
-      "ftm": 8,
-      "fta": 9,
-      "tpm": 2,
-      "pts": 28,
-      "treb": 4,
-      "ast": 5,
-      "stl": 3,
-      "blk": 3,
-      "valueTotal": 13.35
-    },
-    {
-      "rank": 7,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Shai Gilgeous-Alexander",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 36.1,
-      "fgPct": 0.481,
-      "fgm": 13,
-      "fga": 27,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 3,
-      "pts": 32,
-      "treb": 6,
-      "ast": 4,
-      "stl": 3,
-      "blk": 3,
-      "valueTotal": 13.35
-    },
-    {
-      "rank": 8,
-      "rankMove": null,
-      "rankMoveSigned": null,
-      "name": "Yves Missi",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "NO",
-      "gp": 1,
-      "mpg": 29.9,
-      "fgPct": 0.833,
-      "fgm": 5,
-      "fga": 6,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 13,
-      "treb": 14,
-      "ast": 5,
-      "stl": 2,
-      "blk": 3,
-      "valueTotal": 12.21
-    },
-    {
-      "rank": 9,
       "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Dejounte Murray",
       "pos": [
         "PG"
@@ -230,38 +155,12 @@
       "ast": 7,
       "stl": 2,
       "blk": 3,
-      "valueTotal": 12.14
+      "valueTotal": 11.26
     },
     {
-      "rank": 10,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Domantas Sabonis",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "SAC",
-      "gp": 1,
-      "mpg": 33.6,
-      "fgPct": 1,
-      "fgm": 5,
-      "fga": 5,
-      "ftPct": 1,
-      "ftm": 4,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 14,
-      "treb": 18,
-      "ast": 8,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 12.12
-    },
-    {
-      "rank": 11,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 7,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Anthony Davis",
       "pos": [
         "PF",
@@ -282,10 +181,61 @@
       "ast": 4,
       "stl": 2,
       "blk": 1,
-      "valueTotal": 12.05
+      "valueTotal": 11.14
     },
     {
-      "rank": 12,
+      "rank": 8,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Yves Missi",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "NO",
+      "gp": 1,
+      "mpg": 29.9,
+      "fgPct": 0.833,
+      "fgm": 5,
+      "fga": 6,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 13,
+      "treb": 14,
+      "ast": 5,
+      "stl": 2,
+      "blk": 3,
+      "valueTotal": 11.13
+    },
+    {
+      "rank": 9,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Domantas Sabonis",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "SAC",
+      "gp": 1,
+      "mpg": 33.6,
+      "fgPct": 1,
+      "fgm": 5,
+      "fga": 5,
+      "ftPct": 1,
+      "ftm": 4,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 14,
+      "treb": 18,
+      "ast": 8,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 10.9
+    },
+    {
+      "rank": 10,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Damian Lillard",
@@ -307,12 +257,12 @@
       "ast": 6,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 11.49
+      "valueTotal": 10.53
     },
     {
-      "rank": 13,
+      "rank": 11,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Austin Reaves",
       "pos": [
         "PG",
@@ -334,12 +284,12 @@
       "ast": 6,
       "stl": 2,
       "blk": 1,
-      "valueTotal": 11.39
+      "valueTotal": 10.45
     },
     {
-      "rank": 14,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 12,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Julius Randle",
       "pos": [
         "PF"
@@ -359,12 +309,12 @@
       "ast": 7,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 11.09
+      "valueTotal": 10.19
     },
     {
-      "rank": 15,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 13,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Cooper Flagg",
       "pos": [
         "SG",
@@ -386,12 +336,37 @@
       "ast": 2,
       "stl": 3,
       "blk": 1,
-      "valueTotal": 10.99
+      "valueTotal": 10.09
     },
     {
-      "rank": 16,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 14,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Tyrese Maxey",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 40.6,
+      "fgPct": 0.5,
+      "fgm": 10.5,
+      "fga": 21,
+      "ftPct": 0.824,
+      "ftm": 7,
+      "fta": 8.5,
+      "tpm": 2,
+      "pts": 30,
+      "treb": 3.5,
+      "ast": 5.5,
+      "stl": 2.5,
+      "blk": 1.5,
+      "valueTotal": 10.07
+    },
+    {
+      "rank": 15,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Kawhi Leonard",
       "pos": [
         "SG",
@@ -413,12 +388,38 @@
       "ast": 2,
       "stl": 4,
       "blk": 1,
-      "valueTotal": 10.8
+      "valueTotal": 9.89
+    },
+    {
+      "rank": 16,
+      "rankMove": 2,
+      "rankMoveSigned": true,
+      "name": "Donovan Mitchell",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 35.2,
+      "fgPct": 0.579,
+      "fgm": 11,
+      "fga": 19,
+      "ftPct": 0.727,
+      "ftm": 8,
+      "fta": 11,
+      "tpm": 2,
+      "pts": 32,
+      "treb": 10,
+      "ast": 3,
+      "stl": 2,
+      "blk": 1,
+      "valueTotal": 9.86
     },
     {
       "rank": 17,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Tyrese Haliburton",
       "pos": [
         "PG",
@@ -439,12 +440,38 @@
       "ast": 12,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 10.37
+      "valueTotal": 9.39
     },
     {
       "rank": 18,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Chet Holmgren",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 29.2,
+      "fgPct": 0.471,
+      "fgm": 4,
+      "fga": 8.5,
+      "ftPct": 1,
+      "ftm": 5,
+      "fta": 5,
+      "tpm": 0,
+      "pts": 13,
+      "treb": 12,
+      "ast": 2,
+      "stl": 0.5,
+      "blk": 4,
+      "valueTotal": 9.36
+    },
+    {
+      "rank": 19,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Immanuel Quickley",
       "pos": [
         "PG",
@@ -465,37 +492,12 @@
       "ast": 7,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 10.13
-    },
-    {
-      "rank": 19,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Moussa Diabaté",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "CHA",
-      "gp": 1,
-      "mpg": 33.6,
-      "fgPct": 0.636,
-      "fgm": 7,
-      "fga": 11,
-      "ftPct": 1,
-      "ftm": 3,
-      "fta": 3,
-      "tpm": 0,
-      "pts": 17,
-      "treb": 8,
-      "ast": 3,
-      "stl": 5,
-      "blk": 0,
-      "valueTotal": 10.08
+      "valueTotal": 9.17
     },
     {
       "rank": 20,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Victor Wembanyama",
       "pos": [
         "C"
@@ -515,38 +517,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 6,
-      "valueTotal": 9.96
+      "valueTotal": 9.12
     },
     {
       "rank": 21,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Jabari Smith Jr.",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "HOU",
-      "gp": 1,
-      "mpg": 36.5,
-      "fgPct": 0.647,
-      "fgm": 11,
-      "fga": 17,
-      "ftPct": 0.8,
-      "ftm": 4,
-      "fta": 5,
-      "tpm": 4,
-      "pts": 30,
-      "treb": 5,
-      "ast": 1,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 9.86
-    },
-    {
-      "rank": 22,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Nickeil Alexander-Walker",
       "pos": [
         "PG",
@@ -567,37 +543,63 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 9.84
+      "valueTotal": 8.98
     },
     {
-      "rank": 23,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Joel Embiid",
+      "rank": 22,
+      "rankMove": 2,
+      "rankMoveSigned": true,
+      "name": "Moussa Diabaté",
       "pos": [
         "C"
       ],
-      "nbaTeam": "PHI",
+      "nbaTeam": "CHA",
       "gp": 1,
-      "mpg": 33.4,
-      "fgPct": 0.267,
-      "fgm": 4,
-      "fga": 15,
-      "ftPct": 0.75,
+      "mpg": 33.6,
+      "fgPct": 0.636,
+      "fgm": 7,
+      "fga": 11,
+      "ftPct": 1,
       "ftm": 3,
-      "fta": 4,
-      "tpm": 2,
-      "pts": 13,
-      "treb": 11,
-      "ast": 6,
+      "fta": 3,
+      "tpm": 0,
+      "pts": 17,
+      "treb": 8,
+      "ast": 3,
+      "stl": 5,
+      "blk": 0,
+      "valueTotal": 8.92
+    },
+    {
+      "rank": 23,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Jabari Smith Jr.",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "HOU",
+      "gp": 1,
+      "mpg": 36.5,
+      "fgPct": 0.647,
+      "fgm": 11,
+      "fga": 17,
+      "ftPct": 0.8,
+      "ftm": 4,
+      "fta": 5,
+      "tpm": 4,
+      "pts": 30,
+      "treb": 5,
+      "ast": 1,
       "stl": 2,
-      "blk": 3,
-      "valueTotal": 9.72
+      "blk": 0,
+      "valueTotal": 8.83
     },
     {
       "rank": 24,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Ja Morant",
       "pos": [
         "PG"
@@ -617,38 +619,38 @@
       "ast": 8,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 9.7
+      "valueTotal": 8.55
     },
     {
       "rank": 25,
       "rankMove": null,
       "rankMoveSigned": null,
-      "name": "Chet Holmgren",
+      "name": "Aaron Gordon",
       "pos": [
         "PF",
         "C"
       ],
-      "nbaTeam": "OKC",
+      "nbaTeam": "DEN",
       "gp": 1,
-      "mpg": 30.5,
-      "fgPct": 0.375,
-      "fgm": 3,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 8,
-      "fta": 8,
-      "tpm": 0,
-      "pts": 14,
-      "treb": 7,
-      "ast": 2,
-      "stl": 0,
-      "blk": 4,
-      "valueTotal": 8.91
+      "mpg": 29.5,
+      "fgPct": 0.667,
+      "fgm": 6,
+      "fga": 9,
+      "ftPct": 0.833,
+      "ftm": 5,
+      "fta": 6,
+      "tpm": 3,
+      "pts": 20,
+      "treb": 6,
+      "ast": 1,
+      "stl": 2,
+      "blk": 1,
+      "valueTotal": 7.9
     },
     {
       "rank": 26,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Michael Porter Jr.",
       "pos": [
         "SF",
@@ -669,12 +671,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 8.87
+      "valueTotal": 7.81
     },
     {
       "rank": 27,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Cade Cunningham",
       "pos": [
         "PG",
@@ -695,12 +697,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 8.79
+      "valueTotal": 7.79
     },
     {
       "rank": 28,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Walker Kessler",
       "pos": [
         "C"
@@ -720,12 +722,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 2,
-      "valueTotal": 8.79
+      "valueTotal": 7.65
     },
     {
       "rank": 29,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Kevin Durant",
       "pos": [
         "SG",
@@ -747,38 +749,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 8.63
+      "valueTotal": 7.65
     },
     {
       "rank": 30,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Karl-Anthony Towns",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "NY",
-      "gp": 1,
-      "mpg": 23.6,
-      "fgPct": 0.667,
-      "fgm": 6,
-      "fga": 9,
-      "ftPct": 0.571,
-      "ftm": 4,
-      "fta": 7,
-      "tpm": 3,
-      "pts": 19,
-      "treb": 12,
-      "ast": 1,
-      "stl": 1,
-      "blk": 2,
-      "valueTotal": 8.55
-    },
-    {
-      "rank": 31,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Tyler Herro",
       "pos": [
         "PG",
@@ -799,12 +775,38 @@
       "ast": 9,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 8.54
+      "valueTotal": 7.54
+    },
+    {
+      "rank": 31,
+      "rankMove": 3,
+      "rankMoveSigned": true,
+      "name": "Karl-Anthony Towns",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "NY",
+      "gp": 1,
+      "mpg": 23.6,
+      "fgPct": 0.667,
+      "fgm": 6,
+      "fga": 9,
+      "ftPct": 0.571,
+      "ftm": 4,
+      "fta": 7,
+      "tpm": 3,
+      "pts": 19,
+      "treb": 12,
+      "ast": 1,
+      "stl": 1,
+      "blk": 2,
+      "valueTotal": 7.47
     },
     {
       "rank": 32,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Grayson Allen",
       "pos": [
         "SG",
@@ -825,39 +827,37 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 8.5
+      "valueTotal": 7.43
     },
     {
       "rank": 33,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Jaylen Brown",
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Shai Gilgeous-Alexander",
       "pos": [
-        "SG",
-        "SF",
-        "PF"
+        "PG"
       ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 34.9,
-      "fgPct": 0.5,
-      "fgm": 7,
-      "fga": 14,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 2,
-      "pts": 19,
-      "treb": 8,
-      "ast": 6,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 8.45
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 35.3,
+      "fgPct": 0.413,
+      "fgm": 9.5,
+      "fga": 23,
+      "ftPct": 0.833,
+      "ftm": 2.5,
+      "fta": 3,
+      "tpm": 3,
+      "pts": 24.5,
+      "treb": 4,
+      "ast": 3.5,
+      "stl": 1.5,
+      "blk": 2,
+      "valueTotal": 7.43
     },
     {
       "rank": 34,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Kris Dunn",
       "pos": [
         "PG",
@@ -878,12 +878,12 @@
       "ast": 7,
       "stl": 3,
       "blk": 2,
-      "valueTotal": 8.36
+      "valueTotal": 7.27
     },
     {
       "rank": 35,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Keaton Wagler",
       "pos": [
         "SG"
@@ -903,38 +903,12 @@
       "ast": 5,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 8.32
+      "valueTotal": 7.2
     },
     {
       "rank": 36,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Jared McCain",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 22.2,
-      "fgPct": 0.778,
-      "fgm": 7,
-      "fga": 9,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 6,
-      "pts": 20,
-      "treb": 2,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 8.25
-    },
-    {
-      "rank": 37,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Zion Williamson",
       "pos": [
         "PF",
@@ -955,12 +929,12 @@
       "ast": 3,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 8.06
+      "valueTotal": 7.01
     },
     {
-      "rank": 38,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 37,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Alperen Sengün",
       "pos": [
         "PF",
@@ -981,12 +955,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 8.04
+      "valueTotal": 6.89
     },
     {
-      "rank": 39,
+      "rank": 38,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Devin Booker",
       "pos": [
         "PG",
@@ -1007,12 +981,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 7.84
+      "valueTotal": 6.79
     },
     {
-      "rank": 40,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 39,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Jaden McDaniels",
       "pos": [
         "SF"
@@ -1032,12 +1006,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 7.8
+      "valueTotal": 6.55
     },
     {
-      "rank": 41,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 40,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Brook Lopez",
       "pos": [
         "C"
@@ -1057,37 +1031,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 7.75
+      "valueTotal": 6.55
     },
     {
-      "rank": 42,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Wendell Carter Jr.",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "ORL",
-      "gp": 1,
-      "mpg": 30.9,
-      "fgPct": 0.8,
-      "fgm": 8,
-      "fga": 10,
-      "ftPct": 1,
-      "ftm": 5,
-      "fta": 5,
-      "tpm": 1,
-      "pts": 22,
-      "treb": 7,
-      "ast": 0,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 7.67
-    },
-    {
-      "rank": 43,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 41,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Fred VanVleet",
       "pos": [
         "PG"
@@ -1107,12 +1056,37 @@
       "ast": 11,
       "stl": 3,
       "blk": 1,
-      "valueTotal": 7.63
+      "valueTotal": 6.54
     },
     {
-      "rank": 44,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 42,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Wendell Carter Jr.",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "ORL",
+      "gp": 1,
+      "mpg": 30.9,
+      "fgPct": 0.8,
+      "fgm": 8,
+      "fga": 10,
+      "ftPct": 1,
+      "ftm": 5,
+      "fta": 5,
+      "tpm": 1,
+      "pts": 22,
+      "treb": 7,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 6.48
+    },
+    {
+      "rank": 43,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Jalen Duren",
       "pos": [
         "C"
@@ -1132,7 +1106,32 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 7.53
+      "valueTotal": 6.4
+    },
+    {
+      "rank": 44,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "LaMelo Ball",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "MIN",
+      "gp": 1,
+      "mpg": 28.6,
+      "fgPct": 0.412,
+      "fgm": 7,
+      "fga": 17,
+      "ftPct": 0.667,
+      "ftm": 2,
+      "fta": 3,
+      "tpm": 5,
+      "pts": 21,
+      "treb": 2,
+      "ast": 6,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 6.39
     },
     {
       "rank": 45,
@@ -1158,37 +1157,12 @@
       "ast": 7,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 7.45
+      "valueTotal": 6.31
     },
     {
       "rank": 46,
-      "rankMove": null,
-      "rankMoveSigned": null,
-      "name": "LaMelo Ball",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "MIN",
-      "gp": 1,
-      "mpg": 28.6,
-      "fgPct": 0.412,
-      "fgm": 7,
-      "fga": 17,
-      "ftPct": 0.667,
-      "ftm": 2,
-      "fta": 3,
-      "tpm": 5,
-      "pts": 21,
-      "treb": 2,
-      "ast": 6,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 7.41
-    },
-    {
-      "rank": 47,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Dyson Daniels",
       "pos": [
         "SG",
@@ -1209,12 +1183,12 @@
       "ast": 3,
       "stl": 5,
       "blk": 0,
-      "valueTotal": 7.38
+      "valueTotal": 6.26
     },
     {
-      "rank": 48,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 47,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Jaxson Hayes",
       "pos": [
         "C"
@@ -1234,12 +1208,90 @@
       "ast": 3,
       "stl": 2,
       "blk": 6,
-      "valueTotal": 7.25
+      "valueTotal": 6.25
+    },
+    {
+      "rank": 48,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "LeBron James",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 33.6,
+      "fgPct": 0.37,
+      "fgm": 5,
+      "fga": 13.5,
+      "ftPct": 0.769,
+      "ftm": 5,
+      "fta": 6.5,
+      "tpm": 0.5,
+      "pts": 15.5,
+      "treb": 9.5,
+      "ast": 6,
+      "stl": 2,
+      "blk": 1,
+      "valueTotal": 6.25
     },
     {
       "rank": 49,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
+      "name": "Jaylen Brown",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 36.3,
+      "fgPct": 0.5,
+      "fgm": 8.5,
+      "fga": 17,
+      "ftPct": 0.75,
+      "ftm": 1.5,
+      "fta": 2,
+      "tpm": 1.5,
+      "pts": 20,
+      "treb": 8,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0.5,
+      "valueTotal": 6.2
+    },
+    {
+      "rank": 50,
+      "rankMove": 2,
+      "rankMoveSigned": true,
+      "name": "Joel Embiid",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 33.9,
+      "fgPct": 0.387,
+      "fgm": 6,
+      "fga": 15.5,
+      "ftPct": 0.769,
+      "ftm": 5,
+      "fta": 6.5,
+      "tpm": 1.5,
+      "pts": 18.5,
+      "treb": 9,
+      "ast": 3.5,
+      "stl": 1,
+      "blk": 1.5,
+      "valueTotal": 5.83
+    },
+    {
+      "rank": 51,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jonathan Kuminga",
       "pos": [
         "SF",
@@ -1260,12 +1312,12 @@
       "ast": 3,
       "stl": 4,
       "blk": 1,
-      "valueTotal": 6.96
+      "valueTotal": 5.83
     },
     {
-      "rank": 50,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 52,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Bilal Coulibaly",
       "pos": [
         "SG",
@@ -1286,36 +1338,10 @@
       "ast": 1,
       "stl": 4,
       "blk": 2,
-      "valueTotal": 6.91
+      "valueTotal": 5.8
     },
     {
-      "rank": 51,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Derrick White",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "BOS",
-      "gp": 1,
-      "mpg": 35.9,
-      "fgPct": 0.538,
-      "fgm": 7,
-      "fga": 13,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 3,
-      "pts": 17,
-      "treb": 1,
-      "ast": 8,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 6.76
-    },
-    {
-      "rank": 52,
+      "rank": 53,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Stephen Curry",
@@ -1337,12 +1363,38 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 6.72
+      "valueTotal": 5.65
     },
     {
-      "rank": 53,
+      "rank": 54,
+      "rankMove": 3,
+      "rankMoveSigned": true,
+      "name": "Derrick White",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "BOS",
+      "gp": 1,
+      "mpg": 35.9,
+      "fgPct": 0.538,
+      "fgm": 7,
+      "fga": 13,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 3,
+      "pts": 17,
+      "treb": 1,
+      "ast": 8,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 5.65
+    },
+    {
+      "rank": 55,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Andrew Nembhard",
       "pos": [
         "PG",
@@ -1363,12 +1415,12 @@
       "ast": 9,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 6.59
+      "valueTotal": 5.5
     },
     {
-      "rank": 54,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 56,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Ace Bailey",
       "pos": [
         "SF",
@@ -1389,12 +1441,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 3,
-      "valueTotal": 6.55
+      "valueTotal": 5.45
     },
     {
-      "rank": 55,
+      "rank": 57,
       "rankMove": 6,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "CJ McCollum",
       "pos": [
         "PG",
@@ -1415,12 +1467,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 6.53
+      "valueTotal": 5.37
     },
     {
-      "rank": 56,
-      "rankMove": 10,
-      "rankMoveSigned": false,
+      "rank": 58,
+      "rankMove": 9,
+      "rankMoveSigned": true,
       "name": "Kyshawn George",
       "pos": [
         "SG",
@@ -1442,38 +1494,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 6.51
+      "valueTotal": 5.35
     },
     {
-      "rank": 57,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Bam Adebayo",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "MIA",
-      "gp": 1,
-      "mpg": 30.5,
-      "fgPct": 0.5,
-      "fgm": 6,
-      "fga": 12,
-      "ftPct": 0.667,
-      "ftm": 2,
-      "fta": 3,
-      "tpm": 1,
-      "pts": 15,
-      "treb": 7,
-      "ast": 4,
-      "stl": 3,
-      "blk": 0,
-      "valueTotal": 6.46
-    },
-    {
-      "rank": 58,
+      "rank": 59,
       "rankMove": 12,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Jaren Jackson Jr.",
       "pos": [
         "PF",
@@ -1494,12 +1520,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 2,
-      "valueTotal": 6.45
+      "valueTotal": 5.32
     },
     {
-      "rank": 59,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 60,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jalen Johnson",
       "pos": [
         "SF",
@@ -1520,12 +1546,64 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 6.44
+      "valueTotal": 5.27
     },
     {
-      "rank": 60,
+      "rank": 61,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Bam Adebayo",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "MIA",
+      "gp": 1,
+      "mpg": 30.5,
+      "fgPct": 0.5,
+      "fgm": 6,
+      "fga": 12,
+      "ftPct": 0.667,
+      "ftm": 2,
+      "fta": 3,
+      "tpm": 1,
+      "pts": 15,
+      "treb": 7,
+      "ast": 4,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": 5.27
+    },
+    {
+      "rank": 62,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Obi Toppin",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "IND",
+      "gp": 1,
+      "mpg": 24.7,
+      "fgPct": 0.583,
+      "fgm": 7,
+      "fga": 12,
+      "ftPct": 0.667,
+      "ftm": 2,
+      "fta": 3,
+      "tpm": 4,
+      "pts": 20,
+      "treb": 3,
+      "ast": 1,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 5.21
+    },
+    {
+      "rank": 63,
       "rankMove": 5,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Ausar Thompson",
       "pos": [
         "SG",
@@ -1547,38 +1625,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 6.43
+      "valueTotal": 5.16
     },
     {
-      "rank": 61,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Obi Toppin",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "IND",
-      "gp": 1,
-      "mpg": 24.7,
-      "fgPct": 0.583,
-      "fgm": 7,
-      "fga": 12,
-      "ftPct": 0.667,
-      "ftm": 2,
-      "fta": 3,
-      "tpm": 4,
-      "pts": 20,
-      "treb": 3,
-      "ast": 1,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 6.34
-    },
-    {
-      "rank": 62,
+      "rank": 64,
       "rankMove": 5,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Stephon Castle",
       "pos": [
         "PG",
@@ -1599,12 +1651,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 6.28
+      "valueTotal": 5.15
     },
     {
-      "rank": 63,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 65,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Scottie Barnes",
       "pos": [
         "SF",
@@ -1626,89 +1678,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 6.23
-    },
-    {
-      "rank": 64,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Derik Queen",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "NO",
-      "gp": 1,
-      "mpg": 18.1,
-      "fgPct": 0.5,
-      "fgm": 2,
-      "fga": 4,
-      "ftPct": 1,
-      "ftm": 6,
-      "fta": 6,
-      "tpm": 0,
-      "pts": 10,
-      "treb": 10,
-      "ast": 1,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 6.11
-    },
-    {
-      "rank": 65,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Andre Drummond",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "NY",
-      "gp": 1,
-      "mpg": 24.5,
-      "fgPct": 0.385,
-      "fgm": 5,
-      "fga": 13,
-      "ftPct": 0.5,
-      "ftm": 2,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 12,
-      "treb": 14,
-      "ast": 4,
-      "stl": 1,
-      "blk": 2,
-      "valueTotal": 6.1
+      "valueTotal": 5.13
     },
     {
       "rank": 66,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Toumani Camara",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 22.6,
-      "fgPct": 0.667,
-      "fgm": 6,
-      "fga": 9,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 4,
-      "pts": 18,
-      "treb": 2,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 6.08
-    },
-    {
-      "rank": 67,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rankMove": -8,
+      "rankMoveSigned": true,
       "name": "Julian Champagnie",
       "pos": [
         "SF",
@@ -1729,12 +1704,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 3,
-      "valueTotal": 6.08
+      "valueTotal": 4.97
     },
     {
-      "rank": 68,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 67,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Lauri Markkanen",
       "pos": [
         "SF",
@@ -1755,12 +1730,63 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 6.04
+      "valueTotal": 4.95
+    },
+    {
+      "rank": 68,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Toumani Camara",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 22.6,
+      "fgPct": 0.667,
+      "fgm": 6,
+      "fga": 9,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 4,
+      "pts": 18,
+      "treb": 2,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 4.93
     },
     {
       "rank": 69,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Andre Drummond",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "NY",
+      "gp": 1,
+      "mpg": 24.5,
+      "fgPct": 0.385,
+      "fgm": 5,
+      "fga": 13,
+      "ftPct": 0.5,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 12,
+      "treb": 14,
+      "ast": 4,
+      "stl": 1,
+      "blk": 2,
+      "valueTotal": 4.92
+    },
+    {
+      "rank": 70,
       "rankMove": 18,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Davion Mitchell",
       "pos": [
         "PG"
@@ -1780,12 +1806,64 @@
       "ast": 11,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 6.02
+      "valueTotal": 4.91
     },
     {
-      "rank": 70,
-      "rankMove": 13,
-      "rankMoveSigned": false,
+      "rank": 71,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Javonte Green",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "DET",
+      "gp": 1,
+      "mpg": 17.8,
+      "fgPct": 0.5,
+      "fgm": 5,
+      "fga": 10,
+      "ftPct": 1,
+      "ftm": 4,
+      "fta": 4,
+      "tpm": 5,
+      "pts": 19,
+      "treb": 4,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 4.85
+    },
+    {
+      "rank": 72,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Derik Queen",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "NO",
+      "gp": 1,
+      "mpg": 18.1,
+      "fgPct": 0.5,
+      "fgm": 2,
+      "fga": 4,
+      "ftPct": 1,
+      "ftm": 6,
+      "fta": 6,
+      "tpm": 0,
+      "pts": 10,
+      "treb": 10,
+      "ast": 1,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 4.85
+    },
+    {
+      "rank": 73,
+      "rankMove": 14,
+      "rankMoveSigned": true,
       "name": "GG Jackson",
       "pos": [
         "SF",
@@ -1807,63 +1885,63 @@
       "ast": 0,
       "stl": 0,
       "blk": 2,
-      "valueTotal": 5.99
+      "valueTotal": 4.81
     },
     {
-      "rank": 71,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Javonte Green",
+      "rank": 74,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "Duncan Robinson",
       "pos": [
         "SG",
         "SF"
       ],
       "nbaTeam": "DET",
       "gp": 1,
-      "mpg": 17.8,
+      "mpg": 27.8,
       "fgPct": 0.5,
       "fgm": 5,
       "fga": 10,
-      "ftPct": 1,
-      "ftm": 4,
-      "fta": 4,
+      "ftPct": 0.75,
+      "ftm": 6,
+      "fta": 8,
       "tpm": 5,
-      "pts": 19,
-      "treb": 4,
-      "ast": 0,
-      "stl": 0,
+      "pts": 21,
+      "treb": 2,
+      "ast": 2,
+      "stl": 1,
       "blk": 0,
-      "valueTotal": 5.98
+      "valueTotal": 4.78
     },
     {
-      "rank": 72,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "De'Aaron Fox",
+      "rank": 75,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "Darius Garland",
       "pos": [
         "PG"
       ],
-      "nbaTeam": "SA",
+      "nbaTeam": "LAC",
       "gp": 1,
-      "mpg": 31.9,
-      "fgPct": 0.667,
-      "fgm": 6,
-      "fga": 9,
-      "ftPct": 0.667,
-      "ftm": 2,
-      "fta": 3,
-      "tpm": 0,
-      "pts": 14,
-      "treb": 7,
-      "ast": 7,
+      "mpg": 32.1,
+      "fgPct": 0.579,
+      "fgm": 11,
+      "fga": 19,
+      "ftPct": 0.625,
+      "ftm": 5,
+      "fta": 8,
+      "tpm": 3,
+      "pts": 30,
+      "treb": 1,
+      "ast": 4,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 5.93
+      "valueTotal": 4.76
     },
     {
-      "rank": 73,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 76,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Deni Avdija",
       "pos": [
         "SG",
@@ -1885,12 +1963,38 @@
       "ast": 4,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 5.92
+      "valueTotal": 4.74
     },
     {
-      "rank": 74,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 77,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Keyonte George",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "UTA",
+      "gp": 1,
+      "mpg": 28.6,
+      "fgPct": 0.583,
+      "fgm": 7,
+      "fga": 12,
+      "ftPct": 0.571,
+      "ftm": 4,
+      "fta": 7,
+      "tpm": 4,
+      "pts": 22,
+      "treb": 3,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 4.73
+    },
+    {
+      "rank": 78,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Jaime Jaquez Jr.",
       "pos": [
         "SG",
@@ -1912,37 +2016,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 5.9
+      "valueTotal": 4.72
     },
     {
-      "rank": 75,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Ivica Zubac",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "IND",
-      "gp": 1,
-      "mpg": 33.6,
-      "fgPct": 0.583,
-      "fgm": 7,
-      "fga": 12,
-      "ftPct": 0.5,
-      "ftm": 2,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 16,
-      "treb": 15,
-      "ast": 0,
-      "stl": 0,
-      "blk": 2,
-      "valueTotal": 5.9
-    },
-    {
-      "rank": 76,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 79,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Josh Hart",
       "pos": [
         "SG",
@@ -1963,12 +2042,37 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 5.89
+      "valueTotal": 4.72
     },
     {
-      "rank": 77,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rank": 80,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "De'Aaron Fox",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "SA",
+      "gp": 1,
+      "mpg": 31.9,
+      "fgPct": 0.667,
+      "fgm": 6,
+      "fga": 9,
+      "ftPct": 0.667,
+      "ftm": 2,
+      "fta": 3,
+      "tpm": 0,
+      "pts": 14,
+      "treb": 7,
+      "ast": 7,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 4.71
+    },
+    {
+      "rank": 81,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Tristan da Silva",
       "pos": [
         "SF",
@@ -1989,89 +2093,37 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 5.83
+      "valueTotal": 4.7
     },
     {
-      "rank": 78,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Duncan Robinson",
+      "rank": 82,
+      "rankMove": -12,
+      "rankMoveSigned": true,
+      "name": "Ivica Zubac",
       "pos": [
-        "SG",
-        "SF"
+        "C"
       ],
-      "nbaTeam": "DET",
+      "nbaTeam": "IND",
       "gp": 1,
-      "mpg": 27.8,
-      "fgPct": 0.5,
-      "fgm": 5,
-      "fga": 10,
-      "ftPct": 0.75,
-      "ftm": 6,
-      "fta": 8,
-      "tpm": 5,
-      "pts": 21,
-      "treb": 2,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 5.83
-    },
-    {
-      "rank": 79,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Keyonte George",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "UTA",
-      "gp": 1,
-      "mpg": 28.6,
+      "mpg": 33.6,
       "fgPct": 0.583,
       "fgm": 7,
       "fga": 12,
-      "ftPct": 0.571,
-      "ftm": 4,
-      "fta": 7,
-      "tpm": 4,
-      "pts": 22,
-      "treb": 3,
-      "ast": 5,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 5.8
+      "ftPct": 0.5,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 16,
+      "treb": 15,
+      "ast": 0,
+      "stl": 0,
+      "blk": 2,
+      "valueTotal": 4.66
     },
     {
-      "rank": 80,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Darius Garland",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "LAC",
-      "gp": 1,
-      "mpg": 32.1,
-      "fgPct": 0.579,
-      "fgm": 11,
-      "fga": 19,
-      "ftPct": 0.625,
-      "ftm": 5,
-      "fta": 8,
-      "tpm": 3,
-      "pts": 30,
-      "treb": 1,
-      "ast": 4,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 5.78
-    },
-    {
-      "rank": 81,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 83,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Aaron Wiggins",
       "pos": [
         "SG",
@@ -2092,62 +2144,37 @@
       "ast": 0,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 5.75
-    },
-    {
-      "rank": 82,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Day'Ron Sharpe",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "BKN",
-      "gp": 1,
-      "mpg": 29.7,
-      "fgPct": 0.8,
-      "fgm": 4,
-      "fga": 5,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 1,
-      "tpm": 0,
-      "pts": 8,
-      "treb": 8,
-      "ast": 3,
-      "stl": 0,
-      "blk": 3,
-      "valueTotal": 5.73
-    },
-    {
-      "rank": 83,
-      "rankMove": 10,
-      "rankMoveSigned": false,
-      "name": "Marcus Sasser",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "DAL",
-      "gp": 1,
-      "mpg": 23.7,
-      "fgPct": 0.75,
-      "fgm": 6,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 4,
-      "pts": 17,
-      "treb": 1,
-      "ast": 1,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 5.73
+      "valueTotal": 4.57
     },
     {
       "rank": 84,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Brandon Williams",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "GS",
+      "gp": 1,
+      "mpg": 17.8,
+      "fgPct": 0.25,
+      "fgm": 3,
+      "fga": 12,
+      "ftPct": 1,
+      "ftm": 7,
+      "fta": 7,
+      "tpm": 1,
+      "pts": 14,
+      "treb": 4,
+      "ast": 3,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": 4.56
+    },
+    {
+      "rank": 85,
+      "rankMove": -10,
+      "rankMoveSigned": true,
       "name": "Kasparas Jakucionis",
       "pos": [
         "PG",
@@ -2168,37 +2195,62 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 5.69
-    },
-    {
-      "rank": 85,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Brandon Williams",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "GS",
-      "gp": 1,
-      "mpg": 17.8,
-      "fgPct": 0.25,
-      "fgm": 3,
-      "fga": 12,
-      "ftPct": 1,
-      "ftm": 7,
-      "fta": 7,
-      "tpm": 1,
-      "pts": 14,
-      "treb": 4,
-      "ast": 3,
-      "stl": 3,
-      "blk": 0,
-      "valueTotal": 5.68
+      "valueTotal": 4.56
     },
     {
       "rank": 86,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rankMove": -8,
+      "rankMoveSigned": true,
+      "name": "Marcus Sasser",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "DAL",
+      "gp": 1,
+      "mpg": 23.7,
+      "fgPct": 0.75,
+      "fgm": 6,
+      "fga": 8,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 4,
+      "pts": 17,
+      "treb": 1,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 4.55
+    },
+    {
+      "rank": 87,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Day'Ron Sharpe",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "BKN",
+      "gp": 1,
+      "mpg": 29.7,
+      "fgPct": 0.8,
+      "fgm": 4,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 8,
+      "ast": 3,
+      "stl": 0,
+      "blk": 3,
+      "valueTotal": 4.53
+    },
+    {
+      "rank": 88,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Dennis Schröder",
       "pos": [
         "PG",
@@ -2219,38 +2271,37 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 5.68
+      "valueTotal": 4.52
     },
     {
-      "rank": 87,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "LeBron James",
+      "rank": 89,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Trae Young",
       "pos": [
-        "SF",
-        "PF"
+        "PG"
       ],
-      "nbaTeam": "PHI",
+      "nbaTeam": "WAS",
       "gp": 1,
-      "mpg": 33.8,
-      "fgPct": 0.385,
-      "fgm": 5,
+      "mpg": 38.4,
+      "fgPct": 0.308,
+      "fgm": 4,
       "fga": 13,
-      "ftPct": 0.667,
-      "ftm": 4,
-      "fta": 6,
+      "ftPct": 0.75,
+      "ftm": 12,
+      "fta": 16,
       "tpm": 0,
-      "pts": 14,
-      "treb": 9,
-      "ast": 7,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 5.45
+      "pts": 20,
+      "treb": 0,
+      "ast": 13,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 4.34
     },
     {
-      "rank": 88,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 90,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Naji Marshall",
       "pos": [
         "SG",
@@ -2272,35 +2323,10 @@
       "ast": 6,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 5.44
+      "valueTotal": 4.26
     },
     {
-      "rank": 89,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Trae Young",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "WAS",
-      "gp": 1,
-      "mpg": 38.4,
-      "fgPct": 0.308,
-      "fgm": 4,
-      "fga": 13,
-      "ftPct": 0.75,
-      "ftm": 12,
-      "fta": 16,
-      "tpm": 0,
-      "pts": 20,
-      "treb": 0,
-      "ast": 13,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 5.27
-    },
-    {
-      "rank": 90,
+      "rank": 91,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Precious Achiuwa",
@@ -2323,12 +2349,38 @@
       "ast": 2,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 5.25
+      "valueTotal": 4.04
     },
     {
-      "rank": 91,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 92,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Evan Mobley",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 34,
+      "fgPct": 0.538,
+      "fgm": 7,
+      "fga": 13,
+      "ftPct": 1,
+      "ftm": 3,
+      "fta": 3,
+      "tpm": 1,
+      "pts": 18,
+      "treb": 8,
+      "ast": 2,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 4.01
+    },
+    {
+      "rank": 93,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Desmond Bane",
       "pos": [
         "SG",
@@ -2349,38 +2401,12 @@
       "ast": 2,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 5.07
+      "valueTotal": 3.98
     },
     {
-      "rank": 92,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Svi Mykhailiuk",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "UTA",
-      "gp": 1,
-      "mpg": 19.4,
-      "fgPct": 0.8,
-      "fgm": 4,
-      "fga": 5,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 2,
-      "pts": 10,
-      "treb": 1,
-      "ast": 2,
-      "stl": 3,
-      "blk": 0,
-      "valueTotal": 5.07
-    },
-    {
-      "rank": 93,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 94,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Giannis Antetokounmpo",
       "pos": [
         "PF",
@@ -2401,37 +2427,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 5.03
-    },
-    {
-      "rank": 94,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Myles Turner",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 32.3,
-      "fgPct": 0.571,
-      "fgm": 4,
-      "fga": 7,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 2,
-      "pts": 11,
-      "treb": 5,
-      "ast": 3,
-      "stl": 0,
-      "blk": 1,
-      "valueTotal": 4.98
+      "valueTotal": 3.97
     },
     {
       "rank": 95,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Zach LaVine",
       "pos": [
         "PG",
@@ -2453,12 +2454,89 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 4.93
+      "valueTotal": 3.87
     },
     {
       "rank": 96,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Svi Mykhailiuk",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "UTA",
+      "gp": 1,
+      "mpg": 19.4,
+      "fgPct": 0.8,
+      "fgm": 4,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 2,
+      "pts": 10,
+      "treb": 1,
+      "ast": 2,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": 3.83
+    },
+    {
+      "rank": 97,
+      "rankMove": 9,
+      "rankMoveSigned": true,
+      "name": "James Harden",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 32.9,
+      "fgPct": 0.417,
+      "fgm": 5,
+      "fga": 12,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 3,
+      "pts": 16,
+      "treb": 3,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 3.8
+    },
+    {
+      "rank": 98,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Myles Turner",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "MIL",
+      "gp": 1,
+      "mpg": 32.3,
+      "fgPct": 0.571,
+      "fgm": 4,
+      "fga": 7,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 2,
+      "pts": 11,
+      "treb": 5,
+      "ast": 3,
+      "stl": 0,
+      "blk": 1,
+      "valueTotal": 3.77
+    },
+    {
+      "rank": 99,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Amen Thompson",
       "pos": [
         "PG",
@@ -2479,37 +2557,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 4.93
+      "valueTotal": 3.71
     },
     {
-      "rank": 97,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Kyrie Irving",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "DAL",
-      "gp": 1,
-      "mpg": 23.8,
-      "fgPct": 0.667,
-      "fgm": 6,
-      "fga": 9,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 15,
-      "treb": 4,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 4.78
-    },
-    {
-      "rank": 98,
+      "rank": 100,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Franz Wagner",
       "pos": [
         "SF",
@@ -2530,12 +2583,37 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 4.69
+      "valueTotal": 3.55
     },
     {
-      "rank": 99,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 101,
+      "rankMove": 3,
+      "rankMoveSigned": true,
+      "name": "Kyrie Irving",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "DAL",
+      "gp": 1,
+      "mpg": 23.8,
+      "fgPct": 0.667,
+      "fgm": 6,
+      "fga": 9,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 15,
+      "treb": 4,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 3.54
+    },
+    {
+      "rank": 102,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Bub Carrington",
       "pos": [
         "PG",
@@ -2556,12 +2634,12 @@
       "ast": 4,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 4.66
+      "valueTotal": 3.46
     },
     {
-      "rank": 100,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 103,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Dylan Harper",
       "pos": [
         "PG",
@@ -2582,12 +2660,12 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 4.59
+      "valueTotal": 3.39
     },
     {
-      "rank": 101,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 104,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Zaccharie Risacher",
       "pos": [
         "SF",
@@ -2608,38 +2686,12 @@
       "ast": 2,
       "stl": 5,
       "blk": 0,
-      "valueTotal": 4.53
+      "valueTotal": 3.23
     },
     {
-      "rank": 102,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Ja'Kobe Walter",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "TOR",
-      "gp": 1,
-      "mpg": 23.3,
-      "fgPct": 0.5,
-      "fgm": 4,
-      "fga": 8,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 10,
-      "treb": 3,
-      "ast": 4,
-      "stl": 3,
-      "blk": 0,
-      "valueTotal": 4.19
-    },
-    {
-      "rank": 103,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 105,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Jalen Brunson",
       "pos": [
         "PG"
@@ -2659,90 +2711,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 4.19
-    },
-    {
-      "rank": 104,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Keon Ellis",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "BKN",
-      "gp": 1,
-      "mpg": 33.9,
-      "fgPct": 0.429,
-      "fgm": 3,
-      "fga": 7,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 7,
-      "treb": 2,
-      "ast": 4,
-      "stl": 2,
-      "blk": 1,
-      "valueTotal": 4.16
-    },
-    {
-      "rank": 105,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Quentin Grimes",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "LAL",
-      "gp": 1,
-      "mpg": 27.5,
-      "fgPct": 0.571,
-      "fgm": 4,
-      "fga": 7,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 10,
-      "treb": 2,
-      "ast": 4,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 4.16
+      "valueTotal": 3.08
     },
     {
       "rank": 106,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Jalen Smith",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "CHI",
-      "gp": 1,
-      "mpg": 19,
-      "fgPct": 0.5,
-      "fgm": 5,
-      "fga": 10,
-      "ftPct": 0.833,
-      "ftm": 5,
-      "fta": 6,
-      "tpm": 0,
-      "pts": 15,
-      "treb": 8,
-      "ast": 1,
-      "stl": 0,
-      "blk": 1,
-      "valueTotal": 4.12
-    },
-    {
-      "rank": 107,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rankMove": 8,
+      "rankMoveSigned": true,
       "name": "Jerami Grant",
       "pos": [
         "SF",
@@ -2763,12 +2737,116 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 4.08
+      "valueTotal": 2.96
+    },
+    {
+      "rank": 107,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Ja'Kobe Walter",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "TOR",
+      "gp": 1,
+      "mpg": 23.3,
+      "fgPct": 0.5,
+      "fgm": 4,
+      "fga": 8,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 10,
+      "treb": 3,
+      "ast": 4,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": 2.96
     },
     {
       "rank": 108,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Quentin Grimes",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "LAL",
+      "gp": 1,
+      "mpg": 27.5,
+      "fgPct": 0.571,
+      "fgm": 4,
+      "fga": 7,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 10,
+      "treb": 2,
+      "ast": 4,
+      "stl": 1,
+      "blk": 1,
+      "valueTotal": 2.95
+    },
+    {
+      "rank": 109,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Keon Ellis",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "BKN",
+      "gp": 1,
+      "mpg": 33.9,
+      "fgPct": 0.429,
+      "fgm": 3,
+      "fga": 7,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 7,
+      "treb": 2,
+      "ast": 4,
+      "stl": 2,
+      "blk": 1,
+      "valueTotal": 2.94
+    },
+    {
+      "rank": 110,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Jalen Smith",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 19,
+      "fgPct": 0.5,
+      "fgm": 5,
+      "fga": 10,
+      "ftPct": 0.833,
+      "ftm": 5,
+      "fta": 6,
+      "tpm": 0,
+      "pts": 15,
+      "treb": 8,
+      "ast": 1,
+      "stl": 0,
+      "blk": 1,
+      "valueTotal": 2.9
+    },
+    {
+      "rank": 111,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Derrick Jones Jr.",
       "pos": [
         "SF",
@@ -2789,12 +2867,12 @@
       "ast": 5,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 4.03
+      "valueTotal": 2.74
     },
     {
-      "rank": 109,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 112,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Collin Murray-Boyles",
       "pos": [
         "PF",
@@ -2815,12 +2893,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 3.91
+      "valueTotal": 2.63
     },
     {
-      "rank": 110,
+      "rank": 113,
       "rankMove": 14,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Draymond Green",
       "pos": [
         "PF",
@@ -2841,37 +2919,12 @@
       "ast": 8,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 3.86
+      "valueTotal": 2.6
     },
     {
-      "rank": 111,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Zach Edey",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "MEM",
-      "gp": 1,
-      "mpg": 21.1,
-      "fgPct": 0.6,
-      "fgm": 3,
-      "fga": 5,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 6,
-      "treb": 9,
-      "ast": 0,
-      "stl": 0,
-      "blk": 2,
-      "valueTotal": 3.83
-    },
-    {
-      "rank": 112,
+      "rank": 114,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Ayo Dosunmu",
       "pos": [
         "PG",
@@ -2892,12 +2945,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 3.82
+      "valueTotal": 2.6
     },
     {
-      "rank": 113,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 115,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Scotty Pippen Jr.",
       "pos": [
         "PG"
@@ -2917,10 +2970,87 @@
       "ast": 5,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 3.74
+      "valueTotal": 2.55
     },
     {
-      "rank": 114,
+      "rank": 116,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Zach Edey",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "MEM",
+      "gp": 1,
+      "mpg": 21.1,
+      "fgPct": 0.6,
+      "fgm": 3,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 6,
+      "treb": 9,
+      "ast": 0,
+      "stl": 0,
+      "blk": 2,
+      "valueTotal": 2.52
+    },
+    {
+      "rank": 117,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Alex Caruso",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 22.2,
+      "fgPct": 0.545,
+      "fgm": 3,
+      "fga": 5.5,
+      "ftPct": 0.5,
+      "ftm": 0.5,
+      "fta": 1,
+      "tpm": 1.5,
+      "pts": 8,
+      "treb": 5,
+      "ast": 3,
+      "stl": 1,
+      "blk": 0.5,
+      "valueTotal": 2.47
+    },
+    {
+      "rank": 118,
+      "rankMove": 8,
+      "rankMoveSigned": true,
+      "name": "Matas Buzelis",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 24.8,
+      "fgPct": 0.25,
+      "fgm": 2,
+      "fga": 8,
+      "ftPct": 0.813,
+      "ftm": 13,
+      "fta": 16,
+      "tpm": 0,
+      "pts": 17,
+      "treb": 6,
+      "ast": 0,
+      "stl": 0,
+      "blk": 2,
+      "valueTotal": 2.47
+    },
+    {
+      "rank": 119,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Jose Alvarado",
@@ -2942,12 +3072,63 @@
       "ast": 3,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 3.72
+      "valueTotal": 2.46
     },
     {
-      "rank": 115,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 120,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Payton Pritchard",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "BOS",
+      "gp": 1,
+      "mpg": 27.5,
+      "fgPct": 0.444,
+      "fgm": 4,
+      "fga": 9,
+      "ftPct": 0.875,
+      "ftm": 7,
+      "fta": 8,
+      "tpm": 2,
+      "pts": 17,
+      "treb": 4,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 2.43
+    },
+    {
+      "rank": 121,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Jalen Williams",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 31.6,
+      "fgPct": 0.387,
+      "fgm": 6,
+      "fga": 15.5,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 1.5,
+      "pts": 16.5,
+      "treb": 6,
+      "ast": 2.5,
+      "stl": 0.5,
+      "blk": 0.5,
+      "valueTotal": 2.39
+    },
+    {
+      "rank": 122,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Quenton Jackson",
       "pos": [
         "PG",
@@ -2968,37 +3149,12 @@
       "ast": 1,
       "stl": 3,
       "blk": 0,
-      "valueTotal": 3.69
+      "valueTotal": 2.38
     },
     {
-      "rank": 116,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Payton Pritchard",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "BOS",
-      "gp": 1,
-      "mpg": 27.5,
-      "fgPct": 0.444,
-      "fgm": 4,
-      "fga": 9,
-      "ftPct": 0.875,
-      "ftm": 7,
-      "fta": 8,
-      "tpm": 2,
-      "pts": 17,
-      "treb": 4,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 3.6
-    },
-    {
-      "rank": 117,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 123,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Jake LaRavia",
       "pos": [
         "SF",
@@ -3019,12 +3175,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 3.54
+      "valueTotal": 2.26
     },
     {
-      "rank": 118,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 124,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Ryan Kalkbrenner",
       "pos": [
         "C"
@@ -3044,38 +3200,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 2,
-      "valueTotal": 3.52
+      "valueTotal": 2.25
     },
     {
-      "rank": 119,
-      "rankMove": 15,
-      "rankMoveSigned": false,
-      "name": "Matas Buzelis",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "CHI",
-      "gp": 1,
-      "mpg": 24.8,
-      "fgPct": 0.25,
-      "fgm": 2,
-      "fga": 8,
-      "ftPct": 0.813,
-      "ftm": 13,
-      "fta": 16,
-      "tpm": 0,
-      "pts": 17,
-      "treb": 6,
-      "ast": 0,
-      "stl": 0,
-      "blk": 2,
-      "valueTotal": 3.51
-    },
-    {
-      "rank": 120,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 125,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Jock Landale",
       "pos": [
         "C"
@@ -3095,12 +3225,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 3.42
+      "valueTotal": 2.17
     },
     {
-      "rank": 121,
-      "rankMove": 10,
-      "rankMoveSigned": false,
+      "rank": 126,
+      "rankMove": 9,
+      "rankMoveSigned": true,
       "name": "Keldon Johnson",
       "pos": [
         "SF",
@@ -3121,12 +3251,12 @@
       "ast": 1,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 3.41
+      "valueTotal": 2.12
     },
     {
-      "rank": 122,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 127,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Cedric Coward",
       "pos": [
         "SG",
@@ -3147,12 +3277,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 3.38
+      "valueTotal": 2.08
     },
     {
-      "rank": 123,
+      "rank": 128,
       "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Royce O'Neale",
       "pos": [
         "SF",
@@ -3173,64 +3303,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 3.33
+      "valueTotal": 2.07
     },
     {
-      "rank": 124,
-      "rankMove": 14,
-      "rankMoveSigned": false,
-      "name": "Kyle Kuzma",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 27.1,
-      "fgPct": 0.222,
-      "fgm": 2,
-      "fga": 9,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 5,
-      "treb": 6,
-      "ast": 3,
-      "stl": 3,
-      "blk": 0,
-      "valueTotal": 3.31
-    },
-    {
-      "rank": 125,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Jaylen Wells",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "MEM",
-      "gp": 1,
-      "mpg": 27.7,
-      "fgPct": 0.5,
-      "fgm": 5,
-      "fga": 10,
-      "ftPct": 0.333,
-      "ftm": 1,
-      "fta": 3,
-      "tpm": 1,
-      "pts": 12,
-      "treb": 5,
-      "ast": 0,
-      "stl": 4,
-      "blk": 0,
-      "valueTotal": 3.31
-    },
-    {
-      "rank": 126,
+      "rank": 129,
       "rankMove": 9,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Gradey Dick",
       "pos": [
         "SG",
@@ -3251,12 +3329,64 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 3.28
+      "valueTotal": 2.06
     },
     {
-      "rank": 127,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rank": 130,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Jaylen Wells",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "MEM",
+      "gp": 1,
+      "mpg": 27.7,
+      "fgPct": 0.5,
+      "fgm": 5,
+      "fga": 10,
+      "ftPct": 0.333,
+      "ftm": 1,
+      "fta": 3,
+      "tpm": 1,
+      "pts": 12,
+      "treb": 5,
+      "ast": 0,
+      "stl": 4,
+      "blk": 0,
+      "valueTotal": 2.05
+    },
+    {
+      "rank": 131,
+      "rankMove": 12,
+      "rankMoveSigned": true,
+      "name": "Kyle Kuzma",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "MIL",
+      "gp": 1,
+      "mpg": 27.1,
+      "fgPct": 0.222,
+      "fgm": 2,
+      "fga": 9,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 5,
+      "treb": 6,
+      "ast": 3,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": 2.02
+    },
+    {
+      "rank": 132,
+      "rankMove": 8,
+      "rankMoveSigned": true,
       "name": "Ziaire Williams",
       "pos": [
         "SG",
@@ -3277,12 +3407,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 3.27
+      "valueTotal": 1.99
     },
     {
-      "rank": 128,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 133,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Marcus Smart",
       "pos": [
         "PG",
@@ -3303,12 +3433,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 3.24
+      "valueTotal": 1.96
     },
     {
-      "rank": 129,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rank": 134,
+      "rankMove": 7,
+      "rankMoveSigned": true,
       "name": "Bobby Portis Jr.",
       "pos": [
         "PF",
@@ -3329,35 +3459,37 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 3.23
+      "valueTotal": 1.94
     },
     {
-      "rank": 130,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Tobe Awaka",
-      "pos": [],
-      "nbaTeam": "CHI",
+      "rank": 135,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Allen Graves",
+      "pos": [
+        "PF"
+      ],
+      "nbaTeam": "TOR",
       "gp": 1,
-      "mpg": 14.2,
-      "fgPct": 1,
-      "fgm": 1,
-      "fga": 1,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
+      "mpg": 19.5,
+      "fgPct": 0.4,
+      "fgm": 2,
+      "fga": 5,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
       "tpm": 0,
-      "pts": 2,
-      "treb": 7,
-      "ast": 2,
+      "pts": 5,
+      "treb": 5,
+      "ast": 0,
       "stl": 1,
-      "blk": 1,
-      "valueTotal": 3.23
+      "blk": 3,
+      "valueTotal": 1.91
     },
     {
-      "rank": 131,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rank": 136,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Noah Clowney",
       "pos": [
         "PF",
@@ -3378,38 +3510,188 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 3.21
+      "valueTotal": 1.91
     },
     {
-      "rank": 132,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Alex Caruso",
+      "rank": 137,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Tobe Awaka",
+      "pos": [],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 14.2,
+      "fgPct": 1,
+      "fgm": 1,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 7,
+      "ast": 2,
+      "stl": 1,
+      "blk": 1,
+      "valueTotal": 1.88
+    },
+    {
+      "rank": 138,
+      "rankMove": 18,
+      "rankMoveSigned": true,
+      "name": "Peyton Watson",
       "pos": [
-        "SG",
-        "SF"
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 30.5,
+      "fgPct": 0.286,
+      "fgm": 2,
+      "fga": 7,
+      "ftPct": 1,
+      "ftm": 4,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 1,
+      "ast": 2,
+      "stl": 2,
+      "blk": 1,
+      "valueTotal": 1.85
+    },
+    {
+      "rank": 139,
+      "rankMove": 5,
+      "rankMoveSigned": true,
+      "name": "Ajay Mitchell",
+      "pos": [
+        "PG",
+        "SG"
       ],
       "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 22.8,
+      "fgPct": 0.368,
+      "fgm": 3.5,
+      "fga": 9.5,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 2.5,
+      "ast": 3,
+      "stl": 2.5,
+      "blk": 0.5,
+      "valueTotal": 1.84
+    },
+    {
+      "rank": 140,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Jarrett Allen",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "CLE",
       "gp": 1,
-      "mpg": 24.7,
-      "fgPct": 0.75,
+      "mpg": 28.2,
+      "fgPct": 0.6,
+      "fgm": 6,
+      "fga": 10,
+      "ftPct": 0.5,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 14,
+      "treb": 7,
+      "ast": 0,
+      "stl": 0,
+      "blk": 2,
+      "valueTotal": 1.84
+    },
+    {
+      "rank": 141,
+      "rankMove": 4,
+      "rankMoveSigned": true,
+      "name": "Onyeka Okongwu",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "ATL",
+      "gp": 1,
+      "mpg": 29.3,
+      "fgPct": 0.375,
       "fgm": 3,
-      "fga": 4,
+      "fga": 8,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 5,
+      "ast": 7,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 1.82
+    },
+    {
+      "rank": 142,
+      "rankMove": 5,
+      "rankMoveSigned": true,
+      "name": "Jared McCain",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 20.1,
+      "fgPct": 0.533,
+      "fgm": 4,
+      "fga": 7.5,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 3,
+      "pts": 12,
+      "treb": 1,
+      "ast": 1.5,
+      "stl": 0.5,
+      "blk": 0,
+      "valueTotal": 1.81
+    },
+    {
+      "rank": 143,
+      "rankMove": -11,
+      "rankMoveSigned": true,
+      "name": "Deandre Ayton",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "WAS",
+      "gp": 1,
+      "mpg": 15.1,
+      "fgPct": 0.833,
+      "fgm": 5,
+      "fga": 6,
       "ftPct": 0.5,
       "ftm": 1,
       "fta": 2,
-      "tpm": 2,
-      "pts": 9,
-      "treb": 6,
-      "ast": 1,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 3.19
+      "tpm": 0,
+      "pts": 11,
+      "treb": 4,
+      "ast": 0,
+      "stl": 0,
+      "blk": 2,
+      "valueTotal": 1.81
     },
     {
-      "rank": 133,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 144,
+      "rankMove": -11,
+      "rankMoveSigned": true,
       "name": "Justin Champagnie",
       "pos": [
         "SF",
@@ -3430,139 +3712,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 3.15
+      "valueTotal": 1.79
     },
     {
-      "rank": 134,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Allen Graves",
-      "pos": [
-        "PF"
-      ],
-      "nbaTeam": "TOR",
-      "gp": 1,
-      "mpg": 19.5,
-      "fgPct": 0.4,
-      "fgm": 2,
-      "fga": 5,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 5,
-      "treb": 5,
-      "ast": 0,
-      "stl": 1,
-      "blk": 3,
-      "valueTotal": 3.13
-    },
-    {
-      "rank": 135,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Onyeka Okongwu",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "ATL",
-      "gp": 1,
-      "mpg": 29.3,
-      "fgPct": 0.375,
-      "fgm": 3,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 8,
-      "treb": 5,
-      "ast": 7,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 3.1
-    },
-    {
-      "rank": 136,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Jamison Battle",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "TOR",
-      "gp": 1,
-      "mpg": 11,
-      "fgPct": 0.75,
-      "fgm": 3,
-      "fga": 4,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 2,
-      "pts": 8,
-      "treb": 5,
-      "ast": 0,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 3.09
-    },
-    {
-      "rank": 137,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Kentavious Caldwell-Pope",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 26.1,
-      "fgPct": 0.375,
-      "fgm": 3,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 2,
-      "pts": 10,
-      "treb": 4,
-      "ast": 1,
-      "stl": 0,
-      "blk": 1,
-      "valueTotal": 3.08
-    },
-    {
-      "rank": 138,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Deandre Ayton",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "WAS",
-      "gp": 1,
-      "mpg": 15.1,
-      "fgPct": 0.833,
-      "fgm": 5,
-      "fga": 6,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 11,
-      "treb": 4,
-      "ast": 0,
-      "stl": 0,
-      "blk": 2,
-      "valueTotal": 3.05
-    },
-    {
-      "rank": 139,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 145,
+      "rankMove": -9,
+      "rankMoveSigned": true,
       "name": "Sam Hauser",
       "pos": [
         "SF",
@@ -3583,38 +3738,89 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 3.05
+      "valueTotal": 1.77
     },
     {
-      "rank": 140,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Paul Reed",
+      "rank": 146,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Jamison Battle",
       "pos": [
-        "PF",
-        "C"
+        "SF",
+        "PF"
       ],
-      "nbaTeam": "DET",
+      "nbaTeam": "TOR",
       "gp": 1,
-      "mpg": 16.7,
-      "fgPct": 0.667,
-      "fgm": 2,
-      "fga": 3,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 6,
-      "treb": 6,
-      "ast": 2,
+      "mpg": 11,
+      "fgPct": 0.75,
+      "fgm": 3,
+      "fga": 4,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 2,
+      "pts": 8,
+      "treb": 5,
+      "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 2.89
+      "valueTotal": 1.76
     },
     {
-      "rank": 141,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 147,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "VJ Edgecombe",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 34,
+      "fgPct": 0.381,
+      "fgm": 4,
+      "fga": 10.5,
+      "ftPct": 0.6,
+      "ftm": 1.5,
+      "fta": 2.5,
+      "tpm": 0.5,
+      "pts": 10,
+      "treb": 5.5,
+      "ast": 3.5,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 1.65
+    },
+    {
+      "rank": 148,
+      "rankMove": 32,
+      "rankMoveSigned": true,
+      "name": "Caleb Wilson",
+      "pos": [
+        "PF"
+      ],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 32.5,
+      "fgPct": 0.333,
+      "fgm": 7,
+      "fga": 21,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 16,
+      "treb": 4,
+      "ast": 0,
+      "stl": 3,
+      "blk": 1,
+      "valueTotal": 1.58
+    },
+    {
+      "rank": 149,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Saddiq Bey",
       "pos": [
         "SF",
@@ -3635,63 +3841,61 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 2.84
+      "valueTotal": 1.57
     },
     {
-      "rank": 142,
-      "rankMove": 32,
-      "rankMoveSigned": false,
-      "name": "Caleb Wilson",
-      "pos": [
-        "PF"
-      ],
-      "nbaTeam": "CHI",
+      "rank": 150,
+      "rankMove": -8,
+      "rankMoveSigned": true,
+      "name": "Mario Hezonja",
+      "pos": [],
+      "nbaTeam": "CLE",
       "gp": 1,
-      "mpg": 32.5,
-      "fgPct": 0.333,
-      "fgm": 7,
-      "fga": 21,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 16,
-      "treb": 4,
-      "ast": 0,
-      "stl": 3,
-      "blk": 1,
-      "valueTotal": 2.75
-    },
-    {
-      "rank": 143,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Jrue Holiday",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 20.6,
-      "fgPct": 0.333,
-      "fgm": 2,
-      "fga": 6,
-      "ftPct": 1,
-      "ftm": 4,
-      "fta": 4,
+      "mpg": 18.6,
+      "fgPct": 0.385,
+      "fgm": 5,
+      "fga": 13,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
       "tpm": 0,
-      "pts": 8,
-      "treb": 4,
-      "ast": 1,
+      "pts": 10,
+      "treb": 3,
+      "ast": 2,
       "stl": 2,
-      "blk": 0,
-      "valueTotal": 2.73
+      "blk": 1,
+      "valueTotal": 1.55
     },
     {
-      "rank": 144,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 151,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Paul Reed",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "DET",
+      "gp": 1,
+      "mpg": 16.7,
+      "fgPct": 0.667,
+      "fgm": 2,
+      "fga": 3,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 6,
+      "treb": 6,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 1.55
+    },
+    {
+      "rank": 152,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Pascal Siakam",
       "pos": [
         "PF",
@@ -3712,12 +3916,38 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 2.69
+      "valueTotal": 1.53
     },
     {
-      "rank": 145,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 153,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Jrue Holiday",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 20.6,
+      "fgPct": 0.333,
+      "fgm": 2,
+      "fga": 6,
+      "ftPct": 1,
+      "ftm": 4,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 4,
+      "ast": 1,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": 1.45
+    },
+    {
+      "rank": 154,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Jase Richardson",
       "pos": [
         "PG",
@@ -3738,12 +3968,12 @@
       "ast": 3,
       "stl": 1,
       "blk": 2,
-      "valueTotal": 2.61
+      "valueTotal": 1.35
     },
     {
-      "rank": 146,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 155,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Jalen Suggs",
       "pos": [
         "PG",
@@ -3764,12 +3994,12 @@
       "ast": 5,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 2.6
+      "valueTotal": 1.34
     },
     {
-      "rank": 147,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 156,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Graham Ike",
       "pos": [
         "PF"
@@ -3789,12 +4019,39 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 2.54
+      "valueTotal": 1.3
     },
     {
-      "rank": 148,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 157,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Cason Wallace",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 21.6,
+      "fgPct": 0.375,
+      "fgm": 3,
+      "fga": 8,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1.5,
+      "pts": 7.5,
+      "treb": 2,
+      "ast": 1.5,
+      "stl": 2.5,
+      "blk": 0,
+      "valueTotal": 1.25
+    },
+    {
+      "rank": 158,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Pelle Larsson",
       "pos": [
         "SG",
@@ -3815,12 +4072,12 @@
       "ast": 4,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 2.46
+      "valueTotal": 1.19
     },
     {
-      "rank": 149,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 159,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Baylor Scheierman",
       "pos": [
         "SG",
@@ -3841,88 +4098,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 2.45
+      "valueTotal": 1.13
     },
     {
-      "rank": 150,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Jalen Williams",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 29.9,
-      "fgPct": 0.313,
-      "fgm": 5,
-      "fga": 16,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 12,
-      "treb": 7,
-      "ast": 2,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 2.43
-    },
-    {
-      "rank": 151,
-      "rankMove": null,
-      "rankMoveSigned": null,
-      "name": "Donovan Clingan",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 20.7,
-      "fgPct": 0.444,
-      "fgm": 4,
-      "fga": 9,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 2,
-      "pts": 11,
-      "treb": 7,
-      "ast": 2,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 2.38
-    },
-    {
-      "rank": 152,
+      "rank": 160,
       "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Isaiah Hartenstein",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 17.4,
-      "fgPct": 0.5,
-      "fgm": 2,
-      "fga": 4,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 4,
-      "treb": 3,
-      "ast": 3,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 2.34
-    },
-    {
-      "rank": 153,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "OG Anunoby",
       "pos": [
         "SF",
@@ -3943,62 +4124,63 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 2.33
+      "valueTotal": 1.11
     },
     {
-      "rank": 154,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Isaiah Jackson",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "LAC",
-      "gp": 1,
-      "mpg": 14.9,
-      "fgPct": 0.75,
-      "fgm": 6,
-      "fga": 8,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 13,
-      "treb": 5,
-      "ast": 0,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 2.26
-    },
-    {
-      "rank": 155,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Robert Williams III",
+      "rank": 161,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Donovan Clingan",
       "pos": [
         "C"
       ],
       "nbaTeam": "POR",
       "gp": 1,
-      "mpg": 15.3,
-      "fgPct": 0.333,
-      "fgm": 1,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 2,
-      "treb": 10,
-      "ast": 1,
+      "mpg": 20.7,
+      "fgPct": 0.444,
+      "fgm": 4,
+      "fga": 9,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 2,
+      "pts": 11,
+      "treb": 7,
+      "ast": 2,
       "stl": 0,
-      "blk": 1,
-      "valueTotal": 2.25
+      "blk": 0,
+      "valueTotal": 1.08
     },
     {
-      "rank": 156,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rank": 162,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Kentavious Caldwell-Pope",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 25.5,
+      "fgPct": 0.444,
+      "fgm": 2,
+      "fga": 4.5,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 1.5,
+      "pts": 6.5,
+      "treb": 3.5,
+      "ast": 1.5,
+      "stl": 0.5,
+      "blk": 0.5,
+      "valueTotal": 1.05
+    },
+    {
+      "rank": 163,
+      "rankMove": 11,
+      "rankMoveSigned": true,
       "name": "Scoot Henderson",
       "pos": [
         "PG"
@@ -4018,62 +4200,37 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 2.24
+      "valueTotal": 0.97
     },
     {
-      "rank": 157,
+      "rank": 164,
       "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Brayden Burries",
-      "pos": [
-        "SG"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 15.5,
-      "fgPct": 0.5,
-      "fgm": 3,
-      "fga": 6,
-      "ftPct": 0.8,
-      "ftm": 4,
-      "fta": 5,
-      "tpm": 2,
-      "pts": 12,
-      "treb": 5,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 2.22
-    },
-    {
-      "rank": 158,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Neemias Queta",
+      "rankMoveSigned": true,
+      "name": "Nikola Jokic",
       "pos": [
         "C"
       ],
-      "nbaTeam": "BOS",
+      "nbaTeam": "DEN",
       "gp": 1,
-      "mpg": 22.1,
-      "fgPct": 0.333,
-      "fgm": 1,
-      "fga": 3,
+      "mpg": 35.3,
+      "fgPct": 0.263,
+      "fgm": 5,
+      "fga": 19,
       "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 3,
-      "treb": 4,
-      "ast": 2,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 1,
+      "pts": 13,
+      "treb": 7,
+      "ast": 5,
       "stl": 1,
-      "blk": 2,
-      "valueTotal": 2.19
+      "blk": 1,
+      "valueTotal": 0.97
     },
     {
-      "rank": 159,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 165,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Jayson Tatum",
       "pos": [
         "SF",
@@ -4094,38 +4251,87 @@
       "ast": 11,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 2.14
+      "valueTotal": 0.97
     },
     {
-      "rank": 160,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "John Collins",
+      "rank": 166,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Brayden Burries",
       "pos": [
-        "PF",
+        "SG"
+      ],
+      "nbaTeam": "MIL",
+      "gp": 1,
+      "mpg": 15.5,
+      "fgPct": 0.5,
+      "fgm": 3,
+      "fga": 6,
+      "ftPct": 0.8,
+      "ftm": 4,
+      "fta": 5,
+      "tpm": 2,
+      "pts": 12,
+      "treb": 5,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": 0.96
+    },
+    {
+      "rank": 167,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Neemias Queta",
+      "pos": [
         "C"
       ],
-      "nbaTeam": "DET",
+      "nbaTeam": "BOS",
       "gp": 1,
-      "mpg": 25.5,
-      "fgPct": 0.429,
-      "fgm": 3,
-      "fga": 7,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
+      "mpg": 22.1,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
       "tpm": 0,
-      "pts": 6,
-      "treb": 5,
-      "ast": 1,
+      "pts": 3,
+      "treb": 4,
+      "ast": 2,
       "stl": 1,
-      "blk": 1,
-      "valueTotal": 2.13
+      "blk": 2,
+      "valueTotal": 0.94
     },
     {
-      "rank": 161,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 168,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Isaiah Jackson",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "LAC",
+      "gp": 1,
+      "mpg": 14.9,
+      "fgPct": 0.75,
+      "fgm": 6,
+      "fga": 8,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 13,
+      "treb": 5,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 0.93
+    },
+    {
+      "rank": 169,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Jalen Green",
       "pos": [
         "SG",
@@ -4146,12 +4352,63 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 2.09
+      "valueTotal": 0.87
     },
     {
-      "rank": 162,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 170,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Robert Williams III",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 15.3,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 10,
+      "ast": 1,
+      "stl": 0,
+      "blk": 1,
+      "valueTotal": 0.86
+    },
+    {
+      "rank": 171,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "John Collins",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "DET",
+      "gp": 1,
+      "mpg": 25.5,
+      "fgPct": 0.429,
+      "fgm": 3,
+      "fga": 7,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 6,
+      "treb": 5,
+      "ast": 1,
+      "stl": 1,
+      "blk": 1,
+      "valueTotal": 0.82
+    },
+    {
+      "rank": 172,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Pat Spencer",
       "pos": [
         "PG",
@@ -4172,64 +4429,39 @@
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 2.05
+      "valueTotal": 0.74
     },
     {
-      "rank": 163,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Anfernee Simons",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 25.3,
-      "fgPct": 0.5,
-      "fgm": 5,
-      "fga": 10,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 3,
-      "pts": 13,
-      "treb": 2,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 1.98
-    },
-    {
-      "rank": 164,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Luguentz Dort",
+      "rank": 173,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Jaylon Tyson",
       "pos": [
         "SG",
-        "SF"
+        "SF",
+        "PF"
       ],
-      "nbaTeam": "ATL",
+      "nbaTeam": "CLE",
       "gp": 1,
-      "mpg": 28.3,
-      "fgPct": 0.286,
-      "fgm": 2,
-      "fga": 7,
-      "ftPct": 1,
-      "ftm": 2,
+      "mpg": 24,
+      "fgPct": 0.167,
+      "fgm": 1,
+      "fga": 6,
+      "ftPct": 0.5,
+      "ftm": 1,
       "fta": 2,
-      "tpm": 2,
-      "pts": 8,
-      "treb": 4,
-      "ast": 0,
+      "tpm": 0,
+      "pts": 3,
+      "treb": 6,
+      "ast": 2,
       "stl": 1,
-      "blk": 0,
-      "valueTotal": 1.86
+      "blk": 2,
+      "valueTotal": 0.67
     },
     {
-      "rank": 165,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 174,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Bennedict Mathurin",
       "pos": [
         "SG",
@@ -4250,38 +4482,64 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 1.84
+      "valueTotal": 0.59
     },
     {
-      "rank": 166,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Kelly Oubre Jr.",
+      "rank": 175,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Sam Merrill",
       "pos": [
-        "SF",
-        "PF"
+        "SG",
+        "SF"
       ],
-      "nbaTeam": "IND",
+      "nbaTeam": "CLE",
       "gp": 1,
-      "mpg": 27.7,
+      "mpg": 24.3,
       "fgPct": 0.4,
       "fgm": 2,
       "fga": 5,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 0,
-      "pts": 4,
-      "treb": 2,
-      "ast": 3,
+      "tpm": 1,
+      "pts": 5,
+      "treb": 5,
+      "ast": 2,
       "stl": 1,
-      "blk": 1,
-      "valueTotal": 1.72
+      "blk": 0,
+      "valueTotal": 0.57
     },
     {
-      "rank": 167,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rank": 176,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "Luguentz Dort",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "ATL",
+      "gp": 1,
+      "mpg": 28.3,
+      "fgPct": 0.286,
+      "fgm": 2,
+      "fga": 7,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 2,
+      "pts": 8,
+      "treb": 4,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 0.56
+    },
+    {
+      "rank": 177,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Brandon Miller",
       "pos": [
         "SF",
@@ -4302,64 +4560,63 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 1.7
+      "valueTotal": 0.55
     },
     {
-      "rank": 168,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Gui Santos",
+      "rank": 178,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Kelly Oubre Jr.",
       "pos": [
         "SF",
         "PF"
       ],
-      "nbaTeam": "GS",
+      "nbaTeam": "IND",
       "gp": 1,
-      "mpg": 24.7,
-      "fgPct": 0.5,
-      "fgm": 5,
-      "fga": 10,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 12,
-      "treb": 5,
-      "ast": 0,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 1.59
-    },
-    {
-      "rank": 169,
-      "rankMove": 12,
-      "rankMoveSigned": false,
-      "name": "Reed Sheppard",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "HOU",
-      "gp": 1,
-      "mpg": 15.8,
-      "fgPct": 0.167,
-      "fgm": 1,
-      "fga": 6,
+      "mpg": 27.7,
+      "fgPct": 0.4,
+      "fgm": 2,
+      "fga": 5,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 1,
-      "pts": 3,
+      "tpm": 0,
+      "pts": 4,
       "treb": 2,
-      "ast": 4,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 1.54
+      "ast": 3,
+      "stl": 1,
+      "blk": 1,
+      "valueTotal": 0.43
     },
     {
-      "rank": 170,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 179,
+      "rankMove": 3,
+      "rankMoveSigned": true,
+      "name": "Isaiah Hartenstein",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 20.1,
+      "fgPct": 0.357,
+      "fgm": 2.5,
+      "fga": 7,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 5,
+      "treb": 4.5,
+      "ast": 2.5,
+      "stl": 0.5,
+      "blk": 1,
+      "valueTotal": 0.38
+    },
+    {
+      "rank": 180,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Isaiah Joe",
       "pos": [
         "SG",
@@ -4380,12 +4637,38 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 1.54
+      "valueTotal": 0.33
     },
     {
-      "rank": 171,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 181,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Gui Santos",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "GS",
+      "gp": 1,
+      "mpg": 24.7,
+      "fgPct": 0.5,
+      "fgm": 5,
+      "fga": 10,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 12,
+      "treb": 5,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 0.28
+    },
+    {
+      "rank": 182,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Klay Thompson",
       "pos": [
         "SG",
@@ -4406,37 +4689,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 1.53
+      "valueTotal": 0.25
     },
     {
-      "rank": 172,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Georges Niang",
+      "rank": 183,
+      "rankMove": 8,
+      "rankMoveSigned": true,
+      "name": "Reed Sheppard",
       "pos": [
-        "PF"
+        "PG",
+        "SG"
       ],
-      "nbaTeam": "GS",
+      "nbaTeam": "HOU",
       "gp": 1,
-      "mpg": 19.9,
-      "fgPct": 0.375,
-      "fgm": 3,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 0,
-      "pts": 7,
+      "mpg": 15.8,
+      "fgPct": 0.167,
+      "fgm": 1,
+      "fga": 6,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 3,
       "treb": 2,
-      "ast": 2,
+      "ast": 4,
       "stl": 2,
       "blk": 0,
-      "valueTotal": 1.48
+      "valueTotal": 0.24
     },
     {
-      "rank": 173,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 184,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Trey Murphy III",
       "pos": [
         "SG",
@@ -4457,89 +4741,37 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 1.47
+      "valueTotal": 0.18
     },
     {
-      "rank": 174,
+      "rank": 185,
       "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Matisse Thybulle",
+      "rankMoveSigned": true,
+      "name": "Georges Niang",
       "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "LAL",
-      "gp": 1,
-      "mpg": 23.2,
-      "fgPct": 0.25,
-      "fgm": 1,
-      "fga": 4,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 3,
-      "treb": 3,
-      "ast": 1,
-      "stl": 1,
-      "blk": 1,
-      "valueTotal": 1.45
-    },
-    {
-      "rank": 175,
-      "rankMove": 15,
-      "rankMoveSigned": false,
-      "name": "Jamal Shead",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "TOR",
-      "gp": 1,
-      "mpg": 15.8,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 2,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 2,
-      "treb": 2,
-      "ast": 5,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 1.4
-    },
-    {
-      "rank": 176,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Will Richard",
-      "pos": [
-        "SG",
-        "SF"
+        "PF"
       ],
       "nbaTeam": "GS",
       "gp": 1,
-      "mpg": 20.2,
-      "fgPct": 0.8,
-      "fgm": 4,
-      "fga": 5,
-      "ftPct": 0,
-      "ftm": 0,
+      "mpg": 19.9,
+      "fgPct": 0.375,
+      "fgm": 3,
+      "fga": 8,
+      "ftPct": 1,
+      "ftm": 1,
       "fta": 1,
       "tpm": 0,
-      "pts": 8,
-      "treb": 5,
-      "ast": 1,
-      "stl": 1,
+      "pts": 7,
+      "treb": 2,
+      "ast": 2,
+      "stl": 2,
       "blk": 0,
-      "valueTotal": 1.38
+      "valueTotal": 0.17
     },
     {
-      "rank": 177,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 186,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "RJ Barrett",
       "pos": [
         "SG",
@@ -4561,38 +4793,89 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 1.37
+      "valueTotal": 0.15
     },
     {
-      "rank": 178,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Jordan Walsh",
+      "rank": 187,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Matisse Thybulle",
       "pos": [
-        "SF",
-        "PF"
+        "SG",
+        "SF"
       ],
-      "nbaTeam": "BOS",
+      "nbaTeam": "LAL",
       "gp": 1,
-      "mpg": 13.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 2,
+      "mpg": 23.2,
+      "fgPct": 0.25,
+      "fgm": 1,
+      "fga": 4,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 6,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 3,
       "ast": 1,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 1.31
+      "valueTotal": 0.14
     },
     {
-      "rank": 179,
-      "rankMove": 16,
-      "rankMoveSigned": false,
+      "rank": 188,
+      "rankMove": 15,
+      "rankMoveSigned": true,
+      "name": "Jamal Shead",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "TOR",
+      "gp": 1,
+      "mpg": 15.8,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 2,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 2,
+      "ast": 5,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 0.08
+    },
+    {
+      "rank": 189,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Will Richard",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "GS",
+      "gp": 1,
+      "mpg": 20.2,
+      "fgPct": 0.8,
+      "fgm": 4,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 5,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": 0.01
+    },
+    {
+      "rank": 190,
+      "rankMove": 17,
+      "rankMoveSigned": true,
       "name": "Jarace Walker",
       "pos": [
         "SF",
@@ -4613,37 +4896,38 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 1.3
+      "valueTotal": -0.03
     },
     {
-      "rank": 180,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Khaman Maluach",
+      "rank": 191,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Jordan Walsh",
       "pos": [
-        "C"
+        "SF",
+        "PF"
       ],
-      "nbaTeam": "PHO",
+      "nbaTeam": "BOS",
       "gp": 1,
-      "mpg": 16.9,
-      "fgPct": 0.5,
-      "fgm": 1,
+      "mpg": 13.5,
+      "fgPct": 0,
+      "fgm": 0,
       "fga": 2,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
-      "pts": 2,
+      "pts": 0,
       "treb": 6,
       "ast": 1,
-      "stl": 0,
+      "stl": 1,
       "blk": 1,
-      "valueTotal": 1.27
+      "valueTotal": -0.05
     },
     {
-      "rank": 181,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 192,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Emanuel Sharp",
       "pos": [
         "SG"
@@ -4663,12 +4947,89 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 1.21
+      "valueTotal": -0.1
     },
     {
-      "rank": 182,
+      "rank": 193,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Khaman Maluach",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "PHO",
+      "gp": 1,
+      "mpg": 16.9,
+      "fgPct": 0.5,
+      "fgm": 1,
+      "fga": 2,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 6,
+      "ast": 1,
+      "stl": 0,
+      "blk": 1,
+      "valueTotal": -0.11
+    },
+    {
+      "rank": 194,
       "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
+      "name": "Christian Braun",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 32.6,
+      "fgPct": 0.3,
+      "fgm": 3,
+      "fga": 10,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 7,
+      "treb": 6,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -0.14
+    },
+    {
+      "rank": 195,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Trevon Brazile",
+      "pos": [
+        "PF"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 18.5,
+      "fgPct": 0.167,
+      "fgm": 1,
+      "fga": 6,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 4,
+      "treb": 12,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.14
+    },
+    {
+      "rank": 196,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Mitchell Robinson",
       "pos": [
         "C"
@@ -4688,63 +5049,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 2,
-      "valueTotal": 1.14
+      "valueTotal": -0.15
     },
     {
-      "rank": 183,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Alexandre Sarr",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "WAS",
-      "gp": 1,
-      "mpg": 24.3,
-      "fgPct": 0.333,
-      "fgm": 3,
-      "fga": 9,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 6,
-      "treb": 9,
-      "ast": 2,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 1.14
-    },
-    {
-      "rank": 184,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Jordan Goodwin",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "PHO",
-      "gp": 1,
-      "mpg": 21.5,
-      "fgPct": 0.25,
-      "fgm": 1,
-      "fga": 4,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 3,
-      "treb": 4,
-      "ast": 0,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 1.12
-    },
-    {
-      "rank": 185,
-      "rankMove": 19,
-      "rankMoveSigned": false,
+      "rank": 197,
+      "rankMove": 18,
+      "rankMoveSigned": true,
       "name": "P.J. Washington",
       "pos": [
         "PF",
@@ -4765,63 +5075,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 1.08
+      "valueTotal": -0.18
     },
     {
-      "rank": 186,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Sandro Mamukelashvili",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "LAL",
-      "gp": 1,
-      "mpg": 22.2,
-      "fgPct": 0.4,
-      "fgm": 2,
-      "fga": 5,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 5,
-      "treb": 4,
-      "ast": 2,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 1.08
-    },
-    {
-      "rank": 187,
-      "rankMove": 10,
-      "rankMoveSigned": false,
-      "name": "Rudy Gobert",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "MIN",
-      "gp": 1,
-      "mpg": 33.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 2,
-      "ftPct": 0.625,
-      "ftm": 5,
-      "fta": 8,
-      "tpm": 0,
-      "pts": 5,
-      "treb": 15,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 1.06
-    },
-    {
-      "rank": 188,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 198,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Miles Bridges",
       "pos": [
         "PF"
@@ -4841,12 +5100,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 1.06
+      "valueTotal": -0.21
     },
     {
-      "rank": 189,
-      "rankMove": 10,
-      "rankMoveSigned": false,
+      "rank": 199,
+      "rankMove": 9,
+      "rankMoveSigned": true,
       "name": "Rui Hachimura",
       "pos": [
         "SF",
@@ -4867,64 +5126,114 @@
       "ast": 2,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 1
+      "valueTotal": -0.22
     },
     {
-      "rank": 190,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Ajay Mitchell",
+      "rank": 200,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Jordan Goodwin",
       "pos": [
         "PG",
         "SG"
       ],
-      "nbaTeam": "OKC",
+      "nbaTeam": "PHO",
       "gp": 1,
-      "mpg": 22.7,
+      "mpg": 21.5,
       "fgPct": 0.25,
-      "fgm": 2,
-      "fga": 8,
+      "fgm": 1,
+      "fga": 4,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 4,
+      "ast": 0,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": -0.25
+    },
+    {
+      "rank": 201,
+      "rankMove": -12,
+      "rankMoveSigned": true,
+      "name": "Alexandre Sarr",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "WAS",
+      "gp": 1,
+      "mpg": 24.3,
+      "fgPct": 0.333,
+      "fgm": 3,
+      "fga": 9,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
-      "pts": 4,
-      "treb": 5,
-      "ast": 6,
+      "pts": 6,
+      "treb": 9,
+      "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.94
+      "valueTotal": -0.25
     },
     {
-      "rank": 191,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Kobe Sanders",
+      "rank": 202,
+      "rankMove": -12,
+      "rankMoveSigned": true,
+      "name": "Sandro Mamukelashvili",
       "pos": [
-        "SG",
-        "SF"
+        "PF",
+        "C"
       ],
-      "nbaTeam": "LAC",
+      "nbaTeam": "LAL",
       "gp": 1,
-      "mpg": 18.7,
-      "fgPct": 0.2,
-      "fgm": 1,
+      "mpg": 22.2,
+      "fgPct": 0.4,
+      "fgm": 2,
       "fga": 5,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
       "tpm": 0,
-      "pts": 2,
-      "treb": 0,
-      "ast": 3,
-      "stl": 3,
+      "pts": 5,
+      "treb": 4,
+      "ast": 2,
+      "stl": 2,
       "blk": 0,
-      "valueTotal": 0.9
+      "valueTotal": -0.26
     },
     {
-      "rank": 192,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rank": 203,
+      "rankMove": 10,
+      "rankMoveSigned": true,
+      "name": "Rudy Gobert",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "MIN",
+      "gp": 1,
+      "mpg": 33.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 2,
+      "ftPct": 0.625,
+      "ftm": 5,
+      "fta": 8,
+      "tpm": 0,
+      "pts": 5,
+      "treb": 15,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.33
+    },
+    {
+      "rank": 204,
+      "rankMove": -8,
+      "rankMoveSigned": true,
       "name": "LJ Cryer",
       "pos": [
         "PG"
@@ -4944,141 +5253,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.89
+      "valueTotal": -0.39
     },
     {
-      "rank": 193,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Sidy Cissoko",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 25.1,
-      "fgPct": 0.333,
-      "fgm": 1,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 3,
-      "treb": 4,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.81
-    },
-    {
-      "rank": 194,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Ousmane Dieng",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 21.1,
-      "fgPct": 0.333,
-      "fgm": 2,
-      "fga": 6,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 5,
-      "treb": 4,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.79
-    },
-    {
-      "rank": 195,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Ryan Rollins",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 23.6,
-      "fgPct": 0.286,
-      "fgm": 4,
-      "fga": 14,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 9,
-      "treb": 6,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.79
-    },
-    {
-      "rank": 196,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Darryn Peterson",
-      "pos": [
-        "SG"
-      ],
-      "nbaTeam": "UTA",
-      "gp": 1,
-      "mpg": 31.1,
-      "fgPct": 0.429,
-      "fgm": 3,
-      "fga": 7,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 9,
-      "treb": 4,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.78
-    },
-    {
-      "rank": 197,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Vít Krejcí",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 15.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 3,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 0,
-      "pts": 1,
-      "treb": 2,
-      "ast": 3,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": 0.76
-    },
-    {
-      "rank": 198,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 205,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Norman Powell",
       "pos": [
         "SG",
@@ -5099,64 +5279,190 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 0.76
+      "valueTotal": -0.43
     },
     {
-      "rank": 199,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Cam Spencer",
+      "rank": 206,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Kobe Sanders",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "LAC",
+      "gp": 1,
+      "mpg": 18.7,
+      "fgPct": 0.2,
+      "fgm": 1,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 0,
+      "ast": 3,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": -0.43
+    },
+    {
+      "rank": 207,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "Alpha Diallo",
+      "pos": [],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 22.2,
+      "fgPct": 0.5,
+      "fgm": 2,
+      "fga": 4,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 4,
+      "treb": 2,
+      "ast": 3,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -0.5
+    },
+    {
+      "rank": 208,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Darryn Peterson",
+      "pos": [
+        "SG"
+      ],
+      "nbaTeam": "UTA",
+      "gp": 1,
+      "mpg": 31.1,
+      "fgPct": 0.429,
+      "fgm": 3,
+      "fga": 7,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 9,
+      "treb": 4,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.52
+    },
+    {
+      "rank": 209,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Ryan Rollins",
       "pos": [
         "PG",
         "SG"
       ],
-      "nbaTeam": "MEM",
+      "nbaTeam": "MIL",
       "gp": 1,
-      "mpg": 16.3,
-      "fgPct": 0.25,
+      "mpg": 23.6,
+      "fgPct": 0.286,
+      "fgm": 4,
+      "fga": 14,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 9,
+      "treb": 6,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.53
+    },
+    {
+      "rank": 210,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Sidy Cissoko",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 25.1,
+      "fgPct": 0.333,
       "fgm": 1,
-      "fga": 4,
+      "fga": 3,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 1,
       "pts": 3,
-      "treb": 3,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 0.7
-    },
-    {
-      "rank": 200,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Tre Jones",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "CHI",
-      "gp": 1,
-      "mpg": 13.4,
-      "fgPct": 0.625,
-      "fgm": 5,
-      "fga": 8,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 13,
-      "treb": 3,
-      "ast": 0,
+      "treb": 4,
+      "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.68
+      "valueTotal": -0.56
     },
     {
-      "rank": 201,
+      "rank": 211,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Ousmane Dieng",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "MIL",
+      "gp": 1,
+      "mpg": 21.1,
+      "fgPct": 0.333,
+      "fgm": 2,
+      "fga": 6,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 5,
+      "treb": 4,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.56
+    },
+    {
+      "rank": 212,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "Vít Krejcí",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 15.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 3,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 1,
+      "treb": 2,
+      "ast": 3,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": -0.58
+    },
+    {
+      "rank": 213,
       "rankMove": 8,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Tre Johnson",
       "pos": [
         "PG",
@@ -5178,36 +5484,113 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 0.68
+      "valueTotal": -0.62
     },
     {
-      "rank": 202,
-      "rankMove": 10,
-      "rankMoveSigned": false,
-      "name": "Kevon Looney",
+      "rank": 214,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Tre Jones",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 13.4,
+      "fgPct": 0.625,
+      "fgm": 5,
+      "fga": 8,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 13,
+      "treb": 3,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.64
+    },
+    {
+      "rank": 215,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Jaylin Williams",
       "pos": [
         "PF",
         "C"
       ],
-      "nbaTeam": "LAL",
-      "gp": 1,
-      "mpg": 14.6,
-      "fgPct": 0.6,
-      "fgm": 3,
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 16,
+      "fgPct": 0.2,
+      "fgm": 1,
       "fga": 5,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 1,
+      "pts": 4,
+      "treb": 5.5,
+      "ast": 2,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.65
+    },
+    {
+      "rank": 216,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Cam Spencer",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "MEM",
+      "gp": 1,
+      "mpg": 16.3,
+      "fgPct": 0.25,
+      "fgm": 1,
+      "fga": 4,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 0,
-      "pts": 6,
-      "treb": 5,
-      "ast": 1,
-      "stl": 0,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 3,
+      "ast": 2,
+      "stl": 1,
       "blk": 0,
-      "valueTotal": 0.64
+      "valueTotal": -0.65
     },
     {
-      "rank": 203,
+      "rank": 217,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Daniel Gafford",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "DAL",
+      "gp": 1,
+      "mpg": 21.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 1,
+      "ftPct": 0.5,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 3,
+      "ast": 1,
+      "stl": 1,
+      "blk": 2,
+      "valueTotal": -0.72
+    },
+    {
+      "rank": 218,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Cameron Boozer",
@@ -5229,37 +5612,38 @@
       "ast": 5,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.57
+      "valueTotal": -0.73
     },
     {
-      "rank": 204,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Daniel Gafford",
+      "rank": 219,
+      "rankMove": -8,
+      "rankMoveSigned": true,
+      "name": "Kevon Looney",
       "pos": [
+        "PF",
         "C"
       ],
-      "nbaTeam": "DAL",
+      "nbaTeam": "LAL",
       "gp": 1,
-      "mpg": 21.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 1,
-      "ftPct": 0.5,
-      "ftm": 2,
-      "fta": 4,
+      "mpg": 14.6,
+      "fgPct": 0.6,
+      "fgm": 3,
+      "fga": 5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
       "tpm": 0,
-      "pts": 2,
-      "treb": 3,
+      "pts": 6,
+      "treb": 5,
       "ast": 1,
-      "stl": 1,
-      "blk": 2,
-      "valueTotal": 0.55
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.75
     },
     {
-      "rank": 205,
-      "rankMove": 17,
-      "rankMoveSigned": false,
+      "rank": 220,
+      "rankMove": 15,
+      "rankMoveSigned": true,
       "name": "Nique Clifford",
       "pos": [
         "SG",
@@ -5280,62 +5664,62 @@
       "ast": 3,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 0.52
+      "valueTotal": -0.82
     },
     {
-      "rank": 206,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 221,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Aday Mara",
       "pos": [
         "C"
       ],
       "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 11.7,
-      "fgPct": 0.75,
-      "fgm": 3,
-      "fga": 4,
+      "gp": 2,
+      "mpg": 12.2,
+      "fgPct": 0.571,
+      "fgm": 2,
+      "fga": 3.5,
       "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
+      "ftm": 0.5,
+      "fta": 1,
       "tpm": 0,
-      "pts": 7,
-      "treb": 2,
-      "ast": 1,
-      "stl": 0,
+      "pts": 4.5,
+      "treb": 2.5,
+      "ast": 0.5,
+      "stl": 0.5,
       "blk": 1,
-      "valueTotal": 0.51
+      "valueTotal": -0.82
     },
     {
-      "rank": 207,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Goga Bitadze",
+      "rank": 222,
+      "rankMove": 9,
+      "rankMoveSigned": true,
+      "name": "Moritz Wagner",
       "pos": [
         "C"
       ],
-      "nbaTeam": "ORL",
+      "nbaTeam": "BKN",
       "gp": 1,
-      "mpg": 11.7,
+      "mpg": 15.8,
       "fgPct": 0.333,
       "fgm": 1,
       "fga": 3,
-      "ftPct": 0.8,
+      "ftPct": 1,
       "ftm": 4,
-      "fta": 5,
-      "tpm": 0,
-      "pts": 6,
-      "treb": 6,
+      "fta": 4,
+      "tpm": 1,
+      "pts": 7,
+      "treb": 0,
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.47
+      "valueTotal": -0.86
     },
     {
-      "rank": 208,
+      "rank": 223,
       "rankMove": 9,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Andrew Wiggins",
       "pos": [
         "SG",
@@ -5357,39 +5741,62 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.46
+      "valueTotal": -0.86
     },
     {
-      "rank": 209,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Cason Wallace",
+      "rank": 224,
+      "rankMove": -8,
+      "rankMoveSigned": true,
+      "name": "Yaxel Lendeborg",
       "pos": [
-        "PG",
-        "SG",
-        "SF"
+        "PF"
       ],
-      "nbaTeam": "OKC",
+      "nbaTeam": "GS",
       "gp": 1,
-      "mpg": 19.3,
-      "fgPct": 0.375,
-      "fgm": 3,
-      "fga": 8,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 6,
+      "mpg": 28.7,
+      "fgPct": 0.455,
+      "fgm": 5,
+      "fga": 11,
+      "ftPct": 0.333,
+      "ftm": 1,
+      "fta": 3,
+      "tpm": 1,
+      "pts": 12,
       "treb": 3,
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 0.44
+      "valueTotal": -0.87
     },
     {
-      "rank": 210,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 225,
+      "rankMove": null,
+      "rankMoveSigned": null,
+      "name": "Goga Bitadze",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "ORL",
+      "gp": 1,
+      "mpg": 11.7,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0.8,
+      "ftm": 4,
+      "fta": 5,
+      "tpm": 0,
+      "pts": 6,
+      "treb": 6,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -0.88
+    },
+    {
+      "rank": 226,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Herbert Jones",
       "pos": [
         "SG",
@@ -5410,62 +5817,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": 0.43
+      "valueTotal": -0.93
     },
     {
-      "rank": 211,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Moritz Wagner",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "BKN",
-      "gp": 1,
-      "mpg": 15.8,
-      "fgPct": 0.333,
-      "fgm": 1,
-      "fga": 3,
-      "ftPct": 1,
-      "ftm": 4,
-      "fta": 4,
-      "tpm": 1,
-      "pts": 7,
-      "treb": 0,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.43
-    },
-    {
-      "rank": 212,
-      "rankMove": 12,
-      "rankMoveSigned": false,
-      "name": "Yaxel Lendeborg",
-      "pos": [
-        "PF"
-      ],
-      "nbaTeam": "GS",
-      "gp": 1,
-      "mpg": 28.7,
-      "fgPct": 0.455,
-      "fgm": 5,
-      "fga": 11,
-      "ftPct": 0.333,
-      "ftm": 1,
-      "fta": 3,
-      "tpm": 1,
-      "pts": 12,
-      "treb": 3,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": 0.42
-    },
-    {
-      "rank": 213,
-      "rankMove": 11,
-      "rankMoveSigned": false,
+      "rank": 227,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "AJ Green",
       "pos": [
         "PG",
@@ -5487,12 +5844,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.4
+      "valueTotal": -0.94
     },
     {
-      "rank": 214,
-      "rankMove": 9,
-      "rankMoveSigned": false,
+      "rank": 228,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Jakob Poeltl",
       "pos": [
         "C"
@@ -5512,38 +5869,37 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "valueTotal": 0.37
+      "valueTotal": -0.99
     },
     {
-      "rank": 215,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Daeqwon Plowden",
+      "rank": 229,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "Mikel Brown Jr.",
       "pos": [
-        "SG",
-        "SF"
+        "PG"
       ],
-      "nbaTeam": "SAC",
+      "nbaTeam": "BKN",
       "gp": 1,
-      "mpg": 13.2,
-      "fgPct": 0.667,
+      "mpg": 19.8,
+      "fgPct": 0.25,
       "fgm": 2,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 4,
-      "treb": 2,
-      "ast": 1,
-      "stl": 1,
+      "fga": 8,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 1,
+      "pts": 6,
+      "treb": 3,
+      "ast": 3,
+      "stl": 0,
       "blk": 0,
-      "valueTotal": 0.33
+      "valueTotal": -1.02
     },
     {
-      "rank": 216,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 230,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Bogdan Bogdanovic",
       "pos": [
         "PG",
@@ -5565,37 +5921,38 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.32
+      "valueTotal": -1.04
     },
     {
-      "rank": 217,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Mikel Brown Jr.",
+      "rank": 231,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Daeqwon Plowden",
       "pos": [
-        "PG"
+        "SG",
+        "SF"
       ],
-      "nbaTeam": "BKN",
+      "nbaTeam": "SAC",
       "gp": 1,
-      "mpg": 19.8,
-      "fgPct": 0.25,
+      "mpg": 13.2,
+      "fgPct": 0.667,
       "fgm": 2,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 1,
-      "pts": 6,
-      "treb": 3,
-      "ast": 3,
-      "stl": 0,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 4,
+      "treb": 2,
+      "ast": 1,
+      "stl": 1,
       "blk": 0,
-      "valueTotal": 0.3
+      "valueTotal": -1.05
     },
     {
-      "rank": 218,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 232,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Trayce Jackson-Davis",
       "pos": [
         "C"
@@ -5615,12 +5972,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.26
+      "valueTotal": -1.1
     },
     {
-      "rank": 219,
+      "rank": 233,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Cameron Johnson",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 11.3,
+      "fgPct": 0.667,
+      "fgm": 2,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 5,
+      "treb": 2,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -1.15
+    },
+    {
+      "rank": 234,
       "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Daniss Jenkins",
       "pos": [
         "PG",
@@ -5641,37 +6024,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.17
+      "valueTotal": -1.19
     },
     {
-      "rank": 220,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Luke Kornet",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "SA",
-      "gp": 1,
-      "mpg": 12.6,
-      "fgPct": 1,
-      "fgm": 2,
-      "fga": 2,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 4,
-      "treb": 1,
-      "ast": 0,
-      "stl": 0,
-      "blk": 1,
-      "valueTotal": 0.13
-    },
-    {
-      "rank": 221,
-      "rankMove": 11,
-      "rankMoveSigned": false,
+      "rank": 235,
+      "rankMove": 7,
+      "rankMoveSigned": true,
       "name": "Nikola Jovic",
       "pos": [
         "PF",
@@ -5692,37 +6050,37 @@
       "ast": 2,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 0.12
+      "valueTotal": -1.21
     },
     {
-      "rank": 222,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Quinten Post",
+      "rank": 236,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Luke Kornet",
       "pos": [
         "C"
       ],
-      "nbaTeam": "MEM",
+      "nbaTeam": "SA",
       "gp": 1,
-      "mpg": 19.4,
-      "fgPct": 0.75,
-      "fgm": 3,
-      "fga": 4,
+      "mpg": 12.6,
+      "fgPct": 1,
+      "fgm": 2,
+      "fga": 2,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 1,
-      "pts": 7,
+      "tpm": 0,
+      "pts": 4,
       "treb": 1,
       "ast": 0,
       "stl": 0,
-      "blk": 0,
-      "valueTotal": 0.07
+      "blk": 1,
+      "valueTotal": -1.22
     },
     {
-      "rank": 223,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 237,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Harrison Barnes",
       "pos": [
         "PF"
@@ -5742,37 +6100,62 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "valueTotal": 0.05
+      "valueTotal": -1.29
     },
     {
-      "rank": 224,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Adem Bona",
+      "rank": 238,
+      "rankMove": 27,
+      "rankMoveSigned": true,
+      "name": "Jamal Murray",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 36.8,
+      "fgPct": 0.182,
+      "fgm": 2,
+      "fga": 11,
+      "ftPct": 0.5,
+      "ftm": 2,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 6,
+      "treb": 10,
+      "ast": 3,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -1.29
+    },
+    {
+      "rank": 239,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "Quinten Post",
       "pos": [
         "C"
       ],
-      "nbaTeam": "PHI",
+      "nbaTeam": "MEM",
       "gp": 1,
-      "mpg": 9.6,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
+      "mpg": 19.4,
+      "fgPct": 0.75,
+      "fgm": 3,
+      "fga": 4,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 3,
-      "ast": 1,
+      "tpm": 1,
+      "pts": 7,
+      "treb": 1,
+      "ast": 0,
       "stl": 0,
-      "blk": 1,
-      "valueTotal": 0.03
+      "blk": 0,
+      "valueTotal": -1.3
     },
     {
-      "rank": 225,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 240,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Baba Miller",
       "pos": [
         "PF"
@@ -5792,140 +6175,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": 0.02
+      "valueTotal": -1.38
     },
     {
-      "rank": 226,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "VJ Edgecombe",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 34.8,
-      "fgPct": 0.4,
-      "fgm": 4,
-      "fga": 10,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 9,
-      "treb": 4,
-      "ast": 1,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": -0.01
-    },
-    {
-      "rank": 227,
+      "rank": 241,
       "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Jamaree Bouyea",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "PHO",
-      "gp": 1,
-      "mpg": 7,
-      "fgPct": 1,
-      "fgm": 1,
-      "fga": 1,
-      "ftPct": 1,
-      "ftm": 1,
-      "fta": 1,
-      "tpm": 0,
-      "pts": 3,
-      "treb": 2,
-      "ast": 2,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.03
-    },
-    {
-      "rank": 228,
-      "rankMove": 3,
-      "rankMoveSigned": false,
-      "name": "Jaylin Williams",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 16.9,
-      "fgPct": 0.167,
-      "fgm": 1,
-      "fga": 6,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 5,
-      "treb": 4,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.05
-    },
-    {
-      "rank": 229,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Christian Anderson",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "CHA",
-      "gp": 1,
-      "mpg": 13.3,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 2,
-      "ast": 2,
-      "stl": 2,
-      "blk": 0,
-      "valueTotal": -0.09
-    },
-    {
-      "rank": 230,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Devin Vassell",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "SA",
-      "gp": 1,
-      "mpg": 30.9,
-      "fgPct": 0.25,
-      "fgm": 2,
-      "fga": 8,
-      "ftPct": 1,
-      "ftm": 2,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 7,
-      "treb": 3,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.09
-    },
-    {
-      "rank": 231,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Jordan Poole",
       "pos": [
         "PG",
@@ -5946,12 +6201,113 @@
       "ast": 3,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.09
+      "valueTotal": -1.41
     },
     {
-      "rank": 232,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 242,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Jamaree Bouyea",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "PHO",
+      "gp": 1,
+      "mpg": 7,
+      "fgPct": 1,
+      "fgm": 1,
+      "fga": 1,
+      "ftPct": 1,
+      "ftm": 1,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 3,
+      "treb": 2,
+      "ast": 2,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -1.41
+    },
+    {
+      "rank": 243,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "Devin Vassell",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "SA",
+      "gp": 1,
+      "mpg": 30.9,
+      "fgPct": 0.25,
+      "fgm": 2,
+      "fga": 8,
+      "ftPct": 1,
+      "ftm": 2,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 7,
+      "treb": 3,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -1.42
+    },
+    {
+      "rank": 244,
+      "rankMove": 5,
+      "rankMoveSigned": true,
+      "name": "Christian Anderson",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "CHA",
+      "gp": 1,
+      "mpg": 13.3,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 2,
+      "ast": 2,
+      "stl": 2,
+      "blk": 0,
+      "valueTotal": -1.46
+    },
+    {
+      "rank": 245,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Ryan Nembhard",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 1.7,
+      "fgPct": 0.667,
+      "fgm": 2,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 5,
+      "treb": 1,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -1.47
+    },
+    {
+      "rank": 246,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Myron Gardner",
       "pos": [
         "SG",
@@ -5972,12 +6328,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.14
+      "valueTotal": -1.5
     },
     {
-      "rank": 233,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 247,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Yang Hansen",
       "pos": [
         "C"
@@ -5997,12 +6353,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.17
+      "valueTotal": -1.56
     },
     {
-      "rank": 234,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 248,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Jalen Pickett",
       "pos": [
         "PG",
@@ -6023,12 +6379,37 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.19
+      "valueTotal": -1.56
     },
     {
-      "rank": 235,
-      "rankMove": 20,
-      "rankMoveSigned": false,
+      "rank": 249,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Adem Bona",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 11.6,
+      "fgPct": 0.5,
+      "fgm": 0.5,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 1,
+      "treb": 2.5,
+      "ast": 0.5,
+      "stl": 0,
+      "blk": 1,
+      "valueTotal": -1.58
+    },
+    {
+      "rank": 250,
+      "rankMove": 21,
+      "rankMoveSigned": true,
       "name": "Leonard Miller",
       "pos": [
         "SF",
@@ -6049,12 +6430,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.19
+      "valueTotal": -1.58
     },
     {
-      "rank": 236,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 251,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Kevin Huerter",
       "pos": [
         "SG",
@@ -6075,12 +6456,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.22
+      "valueTotal": -1.6
     },
     {
-      "rank": 237,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 252,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Tim Hardaway Jr.",
       "pos": [
         "SG",
@@ -6101,12 +6482,12 @@
       "ast": 1,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.29
+      "valueTotal": -1.66
     },
     {
-      "rank": 238,
+      "rank": 253,
       "rankMove": 4,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Kingston Flemings",
       "pos": [
         "PG"
@@ -6126,38 +6507,12 @@
       "ast": 3,
       "stl": 0,
       "blk": 1,
-      "valueTotal": -0.32
+      "valueTotal": -1.67
     },
     {
-      "rank": 239,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Al Horford",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "GS",
-      "gp": 1,
-      "mpg": 17.3,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 4,
-      "ast": 2,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": -0.37
-    },
-    {
-      "rank": 240,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 254,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Miles McBride",
       "pos": [
         "PG",
@@ -6178,38 +6533,64 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "valueTotal": -0.42
+      "valueTotal": -1.74
     },
     {
-      "rank": 241,
-      "rankMove": 5,
-      "rankMoveSigned": false,
-      "name": "Kenrich Williams",
+      "rank": 255,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Al Horford",
       "pos": [
         "PF",
         "C"
       ],
-      "nbaTeam": "OKC",
+      "nbaTeam": "GS",
       "gp": 1,
-      "mpg": 7.1,
-      "fgPct": 1,
-      "fgm": 1,
-      "fga": 1,
+      "mpg": 17.3,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 3,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 1,
-      "pts": 3,
-      "treb": 2,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 4,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -1.78
+    },
+    {
+      "rank": 256,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Anfernee Simons",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 21,
+      "fgPct": 0.357,
+      "fgm": 2.5,
+      "fga": 7,
+      "ftPct": 0.667,
+      "ftm": 1,
+      "fta": 1.5,
+      "tpm": 1.5,
+      "pts": 7.5,
+      "treb": 2.5,
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.47
+      "valueTotal": -1.83
     },
     {
-      "rank": 242,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 257,
+      "rankMove": 4,
+      "rankMoveSigned": true,
       "name": "Gary Payton II",
       "pos": [
         "SG",
@@ -6230,12 +6611,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.49
+      "valueTotal": -1.86
     },
     {
-      "rank": 243,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rank": 258,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Duop Reath",
       "pos": [
         "PF",
@@ -6256,12 +6637,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.51
+      "valueTotal": -1.89
     },
     {
-      "rank": 244,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 259,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Max Christie",
       "pos": [
         "SG",
@@ -6282,12 +6663,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.54
+      "valueTotal": -1.9
     },
     {
-      "rank": 245,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 260,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Mikal Bridges",
       "pos": [
         "SF",
@@ -6308,12 +6689,38 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "valueTotal": -0.61
+      "valueTotal": -1.95
     },
     {
-      "rank": 246,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 261,
+      "rankMove": -6,
+      "rankMoveSigned": true,
+      "name": "Kenrich Williams",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 6.3,
+      "fgPct": 0.667,
+      "fgm": 1,
+      "fga": 1.5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 1.5,
+      "ast": 0.5,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -1.97
+    },
+    {
+      "rank": 262,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Isaac Okoro",
       "pos": [
         "SG",
@@ -6334,64 +6741,38 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.66
+      "valueTotal": -2
     },
     {
-      "rank": 247,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Micah Potter",
+      "rank": 263,
+      "rankMove": -5,
+      "rankMoveSigned": true,
+      "name": "DaRon Holmes II",
       "pos": [
         "PF",
         "C"
       ],
-      "nbaTeam": "POR",
+      "nbaTeam": "DEN",
       "gp": 1,
-      "mpg": 12,
-      "fgPct": 0.667,
-      "fgm": 2,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 4,
-      "treb": 3,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.69
-    },
-    {
-      "rank": 248,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "De'Anthony Melton",
-      "pos": [
-        "PG",
-        "SG"
-      ],
-      "nbaTeam": "GS",
-      "gp": 1,
-      "mpg": 20.9,
-      "fgPct": 0,
-      "fgm": 0,
+      "mpg": 1.7,
+      "fgPct": 0.5,
+      "fgm": 1,
       "fga": 2,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 2,
-      "ast": 2,
-      "stl": 1,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 1,
+      "ast": 1,
+      "stl": 0,
       "blk": 0,
-      "valueTotal": -0.71
+      "valueTotal": -2.06
     },
     {
-      "rank": 249,
-      "rankMove": 14,
-      "rankMoveSigned": false,
+      "rank": 264,
+      "rankMove": 16,
+      "rankMoveSigned": true,
       "name": "Egor Demin",
       "pos": [
         "PG",
@@ -6412,12 +6793,64 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.71
+      "valueTotal": -2.08
     },
     {
-      "rank": 250,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 265,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Micah Potter",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 12,
+      "fgPct": 0.667,
+      "fgm": 2,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 4,
+      "treb": 3,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.11
+    },
+    {
+      "rank": 266,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "De'Anthony Melton",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "GS",
+      "gp": 1,
+      "mpg": 20.9,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 2,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 2,
+      "ast": 2,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -2.11
+    },
+    {
+      "rank": 267,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Kyle Anderson",
       "pos": [
         "SF",
@@ -6438,64 +6871,12 @@
       "ast": 2,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.73
+      "valueTotal": -2.13
     },
     {
-      "rank": 251,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Joan Beringer",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "MIN",
-      "gp": 1,
-      "mpg": 13.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 2,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 6,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.77
-    },
-    {
-      "rank": 252,
-      "rankMove": 8,
-      "rankMoveSigned": false,
-      "name": "Dillon Brooks",
-      "pos": [
-        "SF",
-        "PF"
-      ],
-      "nbaTeam": "PHO",
-      "gp": 1,
-      "mpg": 26.7,
-      "fgPct": 0.364,
-      "fgm": 4,
-      "fga": 11,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
-      "tpm": 1,
-      "pts": 10,
-      "treb": 4,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.83
-    },
-    {
-      "rank": 253,
-      "rankMove": 14,
-      "rankMoveSigned": false,
+      "rank": 268,
+      "rankMove": 16,
+      "rankMoveSigned": true,
       "name": "Isaiah Collier",
       "pos": [
         "PG",
@@ -6516,12 +6897,64 @@
       "ast": 3,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.86
+      "valueTotal": -2.16
     },
     {
-      "rank": 254,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rank": 269,
+      "rankMove": 7,
+      "rankMoveSigned": true,
+      "name": "Dillon Brooks",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "PHO",
+      "gp": 1,
+      "mpg": 26.7,
+      "fgPct": 0.364,
+      "fgm": 4,
+      "fga": 11,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 1,
+      "pts": 10,
+      "treb": 4,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.17
+    },
+    {
+      "rank": 270,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Joan Beringer",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "nbaTeam": "MIN",
+      "gp": 1,
+      "mpg": 13.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 2,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 6,
+      "ast": 1,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.22
+    },
+    {
+      "rank": 271,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Jaylin Sellers",
       "pos": [],
       "nbaTeam": "CHI",
@@ -6539,12 +6972,12 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -0.86
+      "valueTotal": -2.23
     },
     {
-      "rank": 255,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rank": 272,
+      "rankMove": -9,
+      "rankMoveSigned": true,
       "name": "Kyle Filipowski",
       "pos": [
         "PF",
@@ -6565,37 +6998,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.87
+      "valueTotal": -2.25
     },
     {
-      "rank": 256,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Zach Collins",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "CHI",
-      "gp": 1,
-      "mpg": 8.6,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 5,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -0.91
-    },
-    {
-      "rank": 257,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rank": 273,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Ron Holland II",
       "pos": [
         "SF",
@@ -6616,12 +7024,88 @@
       "ast": 1,
       "stl": 0,
       "blk": 1,
-      "valueTotal": -0.91
+      "valueTotal": -2.28
     },
     {
-      "rank": 258,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 274,
+      "rankMove": 4,
+      "rankMoveSigned": true,
+      "name": "Craig Porter Jr.",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 7.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 3,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -2.35
+    },
+    {
+      "rank": 275,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Zach Collins",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "CHI",
+      "gp": 1,
+      "mpg": 8.6,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 0,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 5,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.37
+    },
+    {
+      "rank": 276,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Oso Ighodaro",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "PHO",
+      "gp": 1,
+      "mpg": 14.6,
+      "fgPct": 0.571,
+      "fgm": 4,
+      "fga": 7,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 8,
+      "treb": 3,
+      "ast": 3,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.38
+    },
+    {
+      "rank": 277,
+      "rankMove": -8,
+      "rankMoveSigned": true,
       "name": "Tari Eason",
       "pos": [
         "SG",
@@ -6643,37 +7127,12 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -0.98
+      "valueTotal": -2.39
     },
     {
-      "rank": 259,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Oso Ighodaro",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "PHO",
-      "gp": 1,
-      "mpg": 14.6,
-      "fgPct": 0.571,
-      "fgm": 4,
-      "fga": 7,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 2,
-      "tpm": 0,
-      "pts": 8,
-      "treb": 3,
-      "ast": 3,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -1.02
-    },
-    {
-      "rank": 260,
+      "rank": 278,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Sion James",
       "pos": [
         "SG",
@@ -6694,12 +7153,37 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -1.03
+      "valueTotal": -2.4
     },
     {
-      "rank": 261,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rank": 279,
+      "rankMove": 2,
+      "rankMoveSigned": true,
+      "name": "Kel'el Ware",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "MIL",
+      "gp": 1,
+      "mpg": 13.7,
+      "fgPct": 0.5,
+      "fgm": 3,
+      "fga": 6,
+      "ftPct": 0.333,
+      "ftm": 1,
+      "fta": 3,
+      "tpm": 0,
+      "pts": 7,
+      "treb": 3,
+      "ast": 1,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -2.43
+    },
+    {
+      "rank": 280,
+      "rankMove": -8,
+      "rankMoveSigned": true,
       "name": "Nick Richards",
       "pos": [
         "C"
@@ -6719,12 +7203,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.03
+      "valueTotal": -2.44
     },
     {
-      "rank": 262,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 281,
+      "rankMove": 11,
+      "rankMoveSigned": true,
+      "name": "Collin Gillespie",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "PHO",
+      "gp": 1,
+      "mpg": 21.3,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 8,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 1,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 1,
+      "ast": 2,
+      "stl": 4,
+      "blk": 0,
+      "valueTotal": -2.46
+    },
+    {
+      "rank": 282,
+      "rankMove": 1,
+      "rankMoveSigned": true,
       "name": "Jaden Hardy",
       "pos": [
         "PG",
@@ -6746,37 +7256,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.07
+      "valueTotal": -2.47
     },
     {
-      "rank": 263,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Kel'el Ware",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "MIL",
-      "gp": 1,
-      "mpg": 13.7,
-      "fgPct": 0.5,
-      "fgm": 3,
-      "fga": 6,
-      "ftPct": 0.333,
-      "ftm": 1,
-      "fta": 3,
-      "tpm": 0,
-      "pts": 7,
-      "treb": 3,
-      "ast": 1,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": -1.07
-    },
-    {
-      "rank": 264,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 283,
+      "rankMove": -8,
+      "rankMoveSigned": true,
       "name": "Bones Hyland",
       "pos": [
         "PG",
@@ -6797,12 +7282,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.09
+      "valueTotal": -2.49
     },
     {
-      "rank": 265,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 284,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Isaiah Crawford",
       "pos": [],
       "nbaTeam": "HOU",
@@ -6820,38 +7305,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.11
+      "valueTotal": -2.51
     },
     {
-      "rank": 266,
-      "rankMove": 10,
-      "rankMoveSigned": false,
-      "name": "Collin Gillespie",
+      "rank": 285,
+      "rankMove": 3,
+      "rankMoveSigned": true,
+      "name": "Marvin Bagley III",
       "pos": [
-        "PG",
-        "SG"
+        "PF",
+        "C"
       ],
-      "nbaTeam": "PHO",
+      "nbaTeam": "DEN",
       "gp": 1,
-      "mpg": 21.3,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 8,
+      "mpg": 11,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
       "ftPct": 0,
       "ftm": 0,
-      "fta": 1,
+      "fta": 0,
       "tpm": 0,
-      "pts": 0,
-      "treb": 1,
-      "ast": 2,
-      "stl": 4,
+      "pts": 2,
+      "treb": 3,
+      "ast": 1,
+      "stl": 0,
       "blk": 0,
-      "valueTotal": -1.12
+      "valueTotal": -2.57
     },
     {
-      "rank": 267,
-      "rankMove": 5,
-      "rankMoveSigned": false,
+      "rank": 286,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Jordan Clarkson",
       "pos": [
         "SG",
@@ -6872,12 +7357,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.22
+      "valueTotal": -2.61
     },
     {
-      "rank": 268,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 287,
+      "rankMove": null,
+      "rankMoveSigned": null,
       "name": "Jeremiah Fears",
       "pos": [
         "PG",
@@ -6898,12 +7383,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.33
+      "valueTotal": -2.64
     },
     {
-      "rank": 269,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 288,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Simone Fontecchio",
       "pos": [
         "SF",
@@ -6924,36 +7409,10 @@
       "ast": 0,
       "stl": 0,
       "blk": 1,
-      "valueTotal": -1.35
+      "valueTotal": -2.73
     },
     {
-      "rank": 270,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Ben Sheppard",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "IND",
-      "gp": 1,
-      "mpg": 12.2,
-      "fgPct": 0.333,
-      "fgm": 1,
-      "fga": 3,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 1,
-      "pts": 3,
-      "treb": 1,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -1.39
-    },
-    {
-      "rank": 271,
+      "rank": 289,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Terrence Shannon Jr.",
@@ -6976,12 +7435,38 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.47
+      "valueTotal": -2.76
     },
     {
-      "rank": 272,
-      "rankMove": null,
-      "rankMoveSigned": null,
+      "rank": 290,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Ben Sheppard",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "IND",
+      "gp": 1,
+      "mpg": 12.2,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 1,
+      "pts": 3,
+      "treb": 1,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -2.79
+    },
+    {
+      "rank": 291,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Clint Capela",
       "pos": [
         "C"
@@ -7001,12 +7486,37 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.55
+      "valueTotal": -3
     },
     {
-      "rank": 273,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 292,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Tyus Jones",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 9.5,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 0,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -3.01
+    },
+    {
+      "rank": 293,
+      "rankMove": 2,
+      "rankMoveSigned": true,
       "name": "Khris Middleton",
       "pos": [
         "SF",
@@ -7027,12 +7537,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.59
+      "valueTotal": -3.02
     },
     {
-      "rank": 274,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 294,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Koa Peat",
       "pos": [
         "PF"
@@ -7052,12 +7562,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.63
+      "valueTotal": -3.04
     },
     {
-      "rank": 275,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 295,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "Sergio de Larrea",
       "pos": [
         "PG"
@@ -7077,37 +7587,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.75
+      "valueTotal": -3.19
     },
     {
-      "rank": 276,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Nikola Vucevic",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "ORL",
-      "gp": 1,
-      "mpg": 5.3,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 1,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -1.77
-    },
-    {
-      "rank": 277,
-      "rankMove": 11,
-      "rankMoveSigned": false,
+      "rank": 296,
+      "rankMove": 12,
+      "rankMoveSigned": true,
       "name": "Brice Sensabaugh",
       "pos": [
         "SG",
@@ -7129,64 +7614,37 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.78
+      "valueTotal": -3.19
     },
     {
-      "rank": 278,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Keegan Murray",
+      "rank": 297,
+      "rankMove": -1,
+      "rankMoveSigned": true,
+      "name": "Nikola Vucevic",
       "pos": [
-        "SF",
-        "PF"
+        "C"
       ],
-      "nbaTeam": "SAC",
+      "nbaTeam": "ORL",
       "gp": 1,
-      "mpg": 28.4,
-      "fgPct": 0.125,
-      "fgm": 1,
-      "fga": 8,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 2,
-      "treb": 4,
-      "ast": 0,
-      "stl": 1,
-      "blk": 0,
-      "valueTotal": -1.82
-    },
-    {
-      "rank": 279,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Hugo González",
-      "pos": [
-        "SG",
-        "SF"
-      ],
-      "nbaTeam": "BOS",
-      "gp": 1,
-      "mpg": 9.7,
+      "mpg": 5.3,
       "fgPct": 0,
       "fgm": 0,
-      "fga": 1,
+      "fga": 0,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
       "pts": 0,
-      "treb": 3,
-      "ast": 0,
+      "treb": 1,
+      "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.85
+      "valueTotal": -3.2
     },
     {
-      "rank": 280,
+      "rank": 298,
       "rankMove": 12,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Landry Shamet",
       "pos": [
         "SG",
@@ -7207,37 +7665,38 @@
       "ast": 4,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.87
+      "valueTotal": -3.21
     },
     {
-      "rank": 281,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Luka Garza",
+      "rank": 299,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Keegan Murray",
       "pos": [
-        "C"
+        "SF",
+        "PF"
       ],
-      "nbaTeam": "BOS",
+      "nbaTeam": "SAC",
       "gp": 1,
-      "mpg": 8.4,
-      "fgPct": 0.333,
+      "mpg": 28.4,
+      "fgPct": 0.125,
       "fgm": 1,
-      "fga": 3,
+      "fga": 8,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
       "pts": 2,
-      "treb": 2,
+      "treb": 4,
       "ast": 0,
-      "stl": 0,
+      "stl": 1,
       "blk": 0,
-      "valueTotal": -1.89
+      "valueTotal": -3.23
     },
     {
-      "rank": 282,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 300,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Rasheer Fleming",
       "pos": [
         "PF",
@@ -7258,38 +7717,88 @@
       "ast": 0,
       "stl": 1,
       "blk": 1,
-      "valueTotal": -1.92
+      "valueTotal": -3.26
     },
     {
-      "rank": 283,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Bronny James",
+      "rank": 301,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Jabari Walker",
       "pos": [
-        "PG",
-        "SG"
+        "PF"
       ],
-      "nbaTeam": "LAL",
-      "gp": 1,
-      "mpg": 6.8,
+      "nbaTeam": "PHI",
+      "gp": 2,
+      "mpg": 3.5,
       "fgPct": 1,
-      "fgm": 1,
+      "fgm": 0.5,
+      "fga": 0.5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 1,
+      "treb": 0.5,
+      "ast": 0.5,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.28
+    },
+    {
+      "rank": 302,
+      "rankMove": -2,
+      "rankMoveSigned": true,
+      "name": "Hugo González",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "nbaTeam": "BOS",
+      "gp": 1,
+      "mpg": 9.7,
+      "fgPct": 0,
+      "fgm": 0,
       "fga": 1,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
-      "pts": 2,
-      "treb": 0,
+      "pts": 0,
+      "treb": 3,
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.93
+      "valueTotal": -3.3
     },
     {
-      "rank": 284,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 303,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "Luka Garza",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "BOS",
+      "gp": 1,
+      "mpg": 8.4,
+      "fgPct": 0.333,
+      "fgm": 1,
+      "fga": 3,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 2,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.32
+    },
+    {
+      "rank": 304,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Ryan Dunn",
       "pos": [
         "SF",
@@ -7310,12 +7819,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.94
+      "valueTotal": -3.33
     },
     {
-      "rank": 285,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 305,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "David Jones Garcia",
       "pos": [
         "SG"
@@ -7335,12 +7844,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.94
+      "valueTotal": -3.34
     },
     {
-      "rank": 286,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 306,
+      "rankMove": 1,
+      "rankMoveSigned": true,
+      "name": "Bronny James",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "LAL",
+      "gp": 1,
+      "mpg": 6.8,
+      "fgPct": 1,
+      "fgm": 1,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 2,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.35
+    },
+    {
+      "rank": 307,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Ryan Conwell",
       "pos": [
         "SG"
@@ -7360,12 +7895,38 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -1.98
+      "valueTotal": -3.39
     },
     {
-      "rank": 287,
+      "rank": 308,
+      "rankMove": 20,
+      "rankMoveSigned": true,
+      "name": "DeMar DeRozan",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 28.2,
+      "fgPct": 0.556,
+      "fgm": 5,
+      "fga": 9,
+      "ftPct": 0.5,
+      "ftm": 3,
+      "fta": 6,
+      "tpm": 0,
+      "pts": 13,
+      "treb": 2,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.4
+    },
+    {
+      "rank": 309,
       "rankMove": 25,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Josh Giddey",
       "pos": [
         "PG",
@@ -7386,12 +7947,12 @@
       "ast": 6,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.04
+      "valueTotal": -3.41
     },
     {
-      "rank": 288,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 310,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Nick Martinelli",
       "pos": [],
       "nbaTeam": "LAC",
@@ -7409,37 +7970,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.07
+      "valueTotal": -3.5
     },
     {
-      "rank": 289,
-      "rankMove": 4,
-      "rankMoveSigned": false,
-      "name": "Jabari Walker",
-      "pos": [
-        "PF"
-      ],
-      "nbaTeam": "PHI",
-      "gp": 1,
-      "mpg": 2.6,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 1,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.09
-    },
-    {
-      "rank": 290,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 311,
+      "rankMove": -5,
+      "rankMoveSigned": true,
       "name": "Maliq Brown",
       "pos": [
         "SF"
@@ -7459,12 +7995,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.09
+      "valueTotal": -3.52
     },
     {
-      "rank": 291,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 312,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Morez Johnson Jr.",
       "pos": [
         "PF"
@@ -7484,12 +8020,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.13
+      "valueTotal": -3.54
     },
     {
-      "rank": 292,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 313,
+      "rankMove": 3,
+      "rankMoveSigned": true,
       "name": "Noa Essengue",
       "pos": [
         "PF"
@@ -7509,12 +8045,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.18
+      "valueTotal": -3.62
     },
     {
-      "rank": 293,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 314,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Isaiah Evans",
       "pos": [
         "SG"
@@ -7534,12 +8070,37 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.19
+      "valueTotal": -3.63
     },
     {
-      "rank": 294,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 315,
+      "rankMove": -3,
+      "rankMoveSigned": true,
+      "name": "Bryce Hopkins",
+      "pos": [
+        "SF"
+      ],
+      "nbaTeam": "DEN",
+      "gp": 1,
+      "mpg": 1.7,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 0,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 1,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.63
+    },
+    {
+      "rank": 316,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Chris Mañon",
       "pos": [],
       "nbaTeam": "LAL",
@@ -7557,12 +8118,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.21
+      "valueTotal": -3.64
     },
     {
-      "rank": 295,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 317,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Ja'Kobi Gillespie",
       "pos": [
         "PG"
@@ -7582,12 +8143,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.23
+      "valueTotal": -3.65
     },
     {
-      "rank": 296,
-      "rankMove": 8,
-      "rankMoveSigned": false,
+      "rank": 318,
+      "rankMove": 6,
+      "rankMoveSigned": true,
       "name": "Buddy Hield",
       "pos": [
         "SG",
@@ -7608,35 +8169,35 @@
       "ast": 2,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.24
+      "valueTotal": -3.65
     },
     {
-      "rank": 297,
-      "rankMove": 13,
-      "rankMoveSigned": false,
-      "name": "Jayson Kent",
+      "rank": 319,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Brooks Barnhizer",
       "pos": [],
-      "nbaTeam": "POR",
-      "gp": 1,
-      "mpg": 7,
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 1.2,
       "fgPct": 0,
       "fgm": 0,
-      "fga": 4,
+      "fga": 0,
       "ftPct": 0,
       "ftm": 0,
       "fta": 0,
       "tpm": 0,
       "pts": 0,
-      "treb": 1,
-      "ast": 0,
-      "stl": 1,
+      "treb": 0,
+      "ast": 0.5,
+      "stl": 0,
       "blk": 0,
-      "valueTotal": -2.46
+      "valueTotal": -3.73
     },
     {
-      "rank": 298,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 320,
+      "rankMove": -3,
+      "rankMoveSigned": true,
       "name": "Malevy Leons",
       "pos": [
         "PF"
@@ -7656,12 +8217,85 @@
       "ast": 0,
       "stl": 1,
       "blk": 0,
-      "valueTotal": -2.46
+      "valueTotal": -3.88
     },
     {
-      "rank": 299,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 321,
+      "rankMove": 6,
+      "rankMoveSigned": true,
+      "name": "Jayson Kent",
+      "pos": [],
+      "nbaTeam": "POR",
+      "gp": 1,
+      "mpg": 7,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 4,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 1,
+      "ast": 0,
+      "stl": 1,
+      "blk": 0,
+      "valueTotal": -3.88
+    },
+    {
+      "rank": 322,
+      "rankMove": 21,
+      "rankMoveSigned": true,
+      "name": "Darius Acuff Jr.",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "SAC",
+      "gp": 1,
+      "mpg": 34.9,
+      "fgPct": 0.208,
+      "fgm": 5,
+      "fga": 24,
+      "ftPct": 0.4,
+      "ftm": 2,
+      "fta": 5,
+      "tpm": 0,
+      "pts": 12,
+      "treb": 3,
+      "ast": 3,
+      "stl": 3,
+      "blk": 0,
+      "valueTotal": -3.89
+    },
+    {
+      "rank": 323,
+      "rankMove": 16,
+      "rankMoveSigned": true,
+      "name": "Chaney Johnson",
+      "pos": [
+        "PF"
+      ],
+      "nbaTeam": "BKN",
+      "gp": 2,
+      "mpg": 5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 1,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.93
+    },
+    {
+      "rank": 325,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Liam McNeeley",
       "pos": [
         "SF"
@@ -7681,12 +8315,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.49
+      "valueTotal": -3.93
     },
     {
-      "rank": 300,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 326,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Josh Okogie",
       "pos": [
         "SG",
@@ -7707,136 +8341,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.49
+      "valueTotal": -3.93
     },
     {
-      "rank": 301,
-      "rankMove": 15,
-      "rankMoveSigned": false,
-      "name": "Chaney Johnson",
-      "pos": [
-        "PF"
-      ],
-      "nbaTeam": "BKN",
-      "gp": 2,
-      "mpg": 5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 1,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 1,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.49
-    },
-    {
-      "rank": 303,
-      "rankMove": 2,
-      "rankMoveSigned": false,
-      "name": "Jonathan Mogbo",
-      "pos": [
-        "PF",
-        "C"
-      ],
-      "nbaTeam": "SAC",
-      "gp": 1,
-      "mpg": 8,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.51
-    },
-    {
-      "rank": 304,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Brooks Barnhizer",
-      "pos": [],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 0.8,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.51
-    },
-    {
-      "rank": 305,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Bennett Stirtz",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "OKC",
-      "gp": 1,
-      "mpg": 0.8,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.51
-    },
-    {
-      "rank": 306,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Tarris Reed Jr.",
-      "pos": [
-        "C"
-      ],
-      "nbaTeam": "SA",
-      "gp": 1,
-      "mpg": 1.2,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 0,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.51
-    },
-    {
-      "rank": 307,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 327,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Jericho Sims",
       "pos": [
         "PF",
@@ -7857,12 +8367,37 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.51
+      "valueTotal": -3.95
     },
     {
-      "rank": 308,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 328,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Tarris Reed Jr.",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "SA",
+      "gp": 1,
+      "mpg": 1.2,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 0,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.95
+    },
+    {
+      "rank": 329,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Cam Christie",
       "pos": [
         "SG",
@@ -7883,37 +8418,38 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.51
+      "valueTotal": -3.95
     },
     {
-      "rank": 309,
-      "rankMove": 6,
-      "rankMoveSigned": false,
-      "name": "Moussa Cisse",
+      "rank": 330,
+      "rankMove": -4,
+      "rankMoveSigned": true,
+      "name": "Jonathan Mogbo",
       "pos": [
+        "PF",
         "C"
       ],
-      "nbaTeam": "DAL",
+      "nbaTeam": "SAC",
       "gp": 1,
-      "mpg": 2.5,
-      "fgPct": 1,
-      "fgm": 1,
-      "fga": 1,
-      "ftPct": 0.5,
-      "ftm": 1,
-      "fta": 2,
+      "mpg": 8,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 0,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
       "tpm": 0,
-      "pts": 3,
+      "pts": 0,
       "treb": 0,
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.57
+      "valueTotal": -3.95
     },
     {
-      "rank": 310,
-      "rankMove": 3,
-      "rankMoveSigned": false,
+      "rank": 331,
+      "rankMove": 5,
+      "rankMoveSigned": true,
       "name": "Alijah Martin",
       "pos": [
         "PG",
@@ -7934,37 +8470,87 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.57
+      "valueTotal": -3.97
     },
     {
-      "rank": 311,
-      "rankMove": 9,
-      "rankMoveSigned": false,
-      "name": "Darius Acuff Jr.",
+      "rank": 332,
+      "rankMove": -9,
+      "rankMoveSigned": true,
+      "name": "Moussa Cisse",
+      "pos": [
+        "C"
+      ],
+      "nbaTeam": "DAL",
+      "gp": 1,
+      "mpg": 2.5,
+      "fgPct": 1,
+      "fgm": 1,
+      "fga": 1,
+      "ftPct": 0.5,
+      "ftm": 1,
+      "fta": 2,
+      "tpm": 0,
+      "pts": 3,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -3.97
+    },
+    {
+      "rank": 333,
+      "rankMove": -8,
+      "rankMoveSigned": true,
+      "name": "Bennett Stirtz",
       "pos": [
         "PG"
       ],
-      "nbaTeam": "SAC",
-      "gp": 1,
-      "mpg": 34.9,
-      "fgPct": 0.208,
-      "fgm": 5,
-      "fga": 24,
-      "ftPct": 0.4,
-      "ftm": 2,
-      "fta": 5,
+      "nbaTeam": "OKC",
+      "gp": 2,
+      "mpg": 1.2,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 0.5,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
       "tpm": 0,
-      "pts": 12,
-      "treb": 3,
-      "ast": 3,
-      "stl": 3,
+      "pts": 0,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
       "blk": 0,
-      "valueTotal": -2.67
+      "valueTotal": -4.1
     },
     {
-      "rank": 312,
+      "rank": 334,
+      "rankMove": 8,
+      "rankMoveSigned": true,
+      "name": "Nolan Traoré",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "BKN",
+      "gp": 1,
+      "mpg": 15.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 4,
+      "ftPct": 0.75,
+      "ftm": 3,
+      "fta": 4,
+      "tpm": 0,
+      "pts": 3,
+      "treb": 2,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -4.22
+    },
+    {
+      "rank": 335,
       "rankMove": 2,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Jaden Bradley",
       "pos": [],
       "nbaTeam": "TOR",
@@ -7982,12 +8568,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.81
+      "valueTotal": -4.25
     },
     {
-      "rank": 313,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 336,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Larry Nance Jr.",
       "pos": [
         "PF",
@@ -8008,37 +8594,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.81
+      "valueTotal": -4.25
     },
     {
-      "rank": 314,
-      "rankMove": 7,
-      "rankMoveSigned": false,
-      "name": "Bruce Thornton",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "HOU",
-      "gp": 1,
-      "mpg": 2.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 1,
-      "ftPct": 0,
-      "ftm": 0,
-      "fta": 0,
-      "tpm": 0,
-      "pts": 0,
-      "treb": 0,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.81
-    },
-    {
-      "rank": 315,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 337,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Cody Williams",
       "pos": [
         "SG",
@@ -8059,12 +8620,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.81
+      "valueTotal": -4.25
     },
     {
-      "rank": 316,
-      "rankMove": 7,
-      "rankMoveSigned": false,
+      "rank": 338,
+      "rankMove": -7,
+      "rankMoveSigned": true,
       "name": "Jae'Sean Tate",
       "pos": [
         "SG",
@@ -8086,12 +8647,63 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.81
+      "valueTotal": -4.25
     },
     {
-      "rank": 317,
-      "rankMove": 6,
-      "rankMoveSigned": false,
+      "rank": 339,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Tyrese Proctor",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "nbaTeam": "CLE",
+      "gp": 1,
+      "mpg": 4.9,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -4.25
+    },
+    {
+      "rank": 340,
+      "rankMove": -7,
+      "rankMoveSigned": true,
+      "name": "Bruce Thornton",
+      "pos": [
+        "PG"
+      ],
+      "nbaTeam": "HOU",
+      "gp": 1,
+      "mpg": 2.5,
+      "fgPct": 0,
+      "fgm": 0,
+      "fga": 1,
+      "ftPct": 0,
+      "ftm": 0,
+      "fta": 0,
+      "tpm": 0,
+      "pts": 0,
+      "treb": 0,
+      "ast": 0,
+      "stl": 0,
+      "blk": 0,
+      "valueTotal": -4.25
+    },
+    {
+      "rank": 341,
+      "rankMove": -6,
+      "rankMoveSigned": true,
       "name": "Alex Karaban",
       "pos": [
         "SF"
@@ -8111,37 +8723,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.82
+      "valueTotal": -4.25
     },
     {
-      "rank": 318,
-      "rankMove": 1,
-      "rankMoveSigned": false,
-      "name": "Nolan Traoré",
-      "pos": [
-        "PG"
-      ],
-      "nbaTeam": "BKN",
-      "gp": 1,
-      "mpg": 15.5,
-      "fgPct": 0,
-      "fgm": 0,
-      "fga": 4,
-      "ftPct": 0.75,
-      "ftm": 3,
-      "fta": 4,
-      "tpm": 0,
-      "pts": 3,
-      "treb": 2,
-      "ast": 0,
-      "stl": 0,
-      "blk": 0,
-      "valueTotal": -2.84
-    },
-    {
-      "rank": 319,
-      "rankMove": 4,
-      "rankMoveSigned": false,
+      "rank": 342,
+      "rankMove": -4,
+      "rankMoveSigned": true,
       "name": "Carter Bryant",
       "pos": [
         "SF",
@@ -8162,12 +8749,12 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -2.99
+      "valueTotal": -4.42
     },
     {
-      "rank": 320,
-      "rankMove": 2,
-      "rankMoveSigned": false,
+      "rank": 343,
+      "rankMove": -2,
+      "rankMoveSigned": true,
       "name": "Trey Lyles",
       "pos": [
         "PF"
@@ -8187,12 +8774,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -3.12
+      "valueTotal": -4.55
     },
     {
-      "rank": 321,
+      "rank": 344,
       "rankMove": 1,
-      "rankMoveSigned": false,
+      "rankMoveSigned": true,
       "name": "Jamal Cain",
       "pos": [
         "SG",
@@ -8213,12 +8800,12 @@
       "ast": 0,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -3.41
+      "valueTotal": -4.84
     },
     {
-      "rank": 322,
-      "rankMove": 1,
-      "rankMoveSigned": false,
+      "rank": 345,
+      "rankMove": -1,
+      "rankMoveSigned": true,
       "name": "De'Andre Hunter",
       "pos": [
         "SF",
@@ -8239,10 +8826,10 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -3.51
+      "valueTotal": -4.88
     },
     {
-      "rank": 323,
+      "rank": 346,
       "rankMove": null,
       "rankMoveSigned": null,
       "name": "Jaylen Clark",
@@ -8265,7 +8852,7 @@
       "ast": 1,
       "stl": 0,
       "blk": 0,
-      "valueTotal": -4.85
+      "valueTotal": -6.27
     }
   ]
 }
