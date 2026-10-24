@@ -201,3 +201,15 @@ test('attachStandings scores Yahoo category totals into roto points and flags un
   assert.equal(teams[0].realRoto.fgPct, 1.5); // tie
   assert.equal(teams[0].realRoto.total, teams[1].realRoto.total);
 });
+
+test('parseInjuries reads name, team, positions, note and status from Yahoo injury rows', () => {
+  const { parseInjuries } = require('../season/fetch_injuries.js');
+  const row = (name, teamPos, note, status) => `<tr><td class="player"><div><a class="Nowrap name F-link playernote" href="#" title="${name}">${name}</a>` +
+    `<span class="ysf-player-status"><span>${status}</span></span></div><div>${teamPos}</div></td><td>${note}</td><td>${status}</td></tr>`;
+  const html = '<table><tr><th>Player</th><th>Note</th><th>Status</th></tr>' +
+    row('Cameron Johnson', 'DEN - SF,PF', 'Ankle', 'O') + row('Kristaps Porziņģis', 'GSW - C', 'Illness', 'Q') + '</table>';
+  const players = parseInjuries(html);
+  assert.deepEqual(players[0], { name: 'Cameron Johnson', nbaTeam: 'DEN', pos: ['SF', 'PF'], note: 'Ankle', status: 'O' });
+  assert.equal(players[1].name, 'Kristaps Porziņģis');
+  assert.throws(() => parseInjuries('<html></html>'), /No injury rows/);
+});

@@ -18,6 +18,7 @@ const OUT_FILE = path.join(__dirname, 'league.json');
 const STATS_FILE = path.join(__dirname, '..', 'stats', 'latest.json');
 const LINEUP_DIR = path.join(__dirname, 'lineups');
 const STANDINGS_DIR = path.join(__dirname, 'standings');
+const INJURY_DIR = path.join(__dirname, 'injuries');
 
 // The user's own team, plus other teams the user manages (their son Finn's team)
 const MY_TEAM = 'Shut Up and Jam Gaiden';
@@ -342,6 +343,15 @@ function main() {
   const lineupSnap = latestSnapshot(LINEUP_DIR);
   const standingsSnap = latestSnapshot(STANDINGS_DIR);
   const standingsIssues = standingsSnap ? attachStandings(teams, standingsSnap) : [];
+  // Latest Yahoo injury report: tag rostered players with { status, note } (null when healthy)
+  const injurySnap = latestSnapshot(INJURY_DIR);
+  if (injurySnap) {
+    const inj = new Map(injurySnap.players.map(p => [normName(p.name), p]));
+    for (const t of teams) for (const r of t.roster) {
+      const p = inj.get(normName(r.name));
+      r.injury = p ? { status: p.status, note: p.note } : null;
+    }
+  }
   const lineupIssues = lineupSnap ? attachLineups(teams, lineupSnap) : [];
 
   const league = {
@@ -357,6 +367,7 @@ function main() {
     statsAsOf: stats ? stats.asOf : null,
     lineupAsOf: lineupSnap ? lineupSnap.asOf : null,
     standingsAsOf: standingsSnap ? standingsSnap.asOf : null,
+    injuriesAsOf: injurySnap ? injurySnap.asOf : null,
     teams: teams.sort((a, b) => a.projRank - b.projRank),
     draft: picks
   };
@@ -400,6 +411,14 @@ function main() {
     const missing = teams.filter(t => !t.lineup).map(t => t.name);
     if (missing.length) console.log(`  No lineup in snapshot for: ${missing.join(', ')}`);
     for (const issue of lineupIssues) console.log(`  WARNING: ${issue}`);
+  }
+
+  if (injurySnap) {
+    console.log(`\nInjuries on managed teams (Yahoo report ${injurySnap.asOf}):`);
+    for (const t of teams.filter(tm => tm.isManaged)) {
+      const hurt = t.roster.filter(r => r.injury).map(r => `${r.name} ${r.injury.status} (${r.injury.note})`);
+      console.log(`  ${t.name}: ${hurt.length ? hurt.join(', ') : 'none'}`);
+    }
   }
 
   if (standingsSnap) {

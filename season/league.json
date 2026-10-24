@@ -14,6 +14,7 @@
   "statsAsOf": "2026-10-24",
   "lineupAsOf": "2026-10-22",
   "standingsAsOf": "2026-10-24",
+  "injuriesAsOf": "2026-10-24",
   "teams": [
     {
       "name": "Team Maru",
@@ -54,6 +55,7 @@
             "valueTotal": 3.93,
             "rank": 89
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -91,6 +93,7 @@
             "valueTotal": 5.49,
             "rank": 58
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -126,6 +129,10 @@
             "blk": 1,
             "valueTotal": 4.26,
             "rank": 81
+          },
+          "injury": {
+            "status": "O",
+            "note": "Hamstring"
           },
           "thisWeek": {
             "slot": "C",
@@ -164,6 +171,7 @@
             "valueTotal": -4,
             "rank": 316
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -200,6 +208,7 @@
             "valueTotal": 6.61,
             "rank": 42
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -237,6 +246,7 @@
             "valueTotal": -0.3,
             "rank": 197
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -274,6 +284,7 @@
             "valueTotal": 7.62,
             "rank": 33
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -311,6 +322,7 @@
             "valueTotal": 7.34,
             "rank": 38
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -348,6 +360,7 @@
             "valueTotal": 11.61,
             "rank": 3
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -384,6 +397,7 @@
             "valueTotal": -0.62,
             "rank": 211
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -420,6 +434,10 @@
             "blk": 1,
             "valueTotal": 6.27,
             "rank": 48
+          },
+          "injury": {
+            "status": "O",
+            "note": "Back"
           },
           "thisWeek": {
             "slot": "Util",
@@ -458,6 +476,7 @@
             "valueTotal": 0.25,
             "rank": 182
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -581,6 +600,7 @@
             "valueTotal": 7.72,
             "rank": 29
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -617,6 +637,7 @@
             "valueTotal": 5.82,
             "rank": 54
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -654,6 +675,7 @@
             "valueTotal": 5.1,
             "rank": 67
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -691,6 +713,7 @@
             "valueTotal": 0.95,
             "rank": 164
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -728,6 +751,7 @@
             "valueTotal": 1.86,
             "rank": 135
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -766,6 +790,7 @@
             "valueTotal": -1.03,
             "rank": 226
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -785,6 +810,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.12,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Foot"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "O",
@@ -821,6 +850,10 @@
             "blk": 1,
             "valueTotal": 2.38,
             "rank": 117
+          },
+          "injury": {
+            "status": "D",
+            "note": "Back"
           },
           "thisWeek": {
             "slot": "Util",
@@ -859,6 +892,7 @@
             "valueTotal": 3.52,
             "rank": 99
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -896,6 +930,7 @@
             "valueTotal": -6.23,
             "rank": 374
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -911,6 +946,10 @@
           "acquiredDate": "2026-10-21 04:06",
           "projZ": -0.99,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Knee"
+          },
           "thisWeek": null
         },
         {
@@ -944,6 +983,7 @@
             "valueTotal": 7.18,
             "rank": 39
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -977,6 +1017,7 @@
             "valueTotal": -1.35,
             "rank": 233
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -1150,6 +1191,7 @@
             "valueTotal": 10.08,
             "rank": 12
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -1187,6 +1229,7 @@
             "valueTotal": 10.5,
             "rank": 11
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -1224,6 +1267,7 @@
             "valueTotal": 2.02,
             "rank": 128
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -1260,6 +1304,7 @@
             "valueTotal": 5.58,
             "rank": 56
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1296,6 +1341,7 @@
             "valueTotal": 4.46,
             "rank": 76
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1332,6 +1378,7 @@
             "valueTotal": 11.04,
             "rank": 7
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -1369,6 +1416,7 @@
             "valueTotal": 3.85,
             "rank": 91
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -1406,6 +1454,7 @@
             "valueTotal": 2.66,
             "rank": 110
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1442,6 +1491,7 @@
             "valueTotal": -0.95,
             "rank": 223
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -1479,6 +1529,7 @@
             "valueTotal": 1.49,
             "rank": 146
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1515,6 +1566,10 @@
             "blk": 0,
             "valueTotal": -1.93,
             "rank": 244
+          },
+          "injury": {
+            "status": "O",
+            "note": "Ankle"
           },
           "thisWeek": {
             "slot": "BN",
@@ -1553,6 +1608,7 @@
             "valueTotal": 4.49,
             "rank": 75
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -1678,6 +1734,10 @@
             "valueTotal": 11.2,
             "rank": 6
           },
+          "injury": {
+            "status": "O",
+            "note": "Shoulder"
+          },
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -1716,6 +1776,7 @@
             "valueTotal": 12.47,
             "rank": 2
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -1753,6 +1814,7 @@
             "valueTotal": 0.37,
             "rank": 176
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -1791,6 +1853,7 @@
             "valueTotal": 3.53,
             "rank": 98
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -1827,6 +1890,7 @@
             "valueTotal": 4.11,
             "rank": 85
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1864,6 +1928,7 @@
             "valueTotal": 4.86,
             "rank": 72
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -1901,6 +1966,7 @@
             "valueTotal": 11.3,
             "rank": 4
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -1937,6 +2003,7 @@
             "valueTotal": 6.37,
             "rank": 45
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -1975,6 +2042,7 @@
             "valueTotal": 6.17,
             "rank": 50
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2011,6 +2079,7 @@
             "valueTotal": 2.81,
             "rank": 107
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2047,6 +2116,7 @@
             "valueTotal": -0.4,
             "rank": 203
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -2083,6 +2153,7 @@
             "valueTotal": 4.43,
             "rank": 77
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -2100,6 +2171,10 @@
           "acquiredDate": "2026-10-24 04:06",
           "projZ": 0,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Heel"
+          },
           "thisWeek": null
         }
       ],
@@ -2246,6 +2321,7 @@
             "valueTotal": 9.3,
             "rank": 14
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -2283,6 +2359,7 @@
             "valueTotal": 4.74,
             "rank": 73
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -2320,6 +2397,7 @@
             "valueTotal": 3.68,
             "rank": 95
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -2357,6 +2435,7 @@
             "valueTotal": 0.46,
             "rank": 174
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -2393,6 +2472,7 @@
             "valueTotal": 3.34,
             "rank": 100
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -2429,6 +2509,7 @@
             "valueTotal": 1.82,
             "rank": 137
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2466,6 +2547,7 @@
             "valueTotal": 1.2,
             "rank": 152
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2503,6 +2585,7 @@
             "valueTotal": 0.72,
             "rank": 169
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2540,6 +2623,7 @@
             "valueTotal": -0.44,
             "rank": 205
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2559,6 +2643,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.64,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Hamstring"
+          },
           "thisWeek": {
             "slot": "IL",
             "status": "O",
@@ -2596,6 +2684,7 @@
             "valueTotal": -3.39,
             "rank": 296
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -2632,6 +2721,10 @@
             "valueTotal": -2.9,
             "rank": 276
           },
+          "injury": {
+            "status": "P",
+            "note": "Lower Leg"
+          },
           "thisWeek": null
         },
         {
@@ -2665,6 +2758,7 @@
             "valueTotal": 1.42,
             "rank": 148
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -2822,6 +2916,7 @@
             "valueTotal": 7.66,
             "rank": 31
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -2859,6 +2954,7 @@
             "valueTotal": 4.04,
             "rank": 87
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -2896,6 +2992,7 @@
             "valueTotal": 7.58,
             "rank": 34
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2934,6 +3031,7 @@
             "valueTotal": 4.91,
             "rank": 71
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -2969,6 +3067,10 @@
             "blk": 0.5,
             "valueTotal": 6.45,
             "rank": 44
+          },
+          "injury": {
+            "status": "D",
+            "note": "Knee"
           },
           "thisWeek": {
             "slot": "PG",
@@ -3006,6 +3108,7 @@
             "valueTotal": 2.76,
             "rank": 108
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3042,6 +3145,7 @@
             "valueTotal": 3.06,
             "rank": 101
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3061,6 +3165,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -2.11,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Shoulder"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "O",
@@ -3098,6 +3206,7 @@
             "valueTotal": 6.79,
             "rank": 40
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3135,6 +3244,7 @@
             "valueTotal": -3.89,
             "rank": 311
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -3172,6 +3282,7 @@
             "valueTotal": 5.03,
             "rank": 69
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -3209,6 +3320,7 @@
             "valueTotal": 3.75,
             "rank": 94
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -3333,6 +3445,7 @@
             "valueTotal": 8.68,
             "rank": 19
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -3371,6 +3484,7 @@
             "valueTotal": 7.67,
             "rank": 30
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -3408,6 +3522,7 @@
             "valueTotal": 7.62,
             "rank": 32
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -3446,6 +3561,10 @@
             "valueTotal": 2.94,
             "rank": 104
           },
+          "injury": {
+            "status": "Q",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -3482,6 +3601,7 @@
             "valueTotal": -3.39,
             "rank": 297
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -3519,6 +3639,7 @@
             "valueTotal": -2.12,
             "rank": 251
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3554,6 +3675,10 @@
             "blk": 0.5,
             "valueTotal": 6.25,
             "rank": 49
+          },
+          "injury": {
+            "status": "O",
+            "note": "Knee"
           },
           "thisWeek": {
             "slot": "BN",
@@ -3593,6 +3718,7 @@
             "valueTotal": 4.41,
             "rank": 78
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3612,6 +3738,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Illness"
+          },
           "thisWeek": {
             "slot": "IL",
             "status": "O",
@@ -3648,6 +3778,7 @@
             "valueTotal": 2.48,
             "rank": 115
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3684,6 +3815,7 @@
             "valueTotal": -0.89,
             "rank": 220
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -3721,6 +3853,7 @@
             "valueTotal": 1.18,
             "rank": 155
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3757,6 +3890,10 @@
             "blk": 1.5,
             "valueTotal": 4.2,
             "rank": 83
+          },
+          "injury": {
+            "status": "Q",
+            "note": "Hip"
           },
           "thisWeek": null
         }
@@ -3887,6 +4024,7 @@
             "valueTotal": 10.98,
             "rank": 8
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -3924,6 +4062,7 @@
             "valueTotal": 6.59,
             "rank": 43
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -3961,6 +4100,7 @@
             "valueTotal": 5.16,
             "rank": 64
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -3998,6 +4138,7 @@
             "valueTotal": 5.1,
             "rank": 66
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -4035,6 +4176,7 @@
             "valueTotal": 1.89,
             "rank": 133
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4071,6 +4213,7 @@
             "valueTotal": 9.52,
             "rank": 13
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4108,6 +4251,7 @@
             "valueTotal": 1.63,
             "rank": 142
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -4145,6 +4289,7 @@
             "valueTotal": 2.15,
             "rank": 123
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4181,6 +4326,7 @@
             "valueTotal": 8.28,
             "rank": 23
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -4218,6 +4364,7 @@
             "valueTotal": 8.06,
             "rank": 24
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4238,6 +4385,7 @@
           "acquiredDate": "2026-10-20 07:41",
           "projZ": 0.54,
           "stats": null,
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -4271,6 +4419,7 @@
             "valueTotal": -3.35,
             "rank": 293
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -4423,6 +4572,7 @@
             "valueTotal": 7.35,
             "rank": 37
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -4459,6 +4609,7 @@
             "valueTotal": 5.29,
             "rank": 61
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -4495,6 +4646,7 @@
             "valueTotal": 5.26,
             "rank": 62
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4530,6 +4682,10 @@
             "blk": 0,
             "valueTotal": 7.48,
             "rank": 35
+          },
+          "injury": {
+            "status": "O",
+            "note": "Ankle"
           },
           "thisWeek": {
             "slot": "Util",
@@ -4568,6 +4724,7 @@
             "valueTotal": 1.14,
             "rank": 156
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -4604,6 +4761,7 @@
             "valueTotal": 5.19,
             "rank": 63
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4624,6 +4782,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": 3.07,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Hamstring"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "Q",
@@ -4660,6 +4822,7 @@
             "valueTotal": -0.47,
             "rank": 207
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -4698,6 +4861,7 @@
             "valueTotal": 0.86,
             "rank": 166
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -4734,6 +4898,7 @@
             "valueTotal": 0.07,
             "rank": 190
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -4771,6 +4936,7 @@
             "valueTotal": 8.91,
             "rank": 17
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -4807,6 +4973,7 @@
             "valueTotal": 8.01,
             "rank": 25
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -4944,6 +5111,7 @@
             "valueTotal": 7.99,
             "rank": 26
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -4981,6 +5149,10 @@
             "valueTotal": 6.29,
             "rank": 47
           },
+          "injury": {
+            "status": "O",
+            "note": "Back"
+          },
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -5017,6 +5189,7 @@
             "valueTotal": -3,
             "rank": 280
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5053,6 +5226,7 @@
             "valueTotal": 0.67,
             "rank": 171
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -5089,6 +5263,10 @@
             "blk": 1,
             "valueTotal": 1.69,
             "rank": 139
+          },
+          "injury": {
+            "status": "Q",
+            "note": "Wrist"
           },
           "thisWeek": {
             "slot": "SG",
@@ -5127,6 +5305,7 @@
             "valueTotal": -5.09,
             "rank": 344
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -5164,6 +5343,7 @@
             "valueTotal": 5.05,
             "rank": 68
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5202,6 +5382,7 @@
             "valueTotal": 2.99,
             "rank": 102
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5238,6 +5419,7 @@
             "valueTotal": 5.62,
             "rank": 55
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5259,6 +5441,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.21,
           "stats": null,
+          "injury": {
+            "status": "Q",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "Q",
@@ -5295,6 +5481,10 @@
             "blk": 0,
             "valueTotal": -3.37,
             "rank": 294
+          },
+          "injury": {
+            "status": "P",
+            "note": "Hamstring"
           },
           "thisWeek": {
             "slot": "BN",
@@ -5333,6 +5523,7 @@
             "valueTotal": -2.09,
             "rank": 250
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -5457,6 +5648,7 @@
             "valueTotal": 10.92,
             "rank": 9
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -5493,6 +5685,7 @@
             "valueTotal": 5.89,
             "rank": 53
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -5530,6 +5723,7 @@
             "valueTotal": 13.61,
             "rank": 1
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -5567,6 +5761,7 @@
             "valueTotal": 1.87,
             "rank": 134
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -5603,6 +5798,7 @@
             "valueTotal": 7.39,
             "rank": 36
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5623,6 +5819,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.06,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Calf"
+          },
           "thisWeek": {
             "slot": "SG",
             "status": "Q",
@@ -5660,6 +5860,7 @@
             "valueTotal": 4.35,
             "rank": 79
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5697,6 +5898,7 @@
             "valueTotal": 3.64,
             "rank": 97
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5716,6 +5918,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.9,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Calf"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "Q",
@@ -5753,6 +5959,7 @@
             "valueTotal": 2.52,
             "rank": 112
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5790,6 +5997,7 @@
             "valueTotal": 0.48,
             "rank": 172
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -5827,6 +6035,7 @@
             "valueTotal": 0.48,
             "rank": 173
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -5962,6 +6171,7 @@
             "valueTotal": 11.23,
             "rank": 5
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -5999,6 +6209,7 @@
             "valueTotal": 9.11,
             "rank": 16
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -6036,6 +6247,7 @@
             "valueTotal": -2.68,
             "rank": 271
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6072,6 +6284,7 @@
             "valueTotal": 1.22,
             "rank": 151
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -6109,6 +6322,7 @@
             "valueTotal": 1.76,
             "rank": 138
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -6146,6 +6360,7 @@
             "valueTotal": 5.36,
             "rank": 60
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -6183,6 +6398,7 @@
             "valueTotal": 0.72,
             "rank": 168
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6221,6 +6437,7 @@
             "valueTotal": 0.33,
             "rank": 178
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -6258,6 +6475,7 @@
             "valueTotal": 4.97,
             "rank": 70
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -6295,6 +6513,7 @@
             "valueTotal": 8.38,
             "rank": 22
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6332,6 +6551,7 @@
             "valueTotal": 4.25,
             "rank": 82
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6370,6 +6590,7 @@
             "valueTotal": 3.91,
             "rank": 90
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -6531,6 +6752,10 @@
             "valueTotal": 6.61,
             "rank": 41
           },
+          "injury": {
+            "status": "O",
+            "note": "Rest"
+          },
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -6550,6 +6775,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": -3.35,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": "Q",
@@ -6587,6 +6816,7 @@
             "valueTotal": 7.83,
             "rank": 28
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -6624,6 +6854,7 @@
             "valueTotal": 9.21,
             "rank": 15
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -6662,6 +6893,7 @@
             "valueTotal": 6.35,
             "rank": 46
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -6698,6 +6930,7 @@
             "valueTotal": -0.8,
             "rank": 215
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -6735,6 +6968,7 @@
             "valueTotal": 1.59,
             "rank": 143
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6771,6 +7005,7 @@
             "valueTotal": -0.35,
             "rank": 201
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6808,6 +7043,7 @@
             "valueTotal": 0.86,
             "rank": 165
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -6845,6 +7081,7 @@
             "valueTotal": -3.5,
             "rank": 304
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -6882,6 +7119,7 @@
             "valueTotal": 2.3,
             "rank": 118
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -6919,6 +7157,7 @@
             "valueTotal": 1.68,
             "rank": 140
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
@@ -7056,6 +7295,7 @@
             "valueTotal": -0.34,
             "rank": 200
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -7093,6 +7333,7 @@
             "valueTotal": 7.95,
             "rank": 27
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -7130,6 +7371,7 @@
             "valueTotal": 1.42,
             "rank": 147
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -7167,6 +7409,7 @@
             "valueTotal": 6.17,
             "rank": 51
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -7203,6 +7446,7 @@
             "valueTotal": 4.55,
             "rank": 74
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -7238,6 +7482,10 @@
             "blk": 2,
             "valueTotal": 5.54,
             "rank": 57
+          },
+          "injury": {
+            "status": "O",
+            "note": "Knee"
           },
           "thisWeek": {
             "slot": "Util",
@@ -7276,6 +7524,7 @@
             "valueTotal": 2.74,
             "rank": 109
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -7296,6 +7545,10 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0,
           "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Knee"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": "O",
@@ -7333,6 +7586,7 @@
             "valueTotal": -0.14,
             "rank": 193
           },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -7369,6 +7623,7 @@
             "valueTotal": -1.99,
             "rank": 245
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -7406,6 +7661,10 @@
             "valueTotal": 2.18,
             "rank": 121
           },
+          "injury": {
+            "status": "Q",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -7442,6 +7701,7 @@
             "valueTotal": 2.11,
             "rank": 124
           },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -7567,6 +7827,7 @@
             "valueTotal": 1.99,
             "rank": 129
           },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -7605,6 +7866,7 @@
             "valueTotal": 8.4,
             "rank": 21
           },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -7641,6 +7903,7 @@
             "valueTotal": 1.19,
             "rank": 154
           },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": "Q",
@@ -7678,6 +7941,7 @@
             "valueTotal": 8.43,
             "rank": 20
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7712,6 +7976,7 @@
             "valueTotal": -0.89,
             "rank": 219
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7744,6 +8009,7 @@
             "valueTotal": -1.62,
             "rank": 237
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7776,6 +8042,7 @@
             "valueTotal": 8.9,
             "rank": 18
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7809,6 +8076,7 @@
             "valueTotal": 1.06,
             "rank": 158
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7842,6 +8110,7 @@
             "valueTotal": 5.38,
             "rank": 59
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7875,6 +8144,7 @@
             "valueTotal": 3.98,
             "rank": 88
           },
+          "injury": null,
           "thisWeek": null
         },
         {
@@ -7908,6 +8178,7 @@
             "valueTotal": 10.68,
             "rank": 10
           },
+          "injury": null,
           "thisWeek": null
         }
       ],
