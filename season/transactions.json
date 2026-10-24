@@ -296,9 +296,57 @@
       ]
     },
     {
-      "date": "2026-10-23",
+      "date": "2026-10-22 22:46",
       "type": "trade",
-      "note": "Finn accepted his counter (Mitchell alone for Amen + Miller). The user vetoed it, and the commissioner overruled the veto, so the trade stands. Exact time not recorded.",
+      "moves": [
+        {
+          "name": "CJ McCollum",
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "to": "Cole is like that"
+        },
+        {
+          "name": "Jeremiah Fears",
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "to": "vincemvpcarter"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23 14:30",
+      "type": "add_drop",
+      "team": "Billy Hoyle's Boy-les",
+      "add": [
+        {
+          "name": "Keaton Wagler",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Khaman Maluach",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23 19:06",
+      "type": "trade",
+      "note": "Finn accepted his counter (Mitchell alone for Amen + Miller). The user vetoed it, and the commissioner overruled the veto, so the trade stands. Yahoo shows '( Bert )' next to both teams.",
       "moves": [
         {
           "name": "Donovan Mitchell",
@@ -326,6 +374,102 @@
             "PF"
           ],
           "to": "Finn will cook Burt"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23 21:44",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [
+        {
+          "name": "Naji Marshall",
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Nikola Vučević",
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23 23:53",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Brook Lopez",
+          "nbaTeam": "LAC",
+          "pos": [
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Reed Sheppard",
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "status": "O"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24 04:06",
+      "type": "add_drop",
+      "team": "Billy Hoyle's Boy-les",
+      "add": [
+        {
+          "name": "Brandon Ingram",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "status": "O",
+          "via": "Waiver"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-10-24 07:58",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [
+        {
+          "name": "Leonard Miller",
+          "nbaTeam": "CHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Brayden Burries",
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG"
+          ]
         }
       ]
     }
