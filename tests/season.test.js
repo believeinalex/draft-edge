@@ -231,3 +231,27 @@ test('morning report: gameLines differences snapshots into whole-number box scor
   assert.equal(mondayOf('2026-10-25'), '2026-10-19');
   assert.equal(mondayOf('2026-10-26'), '2026-10-26');
 });
+
+test('morning report: traded players keep counting for their locked-lineup team; abbreviations expand; cut-off lineups fill', () => {
+  const { activeLineups } = require('../season/morning_report.js');
+  const r = (name, acquired = 'draft') => ({ name, acquired });
+  const league = { teams: [
+    { name: 'Finn', roster: [r('Amen Thompson', 'trade'), r('Trae Young')], pendingOut: ['Donovan Mitchell'], lineup: {} },
+    { name: 'Maru', roster: [r('Nickeil Alexander-Walker')], lineup: { teamNameInferred: true } },
+    { name: 'Cole', roster: [r('Jalen Brunson'), r('Tyler Herro'), r('Bronny James')], lineup: {} }
+  ] };
+  const lp = (name, slot = 'Util') => ({ name, slot });
+  const snap = { teams: [
+    { team: 'Finn', players: [lp('Trae Young'), lp('Donovan Mitchell'), lp('Amen Thompson', 'BN'), ...Array(7).fill(0).map((_, i) => lp('F' + i))] },
+    { team: null, players: [lp('N. Alexander-Walker'), ...Array(8).fill(0).map((_, i) => lp('M' + i))] },
+    { team: 'Cole', players: [lp('Jalen Brunson')] }
+  ] };
+  const proj = new Map([['tyler herro', { totalZ: 3 }], ['bronny james', { totalZ: -2 }]]);
+  const out = activeLineups(league, snap, proj);
+  const names = t => out.get(t).players.map(p => p.name);
+  assert.ok(names('Finn').includes('Donovan Mitchell'));   // traded away mid-week, still locked in Finn's lineup
+  assert.ok(!names('Finn').includes('Amen Thompson'));     // benched in the locked lineup
+  assert.ok(names('Maru').includes('Nickeil Alexander-Walker'));
+  assert.deepEqual(names('Cole'), ['Jalen Brunson', 'Tyler Herro', 'Bronny James']);
+  assert.equal(out.get('Cole').estimated, true);
+});

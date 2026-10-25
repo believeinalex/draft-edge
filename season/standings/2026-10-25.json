@@ -1,6 +1,6 @@
 {
   "asOf": "2026-10-25",
-  "source": "Yahoo league standings pasted by the user late on Sat Oct 24 (ET), after Saturday's games (through Oct 24). Filed under 2026-10-25 to keep the convention that each file holds the totals going into that day.",
+  "source": "Yahoo league standings pasted by the user at ~11:40 pm ET on Sat Oct 24, while GS @ PHX (10 pm tip) and NO @ DEN (OT) were still being played. Incomplete for Saturday; kept for reference and skipped as a projection base.",
   "categories": [
     "fgPct",
     "ftPct",
@@ -207,5 +207,6 @@
       "stl": 20,
       "blk": 11
     }
-  ]
+  ],
+  "complete": false
 }

@@ -76,16 +76,29 @@ function gameLines(prev, cur) {
   return lines;
 }
 
-// Each team's active players this week: locked lineup slots, minus players no longer
-// owned (traded or dropped mid-week). A cut-off lineup paste is filled from the
-// team's best-projected owned players.
-function activeLineups(league, projByName) {
+// Each team's active players this week, read straight from the locked lineup snapshot.
+// Yahoo keeps counting a player for the team whose locked lineup he's in until the next
+// lock, even after a mid-week trade or drop, so ownership is deliberately ignored here.
+// A cut-off lineup paste is filled from the team's best-projected drafted players.
+function activeLineups(league, lineupSnap, projByName) {
   const out = new Map();
-  for (const t of league.teams) {
-    let active = t.roster.filter(r => r.thisWeek && !INACTIVE_SLOTS.has(r.thisWeek.slot));
+  if (!lineupSnap) return out;
+  const allNames = league.teams.flatMap(t => t.roster.map(r => r.name).concat(t.pendingOut || []));
+  const fullName = name => {
+    const m = name.match(/^([A-Za-z])\.\s+(.+)$/);
+    if (!m) return name;
+    return allNames.find(n => { const k = normName(n); return k.startsWith(m[1].toLowerCase()) && k.endsWith(' ' + normName(m[2])); }) || name;
+  };
+  const inferred = league.teams.find(t => t.lineup && t.lineup.teamNameInferred);
+  for (const block of lineupSnap.teams) {
+    const teamName = block.team || (inferred && inferred.name);
+    const t = league.teams.find(x => x.name === teamName);
+    if (!t) continue;
+    let active = block.players.filter(p => !INACTIVE_SLOTS.has(p.slot)).map(p => ({ ...p, name: fullName(p.name) }));
     let estimated = false;
-    if (t.lineup && !t.lineup.complete && active.length < 9) {
-      const extra = t.roster.filter(r => !r.thisWeek && r.acquired === 'draft')
+    if (block.players.length < 9) {
+      const listed = new Set(block.players.map(p => normName(fullName(p.name))));
+      const extra = t.roster.filter(r => !listed.has(normName(r.name)) && r.acquired === 'draft')
         .sort((a, b) => ((projByName.get(normName(b.name)) || {}).totalZ ?? -99) - ((projByName.get(normName(a.name)) || {}).totalZ ?? -99));
       active = active.concat(extra.slice(0, 9 - active.length));
       estimated = true;
@@ -122,6 +135,7 @@ async function main() {
   const score = buildScorer();
   const md = [];
   const warn = [];
+  let standingsJson = null;
 
   // 1. Last night
   const snaps = datedFiles(path.join(ROOT, 'stats', 'snapshots'));
@@ -134,7 +148,8 @@ async function main() {
   }
 
   const lines = prev ? gameLines(prev, cur) : new Map();
-  const active = activeLineups(league, projByName);
+  const lineupFiles = datedFiles(path.join(__dirname, 'lineups'));
+  const active = activeLineups(league, lineupFiles.length ? readJson(lineupFiles[lineupFiles.length - 1]) : null, projByName);
   const activeKey = new Map();
   for (const [team, a] of active) for (const r of a.players) activeKey.set(normName(r.name), team);
 
@@ -148,7 +163,11 @@ async function main() {
     rated.push({ ...l, key, delta: (gameZ - projZ) * l.games, gameZ, projZ, counted: activeKey.has(key) });
   }
   rated.sort((a, b) => b.delta - a.delta);
-  const row = r => `| ${r.name}${tag(r.name)}${r.counted ? '' : ' *(not in active lineup)*'} | ${fmtLine(r)} | ${r.delta >= 0 ? '+' : ''}${r.delta.toFixed(1)} |`;
+  const row = r => {
+    const team = activeKey.get(r.key);
+    const note = !team ? ' *(not in an active lineup)*' : team !== owner.get(r.key) ? ` *(counts for ${team} this week)*` : '';
+    return `| ${r.name}${tag(r.name)}${note} | ${fmtLine(r)} | ${r.delta >= 0 ? '+' : ''}${r.delta.toFixed(1)} |`;
+  };
   md.push(`## Last night (games in snapshot ${cur.asOf})`, '');
   if (!rated.length) {
     md.push('No rostered player games between the last two snapshots.', '');
@@ -197,10 +216,16 @@ async function main() {
   if (!stFiles.length) {
     md.push('No Yahoo standings saved yet.', '');
   } else {
-    const st = readJson(stFiles[stFiles.length - 1]);
+    // Standings copied while games were still being played are marked complete: false and
+    // skipped; the base is the latest complete standings, and later games are rebuilt
+    // from player stats (validated to match Yahoo within rounding).
+    const stAll = stFiles.map(readJson);
+    const st = [...stAll].reverse().find(x => x.complete !== false) || stAll[stAll.length - 1];
+    const skipped = stAll.filter(x => x.asOf > st.asOf && x.complete === false).map(x => x.asOf);
+    if (skipped.length) warn.push(`Skipped standings ${skipped.join(', ')}: copied while games were still in progress.`);
     let base = st.teams;
     if (st.asOf < cur.asOf) {
-      warn.push(`The latest standings are from ${st.asOf} but stats run to ${cur.asOf}: games in between are estimated from player stats. Paste today's standings for an exact base.`);
+      warn.push(`Base standings ${st.asOf}; games since then (through stats ${cur.asOf}) are rebuilt from player stats and locked lineups. Paste standings each morning, after every game has finished, for an exact base.`);
       const since = snaps.map(readJson).filter(s => s.asOf >= st.asOf);
       const extra = new Map();
       for (let i = 1; i < since.length; i++) {
@@ -229,13 +254,17 @@ async function main() {
         const s = statLine.get(normName(p.name));
         if (s) { fga += s.fga * s.gp; fta += s.fta * s.gp; gp += s.gp; }
       }
-      const scale = gp ? (r.gp + (r._extra ? r._extra.gp : 0)) / gp : 1;
-      fga = fga * scale || 1; fta = fta * scale || 1;
-      const t = { name: r.team, yahooRank: r.yahooRank, games: 0, estimated: a.estimated };
+      // Attempts behind the base standings' percentages, estimated from the active players'
+      // season lines scaled to the base's games played
+      const x = r._extra || { gp: 0, fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
+      const scale = gp ? r.gp / gp : 1;
+      const fgaBase = fga * scale || 1, ftaBase = fta * scale || 1;
+      const nowT = {
+        fgm: r.fgPct * fgaBase + x.fgm, fga: fgaBase + x.fga, ftm: r.ftPct * ftaBase + x.ftm, fta: ftaBase + x.fta,
+        ...Object.fromEntries(COUNT.map(c => [c, r[c] + x[c]]))
+      };
+      const t = { name: r.team, yahooRank: r.yahooRank, gpNow: r.gp + x.gp, games: 0, estimated: a.estimated };
       const add = { fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
-      if (r._extra) for (const k of Object.keys(add)) add[k] += r._extra[k];
-      let fgmBase = r.fgPct * (fga - (r._extra ? r._extra.fga : 0)), ftmBase = r.ftPct * (fta - (r._extra ? r._extra.fta : 0));
-      const fgaBase = fga - (r._extra ? r._extra.fga : 0), ftaBase = fta - (r._extra ? r._extra.fta : 0);
       for (const p of a.players) {
         const k = normName(p.name);
         const src = projByName.get(k) || statLine.get(k);
@@ -245,22 +274,23 @@ async function main() {
         t.games += w;
         for (const c of Object.keys(add)) add[c] += (src[c] || 0) * w;
       }
-      t.realTotals = Object.fromEntries(CATS.map(c => [c, r[c]]));
+      t.realTotals = { fgPct: nowT.fgm / nowT.fga, ftPct: nowT.ftm / nowT.fta, ...Object.fromEntries(COUNT.map(c => [c, nowT[c]])) };
       t.projTotals = {
-        fgPct: (fgmBase + add.fgm) / (fgaBase + add.fga),
-        ftPct: (ftmBase + add.ftm) / (ftaBase + add.fta),
-        ...Object.fromEntries(COUNT.map(c => [c, r[c] + add[c]]))
+        fgPct: (nowT.fgm + add.fgm) / (nowT.fga + add.fga),
+        ftPct: (nowT.ftm + add.ftm) / (nowT.fta + add.fta),
+        ...Object.fromEntries(COUNT.map(c => [c, nowT[c] + add[c]]))
       };
       return t;
     });
     rotoPoints(teams, 'real');
     rotoPoints(teams, 'proj');
-    md.push(`Base: Yahoo standings ${st.asOf}. Tonight: ${tonight.size / 2} NBA games; each active player counts his projected per-game stats, weighted by injury status (O/D 0, Q 0.5, P 0.9). Players traded mid-week count for no one until the next lock.`, '');
-    md.push('| Now | Proj | Team | Games tonight | Points now → proj | ' + CATS.join(' | ') + ' |');
-    md.push('|---|---|---|---|---|' + CATS.map(() => '---').join('|') + '|');
+    standingsJson = { base: st.asOf, statsThrough: cur.asOf, teams: teams.map(t => ({ name: t.name, gpNow: t.gpNow, gamesTonight: t.games, now: t.realTotals, nowRoto: t.realRoto, nowRank: t.realRank, proj: t.projTotals, projRoto: t.projRoto, projRank: t.projRank })) };
+    md.push(`"Now" = Yahoo standings ${st.asOf}${st.asOf < cur.asOf ? ` plus games through stats ${cur.asOf}, rebuilt from player stats` : ''}. Tonight: ${tonight.size / 2} NBA games; each player in a locked active lineup counts his projected per-game stats, weighted by injury status (O/D 0, Q 0.5, P 0.9). Players traded or dropped mid-week keep counting for the team whose lineup they're locked into until the next lock, as Yahoo does.`, '');
+    md.push('| Now | Proj | Team | GP now | Games tonight | Points now → proj | ' + CATS.join(' | ') + ' |');
+    md.push('|---|---|---|---|---|---|' + CATS.map(() => '---').join('|') + '|');
     for (const t of [...teams].sort((a, b) => a.projRank - b.projRank)) {
       const mark = t.name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(t.name) ? ' **(Finn)**' : '';
-      md.push(`| ${t.yahooRank} | ${t.projRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${t.games} | ${t.realRoto.total} → ${t.projRoto.total} | ` +
+      md.push(`| ${t.realRank} | ${t.projRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${t.gpNow} | ${t.games} | ${t.realRoto.total} → ${t.projRoto.total} | ` +
         CATS.map(c => t.projRoto[c]).join(' | ') + ' |');
     }
     if (teams.some(t => t.estimated)) md.push('', '† lineup paste was cut off; missing starters estimated from best-projected players.');
@@ -268,7 +298,7 @@ async function main() {
     for (const tn of league.managedTeams || []) {
       const t = teams.find(x => x.name === tn);
       if (!t) continue;
-      md.push(`- **${tn}:** ${t.yahooRank} → ${t.projRank} (${t.realRoto.total} → ${t.projRoto.total} pts), ${t.games} games tonight. ` +
+      md.push(`- **${tn}:** ${t.realRank} → ${t.projRank} (${t.realRoto.total} → ${t.projRoto.total} pts), ${t.games} games tonight. ` +
         `Projected: FG ${fmtPct(t.projTotals.fgPct)}, FT ${fmtPct(t.projTotals.ftPct)}, ${COUNT.map(c => `${Math.round(t.projTotals[c])} ${c}`).join(', ')}.`);
     }
     md.push('');
@@ -278,6 +308,7 @@ async function main() {
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const out = path.join(REPORT_DIR, `${today}.md`);
   fs.writeFileSync(out, md.join('\n'));
+  if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify(standingsJson, null, 2) + '\n');
   console.log(md.join('\n'));
   console.log(`\nSaved ${path.relative(process.cwd(), out)}`);
 }
