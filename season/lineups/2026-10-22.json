@@ -1924,6 +1924,89 @@
             "C"
           ],
           "gameToday": null
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "Util",
+          "name": "Tyler Herro",
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "Util",
+          "name": "Andrew Wiggins",
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "Util",
+          "name": "Wendell Carter Jr.",
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "Util",
+          "name": "Jeremiah Fears",
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "BN",
+          "name": "Aday Mara",
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "BN",
+          "name": "Kevin Porter Jr.",
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "fromOverride": true
+        },
+        {
+          "status": null,
+          "gameToday": null,
+          "slot": "BN",
+          "name": "Bronny James",
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "fromOverride": true
         }
       ]
     }

@@ -69,9 +69,18 @@ function parseLineupText(text) {
 function main() {
   const files = fs.readdirSync(RAW_DIR).filter(f => /^\d{4}-\d{2}-\d{2}\.txt$/.test(f)).sort();
   if (!files.length) throw new Error(`No raw lineups in ${RAW_DIR}`);
+  const overridesFile = path.join(OUT_DIR, 'overrides.json');
+  const overrides = fs.existsSync(overridesFile) ? JSON.parse(fs.readFileSync(overridesFile, 'utf8')) : {};
   for (const f of files) {
     const asOf = f.replace('.txt', '');
     const teams = parseLineupText(fs.readFileSync(path.join(RAW_DIR, f), 'utf8'));
+    // Verified fill-ins for pastes that were cut off (season/lineups/overrides.json)
+    const extra = (overrides[asOf] || {});
+    for (const [team, o] of Object.entries(extra)) {
+      const block = teams.find(b => b.team === team);
+      if (!block) throw new Error(`overrides.json: no lineup block for "${team}" in ${f}`);
+      for (const p of o.players) block.players.push({ status: null, gameToday: null, ...p, fromOverride: true });
+    }
     const snap = { asOf, source: `season/lineups/raw/${f}`, teams };
     fs.writeFileSync(path.join(OUT_DIR, `${asOf}.json`), JSON.stringify(snap, null, 2) + '\n');
     console.log(`${f}: ${teams.length} team blocks, ${teams.reduce((s, t) => s + t.players.length, 0)} players` +

@@ -1,0 +1,72 @@
+{
+  "_format": "Players missing from a lineup paste (cut off in the copy), keyed by lineup snapshot date and team. parse_lineups.js appends them to that team's block. Only add players verified against Yahoo's real standings totals.",
+  "2026-10-22": {
+    "Cole is like that": {
+      "note": "Paste cut off after 5 players. These 4 starters are the only combination that reproduces Cole's Yahoo totals on Oct 25 (24 GP, 419 pts, 132 reb, 62 ast, .445 FG). Bench: the rest of Cole's roster at the lock (Aday Mara, Kevin Porter Jr., Bronny James); KPJ and Bronny left in logged moves later that week.",
+      "players": [
+        {
+          "slot": "Util",
+          "name": "Tyler Herro",
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        },
+        {
+          "slot": "Util",
+          "name": "Andrew Wiggins",
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ]
+        },
+        {
+          "slot": "Util",
+          "name": "Wendell Carter Jr.",
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ]
+        },
+        {
+          "slot": "Util",
+          "name": "Jeremiah Fears",
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        },
+        {
+          "slot": "BN",
+          "name": "Aday Mara",
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ]
+        },
+        {
+          "slot": "BN",
+          "name": "Kevin Porter Jr.",
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        },
+        {
+          "slot": "BN",
+          "name": "Bronny James",
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    }
+  }
+}
