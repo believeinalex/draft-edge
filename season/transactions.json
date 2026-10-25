@@ -472,6 +472,33 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-10-25 04:06",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "note": "User's waiver claim; exact time not shown (this league's waivers process around 4:06 am).",
+      "add": [
+        {
+          "name": "Jakob Poeltl",
+          "nbaTeam": "TOR",
+          "pos": [
+            "C"
+          ],
+          "via": "Waiver"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Cameron Johnson",
+          "nbaTeam": "DEN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "status": "O"
+        }
+      ]
     }
   ]
 }
