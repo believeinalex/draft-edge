@@ -14,7 +14,7 @@
   "statsAsOf": "2026-10-25",
   "lineupAsOf": "2026-10-22",
   "standingsAsOf": "2026-10-25",
-  "injuriesAsOf": "2026-10-24",
+  "injuriesAsOf": "2026-10-25",
   "teams": [
     {
       "name": "Team Maru",
@@ -713,10 +713,7 @@
             "valueTotal": 3.15,
             "rank": 83
           },
-          "injury": {
-            "status": "Q",
-            "note": "Groin"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -855,7 +852,7 @@
             "rank": 132
           },
           "injury": {
-            "status": "D",
+            "status": "O",
             "note": "Back"
           },
           "thisWeek": {
@@ -2475,7 +2472,10 @@
             "valueTotal": 2.18,
             "rank": 106
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -3639,7 +3639,10 @@
             "valueTotal": -3.59,
             "rank": 264
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -5682,7 +5685,10 @@
             "valueTotal": 5.79,
             "rank": 38
           },
-          "injury": null,
+          "injury": {
+            "status": "D",
+            "note": "Rest"
+          },
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -6395,7 +6401,10 @@
             "valueTotal": -2.84,
             "rank": 241
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Undisclosed"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -7620,7 +7629,10 @@
             "valueTotal": -1.66,
             "rank": 210
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Rest"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,

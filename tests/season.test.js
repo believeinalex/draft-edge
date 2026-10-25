@@ -213,3 +213,21 @@ test('parseInjuries reads name, team, positions, note and status from Yahoo inju
   assert.equal(players[1].name, 'Kristaps Porziņģis');
   assert.throws(() => parseInjuries('<html></html>'), /No injury rows/);
 });
+
+test('morning report: gameLines differences snapshots into whole-number box scores; scorer ranks a big game above an average one', () => {
+  const { gameLines, buildScorer, mondayOf } = require('../season/morning_report.js');
+  const prev = { players: [{ name: 'A', gp: 1, fgm: 5, fga: 10, ftm: 2, fta: 2, tpm: 1, pts: 13, treb: 4, ast: 3, stl: 1, blk: 0 }] };
+  const cur = { players: [
+    { name: 'A', gp: 2, fgm: 7.5, fga: 14, ftm: 3.5, fta: 4, tpm: 1.5, pts: 20, treb: 6.5, ast: 4, stl: 1, blk: 0.5 },
+    { name: 'B', gp: 1, fgm: 3, fga: 9, ftm: 0, fta: 0, tpm: 0, pts: 6, treb: 2, ast: 1, stl: 0, blk: 0 }
+  ] };
+  const lines = gameLines(prev, cur);
+  assert.deepEqual([lines.get('a').pts, lines.get('a').fgm, lines.get('a').fga, lines.get('a').games], [27, 10, 18, 1]);
+  assert.equal(lines.get('b').pts, 6);
+  const score = buildScorer();
+  const big = { fgm: 12, fga: 20, ftm: 8, fta: 8, tpm: 4, pts: 36, treb: 10, ast: 8, stl: 2, blk: 1 };
+  const meh = { fgm: 3, fga: 9, ftm: 0, fta: 0, tpm: 0, pts: 6, treb: 2, ast: 1, stl: 0, blk: 0 };
+  assert.ok(score(big) > score(meh));
+  assert.equal(mondayOf('2026-10-25'), '2026-10-19');
+  assert.equal(mondayOf('2026-10-26'), '2026-10-26');
+});

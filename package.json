@@ -11,7 +11,9 @@
     "fetch-stats": "NODE_USE_ENV_PROXY=1 node --no-warnings stats/fetch_htb.js && npm run -s stats",
     "lineups": "node season/parse_lineups.js && node season/build_season.js",
     "value": "node season/value_report.js",
-    "injuries": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_injuries.js && npm run -s season"
+    "injuries": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_injuries.js && npm run -s season",
+    "report": "NODE_USE_ENV_PROXY=1 node --no-warnings season/morning_report.js",
+    "morning": "npm run -s fetch-stats && npm run -s injuries && npm run -s report"
   },
   "keywords": [
     "fantasy-basketball",
