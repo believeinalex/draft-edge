@@ -474,10 +474,9 @@
       ]
     },
     {
-      "date": "2026-10-25 04:06",
+      "date": "2026-10-25 04:08",
       "type": "add_drop",
       "team": "Shut Up and Jam Gaiden",
-      "note": "User's waiver claim; exact time not shown (this league's waivers process around 4:06 am).",
       "add": [
         {
           "name": "Jakob Poeltl",
@@ -499,6 +498,118 @@
           "status": "O"
         }
       ]
+    },
+    {
+      "date": "2026-10-25 17:54",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [
+        {
+          "name": "Aaron Wiggins",
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Collin Sexton",
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25 22:17",
+      "type": "add_drop",
+      "team": "vincemvpcarter",
+      "add": [
+        {
+          "name": "Tristan da Silva",
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Kevin Porter Jr.",
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26 01:25",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Kris Dunn",
+          "nbaTeam": "LAC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Cason Wallace",
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26 01:34",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [
+        {
+          "name": "Alex Caruso",
+          "nbaTeam": "OKC",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-10-26 04:15",
+      "type": "add_drop",
+      "team": "Finn will cook Burt",
+      "add": [
+        {
+          "name": "Khaman Maluach",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "via": "Waiver"
+        }
+      ],
+      "drop": []
     }
   ]
 }
