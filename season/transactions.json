@@ -652,6 +652,24 @@
         }
       ],
       "drop": []
+    },
+    {
+      "date": "2026-10-26 15:00",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "note": "User's FA pickup before Monday's lineup lock; exact time not given (about 3 pm ET). No drop: Jalen Suggs moved to IL. Sheppard starts at SG this week, Quickley benched.",
+      "add": [
+        {
+          "name": "Reed Sheppard",
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
     }
   ]
 }
