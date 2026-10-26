@@ -474,6 +474,31 @@
       ]
     },
     {
+      "date": "2026-10-25 00:40",
+      "type": "add_drop",
+      "team": "vincemvpcarter",
+      "add": [
+        {
+          "name": "Trevon Brazile",
+          "nbaTeam": "DEN",
+          "pos": [
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Jeremiah Fears",
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-25 04:08",
       "type": "add_drop",
       "team": "Shut Up and Jam Gaiden",
@@ -550,6 +575,23 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-10-26 01:17",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Julian Champagnie",
+          "nbaTeam": "SAS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
     },
     {
       "date": "2026-10-26 01:25",

@@ -1,0 +1,711 @@
+vincemvpcarter
+Pos
+Player
+PG
+Dejounte MurrayPlayer Note
+NOP - PG
+SG
+Keyonte GeorgeNew Player Note
+UTA - PG,SG
+9:00 pm vs MEM
+SF
+Lauri MarkkanenNew Player Note
+UTA - SF,PF
+9:00 pm vs MEM
+PF
+Anthony DavisNew Player Note
+WAS - PF,C
+7:00 pm @ CHA
+C
+Walker KesslerPlayer Note
+LAL - C
+Util
+Dylan HarperPlayer Note
+SAS - PG,SG
+Util
+Zion WilliamsonPlayer Note
+NOP - PF,C
+Util
+Damian LillardPlayer Note
+POR - PG
+Util
+Ryan RollinsPlayer Note
+MIL - PG,SG
+8:00 pm vs IND
+BN
+Collin Murray-BoylesPlayer Note
+TOR - PF,C
+BN
+Trevon BrazilePlayer Note
+DEN - PF
+10:00 pm vs GSW
+BN
+Tristan da SilvaNew Player Note
+ORL - SF,PF
+#WashedAutoDraftKing
+Pos
+Player
+PG
+LaMelo BallNew Player Note
+MIN - PG
+7:00 pm @ CLE
+SG
+Kris DunnNew Player Note
+LAC - PG,SG
+SF
+Julian ChampagniePlayer Note
+SAS - SF,PF
+PF
+Giannis AntetokounmpoPlayer Note
+MIA - PF,C
+7:30 pm vs DAL
+C
+Pascal SiakamNew Player Note
+IND - PF,C
+8:00 pm @ MIL
+Util
+Myles TurnerPlayer Note
+MIL - C
+8:00 pm vs IND
+Util
+Ja MorantPlayer Note
+POR - PG
+Util
+Brook LopezPlayer Note
+LAC - C
+Util
+Daniel GaffordPlayer Note
+DAL - C
+7:30 pm @ MIA
+BN
+Darryn PetersonPlayer Note
+UTA - SG
+9:00 pm vs MEM
+BN
+Aaron GordonPlayer Note
+DEN - PF,C
+10:00 pm vs GSW
+BN
+Kon KnueppelONew Player Note
+CHA - SG,SF
+7:00 pm vs WAS
+IL
+Paolo BancheroOPlayer Note
+ORL - PF
+Bitsketball Stars
+Pos
+Player
+PG
+Shai Gilgeous-AlexanderNew Player Note
+OKC - PG
+8:00 pm vs PHX
+SG
+Cedric CowardNew Player Note
+MEM - SG,SF
+9:00 pm @ UTA
+SF
+LeBron JamesNew Player Note
+PHI - SF,PF
+PF
+DeMar DeRozanPlayer Note
+DEN - SF,PF
+10:00 pm vs GSW
+C
+Onyeka OkongwuPlayer Note
+ATL - C
+8:30 pm @ HOU
+Util
+Jamal MurrayPlayer Note
+DEN - PG
+10:00 pm vs GSW
+Util
+Andrew NembhardPlayer Note
+IND - PG,SG
+8:00 pm @ MIL
+Util
+RJ BarrettNew Player Note
+TOR - SG,SF,PF
+Util
+Moussa DiabatéPlayer Note
+CHA - C
+7:00 pm vs WAS
+BN
+Anthony BlackNew Player Note
+ORL - PG,SG,SF
+BN
+Aaron NesmithNew Player Note
+IND - SG,SF
+8:00 pm @ MIL
+BN
+Bennedict MathurinPlayer Note
+NOP - SG,SF
+Grilled Teampura
+Pos
+Player
+PG
+Tyrese MaxeyNew Player Note
+PHI - PG
+SG
+Tyrese HaliburtonNew Player Note
+IND - PG,SG
+8:00 pm @ MIL
+SF
+Alex CarusoPlayer Note
+OKC - SG,SF
+8:00 pm vs PHX
+PF
+Michael Porter Jr.Player Note
+BKN - SF,PF
+C
+Jalen SmithPlayer Note
+CHI - PF,C
+7:30 pm @ BOS
+Util
+Josh GiddeyNew Player Note
+CHI - PG,SG
+7:30 pm @ BOS
+Util
+Stephon CastlePlayer Note
+SAS - PG,SG
+Util
+Grayson AllenPlayer Note
+CHA - SG,SF
+7:00 pm vs WAS
+Util
+Peyton WatsonPlayer Note
+CLE - SF,PF
+7:00 pm vs MIN
+BN
+Alex SarrNew Player Note
+WAS - C
+7:00 pm @ CHA
+BN
+Gui SantosQNew Player Note
+GSW - SF,PF
+10:00 pm @ DEN
+BN
+Tari EasonNew Player Note
+HOU - SG,SF,PF
+8:30 pm vs ATL
+IL
+Naji MarshallONew Player Note
+DAL - SG,SF,PF
+7:30 pm @ MIA
+Billy Hoyle's Boy-les
+Pos
+Player
+PG
+Austin ReavesNew Player Note
+LAL - PG,SG,SF
+SG
+Kyshawn GeorgePlayer Note
+WAS - SG,SF,PF
+7:00 pm @ CHA
+SF
+Matas BuzelisNew Player Note
+CHI - SF,PF
+7:30 pm @ BOS
+PF
+Caleb WilsonPlayer Note
+CHI - PF
+7:30 pm @ BOS
+C
+Naz ReidPlayer Note
+CHA - PF,C
+7:00 pm vs WAS
+Util
+Jaden McDanielsNew Player Note
+MIN - SF
+7:00 pm @ CLE
+Util
+Yaxel LendeborgPlayer Note
+GSW - PF
+10:00 pm @ DEN
+Util
+Ty JeromeNew Player Note
+MEM - PG,SG
+9:00 pm @ UTA
+Util
+Zach LaVineNew Player Note
+SAC - PG,SG,SF
+BN
+Cooper FlaggONew Player Note
+DAL - SG,SF,PF
+7:30 pm @ MIA
+BN
+Darius Acuff Jr.New Player Note
+SAC - PG
+BN
+Keaton WaglerPlayer Note
+LAC - SG
+IL
+Brandon IngramONo new player Notes
+LAC - SG,SF,PF
+Fishy Achilles
+Pos
+Player
+PG
+James HardenPlayer Note
+CLE - PG,SG
+7:00 pm vs MIN
+SG
+Derrick WhitePlayer Note
+BOS - PG,SG
+7:30 pm vs CHI
+SF
+Trey Murphy IIIPlayer Note
+NOP - SG,SF
+PF
+Scottie BarnesNew Player Note
+TOR - SF,PF,C
+C
+Zach EdeyPPlayer Note
+MEM - C
+9:00 pm @ UTA
+Util
+Neemias QuetaPlayer Note
+BOS - C
+7:30 pm vs CHI
+Util
+Norman PowellNew Player Note
+CHI - SG,SF
+7:30 pm @ BOS
+Util
+Leonard MillerPlayer Note
+CHI - SF,PF
+7:30 pm @ BOS
+Util
+Sandro MamukelashviliPlayer Note
+LAL - PF,C
+BN
+Egor DëminNew Player Note
+BKN - PG,SG
+BN
+Rui HachimuraPlayer Note
+LAC - SF,PF
+BN
+Morez Johnson Jr.Player Note
+DAL - PF
+7:30 pm @ MIA
+IL
+Nic ClaxtonOPlayer Note
+CHI - C
+7:30 pm @ BOS
+the tinkerballers 🧚🏼‍♀️🌸🎀
+Pos
+Player
+PG
+Cade CunninghamNew Player Note
+DET - PG,SG
+SG
+Kawhi LeonardQNew Player Note
+TOR - SG,SF,PF
+SF
+Jalen JohnsonPlayer Note
+ATL - SF,PF
+8:30 pm @ HOU
+PF
+Ausar ThompsonQNew Player Note
+DET - SG,SF,PF
+C
+Kel'el WarePlayer Note
+MIL - C
+8:00 pm vs IND
+Util
+Jaime Jaquez Jr.Player Note
+MIL - SG,SF,PF
+8:00 pm vs IND
+Util
+Fred VanVleetNew Player Note
+HOU - PG
+8:30 pm vs ATL
+Util
+Mitchell RobinsonPlayer Note
+BOS - C
+7:30 pm vs CHI
+Util
+Ziaire WilliamsPlayer Note
+LAL - SG,SF
+BN
+Zaccharie RisacherPlayer Note
+DAL - SF,PF
+7:30 pm @ MIA
+BN
+Isaiah JacksonPlayer Note
+LAC - C
+BN
+Keegan MurrayQNew Player Note
+SAC - SF,PF
+IL
+Kristaps PorziņģisOPlayer Note
+GSW - C
+10:00 pm @ DEN
+Shut Up and Jam Gaiden
+Pos
+Player
+PG
+Luka DončićNew Player Note
+LAL - PG,SG
+SG
+Immanuel QuickleyNew Player Note
+TOR - PG,SG
+SF
+Franz WagnerNew Player Note
+ORL - SF,PF
+PF
+Julius RandleNew Player Note
+BKN - PF
+C
+Chet HolmgrenPlayer Note
+OKC - PF,C
+8:00 pm vs PHX
+Util
+Day'Ron SharpeNew Player Note
+BKN - C
+Util
+Darius GarlandNew Player Note
+LAC - PG
+Util
+Paul ReedNew Player Note
+DET - PF,C
+Util
+Ajay MitchellNew Player Note
+OKC - PG,SG
+8:00 pm vs PHX
+BN
+Jakob PoeltlNew Player Note
+TOR - C
+BN
+Jalen SuggsDNew Player Note
+ORL - PG,SG
+BN
+Miles BridgesPlayer Note
+PHX - PF
+8:00 pm @ OKC
+Super Maru
+Pos
+Player
+PG
+Anthony EdwardsNew Player Note
+MIN - PG,SG
+7:00 pm @ CLE
+SG
+Ayo DosunmuPlayer Note
+MIN - PG,SG
+7:00 pm @ CLE
+SF
+Aaron WigginsNew Player Note
+ATL - SG,SF
+8:30 pm @ HOU
+PF
+Domantas SabonisPlayer Note
+SAC - PF,C
+C
+Bobby Portis Jr.Player Note
+MIA - PF,C
+7:30 pm vs DAL
+Util
+De'Aaron FoxPlayer Note
+SAS - PG
+Util
+John CollinsNew Player Note
+DET - PF,C
+Util
+Luguentz DortPlayer Note
+ATL - SG,SF
+8:30 pm @ HOU
+Util
+Joel EmbiidPNew Player Note
+PHI - C
+BN
+Jalen WilliamsONew Player Note
+OKC - SF,PF
+8:00 pm vs PHX
+BN
+Coby WhiteONew Player Note
+CHA - PG,SG
+7:00 pm vs WAS
+BN
+Tobias HarrisOPlayer Note
+SAS - PF
+Team Maru
+Pos
+Player
+PG
+N. Alexander-WalkerNew Player Note
+ATL - PG,SG
+8:30 pm @ HOU
+SG
+Desmond BaneNew Player Note
+ORL - SG,SF
+SF
+OG AnunobyNew Player Note
+NYK - SF,PF
+PF
+Mikal BridgesPlayer Note
+NYK - SF,PF
+C
+Derik QueenPlayer Note
+NOP - PF,C
+Util
+Cameron BoozerPlayer Note
+MEM - PF
+9:00 pm @ UTA
+Util
+Dyson DanielsNew Player Note
+ATL - SG,SF
+8:30 pm @ HOU
+Util
+Paul GeorgeNew Player Note
+BOS - SF,PF
+7:30 pm vs CHI
+Util
+Jalen GreenPlayer Note
+PHX - SG,SF
+8:00 pm @ OKC
+BN
+Brandin PodziemskiNew Player Note
+GSW - PG,SG
+10:00 pm @ DEN
+BN
+Payton PritchardPlayer Note
+BOS - PG
+7:30 pm vs CHI
+IL
+Jalen DurenONew Player Note
+DET - C
+The New Day Co-op
+Pos
+Player
+PG
+Kyrie IrvingNew Player Note
+DAL - PG
+7:30 pm @ MIA
+SG
+Deni AvdijaPlayer Note
+POR - SG,SF,PF
+SF
+Quentin GrimesPlayer Note
+LAL - SG,SF
+PF
+Karl-Anthony TownsNew Player Note
+NYK - PF,C
+C
+Evan MobleyPlayer Note
+CLE - PF,C
+7:00 pm vs MIN
+Util
+Jaren Jackson Jr.Player Note
+UTA - PF,C
+9:00 pm vs MEM
+Util
+Donovan ClinganPlayer Note
+POR - C
+Util
+Ivica ZubacDNew Player Note
+IND - C
+8:00 pm @ MIL
+Util
+Jabari Smith Jr.Player Note
+HOU - PF,C
+8:30 pm vs ATL
+BN
+Mark WilliamsONo new player Notes
+PHX - C
+8:00 pm @ OKC
+BN
+Collin GillespiePlayer Note
+PHX - PG,SG
+8:00 pm @ OKC
+BN
+P.J. WashingtonPlayer Note
+DAL - PF,C
+7:30 pm @ MIA
+Herb's Astonishing Team
+Pos
+Player
+PG
+Davion MitchellPlayer Note
+MIA - PG
+7:30 pm vs DAL
+SG
+Jrue HolidayPlayer Note
+POR - PG,SG
+SF
+Jayson TatumPlayer Note
+BOS - SF,PF
+7:30 pm vs CHI
+PF
+Bam AdebayoPlayer Note
+MIA - PF,C
+7:30 pm vs DAL
+C
+Nikola JokićPlayer Note
+DEN - C
+10:00 pm vs GSW
+Util
+Toumani CamaraPlayer Note
+POR - SF,PF
+Util
+Yves MissiOPlayer Note
+NOP - C
+Util
+Pelle LarssonPlayer Note
+MIA - SG,SF
+7:30 pm vs DAL
+Util
+Jake LaRaviaPlayer Note
+LAL - SF,PF
+BN
+Jimmy Butler IIIOPlayer Note
+GSW - SF,PF
+10:00 pm @ DEN
+BN
+Mikel Brown Jr.PPlayer Note
+BKN - PG
+BN
+Scotty Pippen Jr.Player Note
+MEM - PG
+9:00 pm @ UTA
+Full Court Rex
+Pos
+Player
+PG
+Stephen CurryNew Player Note
+GSW - PG
+10:00 pm @ DEN
+SG
+Devin BookerPlayer Note
+PHX - PG,SG
+8:00 pm @ OKC
+SF
+Jaylen BrownNew Player Note
+PHI - SG,SF,PF
+PF
+Alperen ŞengünNew Player Note
+HOU - PF,C
+8:30 pm vs ATL
+C
+Rudy GobertPlayer Note
+MIN - C
+7:00 pm @ CLE
+Util
+Ace BaileyNew Player Note
+UTA - SF,PF
+9:00 pm vs MEM
+Util
+Isaiah HartensteinNew Player Note
+OKC - C
+8:00 pm vs PHX
+Util
+Devin VassellPlayer Note
+SAS - SG,SF
+Util
+Jonathan KumingaNew Player Note
+MIN - SF,PF
+7:00 pm @ CLE
+BN
+AJ DybantsaONew Player Note
+WAS - SF
+7:00 pm @ CHA
+BN
+Dillon BrooksPlayer Note
+PHX - SF,PF
+8:00 pm @ OKC
+BN
+Jared McCainPlayer Note
+OKC - PG,SG
+8:00 pm vs PHX
+Finn will cook Burt
+Pos
+Player
+PG
+Trae YoungNew Player Note
+WAS - PG
+7:00 pm @ CHA
+SG
+Amen ThompsonNew Player Note
+HOU - PG,SG
+8:30 pm vs ATL
+SF
+Josh HartNew Player Note
+NYK - SG,SF
+PF
+Saddiq BeyPlayer Note
+NOP - SF,PF
+C
+Victor WembanyamaPlayer Note
+SAS - C
+Util
+Tre JonesPlayer Note
+CHI - PG,SG
+7:30 pm @ BOS
+Util
+Brandon MillerPlayer Note
+CHA - SF,PF
+7:00 pm vs WAS
+Util
+Christian BraunPlayer Note
+DEN - SG,SF,PF
+10:00 pm vs GSW
+Util
+Draymond GreenNew Player Note
+GSW - PF,C
+10:00 pm @ DEN
+BN
+Malik MonkPlayer Note
+SAC - PG,SG
+BN
+Santi AldamaOPlayer Note
+DAL - PF
+7:30 pm @ MIA
+IL
+VJ EdgecombeQNew Player Note
+PHI - PG,SG
+IL
+Jusuf NurkićONo new player Notes
+UTA - C
+9:00 pm vs MEM
+Cole is like that
+Pos
+Player
+PG
+Jalen BrunsonNew Player Note
+NYK - PG
+SG
+Donovan MitchellPlayer Note
+CLE - PG,SG
+7:00 pm vs MIN
+SF
+Andrew WigginsPlayer Note
+MIA - SG,SF,PF
+7:30 pm vs DAL
+PF
+Kevin DurantNew Player Note
+HOU - SG,SF,PF
+8:30 pm vs ATL
+C
+Jarrett AllenPlayer Note
+CLE - C
+7:00 pm vs MIN
+Util
+Tyler HerroPlayer Note
+MIL - PG,SG
+8:00 pm vs IND
+Util
+Wendell Carter Jr.Player Note
+ORL - C
+Util
+CJ McCollumPlayer Note
+ATL - PG,SG
+8:30 pm @ HOU
+Util
+Duncan RobinsonNew Player Note
+DET - SG,SF
+BN
+Aday MaraPlayer Note
+OKC - C
+8:00 pm vs PHX
+BN
+Keldon JohnsonPlayer Note
+SAS - SF,PF

@@ -25,7 +25,7 @@ const RAW_DIR = path.join(__dirname, 'lineups', 'raw');
 const OUT_DIR = path.join(__dirname, 'lineups');
 
 const SLOT_RE = /^(PG|SG|G|SF|PF|F|C|Util|BN|IL\+?|NA)$/;
-const NAME_RE = /^(.+?)(Q|O|NA|GTD|DTD|INJ|SUSP)?(New Player Note|Player Note|No new player Notes)$/;
+const NAME_RE = /^(.+?)(Q|O|D|P|NA|GTD|DTD|INJ|SUSP)?(New Player Note|Player Note|No new player Notes)$/;
 const TEAM_POS_RE = /^([A-Z]{2,3}) - ([A-Z,]+)$/;
 const GAME_RE = /^\d{1,2}:\d{2} (am|pm) (vs|@) [A-Z]{2,3}$/;
 
