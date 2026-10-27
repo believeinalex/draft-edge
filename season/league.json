@@ -732,7 +732,7 @@
             "rank": 26
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Knee"
           },
           "thisWeek": {
@@ -5374,7 +5374,7 @@
             "rank": 25
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Knee"
           },
           "thisWeek": {
