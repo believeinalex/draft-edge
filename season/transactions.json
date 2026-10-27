@@ -721,6 +721,30 @@
         }
       ],
       "drop": []
+    },
+    {
+      "date": "2026-10-27 14:03",
+      "type": "trade",
+      "note": "Randle for Bam 1:1 with Herb (user offered, Herb accepted). Processing time not yet confirmed from Yahoo log.",
+      "moves": [
+        {
+          "name": "Julius Randle",
+          "nbaTeam": "BKN",
+          "pos": [
+            "PF"
+          ],
+          "to": "Herb's Astonishing Team"
+        },
+        {
+          "name": "Bam Adebayo",
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "to": "Shut Up and Jam Gaiden"
+        }
+      ]
     }
   ]
 }
