@@ -17,603 +17,6 @@
   "injuriesAsOf": "2026-10-26",
   "teams": [
     {
-      "name": "Shut Up and Jam Gaiden",
-      "previousNames": [],
-      "isMine": true,
-      "isManaged": true,
-      "spent": 200,
-      "acquisitions": 2,
-      "roster": [
-        {
-          "name": "Luka Dončić",
-          "rk": 4,
-          "nbaTeam": "LAL",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 73,
-          "pick": 4,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 12.2,
-          "stats": {
-            "gp": 3,
-            "mpg": 35.1,
-            "fgPct": 0.464,
-            "fgm": 10.7,
-            "fga": 23,
-            "ftPct": 0.889,
-            "ftm": 8,
-            "fta": 9,
-            "tpm": 5,
-            "pts": 34.3,
-            "treb": 7.3,
-            "ast": 8,
-            "stl": 1.7,
-            "blk": 0.3,
-            "valueTotal": 13.99,
-            "rank": 1
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PG",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Chet Holmgren",
-          "rk": 22,
-          "nbaTeam": "OKC",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 38,
-          "pick": 29,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 5.72,
-          "stats": {
-            "gp": 3,
-            "mpg": 29.9,
-            "fgPct": 0.407,
-            "fgm": 3.7,
-            "fga": 9,
-            "ftPct": 1,
-            "ftm": 4,
-            "fta": 4,
-            "tpm": 0.7,
-            "pts": 12,
-            "treb": 9.3,
-            "ast": 1.3,
-            "stl": 0.7,
-            "blk": 3,
-            "valueTotal": 6.89,
-            "rank": 23
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "C",
-            "status": null,
-            "gameToday": "8:00 pm vs PHX"
-          }
-        },
-        {
-          "name": "Franz Wagner",
-          "rk": 45,
-          "nbaTeam": "ORL",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 25,
-          "pick": 66,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 3.93,
-          "stats": {
-            "gp": 3,
-            "mpg": 33.3,
-            "fgPct": 0.439,
-            "fgm": 8.3,
-            "fga": 19,
-            "ftPct": 0.667,
-            "ftm": 3.3,
-            "fta": 5,
-            "tpm": 1,
-            "pts": 21,
-            "treb": 8.3,
-            "ast": 6.3,
-            "stl": 0.7,
-            "blk": 0,
-            "valueTotal": 2.14,
-            "rank": 107
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Darius Garland",
-          "rk": 32,
-          "nbaTeam": "LAC",
-          "pos": [
-            "PG"
-          ],
-          "price": 26,
-          "pick": 69,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.55,
-          "stats": {
-            "gp": 3,
-            "mpg": 34.8,
-            "fgPct": 0.491,
-            "fgm": 9,
-            "fga": 18.3,
-            "ftPct": 0.692,
-            "ftm": 3,
-            "fta": 4.3,
-            "tpm": 3,
-            "pts": 24,
-            "treb": 1.7,
-            "ast": 7,
-            "stl": 0.7,
-            "blk": 0,
-            "valueTotal": 3.75,
-            "rank": 69
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Day'Ron Sharpe",
-          "rk": 78,
-          "nbaTeam": "BKN",
-          "pos": [
-            "C"
-          ],
-          "price": 5,
-          "pick": 98,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.3,
-          "stats": {
-            "gp": 3,
-            "mpg": 22.8,
-            "fgPct": 0.526,
-            "fgm": 3.3,
-            "fga": 6.3,
-            "ftPct": 0.5,
-            "ftm": 1.3,
-            "fta": 2.7,
-            "tpm": 0.7,
-            "pts": 8.7,
-            "treb": 6.7,
-            "ast": 1.7,
-            "stl": 0.3,
-            "blk": 1,
-            "valueTotal": -0.98,
-            "rank": 188
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Julius Randle",
-          "rk": 86,
-          "nbaTeam": "BKN",
-          "pos": [
-            "PF"
-          ],
-          "price": 10,
-          "pick": 99,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 1.78,
-          "stats": {
-            "gp": 3,
-            "mpg": 32.4,
-            "fgPct": 0.513,
-            "fgm": 6.7,
-            "fga": 13,
-            "ftPct": 0.778,
-            "ftm": 7,
-            "fta": 9,
-            "tpm": 1.7,
-            "pts": 22,
-            "treb": 7,
-            "ast": 6.3,
-            "stl": 0.3,
-            "blk": 0.3,
-            "valueTotal": 4.88,
-            "rank": 50
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Immanuel Quickley",
-          "rk": 76,
-          "nbaTeam": "TOR",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 8,
-          "pick": 109,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.37,
-          "stats": {
-            "gp": 3,
-            "mpg": 28.5,
-            "fgPct": 0.419,
-            "fgm": 6,
-            "fga": 14.3,
-            "ftPct": 0.786,
-            "ftm": 3.7,
-            "fta": 4.7,
-            "tpm": 2.3,
-            "pts": 18,
-            "treb": 2.7,
-            "ast": 5,
-            "stl": 1,
-            "blk": 0,
-            "valueTotal": 1.8,
-            "rank": 117
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SG",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Jalen Suggs",
-          "rk": 50,
-          "nbaTeam": "ORL",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 7,
-          "pick": 110,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 3.68,
-          "stats": {
-            "gp": 3,
-            "mpg": 33.4,
-            "fgPct": 0.357,
-            "fgm": 3.3,
-            "fga": 9.3,
-            "ftPct": 0.75,
-            "ftm": 1,
-            "fta": 1.3,
-            "tpm": 0.3,
-            "pts": 8,
-            "treb": 5,
-            "ast": 5.7,
-            "stl": 2,
-            "blk": 0.3,
-            "valueTotal": 0.98,
-            "rank": 138
-          },
-          "injury": {
-            "status": "D",
-            "note": "Knee"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "D",
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Miles Bridges",
-          "rk": 105,
-          "nbaTeam": "PHX",
-          "pos": [
-            "PF"
-          ],
-          "price": 2,
-          "pick": 125,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 1.03,
-          "stats": {
-            "gp": 2,
-            "mpg": 31,
-            "fgPct": 0.409,
-            "fgm": 4.5,
-            "fga": 11,
-            "ftPct": 1,
-            "ftm": 2,
-            "fta": 2,
-            "tpm": 1,
-            "pts": 12,
-            "treb": 5.5,
-            "ast": 1.5,
-            "stl": 0.5,
-            "blk": 0.5,
-            "valueTotal": 0.22,
-            "rank": 164
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": "8:00 pm @ OKC"
-          }
-        },
-        {
-          "name": "Ajay Mitchell",
-          "rk": 88,
-          "nbaTeam": "OKC",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 3,
-          "pick": 126,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 1.73,
-          "stats": {
-            "gp": 3,
-            "mpg": 24.5,
-            "fgPct": 0.455,
-            "fgm": 5,
-            "fga": 11,
-            "ftPct": 1,
-            "ftm": 1,
-            "fta": 1,
-            "tpm": 0.3,
-            "pts": 11.3,
-            "treb": 3.7,
-            "ast": 3.3,
-            "stl": 2.7,
-            "blk": 0.3,
-            "valueTotal": 2.24,
-            "rank": 103
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "8:00 pm vs PHX"
-          }
-        },
-        {
-          "name": "Paul Reed",
-          "rk": 121,
-          "nbaTeam": "DET",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 2,
-          "pick": 151,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 0.25,
-          "stats": {
-            "gp": 3,
-            "mpg": 22.1,
-            "fgPct": 0.609,
-            "fgm": 4.7,
-            "fga": 7.7,
-            "ftPct": 0.6,
-            "ftm": 1,
-            "fta": 1.7,
-            "tpm": 0.7,
-            "pts": 11,
-            "treb": 8.3,
-            "ast": 2.7,
-            "stl": 0.3,
-            "blk": 1,
-            "valueTotal": 2.13,
-            "rank": 108
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Jakob Poeltl",
-          "rk": 89,
-          "nbaTeam": "TOR",
-          "pos": [
-            "C"
-          ],
-          "price": 0,
-          "pick": null,
-          "acquired": "Waiver",
-          "acquiredDate": "2026-10-25 04:08",
-          "projZ": 1.68,
-          "stats": {
-            "gp": 3,
-            "mpg": 22.6,
-            "fgPct": 0.5,
-            "fgm": 1,
-            "fga": 2,
-            "ftPct": 0.6,
-            "ftm": 1,
-            "fta": 1.7,
-            "tpm": 0,
-            "pts": 3,
-            "treb": 5.3,
-            "ast": 0.7,
-            "stl": 0.7,
-            "blk": 0.7,
-            "valueTotal": -2.75,
-            "rank": 237
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Reed Sheppard",
-          "rk": 119,
-          "nbaTeam": "HOU",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 0,
-          "pick": null,
-          "acquired": "FA",
-          "acquiredDate": "2026-10-26 15:00",
-          "projZ": 0.38,
-          "stats": {
-            "gp": 2,
-            "mpg": 23,
-            "fgPct": 0.421,
-            "fgm": 4,
-            "fga": 9.5,
-            "ftPct": 0,
-            "ftm": 0,
-            "fta": 0,
-            "tpm": 3,
-            "pts": 11,
-            "treb": 4,
-            "ast": 5.5,
-            "stl": 2,
-            "blk": 0,
-            "valueTotal": 3.59,
-            "rank": 75
-          },
-          "injury": null,
-          "thisWeek": null
-        }
-      ],
-      "moveLog": [
-        {
-          "date": "2026-10-25 04:08",
-          "name": "Cameron Johnson",
-          "dir": "out",
-          "how": "drop"
-        },
-        {
-          "date": "2026-10-25 04:08",
-          "name": "Jakob Poeltl",
-          "dir": "in",
-          "how": "Waiver"
-        },
-        {
-          "date": "2026-10-26 15:00",
-          "name": "Reed Sheppard",
-          "dir": "in",
-          "how": "FA"
-        }
-      ],
-      "acquisitionsLeft": 16,
-      "projTotals": {
-        "fgPct": 0.4795,
-        "ftPct": 0.8011,
-        "tpm": 1569,
-        "pts": 15431,
-        "treb": 5257,
-        "ast": 3798,
-        "stl": 1069,
-        "blk": 600
-      },
-      "projRoto": {
-        "total": 94,
-        "fgPct": 5,
-        "ftPct": 10,
-        "tpm": 13,
-        "pts": 15,
-        "treb": 12,
-        "ast": 14,
-        "stl": 15,
-        "blk": 10
-      },
-      "projRank": 1,
-      "actualTotals": {
-        "fgPct": 0.4596,
-        "ftPct": 0.7792,
-        "tpm": 55,
-        "pts": 566,
-        "treb": 215,
-        "ast": 158,
-        "stl": 38,
-        "blk": 22
-      },
-      "gamesPlayed": 37,
-      "actualRoto": {
-        "total": 84.5,
-        "fgPct": 5,
-        "ftPct": 7,
-        "tpm": 12.5,
-        "pts": 12,
-        "treb": 15,
-        "ast": 15,
-        "stl": 9,
-        "blk": 9
-      },
-      "actualRank": 4,
-      "realTotals": {
-        "fgPct": 0.454,
-        "ftPct": 0.789,
-        "tpm": 45,
-        "pts": 478,
-        "treb": 155,
-        "ast": 134,
-        "stl": 31,
-        "blk": 16
-      },
-      "realGp": 27,
-      "yahooRank": 3,
-      "realRoto": {
-        "total": 84,
-        "fgPct": 6,
-        "ftPct": 7.5,
-        "tpm": 13,
-        "pts": 14,
-        "treb": 9,
-        "ast": 15,
-        "stl": 10,
-        "blk": 9.5
-      },
-      "realRank": 3,
-      "lineup": {
-        "asOf": "2026-10-26",
-        "complete": true,
-        "teamNameInferred": false
-      },
-      "pendingIn": [
-        "Reed Sheppard"
-      ],
-      "pendingOut": []
-    },
-    {
       "name": "Finn will cook Burt",
       "previousNames": [],
       "isMine": false,
@@ -632,7 +35,7 @@
           "pick": 3,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 14.59,
+          "projZ": 14.68,
           "stats": {
             "gp": 3,
             "mpg": 31.7,
@@ -660,7 +63,7 @@
         },
         {
           "name": "Trae Young",
-          "rk": 13,
+          "rk": 12,
           "nbaTeam": "WAS",
           "pos": [
             "PG"
@@ -669,7 +72,7 @@
           "pick": 26,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.82,
+          "projZ": 6.75,
           "stats": {
             "gp": 3,
             "mpg": 36.4,
@@ -697,7 +100,7 @@
         },
         {
           "name": "Josh Hart",
-          "rk": 83,
+          "rk": 81,
           "nbaTeam": "NYK",
           "pos": [
             "SG",
@@ -707,7 +110,7 @@
           "pick": 101,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.93,
+          "projZ": 1.84,
           "stats": {
             "gp": 3,
             "mpg": 33.6,
@@ -735,7 +138,7 @@
         },
         {
           "name": "VJ Edgecombe",
-          "rk": 84,
+          "rk": 82,
           "nbaTeam": "PHI",
           "pos": [
             "PG",
@@ -745,7 +148,7 @@
           "pick": 107,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.85,
+          "projZ": 1.75,
           "stats": {
             "gp": 3,
             "mpg": 32.6,
@@ -776,7 +179,7 @@
         },
         {
           "name": "Tre Jones",
-          "rk": 112,
+          "rk": 110,
           "nbaTeam": "CHI",
           "pos": [
             "PG",
@@ -786,7 +189,7 @@
           "pick": 120,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.7,
+          "projZ": 0.6,
           "stats": {
             "gp": 3,
             "mpg": 18.6,
@@ -814,7 +217,7 @@
         },
         {
           "name": "Christian Braun",
-          "rk": 114,
+          "rk": 111,
           "nbaTeam": "DEN",
           "pos": [
             "SG",
@@ -825,7 +228,7 @@
           "pick": 145,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.61,
+          "projZ": 0.51,
           "stats": {
             "gp": 2,
             "mpg": 36.5,
@@ -853,7 +256,7 @@
         },
         {
           "name": "Jusuf Nurkić",
-          "rk": 133,
+          "rk": 130,
           "nbaTeam": "UTA",
           "pos": [
             "C"
@@ -862,7 +265,7 @@
           "pick": 156,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.12,
+          "projZ": -0.22,
           "stats": null,
           "injury": {
             "status": "O",
@@ -876,7 +279,7 @@
         },
         {
           "name": "Draymond Green",
-          "rk": 116,
+          "rk": 113,
           "nbaTeam": "GSW",
           "pos": [
             "PF",
@@ -886,7 +289,7 @@
           "pick": 163,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.59,
+          "projZ": 0.51,
           "stats": {
             "gp": 2,
             "mpg": 26.1,
@@ -924,7 +327,7 @@
           "pick": 169,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.2,
+          "projZ": -0.33,
           "stats": {
             "gp": 3,
             "mpg": 23.7,
@@ -952,7 +355,7 @@
         },
         {
           "name": "Malik Monk",
-          "rk": 142,
+          "rk": 141,
           "nbaTeam": "SAC",
           "pos": [
             "PG",
@@ -962,7 +365,7 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -0.35,
+          "projZ": -0.47,
           "stats": {
             "gp": 2,
             "mpg": 12.1,
@@ -990,7 +393,7 @@
         },
         {
           "name": "Santi Aldama",
-          "rk": 156,
+          "rk": 160,
           "nbaTeam": "DAL",
           "pos": [
             "PF"
@@ -999,7 +402,7 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -0.99,
+          "projZ": -1.1,
           "stats": null,
           "injury": {
             "status": "O",
@@ -1013,7 +416,7 @@
         },
         {
           "name": "Amen Thompson",
-          "rk": 29,
+          "rk": 27,
           "nbaTeam": "HOU",
           "pos": [
             "PG",
@@ -1023,7 +426,7 @@
           "pick": 24,
           "acquired": "trade",
           "acquiredDate": "2026-10-23 19:06",
-          "projZ": 4.81,
+          "projZ": 4.76,
           "stats": {
             "gp": 3,
             "mpg": 36.2,
@@ -1061,7 +464,7 @@
           "pick": 38,
           "acquired": "trade",
           "acquiredDate": "2026-10-23 19:06",
-          "projZ": 3.59,
+          "projZ": 3.51,
           "stats": {
             "gp": 3,
             "mpg": 31.4,
@@ -1089,7 +492,7 @@
         },
         {
           "name": "Khaman Maluach",
-          "rk": 103,
+          "rk": 101,
           "nbaTeam": "PHX",
           "pos": [
             "C"
@@ -1098,7 +501,7 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-26 04:15",
-          "projZ": 1.07,
+          "projZ": 1.03,
           "stats": {
             "gp": 2,
             "mpg": 22.2,
@@ -1183,9 +586,9 @@
         "blk": 738
       },
       "projRoto": {
-        "total": 91,
+        "total": 92,
         "fgPct": 3,
-        "ftPct": 8,
+        "ftPct": 9,
         "tpm": 10,
         "pts": 13,
         "treb": 14,
@@ -1193,7 +596,7 @@
         "stl": 13,
         "blk": 15
       },
-      "projRank": 2,
+      "projRank": 1,
       "actualTotals": {
         "fgPct": 0.3942,
         "ftPct": 0.8044,
@@ -1252,6 +655,603 @@
       "pendingOut": []
     },
     {
+      "name": "Shut Up and Jam Gaiden",
+      "previousNames": [],
+      "isMine": true,
+      "isManaged": true,
+      "spent": 200,
+      "acquisitions": 2,
+      "roster": [
+        {
+          "name": "Luka Dončić",
+          "rk": 4,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 73,
+          "pick": 4,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 12.17,
+          "stats": {
+            "gp": 3,
+            "mpg": 35.1,
+            "fgPct": 0.464,
+            "fgm": 10.7,
+            "fga": 23,
+            "ftPct": 0.889,
+            "ftm": 8,
+            "fta": 9,
+            "tpm": 5,
+            "pts": 34.3,
+            "treb": 7.3,
+            "ast": 8,
+            "stl": 1.7,
+            "blk": 0.3,
+            "valueTotal": 13.99,
+            "rank": 1
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PG",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Chet Holmgren",
+          "rk": 23,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 38,
+          "pick": 29,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.97,
+          "stats": {
+            "gp": 3,
+            "mpg": 29.9,
+            "fgPct": 0.407,
+            "fgm": 3.7,
+            "fga": 9,
+            "ftPct": 1,
+            "ftm": 4,
+            "fta": 4,
+            "tpm": 0.7,
+            "pts": 12,
+            "treb": 9.3,
+            "ast": 1.3,
+            "stl": 0.7,
+            "blk": 3,
+            "valueTotal": 6.89,
+            "rank": 23
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "C",
+            "status": null,
+            "gameToday": "8:00 pm vs PHX"
+          }
+        },
+        {
+          "name": "Franz Wagner",
+          "rk": 45,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 25,
+          "pick": 66,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 3.85,
+          "stats": {
+            "gp": 3,
+            "mpg": 33.3,
+            "fgPct": 0.439,
+            "fgm": 8.3,
+            "fga": 19,
+            "ftPct": 0.667,
+            "ftm": 3.3,
+            "fta": 5,
+            "tpm": 1,
+            "pts": 21,
+            "treb": 8.3,
+            "ast": 6.3,
+            "stl": 0.7,
+            "blk": 0,
+            "valueTotal": 2.14,
+            "rank": 107
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Darius Garland",
+          "rk": 31,
+          "nbaTeam": "LAC",
+          "pos": [
+            "PG"
+          ],
+          "price": 26,
+          "pick": 69,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.46,
+          "stats": {
+            "gp": 3,
+            "mpg": 34.8,
+            "fgPct": 0.491,
+            "fgm": 9,
+            "fga": 18.3,
+            "ftPct": 0.692,
+            "ftm": 3,
+            "fta": 4.3,
+            "tpm": 3,
+            "pts": 24,
+            "treb": 1.7,
+            "ast": 7,
+            "stl": 0.7,
+            "blk": 0,
+            "valueTotal": 3.75,
+            "rank": 69
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Day'Ron Sharpe",
+          "rk": 76,
+          "nbaTeam": "BKN",
+          "pos": [
+            "C"
+          ],
+          "price": 5,
+          "pick": 98,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.24,
+          "stats": {
+            "gp": 3,
+            "mpg": 22.8,
+            "fgPct": 0.526,
+            "fgm": 3.3,
+            "fga": 6.3,
+            "ftPct": 0.5,
+            "ftm": 1.3,
+            "fta": 2.7,
+            "tpm": 0.7,
+            "pts": 8.7,
+            "treb": 6.7,
+            "ast": 1.7,
+            "stl": 0.3,
+            "blk": 1,
+            "valueTotal": -0.98,
+            "rank": 188
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Julius Randle",
+          "rk": 85,
+          "nbaTeam": "BKN",
+          "pos": [
+            "PF"
+          ],
+          "price": 10,
+          "pick": 99,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 1.69,
+          "stats": {
+            "gp": 3,
+            "mpg": 32.4,
+            "fgPct": 0.513,
+            "fgm": 6.7,
+            "fga": 13,
+            "ftPct": 0.778,
+            "ftm": 7,
+            "fta": 9,
+            "tpm": 1.7,
+            "pts": 22,
+            "treb": 7,
+            "ast": 6.3,
+            "stl": 0.3,
+            "blk": 0.3,
+            "valueTotal": 4.88,
+            "rank": 50
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Immanuel Quickley",
+          "rk": 74,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 8,
+          "pick": 109,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.26,
+          "stats": {
+            "gp": 3,
+            "mpg": 28.5,
+            "fgPct": 0.419,
+            "fgm": 6,
+            "fga": 14.3,
+            "ftPct": 0.786,
+            "ftm": 3.7,
+            "fta": 4.7,
+            "tpm": 2.3,
+            "pts": 18,
+            "treb": 2.7,
+            "ast": 5,
+            "stl": 1,
+            "blk": 0,
+            "valueTotal": 1.8,
+            "rank": 117
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SG",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Jalen Suggs",
+          "rk": 49,
+          "nbaTeam": "ORL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 7,
+          "pick": 110,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 3.6,
+          "stats": {
+            "gp": 3,
+            "mpg": 33.4,
+            "fgPct": 0.357,
+            "fgm": 3.3,
+            "fga": 9.3,
+            "ftPct": 0.75,
+            "ftm": 1,
+            "fta": 1.3,
+            "tpm": 0.3,
+            "pts": 8,
+            "treb": 5,
+            "ast": 5.7,
+            "stl": 2,
+            "blk": 0.3,
+            "valueTotal": 0.98,
+            "rank": 138
+          },
+          "injury": {
+            "status": "D",
+            "note": "Knee"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "D",
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Miles Bridges",
+          "rk": 103,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PF"
+          ],
+          "price": 2,
+          "pick": 125,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.94,
+          "stats": {
+            "gp": 2,
+            "mpg": 31,
+            "fgPct": 0.409,
+            "fgm": 4.5,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 2,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 12,
+            "treb": 5.5,
+            "ast": 1.5,
+            "stl": 0.5,
+            "blk": 0.5,
+            "valueTotal": 0.22,
+            "rank": 164
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm @ OKC"
+          }
+        },
+        {
+          "name": "Ajay Mitchell",
+          "rk": 88,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 3,
+          "pick": 126,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 1.63,
+          "stats": {
+            "gp": 3,
+            "mpg": 24.5,
+            "fgPct": 0.455,
+            "fgm": 5,
+            "fga": 11,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 0.3,
+            "pts": 11.3,
+            "treb": 3.7,
+            "ast": 3.3,
+            "stl": 2.7,
+            "blk": 0.3,
+            "valueTotal": 2.24,
+            "rank": 103
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:00 pm vs PHX"
+          }
+        },
+        {
+          "name": "Paul Reed",
+          "rk": 118,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 2,
+          "pick": 151,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.17,
+          "stats": {
+            "gp": 3,
+            "mpg": 22.1,
+            "fgPct": 0.609,
+            "fgm": 4.7,
+            "fga": 7.7,
+            "ftPct": 0.6,
+            "ftm": 1,
+            "fta": 1.7,
+            "tpm": 0.7,
+            "pts": 11,
+            "treb": 8.3,
+            "ast": 2.7,
+            "stl": 0.3,
+            "blk": 1,
+            "valueTotal": 2.13,
+            "rank": 108
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Jakob Poeltl",
+          "rk": 89,
+          "nbaTeam": "TOR",
+          "pos": [
+            "C"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "Waiver",
+          "acquiredDate": "2026-10-25 04:08",
+          "projZ": 1.62,
+          "stats": {
+            "gp": 3,
+            "mpg": 22.6,
+            "fgPct": 0.5,
+            "fgm": 1,
+            "fga": 2,
+            "ftPct": 0.6,
+            "ftm": 1,
+            "fta": 1.7,
+            "tpm": 0,
+            "pts": 3,
+            "treb": 5.3,
+            "ast": 0.7,
+            "stl": 0.7,
+            "blk": 0.7,
+            "valueTotal": -2.75,
+            "rank": 237
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Reed Sheppard",
+          "rk": 116,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-26 15:00",
+          "projZ": 0.26,
+          "stats": {
+            "gp": 2,
+            "mpg": 23,
+            "fgPct": 0.421,
+            "fgm": 4,
+            "fga": 9.5,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0,
+            "tpm": 3,
+            "pts": 11,
+            "treb": 4,
+            "ast": 5.5,
+            "stl": 2,
+            "blk": 0,
+            "valueTotal": 3.59,
+            "rank": 75
+          },
+          "injury": null,
+          "thisWeek": null
+        }
+      ],
+      "moveLog": [
+        {
+          "date": "2026-10-25 04:08",
+          "name": "Cameron Johnson",
+          "dir": "out",
+          "how": "drop"
+        },
+        {
+          "date": "2026-10-25 04:08",
+          "name": "Jakob Poeltl",
+          "dir": "in",
+          "how": "Waiver"
+        },
+        {
+          "date": "2026-10-26 15:00",
+          "name": "Reed Sheppard",
+          "dir": "in",
+          "how": "FA"
+        }
+      ],
+      "acquisitionsLeft": 16,
+      "projTotals": {
+        "fgPct": 0.4789,
+        "ftPct": 0.8009,
+        "tpm": 1562,
+        "pts": 15318,
+        "treb": 5198,
+        "ast": 3782,
+        "stl": 1059,
+        "blk": 583
+      },
+      "projRoto": {
+        "total": 91,
+        "fgPct": 4,
+        "ftPct": 10,
+        "tpm": 13,
+        "pts": 15,
+        "treb": 11,
+        "ast": 14,
+        "stl": 14,
+        "blk": 10
+      },
+      "projRank": 2,
+      "actualTotals": {
+        "fgPct": 0.4596,
+        "ftPct": 0.7792,
+        "tpm": 55,
+        "pts": 566,
+        "treb": 215,
+        "ast": 158,
+        "stl": 38,
+        "blk": 22
+      },
+      "gamesPlayed": 37,
+      "actualRoto": {
+        "total": 84.5,
+        "fgPct": 5,
+        "ftPct": 7,
+        "tpm": 12.5,
+        "pts": 12,
+        "treb": 15,
+        "ast": 15,
+        "stl": 9,
+        "blk": 9
+      },
+      "actualRank": 4,
+      "realTotals": {
+        "fgPct": 0.454,
+        "ftPct": 0.789,
+        "tpm": 45,
+        "pts": 478,
+        "treb": 155,
+        "ast": 134,
+        "stl": 31,
+        "blk": 16
+      },
+      "realGp": 27,
+      "yahooRank": 3,
+      "realRoto": {
+        "total": 84,
+        "fgPct": 6,
+        "ftPct": 7.5,
+        "tpm": 13,
+        "pts": 14,
+        "treb": 9,
+        "ast": 15,
+        "stl": 10,
+        "blk": 9.5
+      },
+      "realRank": 3,
+      "lineup": {
+        "asOf": "2026-10-26",
+        "complete": true,
+        "teamNameInferred": false
+      },
+      "pendingIn": [
+        "Reed Sheppard"
+      ],
+      "pendingOut": []
+    },
+    {
       "name": "Team Maru",
       "previousNames": [],
       "isMine": false,
@@ -1271,7 +1271,7 @@
           "pick": 23,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.99,
+          "projZ": 2.91,
           "stats": {
             "gp": 3,
             "mpg": 33.4,
@@ -1309,7 +1309,7 @@
           "pick": 30,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.66,
+          "projZ": 1.6,
           "stats": {
             "gp": 3,
             "mpg": 23.9,
@@ -1337,7 +1337,7 @@
         },
         {
           "name": "Jalen Duren",
-          "rk": 38,
+          "rk": 36,
           "nbaTeam": "DET",
           "pos": [
             "C"
@@ -1346,7 +1346,7 @@
           "pick": 46,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.29,
+          "projZ": 4.26,
           "stats": {
             "gp": 2,
             "mpg": 19.1,
@@ -1377,7 +1377,7 @@
         },
         {
           "name": "Mikal Bridges",
-          "rk": 104,
+          "rk": 102,
           "nbaTeam": "NYK",
           "pos": [
             "SF",
@@ -1387,7 +1387,7 @@
           "pick": 57,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.04,
+          "projZ": 0.94,
           "stats": {
             "gp": 3,
             "mpg": 30,
@@ -1415,7 +1415,7 @@
         },
         {
           "name": "Cameron Boozer",
-          "rk": 56,
+          "rk": 55,
           "nbaTeam": "MEM",
           "pos": [
             "PF"
@@ -1424,7 +1424,7 @@
           "pick": 59,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.1,
+          "projZ": 3.03,
           "stats": {
             "gp": 3,
             "mpg": 34,
@@ -1452,7 +1452,7 @@
         },
         {
           "name": "Desmond Bane",
-          "rk": 33,
+          "rk": 30,
           "nbaTeam": "ORL",
           "pos": [
             "SG",
@@ -1462,7 +1462,7 @@
           "pick": 64,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.55,
+          "projZ": 4.47,
           "stats": {
             "gp": 3,
             "mpg": 31.7,
@@ -1490,7 +1490,7 @@
         },
         {
           "name": "Dyson Daniels",
-          "rk": 69,
+          "rk": 57,
           "nbaTeam": "ATL",
           "pos": [
             "SG",
@@ -1500,7 +1500,7 @@
           "pick": 71,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.61,
+          "projZ": 2.92,
           "stats": {
             "gp": 3,
             "mpg": 29,
@@ -1528,7 +1528,7 @@
         },
         {
           "name": "Nickeil Alexander-Walker",
-          "rk": 46,
+          "rk": 47,
           "nbaTeam": "ATL",
           "pos": [
             "PG",
@@ -1538,7 +1538,7 @@
           "pick": 81,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.9,
+          "projZ": 3.82,
           "stats": {
             "gp": 3,
             "mpg": 29.8,
@@ -1576,7 +1576,7 @@
           "pick": 87,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.52,
+          "projZ": 3.42,
           "stats": {
             "gp": 2,
             "mpg": 32.1,
@@ -1604,7 +1604,7 @@
         },
         {
           "name": "Payton Pritchard",
-          "rk": 92,
+          "rk": 91,
           "nbaTeam": "BOS",
           "pos": [
             "PG"
@@ -1613,7 +1613,7 @@
           "pick": 89,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.63,
+          "projZ": 1.52,
           "stats": {
             "gp": 2,
             "mpg": 29,
@@ -1651,7 +1651,7 @@
           "pick": 90,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33,
+          "projZ": 1.23,
           "stats": {
             "gp": 1,
             "mpg": 32.9,
@@ -1679,7 +1679,7 @@
         },
         {
           "name": "Jalen Green",
-          "rk": 127,
+          "rk": 126,
           "nbaTeam": "PHX",
           "pos": [
             "SG",
@@ -1689,7 +1689,7 @@
           "pick": 116,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.04,
+          "projZ": -0.17,
           "stats": {
             "gp": 2,
             "mpg": 25.6,
@@ -1718,24 +1718,24 @@
       ],
       "acquisitionsLeft": 18,
       "projTotals": {
-        "fgPct": 0.4815,
+        "fgPct": 0.4812,
         "ftPct": 0.8066,
         "tpm": 1597,
-        "pts": 14495,
+        "pts": 14525,
         "treb": 4909,
         "ast": 3317,
-        "stl": 1063,
+        "stl": 1071,
         "blk": 480
       },
       "projRoto": {
-        "total": 83,
+        "total": 87,
         "fgPct": 6,
-        "ftPct": 11,
+        "ftPct": 12,
         "tpm": 14,
         "pts": 12,
-        "treb": 9,
-        "ast": 11,
-        "stl": 14,
+        "treb": 10,
+        "ast": 12,
+        "stl": 15,
         "blk": 6
       },
       "projRank": 3,
@@ -1804,7 +1804,7 @@
       "roster": [
         {
           "name": "Cooper Flagg",
-          "rk": 17,
+          "rk": 16,
           "nbaTeam": "DAL",
           "pos": [
             "SG",
@@ -1815,7 +1815,7 @@
           "pick": 16,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.43,
+          "projZ": 6.39,
           "stats": {
             "gp": 2,
             "mpg": 25,
@@ -1846,7 +1846,7 @@
         },
         {
           "name": "Austin Reaves",
-          "rk": 16,
+          "rk": 15,
           "nbaTeam": "LAL",
           "pos": [
             "PG",
@@ -1857,7 +1857,7 @@
           "pick": 28,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.51,
+          "projZ": 6.45,
           "stats": {
             "gp": 3,
             "mpg": 35.4,
@@ -1895,7 +1895,7 @@
           "pick": 65,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.81,
+          "projZ": 3.77,
           "stats": {
             "gp": 3,
             "mpg": 25.7,
@@ -1923,7 +1923,7 @@
         },
         {
           "name": "Kyshawn George",
-          "rk": 138,
+          "rk": 137,
           "nbaTeam": "WAS",
           "pos": [
             "SG",
@@ -1934,7 +1934,7 @@
           "pick": 73,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.23,
+          "projZ": -0.33,
           "stats": {
             "gp": 3,
             "mpg": 30.3,
@@ -1962,7 +1962,7 @@
         },
         {
           "name": "Caleb Wilson",
-          "rk": 111,
+          "rk": 92,
           "nbaTeam": "CHI",
           "pos": [
             "PF"
@@ -1971,7 +1971,7 @@
           "pick": 82,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.72,
+          "projZ": 1.44,
           "stats": {
             "gp": 3,
             "mpg": 34.7,
@@ -1999,7 +1999,7 @@
         },
         {
           "name": "Naz Reid",
-          "rk": 75,
+          "rk": 73,
           "nbaTeam": "CHA",
           "pos": [
             "PF",
@@ -2009,7 +2009,7 @@
           "pick": 86,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.4,
+          "projZ": 2.32,
           "stats": {
             "gp": 3,
             "mpg": 31.5,
@@ -2037,7 +2037,7 @@
         },
         {
           "name": "Ty Jerome",
-          "rk": 62,
+          "rk": 61,
           "nbaTeam": "MEM",
           "pos": [
             "PG",
@@ -2047,7 +2047,7 @@
           "pick": 95,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.75,
+          "projZ": 2.65,
           "stats": {
             "gp": 3,
             "mpg": 31.7,
@@ -2075,7 +2075,7 @@
         },
         {
           "name": "Jaden McDaniels",
-          "rk": 72,
+          "rk": 70,
           "nbaTeam": "MIN",
           "pos": [
             "SF"
@@ -2084,7 +2084,7 @@
           "pick": 103,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.51,
+          "projZ": 2.44,
           "stats": {
             "gp": 3,
             "mpg": 30,
@@ -2112,7 +2112,7 @@
         },
         {
           "name": "Zach LaVine",
-          "rk": 65,
+          "rk": 66,
           "nbaTeam": "SAC",
           "pos": [
             "PG",
@@ -2123,7 +2123,7 @@
           "pick": 104,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.68,
+          "projZ": 2.58,
           "stats": {
             "gp": 3,
             "mpg": 37.8,
@@ -2151,7 +2151,7 @@
         },
         {
           "name": "Yaxel Lendeborg",
-          "rk": 125,
+          "rk": 114,
           "nbaTeam": "GSW",
           "pos": [
             "PF"
@@ -2160,7 +2160,7 @@
           "pick": 118,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.04,
+          "projZ": 0.35,
           "stats": {
             "gp": 3,
             "mpg": 34.2,
@@ -2188,7 +2188,7 @@
         },
         {
           "name": "Darius Acuff Jr.",
-          "rk": 192,
+          "rk": 191,
           "nbaTeam": "SAC",
           "pos": [
             "PG"
@@ -2197,7 +2197,7 @@
           "pick": 131,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.98,
+          "projZ": -1.94,
           "stats": {
             "gp": 3,
             "mpg": 35.9,
@@ -2225,7 +2225,7 @@
         },
         {
           "name": "Keaton Wagler",
-          "rk": 248,
+          "rk": 253,
           "nbaTeam": "LAC",
           "pos": [
             "SG"
@@ -2234,7 +2234,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-23 14:30",
-          "projZ": -3.85,
+          "projZ": -3.99,
           "stats": {
             "gp": 3,
             "mpg": 26.1,
@@ -2262,7 +2262,7 @@
         },
         {
           "name": "Brandon Ingram",
-          "rk": 80,
+          "rk": 77,
           "nbaTeam": "LAC",
           "pos": [
             "SG",
@@ -2308,23 +2308,23 @@
       ],
       "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.4708,
-        "ftPct": 0.807,
-        "tpm": 1683,
-        "pts": 14819,
-        "treb": 4663,
-        "ast": 3113,
-        "stl": 849,
-        "blk": 650
+        "fgPct": 0.4657,
+        "ftPct": 0.8088,
+        "tpm": 1667,
+        "pts": 15057,
+        "treb": 4604,
+        "ast": 3055,
+        "stl": 877,
+        "blk": 631
       },
       "projRoto": {
-        "total": 79,
+        "total": 81,
         "fgPct": 2,
-        "ftPct": 12,
+        "ftPct": 13,
         "tpm": 15,
         "pts": 14,
         "treb": 7,
-        "ast": 8,
+        "ast": 9,
         "stl": 10,
         "blk": 11
       },
@@ -2394,7 +2394,7 @@
       "roster": [
         {
           "name": "Scottie Barnes",
-          "rk": 20,
+          "rk": 17,
           "nbaTeam": "TOR",
           "pos": [
             "SF",
@@ -2405,7 +2405,7 @@
           "pick": 25,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.19,
+          "projZ": 6.16,
           "stats": {
             "gp": 3,
             "mpg": 30.2,
@@ -2443,7 +2443,7 @@
           "pick": 37,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.97,
+          "projZ": 3.91,
           "stats": {
             "gp": 2,
             "mpg": 34.7,
@@ -2471,7 +2471,7 @@
         },
         {
           "name": "James Harden",
-          "rk": 19,
+          "rk": 20,
           "nbaTeam": "CLE",
           "pos": [
             "PG",
@@ -2481,7 +2481,7 @@
           "pick": 48,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.2,
+          "projZ": 6.14,
           "stats": {
             "gp": 2,
             "mpg": 33.2,
@@ -2509,7 +2509,7 @@
         },
         {
           "name": "Trey Murphy III",
-          "rk": 21,
+          "rk": 22,
           "nbaTeam": "NOP",
           "pos": [
             "SG",
@@ -2519,7 +2519,7 @@
           "pick": 49,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 5.92,
+          "projZ": 5.17,
           "stats": {
             "gp": 3,
             "mpg": 33.3,
@@ -2547,7 +2547,7 @@
         },
         {
           "name": "Zach Edey",
-          "rk": 40,
+          "rk": 37,
           "nbaTeam": "MEM",
           "pos": [
             "C"
@@ -2556,7 +2556,7 @@
           "pick": 92,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.23,
+          "projZ": 4.22,
           "stats": {
             "gp": 2,
             "mpg": 21.7,
@@ -2587,7 +2587,7 @@
         },
         {
           "name": "Neemias Queta",
-          "rk": 101,
+          "rk": 100,
           "nbaTeam": "BOS",
           "pos": [
             "C"
@@ -2596,7 +2596,7 @@
           "pick": 105,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.2,
+          "projZ": 1.15,
           "stats": {
             "gp": 2,
             "mpg": 22.1,
@@ -2634,7 +2634,7 @@
           "pick": 111,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.54,
+          "projZ": 1.43,
           "stats": {
             "gp": 3,
             "mpg": 29.1,
@@ -2662,7 +2662,7 @@
         },
         {
           "name": "Rui Hachimura",
-          "rk": 189,
+          "rk": 154,
           "nbaTeam": "LAC",
           "pos": [
             "SF",
@@ -2672,7 +2672,7 @@
           "pick": 121,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.91,
+          "projZ": -0.97,
           "stats": {
             "gp": 3,
             "mpg": 31.2,
@@ -2700,7 +2700,7 @@
         },
         {
           "name": "Sandro Mamukelashvili",
-          "rk": 107,
+          "rk": 106,
           "nbaTeam": "LAL",
           "pos": [
             "PF",
@@ -2710,7 +2710,7 @@
           "pick": 127,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.88,
+          "projZ": 0.79,
           "stats": {
             "gp": 3,
             "mpg": 22.3,
@@ -2738,7 +2738,7 @@
         },
         {
           "name": "Nic Claxton",
-          "rk": 150,
+          "rk": 149,
           "nbaTeam": "CHI",
           "pos": [
             "C"
@@ -2747,7 +2747,7 @@
           "pick": 128,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.64,
+          "projZ": -0.71,
           "stats": null,
           "injury": {
             "status": "O",
@@ -2761,7 +2761,7 @@
         },
         {
           "name": "Egor Dëmin",
-          "rk": 130,
+          "rk": 127,
           "nbaTeam": "BKN",
           "pos": [
             "PG",
@@ -2771,7 +2771,7 @@
           "pick": 146,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.05,
+          "projZ": -0.17,
           "stats": {
             "gp": 3,
             "mpg": 25.6,
@@ -2799,7 +2799,7 @@
         },
         {
           "name": "Morez Johnson Jr.",
-          "rk": null,
+          "rk": 326,
           "nbaTeam": "DAL",
           "pos": [
             "PF"
@@ -2808,7 +2808,7 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": null,
+          "projZ": -6.73,
           "stats": {
             "gp": 3,
             "mpg": 14.2,
@@ -2836,7 +2836,7 @@
         },
         {
           "name": "Leonard Miller",
-          "rk": 288,
+          "rk": 223,
           "nbaTeam": "CHI",
           "pos": [
             "SF",
@@ -2846,7 +2846,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-24 07:58",
-          "projZ": -5.21,
+          "projZ": -3.05,
           "stats": {
             "gp": 3,
             "mpg": 23.4,
@@ -2907,25 +2907,25 @@
       ],
       "acquisitionsLeft": 15,
       "projTotals": {
-        "fgPct": 0.4869,
-        "ftPct": 0.8007,
-        "tpm": 1400,
-        "pts": 12828,
-        "treb": 4949,
-        "ast": 2815,
-        "stl": 798,
-        "blk": 699
+        "fgPct": 0.4882,
+        "ftPct": 0.7965,
+        "tpm": 1426,
+        "pts": 13414,
+        "treb": 5246,
+        "ast": 2870,
+        "stl": 843,
+        "blk": 734
       },
       "projRoto": {
-        "total": 69,
-        "fgPct": 11,
-        "ftPct": 9,
-        "tpm": 7,
-        "pts": 5,
-        "treb": 11,
+        "total": 75,
+        "fgPct": 10,
+        "ftPct": 8,
+        "tpm": 9,
+        "pts": 7,
+        "treb": 12,
         "ast": 6,
-        "stl": 7,
-        "blk": 13
+        "stl": 9,
+        "blk": 14
       },
       "projRank": 5,
       "actualTotals": {
@@ -3003,7 +3003,7 @@
           "pick": 5,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.98,
+          "projZ": 4.96,
           "stats": {
             "gp": 3,
             "mpg": 29.2,
@@ -3040,7 +3040,7 @@
           "pick": 22,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4,
+          "projZ": 3.91,
           "stats": {
             "gp": 3,
             "mpg": 22.8,
@@ -3077,7 +3077,7 @@
           "pick": 43,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.45,
+          "projZ": 1.39,
           "stats": {
             "gp": 3,
             "mpg": 27.5,
@@ -3105,7 +3105,7 @@
         },
         {
           "name": "Paolo Banchero",
-          "rk": 85,
+          "rk": 83,
           "nbaTeam": "ORL",
           "pos": [
             "PF"
@@ -3114,7 +3114,7 @@
           "pick": 56,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.82,
+          "projZ": 1.74,
           "stats": {
             "gp": 2,
             "mpg": 33.8,
@@ -3155,7 +3155,7 @@
           "pick": 72,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.65,
+          "projZ": 2.57,
           "stats": {
             "gp": 3,
             "mpg": 29.9,
@@ -3183,7 +3183,7 @@
         },
         {
           "name": "Ja Morant",
-          "rk": 73,
+          "rk": 71,
           "nbaTeam": "POR",
           "pos": [
             "PG"
@@ -3192,7 +3192,7 @@
           "pick": 78,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.5,
+          "projZ": 2.4,
           "stats": {
             "gp": 2,
             "mpg": 24.7,
@@ -3220,7 +3220,7 @@
         },
         {
           "name": "Kon Knueppel",
-          "rk": 57,
+          "rk": 56,
           "nbaTeam": "CHA",
           "pos": [
             "SG",
@@ -3230,7 +3230,7 @@
           "pick": 80,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.07,
+          "projZ": 2.97,
           "stats": null,
           "injury": {
             "status": "O",
@@ -3244,7 +3244,7 @@
         },
         {
           "name": "Darryn Peterson",
-          "rk": 151,
+          "rk": 152,
           "nbaTeam": "UTA",
           "pos": [
             "SG"
@@ -3253,7 +3253,7 @@
           "pick": 100,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.67,
+          "projZ": -0.8,
           "stats": {
             "gp": 3,
             "mpg": 30.5,
@@ -3281,7 +3281,7 @@
         },
         {
           "name": "Daniel Gafford",
-          "rk": 184,
+          "rk": 185,
           "nbaTeam": "DAL",
           "pos": [
             "C"
@@ -3290,7 +3290,7 @@
           "pick": 123,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.76,
+          "projZ": -1.84,
           "stats": {
             "gp": 3,
             "mpg": 19.8,
@@ -3328,7 +3328,7 @@
           "pick": 150,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.53,
+          "projZ": -0.64,
           "stats": {
             "gp": 2,
             "mpg": 33.1,
@@ -3356,7 +3356,7 @@
         },
         {
           "name": "Brook Lopez",
-          "rk": 213,
+          "rk": 217,
           "nbaTeam": "LAC",
           "pos": [
             "C"
@@ -3365,7 +3365,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-23 23:53",
-          "projZ": -2.67,
+          "projZ": -2.77,
           "stats": {
             "gp": 3,
             "mpg": 23.2,
@@ -3393,7 +3393,7 @@
         },
         {
           "name": "Julian Champagnie",
-          "rk": 165,
+          "rk": 169,
           "nbaTeam": "SAS",
           "pos": [
             "SF",
@@ -3403,7 +3403,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-26 01:17",
-          "projZ": -1.31,
+          "projZ": -1.43,
           "stats": {
             "gp": 3,
             "mpg": 27.8,
@@ -3431,7 +3431,7 @@
         },
         {
           "name": "Kris Dunn",
-          "rk": 191,
+          "rk": 168,
           "nbaTeam": "LAC",
           "pos": [
             "PG",
@@ -3441,7 +3441,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-26 01:25",
-          "projZ": -1.95,
+          "projZ": -1.39,
           "stats": {
             "gp": 3,
             "mpg": 31.1,
@@ -3502,24 +3502,24 @@
       ],
       "acquisitionsLeft": 15,
       "projTotals": {
-        "fgPct": 0.4893,
-        "ftPct": 0.7525,
-        "tpm": 1451,
-        "pts": 14492,
-        "treb": 4910,
-        "ast": 3150,
-        "stl": 785,
-        "blk": 578
+        "fgPct": 0.4899,
+        "ftPct": 0.7509,
+        "tpm": 1425,
+        "pts": 13993,
+        "treb": 4742,
+        "ast": 3050,
+        "stl": 775,
+        "blk": 565
       },
       "projRoto": {
-        "total": 68,
+        "total": 63,
         "fgPct": 13,
         "ftPct": 1,
-        "tpm": 9,
+        "tpm": 8,
         "pts": 11,
-        "treb": 10,
-        "ast": 9,
-        "stl": 6,
+        "treb": 8,
+        "ast": 8,
+        "stl": 5,
         "blk": 9
       },
       "projRank": 6,
@@ -3579,6 +3579,535 @@
       "pendingOut": []
     },
     {
+      "name": "The New Day Co-op",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
+      "spent": 200,
+      "acquisitions": 0,
+      "roster": [
+        {
+          "name": "Karl-Anthony Towns",
+          "rk": 11,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 52,
+          "pick": 20,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 6.87,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.4,
+            "fgPct": 0.622,
+            "fgm": 7.7,
+            "fga": 12.3,
+            "ftPct": 0.706,
+            "ftm": 4,
+            "fta": 5.7,
+            "tpm": 1.7,
+            "pts": 21,
+            "treb": 12,
+            "ast": 2.7,
+            "stl": 1,
+            "blk": 1,
+            "valueTotal": 7.42,
+            "rank": 16
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Evan Mobley",
+          "rk": 29,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 30,
+          "pick": 39,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.7,
+          "stats": {
+            "gp": 2,
+            "mpg": 34.7,
+            "fgPct": 0.56,
+            "fgm": 7,
+            "fga": 12.5,
+            "ftPct": 0.7,
+            "ftm": 3.5,
+            "fta": 5,
+            "tpm": 1.5,
+            "pts": 19,
+            "treb": 9,
+            "ast": 3,
+            "stl": 1,
+            "blk": 1.5,
+            "valueTotal": 6.13,
+            "rank": 32
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "C",
+            "status": null,
+            "gameToday": "7:00 pm vs MIN"
+          }
+        },
+        {
+          "name": "Jaren Jackson Jr.",
+          "rk": 25,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 24,
+          "pick": 52,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.82,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.5,
+            "fgPct": 0.513,
+            "fgm": 6.7,
+            "fga": 13,
+            "ftPct": 0.778,
+            "ftm": 4.7,
+            "fta": 6,
+            "tpm": 1.7,
+            "pts": 19.7,
+            "treb": 5.3,
+            "ast": 2,
+            "stl": 0.3,
+            "blk": 1.7,
+            "valueTotal": 4.25,
+            "rank": 59
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "9:00 pm vs MEM"
+          }
+        },
+        {
+          "name": "Deni Avdija",
+          "rk": 64,
+          "nbaTeam": "POR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 24,
+          "pick": 53,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.61,
+          "stats": {
+            "gp": 2,
+            "mpg": 31.3,
+            "fgPct": 0.469,
+            "fgm": 7.5,
+            "fga": 16,
+            "ftPct": 0.688,
+            "ftm": 5.5,
+            "fta": 8,
+            "tpm": 1.5,
+            "pts": 22,
+            "treb": 8,
+            "ast": 5,
+            "stl": 1.5,
+            "blk": 0,
+            "valueTotal": 3.32,
+            "rank": 79
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SG",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Kyrie Irving",
+          "rk": 28,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PG"
+          ],
+          "price": 24,
+          "pick": 54,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.76,
+          "stats": {
+            "gp": 2,
+            "mpg": 24.3,
+            "fgPct": 0.583,
+            "fgm": 7,
+            "fga": 12,
+            "ftPct": 1,
+            "ftm": 2.5,
+            "fta": 2.5,
+            "tpm": 3,
+            "pts": 19.5,
+            "treb": 2.5,
+            "ast": 2.5,
+            "stl": 1,
+            "blk": 0.5,
+            "valueTotal": 5.55,
+            "rank": 40
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PG",
+            "status": null,
+            "gameToday": "7:30 pm @ MIA"
+          }
+        },
+        {
+          "name": "Donovan Clingan",
+          "rk": 59,
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "price": 18,
+          "pick": 55,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.73,
+          "stats": {
+            "gp": 2,
+            "mpg": 19.9,
+            "fgPct": 0.5,
+            "fgm": 3.5,
+            "fga": 7,
+            "ftPct": 0.75,
+            "ftm": 1.5,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 9.5,
+            "treb": 8.5,
+            "ast": 2.5,
+            "stl": 0,
+            "blk": 1,
+            "valueTotal": 1.45,
+            "rank": 125
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Ivica Zubac",
+          "rk": 69,
+          "nbaTeam": "IND",
+          "pos": [
+            "C"
+          ],
+          "price": 17,
+          "pick": 58,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.51,
+          "stats": {
+            "gp": 3,
+            "mpg": 21.4,
+            "fgPct": 0.6,
+            "fgm": 4,
+            "fga": 6.7,
+            "ftPct": 0.5,
+            "ftm": 1,
+            "fta": 2,
+            "tpm": 0,
+            "pts": 9,
+            "treb": 9,
+            "ast": 1.3,
+            "stl": 0,
+            "blk": 1,
+            "valueTotal": -0.36,
+            "rank": 179
+          },
+          "injury": {
+            "status": "D",
+            "note": "Ankle"
+          },
+          "thisWeek": {
+            "slot": "Util",
+            "status": "D",
+            "gameToday": "8:00 pm @ MIL"
+          }
+        },
+        {
+          "name": "Mark Williams",
+          "rk": 202,
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "price": 5,
+          "pick": 83,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -2.24,
+          "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Shoulder"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "8:00 pm @ OKC"
+          }
+        },
+        {
+          "name": "Jabari Smith Jr.",
+          "rk": 112,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 106,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.51,
+          "stats": {
+            "gp": 3,
+            "mpg": 34.5,
+            "fgPct": 0.529,
+            "fgm": 6,
+            "fga": 11.3,
+            "ftPct": 0.889,
+            "ftm": 2.7,
+            "fta": 3,
+            "tpm": 2.3,
+            "pts": 17,
+            "treb": 5,
+            "ast": 1.7,
+            "stl": 1,
+            "blk": 1,
+            "valueTotal": 4.76,
+            "rank": 53
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:30 pm vs ATL"
+          }
+        },
+        {
+          "name": "Collin Gillespie",
+          "rk": 121,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 1,
+          "pick": 137,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.01,
+          "stats": {
+            "gp": 2,
+            "mpg": 24.6,
+            "fgPct": 0.267,
+            "fgm": 2,
+            "fga": 7.5,
+            "ftPct": 0.25,
+            "ftm": 0.5,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 5.5,
+            "treb": 2.5,
+            "ast": 5.5,
+            "stl": 3,
+            "blk": 0,
+            "valueTotal": -1.74,
+            "rank": 212
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm @ OKC"
+          }
+        },
+        {
+          "name": "Quentin Grimes",
+          "rk": 115,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 148,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.32,
+          "stats": {
+            "gp": 3,
+            "mpg": 26.1,
+            "fgPct": 0.533,
+            "fgm": 2.7,
+            "fga": 5,
+            "ftPct": 0.875,
+            "ftm": 2.3,
+            "fta": 2.7,
+            "tpm": 1,
+            "pts": 8.7,
+            "treb": 3.7,
+            "ast": 3,
+            "stl": 0.7,
+            "blk": 0.3,
+            "valueTotal": 0.33,
+            "rank": 157
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "P.J. Washington",
+          "rk": 139,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 158,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.44,
+          "stats": {
+            "gp": 3,
+            "mpg": 33.3,
+            "fgPct": 0.5,
+            "fgm": 5.3,
+            "fga": 10.7,
+            "ftPct": 0.545,
+            "ftm": 2,
+            "fta": 3.7,
+            "tpm": 1.3,
+            "pts": 14,
+            "treb": 7,
+            "ast": 1.3,
+            "stl": 0,
+            "blk": 1.3,
+            "valueTotal": 0.17,
+            "rank": 165
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "7:30 pm @ MIA"
+          }
+        }
+      ],
+      "acquisitionsLeft": 18,
+      "projTotals": {
+        "fgPct": 0.4923,
+        "ftPct": 0.7679,
+        "tpm": 1277,
+        "pts": 13043,
+        "treb": 6031,
+        "ast": 2435,
+        "stl": 704,
+        "blk": 723
+      },
+      "projRoto": {
+        "total": 63,
+        "fgPct": 15,
+        "ftPct": 3,
+        "tpm": 6,
+        "pts": 6,
+        "treb": 15,
+        "ast": 2,
+        "stl": 3,
+        "blk": 13
+      },
+      "projRank": 7,
+      "actualTotals": {
+        "fgPct": 0.5268,
+        "ftPct": 0.7119,
+        "tpm": 40,
+        "pts": 419,
+        "treb": 187,
+        "ast": 73,
+        "stl": 22,
+        "blk": 25
+      },
+      "gamesPlayed": 28,
+      "actualRoto": {
+        "total": 50,
+        "fgPct": 15,
+        "ftPct": 2,
+        "tpm": 4,
+        "pts": 4,
+        "treb": 10,
+        "ast": 2,
+        "stl": 2,
+        "blk": 11
+      },
+      "actualRank": 11,
+      "realTotals": {
+        "fgPct": 0.546,
+        "ftPct": 0.753,
+        "tpm": 34,
+        "pts": 366,
+        "treb": 163,
+        "ast": 58,
+        "stl": 16,
+        "blk": 22
+      },
+      "realGp": 23,
+      "yahooRank": 8,
+      "realRoto": {
+        "total": 59.5,
+        "fgPct": 15,
+        "ftPct": 3,
+        "tpm": 6,
+        "pts": 6,
+        "treb": 14,
+        "ast": 1,
+        "stl": 1.5,
+        "blk": 13
+      },
+      "realRank": 8,
+      "lineup": {
+        "asOf": "2026-10-26",
+        "complete": true,
+        "teamNameInferred": false
+      },
+      "pendingIn": [],
+      "pendingOut": []
+    },
+    {
       "name": "Grilled Teampura",
       "previousNames": [],
       "isMine": false,
@@ -3588,7 +4117,7 @@
       "roster": [
         {
           "name": "Tyrese Maxey",
-          "rk": 9,
+          "rk": 8,
           "nbaTeam": "PHI",
           "pos": [
             "PG"
@@ -3597,7 +4126,7 @@
           "pick": 1,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.63,
+          "projZ": 7.56,
           "stats": {
             "gp": 4,
             "mpg": 37.8,
@@ -3635,7 +4164,7 @@
           "pick": 14,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.21,
+          "projZ": 6.15,
           "stats": {
             "gp": 3,
             "mpg": 32.4,
@@ -3663,7 +4192,7 @@
         },
         {
           "name": "Josh Giddey",
-          "rk": 30,
+          "rk": 38,
           "nbaTeam": "CHI",
           "pos": [
             "PG",
@@ -3673,7 +4202,7 @@
           "pick": 18,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.8,
+          "projZ": 4.11,
           "stats": {
             "gp": 3,
             "mpg": 26.1,
@@ -3701,7 +4230,7 @@
         },
         {
           "name": "Alex Sarr",
-          "rk": 108,
+          "rk": 150,
           "nbaTeam": "WAS",
           "pos": [
             "C"
@@ -3710,7 +4239,7 @@
           "pick": 68,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.86,
+          "projZ": -0.73,
           "stats": {
             "gp": 3,
             "mpg": 24,
@@ -3738,7 +4267,7 @@
         },
         {
           "name": "Peyton Watson",
-          "rk": 143,
+          "rk": 140,
           "nbaTeam": "CLE",
           "pos": [
             "SF",
@@ -3748,7 +4277,7 @@
           "pick": 138,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.36,
+          "projZ": -0.44,
           "stats": {
             "gp": 2,
             "mpg": 30.6,
@@ -3776,7 +4305,7 @@
         },
         {
           "name": "Jalen Smith",
-          "rk": 178,
+          "rk": 182,
           "nbaTeam": "CHI",
           "pos": [
             "PF",
@@ -3786,7 +4315,7 @@
           "pick": 149,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.64,
+          "projZ": -1.74,
           "stats": {
             "gp": 3,
             "mpg": 22.6,
@@ -3814,7 +4343,7 @@
         },
         {
           "name": "Gui Santos",
-          "rk": 120,
+          "rk": 117,
           "nbaTeam": "GSW",
           "pos": [
             "SF",
@@ -3824,7 +4353,7 @@
           "pick": 159,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.3,
+          "projZ": 0.2,
           "stats": {
             "gp": 3,
             "mpg": 22.6,
@@ -3866,7 +4395,7 @@
           "pick": 165,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.56,
+          "projZ": -0.67,
           "stats": {
             "gp": 3,
             "mpg": 20.1,
@@ -3894,7 +4423,7 @@
         },
         {
           "name": "Grayson Allen",
-          "rk": 153,
+          "rk": 157,
           "nbaTeam": "CHA",
           "pos": [
             "SG",
@@ -3904,7 +4433,7 @@
           "pick": 178,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.89,
+          "projZ": -1.02,
           "stats": {
             "gp": 3,
             "mpg": 27.5,
@@ -3942,7 +4471,7 @@
           "pick": 74,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": 2.8,
+          "projZ": 2.71,
           "stats": {
             "gp": 3,
             "mpg": 29.3,
@@ -3970,7 +4499,7 @@
         },
         {
           "name": "Stephon Castle",
-          "rk": 135,
+          "rk": 133,
           "nbaTeam": "SAS",
           "pos": [
             "PG",
@@ -3980,7 +4509,7 @@
           "pick": 45,
           "acquired": "trade",
           "acquiredDate": "2026-10-19 20:33",
-          "projZ": -0.17,
+          "projZ": -0.28,
           "stats": {
             "gp": 3,
             "mpg": 29.9,
@@ -4008,7 +4537,7 @@
         },
         {
           "name": "Naji Marshall",
-          "rk": 160,
+          "rk": 162,
           "nbaTeam": "DAL",
           "pos": [
             "SG",
@@ -4019,7 +4548,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-23 21:44",
-          "projZ": -1.09,
+          "projZ": -1.21,
           "stats": {
             "gp": 3,
             "mpg": 27.7,
@@ -4050,7 +4579,7 @@
         },
         {
           "name": "Alex Caruso",
-          "rk": 195,
+          "rk": 143,
           "nbaTeam": "OKC",
           "pos": [
             "SG",
@@ -4060,7 +4589,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-26 01:34",
-          "projZ": -2.04,
+          "projZ": -0.56,
           "stats": {
             "gp": 3,
             "mpg": 22.2,
@@ -4133,27 +4662,27 @@
       ],
       "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.462,
-        "ftPct": 0.7831,
-        "tpm": 1515,
-        "pts": 12618,
-        "treb": 4566,
-        "ast": 3423,
-        "stl": 963,
-        "blk": 555
+        "fgPct": 0.461,
+        "ftPct": 0.7845,
+        "tpm": 1503,
+        "pts": 12548,
+        "treb": 4528,
+        "ast": 3401,
+        "stl": 953,
+        "blk": 540
       },
       "projRoto": {
         "total": 61,
         "fgPct": 1,
-        "ftPct": 6,
+        "ftPct": 5,
         "tpm": 12,
-        "pts": 4,
+        "pts": 5,
         "treb": 6,
         "ast": 13,
         "stl": 11,
         "blk": 8
       },
-      "projRank": 7,
+      "projRank": 8,
       "actualTotals": {
         "fgPct": 0.4655,
         "ftPct": 0.7967,
@@ -4228,7 +4757,7 @@
           "pick": 6,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 14.26,
+          "projZ": 14.27,
           "stats": {
             "gp": 3,
             "mpg": 35.6,
@@ -4256,7 +4785,7 @@
         },
         {
           "name": "LeBron James",
-          "rk": 35,
+          "rk": 32,
           "nbaTeam": "PHI",
           "pos": [
             "SF",
@@ -4266,7 +4795,7 @@
           "pick": 33,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.44,
+          "projZ": 4.37,
           "stats": {
             "gp": 3,
             "mpg": 33.4,
@@ -4294,7 +4823,7 @@
         },
         {
           "name": "Jamal Murray",
-          "rk": 15,
+          "rk": 14,
           "nbaTeam": "DEN",
           "pos": [
             "PG"
@@ -4303,7 +4832,7 @@
           "pick": 34,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.55,
+          "projZ": 6.49,
           "stats": {
             "gp": 2,
             "mpg": 39.8,
@@ -4331,7 +4860,7 @@
         },
         {
           "name": "Onyeka Okongwu",
-          "rk": 63,
+          "rk": 62,
           "nbaTeam": "ATL",
           "pos": [
             "C"
@@ -4340,7 +4869,7 @@
           "pick": 50,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.71,
+          "projZ": 2.64,
           "stats": {
             "gp": 3,
             "mpg": 25.7,
@@ -4368,7 +4897,7 @@
         },
         {
           "name": "Cedric Coward",
-          "rk": 113,
+          "rk": 109,
           "nbaTeam": "MEM",
           "pos": [
             "SG",
@@ -4378,7 +4907,7 @@
           "pick": 94,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.7,
+          "projZ": 0.61,
           "stats": {
             "gp": 2,
             "mpg": 30,
@@ -4406,7 +4935,7 @@
         },
         {
           "name": "DeMar DeRozan",
-          "rk": 132,
+          "rk": 129,
           "nbaTeam": "DEN",
           "pos": [
             "SF",
@@ -4416,7 +4945,7 @@
           "pick": 117,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.07,
+          "projZ": -0.18,
           "stats": {
             "gp": 2,
             "mpg": 25.9,
@@ -4444,7 +4973,7 @@
         },
         {
           "name": "Andrew Nembhard",
-          "rk": 129,
+          "rk": 181,
           "nbaTeam": "IND",
           "pos": [
             "PG",
@@ -4454,7 +4983,7 @@
           "pick": 132,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.05,
+          "projZ": -1.67,
           "stats": {
             "gp": 3,
             "mpg": 31.9,
@@ -4482,7 +5011,7 @@
         },
         {
           "name": "RJ Barrett",
-          "rk": 161,
+          "rk": 163,
           "nbaTeam": "TOR",
           "pos": [
             "SG",
@@ -4493,7 +5022,7 @@
           "pick": 155,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.11,
+          "projZ": -1.23,
           "stats": {
             "gp": 3,
             "mpg": 30.8,
@@ -4521,7 +5050,7 @@
         },
         {
           "name": "Moussa Diabaté",
-          "rk": 170,
+          "rk": 173,
           "nbaTeam": "CHA",
           "pos": [
             "C"
@@ -4530,7 +5059,7 @@
           "pick": 162,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.45,
+          "projZ": -1.53,
           "stats": {
             "gp": 3,
             "mpg": 25.5,
@@ -4558,7 +5087,7 @@
         },
         {
           "name": "Anthony Black",
-          "rk": 137,
+          "rk": 135,
           "nbaTeam": "ORL",
           "pos": [
             "PG",
@@ -4569,7 +5098,7 @@
           "pick": 168,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.21,
+          "projZ": -0.32,
           "stats": {
             "gp": 1,
             "mpg": 26,
@@ -4597,7 +5126,7 @@
         },
         {
           "name": "Aaron Nesmith",
-          "rk": 134,
+          "rk": 132,
           "nbaTeam": "IND",
           "pos": [
             "SG",
@@ -4607,7 +5136,7 @@
           "pick": 173,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.17,
+          "projZ": -0.28,
           "stats": {
             "gp": 2,
             "mpg": 19.7,
@@ -4635,7 +5164,7 @@
         },
         {
           "name": "Bennedict Mathurin",
-          "rk": 207,
+          "rk": 211,
           "nbaTeam": "NOP",
           "pos": [
             "SG",
@@ -4645,7 +5174,7 @@
           "pick": 177,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -2.45,
+          "projZ": -2.58,
           "stats": {
             "gp": 3,
             "mpg": 17.8,
@@ -4674,27 +5203,27 @@
       ],
       "acquisitionsLeft": 18,
       "projTotals": {
-        "fgPct": 0.4847,
-        "ftPct": 0.8161,
-        "tpm": 1252,
-        "pts": 13911,
-        "treb": 4229,
-        "ast": 3210,
-        "stl": 804,
+        "fgPct": 0.4846,
+        "ftPct": 0.8154,
+        "tpm": 1245,
+        "pts": 13841,
+        "treb": 4210,
+        "ast": 3108,
+        "stl": 798,
         "blk": 461
       },
       "projRoto": {
-        "total": 61,
-        "fgPct": 9,
+        "total": 60,
+        "fgPct": 8,
         "ftPct": 15,
         "tpm": 4,
         "pts": 9,
         "treb": 2,
         "ast": 10,
-        "stl": 8,
-        "blk": 4
+        "stl": 7,
+        "blk": 5
       },
-      "projRank": 8,
+      "projRank": 9,
       "actualTotals": {
         "fgPct": 0.4682,
         "ftPct": 0.7321,
@@ -4751,535 +5280,6 @@
       "pendingOut": []
     },
     {
-      "name": "The New Day Co-op",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": false,
-      "spent": 200,
-      "acquisitions": 0,
-      "roster": [
-        {
-          "name": "Karl-Anthony Towns",
-          "rk": 12,
-          "nbaTeam": "NYK",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 52,
-          "pick": 20,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 6.9,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.4,
-            "fgPct": 0.622,
-            "fgm": 7.7,
-            "fga": 12.3,
-            "ftPct": 0.706,
-            "ftm": 4,
-            "fta": 5.7,
-            "tpm": 1.7,
-            "pts": 21,
-            "treb": 12,
-            "ast": 2.7,
-            "stl": 1,
-            "blk": 1,
-            "valueTotal": 7.42,
-            "rank": 16
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Evan Mobley",
-          "rk": 31,
-          "nbaTeam": "CLE",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 30,
-          "pick": 39,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.72,
-          "stats": {
-            "gp": 2,
-            "mpg": 34.7,
-            "fgPct": 0.56,
-            "fgm": 7,
-            "fga": 12.5,
-            "ftPct": 0.7,
-            "ftm": 3.5,
-            "fta": 5,
-            "tpm": 1.5,
-            "pts": 19,
-            "treb": 9,
-            "ast": 3,
-            "stl": 1,
-            "blk": 1.5,
-            "valueTotal": 6.13,
-            "rank": 32
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "C",
-            "status": null,
-            "gameToday": "7:00 pm vs MIN"
-          }
-        },
-        {
-          "name": "Jaren Jackson Jr.",
-          "rk": 27,
-          "nbaTeam": "UTA",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 24,
-          "pick": 52,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.87,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.5,
-            "fgPct": 0.513,
-            "fgm": 6.7,
-            "fga": 13,
-            "ftPct": 0.778,
-            "ftm": 4.7,
-            "fta": 6,
-            "tpm": 1.7,
-            "pts": 19.7,
-            "treb": 5.3,
-            "ast": 2,
-            "stl": 0.3,
-            "blk": 1.7,
-            "valueTotal": 4.25,
-            "rank": 59
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "9:00 pm vs MEM"
-          }
-        },
-        {
-          "name": "Deni Avdija",
-          "rk": 64,
-          "nbaTeam": "POR",
-          "pos": [
-            "SG",
-            "SF",
-            "PF"
-          ],
-          "price": 24,
-          "pick": 53,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.69,
-          "stats": {
-            "gp": 2,
-            "mpg": 31.3,
-            "fgPct": 0.469,
-            "fgm": 7.5,
-            "fga": 16,
-            "ftPct": 0.688,
-            "ftm": 5.5,
-            "fta": 8,
-            "tpm": 1.5,
-            "pts": 22,
-            "treb": 8,
-            "ast": 5,
-            "stl": 1.5,
-            "blk": 0,
-            "valueTotal": 3.32,
-            "rank": 79
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SG",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Kyrie Irving",
-          "rk": 28,
-          "nbaTeam": "DAL",
-          "pos": [
-            "PG"
-          ],
-          "price": 24,
-          "pick": 54,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.84,
-          "stats": {
-            "gp": 2,
-            "mpg": 24.3,
-            "fgPct": 0.583,
-            "fgm": 7,
-            "fga": 12,
-            "ftPct": 1,
-            "ftm": 2.5,
-            "fta": 2.5,
-            "tpm": 3,
-            "pts": 19.5,
-            "treb": 2.5,
-            "ast": 2.5,
-            "stl": 1,
-            "blk": 0.5,
-            "valueTotal": 5.55,
-            "rank": 40
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PG",
-            "status": null,
-            "gameToday": "7:30 pm @ MIA"
-          }
-        },
-        {
-          "name": "Donovan Clingan",
-          "rk": 61,
-          "nbaTeam": "POR",
-          "pos": [
-            "C"
-          ],
-          "price": 18,
-          "pick": 55,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.76,
-          "stats": {
-            "gp": 2,
-            "mpg": 19.9,
-            "fgPct": 0.5,
-            "fgm": 3.5,
-            "fga": 7,
-            "ftPct": 0.75,
-            "ftm": 1.5,
-            "fta": 2,
-            "tpm": 1,
-            "pts": 9.5,
-            "treb": 8.5,
-            "ast": 2.5,
-            "stl": 0,
-            "blk": 1,
-            "valueTotal": 1.45,
-            "rank": 125
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Ivica Zubac",
-          "rk": 70,
-          "nbaTeam": "IND",
-          "pos": [
-            "C"
-          ],
-          "price": 17,
-          "pick": 58,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.54,
-          "stats": {
-            "gp": 3,
-            "mpg": 21.4,
-            "fgPct": 0.6,
-            "fgm": 4,
-            "fga": 6.7,
-            "ftPct": 0.5,
-            "ftm": 1,
-            "fta": 2,
-            "tpm": 0,
-            "pts": 9,
-            "treb": 9,
-            "ast": 1.3,
-            "stl": 0,
-            "blk": 1,
-            "valueTotal": -0.36,
-            "rank": 179
-          },
-          "injury": {
-            "status": "D",
-            "note": "Ankle"
-          },
-          "thisWeek": {
-            "slot": "Util",
-            "status": "D",
-            "gameToday": "8:00 pm @ MIL"
-          }
-        },
-        {
-          "name": "Mark Williams",
-          "rk": 198,
-          "nbaTeam": "PHX",
-          "pos": [
-            "C"
-          ],
-          "price": 5,
-          "pick": 83,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -2.11,
-          "stats": null,
-          "injury": {
-            "status": "O",
-            "note": "Shoulder"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": "8:00 pm @ OKC"
-          }
-        },
-        {
-          "name": "Jabari Smith Jr.",
-          "rk": 115,
-          "nbaTeam": "HOU",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 3,
-          "pick": 106,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 0.59,
-          "stats": {
-            "gp": 3,
-            "mpg": 34.5,
-            "fgPct": 0.529,
-            "fgm": 6,
-            "fga": 11.3,
-            "ftPct": 0.889,
-            "ftm": 2.7,
-            "fta": 3,
-            "tpm": 2.3,
-            "pts": 17,
-            "treb": 5,
-            "ast": 1.7,
-            "stl": 1,
-            "blk": 1,
-            "valueTotal": 4.76,
-            "rank": 53
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "8:30 pm vs ATL"
-          }
-        },
-        {
-          "name": "Collin Gillespie",
-          "rk": 124,
-          "nbaTeam": "PHX",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 1,
-          "pick": 137,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 0.12,
-          "stats": {
-            "gp": 2,
-            "mpg": 24.6,
-            "fgPct": 0.267,
-            "fgm": 2,
-            "fga": 7.5,
-            "ftPct": 0.25,
-            "ftm": 0.5,
-            "fta": 2,
-            "tpm": 1,
-            "pts": 5.5,
-            "treb": 2.5,
-            "ast": 5.5,
-            "stl": 3,
-            "blk": 0,
-            "valueTotal": -1.74,
-            "rank": 212
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": "8:00 pm @ OKC"
-          }
-        },
-        {
-          "name": "Quentin Grimes",
-          "rk": 118,
-          "nbaTeam": "LAL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 148,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 0.44,
-          "stats": {
-            "gp": 3,
-            "mpg": 26.1,
-            "fgPct": 0.533,
-            "fgm": 2.7,
-            "fga": 5,
-            "ftPct": 0.875,
-            "ftm": 2.3,
-            "fta": 2.7,
-            "tpm": 1,
-            "pts": 8.7,
-            "treb": 3.7,
-            "ast": 3,
-            "stl": 0.7,
-            "blk": 0.3,
-            "valueTotal": 0.33,
-            "rank": 157
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "P.J. Washington",
-          "rk": 141,
-          "nbaTeam": "DAL",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 158,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -0.35,
-          "stats": {
-            "gp": 3,
-            "mpg": 33.3,
-            "fgPct": 0.5,
-            "fgm": 5.3,
-            "fga": 10.7,
-            "ftPct": 0.545,
-            "ftm": 2,
-            "fta": 3.7,
-            "tpm": 1.3,
-            "pts": 14,
-            "treb": 7,
-            "ast": 1.3,
-            "stl": 0,
-            "blk": 1.3,
-            "valueTotal": 0.17,
-            "rank": 165
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": "7:30 pm @ MIA"
-          }
-        }
-      ],
-      "acquisitionsLeft": 18,
-      "projTotals": {
-        "fgPct": 0.4923,
-        "ftPct": 0.7679,
-        "tpm": 1277,
-        "pts": 13043,
-        "treb": 6031,
-        "ast": 2435,
-        "stl": 704,
-        "blk": 723
-      },
-      "projRoto": {
-        "total": 61,
-        "fgPct": 15,
-        "ftPct": 3,
-        "tpm": 5,
-        "pts": 6,
-        "treb": 15,
-        "ast": 1,
-        "stl": 2,
-        "blk": 14
-      },
-      "projRank": 9,
-      "actualTotals": {
-        "fgPct": 0.5268,
-        "ftPct": 0.7119,
-        "tpm": 40,
-        "pts": 419,
-        "treb": 187,
-        "ast": 73,
-        "stl": 22,
-        "blk": 25
-      },
-      "gamesPlayed": 28,
-      "actualRoto": {
-        "total": 50,
-        "fgPct": 15,
-        "ftPct": 2,
-        "tpm": 4,
-        "pts": 4,
-        "treb": 10,
-        "ast": 2,
-        "stl": 2,
-        "blk": 11
-      },
-      "actualRank": 11,
-      "realTotals": {
-        "fgPct": 0.546,
-        "ftPct": 0.753,
-        "tpm": 34,
-        "pts": 366,
-        "treb": 163,
-        "ast": 58,
-        "stl": 16,
-        "blk": 22
-      },
-      "realGp": 23,
-      "yahooRank": 8,
-      "realRoto": {
-        "total": 59.5,
-        "fgPct": 15,
-        "ftPct": 3,
-        "tpm": 6,
-        "pts": 6,
-        "treb": 14,
-        "ast": 1,
-        "stl": 1.5,
-        "blk": 13
-      },
-      "realRank": 8,
-      "lineup": {
-        "asOf": "2026-10-26",
-        "complete": true,
-        "teamNameInferred": false
-      },
-      "pendingIn": [],
-      "pendingOut": []
-    },
-    {
       "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
       "previousNames": [],
       "isMine": false,
@@ -5299,7 +5299,7 @@
           "pick": 9,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 8.42,
+          "projZ": 8.39,
           "stats": {
             "gp": 3,
             "mpg": 32.8,
@@ -5327,7 +5327,7 @@
         },
         {
           "name": "Kawhi Leonard",
-          "rk": 23,
+          "rk": 21,
           "nbaTeam": "TOR",
           "pos": [
             "SG",
@@ -5338,7 +5338,7 @@
           "pick": 13,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 5.33,
+          "projZ": 5.27,
           "stats": {
             "gp": 2,
             "mpg": 25.8,
@@ -5369,7 +5369,7 @@
         },
         {
           "name": "Jalen Johnson",
-          "rk": 14,
+          "rk": 13,
           "nbaTeam": "ATL",
           "pos": [
             "SF",
@@ -5379,7 +5379,7 @@
           "pick": 19,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 6.76,
+          "projZ": 6.72,
           "stats": {
             "gp": 3,
             "mpg": 31.5,
@@ -5407,7 +5407,7 @@
         },
         {
           "name": "Ausar Thompson",
-          "rk": 100,
+          "rk": 98,
           "nbaTeam": "DET",
           "pos": [
             "SG",
@@ -5418,7 +5418,7 @@
           "pick": 62,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33,
+          "projZ": 1.25,
           "stats": {
             "gp": 2,
             "mpg": 26.3,
@@ -5449,7 +5449,7 @@
         },
         {
           "name": "Kel'el Ware",
-          "rk": 55,
+          "rk": 108,
           "nbaTeam": "MIL",
           "pos": [
             "C"
@@ -5458,7 +5458,7 @@
           "pick": 96,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.21,
+          "projZ": 0.61,
           "stats": {
             "gp": 3,
             "mpg": 19.4,
@@ -5496,7 +5496,7 @@
           "pick": 119,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.4,
+          "projZ": 1.32,
           "stats": {
             "gp": 2,
             "mpg": 27.2,
@@ -5527,7 +5527,7 @@
         },
         {
           "name": "Fred VanVleet",
-          "rk": 139,
+          "rk": 138,
           "nbaTeam": "HOU",
           "pos": [
             "PG"
@@ -5536,7 +5536,7 @@
           "pick": 130,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.29,
+          "projZ": -0.42,
           "stats": {
             "gp": 2,
             "mpg": 30.5,
@@ -5564,7 +5564,7 @@
         },
         {
           "name": "Jaime Jaquez Jr.",
-          "rk": 140,
+          "rk": 134,
           "nbaTeam": "MIL",
           "pos": [
             "SG",
@@ -5575,7 +5575,7 @@
           "pick": 154,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.31,
+          "projZ": -0.3,
           "stats": {
             "gp": 3,
             "mpg": 31.4,
@@ -5603,7 +5603,7 @@
         },
         {
           "name": "Kristaps Porziņģis",
-          "rk": 97,
+          "rk": 122,
           "nbaTeam": "GSW",
           "pos": [
             "C"
@@ -5626,7 +5626,7 @@
         },
         {
           "name": "Isaiah Jackson",
-          "rk": 157,
+          "rk": 148,
           "nbaTeam": "LAC",
           "pos": [
             "C"
@@ -5635,7 +5635,7 @@
           "pick": 167,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.99,
+          "projZ": -0.68,
           "stats": {
             "gp": 3,
             "mpg": 22.2,
@@ -5663,7 +5663,7 @@
         },
         {
           "name": "Mitchell Robinson",
-          "rk": 148,
+          "rk": 145,
           "nbaTeam": "BOS",
           "pos": [
             "C"
@@ -5672,7 +5672,7 @@
           "pick": 172,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.58,
+          "projZ": -0.64,
           "stats": {
             "gp": 2,
             "mpg": 20.3,
@@ -5700,7 +5700,7 @@
         },
         {
           "name": "Daniss Jenkins",
-          "rk": 174,
+          "rk": 176,
           "nbaTeam": "DET",
           "pos": [
             "PG",
@@ -5710,7 +5710,7 @@
           "pick": 176,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.51,
+          "projZ": -1.64,
           "stats": {
             "gp": 3,
             "mpg": 25.3,
@@ -5734,7 +5734,7 @@
         },
         {
           "name": "Zaccharie Risacher",
-          "rk": 236,
+          "rk": 240,
           "nbaTeam": "DAL",
           "pos": [
             "SF",
@@ -5744,7 +5744,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-21 10:25",
-          "projZ": -3.43,
+          "projZ": -3.56,
           "stats": {
             "gp": 3,
             "mpg": 30.2,
@@ -5781,20 +5781,20 @@
       ],
       "acquisitionsLeft": 17,
       "projTotals": {
-        "fgPct": 0.4835,
-        "ftPct": 0.7638,
-        "tpm": 1073,
-        "pts": 12364,
-        "treb": 5383,
-        "ast": 3005,
-        "stl": 994,
-        "blk": 675
+        "fgPct": 0.4833,
+        "ftPct": 0.7629,
+        "tpm": 1042,
+        "pts": 12147,
+        "treb": 5263,
+        "ast": 2978,
+        "stl": 977,
+        "blk": 655
       },
       "projRoto": {
-        "total": 58,
+        "total": 57,
         "fgPct": 7,
         "ftPct": 2,
-        "tpm": 2,
+        "tpm": 1,
         "pts": 3,
         "treb": 13,
         "ast": 7,
@@ -5862,550 +5862,6 @@
       ]
     },
     {
-      "name": "Super Maru",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": false,
-      "spent": 200,
-      "acquisitions": 2,
-      "roster": [
-        {
-          "name": "Anthony Edwards",
-          "rk": 7,
-          "nbaTeam": "MIN",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 65,
-          "pick": 10,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 7.92,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.2,
-            "fgPct": 0.443,
-            "fgm": 10.3,
-            "fga": 23.3,
-            "ftPct": 0.786,
-            "ftm": 3.7,
-            "fta": 4.7,
-            "tpm": 4.3,
-            "pts": 28.7,
-            "treb": 5,
-            "ast": 3.3,
-            "stl": 2,
-            "blk": 0.3,
-            "valueTotal": 7.18,
-            "rank": 20
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PG",
-            "status": null,
-            "gameToday": "7:00 pm @ CLE"
-          }
-        },
-        {
-          "name": "Joel Embiid",
-          "rk": 47,
-          "nbaTeam": "PHI",
-          "pos": [
-            "C"
-          ],
-          "price": 25,
-          "pick": 31,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 3.88,
-          "stats": {
-            "gp": 3,
-            "mpg": 34.7,
-            "fgPct": 0.392,
-            "fgm": 6.7,
-            "fga": 17,
-            "ftPct": 0.815,
-            "ftm": 7.3,
-            "fta": 9,
-            "tpm": 1,
-            "pts": 21.7,
-            "treb": 9.7,
-            "ast": 5.7,
-            "stl": 1,
-            "blk": 1,
-            "valueTotal": 5.83,
-            "rank": 38
-          },
-          "injury": {
-            "status": "O",
-            "note": "Heel"
-          },
-          "thisWeek": {
-            "slot": "Util",
-            "status": "P",
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Domantas Sabonis",
-          "rk": 37,
-          "nbaTeam": "SAC",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 37,
-          "pick": 32,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.33,
-          "stats": {
-            "gp": 3,
-            "mpg": 35.6,
-            "fgPct": 0.808,
-            "fgm": 7,
-            "fga": 8.7,
-            "ftPct": 0.867,
-            "ftm": 4.3,
-            "fta": 5,
-            "tpm": 0.3,
-            "pts": 18.7,
-            "treb": 17.3,
-            "ast": 7,
-            "stl": 1,
-            "blk": 0,
-            "valueTotal": 11.12,
-            "rank": 4
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Jalen Williams",
-          "rk": 39,
-          "nbaTeam": "OKC",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 31,
-          "pick": 42,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.26,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.6,
-            "fgPct": 0.385,
-            "fgm": 5,
-            "fga": 13,
-            "ftPct": 0.8,
-            "ftm": 2.7,
-            "fta": 3.3,
-            "tpm": 1,
-            "pts": 13.7,
-            "treb": 4.7,
-            "ast": 3.3,
-            "stl": 1,
-            "blk": 0.7,
-            "valueTotal": 0.76,
-            "rank": 146
-          },
-          "injury": {
-            "status": "D",
-            "note": "Ankle"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": "8:00 pm vs PHX"
-          }
-        },
-        {
-          "name": "De'Aaron Fox",
-          "rk": 68,
-          "nbaTeam": "SAS",
-          "pos": [
-            "PG"
-          ],
-          "price": 20,
-          "pick": 47,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.62,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.1,
-            "fgPct": 0.581,
-            "fgm": 6,
-            "fga": 10.3,
-            "ftPct": 0.8,
-            "ftm": 4,
-            "fta": 5,
-            "tpm": 1.3,
-            "pts": 17.3,
-            "treb": 4.7,
-            "ast": 8.3,
-            "stl": 2,
-            "blk": 0.3,
-            "valueTotal": 7.03,
-            "rank": 22
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Coby White",
-          "rk": 81,
-          "nbaTeam": "CHA",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 13,
-          "pick": 77,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.06,
-          "stats": null,
-          "injury": {
-            "status": "O",
-            "note": "Calf"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": "7:00 pm vs WAS"
-          }
-        },
-        {
-          "name": "Ayo Dosunmu",
-          "rk": 145,
-          "nbaTeam": "MIN",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 2,
-          "pick": 108,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -0.52,
-          "stats": {
-            "gp": 3,
-            "mpg": 26.3,
-            "fgPct": 0.516,
-            "fgm": 5.3,
-            "fga": 10.3,
-            "ftPct": 0.667,
-            "ftm": 1.3,
-            "fta": 2,
-            "tpm": 1,
-            "pts": 13,
-            "treb": 4.7,
-            "ast": 5,
-            "stl": 0.3,
-            "blk": 0.3,
-            "valueTotal": 0.85,
-            "rank": 143
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SG",
-            "status": null,
-            "gameToday": "7:00 pm @ CLE"
-          }
-        },
-        {
-          "name": "John Collins",
-          "rk": 74,
-          "nbaTeam": "DET",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 3,
-          "pick": 115,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.46,
-          "stats": {
-            "gp": 3,
-            "mpg": 29.5,
-            "fgPct": 0.514,
-            "fgm": 6.3,
-            "fga": 12.3,
-            "ftPct": 0,
-            "ftm": 0,
-            "fta": 0.3,
-            "tpm": 2.3,
-            "pts": 15,
-            "treb": 7.7,
-            "ast": 0.7,
-            "stl": 0.3,
-            "blk": 1,
-            "valueTotal": 2.6,
-            "rank": 95
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Tobias Harris",
-          "rk": 154,
-          "nbaTeam": "SAS",
-          "pos": [
-            "PF"
-          ],
-          "price": 1,
-          "pick": 135,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -0.9,
-          "stats": null,
-          "injury": {
-            "status": "O",
-            "note": "Calf"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Bobby Portis Jr.",
-          "rk": 149,
-          "nbaTeam": "MIA",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 1,
-          "pick": 157,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -0.62,
-          "stats": {
-            "gp": 3,
-            "mpg": 24.3,
-            "fgPct": 0.44,
-            "fgm": 3.7,
-            "fga": 8.3,
-            "ftPct": 1,
-            "ftm": 1,
-            "fta": 1,
-            "tpm": 2,
-            "pts": 10.3,
-            "treb": 6.7,
-            "ast": 1,
-            "stl": 1.3,
-            "blk": 0.3,
-            "valueTotal": 1.74,
-            "rank": 119
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "C",
-            "status": null,
-            "gameToday": "7:30 pm vs DAL"
-          }
-        },
-        {
-          "name": "Luguentz Dort",
-          "rk": 241,
-          "nbaTeam": "ATL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 164,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -3.62,
-          "stats": {
-            "gp": 3,
-            "mpg": 23.3,
-            "fgPct": 0.389,
-            "fgm": 2.3,
-            "fga": 6,
-            "ftPct": 0.857,
-            "ftm": 2,
-            "fta": 2.3,
-            "tpm": 1.3,
-            "pts": 8,
-            "treb": 3.7,
-            "ast": 1.7,
-            "stl": 1,
-            "blk": 0,
-            "valueTotal": -1.22,
-            "rank": 196
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "8:30 pm @ HOU"
-          }
-        },
-        {
-          "name": "Aaron Wiggins",
-          "rk": 209,
-          "nbaTeam": "ATL",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 0,
-          "pick": null,
-          "acquired": "FA",
-          "acquiredDate": "2026-10-25 17:54",
-          "projZ": -2.48,
-          "stats": {
-            "gp": 3,
-            "mpg": 27.3,
-            "fgPct": 0.581,
-            "fgm": 6,
-            "fga": 10.3,
-            "ftPct": 0.714,
-            "ftm": 1.7,
-            "fta": 2.3,
-            "tpm": 3.3,
-            "pts": 17,
-            "treb": 3,
-            "ast": 1,
-            "stl": 1.7,
-            "blk": 0.3,
-            "valueTotal": 3.74,
-            "rank": 70
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SF",
-            "status": null,
-            "gameToday": "8:30 pm @ HOU"
-          }
-        }
-      ],
-      "moveLog": [
-        {
-          "date": "2026-10-18 18:09",
-          "name": "Corey Kispert",
-          "dir": "out",
-          "how": "drop"
-        },
-        {
-          "date": "2026-10-21 04:06",
-          "name": "Collin Sexton",
-          "dir": "in",
-          "how": "Waiver"
-        },
-        {
-          "date": "2026-10-25 17:54",
-          "name": "Collin Sexton",
-          "dir": "out",
-          "how": "drop"
-        },
-        {
-          "date": "2026-10-25 17:54",
-          "name": "Aaron Wiggins",
-          "dir": "in",
-          "how": "FA"
-        }
-      ],
-      "acquisitionsLeft": 16,
-      "projTotals": {
-        "fgPct": 0.4887,
-        "ftPct": 0.8108,
-        "tpm": 1411,
-        "pts": 13486,
-        "treb": 4502,
-        "ast": 2686,
-        "stl": 748,
-        "blk": 384
-      },
-      "projRoto": {
-        "total": 55,
-        "fgPct": 12,
-        "ftPct": 13,
-        "tpm": 8,
-        "pts": 8,
-        "treb": 5,
-        "ast": 3,
-        "stl": 3,
-        "blk": 3
-      },
-      "projRank": 11,
-      "actualTotals": {
-        "fgPct": 0.4904,
-        "ftPct": 0.8023,
-        "tpm": 53,
-        "pts": 490,
-        "treb": 202,
-        "ast": 111,
-        "stl": 35,
-        "blk": 13
-      },
-      "gamesPlayed": 30,
-      "actualRoto": {
-        "total": 74,
-        "fgPct": 12,
-        "ftPct": 11,
-        "tpm": 10,
-        "pts": 9,
-        "treb": 14,
-        "ast": 7.5,
-        "stl": 8,
-        "blk": 2.5
-      },
-      "actualRank": 6,
-      "realTotals": {
-        "fgPct": 0.487,
-        "ftPct": 0.802,
-        "tpm": 40,
-        "pts": 415,
-        "treb": 182,
-        "ast": 104,
-        "stl": 27,
-        "blk": 12
-      },
-      "realGp": 24,
-      "yahooRank": 4,
-      "realRoto": {
-        "total": 82,
-        "fgPct": 11,
-        "ftPct": 11,
-        "tpm": 12,
-        "pts": 10,
-        "treb": 15,
-        "ast": 13,
-        "stl": 6.5,
-        "blk": 3.5
-      },
-      "realRank": 4,
-      "lineup": {
-        "asOf": "2026-10-26",
-        "complete": true,
-        "teamNameInferred": false
-      },
-      "pendingIn": [],
-      "pendingOut": []
-    },
-    {
       "name": "Cole is like that",
       "previousNames": [
         "Cole's aura tuff team"
@@ -6417,7 +5873,7 @@
       "roster": [
         {
           "name": "Jalen Brunson",
-          "rk": 41,
+          "rk": 40,
           "nbaTeam": "NYK",
           "pos": [
             "PG"
@@ -6426,7 +5882,7 @@
           "pick": 17,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.14,
+          "projZ": 4.05,
           "stats": {
             "gp": 3,
             "mpg": 34.6,
@@ -6454,7 +5910,7 @@
         },
         {
           "name": "Kevin Durant",
-          "rk": 10,
+          "rk": 9,
           "nbaTeam": "HOU",
           "pos": [
             "SG",
@@ -6465,7 +5921,7 @@
           "pick": 21,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.51,
+          "projZ": 7.47,
           "stats": {
             "gp": 3,
             "mpg": 37,
@@ -6493,7 +5949,7 @@
         },
         {
           "name": "Jarrett Allen",
-          "rk": 82,
+          "rk": 80,
           "nbaTeam": "CLE",
           "pos": [
             "C"
@@ -6502,7 +5958,7 @@
           "pick": 70,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.94,
+          "projZ": 1.88,
           "stats": {
             "gp": 2,
             "mpg": 27.8,
@@ -6540,7 +5996,7 @@
           "pick": 76,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.97,
+          "projZ": 3.88,
           "stats": {
             "gp": 3,
             "mpg": 31.6,
@@ -6568,7 +6024,7 @@
         },
         {
           "name": "Andrew Wiggins",
-          "rk": 87,
+          "rk": 86,
           "nbaTeam": "MIA",
           "pos": [
             "SG",
@@ -6579,7 +6035,7 @@
           "pick": 114,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.76,
+          "projZ": 1.67,
           "stats": {
             "gp": 3,
             "mpg": 23.8,
@@ -6607,7 +6063,7 @@
         },
         {
           "name": "Aday Mara",
-          "rk": null,
+          "rk": 289,
           "nbaTeam": "OKC",
           "pos": [
             "C"
@@ -6616,7 +6072,7 @@
           "pick": 136,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": null,
+          "projZ": -5.39,
           "stats": {
             "gp": 3,
             "mpg": 12.8,
@@ -6644,7 +6100,7 @@
         },
         {
           "name": "Wendell Carter Jr.",
-          "rk": 152,
+          "rk": 131,
           "nbaTeam": "ORL",
           "pos": [
             "C"
@@ -6653,7 +6109,7 @@
           "pick": 144,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -0.72,
+          "projZ": -0.24,
           "stats": {
             "gp": 3,
             "mpg": 30.8,
@@ -6681,7 +6137,7 @@
         },
         {
           "name": "Keldon Johnson",
-          "rk": 217,
+          "rk": 221,
           "nbaTeam": "SAS",
           "pos": [
             "SF",
@@ -6691,7 +6147,7 @@
           "pick": null,
           "acquired": "Waiver",
           "acquiredDate": "2026-10-21 04:06",
-          "projZ": -2.75,
+          "projZ": -2.88,
           "stats": {
             "gp": 3,
             "mpg": 21.7,
@@ -6719,7 +6175,7 @@
         },
         {
           "name": "Duncan Robinson",
-          "rk": 190,
+          "rk": 194,
           "nbaTeam": "DET",
           "pos": [
             "SG",
@@ -6729,7 +6185,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-22 09:33",
-          "projZ": -1.92,
+          "projZ": -2.06,
           "stats": {
             "gp": 3,
             "mpg": 29,
@@ -6757,7 +6213,7 @@
         },
         {
           "name": "CJ McCollum",
-          "rk": 131,
+          "rk": 128,
           "nbaTeam": "ATL",
           "pos": [
             "PG",
@@ -6767,7 +6223,7 @@
           "pick": 124,
           "acquired": "trade",
           "acquiredDate": "2026-10-22 22:46",
-          "projZ": -0.06,
+          "projZ": -0.18,
           "stats": {
             "gp": 3,
             "mpg": 25.4,
@@ -6795,7 +6251,7 @@
         },
         {
           "name": "Donovan Mitchell",
-          "rk": 11,
+          "rk": 10,
           "nbaTeam": "CLE",
           "pos": [
             "PG",
@@ -6805,7 +6261,7 @@
           "pick": 12,
           "acquired": "trade",
           "acquiredDate": "2026-10-23 19:06",
-          "projZ": 7.01,
+          "projZ": 6.93,
           "stats": {
             "gp": 2,
             "mpg": 35.3,
@@ -6926,27 +6382,27 @@
       ],
       "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.4865,
-        "ftPct": 0.8131,
-        "tpm": 1486,
-        "pts": 13224,
-        "treb": 3582,
-        "ast": 2546,
-        "stl": 616,
-        "blk": 351
+        "fgPct": 0.4888,
+        "ftPct": 0.8036,
+        "tpm": 1499,
+        "pts": 13767,
+        "treb": 3798,
+        "ast": 2624,
+        "stl": 628,
+        "blk": 435
       },
       "projRoto": {
-        "total": 47,
-        "fgPct": 10,
-        "ftPct": 14,
+        "total": 50,
+        "fgPct": 12,
+        "ftPct": 11,
         "tpm": 11,
-        "pts": 7,
+        "pts": 8,
         "treb": 1,
-        "ast": 2,
+        "ast": 3,
         "stl": 1,
-        "blk": 1
+        "blk": 3
       },
-      "projRank": 12,
+      "projRank": 11,
       "actualTotals": {
         "fgPct": 0.5055,
         "ftPct": 0.7878,
@@ -7021,7 +6477,7 @@
           "pick": 2,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 16.43,
+          "projZ": 16.49,
           "stats": {
             "gp": 2,
             "mpg": 39.5,
@@ -7059,7 +6515,7 @@
           "pick": 11,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 7.93,
+          "projZ": 7.88,
           "stats": {
             "gp": 2,
             "mpg": 37.3,
@@ -7097,7 +6553,7 @@
           "pick": 35,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.4,
+          "projZ": 3.36,
           "stats": {
             "gp": 3,
             "mpg": 30.9,
@@ -7125,7 +6581,7 @@
         },
         {
           "name": "Toumani Camara",
-          "rk": 123,
+          "rk": 120,
           "nbaTeam": "POR",
           "pos": [
             "SF",
@@ -7135,7 +6591,7 @@
           "pick": 122,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.2,
+          "projZ": 0.09,
           "stats": {
             "gp": 2,
             "mpg": 25,
@@ -7163,7 +6619,7 @@
         },
         {
           "name": "Davion Mitchell",
-          "rk": 169,
+          "rk": 171,
           "nbaTeam": "MIA",
           "pos": [
             "PG"
@@ -7172,7 +6628,7 @@
           "pick": 141,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.36,
+          "projZ": -1.49,
           "stats": {
             "gp": 3,
             "mpg": 34.3,
@@ -7200,7 +6656,7 @@
         },
         {
           "name": "Yves Missi",
-          "rk": 240,
+          "rk": 243,
           "nbaTeam": "NOP",
           "pos": [
             "C"
@@ -7209,7 +6665,7 @@
           "pick": 152,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.56,
+          "projZ": -3.64,
           "stats": {
             "gp": 2,
             "mpg": 19.6,
@@ -7240,7 +6696,7 @@
         },
         {
           "name": "Jrue Holiday",
-          "rk": 122,
+          "rk": 119,
           "nbaTeam": "POR",
           "pos": [
             "PG",
@@ -7250,7 +6706,7 @@
           "pick": 160,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.23,
+          "projZ": 0.11,
           "stats": {
             "gp": 2,
             "mpg": 23.5,
@@ -7278,7 +6734,7 @@
         },
         {
           "name": "Jimmy Butler III",
-          "rk": 79,
+          "rk": 87,
           "nbaTeam": "GSW",
           "pos": [
             "SF",
@@ -7302,7 +6758,7 @@
         },
         {
           "name": "Pelle Larsson",
-          "rk": 245,
+          "rk": 250,
           "nbaTeam": "MIA",
           "pos": [
             "SG",
@@ -7312,7 +6768,7 @@
           "pick": 171,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -3.77,
+          "projZ": -3.91,
           "stats": {
             "gp": 3,
             "mpg": 29.7,
@@ -7340,7 +6796,7 @@
         },
         {
           "name": "Mikel Brown Jr.",
-          "rk": 179,
+          "rk": 183,
           "nbaTeam": "BKN",
           "pos": [
             "PG"
@@ -7349,7 +6805,7 @@
           "pick": 175,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.66,
+          "projZ": -1.8,
           "stats": {
             "gp": 2,
             "mpg": 19.9,
@@ -7380,7 +6836,7 @@
         },
         {
           "name": "Jake LaRavia",
-          "rk": 260,
+          "rk": 263,
           "nbaTeam": "LAL",
           "pos": [
             "SF",
@@ -7390,7 +6846,7 @@
           "pick": 179,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -4.16,
+          "projZ": -4.3,
           "stats": {
             "gp": 2,
             "mpg": 16.6,
@@ -7418,7 +6874,7 @@
         },
         {
           "name": "Scotty Pippen Jr.",
-          "rk": 183,
+          "rk": 190,
           "nbaTeam": "MEM",
           "pos": [
             "PG"
@@ -7427,7 +6883,7 @@
           "pick": 180,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": -1.74,
+          "projZ": -1.89,
           "stats": {
             "gp": 3,
             "mpg": 17.8,
@@ -7456,27 +6912,27 @@
       ],
       "acquisitionsLeft": 18,
       "projTotals": {
-        "fgPct": 0.4846,
-        "ftPct": 0.7939,
-        "tpm": 1158,
-        "pts": 11107,
-        "treb": 4484,
-        "ast": 3323,
-        "stl": 838,
-        "blk": 379
+        "fgPct": 0.4857,
+        "ftPct": 0.7934,
+        "tpm": 1147,
+        "pts": 10894,
+        "treb": 4363,
+        "ast": 3279,
+        "stl": 827,
+        "blk": 363
       },
       "projRoto": {
         "total": 46,
-        "fgPct": 8,
+        "fgPct": 9,
         "ftPct": 7,
         "tpm": 3,
         "pts": 1,
-        "treb": 4,
-        "ast": 12,
-        "stl": 9,
+        "treb": 5,
+        "ast": 11,
+        "stl": 8,
         "blk": 2
       },
-      "projRank": 13,
+      "projRank": 12,
       "actualTotals": {
         "fgPct": 0.4461,
         "ftPct": 0.8395,
@@ -7533,546 +6989,6 @@
       "pendingOut": []
     },
     {
-      "name": "Full Court Rex",
-      "previousNames": [],
-      "isMine": false,
-      "isManaged": false,
-      "spent": 199,
-      "acquisitions": 1,
-      "roster": [
-        {
-          "name": "Stephen Curry",
-          "rk": 8,
-          "nbaTeam": "GSW",
-          "pos": [
-            "PG"
-          ],
-          "price": 51,
-          "pick": 7,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 7.75,
-          "stats": {
-            "gp": 2,
-            "mpg": 25.5,
-            "fgPct": 0.4,
-            "fgm": 6,
-            "fga": 15,
-            "ftPct": 1,
-            "ftm": 9,
-            "fta": 9,
-            "tpm": 2.5,
-            "pts": 23.5,
-            "treb": 2,
-            "ast": 2.5,
-            "stl": 1,
-            "blk": 0,
-            "valueTotal": 5.36,
-            "rank": 41
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PG",
-            "status": null,
-            "gameToday": "10:00 pm @ DEN"
-          }
-        },
-        {
-          "name": "AJ Dybantsa",
-          "rk": 232,
-          "nbaTeam": "WAS",
-          "pos": [
-            "SF"
-          ],
-          "price": 11,
-          "pick": 8,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -3.35,
-          "stats": null,
-          "injury": {
-            "status": "O",
-            "note": "Ankle"
-          },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": "7:00 pm @ CHA"
-          }
-        },
-        {
-          "name": "Devin Booker",
-          "rk": 26,
-          "nbaTeam": "PHX",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 40,
-          "pick": 27,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 4.88,
-          "stats": {
-            "gp": 2,
-            "mpg": 33,
-            "fgPct": 0.632,
-            "fgm": 12,
-            "fga": 19,
-            "ftPct": 0.941,
-            "ftm": 8,
-            "fta": 8.5,
-            "tpm": 1,
-            "pts": 33,
-            "treb": 5.5,
-            "ast": 4.5,
-            "stl": 0.5,
-            "blk": 1,
-            "valueTotal": 11.61,
-            "rank": 3
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SG",
-            "status": null,
-            "gameToday": "8:00 pm @ OKC"
-          }
-        },
-        {
-          "name": "Alperen Şengün",
-          "rk": 52,
-          "nbaTeam": "HOU",
-          "pos": [
-            "PF",
-            "C"
-          ],
-          "price": 38,
-          "pick": 36,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 3.52,
-          "stats": {
-            "gp": 3,
-            "mpg": 33.1,
-            "fgPct": 0.532,
-            "fgm": 8.3,
-            "fga": 15.7,
-            "ftPct": 0.778,
-            "ftm": 4.7,
-            "fta": 6,
-            "tpm": 1.7,
-            "pts": 23,
-            "treb": 9,
-            "ast": 6.3,
-            "stl": 0.7,
-            "blk": 0.3,
-            "valueTotal": 6.7,
-            "rank": 25
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "PF",
-            "status": null,
-            "gameToday": "8:30 pm vs ATL"
-          }
-        },
-        {
-          "name": "Jaylen Brown",
-          "rk": 66,
-          "nbaTeam": "PHI",
-          "pos": [
-            "SG",
-            "SF",
-            "PF"
-          ],
-          "price": 27,
-          "pick": 44,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 2.68,
-          "stats": {
-            "gp": 4,
-            "mpg": 36.8,
-            "fgPct": 0.425,
-            "fgm": 7.8,
-            "fga": 18.3,
-            "ftPct": 0.722,
-            "ftm": 3.3,
-            "fta": 4.5,
-            "tpm": 2,
-            "pts": 20.8,
-            "treb": 5.8,
-            "ast": 4.8,
-            "stl": 1.3,
-            "blk": 0.5,
-            "valueTotal": 3.47,
-            "rank": 76
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "SF",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Rudy Gobert",
-          "rk": 109,
-          "nbaTeam": "MIN",
-          "pos": [
-            "C"
-          ],
-          "price": 14,
-          "pick": 67,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 0.84,
-          "stats": {
-            "gp": 3,
-            "mpg": 31.4,
-            "fgPct": 0.714,
-            "fgm": 3.3,
-            "fga": 4.7,
-            "ftPct": 0.437,
-            "ftm": 2.3,
-            "fta": 5.3,
-            "tpm": 0,
-            "pts": 9,
-            "treb": 12.3,
-            "ast": 0.7,
-            "stl": 0,
-            "blk": 0.3,
-            "valueTotal": -3.1,
-            "rank": 247
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "C",
-            "status": null,
-            "gameToday": "7:00 pm @ CLE"
-          }
-        },
-        {
-          "name": "Ace Bailey",
-          "rk": 172,
-          "nbaTeam": "UTA",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 4,
-          "pick": 97,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -1.48,
-          "stats": {
-            "gp": 3,
-            "mpg": 25.1,
-            "fgPct": 0.5,
-            "fgm": 5,
-            "fga": 10,
-            "ftPct": 0.5,
-            "ftm": 0.3,
-            "fta": 0.7,
-            "tpm": 1.3,
-            "pts": 11.7,
-            "treb": 8,
-            "ast": 3,
-            "stl": 0,
-            "blk": 1.3,
-            "valueTotal": 2.44,
-            "rank": 98
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "9:00 pm vs MEM"
-          }
-        },
-        {
-          "name": "Isaiah Hartenstein",
-          "rk": 91,
-          "nbaTeam": "OKC",
-          "pos": [
-            "C"
-          ],
-          "price": 4,
-          "pick": 102,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": 1.65,
-          "stats": {
-            "gp": 3,
-            "mpg": 22.4,
-            "fgPct": 0.435,
-            "fgm": 3.3,
-            "fga": 7.7,
-            "ftPct": 1,
-            "ftm": 0.7,
-            "fta": 0.7,
-            "tpm": 0,
-            "pts": 7.3,
-            "treb": 7,
-            "ast": 2,
-            "stl": 0.7,
-            "blk": 0.7,
-            "valueTotal": -0.25,
-            "rank": 177
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "8:00 pm vs PHX"
-          }
-        },
-        {
-          "name": "Devin Vassell",
-          "rk": 128,
-          "nbaTeam": "SAS",
-          "pos": [
-            "SG",
-            "SF"
-          ],
-          "price": 1,
-          "pick": 129,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -0.04,
-          "stats": {
-            "gp": 3,
-            "mpg": 32.7,
-            "fgPct": 0.385,
-            "fgm": 3.3,
-            "fga": 8.7,
-            "ftPct": 1,
-            "ftm": 1.3,
-            "fta": 1.3,
-            "tpm": 1.3,
-            "pts": 9.3,
-            "treb": 3.7,
-            "ast": 3,
-            "stl": 1.7,
-            "blk": 0,
-            "valueTotal": 0.48,
-            "rank": 150
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
-          }
-        },
-        {
-          "name": "Dillon Brooks",
-          "rk": 177,
-          "nbaTeam": "PHX",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 1,
-          "pick": 142,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -1.53,
-          "stats": {
-            "gp": 2,
-            "mpg": 30.2,
-            "fgPct": 0.435,
-            "fgm": 5,
-            "fga": 11.5,
-            "ftPct": 0.75,
-            "ftm": 1.5,
-            "fta": 2,
-            "tpm": 1,
-            "pts": 12.5,
-            "treb": 3,
-            "ast": 2.5,
-            "stl": 0,
-            "blk": 0,
-            "valueTotal": -2.5,
-            "rank": 232
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": "8:00 pm @ OKC"
-          }
-        },
-        {
-          "name": "Jonathan Kuminga",
-          "rk": 203,
-          "nbaTeam": "MIN",
-          "pos": [
-            "SF",
-            "PF"
-          ],
-          "price": 1,
-          "pick": 153,
-          "acquired": "draft",
-          "acquiredDate": "2026-10-18",
-          "projZ": -2.27,
-          "stats": {
-            "gp": 3,
-            "mpg": 27.8,
-            "fgPct": 0.48,
-            "fgm": 4,
-            "fga": 8.3,
-            "ftPct": 0.5,
-            "ftm": 1.7,
-            "fta": 3.3,
-            "tpm": 2.3,
-            "pts": 12,
-            "treb": 4.3,
-            "ast": 3,
-            "stl": 2.3,
-            "blk": 0.3,
-            "valueTotal": 1.49,
-            "rank": 124
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "7:00 pm @ CLE"
-          }
-        },
-        {
-          "name": "Jared McCain",
-          "rk": 187,
-          "nbaTeam": "OKC",
-          "pos": [
-            "PG",
-            "SG"
-          ],
-          "price": 0,
-          "pick": null,
-          "acquired": "FA",
-          "acquiredDate": "2026-10-21 23:09",
-          "projZ": -1.82,
-          "stats": {
-            "gp": 3,
-            "mpg": 20.3,
-            "fgPct": 0.391,
-            "fgm": 3,
-            "fga": 7.7,
-            "ftPct": 1,
-            "ftm": 0.7,
-            "fta": 0.7,
-            "tpm": 2.3,
-            "pts": 9,
-            "treb": 1,
-            "ast": 1,
-            "stl": 0.7,
-            "blk": 0,
-            "valueTotal": -2.09,
-            "rank": 218
-          },
-          "injury": null,
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": "8:00 pm vs PHX"
-          }
-        }
-      ],
-      "moveLog": [
-        {
-          "date": "2026-10-21 23:09",
-          "name": "Brandon Ingram",
-          "dir": "out",
-          "how": "drop"
-        },
-        {
-          "date": "2026-10-21 23:09",
-          "name": "Jared McCain",
-          "dir": "in",
-          "how": "FA"
-        }
-      ],
-      "acquisitionsLeft": 17,
-      "projTotals": {
-        "fgPct": 0.4788,
-        "ftPct": 0.771,
-        "tpm": 1312,
-        "pts": 14235,
-        "treb": 4854,
-        "ast": 2709,
-        "stl": 757,
-        "blk": 470
-      },
-      "projRoto": {
-        "total": 46,
-        "fgPct": 4,
-        "ftPct": 4,
-        "tpm": 6,
-        "pts": 10,
-        "treb": 8,
-        "ast": 4,
-        "stl": 5,
-        "blk": 5
-      },
-      "projRank": 14,
-      "actualTotals": {
-        "fgPct": 0.4759,
-        "ftPct": 0.7685,
-        "tpm": 44,
-        "pts": 465,
-        "treb": 180,
-        "ast": 95,
-        "stl": 27,
-        "blk": 13
-      },
-      "gamesPlayed": 31,
-      "actualRoto": {
-        "total": 46.5,
-        "fgPct": 10,
-        "ftPct": 5,
-        "tpm": 6,
-        "pts": 8,
-        "treb": 7,
-        "ast": 5,
-        "stl": 3,
-        "blk": 2.5
-      },
-      "actualRank": 12,
-      "realTotals": {
-        "fgPct": 0.488,
-        "ftPct": 0.789,
-        "tpm": 28,
-        "pts": 377,
-        "treb": 158,
-        "ast": 78,
-        "stl": 16,
-        "blk": 12
-      },
-      "realGp": 23,
-      "yahooRank": 13,
-      "realRoto": {
-        "total": 52,
-        "fgPct": 13,
-        "ftPct": 7.5,
-        "tpm": 2.5,
-        "pts": 7,
-        "treb": 12,
-        "ast": 5,
-        "stl": 1.5,
-        "blk": 3.5
-      },
-      "realRank": 13,
-      "lineup": {
-        "asOf": "2026-10-26",
-        "complete": true,
-        "teamNameInferred": false
-      },
-      "pendingIn": [],
-      "pendingOut": []
-    },
-    {
       "name": "vincemvpcarter",
       "previousNames": [],
       "isMine": false,
@@ -8082,7 +6998,7 @@
       "roster": [
         {
           "name": "Walker Kessler",
-          "rk": 49,
+          "rk": 39,
           "nbaTeam": "LAL",
           "pos": [
             "C"
@@ -8091,7 +7007,7 @@
           "pick": 40,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 3.78,
+          "projZ": 4.07,
           "stats": {
             "gp": 3,
             "mpg": 31,
@@ -8119,7 +7035,7 @@
         },
         {
           "name": "Anthony Davis",
-          "rk": 25,
+          "rk": 41,
           "nbaTeam": "WAS",
           "pos": [
             "PF",
@@ -8129,7 +7045,7 @@
           "pick": 41,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.9,
+          "projZ": 4,
           "stats": {
             "gp": 3,
             "mpg": 32.4,
@@ -8157,7 +7073,7 @@
         },
         {
           "name": "Lauri Markkanen",
-          "rk": 36,
+          "rk": 34,
           "nbaTeam": "UTA",
           "pos": [
             "SF",
@@ -8167,7 +7083,7 @@
           "pick": 51,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.42,
+          "projZ": 4.34,
           "stats": {
             "gp": 3,
             "mpg": 36.1,
@@ -8195,7 +7111,7 @@
         },
         {
           "name": "Keyonte George",
-          "rk": 77,
+          "rk": 75,
           "nbaTeam": "UTA",
           "pos": [
             "PG",
@@ -8205,7 +7121,7 @@
           "pick": 61,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.37,
+          "projZ": 2.26,
           "stats": {
             "gp": 3,
             "mpg": 31.4,
@@ -8233,7 +7149,7 @@
         },
         {
           "name": "Collin Murray-Boyles",
-          "rk": 110,
+          "rk": 107,
           "nbaTeam": "TOR",
           "pos": [
             "PF",
@@ -8243,7 +7159,7 @@
           "pick": 75,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 0.83,
+          "projZ": 0.76,
           "stats": {
             "gp": 3,
             "mpg": 18.8,
@@ -8271,7 +7187,7 @@
         },
         {
           "name": "Dejounte Murray",
-          "rk": 34,
+          "rk": 33,
           "nbaTeam": "NOP",
           "pos": [
             "PG"
@@ -8280,7 +7196,7 @@
           "pick": 79,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 4.44,
+          "projZ": 4.36,
           "stats": {
             "gp": 3,
             "mpg": 33,
@@ -8308,7 +7224,7 @@
         },
         {
           "name": "Ryan Rollins",
-          "rk": 59,
+          "rk": 50,
           "nbaTeam": "MIL",
           "pos": [
             "PG",
@@ -8318,7 +7234,7 @@
           "pick": 84,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.84,
+          "projZ": 3.58,
           "stats": {
             "gp": 3,
             "mpg": 27.5,
@@ -8346,7 +7262,7 @@
         },
         {
           "name": "Dylan Harper",
-          "rk": 102,
+          "rk": 84,
           "nbaTeam": "SAS",
           "pos": [
             "PG",
@@ -8356,7 +7272,7 @@
           "pick": 85,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.12,
+          "projZ": 1.69,
           "stats": {
             "gp": 3,
             "mpg": 32,
@@ -8384,7 +7300,7 @@
         },
         {
           "name": "Damian Lillard",
-          "rk": 71,
+          "rk": 63,
           "nbaTeam": "POR",
           "pos": [
             "PG"
@@ -8393,7 +7309,7 @@
           "pick": 88,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 2.51,
+          "projZ": 2.62,
           "stats": {
             "gp": 2,
             "mpg": 28.3,
@@ -8421,7 +7337,7 @@
         },
         {
           "name": "Zion Williamson",
-          "rk": 98,
+          "rk": 97,
           "nbaTeam": "NOP",
           "pos": [
             "PF",
@@ -8431,7 +7347,7 @@
           "pick": 93,
           "acquired": "draft",
           "acquiredDate": "2026-10-18",
-          "projZ": 1.33,
+          "projZ": 1.25,
           "stats": {
             "gp": 3,
             "mpg": 32.6,
@@ -8459,7 +7375,7 @@
         },
         {
           "name": "Trevon Brazile",
-          "rk": null,
+          "rk": 417,
           "nbaTeam": "DEN",
           "pos": [
             "PF"
@@ -8468,7 +7384,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-25 00:40",
-          "projZ": null,
+          "projZ": -12.08,
           "stats": {
             "gp": 2,
             "mpg": 23.3,
@@ -8496,7 +7412,7 @@
         },
         {
           "name": "Tristan da Silva",
-          "rk": 264,
+          "rk": 209,
           "nbaTeam": "ORL",
           "pos": [
             "SF",
@@ -8506,7 +7422,7 @@
           "pick": null,
           "acquired": "FA",
           "acquiredDate": "2026-10-25 22:17",
-          "projZ": -4.38,
+          "projZ": -2.53,
           "stats": {
             "gp": 3,
             "mpg": 28.1,
@@ -8585,27 +7501,27 @@
       ],
       "acquisitionsLeft": 16,
       "projTotals": {
-        "fgPct": 0.492,
-        "ftPct": 0.778,
-        "tpm": 1066,
-        "pts": 11834,
-        "treb": 4245,
-        "ast": 2732,
-        "stl": 752,
-        "blk": 537
+        "fgPct": 0.4908,
+        "ftPct": 0.7858,
+        "tpm": 1089,
+        "pts": 12095,
+        "treb": 4284,
+        "ast": 2776,
+        "stl": 782,
+        "blk": 526
       },
       "projRoto": {
-        "total": 41,
+        "total": 46,
         "fgPct": 14,
-        "ftPct": 5,
-        "tpm": 1,
+        "ftPct": 6,
+        "tpm": 2,
         "pts": 2,
-        "treb": 3,
+        "treb": 4,
         "ast": 5,
-        "stl": 4,
+        "stl": 6,
         "blk": 7
       },
-      "projRank": 15,
+      "projRank": 13,
       "actualTotals": {
         "fgPct": 0.4801,
         "ftPct": 0.7769,
@@ -8660,6 +7576,1090 @@
       },
       "pendingIn": [],
       "pendingOut": []
+    },
+    {
+      "name": "Full Court Rex",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
+      "spent": 199,
+      "acquisitions": 1,
+      "roster": [
+        {
+          "name": "Stephen Curry",
+          "rk": 19,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG"
+          ],
+          "price": 51,
+          "pick": 7,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 6.15,
+          "stats": {
+            "gp": 2,
+            "mpg": 25.5,
+            "fgPct": 0.4,
+            "fgm": 6,
+            "fga": 15,
+            "ftPct": 1,
+            "ftm": 9,
+            "fta": 9,
+            "tpm": 2.5,
+            "pts": 23.5,
+            "treb": 2,
+            "ast": 2.5,
+            "stl": 1,
+            "blk": 0,
+            "valueTotal": 5.36,
+            "rank": 41
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PG",
+            "status": null,
+            "gameToday": "10:00 pm @ DEN"
+          }
+        },
+        {
+          "name": "AJ Dybantsa",
+          "rk": 238,
+          "nbaTeam": "WAS",
+          "pos": [
+            "SF"
+          ],
+          "price": 11,
+          "pick": 8,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -3.49,
+          "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Ankle"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "7:00 pm @ CHA"
+          }
+        },
+        {
+          "name": "Devin Booker",
+          "rk": 26,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 40,
+          "pick": 27,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.8,
+          "stats": {
+            "gp": 2,
+            "mpg": 33,
+            "fgPct": 0.632,
+            "fgm": 12,
+            "fga": 19,
+            "ftPct": 0.941,
+            "ftm": 8,
+            "fta": 8.5,
+            "tpm": 1,
+            "pts": 33,
+            "treb": 5.5,
+            "ast": 4.5,
+            "stl": 0.5,
+            "blk": 1,
+            "valueTotal": 11.61,
+            "rank": 3
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SG",
+            "status": null,
+            "gameToday": "8:00 pm @ OKC"
+          }
+        },
+        {
+          "name": "Alperen Şengün",
+          "rk": 52,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 38,
+          "pick": 36,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 3.47,
+          "stats": {
+            "gp": 3,
+            "mpg": 33.1,
+            "fgPct": 0.532,
+            "fgm": 8.3,
+            "fga": 15.7,
+            "ftPct": 0.778,
+            "ftm": 4.7,
+            "fta": 6,
+            "tpm": 1.7,
+            "pts": 23,
+            "treb": 9,
+            "ast": 6.3,
+            "stl": 0.7,
+            "blk": 0.3,
+            "valueTotal": 6.7,
+            "rank": 25
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": "8:30 pm vs ATL"
+          }
+        },
+        {
+          "name": "Jaylen Brown",
+          "rk": 65,
+          "nbaTeam": "PHI",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "price": 27,
+          "pick": 44,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.59,
+          "stats": {
+            "gp": 4,
+            "mpg": 36.8,
+            "fgPct": 0.425,
+            "fgm": 7.8,
+            "fga": 18.3,
+            "ftPct": 0.722,
+            "ftm": 3.3,
+            "fta": 4.5,
+            "tpm": 2,
+            "pts": 20.8,
+            "treb": 5.8,
+            "ast": 4.8,
+            "stl": 1.3,
+            "blk": 0.5,
+            "valueTotal": 3.47,
+            "rank": 76
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Rudy Gobert",
+          "rk": 105,
+          "nbaTeam": "MIN",
+          "pos": [
+            "C"
+          ],
+          "price": 14,
+          "pick": 67,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.8,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.4,
+            "fgPct": 0.714,
+            "fgm": 3.3,
+            "fga": 4.7,
+            "ftPct": 0.437,
+            "ftm": 2.3,
+            "fta": 5.3,
+            "tpm": 0,
+            "pts": 9,
+            "treb": 12.3,
+            "ast": 0.7,
+            "stl": 0,
+            "blk": 0.3,
+            "valueTotal": -3.1,
+            "rank": 247
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "C",
+            "status": null,
+            "gameToday": "7:00 pm @ CLE"
+          }
+        },
+        {
+          "name": "Ace Bailey",
+          "rk": 174,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 4,
+          "pick": 97,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -1.6,
+          "stats": {
+            "gp": 3,
+            "mpg": 25.1,
+            "fgPct": 0.5,
+            "fgm": 5,
+            "fga": 10,
+            "ftPct": 0.5,
+            "ftm": 0.3,
+            "fta": 0.7,
+            "tpm": 1.3,
+            "pts": 11.7,
+            "treb": 8,
+            "ast": 3,
+            "stl": 0,
+            "blk": 1.3,
+            "valueTotal": 2.44,
+            "rank": 98
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "9:00 pm vs MEM"
+          }
+        },
+        {
+          "name": "Isaiah Hartenstein",
+          "rk": 104,
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "price": 4,
+          "pick": 102,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 0.93,
+          "stats": {
+            "gp": 3,
+            "mpg": 22.4,
+            "fgPct": 0.435,
+            "fgm": 3.3,
+            "fga": 7.7,
+            "ftPct": 1,
+            "ftm": 0.7,
+            "fta": 0.7,
+            "tpm": 0,
+            "pts": 7.3,
+            "treb": 7,
+            "ast": 2,
+            "stl": 0.7,
+            "blk": 0.7,
+            "valueTotal": -0.25,
+            "rank": 177
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:00 pm vs PHX"
+          }
+        },
+        {
+          "name": "Devin Vassell",
+          "rk": 125,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 129,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.16,
+          "stats": {
+            "gp": 3,
+            "mpg": 32.7,
+            "fgPct": 0.385,
+            "fgm": 3.3,
+            "fga": 8.7,
+            "ftPct": 1,
+            "ftm": 1.3,
+            "fta": 1.3,
+            "tpm": 1.3,
+            "pts": 9.3,
+            "treb": 3.7,
+            "ast": 3,
+            "stl": 1.7,
+            "blk": 0,
+            "valueTotal": 0.48,
+            "rank": 150
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Dillon Brooks",
+          "rk": 180,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 142,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -1.67,
+          "stats": {
+            "gp": 2,
+            "mpg": 30.2,
+            "fgPct": 0.435,
+            "fgm": 5,
+            "fga": 11.5,
+            "ftPct": 0.75,
+            "ftm": 1.5,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 12.5,
+            "treb": 3,
+            "ast": 2.5,
+            "stl": 0,
+            "blk": 0,
+            "valueTotal": -2.5,
+            "rank": 232
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm @ OKC"
+          }
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "rk": 207,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 1,
+          "pick": 153,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -2.39,
+          "stats": {
+            "gp": 3,
+            "mpg": 27.8,
+            "fgPct": 0.48,
+            "fgm": 4,
+            "fga": 8.3,
+            "ftPct": 0.5,
+            "ftm": 1.7,
+            "fta": 3.3,
+            "tpm": 2.3,
+            "pts": 12,
+            "treb": 4.3,
+            "ast": 3,
+            "stl": 2.3,
+            "blk": 0.3,
+            "valueTotal": 1.49,
+            "rank": 124
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "7:00 pm @ CLE"
+          }
+        },
+        {
+          "name": "Jared McCain",
+          "rk": 192,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-21 23:09",
+          "projZ": -1.96,
+          "stats": {
+            "gp": 3,
+            "mpg": 20.3,
+            "fgPct": 0.391,
+            "fgm": 3,
+            "fga": 7.7,
+            "ftPct": 1,
+            "ftm": 0.7,
+            "fta": 0.7,
+            "tpm": 2.3,
+            "pts": 9,
+            "treb": 1,
+            "ast": 1,
+            "stl": 0.7,
+            "blk": 0,
+            "valueTotal": -2.09,
+            "rank": 218
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm vs PHX"
+          }
+        }
+      ],
+      "moveLog": [
+        {
+          "date": "2026-10-21 23:09",
+          "name": "Brandon Ingram",
+          "dir": "out",
+          "how": "drop"
+        },
+        {
+          "date": "2026-10-21 23:09",
+          "name": "Jared McCain",
+          "dir": "in",
+          "how": "FA"
+        }
+      ],
+      "acquisitionsLeft": 17,
+      "projTotals": {
+        "fgPct": 0.4791,
+        "ftPct": 0.7682,
+        "tpm": 1268,
+        "pts": 13940,
+        "treb": 4784,
+        "ast": 2644,
+        "stl": 747,
+        "blk": 459
+      },
+      "projRoto": {
+        "total": 45,
+        "fgPct": 5,
+        "ftPct": 4,
+        "tpm": 5,
+        "pts": 10,
+        "treb": 9,
+        "ast": 4,
+        "stl": 4,
+        "blk": 4
+      },
+      "projRank": 14,
+      "actualTotals": {
+        "fgPct": 0.4759,
+        "ftPct": 0.7685,
+        "tpm": 44,
+        "pts": 465,
+        "treb": 180,
+        "ast": 95,
+        "stl": 27,
+        "blk": 13
+      },
+      "gamesPlayed": 31,
+      "actualRoto": {
+        "total": 46.5,
+        "fgPct": 10,
+        "ftPct": 5,
+        "tpm": 6,
+        "pts": 8,
+        "treb": 7,
+        "ast": 5,
+        "stl": 3,
+        "blk": 2.5
+      },
+      "actualRank": 12,
+      "realTotals": {
+        "fgPct": 0.488,
+        "ftPct": 0.789,
+        "tpm": 28,
+        "pts": 377,
+        "treb": 158,
+        "ast": 78,
+        "stl": 16,
+        "blk": 12
+      },
+      "realGp": 23,
+      "yahooRank": 13,
+      "realRoto": {
+        "total": 52,
+        "fgPct": 13,
+        "ftPct": 7.5,
+        "tpm": 2.5,
+        "pts": 7,
+        "treb": 12,
+        "ast": 5,
+        "stl": 1.5,
+        "blk": 3.5
+      },
+      "realRank": 13,
+      "lineup": {
+        "asOf": "2026-10-26",
+        "complete": true,
+        "teamNameInferred": false
+      },
+      "pendingIn": [],
+      "pendingOut": []
+    },
+    {
+      "name": "Super Maru",
+      "previousNames": [],
+      "isMine": false,
+      "isManaged": false,
+      "spent": 200,
+      "acquisitions": 2,
+      "roster": [
+        {
+          "name": "Anthony Edwards",
+          "rk": 7,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 65,
+          "pick": 10,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 7.86,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.2,
+            "fgPct": 0.443,
+            "fgm": 10.3,
+            "fga": 23.3,
+            "ftPct": 0.786,
+            "ftm": 3.7,
+            "fta": 4.7,
+            "tpm": 4.3,
+            "pts": 28.7,
+            "treb": 5,
+            "ast": 3.3,
+            "stl": 2,
+            "blk": 0.3,
+            "valueTotal": 7.18,
+            "rank": 20
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PG",
+            "status": null,
+            "gameToday": "7:00 pm @ CLE"
+          }
+        },
+        {
+          "name": "Joel Embiid",
+          "rk": 46,
+          "nbaTeam": "PHI",
+          "pos": [
+            "C"
+          ],
+          "price": 25,
+          "pick": 31,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 3.83,
+          "stats": {
+            "gp": 3,
+            "mpg": 34.7,
+            "fgPct": 0.392,
+            "fgm": 6.7,
+            "fga": 17,
+            "ftPct": 0.815,
+            "ftm": 7.3,
+            "fta": 9,
+            "tpm": 1,
+            "pts": 21.7,
+            "treb": 9.7,
+            "ast": 5.7,
+            "stl": 1,
+            "blk": 1,
+            "valueTotal": 5.83,
+            "rank": 38
+          },
+          "injury": {
+            "status": "O",
+            "note": "Heel"
+          },
+          "thisWeek": {
+            "slot": "Util",
+            "status": "P",
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Domantas Sabonis",
+          "rk": 35,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 37,
+          "pick": 32,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 4.28,
+          "stats": {
+            "gp": 3,
+            "mpg": 35.6,
+            "fgPct": 0.808,
+            "fgm": 7,
+            "fga": 8.7,
+            "ftPct": 0.867,
+            "ftm": 4.3,
+            "fta": 5,
+            "tpm": 0.3,
+            "pts": 18.7,
+            "treb": 17.3,
+            "ast": 7,
+            "stl": 1,
+            "blk": 0,
+            "valueTotal": 11.12,
+            "rank": 4
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Jalen Williams",
+          "rk": 78,
+          "nbaTeam": "OKC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "price": 31,
+          "pick": 42,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.14,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.6,
+            "fgPct": 0.385,
+            "fgm": 5,
+            "fga": 13,
+            "ftPct": 0.8,
+            "ftm": 2.7,
+            "fta": 3.3,
+            "tpm": 1,
+            "pts": 13.7,
+            "treb": 4.7,
+            "ast": 3.3,
+            "stl": 1,
+            "blk": 0.7,
+            "valueTotal": 0.76,
+            "rank": 146
+          },
+          "injury": {
+            "status": "D",
+            "note": "Ankle"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "8:00 pm vs PHX"
+          }
+        },
+        {
+          "name": "De'Aaron Fox",
+          "rk": 68,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG"
+          ],
+          "price": 20,
+          "pick": 47,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.52,
+          "stats": {
+            "gp": 3,
+            "mpg": 31.1,
+            "fgPct": 0.581,
+            "fgm": 6,
+            "fga": 10.3,
+            "ftPct": 0.8,
+            "ftm": 4,
+            "fta": 5,
+            "tpm": 1.3,
+            "pts": 17.3,
+            "treb": 4.7,
+            "ast": 8.3,
+            "stl": 2,
+            "blk": 0.3,
+            "valueTotal": 7.03,
+            "rank": 22
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Coby White",
+          "rk": 79,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 13,
+          "pick": 77,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 1.95,
+          "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Calf"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "7:00 pm vs WAS"
+          }
+        },
+        {
+          "name": "Ayo Dosunmu",
+          "rk": 144,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "price": 2,
+          "pick": 108,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -0.64,
+          "stats": {
+            "gp": 3,
+            "mpg": 26.3,
+            "fgPct": 0.516,
+            "fgm": 5.3,
+            "fga": 10.3,
+            "ftPct": 0.667,
+            "ftm": 1.3,
+            "fta": 2,
+            "tpm": 1,
+            "pts": 13,
+            "treb": 4.7,
+            "ast": 5,
+            "stl": 0.3,
+            "blk": 0.3,
+            "valueTotal": 0.85,
+            "rank": 143
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SG",
+            "status": null,
+            "gameToday": "7:00 pm @ CLE"
+          }
+        },
+        {
+          "name": "John Collins",
+          "rk": 72,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 3,
+          "pick": 115,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": 2.39,
+          "stats": {
+            "gp": 3,
+            "mpg": 29.5,
+            "fgPct": 0.514,
+            "fgm": 6.3,
+            "fga": 12.3,
+            "ftPct": 0,
+            "ftm": 0,
+            "fta": 0.3,
+            "tpm": 2.3,
+            "pts": 15,
+            "treb": 7.7,
+            "ast": 0.7,
+            "stl": 0.3,
+            "blk": 1,
+            "valueTotal": 2.6,
+            "rank": 95
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Tobias Harris",
+          "rk": 156,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PF"
+          ],
+          "price": 1,
+          "pick": 135,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -1.01,
+          "stats": null,
+          "injury": {
+            "status": "O",
+            "note": "Calf"
+          },
+          "thisWeek": {
+            "slot": "BN",
+            "status": "O",
+            "gameToday": null
+          }
+        },
+        {
+          "name": "Bobby Portis Jr.",
+          "rk": 195,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "price": 1,
+          "pick": 157,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -2.08,
+          "stats": {
+            "gp": 3,
+            "mpg": 24.3,
+            "fgPct": 0.44,
+            "fgm": 3.7,
+            "fga": 8.3,
+            "ftPct": 1,
+            "ftm": 1,
+            "fta": 1,
+            "tpm": 2,
+            "pts": 10.3,
+            "treb": 6.7,
+            "ast": 1,
+            "stl": 1.3,
+            "blk": 0.3,
+            "valueTotal": 1.74,
+            "rank": 119
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "C",
+            "status": null,
+            "gameToday": "7:30 pm vs DAL"
+          }
+        },
+        {
+          "name": "Luguentz Dort",
+          "rk": 246,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 1,
+          "pick": 164,
+          "acquired": "draft",
+          "acquiredDate": "2026-10-18",
+          "projZ": -3.77,
+          "stats": {
+            "gp": 3,
+            "mpg": 23.3,
+            "fgPct": 0.389,
+            "fgm": 2.3,
+            "fga": 6,
+            "ftPct": 0.857,
+            "ftm": 2,
+            "fta": 2.3,
+            "tpm": 1.3,
+            "pts": 8,
+            "treb": 3.7,
+            "ast": 1.7,
+            "stl": 1,
+            "blk": 0,
+            "valueTotal": -1.22,
+            "rank": 196
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:30 pm @ HOU"
+          }
+        },
+        {
+          "name": "Aaron Wiggins",
+          "rk": 167,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "price": 0,
+          "pick": null,
+          "acquired": "FA",
+          "acquiredDate": "2026-10-25 17:54",
+          "projZ": -1.34,
+          "stats": {
+            "gp": 3,
+            "mpg": 27.3,
+            "fgPct": 0.581,
+            "fgm": 6,
+            "fga": 10.3,
+            "ftPct": 0.714,
+            "ftm": 1.7,
+            "fta": 2.3,
+            "tpm": 3.3,
+            "pts": 17,
+            "treb": 3,
+            "ast": 1,
+            "stl": 1.7,
+            "blk": 0.3,
+            "valueTotal": 3.74,
+            "rank": 70
+          },
+          "injury": null,
+          "thisWeek": {
+            "slot": "SF",
+            "status": null,
+            "gameToday": "8:30 pm @ HOU"
+          }
+        }
+      ],
+      "moveLog": [
+        {
+          "date": "2026-10-18 18:09",
+          "name": "Corey Kispert",
+          "dir": "out",
+          "how": "drop"
+        },
+        {
+          "date": "2026-10-21 04:06",
+          "name": "Collin Sexton",
+          "dir": "in",
+          "how": "Waiver"
+        },
+        {
+          "date": "2026-10-25 17:54",
+          "name": "Collin Sexton",
+          "dir": "out",
+          "how": "drop"
+        },
+        {
+          "date": "2026-10-25 17:54",
+          "name": "Aaron Wiggins",
+          "dir": "in",
+          "how": "FA"
+        }
+      ],
+      "acquisitionsLeft": 16,
+      "projTotals": {
+        "fgPct": 0.4887,
+        "ftPct": 0.8153,
+        "tpm": 1330,
+        "pts": 12446,
+        "treb": 4213,
+        "ast": 2413,
+        "stl": 680,
+        "blk": 359
+      },
+      "projRoto": {
+        "total": 43,
+        "fgPct": 11,
+        "ftPct": 14,
+        "tpm": 7,
+        "pts": 4,
+        "treb": 3,
+        "ast": 1,
+        "stl": 2,
+        "blk": 1
+      },
+      "projRank": 15,
+      "actualTotals": {
+        "fgPct": 0.4904,
+        "ftPct": 0.8023,
+        "tpm": 53,
+        "pts": 490,
+        "treb": 202,
+        "ast": 111,
+        "stl": 35,
+        "blk": 13
+      },
+      "gamesPlayed": 30,
+      "actualRoto": {
+        "total": 74,
+        "fgPct": 12,
+        "ftPct": 11,
+        "tpm": 10,
+        "pts": 9,
+        "treb": 14,
+        "ast": 7.5,
+        "stl": 8,
+        "blk": 2.5
+      },
+      "actualRank": 6,
+      "realTotals": {
+        "fgPct": 0.487,
+        "ftPct": 0.802,
+        "tpm": 40,
+        "pts": 415,
+        "treb": 182,
+        "ast": 104,
+        "stl": 27,
+        "blk": 12
+      },
+      "realGp": 24,
+      "yahooRank": 4,
+      "realRoto": {
+        "total": 82,
+        "fgPct": 11,
+        "ftPct": 11,
+        "tpm": 12,
+        "pts": 10,
+        "treb": 15,
+        "ast": 13,
+        "stl": 6.5,
+        "blk": 3.5
+      },
+      "realRank": 4,
+      "lineup": {
+        "asOf": "2026-10-26",
+        "complete": true,
+        "teamNameInferred": false
+      },
+      "pendingIn": [],
+      "pendingOut": []
     }
   ],
   "draft": [
@@ -8672,7 +8672,7 @@
       ],
       "price": 54,
       "team": "Grilled Teampura",
-      "rk": 9
+      "rk": 8
     },
     {
       "pick": 2,
@@ -8740,7 +8740,7 @@
       ],
       "price": 51,
       "team": "Full Court Rex",
-      "rk": 8
+      "rk": 19
     },
     {
       "pick": 8,
@@ -8751,7 +8751,7 @@
       ],
       "price": 11,
       "team": "Full Court Rex",
-      "rk": 232
+      "rk": 238
     },
     {
       "pick": 9,
@@ -8799,7 +8799,7 @@
       ],
       "price": 55,
       "team": "Finn will cook Burt",
-      "rk": 11
+      "rk": 10
     },
     {
       "pick": 13,
@@ -8812,7 +8812,7 @@
       ],
       "price": 38,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 23
+      "rk": 21
     },
     {
       "pick": 14,
@@ -8849,7 +8849,7 @@
       ],
       "price": 51,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 17
+      "rk": 16
     },
     {
       "pick": 17,
@@ -8860,7 +8860,7 @@
       ],
       "price": 53,
       "team": "Cole is like that",
-      "rk": 41
+      "rk": 40
     },
     {
       "pick": 18,
@@ -8872,7 +8872,7 @@
       ],
       "price": 36,
       "team": "Grilled Teampura",
-      "rk": 30
+      "rk": 38
     },
     {
       "pick": 19,
@@ -8884,7 +8884,7 @@
       ],
       "price": 49,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 14
+      "rk": 13
     },
     {
       "pick": 20,
@@ -8896,7 +8896,7 @@
       ],
       "price": 52,
       "team": "The New Day Co-op",
-      "rk": 12
+      "rk": 11
     },
     {
       "pick": 21,
@@ -8909,7 +8909,7 @@
       ],
       "price": 50,
       "team": "Cole is like that",
-      "rk": 10
+      "rk": 9
     },
     {
       "pick": 22,
@@ -8944,7 +8944,7 @@
       ],
       "price": 43,
       "team": "Grilled Teampura",
-      "rk": 29
+      "rk": 27
     },
     {
       "pick": 25,
@@ -8957,7 +8957,7 @@
       ],
       "price": 52,
       "team": "Fishy Achilles",
-      "rk": 20
+      "rk": 17
     },
     {
       "pick": 26,
@@ -8968,7 +8968,7 @@
       ],
       "price": 39,
       "team": "Finn will cook Burt",
-      "rk": 13
+      "rk": 12
     },
     {
       "pick": 27,
@@ -8993,7 +8993,7 @@
       ],
       "price": 45,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 16
+      "rk": 15
     },
     {
       "pick": 29,
@@ -9005,7 +9005,7 @@
       ],
       "price": 38,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 22
+      "rk": 23
     },
     {
       "pick": 30,
@@ -9028,7 +9028,7 @@
       ],
       "price": 25,
       "team": "Super Maru",
-      "rk": 47
+      "rk": 46
     },
     {
       "pick": 32,
@@ -9040,7 +9040,7 @@
       ],
       "price": 37,
       "team": "Super Maru",
-      "rk": 37
+      "rk": 35
     },
     {
       "pick": 33,
@@ -9052,7 +9052,7 @@
       ],
       "price": 30,
       "team": "Bitsketball Stars",
-      "rk": 35
+      "rk": 32
     },
     {
       "pick": 34,
@@ -9063,7 +9063,7 @@
       ],
       "price": 47,
       "team": "Bitsketball Stars",
-      "rk": 15
+      "rk": 14
     },
     {
       "pick": 35,
@@ -9123,7 +9123,7 @@
       ],
       "price": 30,
       "team": "The New Day Co-op",
-      "rk": 31
+      "rk": 29
     },
     {
       "pick": 40,
@@ -9134,7 +9134,7 @@
       ],
       "price": 26,
       "team": "vincemvpcarter",
-      "rk": 49
+      "rk": 39
     },
     {
       "pick": 41,
@@ -9146,7 +9146,7 @@
       ],
       "price": 31,
       "team": "vincemvpcarter",
-      "rk": 25
+      "rk": 41
     },
     {
       "pick": 42,
@@ -9158,7 +9158,7 @@
       ],
       "price": 31,
       "team": "Super Maru",
-      "rk": 39
+      "rk": 78
     },
     {
       "pick": 43,
@@ -9182,7 +9182,7 @@
       ],
       "price": 27,
       "team": "Full Court Rex",
-      "rk": 66
+      "rk": 65
     },
     {
       "pick": 45,
@@ -9194,7 +9194,7 @@
       ],
       "price": 16,
       "team": "Cole is like that",
-      "rk": 135
+      "rk": 133
     },
     {
       "pick": 46,
@@ -9205,7 +9205,7 @@
       ],
       "price": 27,
       "team": "Team Maru",
-      "rk": 38
+      "rk": 36
     },
     {
       "pick": 47,
@@ -9228,7 +9228,7 @@
       ],
       "price": 36,
       "team": "Fishy Achilles",
-      "rk": 19
+      "rk": 20
     },
     {
       "pick": 49,
@@ -9240,7 +9240,7 @@
       ],
       "price": 34,
       "team": "Fishy Achilles",
-      "rk": 21
+      "rk": 22
     },
     {
       "pick": 50,
@@ -9251,7 +9251,7 @@
       ],
       "price": 23,
       "team": "Bitsketball Stars",
-      "rk": 63
+      "rk": 62
     },
     {
       "pick": 51,
@@ -9263,7 +9263,7 @@
       ],
       "price": 29,
       "team": "vincemvpcarter",
-      "rk": 36
+      "rk": 34
     },
     {
       "pick": 52,
@@ -9275,7 +9275,7 @@
       ],
       "price": 24,
       "team": "The New Day Co-op",
-      "rk": 27
+      "rk": 25
     },
     {
       "pick": 53,
@@ -9310,7 +9310,7 @@
       ],
       "price": 18,
       "team": "The New Day Co-op",
-      "rk": 61
+      "rk": 59
     },
     {
       "pick": 56,
@@ -9321,7 +9321,7 @@
       ],
       "price": 22,
       "team": "#WashedAutoDraftKing",
-      "rk": 85
+      "rk": 83
     },
     {
       "pick": 57,
@@ -9333,7 +9333,7 @@
       ],
       "price": 19,
       "team": "Team Maru",
-      "rk": 104
+      "rk": 102
     },
     {
       "pick": 58,
@@ -9344,7 +9344,7 @@
       ],
       "price": 17,
       "team": "The New Day Co-op",
-      "rk": 70
+      "rk": 69
     },
     {
       "pick": 59,
@@ -9355,7 +9355,7 @@
       ],
       "price": 19,
       "team": "Team Maru",
-      "rk": 56
+      "rk": 55
     },
     {
       "pick": 60,
@@ -9366,7 +9366,7 @@
       ],
       "price": 4,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 103
+      "rk": 101
     },
     {
       "pick": 61,
@@ -9378,7 +9378,7 @@
       ],
       "price": 23,
       "team": "vincemvpcarter",
-      "rk": 77
+      "rk": 75
     },
     {
       "pick": 62,
@@ -9391,7 +9391,7 @@
       ],
       "price": 21,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 100
+      "rk": 98
     },
     {
       "pick": 63,
@@ -9403,7 +9403,7 @@
       ],
       "price": 1,
       "team": "Cole is like that",
-      "rk": null
+      "rk": 415
     },
     {
       "pick": 64,
@@ -9415,7 +9415,7 @@
       ],
       "price": 25,
       "team": "Team Maru",
-      "rk": 33
+      "rk": 30
     },
     {
       "pick": 65,
@@ -9450,7 +9450,7 @@
       ],
       "price": 14,
       "team": "Full Court Rex",
-      "rk": 109
+      "rk": 105
     },
     {
       "pick": 68,
@@ -9461,7 +9461,7 @@
       ],
       "price": 15,
       "team": "Grilled Teampura",
-      "rk": 108
+      "rk": 150
     },
     {
       "pick": 69,
@@ -9472,7 +9472,7 @@
       ],
       "price": 26,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 32
+      "rk": 31
     },
     {
       "pick": 70,
@@ -9483,7 +9483,7 @@
       ],
       "price": 10,
       "team": "Cole is like that",
-      "rk": 82
+      "rk": 80
     },
     {
       "pick": 71,
@@ -9495,7 +9495,7 @@
       ],
       "price": 17,
       "team": "Team Maru",
-      "rk": 69
+      "rk": 57
     },
     {
       "pick": 72,
@@ -9520,7 +9520,7 @@
       ],
       "price": 7,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 138
+      "rk": 137
     },
     {
       "pick": 74,
@@ -9544,7 +9544,7 @@
       ],
       "price": 8,
       "team": "vincemvpcarter",
-      "rk": 110
+      "rk": 107
     },
     {
       "pick": 76,
@@ -9568,7 +9568,7 @@
       ],
       "price": 13,
       "team": "Super Maru",
-      "rk": 81
+      "rk": 79
     },
     {
       "pick": 78,
@@ -9579,7 +9579,7 @@
       ],
       "price": 7,
       "team": "#WashedAutoDraftKing",
-      "rk": 73
+      "rk": 71
     },
     {
       "pick": 79,
@@ -9590,7 +9590,7 @@
       ],
       "price": 15,
       "team": "vincemvpcarter",
-      "rk": 34
+      "rk": 33
     },
     {
       "pick": 80,
@@ -9602,7 +9602,7 @@
       ],
       "price": 26,
       "team": "#WashedAutoDraftKing",
-      "rk": 57
+      "rk": 56
     },
     {
       "pick": 81,
@@ -9614,7 +9614,7 @@
       ],
       "price": 25,
       "team": "Team Maru",
-      "rk": 46
+      "rk": 47
     },
     {
       "pick": 82,
@@ -9625,7 +9625,7 @@
       ],
       "price": 9,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 111
+      "rk": 92
     },
     {
       "pick": 83,
@@ -9636,7 +9636,7 @@
       ],
       "price": 5,
       "team": "The New Day Co-op",
-      "rk": 198
+      "rk": 202
     },
     {
       "pick": 84,
@@ -9648,7 +9648,7 @@
       ],
       "price": 17,
       "team": "vincemvpcarter",
-      "rk": 59
+      "rk": 50
     },
     {
       "pick": 85,
@@ -9660,7 +9660,7 @@
       ],
       "price": 14,
       "team": "vincemvpcarter",
-      "rk": 102
+      "rk": 84
     },
     {
       "pick": 86,
@@ -9672,7 +9672,7 @@
       ],
       "price": 7,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 75
+      "rk": 73
     },
     {
       "pick": 87,
@@ -9695,7 +9695,7 @@
       ],
       "price": 20,
       "team": "vincemvpcarter",
-      "rk": 71
+      "rk": 63
     },
     {
       "pick": 89,
@@ -9706,7 +9706,7 @@
       ],
       "price": 10,
       "team": "Team Maru",
-      "rk": 92
+      "rk": 91
     },
     {
       "pick": 90,
@@ -9731,7 +9731,7 @@
       ],
       "price": 7,
       "team": "Full Court Rex",
-      "rk": 80
+      "rk": 77
     },
     {
       "pick": 92,
@@ -9742,7 +9742,7 @@
       ],
       "price": 24,
       "team": "Fishy Achilles",
-      "rk": 40
+      "rk": 37
     },
     {
       "pick": 93,
@@ -9754,7 +9754,7 @@
       ],
       "price": 9,
       "team": "vincemvpcarter",
-      "rk": 98
+      "rk": 97
     },
     {
       "pick": 94,
@@ -9766,7 +9766,7 @@
       ],
       "price": 4,
       "team": "Bitsketball Stars",
-      "rk": 113
+      "rk": 109
     },
     {
       "pick": 95,
@@ -9778,7 +9778,7 @@
       ],
       "price": 12,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 62
+      "rk": 61
     },
     {
       "pick": 96,
@@ -9789,7 +9789,7 @@
       ],
       "price": 17,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 55
+      "rk": 108
     },
     {
       "pick": 97,
@@ -9801,7 +9801,7 @@
       ],
       "price": 4,
       "team": "Full Court Rex",
-      "rk": 172
+      "rk": 174
     },
     {
       "pick": 98,
@@ -9812,7 +9812,7 @@
       ],
       "price": 5,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 78
+      "rk": 76
     },
     {
       "pick": 99,
@@ -9823,7 +9823,7 @@
       ],
       "price": 10,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 86
+      "rk": 85
     },
     {
       "pick": 100,
@@ -9834,7 +9834,7 @@
       ],
       "price": 5,
       "team": "#WashedAutoDraftKing",
-      "rk": 151
+      "rk": 152
     },
     {
       "pick": 101,
@@ -9846,7 +9846,7 @@
       ],
       "price": 5,
       "team": "Finn will cook Burt",
-      "rk": 83
+      "rk": 81
     },
     {
       "pick": 102,
@@ -9857,7 +9857,7 @@
       ],
       "price": 4,
       "team": "Full Court Rex",
-      "rk": 91
+      "rk": 104
     },
     {
       "pick": 103,
@@ -9868,7 +9868,7 @@
       ],
       "price": 9,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 72
+      "rk": 70
     },
     {
       "pick": 104,
@@ -9881,7 +9881,7 @@
       ],
       "price": 5,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 65
+      "rk": 66
     },
     {
       "pick": 105,
@@ -9892,7 +9892,7 @@
       ],
       "price": 4,
       "team": "Fishy Achilles",
-      "rk": 101
+      "rk": 100
     },
     {
       "pick": 106,
@@ -9904,7 +9904,7 @@
       ],
       "price": 3,
       "team": "The New Day Co-op",
-      "rk": 115
+      "rk": 112
     },
     {
       "pick": 107,
@@ -9916,7 +9916,7 @@
       ],
       "price": 5,
       "team": "Finn will cook Burt",
-      "rk": 84
+      "rk": 82
     },
     {
       "pick": 108,
@@ -9928,7 +9928,7 @@
       ],
       "price": 2,
       "team": "Super Maru",
-      "rk": 145
+      "rk": 144
     },
     {
       "pick": 109,
@@ -9940,7 +9940,7 @@
       ],
       "price": 8,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 76
+      "rk": 74
     },
     {
       "pick": 110,
@@ -9952,7 +9952,7 @@
       ],
       "price": 7,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 50
+      "rk": 49
     },
     {
       "pick": 111,
@@ -9977,7 +9977,7 @@
       ],
       "price": 3,
       "team": "#WashedAutoDraftKing",
-      "rk": 106
+      "rk": 123
     },
     {
       "pick": 113,
@@ -10001,7 +10001,7 @@
       ],
       "price": 5,
       "team": "Cole is like that",
-      "rk": 87
+      "rk": 86
     },
     {
       "pick": 115,
@@ -10013,7 +10013,7 @@
       ],
       "price": 3,
       "team": "Super Maru",
-      "rk": 74
+      "rk": 72
     },
     {
       "pick": 116,
@@ -10025,7 +10025,7 @@
       ],
       "price": 3,
       "team": "Team Maru",
-      "rk": 127
+      "rk": 126
     },
     {
       "pick": 117,
@@ -10037,7 +10037,7 @@
       ],
       "price": 2,
       "team": "Bitsketball Stars",
-      "rk": 132
+      "rk": 129
     },
     {
       "pick": 118,
@@ -10048,7 +10048,7 @@
       ],
       "price": 6,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 125
+      "rk": 114
     },
     {
       "pick": 119,
@@ -10072,7 +10072,7 @@
       ],
       "price": 1,
       "team": "Finn will cook Burt",
-      "rk": 112
+      "rk": 110
     },
     {
       "pick": 121,
@@ -10084,7 +10084,7 @@
       ],
       "price": 2,
       "team": "Fishy Achilles",
-      "rk": 189
+      "rk": 154
     },
     {
       "pick": 122,
@@ -10096,7 +10096,7 @@
       ],
       "price": 2,
       "team": "Herb's Astonishing Team",
-      "rk": 123
+      "rk": 120
     },
     {
       "pick": 123,
@@ -10107,7 +10107,7 @@
       ],
       "price": 2,
       "team": "#WashedAutoDraftKing",
-      "rk": 184
+      "rk": 185
     },
     {
       "pick": 124,
@@ -10119,7 +10119,7 @@
       ],
       "price": 3,
       "team": "vincemvpcarter",
-      "rk": 131
+      "rk": 128
     },
     {
       "pick": 125,
@@ -10130,7 +10130,7 @@
       ],
       "price": 2,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 105
+      "rk": 103
     },
     {
       "pick": 126,
@@ -10154,7 +10154,7 @@
       ],
       "price": 2,
       "team": "Fishy Achilles",
-      "rk": 107
+      "rk": 106
     },
     {
       "pick": 128,
@@ -10165,7 +10165,7 @@
       ],
       "price": 2,
       "team": "Fishy Achilles",
-      "rk": 150
+      "rk": 149
     },
     {
       "pick": 129,
@@ -10177,7 +10177,7 @@
       ],
       "price": 1,
       "team": "Full Court Rex",
-      "rk": 128
+      "rk": 125
     },
     {
       "pick": 130,
@@ -10188,7 +10188,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 139
+      "rk": 138
     },
     {
       "pick": 131,
@@ -10199,7 +10199,7 @@
       ],
       "price": 1,
       "team": "Billy Hoyle's Boy-les",
-      "rk": 192
+      "rk": 191
     },
     {
       "pick": 132,
@@ -10211,7 +10211,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 129
+      "rk": 181
     },
     {
       "pick": 133,
@@ -10234,7 +10234,7 @@
       ],
       "price": 2,
       "team": "Fishy Achilles",
-      "rk": 250
+      "rk": 330
     },
     {
       "pick": 135,
@@ -10245,7 +10245,7 @@
       ],
       "price": 1,
       "team": "Super Maru",
-      "rk": 154
+      "rk": 156
     },
     {
       "pick": 136,
@@ -10256,7 +10256,7 @@
       ],
       "price": 1,
       "team": "Cole is like that",
-      "rk": null
+      "rk": 289
     },
     {
       "pick": 137,
@@ -10268,7 +10268,7 @@
       ],
       "price": 1,
       "team": "The New Day Co-op",
-      "rk": 124
+      "rk": 121
     },
     {
       "pick": 138,
@@ -10280,7 +10280,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 143
+      "rk": 140
     },
     {
       "pick": 139,
@@ -10292,7 +10292,7 @@
       ],
       "price": 1,
       "team": "#WashedAutoDraftKing",
-      "rk": 119
+      "rk": 116
     },
     {
       "pick": 140,
@@ -10315,7 +10315,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 169
+      "rk": 171
     },
     {
       "pick": 142,
@@ -10327,7 +10327,7 @@
       ],
       "price": 1,
       "team": "Full Court Rex",
-      "rk": 177
+      "rk": 180
     },
     {
       "pick": 143,
@@ -10339,7 +10339,7 @@
       ],
       "price": 2,
       "team": "Cole is like that",
-      "rk": 117
+      "rk": 151
     },
     {
       "pick": 144,
@@ -10350,7 +10350,7 @@
       ],
       "price": 2,
       "team": "Cole is like that",
-      "rk": 152
+      "rk": 131
     },
     {
       "pick": 145,
@@ -10363,7 +10363,7 @@
       ],
       "price": 1,
       "team": "Finn will cook Burt",
-      "rk": 114
+      "rk": 111
     },
     {
       "pick": 146,
@@ -10375,7 +10375,7 @@
       ],
       "price": 1,
       "team": "Fishy Achilles",
-      "rk": 130
+      "rk": 127
     },
     {
       "pick": 147,
@@ -10387,7 +10387,7 @@
       ],
       "price": 1,
       "team": "Super Maru",
-      "rk": null
+      "rk": 391
     },
     {
       "pick": 148,
@@ -10399,7 +10399,7 @@
       ],
       "price": 1,
       "team": "The New Day Co-op",
-      "rk": 118
+      "rk": 115
     },
     {
       "pick": 149,
@@ -10411,7 +10411,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 178
+      "rk": 182
     },
     {
       "pick": 150,
@@ -10435,7 +10435,7 @@
       ],
       "price": 2,
       "team": "Shut Up and Jam Gaiden",
-      "rk": 121
+      "rk": 118
     },
     {
       "pick": 152,
@@ -10446,7 +10446,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 240
+      "rk": 243
     },
     {
       "pick": 153,
@@ -10458,7 +10458,7 @@
       ],
       "price": 1,
       "team": "Full Court Rex",
-      "rk": 203
+      "rk": 207
     },
     {
       "pick": 154,
@@ -10471,7 +10471,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 140
+      "rk": 134
     },
     {
       "pick": 155,
@@ -10484,7 +10484,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 161
+      "rk": 163
     },
     {
       "pick": 156,
@@ -10495,7 +10495,7 @@
       ],
       "price": 1,
       "team": "Finn will cook Burt",
-      "rk": 133
+      "rk": 130
     },
     {
       "pick": 157,
@@ -10507,7 +10507,7 @@
       ],
       "price": 1,
       "team": "Super Maru",
-      "rk": 149
+      "rk": 195
     },
     {
       "pick": 158,
@@ -10519,7 +10519,7 @@
       ],
       "price": 1,
       "team": "The New Day Co-op",
-      "rk": 141
+      "rk": 139
     },
     {
       "pick": 159,
@@ -10531,7 +10531,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 120
+      "rk": 117
     },
     {
       "pick": 160,
@@ -10543,7 +10543,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 122
+      "rk": 119
     },
     {
       "pick": 161,
@@ -10554,7 +10554,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 97
+      "rk": 122
     },
     {
       "pick": 162,
@@ -10565,7 +10565,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 170
+      "rk": 173
     },
     {
       "pick": 163,
@@ -10577,7 +10577,7 @@
       ],
       "price": 1,
       "team": "Finn will cook Burt",
-      "rk": 116
+      "rk": 113
     },
     {
       "pick": 164,
@@ -10589,7 +10589,7 @@
       ],
       "price": 1,
       "team": "Super Maru",
-      "rk": 241
+      "rk": 246
     },
     {
       "pick": 165,
@@ -10614,7 +10614,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 79
+      "rk": 87
     },
     {
       "pick": 167,
@@ -10625,7 +10625,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 157
+      "rk": 148
     },
     {
       "pick": 168,
@@ -10638,7 +10638,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 137
+      "rk": 135
     },
     {
       "pick": 169,
@@ -10662,7 +10662,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 193
+      "rk": 197
     },
     {
       "pick": 171,
@@ -10674,7 +10674,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 245
+      "rk": 250
     },
     {
       "pick": 172,
@@ -10685,7 +10685,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 148
+      "rk": 145
     },
     {
       "pick": 173,
@@ -10697,7 +10697,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 134
+      "rk": 132
     },
     {
       "pick": 174,
@@ -10708,7 +10708,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 182
+      "rk": 184
     },
     {
       "pick": 175,
@@ -10719,7 +10719,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 179
+      "rk": 183
     },
     {
       "pick": 176,
@@ -10731,7 +10731,7 @@
       ],
       "price": 1,
       "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-      "rk": 174
+      "rk": 176
     },
     {
       "pick": 177,
@@ -10743,7 +10743,7 @@
       ],
       "price": 1,
       "team": "Bitsketball Stars",
-      "rk": 207
+      "rk": 211
     },
     {
       "pick": 178,
@@ -10755,7 +10755,7 @@
       ],
       "price": 1,
       "team": "Grilled Teampura",
-      "rk": 153
+      "rk": 157
     },
     {
       "pick": 179,
@@ -10767,7 +10767,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 260
+      "rk": 263
     },
     {
       "pick": 180,
@@ -10778,7 +10778,7 @@
       ],
       "price": 1,
       "team": "Herb's Astonishing Team",
-      "rk": 183
+      "rk": 190
     }
   ]
 }
