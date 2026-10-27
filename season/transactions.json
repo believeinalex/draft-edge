@@ -474,6 +474,32 @@
       ]
     },
     {
+      "date": "2026-10-24 23:30",
+      "type": "add_drop",
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "add": [
+        {
+          "name": "Ziaire Williams",
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Daniss Jenkins",
+          "nbaTeam": "DET",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-10-25 00:40",
       "type": "add_drop",
       "team": "vincemvpcarter",
@@ -654,10 +680,35 @@
       "drop": []
     },
     {
-      "date": "2026-10-26 15:00",
+      "date": "2026-10-26 09:41",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [
+        {
+          "name": "Obi Toppin",
+          "nbaTeam": "IND",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Morez Johnson Jr.",
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26 14:58",
       "type": "add_drop",
       "team": "Shut Up and Jam Gaiden",
-      "note": "User's FA pickup before Monday's lineup lock; exact time not given (about 3 pm ET). No drop: Jalen Suggs moved to IL. Sheppard starts at SG this week, Quickley benched.",
+      "note": "FA pickup before Monday's lineup lock. No drop: Jalen Suggs moved to IL. Sheppard starts at SG this week, Quickley benched.",
       "add": [
         {
           "name": "Reed Sheppard",
