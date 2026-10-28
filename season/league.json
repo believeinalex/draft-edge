@@ -167,10 +167,7 @@
             "valueTotal": 2.88,
             "rank": 86
           },
-          "injury": {
-            "status": "Q",
-            "note": "Abdomen"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": "Q",
@@ -732,7 +729,7 @@
             "rank": 26
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Knee"
           },
           "thisWeek": {
@@ -1000,7 +997,10 @@
             "valueTotal": 3.94,
             "rank": 64
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -2113,7 +2113,10 @@
             "valueTotal": -3.85,
             "rank": 270
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Quadriceps"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -2212,7 +2215,10 @@
             "valueTotal": -0.46,
             "rank": 169
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Leg"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -2288,7 +2294,10 @@
             "valueTotal": 2.67,
             "rank": 90
           },
-          "injury": null,
+          "injury": {
+            "status": "P",
+            "note": "Hand"
+          },
           "thisWeek": null
         }
       ],
@@ -2800,7 +2809,10 @@
             "valueTotal": 5.7,
             "rank": 37
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Foot"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
@@ -3121,7 +3133,7 @@
             "rank": 114
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Knee"
           },
           "thisWeek": {
@@ -3199,7 +3211,10 @@
             "valueTotal": 5.42,
             "rank": 40
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Knee"
+          },
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -3274,7 +3289,7 @@
             "rank": 180
           },
           "injury": {
-            "status": "D",
+            "status": "O",
             "note": "Ankle"
           },
           "thisWeek": {
@@ -4208,7 +4223,10 @@
             "valueTotal": 9.34,
             "rank": 9
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Hamstring"
+          },
           "thisWeek": {
             "slot": "SG",
             "status": null,
@@ -4631,7 +4649,7 @@
             "rank": 95
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Ankle"
           },
           "thisWeek": {
@@ -5029,7 +5047,7 @@
           },
           "injury": {
             "status": "Q",
-            "note": "Back"
+            "note": "Neck"
           },
           "thisWeek": {
             "slot": "Util",
@@ -5183,7 +5201,10 @@
             "valueTotal": -2.32,
             "rank": 225
           },
-          "injury": null,
+          "injury": {
+            "status": "P",
+            "note": "Hamstring"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -5465,10 +5486,7 @@
             "valueTotal": 1.53,
             "rank": 119
           },
-          "injury": {
-            "status": "Q",
-            "note": "Ankle"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "PF",
             "status": "Q",
@@ -7227,7 +7245,10 @@
             "valueTotal": 9.93,
             "rank": 7
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Back"
+          },
           "thisWeek": {
             "slot": "PF",
             "status": null,
@@ -7669,7 +7690,10 @@
             "valueTotal": 9.5,
             "rank": 8
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Knee"
+          },
           "thisWeek": {
             "slot": "PG",
             "status": null,
@@ -7706,10 +7730,7 @@
             "valueTotal": 5.67,
             "rank": 38
           },
-          "injury": {
-            "status": "P",
-            "note": "Heel"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": "P",
@@ -8062,7 +8083,10 @@
             "valueTotal": 2.91,
             "rank": 85
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Knee"
+          },
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -8465,7 +8489,10 @@
             "valueTotal": 0.96,
             "rank": 137
           },
-          "injury": null,
+          "injury": {
+            "status": "P",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "Util",
             "status": null,
