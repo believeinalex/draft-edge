@@ -176,7 +176,8 @@ async function main() {
     md.push('**Biggest over-performers (rostered)**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(0, 6).map(row), '');
     md.push('**Biggest under-performers (rostered)**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(-6).reverse().map(row), '');
     for (const tn of league.managedTeams || []) {
-      const mine = rated.filter(r => owner.get(r.key) === tn);
+      // Lineup first: a player traded mid-week still counts for his locked-lineup team until the next lock
+      const mine = rated.filter(r => (activeKey.get(r.key) || owner.get(r.key)) === tn);
       md.push(`**${tn}** — ${mine.length} played`, '');
       if (mine.length) md.push('| Player | Line | vs proj |', '|---|---|---|', ...mine.map(row), '');
     }
