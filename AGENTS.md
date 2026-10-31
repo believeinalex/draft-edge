@@ -4,7 +4,7 @@
 
 ## Season Mode (post-draft, from 2026-10-18)
 
-The league draft is complete and the project is now focused on in-season management. League ground truth (draft results, rosters, projected standings) is in `season/`; see `season/README.md`. The official league draft is already archived as `drafts/mock_2026-10-19_00-07-.txt`. Never re-run it through the analyzer, because that double-counts it in the empirical prices. The user manages **Shut Up and Jam Gaiden** (their own team, the default focus) and **Finn will cook Burt** (their son Finn's team).
+The league draft is complete and the project is now focused on in-season management. League ground truth (draft results, rosters, projected standings) is in `season/`; see `season/README.md`. The official league draft is already archived as `drafts/mock_2026-10-19_00-07-.txt`. Never re-run it through the analyzer, because that double-counts it in the empirical prices. The user manages **Shut Up and Jam Gaiden** (their own team, the default focus) and **Finn will turn Bert into bacon** (their son Finn's team; formerly "Finn will cook Burt").
 
 ### Session-Start Workflow
 - **`main` is the source of truth.** A scheduled task commits a Hashtag Basketball stats snapshot to `main` every morning (5:53am US Eastern). Start each session with `git pull origin main`, and push season-data changes to `main` (fast-forward; never force-push).

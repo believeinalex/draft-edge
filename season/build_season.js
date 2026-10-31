@@ -22,12 +22,15 @@ const INJURY_DIR = path.join(__dirname, 'injuries');
 
 // The user's own team, plus other teams the user manages (their son Finn's team)
 const MY_TEAM = 'Shut Up and Jam Gaiden';
-const MANAGED_TEAMS = [MY_TEAM, 'Finn will cook Burt'];
+const MANAGED_TEAMS = [MY_TEAM, 'Finn will turn Bert into bacon'];
 
 // Teams renamed since the draft: current name -> earlier names
 const TEAM_ALIASES = {
-  'Cole is like that': ["Cole's aura tuff team"]
+  'Cole is like that': ["Cole's aura tuff team"],
+  'Finn will turn Bert into bacon': ['Finn will cook Burt']
 };
+// Older names in the draft file, transactions, lineups and standings resolve to the current one
+const canonTeam = name => (Object.entries(TEAM_ALIASES).find(([, old]) => old.includes(name)) || [name])[0];
 
 const pickRegex = /^(\d+)\.\s+(.+?)\s+\(([A-Z]+)\s+-\s+([A-Z,]+)\)\s+\$(\d+)\s+(.+)$/;
 
@@ -150,7 +153,7 @@ function applyTransactions(teams, transactions) {
   const byRk = new Map(PLAYERS.map(p => [p.rk, p]));
   const teamByName = new Map(teams.map(t => [t.name, t]));
   const getTeam = name => {
-    const t = teamByName.get(name);
+    const t = teamByName.get(canonTeam(name));
     if (!t) throw new Error(`Unknown team in transactions: ${name}`);
     return t;
   };
@@ -224,7 +227,7 @@ const MIN_COMPLETE_LINEUP = 9;
  */
 function attachLineups(teams, snapshot) {
   const unexplained = [];
-  const blocks = snapshot.teams.map(b => ({ ...b, players: b.players.map(p => ({ ...p })) }));
+  const blocks = snapshot.teams.map(b => ({ ...b, team: b.team && canonTeam(b.team), players: b.players.map(p => ({ ...p })) }));
   // A block whose team name was cut off: pick the team whose roster overlaps it most
   for (const b of blocks.filter(bl => !bl.team)) {
     const names = new Set(b.players.map(p => normName(p.name)));
@@ -291,7 +294,7 @@ function latestSnapshot(dir) {
 function attachStandings(teams, snapshot) {
   const unknown = [];
   for (const row of snapshot.teams) {
-    const t = teams.find(tm => tm.name === row.team);
+    const t = teams.find(tm => tm.name === canonTeam(row.team));
     if (!t) { unknown.push(row.team); continue; }
     t.realTotals = Object.fromEntries(CATS.map(c => [c, row[c]]));
     t.realGp = row.gp;
@@ -306,6 +309,7 @@ function main() {
   const { picks, unmatched } = parseDraft(fs.readFileSync(DRAFT_FILE, 'utf8'));
   const byRk = new Map(PLAYERS.map(p => [p.rk, p]));
 
+  for (const p of picks) p.team = canonTeam(p.team);
   const teamNames = [...new Set(picks.map(p => p.team))];
   const teams = teamNames.map(name => {
     const roster = picks.filter(p => p.team === name).map(p => ({

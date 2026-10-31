@@ -28,6 +28,9 @@ const PLAY_WEIGHT = { O: 0, D: 0, INJ: 0, SUSP: 0, Q: 0.5, GTD: 0.5, DTD: 0.5, P
 const INACTIVE_SLOTS = new Set(['BN', 'IL', 'IL+', 'NA']);
 
 const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8'));
+// Matches a team by its current name or a name it had earlier (league.json previousNames)
+const findTeam = (league, name) => league.teams.find(t => t.name === name || (t.previousNames || []).includes(name));
+
 function datedFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().map(f => path.join(dir, f));
@@ -92,7 +95,7 @@ function activeLineups(league, lineupSnap, projByName) {
   const inferred = league.teams.find(t => t.lineup && t.lineup.teamNameInferred);
   for (const block of lineupSnap.teams) {
     const teamName = block.team || (inferred && inferred.name);
-    const t = league.teams.find(x => x.name === teamName);
+    const t = findTeam(league, teamName);
     if (!t) continue;
     let active = block.players.filter(p => !INACTIVE_SLOTS.has(p.slot)).map(p => ({ ...p, name: fullName(p.name) }));
     let estimated = false;
@@ -224,7 +227,7 @@ async function main() {
     const st = [...stAll].reverse().find(x => x.complete !== false) || stAll[stAll.length - 1];
     const skipped = stAll.filter(x => x.asOf > st.asOf && x.complete === false).map(x => x.asOf);
     if (skipped.length) warn.push(`Skipped standings ${skipped.join(', ')}: copied while games were still in progress.`);
-    let base = st.teams;
+    let base = st.teams.map(r => ({ ...r, team: (findTeam(league, r.team) || { name: r.team }).name }));
     if (st.asOf < cur.asOf) {
       warn.push(`Base standings ${st.asOf}; games since then (through stats ${cur.asOf}) are rebuilt from player stats and locked lineups. Paste standings each morning, after every game has finished, for an exact base.`);
       const since = snaps.map(readJson).filter(s => s.asOf >= st.asOf);
