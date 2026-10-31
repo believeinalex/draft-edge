@@ -255,3 +255,20 @@ test('morning report: traded players keep counting for their locked-lineup team;
   assert.deepEqual(names('Cole'), ['Jalen Brunson', 'Tyler Herro', 'Bronny James']);
   assert.equal(out.get('Cole').estimated, true);
 });
+
+test('findTrades lists only trades that raise both teams, with me gaining more, and 2-for-2s that beat their 1-for-1s', () => {
+  const { findTrades } = require('../season/trade_finder.js');
+  const league = require('../season/league.json');
+  const { trades } = findTrades(league, league.myTeam, { minEdge: 0.5 });
+  assert.ok(trades.length > 0);
+  for (const t of trades) {
+    assert.ok(t.myGain > 0 && t.theirGain > 0, 'both teams gain');
+    assert.ok(t.myGain - t.theirGain >= 0.5, 'I come out ahead');
+    assert.ok(t.myAfter.rank <= t.myBefore.rank);
+    assert.equal(t.give.length, t.get.length);
+    assert.ok(t.give.length <= 2);
+    assert.ok(!(league.managedTeams || []).includes(t.partner), 'managed teams skipped by default');
+  }
+  const ones = findTrades(league, league.myTeam, { sizes: [1] }).trades;
+  assert.ok(ones.every(t => t.give.length === 1));
+});
