@@ -745,6 +745,31 @@
           "to": "Shut Up and Jam Gaiden"
         }
       ]
+    },
+    {
+      "date": "2026-10-30 00:00",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "note": "Reported by user on 2026-10-31 (\"dropped him for Williams III this week\"); exact time not from Yahoo log. Poeltl shows W 11/1 on Yahoo.",
+      "add": [
+        {
+          "name": "Robert Williams III",
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Jakob Poeltl",
+          "nbaTeam": "TOR",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
     }
   ]
 }
