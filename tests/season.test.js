@@ -268,7 +268,10 @@ test('findTrades lists only trades that raise both teams, with me gaining more, 
     assert.equal(t.give.length, t.get.length);
     assert.ok(t.give.length <= 2);
     assert.ok(!(league.managedTeams || []).includes(t.partner), 'managed teams skipped by default');
+    assert.ok(t.adpGet - t.adpGive <= 5 + 1e-9, 'ADP fairness: receive at most $5 more ADP value');
   }
+  const loose = findTrades(league, league.myTeam, { maxAdpGain: Infinity }).trades;
+  assert.ok(loose.length >= trades.length);
   const ones = findTrades(league, league.myTeam, { sizes: [1] }).trades;
   assert.ok(ones.every(t => t.give.length === 1));
 });
