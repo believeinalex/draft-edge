@@ -269,3 +269,14 @@ test('news digest: canonTeam maps ESPN abbreviations and diffInjuries finds new,
   assert.equal(diffInjuries(prev, cur, k => k === 'b two').length, 0);
   assert.ok(brief('One. '.repeat(200)).length < 450);
 });
+
+test('team coverage: parseRss strips the outlet suffix and mentionsOf avoids shared-surname false positives', () => {
+  const { parseRss, mentionsOf } = require('../season/team_coverage.js');
+  const xml = '<rss><channel><item><title>Bey scores 25 &amp; wins - NBA.com</title><source url="x">NBA.com</source><link>https://e.x/1</link><pubDate>Sun, 01 Nov 2026 01:39:00 GMT</pubDate></item></channel></rss>';
+  const [item] = parseRss(xml, 'Google News');
+  assert.equal(item.title, 'Bey scores 25 & wins');
+  assert.equal(item.source, 'NBA.com');
+  assert.equal(item.published, '2026-11-01T01:39:00.000Z');
+  assert.deepEqual(mentionsOf('Reed Sheppard gets paid', ['Paul Reed']), []);
+  assert.deepEqual(mentionsOf('Pistons coach praises Paul Reed', ['Paul Reed']), ['Paul Reed']);
+});
