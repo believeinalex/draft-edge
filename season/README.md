@@ -28,3 +28,7 @@ The draft is over and the project is now used for in-season management. This dir
 1. Append new entries to `transactions.json`, taken from Yahoo's league transaction log. Use `add_drop` for FA/waiver moves (`via: "FA"` or `"Waiver"`) and `trade` with a `to` team per player.
 2. Run `npm run season`. If a drop or trade names someone who isn't on that roster, it fails with an error rather than producing a silently wrong roster.
 3. Adds count toward the 18-acquisition season limit; trades do not.
+
+## Injury & news digest
+`npm run news` (`fetch_news.js`) pulls ESPN's public NBA injury and news feeds and writes `season/news/YYYY-MM-DD.json` plus `reports/YYYY-MM-DD-news.md`: injuries and expected returns for the managed teams, a **role watch** of injured rotation teammates (ESPN's long comments name who gains minutes, e.g. a teammate's personal leave or return), changes since the previous digest for every rostered player, and articles that mention a rostered player. ESPN's return dates and some comments can be stale (training-camp notes), so each entry shows its update date. The daily scheduled task adds web research on top and writes the impact analysis for each managed player.
+

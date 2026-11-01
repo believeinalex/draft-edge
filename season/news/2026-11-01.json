@@ -1,0 +1,1431 @@
+{
+  "asOf": "2026-11-01",
+  "fetchedAt": "2026-11-01T15:40:49.711Z",
+  "source": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba",
+  "injuries": [
+    {
+      "name": "Jock Landale",
+      "team": "ATL",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Hip",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:52Z",
+      "shortComment": "Landale (hip) won't return to Saturday's game against the Pelicans.",
+      "longComment": "Landale only logged one minute Saturday before exiting the contest. His next opportunity to get back on the floor will come Monday versus Indiana. In the meantime, Asa Newell should see more playing time behind Onyeka Okongwu."
+    },
+    {
+      "name": "Jalen Johnson",
+      "team": "ATL",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Ankle",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T01:43Z",
+      "shortComment": "Johnson (ankle) did not return to Saturday's 121-99 loss to the Pelicans. He finished with 13 points (5-11 FG, 1-3 3Pt, 2-2 FT), seven rebounds, four assists and one block over 28 minutes.",
+      "longComment": "Johnson was on the court for the final seconds of the third quarter but didn't see the floor for the entire fourth. The Hawks were facing a large deficit, so the decision to keep him sidelined for the final quarter may have been a precautionary measure. Nevertheless, Johnson's injury status is worth monitoring heading into the Hawks' next game, which takes place Monday against the Pacers. If he were to miss time, then Aaron Wiggins and Luguentz Dort would likely be the top candidates to enter Atlanta's starting lineup."
+    },
+    {
+      "name": "Mouhamed Gueye",
+      "team": "ATL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2026-11-20",
+      "date": "2026-10-19T19:38Z",
+      "shortComment": "Gueye underwent surgery Tuesday to repair a fractured left foot that he suffered during a workout last week, Brad Rowland of the Locked On Podcast Network reports.",
+      "longComment": "Gueye will be re-evaluated by medical staff in 3-to-4 months, which means he'll miss all of training camp and preseason and likely the start of the 2026-27 regular season. It's a brutal blow for the fourth-year big man, given that the Hawks used the No. 23 overall pick of the 2026 NBA Draft to select St. John's product Zuby Ejiofor. Gueye's absence means Ejiofor will have more opportunities in the preseason, and the rookie could establish a key role off the bench behind Onyeka Okongwu and projected backup center Jock Landale (ankle)."
+    },
+    {
+      "name": "Henri Veesaar",
+      "team": "ATL",
+      "status": "Out",
+      "fantasyStatus": "OFS",
+      "injury": "Knee",
+      "returnDate": "2027-07-01",
+      "date": "2026-09-21T19:50Z",
+      "shortComment": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
+      "longComment": "Veesaar suffered the injury during a workout on Sept. 15, and an MRI confirmed the diagnosis. The No. 52 overall pick in the 2026 NBA Draft, Veesaar was expected to spend a lot of time with Atlanta's G League affiliate this season."
+    },
+    {
+      "name": "Mitchell Robinson",
+      "team": "BOS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Rest",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T15:05Z",
+      "shortComment": "Robinson (rest) has been ruled out for Sunday's game against the Magic.",
+      "longComment": "Robinson has been downgraded from questionable to out and will miss the first half of Boston's upcoming back-to-back set. He'll likely be able to suit up Monday in Houston."
+    },
+    {
+      "name": "Devin Carter",
+      "team": "BOS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Illness",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-18T14:49Z",
+      "shortComment": "Carter has been diagnosed with mononucleosis and is without a timetable for a return, Gary Washburn of The Boston Globe reports.",
+      "longComment": "Carter missed Boston's final three preseason games with the illness and is now expected to miss time to begin the regular season. He can be considered week-to-week until Boston provides an update on his progress. The 2024 first-rounder signed a two-way pact with the Celtics on Saturday and will provide backcourt depth for the club."
+    },
+    {
+      "name": "Mikel Brown Jr.",
+      "team": "BKN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Rest",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T20:58Z",
+      "shortComment": "Brown (rest) is out for Sunday's game in Indiana.",
+      "longComment": "Brown will skip the first leg of this upcoming back-to-back set, but he should return for Monday's game in New York. With Brown inactive, there will be more minutes available for Nolan Traore, Terance Mann and Keon Ellis."
+    },
+    {
+      "name": "Egor Demin",
+      "team": "BKN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Leg",
+      "returnDate": "2026-11-07",
+      "date": "2026-10-29T17:09Z",
+      "shortComment": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday.",
+      "longComment": "Brooklyn's decision keeps Demin under contract through the 2027-28 campaign as the organization continues investing in its young backcourt. The move provides additional long-term stability but doesn't directly impact his immediate fantasy outlook. Demin is currently dealing with a right leg bone bruise and is scheduled to be re-evaluated in one week."
+    },
+    {
+      "name": "Tyler Bilodeau",
+      "team": "BKN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Shoulder",
+      "returnDate": "2026-11-06",
+      "date": "2026-10-25T17:19Z",
+      "shortComment": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana.",
+      "longComment": "Bilodeau will miss a third straight game to begin the regular season due to a right shoulder sprain. The two-way player's absence shouldn't affect the rotation."
+    },
+    {
+      "name": "Kon Knueppel",
+      "team": "CHA",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-30T15:12Z",
+      "shortComment": "Knueppel (hamstring) was recalled from the G League's Greensboro Swarm on Friday. He remains out for Friday's contest against the Wizards.",
+      "longComment": "Knueppel was able to log a practice with the Swarm on Thursday. While there's been no official update on his progress, it's safe to assume he's at least trending in the right direction. A timetable for his return has yet to be announced."
+    },
+    {
+      "name": "Coby White",
+      "team": "CHA",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Calf",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-26T22:41Z",
+      "shortComment": "Head coach Charles Lee said Monday that White (calf) remains without a timeline for a return, though Lee added that he'll have a better idea of where things stand following the Hornets' two-game road trip, Rod Boone of The Charlotte Observer reports.",
+      "longComment": "White's next opportunity to play will come Saturday at home against the Sixers in the second leg of a back-to-back set. However, he should be considered highly questionable for that contest until the Hornets offer an update on his status. Dennis Schroder and Christian Anderson will likely continue seeing increased burn until White returns."
+    },
+    {
+      "name": "Grant Williams",
+      "team": "CHA",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-26T22:34Z",
+      "shortComment": "Williams (hamstring) will be re-evaluated following Charlotte's upcoming two-game road trip, Rod Boone reports.",
+      "longComment": "Williams' earliest possible return date now looks to be Saturday at home against the 76ers. Royce O'Neale should continue to play meaning minutes off the bench for the Hornets in the interim."
+    },
+    {
+      "name": "Kylan Boswell",
+      "team": "CHA",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Knee",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-20T20:55Z",
+      "shortComment": "Boswell (knee) is out for Wednesday's season opener against the Nets.",
+      "longComment": "Boswell continues to rehab after right knee surgery. The hope in early October was that he would be cleared for basketball activities prior to the start of the G League season, which begins in early November."
+    },
+    {
+      "name": "Dailyn Swain",
+      "team": "CHI",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T04:59Z",
+      "shortComment": "Swain (back) has been ruled out for Friday's game against Boston.",
+      "longComment": "Swain will be held out of Friday's contest due to lower-back soreness. His next chance to play will come Monday at Philadelphia."
+    },
+    {
+      "name": "Nic Claxton",
+      "team": "CHI",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-26T22:20Z",
+      "shortComment": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports.",
+      "longComment": "The Bulls reported one week ago that the big man would be re-evaluated in two weeks, so he appears to be right on track with his recovery from a hamstring injury. He'll presumably need to take part in 5-on-5 drills before getting the green light to return to game action."
+    },
+    {
+      "name": "Jaylon Tyson",
+      "team": "CLE",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Ankle",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:53Z",
+      "shortComment": "Tyson (ankle) has been ruled out for Saturday's game against the Bucks.",
+      "longComment": "Tyson is dealing with a right ankle sprain and won't suit up Saturday, with his next chance to play coming Monday against the Thunder. With the 23-year-old forward sidelined, Mario Hezonja, Sam Merrill and Meleek Thomas (foot) are candidates for increased playing time."
+    },
+    {
+      "name": "Sergio de Larrea",
+      "team": "DAL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-30T22:34Z",
+      "shortComment": "Head coach Dusty May said Friday that de Larrea (knee) will be re-evaluated next week, Noah Weber of TheSmokingCuban.com reports.",
+      "longComment": "De Larrea sprained his right knee in Monday's win over Miami and is without a definitive timetable for a return to action. However, his absence shouldn't cause any significant waves in the rotation."
+    },
+    {
+      "name": "Santi Aldama",
+      "team": "DAL",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Knee",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-30T22:16Z",
+      "shortComment": "Aldama (knee) is listed as out for Friday's game against the Rockets.",
+      "longComment": "Aldama continues to make progress in his recovery from right knee surgery, though he won't be ready to suit up for Friday's meeting with Houston. Without Aldama on the floor, Zaccharie Risacher, Morez Johnson, Caleb Martin and Moussa Cisse should all continue to see extra minutes."
+    },
+    {
+      "name": "Tarik Biberovic",
+      "team": "DAL",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Heel",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-30T22:13Z",
+      "shortComment": "Biberovic (heel) is out for Friday's game against the Rockets.",
+      "longComment": "Right heel bursitis continues to plague Biberovic. Monday's tilt versus the Kings marks his next chance to make his league debut."
+    },
+    {
+      "name": "Dereck Lively II",
+      "team": "DAL",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Foot",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-22T20:10Z",
+      "shortComment": "Lively (foot) has been ruled out for Friday's game against the Pacers.",
+      "longComment": "Lively underwent right foot surgery last December and remains without a clear timetable to return. The big man can be considered week-to-week until the Mavericks offer an update on his status. In the meantime, Moussa Cisse and Morez Johnson are candidates for increased minutes."
+    },
+    {
+      "name": "Alpha Diallo",
+      "team": "DEN",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Personal",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T00:42Z",
+      "shortComment": "Diallo (personal/wrist) has been ruled out for Friday's game against Phoenix, Vic Lombardi of Altitude Sports reports.",
+      "longComment": "Diallo will miss a fourth consecutive contest while attending to a personal matter. He's also dealing with a right wrist sprain. The 29-year-old's next opportunity to return to action will come Monday against the Trail Blazers."
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-27T22:35Z",
+      "shortComment": "Jones (hamstring) has been ruled out for Wednesday's game against New Orleans.",
+      "longComment": "Jones is reportedly progressing in his recovery, though there's still no firm timetable for his return to game action. He can be considered week-to-week until the Nuggets provide an update on his status."
+    },
+    {
+      "name": "Julian Strawther",
+      "team": "DEN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-29",
+      "date": "2026-10-17T00:52Z",
+      "shortComment": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports.",
+      "longComment": "Strawther suffered the injury in Wednesday's preseason game against the Clippers. The 24-year-old has appeared in 172 regular-season games for the Nuggets since entering the league in 2023, averaging 7.1 points, 2.0 rebounds and 1.1 assists over 16.2 minutes per contest. He was in line to compete for an expanded role during the 2026-27 campaign. While that may be the case once Strawther is cleared to suit up, Tyus Jones and potentially Ryan Nembhard are candidates to receive more minutes in the interim."
+    },
+    {
+      "name": "Isaiah Joe",
+      "team": "DET",
+      "status": "Out",
+      "fantasyStatus": "GTD",
+      "injury": "Hip",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-30T20:35Z",
+      "shortComment": "Joe (hip) has been ruled out for Friday's game against the Nets.",
+      "longComment": "Joe will miss a third straight game due to a right hip contusion, and his next chance to return will come Monday at Charlotte. With the 27-year-old swingman sidelined, Kevin Huerter, Javonte Green and Ronald Holland are candidates to see increased burn."
+    },
+    {
+      "name": "Jalen Duren",
+      "team": "DET",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-09",
+      "date": "2026-10-25T14:56Z",
+      "shortComment": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
+      "longComment": "Duren suffered the hamstring injury in Friday's win over Miami and is set to miss an extended period. Paul Reed is expected to join the starting five and carries significant fantasy value until Duren returns. John Collins and Tolu Smith are also candidates to see a bump in minutes in Duren's stead."
+    },
+    {
+      "name": "Gui Santos",
+      "team": "GSW",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Knee",
+      "returnDate": "2026-11-01",
+      "date": "2026-10-31T19:54Z",
+      "shortComment": "Santos (knee) is probable for Sunday's game against the Clippers.",
+      "longComment": "Santos is expected to continue to push through the pain with his knee issue. He's averaging 7.8 points, 4.2 rebounds and 1.4 assists per game this season."
+    },
+    {
+      "name": "Draymond Green",
+      "team": "GSW",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Rest",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T19:51Z",
+      "shortComment": "Green (back) is out for Sunday's game against the Clippers.",
+      "longComment": "Green will sit out the first leg of this back-to-back set, but he should return for Monday's game against the Suns. Graham Ike, Al Horford and Charles Bassey will help pick up the slack with Green inactive Sunday."
+    },
+    {
+      "name": "Stephen Curry",
+      "team": "GSW",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Rest",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T19:48Z",
+      "shortComment": "Curry (rest) won't play Sunday against the Clippers, Brett Siegel of ClutchPoints.com reports.",
+      "longComment": "Sunday's game will be the first of a back-to-back set, so Curry will receive a maintenance day, but he should return for Monday's meeting with the Suns. De'Anthony Melton could draw the start sans Curry, and Brandin Podziemski will be more involved in the offense."
+    },
+    {
+      "name": "Kristaps Porzingis",
+      "team": "GSW",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Illness",
+      "returnDate": "2026-12-01",
+      "date": "2026-10-28T14:25Z",
+      "shortComment": "The Warriors are exploring potential trades involving Porzingis (personal), who remains away from the team indefinitely while dealing with ongoing health concerns, Anthony Slater of ESPN.com reports.",
+      "longComment": "Porzingis is reportedly contemplating his future in basketball as he continues to battle health issues that have plagued him for nearly two years. Golden State isn't expecting the veteran center to rejoin the team anytime soon, and his contract structure could make him an attractive trade piece despite the uncertainty surrounding his playing future. With no timetable for his return and retirement potentially on the table, Porzingis remains a highly speculative fantasy stash, even in leagues with injured reserve spots."
+    },
+    {
+      "name": "Moses Moody",
+      "team": "GSW",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-12-01",
+      "date": "2026-10-16T16:14Z",
+      "shortComment": "Moody (knee) is progressing toward a potential return between December and January after rupturing his left patellar tendon in March, Anthony Slater of ESPN reports.",
+      "longComment": "Moody has been limited to individual court work, but team sources indicate he's ahead of Jimmy Butler (knee) in the rehabilitation process and is expected to return before the veteran forward. The 24-year-old still has several recovery checkpoints to complete, and Golden State has not established an official timetable. His eventual return would help replenish a Warriors wing rotation that will open the season without both Moody and Butler."
+    },
+    {
+      "name": "Jimmy Butler III",
+      "team": "GSW",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-01-02",
+      "date": "2026-10-16T16:11Z",
+      "shortComment": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
+      "longComment": "Butler, who underwent surgery after suffering the injury Jan. 19, has progressed to individual court work but still has several rehabilitation milestones to clear. His next step involves landing comfortably after a game-speed jump. Coach Steve Kerr is hopeful Butler can rejoin Golden State for the latter portion of the season, though no official return date has been announced. The 37-year-old forward remains a significant part of the Warriors' plans and could provide a substantial boost during the second half of the campaign."
+    },
+    {
+      "name": "Fred VanVleet",
+      "team": "HOU",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Knee",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:56Z",
+      "shortComment": "VanVleet (knee) won't play Saturday against the Thunder.",
+      "longComment": "It's the second night of a back-to-back set, so VanVleet will receive his standard maintenance day, but he should return for Monday's meeting with the Celtics. Reed Sheppard (back) is also out for Saturday's game, so Marcus Smart could draw the start at point guard, and Amen Thompson should see some increased playmaking responsibilities."
+    },
+    {
+      "name": "Reed Sheppard",
+      "team": "HOU",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:56Z",
+      "shortComment": "Sheppard (back) is out for Saturday's game against the Thunder.",
+      "longComment": "This will be Sheppard's second straight game on the sidelines, and for now, he should be viewed as questionable for Monday's game against the Celtics. Fred VanVleet (knee) will join Sheppard on the inactive list for Saturday's game, paving the way for Marcus Smart to start."
+    },
+    {
+      "name": "Steven Adams",
+      "team": "HOU",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Calf",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-26T22:52Z",
+      "shortComment": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports.",
+      "longComment": "The veteran big man can be considered week-to-week until the Rockets offer another update on his status. In the meantime, Clint Capela will likely see increased playing time behind Alperen Sengun."
+    },
+    {
+      "name": "Ivica Zubac",
+      "team": "IND",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-31T21:14Z",
+      "shortComment": "Zubac (ankle) will remain on the inactive list for Sunday's game against the Nets.",
+      "longComment": "This will be Zubac's fourth consecutive game on the sidelines, which should result in another start for Jay Huff and extended minutes for Larry Nance. Zubac's next chance to play will come Monday against the Hawks."
+    },
+    {
+      "name": "Aaron Nesmith",
+      "team": "IND",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-01",
+      "date": "2026-10-31T21:13Z",
+      "shortComment": "Nesmith (hamstring) is listed as probable for Sunday's game against Brooklyn.",
+      "longComment": "Nesmith didn't play in the 123-120 loss to New Orleans on Opening Night but has played in each of the Pacers' last five contests. Although he could see limited action while he continues to work his way back from the left hamstring strain, he will likely be out there Sunday, barring a setback."
+    },
+    {
+      "name": "Obi Toppin",
+      "team": "IND",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-01",
+      "date": "2026-10-31T21:10Z",
+      "shortComment": "Toppin (back) is questionable for Sunday's game against the Nets.",
+      "longComment": "Toppin sat out Friday's 145-125 loss to the Heat due to the back issue, and with Sunday's game being the first of a back-to-back set, he may need to spend at least one more game on the sidelines. If he's out, Jarace Walker and Kobe Brown would likely see a bump in minutes."
+    },
+    {
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-30T19:09Z",
+      "shortComment": "McConnell (hamstring) is practicing in the G League at Noblesville Boom training camp, per Alex Golden of SI.com.",
+      "longComment": "McConnell appears to closing in on making his season debut for the Pacers, though it won't come Friday in Miami. Indiana returns home for a back-to-back set Sunday against the Nets and Monday versus the Hawks, so the veteran floor general's return could come at some point then."
+    },
+    {
+      "name": "Johnny Furphy",
+      "team": "IND",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-01-02",
+      "date": "2026-10-30T19:06Z",
+      "shortComment": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com.",
+      "longComment": "The Pacers have been pretty quiet regarding Furphy's ACL recovery since the offseason, but it's encouraging to hear some form of progress as the forward begins to ramp up his activity. Although Furphy still lacks a firm timetable for a return and is likely to be brought back slowly, it appears a season debut before the start of the new calendar year is in the cards."
+    },
+    {
+      "name": "Ben Sheppard",
+      "team": "IND",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-01-02",
+      "date": "2026-10-28T21:41Z",
+      "shortComment": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports.",
+      "longComment": "Sheppard required a full repair and is without a definitive timetable for a return to action. With Tyrese Haliburton (hamstring) expected to miss at least two weeks, Quenton Jackson figures to see a significant uptick in playing time. Two-way player Braden Smith could also see increased action with the parent club."
+    },
+    {
+      "name": "Tyrese Haliburton",
+      "team": "IND",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-13",
+      "date": "2026-10-28T21:30Z",
+      "shortComment": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports.",
+      "longComment": "Given the tricky nature of hamstring injuries, the Pacers will likely take their time bringing Haliburton back to the court, so don't be surprised if his absence extends beyond this two-week window. Andrew Nembhard (neck) and Pascal Siakam should each get a usage bump as they take over more of the playmaking duties sans Haliburton and there will be more minutes available for Quenton Jackson."
+    },
+    {
+      "name": "Yanic Konan Niederhauser",
+      "team": "LAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-29T18:44Z",
+      "shortComment": "Niederhauser (foot) had his third-year team option picked up Thursday by the Clippers, Ohm Youngmisuk of ESPN.com reports.",
+      "longComment": "With Niederhauser still working back from a foot injury, this move is more about the Clippers' long-term roster planning than any immediate status change. It keeps the young center under team control beyond this season, which was the expectation after Los Angeles spent a first-round pick on Niederhauser a year ago."
+    },
+    {
+      "name": "Max Strus",
+      "team": "LAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-29T01:03Z",
+      "shortComment": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
+      "longComment": "Strus sustained a partially torn plantar fascia in his right foot in the Clippers' preseason opener but is seemingly nearing a return to game action. Keaton Wagler and Kobe Sanders will likely continue seeing increased playing time for as long as Strus and Brandon Ingram (Achilles) are sidelined."
+    },
+    {
+      "name": "Brandon Ingram",
+      "team": "LAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Achilles",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-29T01:00Z",
+      "shortComment": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
+      "longComment": "Ingram has yet to make his season debut while recovering from a partially torn Achilles, though he's seemingly getting closer to a return to action. In the meantime, Gradey Dick and Kobe Sanders will likely continue seeing increased burn."
+    },
+    {
+      "name": "Bradley Beal",
+      "team": "LAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-15T01:03Z",
+      "shortComment": "Beal (knee) will not be ready for the start of the regular season, NBA writer Justin Russo reports.",
+      "longComment": "Beal is dealing with knee inflammation that will keep him sidelined for Opening Night. While it's unclear how long the Clippers will be without the veteran guard, Darius Garland, Keaton Wagler and Kris Dunn should dominate the backcourt minutes in his absence. Beal's 2025-26 campaign was cut short by a hip injury after he averaged 8.2 points and 1.7 assists in 20.6 minutes across just six regular-season appearances."
+    },
+    {
+      "name": "Jordan Miller",
+      "team": "LAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Shoulder",
+      "returnDate": "2027-03-02",
+      "date": "2026-08-26T20:04Z",
+      "shortComment": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
+      "longComment": "It's a tough break for Miller, who had an opportunity to battle for a reserve role during training camp in the fall. The timeline for a return is likely to keep him on the shelf until after the All-Star break. Miller's extended stay on the sidelines gives Kobe Sanders a chance to crack the Clippers' rotation."
+    },
+    {
+      "name": "Adou Thiero",
+      "team": "LAL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-09",
+      "date": "2026-11-01T15:04Z",
+      "shortComment": "Thiero (knee) has been ruled out for Sunday's game against the Raptors.",
+      "longComment": "Thiero has yet to appear in the regular season and can be considered week-to-week. Even when he's healthy, Thiero isn't expected to play a key role for the Lakers."
+    },
+    {
+      "name": "Ziaire Williams",
+      "team": "LAL",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Foot",
+      "returnDate": "2026-11-01",
+      "date": "2026-11-01T00:04Z",
+      "shortComment": "Williams (foot) is questionable for Sunday's game against the Raptors, Law Murray of The Athletic reports.",
+      "longComment": "Williams has missed the past two games for the Lakers, and with Sunday's game being the first of a back-to-back, he might need to spend one more game on the inactive list. If he's out again, Quentin Grimes will help fill his minutes."
+    },
+    {
+      "name": "Quinten Post",
+      "team": "MEM",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Ankle",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:54Z",
+      "shortComment": "Post (ankle) has been ruled out for Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian reports.",
+      "longComment": "Post was listed as doubtful, and now we have official confirmation that he'll be on the inactive list Saturday night. His minutes will likely be divvied up amongst Isaiah Stewart and Taylor Hendricks."
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "team": "MEM",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:54Z",
+      "shortComment": "Pippen (back) has been ruled out for Saturday's game against the Kings, Chris Herrington of The Daily Memphian reports.",
+      "longComment": "Pippen is working through a back injury and will end up missing his first game of the regular season. He is averaging 16.0 minutes per game off the bench, and that playing time will be absorbed by Cam Spencer, GG Jackson and Jerami Grant. Pippen's next opportunity to play is Monday against the Pelicans."
+    },
+    {
+      "name": "Ty Jerome",
+      "team": "MEM",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:54Z",
+      "shortComment": "Jerome (back) won't play in Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian.",
+      "longComment": "Jerome has been battling a nagging back injury, though it will finally force him to miss his first game of the 2026-27 campaign. With Scotty Pippen (back) also sidelined, Cam Spencer is the favorite to start at the one."
+    },
+    {
+      "name": "Rudy Gobert",
+      "team": "MIN",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:53Z",
+      "shortComment": "Gobert (back) is out for Saturday's game against the Spurs, Dane Moore of 'The Dane Moore NBA Podcast' reports.",
+      "longComment": "Gobert will miss his first game of the season Saturday, which could result in Joan Beringer getting the start and Trey Lyles could see a bump in minutes. For now, Gobert should be considered questionable for Monday's meeting with Milwaukee."
+    },
+    {
+      "name": "Anthony Edwards",
+      "team": "MIN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-12-21",
+      "date": "2026-10-29T18:33Z",
+      "shortComment": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced.",
+      "longComment": "Edwards underwent debridement surgery in Minnesota, though the team did not provide a timetable for his return. The star guard is expected to make a full recovery, with additional updates coming as he progresses through rehabilitation. Based on previous reporting from ESPN's Shams Charania, Edwards could miss up to two months. Edwards was off to a scorching start this season, averaging 33.3 points, 4.8 rebounds, 3.5 assists and 2.0 steals across four appearances."
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "team": "MIN",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Achilles",
+      "returnDate": "2027-04-02",
+      "date": "2026-10-05T20:53Z",
+      "shortComment": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
+      "longComment": "DiVincenzo is approaching six months since tearing his right Achilles during the first round of the playoffs and has been rehabbing with the expectation that he'll play at some point this season. The veteran guard has sought advice from Jayson Tatum, Tyrese Haliburton and Damian Lillard during his recovery, though Minnesota has yet to establish a timetable for his return."
+    },
+    {
+      "name": "Jordan Poole",
+      "team": "NOP",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Ankle",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:53Z",
+      "shortComment": "Poole (ankle) has been ruled out for Saturday's game against the Hawks.",
+      "longComment": "Poole will miss a second straight game due to a sprained left ankle. His next chance to suit up will come Monday at Memphis. Bennedict Mathurin and Herbert Jones are candidates for increased playing time in Poole's absence."
+    },
+    {
+      "name": "Dejounte Murray",
+      "team": "NOP",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Personal",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:52Z",
+      "shortComment": "Murray (personal) won't play in Saturday's game against the Hawks, Jim Eichenhofer of the Pelicans' official site reports.",
+      "longComment": "Murray wasn't on the injury report but won't suit up due to the birth of his son. With Murray sidelined, Bennedict Mathurin could enter the starting lineup, with Jeremiah Fears operating as the primary ballhandler."
+    },
+    {
+      "name": "Yves Missi",
+      "team": "NOP",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-08",
+      "date": "2026-10-30T21:32Z",
+      "shortComment": "Missi (knee) won't play in Saturday's game against Atlanta.",
+      "longComment": "Missi sustained a bone bruise in his left knee during the 120-119 loss to Utah on Oct. 23. The 22-year-old hasn't played since, and considering he doesn't have a definitive return date, he should be considered week-to-week. Without Missi on the floor, DeAndre Jordan, Derik Queen and Karlo Matkovic could all see more action, though it appears none of them are a lock to take over the interim starting center job at the moment."
+    },
+    {
+      "name": "Jose Alvarado",
+      "team": "NYK",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-29T22:50Z",
+      "shortComment": "Alvarado (ankle) has been ruled out for Friday's game against Philadelphia.",
+      "longComment": "Alvarado will miss a fourth straight game with a left ankle sprain, and it's not a positive sign that he's being ruled out a day before tipoff. He can be considered week-to-week until the Knicks offer an update on his status. Tyler Kolek will likely continue seeing increased burn in Alvarado's absence."
+    },
+    {
+      "name": "Cason Wallace",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Shoulder",
+      "returnDate": "2027-03-02",
+      "date": "2026-10-31T01:16Z",
+      "shortComment": "Wallace underwent surgery Friday to repair a torn labrum in his left shoulder and will be re-evaluated before the end of the regular season, Clemente Almanza of USA Today reports.",
+      "longComment": "Wallace is expected to miss most, if not all, of the season. However, there's still a chance he will return late in the campaign after sustaining the shoulder injury in Sunday's win over the Clippers. With Jalen Williams (leg) also set to be re-evaluated before the end of the regular season, Alex Caruso (ankle) should see significant playing time once cleared to return. In the meantime, Jared McCain, Bennett Stirtz and Josh Dix are expected to see increased burn."
+    },
+    {
+      "name": "Chet Holmgren",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-01-02",
+      "date": "2026-10-31T01:02Z",
+      "shortComment": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
+      "longComment": "This is another massive blow to an Oklahoma City squad that's already set to be without Jalen Williams (leg) and Cason Wallace (shoulder) for most, if not all, of the season. With Holmgren sidelined, Kenrich Williams, Jaylin Williams and Aday Mara are all candidates to see increased playing time. Two-way player Brooks Barnhizer could also see more minutes."
+    },
+    {
+      "name": "Jalen Williams",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Leg",
+      "returnDate": "2027-03-02",
+      "date": "2026-10-28T23:41Z",
+      "shortComment": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports.",
+      "longComment": "Williams suffered the injury during Sunday's meeting with the Clippers and was taken off the court on a stretcher. It's unknown when the 25-year-old will be cleared to return, though the Thunder will presumably be overly cautious moving forward. Williams, who signed a five-year extension in July of 2025, has had a productive career, averaging 17.9 points, 4.6 rebounds, 4.4 assists and 1.3 steals over 30.9 minutes per contest. However, after playing at least 69 regular-season games in his first three years in the league, he has appeared in just 36 in the last two seasons combined. With the Thunder having one of the deepest rosters in the NBA, the team may look for more minutes from Jared McCain, Jaylin Williams, and Kenrich Williams for the remainder of the 2026-27 campaign."
+    },
+    {
+      "name": "Alex Caruso",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-28T18:06Z",
+      "shortComment": "Caruso (ankle) is expected to miss time due to an ankle sprain, Clemente Almanza of USA Today reports.",
+      "longComment": "With Caruso already ruled out for Wednesday's game in Dallas due to an ankle sprain, it sounds like the veteran forward could remain sidelined beyond a one-game absence. That would leave Oklahoma City without one of its key rotation wings for at least the near term, which could force Jared McCain into a big role for the banged-up Thunder."
+    },
+    {
+      "name": "Thomas Sorber",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-27T21:43Z",
+      "shortComment": "Sorber (knee) has been ruled out for Wednesday's game against the Mavericks.",
+      "longComment": "Sorber is still without a firm timetable for a return to game action. He can be considered week-to-week until the Thunder provide an update on his progress."
+    },
+    {
+      "name": "Nikola Topic",
+      "team": "OKC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Back",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-27T21:38Z",
+      "shortComment": "Topic (back) will remain on the inactive list for Wednesday's game in Dallas.",
+      "longComment": "Topic has yet to play this season, and per standard Thunder protocol, Oklahoma City has not released any updates on where he is in his rehab. He should be viewed as week-to-week moving forward."
+    },
+    {
+      "name": "Jonathan Isaac",
+      "team": "ORL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-10",
+      "date": "2026-10-29T18:29Z",
+      "shortComment": "Isaac (knee) is out for Friday's game in Toronto.",
+      "longComment": "Isaac holds no timetable for a return to an ongoing left knee injury. The oft-injured forward can be considered week-to-week until the Magic update his timeline."
+    },
+    {
+      "name": "Jalen Suggs",
+      "team": "ORL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-10",
+      "date": "2026-10-26T18:44Z",
+      "shortComment": "Suggs has been diagnosed with a mild bone bruise in his right knee and will be re-evaluated in two weeks, Shams Charania of ESPN reports.",
+      "longComment": "Suggs suffered the injury during Sunday's win over the Knicks when his right knee buckled following a layup attempt. Fortunately, further testing revealed no major structural damage, though the 25-year-old will miss at least two weeks before being re-evaluated. Anthony Black and Jase Richardson could see increased opportunities in Orlando's backcourt during Suggs' absence."
+    },
+    {
+      "name": "Paolo Banchero",
+      "team": "ORL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-22",
+      "date": "2026-10-24T16:47Z",
+      "shortComment": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
+      "longComment": "Banchero left during Friday's loss against the Timberwolves due to an ankle injury, and follow-up tests have confirmed a high-ankle sprain for the fifth-year forward. With an extended absence expected, the Magic will have to rely more heavily on Franz Wagner and Desmond Bane offensively, and Tristan da Silva figures to be the top candidate to enter the Magic's starting lineup for as long as Banchero is sidelined."
+    },
+    {
+      "name": "Noah Penda",
+      "team": "ORL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-11-18",
+      "date": "2026-10-17T22:19Z",
+      "shortComment": "Penda was diagnosed with a partially torn right hamstring Saturday, Jason Beede of the Orlando Sentinel reports.",
+      "longComment": "Penda suffered the hamstring tear in Friday's 136-115 preseason win over the Heat. It's unknown how long the injury will keep the 21-year-old off the floor. However, since it's a different injury than the one he suffered in the same hamstring during training camp, the team may take a cautious approach regarding his return. Penda, the No. 32 overall pick in the 2025 NBA Draft, averaged 3.8 points, 3.2 rebounds and 1.2 assists over 12.8 minutes per outing in 59 regular-season games in 2025-26. While he's not expected to be a mainstay in the rotation throughout the 2026-27 campaign, his absence could open up a few minutes for Tristan Da Silva."
+    },
+    {
+      "name": "Izaiyah Nelson",
+      "team": "ORL",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-18",
+      "date": "2026-09-28T21:33Z",
+      "shortComment": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com.",
+      "longComment": "With Nelson still in recovery mode from the left ankle surgery he underwent this summer, his path back to game action remains delayed for the early part of the season. The rookie big man is on a two-way contract with the Magic, so his short-term absence mainly affects his developmental timeline rather than Orlando's regular rotation."
+    },
+    {
+      "name": "Joel Embiid",
+      "team": "PHI",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Foot",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:52Z",
+      "shortComment": "Embiid (foot) is out for Saturday's game in Charlotte.",
+      "longComment": "It's the second night of a back-to-back set, so Embiid will get hit with a maintenance day. Adem Bona will have the opportunity to start Saturday with Embiid inactive."
+    },
+    {
+      "name": "LeBron James",
+      "team": "PHI",
+      "status": "Day-To-Day",
+      "fantasyStatus": "GTD",
+      "injury": "Back",
+      "returnDate": "2026-11-02",
+      "date": "2026-11-01T04:51Z",
+      "shortComment": "James (back) has been ruled out for Saturday's meeting in Charlotte.",
+      "longComment": "James will rest on the second leg of a back-to-back set, but he should return for Monday's game against the Bulls. Dean Wade and Justin Edwards should see a bump in minutes with James inactive, while Tyrese Maxey figures to see a sizeable uptick in usage."
+    },
+    {
+      "name": "Dominick Barlow",
+      "team": "PHI",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Back",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-19T21:07Z",
+      "shortComment": "Barlow will miss at least the next two weeks of action due to a lumbar spine bone stress response, Adam Aaronson of PhillyVoice.com reports.",
+      "longComment": "The back issue cost Barlow the entire preseason, and now he'll begin the regular season on the sidelines. The earliest we could see Barlow back on the court would be Nov. 2, but it wouldn't be shocking to see his absence extend beyond this loose, two-week window."
+    },
+    {
+      "name": "Ariel Hukporti",
+      "team": "PHI",
+      "status": "Out",
+      "fantasyStatus": "OFS",
+      "injury": "Achilles",
+      "returnDate": "2027-10-01",
+      "date": "2026-10-06T19:17Z",
+      "shortComment": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN.",
+      "longComment": "Hukporti went down with an Achilles injury in Monday's preseason opener against the Knicks, and an MRI has since revealed a rupture. He signed a one-year deal with the 76ers over the summer, so Hukporti will be an unrestricted free agent come season's end. With Hukporti's year already finished, Adem Bona (foot) should assume the backup center role behind Joel Embiid once healthy."
+    },
+    {
+      "name": "Mark Williams",
+      "team": "PHX",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Shoulder",
+      "returnDate": "2027-02-03",
+      "date": "2026-09-11T16:03Z",
+      "shortComment": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
+      "longComment": "This is a tough blow for the center with training camp right around the corner. With his status for Opening Night in jeopardy, this will put a lot of eyes on Oso Ighodaro and Khaman Maluach, with the latter already drawing buzz during the Summer League. More clarity on Williams' timeline should be known in the coming weeks."
+    },
+    {
+      "name": "Ja Morant",
+      "team": "POR",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hamstring",
+      "returnDate": "2026-12-01",
+      "date": "2026-10-30T18:45Z",
+      "shortComment": "Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday.",
+      "longComment": "Morant left Thursday's game early with a hamstring injury, which has since been revealed to be a strain that will result in a monthlong absence. The star guard leaves a major void in the Trail Blazers' starting backcourt, one that figures to be filled by Jrue Holiday for the foreseeable future."
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "team": "POR",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-03-02",
+      "date": "2026-08-24T20:23Z",
+      "shortComment": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
+      "longComment": "It's a tough blow to the Trail Blazers' depth on the wing ahead of training camp. Sharpe, who is now likely to be sidelined until after the All-Star break, had been ticketed for a reserve role behind Toumani Camara following an injury-plagued 2025-26 campaign, which saw average a career-high 20.8 points, 1.4 steals and 2.1 three-pointers per game over 50 regular-season appearances. The door is now open for Vit Krejci and Jeremy Sochan to compete for bench minutes during camp."
+    },
+    {
+      "name": "Dylan Cardwell",
+      "team": "SAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Calf",
+      "returnDate": "2026-11-06",
+      "date": "2026-10-26T22:09Z",
+      "shortComment": "Cardwell (calf) will be re-evaluated in one week, Brenden Nunes of KHTK Sactown Sports 1140 reports.",
+      "longComment": "Cardwell is progressing well in his recovery from a calf strain. Precious Achiuwa should remain worth streaming in all fantasy leagues for the banged-up Kings in the meantime."
+    },
+    {
+      "name": "Maxime Raynaud",
+      "team": "SAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-10",
+      "date": "2026-10-26T22:07Z",
+      "shortComment": "Raynaud (knee) is progressing in his rehabilitation and will be re-evaluated in approximately two weeks, Brenden Nunes of KHTK Sactown Sports 1140 reports.",
+      "longComment": "Raynaud's absence is expected to extend into mid-November due to a right patellar subluxation. With Dylan Cardwell (calf) set to miss at least one more week, Precious Achiuwa, Jonathan Mogbo and De'Andre Hunter are candidates for increased minutes in the frontcourt."
+    },
+    {
+      "name": "Keegan Murray",
+      "team": "SAC",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Ankle",
+      "returnDate": "2026-11-06",
+      "date": "2026-10-26T22:01Z",
+      "shortComment": "Murray (ankle) will be re-evaluated in 10-to-14 days, NBA reporter Marc Stein reports.",
+      "longComment": "Murray has officially been diagnosed with left ankle capsulitis, and he's set to miss at least the next 10 days. Precious Achiuwa has been starting in Murray's absence, and he should continue to see opportunities along with De'Andre Hunter and Daeqwon Plowden."
+    },
+    {
+      "name": "Ben Simmons",
+      "team": "SAC",
+      "status": "Out",
+      "fantasyStatus": "OFS",
+      "injury": "Achilles",
+      "returnDate": "2027-10-01",
+      "date": "2026-10-21T04:22Z",
+      "shortComment": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports.",
+      "longComment": "Simmons had a quality preseason, averaging 10.5 points, 4.0 rebounds and 4.0 assists over 17.4 minutes per contest (two games). The 30-year-old was on track to suit up for the Kings on opening night, though those plans were halted after he suffered a torn Achilles tendon during practice. Now, Simmons will focus on rehab. However, it's unknown what the future holds regarding his career in the NBA."
+    },
+    {
+      "name": "Tobias Harris",
+      "team": "SAS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Calf",
+      "returnDate": "2026-11-06",
+      "date": "2026-10-30T21:44Z",
+      "shortComment": "Harris (calf) is listed as out for Saturday's game against Minnesota.",
+      "longComment": "Harris suffered a strained left calf ahead of the 2026-27 campaign and has yet to make his debut with the Spurs. The veteran is slowly making progress toward a return, though he should be considered week-to-week until more information is released. The 34-year-old, who signed with San Antonio during the offseason, averaged 13.3 points, 5.1 rebounds and 2.5 assists over 27.7 minutes per contest in 63 regular-season appearances with the Pistons in 2025-26."
+    },
+    {
+      "name": "Jayden Quaintance",
+      "team": "SAS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-12-03",
+      "date": "2026-10-05T21:43Z",
+      "shortComment": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
+      "longComment": "The Spurs are expected to exercise extreme caution with the big man, as Quaintance suffered a torn ACL and meniscus with Arizona State in February 2025 before appearing in only four games with Kentucky last season due to severe complications and persistent swelling. The 19-year-old underwent a cleanup procedure on his meniscus in mid-July, and the Spurs will likely want him at 100 percent before ramping him up to basketball activities."
+    },
+    {
+      "name": "Kawhi Leonard",
+      "team": "TOR",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-23",
+      "date": "2026-10-29T15:39Z",
+      "shortComment": "Leonard (knee) is expected to be sidelined for at least three to four weeks, Chris Haynes of NBA TV reports.",
+      "longComment": "The extended absence represents a significant setback for Leonard, who will be unavailable for the foreseeable future. His absence should create additional offensive opportunities for Toronto's remaining rotation players, with guys like RJ Barrett, Scottie Barnes and Allen Graves seeing more usage. Leonard's recovery timeline will be worth monitoring, as the reported window represents a minimum absence rather than a firm return date."
+    },
+    {
+      "name": "Nate Bittle",
+      "team": "TOR",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-27T19:31Z",
+      "shortComment": "Bittle (foot) has been ruled out for Wednesday's game against the Magic, Cody Taylor of USA Today reports.",
+      "longComment": "Bittle remains without a timetable to return due to a right foot avulsion fracture. He can be considered week-to-week until the Raptors offer an update on his progress."
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "team": "UTA",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-12-14",
+      "date": "2026-10-27T19:25Z",
+      "shortComment": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
+      "longComment": "Jackson sustained the injury early in Monday's loss to Memphis, and he's now expected to miss at least a month and a half of action. The star big man's absence creates a major void in the Utah lineup, one that is likely to be filled by a timeshare of Jaxson Hayes (shoulder), Kyle Filipowski and Mo Bamba. The Jazz could also shift Lauri Markkanen (wrist), when healthy, to the center spot at times, perhaps allowing Ace Bailey to spend more time at power forward."
+    },
+    {
+      "name": "Trey Alexander",
+      "team": "UTA",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2026-11-06",
+      "date": "2026-10-24T23:18Z",
+      "shortComment": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise.",
+      "longComment": "Alexander sat out Friday's preseason finale with what the team initially described as a left knee injury, but we now know he's dealing with a bone bruise. Don't be surprised if Alexander misses Friday's game against the Pelicans as well."
+    },
+    {
+      "name": "Jusuf Nurkic",
+      "team": "UTA",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2026-11-04",
+      "date": "2026-10-07T23:07Z",
+      "shortComment": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports.",
+      "longComment": "Nurkic will begin the 2026-27 season on the sidelines, and given the tricky nature of foot injuries for big men, it wouldn't be shocking to see his absence extend beyond this initial four-week window. Jaren Jackson will likely spend more time at center while Nurkic is out, and there will be more minutes available for Jaxson Hayes and Mo Bamba."
+    },
+    {
+      "name": "Justin Champagnie",
+      "team": "WAS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Foot",
+      "returnDate": "2027-02-25",
+      "date": "2026-10-28T18:38Z",
+      "shortComment": "Champagnie (foot) is expected to miss several months, per Josh Robbins of The Athletic.",
+      "longComment": "The forward underwent surgery Wednesday to address a fractured foot, and the Wizards hope Champagnie will be ready to return at some time around the All-Star break in February. The likes of Bilal Coulibaly, Tre Johnson and Bub Carrington will all be asked to help pick up the slack for the foreseeable future."
+    },
+    {
+      "name": "Tristan Vukcevic",
+      "team": "WAS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Hip",
+      "returnDate": "2026-11-02",
+      "date": "2026-10-01T19:11Z",
+      "shortComment": "The Wizards announced Thursday that Vukcevic (hip) will be re-evaluated in four weeks.",
+      "longComment": "Although the big man will remain a limited participant in training camp as he continues his rehab from a hip impingement, it sounds like his absence from game action will extend into the regular season. Deandre Ayton should have the backup center role all to himself until Vukcevic is cleared to retake the floor."
+    },
+    {
+      "name": "Jamir Watkins",
+      "team": "WAS",
+      "status": "Out",
+      "fantasyStatus": "OUT",
+      "injury": "Knee",
+      "returnDate": "2027-04-02",
+      "date": "2026-07-30T20:11Z",
+      "shortComment": "The Wizards announced Thursday that Watkins has undergone surgery for a torn ACL.",
+      "longComment": "Watkins, a two-way player for the Wizards, suffered the injury during the Summer League. Although Washington has yet to offer a timetable for a return, a typical recovery time for the procedure is approximately 9-to-12 months. That leaves Watkins in serious jeopardy of missing most, if not all, of the 2026-27 season, and it remains to be seen if the team will continue keeping him around on a two-way roster spot while he's injured."
+    }
+  ],
+  "articles": [
+    {
+      "published": "2026-11-01T15:35:55Z",
+      "headline": "Sunday's fantasy basketball adds and bets to make in the NBA",
+      "description": "Jim McCormick breaks down Sunday's slate, highlighting the fantasy streamers to add and bets to make.",
+      "link": "https://www.espn.com/fantasy/basketball/story/_/id/50347044/fantasy-basketball-tips-nba-betting-picks-today",
+      "athletes": [
+        "Anthony Black",
+        "Isaiah Jackson",
+        "De'Anthony Melton",
+        "Yaxel Lendeborg"
+      ]
+    },
+    {
+      "published": "2026-11-01T06:15:54Z",
+      "headline": "Here's what fans need to know in the sports world today",
+      "description": "Check out some of the top news of the day from the WNBA, CFB and NBA.",
+      "link": "https://www.espn.com/video/clip/_/id/50345575/here-fans-need-know-sports-world-today",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:54Z",
+      "headline": "Mavericks face the Kings on 3-game win streak",
+      "description": "Sacramento Kings (0-6, 15th in the Western Conference) vs. Dallas Mavericks (4-2, seventh in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909913",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:53Z",
+      "headline": "Chicago faces Philadelphia, looks to stop 4-game skid",
+      "description": "Chicago Bulls (1-5, 13th in the Eastern Conference) vs. Philadelphia 76ers (6-1, first in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909912",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:52Z",
+      "headline": "Portland takes road win streak into matchup with Denver",
+      "description": "Portland Trail Blazers (4-1, third in the Western Conference) vs. Denver Nuggets (3-2, eighth in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909918",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:51Z",
+      "headline": "Cleveland plays Oklahoma City, aims for 4th straight home win",
+      "description": "Oklahoma City Thunder (4-1, fifth in the Western Conference) vs. Cleveland Cavaliers (4-2, fourth in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909907",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:50Z",
+      "headline": "Minnesota and Milwaukee square off in non-conference matchup",
+      "description": "Milwaukee Bucks (1-5, 14th in the Eastern Conference) vs. Minnesota Timberwolves (4-3, ninth in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909915",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:48Z",
+      "headline": "Hornets take on the Pistons on 3-game skid",
+      "description": "Detroit Pistons (5-1, second in the Eastern Conference) vs. Charlotte Hornets (3-4, eighth in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909908",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:47Z",
+      "headline": "Memphis takes on New Orleans, aims for 7th straight win",
+      "description": "New Orleans Pelicans (2-4, 11th in the Western Conference) vs. Memphis Grizzlies (6-0, first in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909914",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T06:02:46Z",
+      "headline": "Wembanyama leads San Antonio against Utah after 43-point outing",
+      "description": "Utah Jazz (1-5, 14th in the Western Conference) vs. San Antonio Spurs (4-2, sixth in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909917",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T05:04:30Z",
+      "headline": "Spurs' Victor Wembanyama notches 43 points on career-best 34 shots in win",
+      "description": "Spurs star Victor Wembanyama launched a career-high 34 shots for a season-high 43 points Saturday to propel a 121-111 win over the Timberwolves.",
+      "link": "https://www.espn.com/nba/story/_/id/50344505/spurs-victor-wembanyama-notches-43-points-career-best-43-shots-win",
+      "athletes": [
+        "Victor Wembanyama"
+      ]
+    },
+    {
+      "published": "2026-11-01T02:57:47Z",
+      "headline": "Boozer, Stewart lead Memphis to a 136-105 victory over Kings as Grizzlies remain unbeaten",
+      "description": "— Rookie Cameron Boozer had 27 points and nine rebounds, Isaiah Stewart added 24 points as the Memphis Grizzlies remained the only unbeaten team in the NBA with a 136-105 victory over the Sacramento Kings on Saturday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909899",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T03:01:22Z",
+      "headline": "Oklahoma City Thunder vs. Houston Rockets: Game Highlights",
+      "description": "Oklahoma City Thunder vs. Houston Rockets: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50343788/game-highlights",
+      "athletes": [
+        "Tari Eason",
+        "Jaylin Williams",
+        "Shai Gilgeous-Alexander"
+      ]
+    },
+    {
+      "published": "2026-11-01T02:54:47Z",
+      "headline": "Wembanyama has 43 points and 6 blocks to lead Spurs past short-handed Timberwolves 121-111",
+      "description": "— Victor Wembanyama had 43 points, seven rebounds, six blocks and four assists as the San Antonio Spurs beat the Minnesota Timberwolves 121-111 on Saturday night for their fourth straight victory.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909901",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T02:51:48Z",
+      "headline": "Jabari Smith Jr. scores 30 points, Rockets beat Thunder 119-98",
+      "description": "— Jabari Smith Jr. had 30 points and nine rebounds, Marcus Smart added 24 points and the Houston Rockets beat the Oklahoma City Thunder 119-98 on Saturday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909902",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T02:48:12Z",
+      "headline": "Sacramento Kings vs. Memphis Grizzlies: Game Highlights",
+      "description": "Sacramento Kings vs. Memphis Grizzlies: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50343630/game-highlights",
+      "athletes": [
+        "Darius Acuff Jr",
+        "Jerami Grant",
+        "Cameron Boozer"
+      ]
+    },
+    {
+      "published": "2026-11-01T02:48:11Z",
+      "headline": "Minnesota Timberwolves vs. San Antonio Spurs: Game Highlights",
+      "description": "Minnesota Timberwolves vs. San Antonio Spurs: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50343548/game-highlights",
+      "athletes": [
+        "Victor Wembanyama",
+        "De'Aaron Fox",
+        "Ayo Dosunmu"
+      ]
+    },
+    {
+      "published": "2026-11-01T02:31:47Z",
+      "headline": "Mobley scores 27, Allen adds 25 as Cavaliers ride 48-point second quarter to get past Bucks 136-111",
+      "description": "— Evan Mobley scored 27 points and Jarrett Allen had 25 as the Cleveland Cavaliers cruised past the Milwaukee Bucks 136-111 on Saturday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909900",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T02:30:50Z",
+      "headline": "Cleveland Cavaliers vs. Milwaukee Bucks: Game Highlights",
+      "description": "Cleveland Cavaliers vs. Milwaukee Bucks: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50343433/game-highlights",
+      "athletes": [
+        "Jarrett Allen",
+        "Evan Mobley",
+        "Kel'el Ware",
+        "Brayden Burries"
+      ]
+    },
+    {
+      "published": "2026-11-01T01:54:46Z",
+      "headline": "Saddiq Bey and Jeremiah Fears lead the Pelicans past the Hawks, 121-99",
+      "description": "— Saddiq Bey scored 25 points in a reserve role, Jeremiah Fears added 20 points, and the New Orleans Pelicans beat the Atlanta Hawks 121-99 on Saturday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909898",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T02:20:01Z",
+      "headline": "Atlanta Hawks vs. New Orleans Pelicans: Game Highlights",
+      "description": "Atlanta Hawks vs. New Orleans Pelicans: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50343033/game-highlights",
+      "athletes": [
+        "Saddiq Bey",
+        "Bryce McGowens",
+        "Herbert Jones",
+        "CJ McCollum",
+        "Trey Murphy III"
+      ]
+    },
+    {
+      "published": "2026-11-01T00:55:48Z",
+      "headline": "Tyrese Maxey scores 38 as 76ers beat Hornets 109-104 without LeBron James, Joel Embiid",
+      "description": "— Tyrese Maxey scored 38 points, Anfernee Simons added 19 points off the bench and Philadelphia 76ers proved they could win without stars LeBron James and Joel Embiid, battling back to beat the Charlotte Hornets 109-104 on Saturday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909897",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T01:01:00Z",
+      "headline": "Philadelphia 76ers vs. Charlotte Hornets: Game Highlights",
+      "description": "Philadelphia 76ers vs. Charlotte Hornets: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50342534/game-highlights",
+      "athletes": [
+        "Sion James",
+        "Tyrese Maxey",
+        "Grayson Allen"
+      ]
+    },
+    {
+      "published": "2026-10-31T23:13:32Z",
+      "headline": "Halloween 2026: Breaking down top athlete costumes from across the sports world",
+      "description": "Athletes far and wide across the sports world showed off special costumes for Halloween.",
+      "link": "https://www.espn.com/nba/story/_/id/50321862/halloween-athlete-costumes-2026",
+      "athletes": []
+    },
+    {
+      "published": "2026-11-01T00:13:01Z",
+      "headline": "Victor Wembanyama's Halloween costume trend returns with 'The Witcher' look",
+      "description": "With a game on Halloween, the San Antonio Spurs center's costume trend returned in spectacular fashion.",
+      "link": "https://www.espn.com/nba/story/_/id/46775071/victor-wembanyama-halloween-costume-arrivals-years",
+      "athletes": [
+        "Victor Wembanyama"
+      ]
+    },
+    {
+      "published": "2026-10-31T21:54:50Z",
+      "headline": "Avdija scores 24 and Lillard has 22 as Portland rolls over Utah 112-90",
+      "description": "— Deni Avdija scored 24 points, Damian Lillard added 22, and the Portland Trail Blazers rebounded from their first loss of the season by blowing past the Utah Jazz 112-90 on Saturday.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909896",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T21:54:02Z",
+      "headline": "Portland Trail Blazers vs. Utah Jazz: Game Highlights",
+      "description": "Portland Trail Blazers vs. Utah Jazz: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50340037/game-highlights",
+      "athletes": [
+        "Svi Mykhailiuk",
+        "Deni Avdija",
+        "Jaxson Hayes",
+        "Donovan Clingan",
+        "Damian Lillard",
+        "Robert Williams III"
+      ]
+    },
+    {
+      "published": "2026-10-31T21:52:33Z",
+      "headline": "76ers' LeBron James, Joel Embiid sit against Hornets",
+      "description": "LeBron James and Joel Embiid are out for the Sixers on Saturday in the second game of a back-to-back. It's the first time Philly is without both players at the same time.",
+      "link": "https://www.espn.com/nba/story/_/id/50337638/lebron-james-joel-embiid-76ers-vs-hornets",
+      "athletes": [
+        "LeBron James",
+        "Joel Embiid",
+        "Jaylen Brown"
+      ]
+    },
+    {
+      "published": "2026-10-31T18:36:18Z",
+      "headline": "Lakers' Jeanie Buss accuses siblings of 'cloak and dagger' tactics",
+      "description": "Jeanie Buss accused her siblings of conspiring against her in court filings responding to her siblings' ongoing effort to sell their shares in the Lakers.",
+      "link": "https://www.espn.com/nba/story/_/id/50337158/lakers-jeanie-buss-accuses-siblings-cloak-dagger-tactics",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T16:46:50Z",
+      "headline": "Sources: Thunder no longer signing Ochai Agbaji following Chet Holmgren injury",
+      "description": "The Thunder are no longer signing free agent Ochai Agbaji as the franchise takes a step back to reevaluate its open roster spot after losing Chet Holmgren for two-plus months, sources told ESPN's Shams Charania.",
+      "link": "https://www.espn.com/nba/story/_/id/50336717/sources-thunder-no-longer-signing-ochai-agbaji",
+      "athletes": [
+        "Ochai Agbaji"
+      ]
+    },
+    {
+      "published": "2026-10-31T16:10:03Z",
+      "headline": "Saturday's fantasy basketball adds, NBA bets to make: Look to OKC's frontcourt",
+      "description": "Jim McCormick breaks down Saturday's NBA slate, highlighting the fantasy streamers to add and bets to make.",
+      "link": "https://www.espn.com/fantasy/basketball/story/_/id/50336329/fantasy-basketball-tips-nba-betting-picks-today",
+      "athletes": [
+        "Isaiah Hartenstein",
+        "Aday Mara",
+        "Jeremiah Fears",
+        "Tari Eason"
+      ]
+    },
+    {
+      "published": "2026-10-31T07:02:49Z",
+      "headline": "Los Angeles faces Golden State, looks to break 4-game skid",
+      "description": "Los Angeles Clippers (1-4, 14th in the Western Conference) vs. Golden State Warriors (3-3, 10th in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909905",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T07:02:47Z",
+      "headline": "Los Angeles hosts Toronto after Barnes' 41-point outing",
+      "description": "Toronto Raptors (3-2, fourth in the Eastern Conference) vs. Los Angeles Lakers (4-2, fifth in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909906",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T07:02:46Z",
+      "headline": "Houston and Oklahoma City meet for conference showdown",
+      "description": "Oklahoma City Thunder (4-1, third in the Western Conference) vs. Houston Rockets (5-1, second in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909902",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T13:24:50Z",
+      "headline": "Curry's ankle-breaker on Luka highlights Warriors' stunning 25-point comeback",
+      "description": "Behind a theatrical 31 points from Stephen Curry, the Warriors roared back for a 112-95 win over the Lakers.",
+      "link": "https://www.espn.com/nba/story/_/id/50333810/stephen-curry-leads-warriors-25-point-comeback-lakers",
+      "athletes": [
+        "Stephen Curry",
+        "Luka Doncic",
+        "Yaxel Lendeborg"
+      ]
+    },
+    {
+      "published": "2026-10-31T06:03:47Z",
+      "headline": "San Antonio hosts Minnesota after overtime win against Utah",
+      "description": "Minnesota Timberwolves (4-2, seventh in the Western Conference) vs. San Antonio Spurs (3-2, eighth in the Western Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909901",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T06:03:46Z",
+      "headline": "Pacers take on the Nets on 3-game skid",
+      "description": "Brooklyn Nets (0-5, 15th in the Eastern Conference) vs. Indiana Pacers (2-4, 11th in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909904",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T06:02:59Z",
+      "headline": "Charlotte plays conference foe Philadelphia",
+      "description": "Philadelphia 76ers (5-1, second in the Eastern Conference) vs. Charlotte Hornets (3-3, seventh in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909897",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T06:02:58Z",
+      "headline": "Celtics play the Magic, look for 5th straight victory",
+      "description": "Boston Celtics (4-1, third in the Eastern Conference) vs. Orlando Magic (2-3, ninth in the Eastern Conference)",
+      "link": "http://www.espn.com/nba/preview?gameId=401909903",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T05:13:47Z",
+      "headline": "Stephen Curry scores 31 points and outduels Luka Doncic as Warriors come back to beat Lakers 112-95",
+      "description": "— Stephen Curry had 31 points, six assists and four rebounds, and the Golden State Warriors erased an early 25-point deficit then ran away from Luka Doncic and the Los Angeles Lakers for a 112-95 win Friday night in an NBA Cup game.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909285",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T05:55:15Z",
+      "headline": "Dillon Brooks ejected from Suns' loss after flagrant foul 2 in third quarter",
+      "description": "Phoenix Suns forward Dillon Brooks was ejected Friday night in a 127-120 loss to the Denver Nuggets for kicking guard Jamal Murray in the groin, an infraction that officials upgraded to a Flagrant 2 foul, which is an automatic ejection.",
+      "link": "https://www.espn.com/nba/story/_/id/50333460/suns-forward-dillon-brooks-ejected-third-quarter-loss",
+      "athletes": [
+        "Dillon Brooks"
+      ]
+    },
+    {
+      "published": "2026-10-31T05:07:32Z",
+      "headline": "Warriors erase big early deficit and beat the Lakers at home",
+      "description": "Warriors erase big early deficit and beat the Lakers at home",
+      "link": "https://www.espn.com/video/clip/_/id/50333448/warriors-erase-big-early-deficit-beat-lakers-home",
+      "athletes": [
+        "Stephen Curry",
+        "Luka Doncic",
+        "Yaxel Lendeborg"
+      ]
+    },
+    {
+      "published": "2026-10-31T12:13:21Z",
+      "headline": "LeBron James shines vs. Knicks in 'his best game' with 76ers",
+      "description": "LeBron James rescued Philadelphia late against the Knicks in what coach Nick Nurse called his best game as a Sixer.",
+      "link": "https://www.espn.com/nba/story/_/id/50333418/lebron-james-shines-vs-knicks-best-game-76ers",
+      "athletes": [
+        "LeBron James"
+      ]
+    },
+    {
+      "published": "2026-10-31T05:03:09Z",
+      "headline": "Denver Nuggets vs. Phoenix Suns: Game Highlights",
+      "description": "Denver Nuggets vs. Phoenix Suns: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50333379/game-highlights",
+      "athletes": [
+        "Jalen Green",
+        "Jamal Murray",
+        "Cameron Johnson",
+        "Miles Bridges"
+      ]
+    },
+    {
+      "published": "2026-10-31T04:40:47Z",
+      "headline": "Murray scores 39 points, Braun adds 31 to lead Nuggets over the Suns 127-120 in NBA Cup",
+      "description": "— Jamal Murray scored 39 points, Christian Braun added 31 and the Denver Nuggets rode a hot-shooting night to beat the Phoenix Suns 127-120 in an NBA Cup group stage game Friday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909286",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T05:24:44Z",
+      "headline": "Knicks know they need to play 'the right way' as shaky start continues",
+      "description": "The Knicks returned to their inconsistent ways on offense following two straight wins.",
+      "link": "https://www.espn.com/nba/story/_/id/50333242/knicks-know-need-play-right-way-shaky-start-continues",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T03:10:47Z",
+      "headline": "Irving scores 35 and Flagg adds 33 as Mavericks hand Rockets 1st loss of season 116-111",
+      "description": "— Kyrie Irving scored 35 points, Cooper Flagg added 33 and the Dallas Mavericks rallied for a 116-111 victory over Houston, handing the Rockets their first loss of the season in an NBA Cup opener Friday night.",
+      "link": "http://www.espn.com/nba/recap?gameId=401909283",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T03:19:46Z",
+      "headline": "Timberwolves blow out Clippers 127-101 behind Ball's 24 points for 1st win without Edwards",
+      "description": "— LaMelo Ball had a season-high 24 points and Jaden McDaniels scored 23 as the Minnesota Timberwolves beat the Los Angeles Clippers...",
+      "link": "http://www.espn.com/nba/recap?gameId=401909284",
+      "athletes": []
+    },
+    {
+      "published": "2026-10-31T02:58:44Z",
+      "headline": "Houston Rockets vs. Dallas Mavericks: Game Highlights",
+      "description": "Houston Rockets vs. Dallas Mavericks: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50332952/game-highlights",
+      "athletes": [
+        "Daniel Gafford",
+        "Kevin Durant",
+        "Kyrie Irving"
+      ]
+    },
+    {
+      "published": "2026-10-31T02:54:58Z",
+      "headline": "Indiana Pacers vs. Miami Heat: Game Highlights",
+      "description": "Indiana Pacers vs. Miami Heat: Game Highlights",
+      "link": "https://www.espn.com/video/clip/_/id/50332897/game-highlights",
+      "athletes": [
+        "Quenton Jackson",
+        "Giannis Antetokounmpo",
+        "Larry Nance Jr",
+        "Ryan Conwell",
+        "Bam Adebayo",
+        "Kobe Brown"
+      ]
+    }
+  ]
+}

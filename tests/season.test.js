@@ -255,3 +255,17 @@ test('morning report: traded players keep counting for their locked-lineup team;
   assert.deepEqual(names('Cole'), ['Jalen Brunson', 'Tyler Herro', 'Bronny James']);
   assert.equal(out.get('Cole').estimated, true);
 });
+
+test('news digest: canonTeam maps ESPN abbreviations and diffInjuries finds new, changed and cleared players', () => {
+  const { canonTeam, diffInjuries, brief } = require('../season/fetch_news.js');
+  assert.equal(canonTeam('NO'), 'NOP');
+  assert.equal(canonTeam('WSH'), 'WAS');
+  assert.equal(canonTeam('BOS'), 'BOS');
+  const p = (name, status, extra = {}) => ({ name, status, returnDate: null, shortComment: '', ...extra });
+  const prev = [p('A One', 'Out'), p('B Two', 'Day-To-Day'), p('C Three', 'Out')];
+  const cur = [p('A One', 'Day-To-Day'), p('B Two', 'Day-To-Day'), p('D Four', 'Out')];
+  const changes = diffInjuries(prev, cur, () => true);
+  assert.deepEqual(changes.map(c => `${c.kind}:${(c.now || c.was).name}`).sort(), ['changed:A One', 'cleared:C Three', 'new:D Four']);
+  assert.equal(diffInjuries(prev, cur, k => k === 'b two').length, 0);
+  assert.ok(brief('One. '.repeat(200)).length < 450);
+});
