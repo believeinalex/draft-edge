@@ -98,9 +98,10 @@ function dailyLines(dates) {
   return out;
 }
 
-function latestLineupBetween(from, to) {
+function lineupBetween(from, to, which = 'latest') {
   const dir = path.join(__dirname, 'lineups');
-  const f = datedFiles(dir).filter(x => x.slice(0, 10) >= from && x.slice(0, 10) <= to).pop();
+  const files = datedFiles(dir).filter(x => x.slice(0, 10) >= from && x.slice(0, 10) <= to);
+  const f = which === 'first' ? files[0] : files.pop();
   return f ? readJson(path.join(dir, f)) : null;
 }
 
@@ -151,13 +152,16 @@ function build(monday) {
   const prev = [...history].reverse().find(h => h.date <= addDays(monday, -7)) || history[0];
 
   // This week's lineup (the Monday paste) and last week's (for the bench award)
-  const lineupNow = latestLineupBetween(monday, addDays(monday, 6));
-  const lineupPrev = latestLineupBetween(lastWeek[0], lastWeek[6]);
+  const lineupNow = lineupBetween(monday, addDays(monday, 6));
+  // Last week's stats counted for whoever had the player in the lineup locked that Monday (the
+  // week's first paste); mid-week adds, drops and trades only take effect at the next lock.
+  const lineupPrev = lineupBetween(lastWeek[0], lastWeek[6], 'first');
   const lineupFor = (snap, team) => snap && snap.teams.find(b => b.team === team.team ||
     ((league.teams.find(t => t.name === team.team) || {}).previousNames || []).includes(b.team));
 
   const lines = dailyLines(lastWeek);
   const warnings = [];
+  if (!lineupPrev) warnings.push(`No lineup paste for the week of ${lastWeek[0]}: hot/cold uses current rosters, so mid-week moves are attributed to the wrong team.`);
   if (!lineupNow) warnings.push(`No lineup paste for the week of ${monday}: games-this-week uses current rosters with no bench info. Paste Yahoo's League > Rosters page first.`);
   if (now.date < monday) warnings.push(`Latest Yahoo standings are from ${now.date}; share Monday's standings for an exact table.`);
   const missingDays = lastWeek.filter(d => !lines.has(d));
@@ -202,7 +206,8 @@ function build(monday) {
     // Last week: per player per day (game z minus projected per-game z)
     const blockPrev = lineupFor(lineupPrev, g);
     const benchPrev = new Set(blockPrev ? blockPrev.players.filter(p => INACTIVE.has(p.slot)).map(p => normName(p.name)) : []);
-    const hot = lt.roster.map(r => {
+    const prevPlayers = blockPrev ? blockPrev.players : lt.roster.map(r => ({ slot: 'Util', name: r.name, nbaTeam: r.nbaTeam }));
+    const hot = prevPlayers.map(r => {
       const k = normName(r.name), proj = projPerGame(r.name);
       const sched = teamGames(r.nbaTeam, lastWeek);
       const cells = lastWeek.map((d, i) => {
@@ -214,8 +219,8 @@ function build(monday) {
       const played = cells.filter(x => x && x.line);
       const total = played.reduce((s, x) => s + x.delta, 0);
       const benched = benchPrev.has(k) ? played.reduce((s, x) => s + score(x.line) - floor * x.line.games, 0) : 0;
-      return { name: r.name, cells, total, games: played.length, benchedValue: benched, benchedGames: benchPrev.has(k) ? played.length : 0 };
-    }).sort((a, b) => b.total - a.total);
+      return { name: r.name, bench: benchPrev.has(k), cells, total, games: played.length, benchedValue: benched, benchedGames: benchPrev.has(k) ? played.length : 0 };
+    }).sort((a, b) => a.bench - b.bench || b.total - a.total);
 
     return { ...g, st, st0, cats, roster, starters, perDay, best, curValue, benchIns, sitOuts, hot,
       startGames: perDay.reduce((s, d) => s + d.start, 0), benchGames: perDay.reduce((s, d) => s + d.bench, 0) };
@@ -269,7 +274,7 @@ function chartHotCold(d) {
     let h = `<table cellpadding="0" cellspacing="1" border="0" style="font-family:${FONT}"><tr><td colspan="9" style="padding:2px 0 4px;font-size:13px;color:${C.ink};font-weight:700">${chip(t.color)}${esc(t.who)}</td></tr>`;
     h += `<tr>${plain('', { pad: '0' })}${DAYS.map(x => plain(x[0], { align: 'center', size: 9, color: C.muted, pad: '0' })).join('')}${plain('Week', { align: 'right', size: 9, color: C.muted, pad: '0 0 0 4px' })}</tr>`;
     for (const p of t.hot) {
-      h += `<tr>${plain(esc(shortName(p.name)), { size: 11, pad: '1px 4px 1px 0' })}`;
+      h += `<tr>${plain(esc(shortName(p.name)) + (p.bench ? ` <span style="font-size:9px;color:${C.muted}">BN</span>` : ''), { size: 11, pad: '1px 4px 1px 0' })}`;
       h += p.cells.map(c => c && c.line ? `<td bgcolor="${hotFill(c.delta)}" style="background:${hotFill(c.delta)};width:18px;border-radius:3px;font-size:9px">&nbsp;</td>`
         : `<td style="width:18px;text-align:center;font-size:12px;color:${C.muted}">${c && c.dnp ? '&middot;' : '&nbsp;'}</td>`).join('');
       h += plain(p.games ? signed(p.total) : '—', { align: 'right', size: 11, bold: true, color: C.ink, pad: '1px 0 1px 6px' }) + '</tr>';
@@ -283,34 +288,42 @@ function chartHotCold(d) {
 // ---------- copy ----------
 
 function awards(d) {
-  const all = d.teams.flatMap(t => t.hot.filter(p => p.games).map(p => ({ ...p, t })));
+  const all = d.teams.flatMap(t => t.hot.filter(p => p.games && !p.bench).map(p => ({ ...p, t })));
   const hot = [...all].sort((a, b) => b.total - a.total)[0];
   const cold = [...all].sort((a, b) => a.total - b.total)[0];
-  const bench = d.teams.map(t => ({ t, games: t.hot.reduce((s, p) => s + p.benchedGames, 0), top: [...t.hot].sort((a, b) => b.benchedValue - a.benchedValue)[0] }))
+  const bench = d.teams.map(t => { const most = Math.max(0, ...t.hot.map(p => p.benchedGames));
+    return { t, games: t.hot.reduce((s, p) => s + p.benchedGames, 0), leaders: most ? t.hot.filter(p => p.benchedGames === most).map(p => p.name) : [] }; })
     .sort((a, b) => b.games - a.games)[0];
   const moves = d.teams.map(t => ({ t, delta: t.st0 ? t.st0.realRank - t.st.realRank : 0, pts: t.st0 ? t.st.realRoto.total - t.st0.realRoto.total : 0 }));
   const climber = [...moves].sort((a, b) => b.delta - a.delta || b.pts - a.pts)[0];
   const faller = [...moves].sort((a, b) => a.delta - b.delta || a.pts - b.pts)[0];
   const sched = [...d.teams].sort((a, b) => b.startGames - a.startGames);
+  const fewest = sched[sched.length - 1].startGames;
   const leak = d.teams.map(t => ({ t, lost: t.best.value - t.curValue })).sort((a, b) => b.lost - a.lost)[0];
-  return { hot, cold, bench, climber, faller, schedBest: sched[0], schedWorst: sched[sched.length - 1], leak, moves };
+  return { hot, cold, bench, climber, faller, schedBest: sched[0], schedWorst: sched.filter(t => t.startGames === fewest), leak, moves };
 }
 
 function trashTalk(d, a) {
   const out = [];
+  const list = xs => xs.length < 3 ? xs.join(' and ') : xs.slice(0, -1).join(', ') + ' and ' + xs[xs.length - 1];
   const ord = [...d.teams].sort((x, y) => x.st.realRank - y.st.realRank);
   const top = ord[0], bot = ord[ord.length - 1];
   out.push(`${top.who} runs the group chat at #${top.st.realRank} overall. ${bot.who} is #${bot.st.realRank} and is currently paying for everyone's lunch.`);
-  if (a.climber.delta > 0) out.push(`${a.climber.t.who} climbed ${a.climber.delta} spot${a.climber.delta > 1 ? 's' : ''} this week. Suspicious. We're checking for performance-enhancing waiver pickups.`);
+  const best = bot.hot.filter(p => p.games && !p.bench).sort((x, y) => y.total - x.total)[0];
+  if (best && best.total > 0) out.push(`Silver lining for ${bot.who}: ${best.name} went ${signed(best.total)} vs. projection. The comeback starts somewhere.`);
+  if (a.climber.delta > 0) out.push(`${a.climber.t.who} climbed ${a.climber.delta} spot${a.climber.delta > 1 ? 's' : ''} this week. Big week, well earned.`);
   if (a.faller.delta < 0) out.push(`${a.faller.t.who} slid ${-a.faller.delta} spot${a.faller.delta < -1 ? 's' : ''}. Thoughts and prayers.`);
-  if (a.hot) out.push(`Player of the week: ${a.hot.name} (${a.hot.t.who}), ${signed(a.hot.total)} above projection. Enjoy it, it won't last.`);
+  if (a.hot) out.push(`Player of the week: ${a.hot.name} (${a.hot.t.who}), ${signed(a.hot.total)} vs. projection. Enjoy it, it won't last.`);
   if (a.cold && a.cold.total < 0) out.push(`Ice cube award: ${a.cold.name} (${a.cold.t.who}) at ${signed(a.cold.total)} vs. projection. Someone check if he's still in the league.`);
-  if (a.bench.games > 0) out.push(`Bench warmer trophy: ${a.bench.t.who} had ${a.bench.games} game${a.bench.games > 1 ? 's' : ''} played on the bench last week${a.bench.top && a.bench.top.benchedGames ? `, led by ${a.bench.top.name}` : ''}.`);
-  out.push(`Schedule luck this week: ${a.schedBest.who} gets ${a.schedBest.startGames} starter games, ${a.schedWorst.who} gets ${a.schedWorst.startGames}. Life isn't fair, and neither is the NBA calendar.`);
+  if (a.bench.games > 0) out.push(`Bench warmer trophy: ${a.bench.t.who} left ${a.bench.games} game${a.bench.games > 1 ? 's' : ''} on the bench last week${a.bench.leaders.length ? `, mostly ${list(a.bench.leaders)}` : ''}.`);
+  const worst = a.schedWorst;
+  out.push(`Schedule luck this week: ${a.schedBest.who} gets ${a.schedBest.startGames} starter games, ${list(worst.map(t => t.who))} get${worst.length > 1 ? '' : 's'} ${worst[0].startGames}. Life isn't fair, and neither is the NBA calendar.`);
+  const quips = ['Bold strategy.', 'Punting or just vibes?', 'A choice was made.', 'Room to grow.'];
+  let q = 0;
   for (const t of d.teams) {
     const last = t.cats.filter(k => k.pts <= 2).map(k => CAT_LABEL[k.c]);
     const first = t.cats.filter(k => k.pts >= 14).map(k => CAT_LABEL[k.c]);
-    if (last.length) out.push(`${t.who} is bottom-2 in ${last.join(' and ')}${first.length ? ` but top-2 in ${first.join(' and ')}. Specialist or punting? You decide.` : '. Bold strategy.'}`);
+    if (last.length) out.push(`${t.who} is bottom-2 in ${list(last)}${first.length ? ` but top-2 in ${list(first)}. Specialist or punting? You decide.` : `. ${quips[q++ % quips.length]}`}`);
   }
   return out;
 }
@@ -347,7 +360,7 @@ ${h2('Where the cheap points are')}${p('Roto points per category (15 = best). Th
 ${h2('Games this week')}${p(`Starters with a game each day (Mon ${fmtDate(d.week[0])} – Sun ${fmtDate(d.week[6])}), not counting anyone listed Out. "BN" = bench players with a game who won't count. Lineups lock for the whole week, so set them now.`)}${chartGames(d)}
 ${p('<b>Lineup check</b> (best legal 9 by projected value × games, same math for everyone):')}
 ${d.teams.map(t => p('• ' + esc(lineupAdvice(t)))).join('')}
-${h2('Last week, hot and cold')}${p(`${fmtDate(d.lastWeek[0])} – ${fmtDate(d.lastWeek[6])}. One square per game: red = beat his projection, blue = stunk. "Week" is the total vs. projection (8-category z-score, so +10 is a big week).`)}${chartHotCold(d)}
+${h2('Last week, hot and cold')}${p(`${fmtDate(d.lastWeek[0])} – ${fmtDate(d.lastWeek[6])}. Rows are each team's locked lineup that week (pickups only count from the next lock; BN = benched, so those games didn't count). One square per game: red = beat his projection, blue = stunk. "Week" is the total vs. projection (8-category z-score, so +10 is a big week).`)}${chartHotCold(d)}
 <p style="font-family:${FONT};font-size:11px;color:${C.muted};margin-top:28px">Generated by Draft Edge from Yahoo standings and lineups, Hashtag Basketball stats and the NBA schedule. Projections are draft-season estimates, so treat them as trash-talk grade.</p>
 </div></body></html>`;
 }
