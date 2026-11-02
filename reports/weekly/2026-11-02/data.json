@@ -1,0 +1,4555 @@
+{
+ "monday": "2026-11-02",
+ "standingsAsOf": "2026-11-02",
+ "prevStandingsAsOf": "2026-10-26",
+ "lastWeek": [
+  "2026-10-26",
+  "2026-10-27",
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30",
+  "2026-10-31",
+  "2026-11-01"
+ ],
+ "week": [
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-07",
+  "2026-11-08"
+ ],
+ "awards": {
+  "hot": {
+   "name": "Luka Dončić",
+   "who": "Alex",
+   "total": 34.94
+  },
+  "cold": {
+   "name": "Ryan Rollins",
+   "who": "Vince",
+   "total": -35.64
+  },
+  "bench": {
+   "who": "Vince",
+   "games": 6
+  },
+  "moves": [
+   {
+    "who": "Alex",
+    "rankNow": 3,
+    "rankPrev": 3,
+    "delta": 0
+   },
+   {
+    "who": "Finn",
+    "rankNow": 2,
+    "rankPrev": 6,
+    "delta": 4
+   },
+   {
+    "who": "Vince",
+    "rankNow": 8,
+    "rankPrev": 2,
+    "delta": -6
+   },
+   {
+    "who": "fishy",
+    "rankNow": 15,
+    "rankPrev": 15,
+    "delta": 0
+   }
+  ]
+ },
+ "teams": [
+  {
+   "who": "Alex",
+   "team": "Shut Up and Jam Gaiden",
+   "rank": 3,
+   "rotoTotal": 77.5,
+   "cats": [
+    {
+     "c": "fgPct",
+     "pts": 4,
+     "prevPts": 6,
+     "value": 0.451,
+     "up": 0.0040000000000000036,
+     "down": 0.0020000000000000018
+    },
+    {
+     "c": "ftPct",
+     "pts": 15,
+     "prevPts": 7.5,
+     "value": 0.841,
+     "up": null,
+     "down": 0.0020000000000000018
+    },
+    {
+     "c": "tpm",
+     "pts": 13,
+     "prevPts": 13,
+     "value": 99,
+     "up": 2,
+     "down": 3
+    },
+    {
+     "c": "pts",
+     "pts": 13,
+     "prevPts": 14,
+     "value": 950,
+     "up": 39,
+     "down": 67
+    },
+    {
+     "c": "treb",
+     "pts": 5,
+     "prevPts": 9,
+     "value": 289,
+     "up": 2,
+     "down": 5
+    },
+    {
+     "c": "ast",
+     "pts": 15,
+     "prevPts": 15,
+     "value": 256,
+     "up": null,
+     "down": 33
+    },
+    {
+     "c": "stl",
+     "pts": 10.5,
+     "prevPts": 10,
+     "value": 61,
+     "up": 2,
+     "down": 2
+    },
+    {
+     "c": "blk",
+     "pts": 2,
+     "prevPts": 9.5,
+     "value": 27,
+     "up": 1,
+     "down": 1
+    }
+   ],
+   "startGames": 33,
+   "benchGames": 7,
+   "perDay": [
+    {
+     "start": 9,
+     "bench": 2
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 8,
+     "bench": 2
+    },
+    {
+     "start": 4,
+     "bench": 0
+    },
+    {
+     "start": 2,
+     "bench": 2
+    },
+    {
+     "start": 5,
+     "bench": 1
+    },
+    {
+     "start": 5,
+     "bench": 0
+    }
+   ],
+   "lineup": [
+    {
+     "slot": "PG",
+     "name": "Luka Dončić",
+     "nbaTeam": "LAL",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SG",
+     "name": "Ajay Mitchell",
+     "nbaTeam": "OKC",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SF",
+     "name": "Franz Wagner",
+     "nbaTeam": "ORL",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "PF",
+     "name": "Bam Adebayo",
+     "nbaTeam": "MIA",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "C",
+     "name": "Paul Reed",
+     "nbaTeam": "DET",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Day'Ron Sharpe",
+     "nbaTeam": "BKN",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Darius Garland",
+     "nbaTeam": "LAC",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Khaman Maluach",
+     "nbaTeam": "PHX",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Miles Bridges",
+     "nbaTeam": "PHX",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "BN",
+     "name": "Immanuel Quickley",
+     "nbaTeam": "TOR",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Robert Williams III",
+     "nbaTeam": "POR",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "IL",
+     "name": "Chet Holmgren",
+     "nbaTeam": "OKC",
+     "status": "O",
+     "games": 4
+    },
+    {
+     "slot": "IL",
+     "name": "Jalen Suggs",
+     "nbaTeam": "ORL",
+     "status": "O",
+     "games": 3
+    }
+   ],
+   "lastWeek": [
+    {
+     "name": "Luka Dončić",
+     "weekTotal": 34.94,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 12,
+        "fga": 22,
+        "ftm": 11,
+        "fta": 13,
+        "tpm": 6,
+        "pts": 41,
+        "treb": 5,
+        "ast": 9,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": 3.02
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 12,
+        "fga": 27,
+        "ftm": 7,
+        "fta": 8,
+        "tpm": 6,
+        "pts": 37,
+        "treb": 7,
+        "ast": 5,
+        "stl": 1,
+        "blk": 2
+       },
+       "vsProj": 2.17
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 12,
+        "fga": 23,
+        "ftm": 13,
+        "fta": 13,
+        "tpm": 8,
+        "pts": 45,
+        "treb": 15,
+        "ast": 6,
+        "stl": 5,
+        "blk": 1
+       },
+       "vsProj": 29.74
+      }
+     ]
+    },
+    {
+     "name": "Paul Reed",
+     "weekTotal": 18.89,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 12,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 1,
+        "pts": 22,
+        "treb": 9,
+        "ast": 3,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 11.49
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 7,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 2,
+        "pts": 16,
+        "treb": 4,
+        "ast": 0,
+        "stl": 3,
+        "blk": 1
+       },
+       "vsProj": 11.5
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 12,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 12,
+        "treb": 4,
+        "ast": 1,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -4.11
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Bam Adebayo",
+     "weekTotal": 16.1,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 10,
+        "ftm": 2,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 8,
+        "treb": 8,
+        "ast": 3,
+        "stl": 2,
+        "blk": 2
+       },
+       "vsProj": -5.5
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 16,
+        "ftm": 8,
+        "fta": 9,
+        "tpm": 0,
+        "pts": 24,
+        "treb": 9,
+        "ast": 3,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 6.98
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 14,
+        "ftm": 5,
+        "fta": 5,
+        "tpm": 0,
+        "pts": 27,
+        "treb": 9,
+        "ast": 3,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 14.62
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Ajay Mitchell",
+     "weekTotal": 10.29,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 16,
+        "ftm": 9,
+        "fta": 10,
+        "tpm": 1,
+        "pts": 30,
+        "treb": 2,
+        "ast": 5,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": 6.1
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 12,
+        "fga": 20,
+        "ftm": 3,
+        "fta": 3,
+        "tpm": 2,
+        "pts": 29,
+        "treb": 4,
+        "ast": 3,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 11.67
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 9,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 6,
+        "treb": 3,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -7.48
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Miles Bridges",
+     "weekTotal": 8.68,
+     "games": 2,
+     "benchedGames": 2,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 17,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 2,
+        "pts": 17,
+        "treb": 8,
+        "ast": 4,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -2.63
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 19,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 2,
+        "pts": 24,
+        "treb": 10,
+        "ast": 2,
+        "stl": 1,
+        "blk": 3
+       },
+       "vsProj": 11.31
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Robert Williams III",
+     "weekTotal": 4.67,
+     "games": 2,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 8,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 14,
+        "treb": 10,
+        "ast": 1,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 9.76
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 2,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 3,
+        "treb": 3,
+        "ast": 1,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -5.08
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Chet Holmgren",
+     "weekTotal": 0,
+     "games": 0,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "dnp": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Jalen Suggs",
+     "weekTotal": 0,
+     "games": 0,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "dnp": true
+      }
+     ]
+    },
+    {
+     "name": "Khaman Maluach",
+     "weekTotal": -4.81,
+     "games": 2,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 10,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 12,
+        "treb": 7,
+        "ast": 1,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": 0.51
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 6,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 0,
+        "pts": 9,
+        "treb": 6,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -5.31
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Immanuel Quickley",
+     "weekTotal": -5.54,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 15,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 4,
+        "pts": 16,
+        "treb": 3,
+        "ast": 7,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": 1.4
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 14,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 4,
+        "pts": 17,
+        "treb": 6,
+        "ast": 8,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -3.65
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 13,
+        "ftm": 3,
+        "fta": 3,
+        "tpm": 3,
+        "pts": 12,
+        "treb": 6,
+        "ast": 7,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -3.29
+      }
+     ]
+    },
+    {
+     "name": "Franz Wagner",
+     "weekTotal": -10.47,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 7,
+        "fta": 8,
+        "tpm": 0,
+        "pts": 15,
+        "treb": 4,
+        "ast": 5,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -2.6
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 18,
+        "ftm": 8,
+        "fta": 9,
+        "tpm": 2,
+        "pts": 26,
+        "treb": 5,
+        "ast": 11,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 3.74
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 20,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 1,
+        "pts": 14,
+        "treb": 6,
+        "ast": 12,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -11.61
+      }
+     ]
+    },
+    {
+     "name": "Day'Ron Sharpe",
+     "weekTotal": -12.5,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 4,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 6,
+        "ast": 0,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -5.8
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 4,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 3,
+        "treb": 7,
+        "ast": 1,
+        "stl": 1,
+        "blk": 2
+       },
+       "vsProj": -6.54
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 7,
+        "ftm": 4,
+        "fta": 5,
+        "tpm": 1,
+        "pts": 15,
+        "treb": 13,
+        "ast": 4,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -0.16
+      }
+     ]
+    },
+    {
+     "name": "Darius Garland",
+     "weekTotal": -13.01,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 12,
+        "ftm": 5,
+        "fta": 5,
+        "tpm": 1,
+        "pts": 14,
+        "treb": 1,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -6.2
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 22,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 4,
+        "pts": 24,
+        "treb": 2,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -2.08
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 12,
+        "ftm": 6,
+        "fta": 6,
+        "tpm": 1,
+        "pts": 15,
+        "treb": 0,
+        "ast": 7,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -4.73
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "who": "Finn",
+   "team": "Finn will turn Bert into bacon",
+   "rank": 2,
+   "rotoTotal": 89,
+   "cats": [
+    {
+     "c": "fgPct",
+     "pts": 6.5,
+     "prevPts": 2,
+     "value": 0.456,
+     "up": 0.008000000000000007,
+     "down": 0.0010000000000000009
+    },
+    {
+     "c": "ftPct",
+     "pts": 10,
+     "prevPts": 10,
+     "value": 0.803,
+     "up": 0.0010000000000000009,
+     "down": 0.0020000000000000018
+    },
+    {
+     "c": "tpm",
+     "pts": 9.5,
+     "prevPts": 10.5,
+     "value": 88,
+     "up": 4,
+     "down": 1
+    },
+    {
+     "c": "pts",
+     "pts": 10,
+     "prevPts": 5,
+     "value": 857,
+     "up": 11,
+     "down": 49
+    },
+    {
+     "c": "treb",
+     "pts": 11,
+     "prevPts": 8,
+     "value": 315,
+     "up": 3,
+     "down": 2
+    },
+    {
+     "c": "ast",
+     "pts": 13,
+     "prevPts": 10,
+     "value": 213,
+     "up": 10,
+     "down": 2
+    },
+    {
+     "c": "stl",
+     "pts": 15,
+     "prevPts": 6.5,
+     "value": 76,
+     "up": null,
+     "down": 10
+    },
+    {
+     "c": "blk",
+     "pts": 14,
+     "prevPts": 12,
+     "value": 44,
+     "up": 1,
+     "down": 1
+    }
+   ],
+   "startGames": 32,
+   "benchGames": 6,
+   "perDay": [
+    {
+     "start": 9,
+     "bench": 2
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 9,
+     "bench": 2
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 6,
+     "bench": 0
+    },
+    {
+     "start": 5,
+     "bench": 1
+    },
+    {
+     "start": 3,
+     "bench": 1
+    }
+   ],
+   "lineup": [
+    {
+     "slot": "PG",
+     "name": "Trae Young",
+     "nbaTeam": "WAS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SG",
+     "name": "Amen Thompson",
+     "nbaTeam": "HOU",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "SF",
+     "name": "Josh Hart",
+     "nbaTeam": "NYK",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "PF",
+     "name": "Sandro Mamukelashvili",
+     "nbaTeam": "LAL",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "C",
+     "name": "Victor Wembanyama",
+     "nbaTeam": "SAS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Brandon Miller",
+     "nbaTeam": "CHA",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Christian Braun",
+     "nbaTeam": "DEN",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "VJ Edgecombe",
+     "nbaTeam": "PHI",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Saddiq Bey",
+     "nbaTeam": "NOP",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "BN",
+     "name": "Tre Jones",
+     "nbaTeam": "CHI",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Reed Sheppard",
+     "nbaTeam": "HOU",
+     "status": "Q",
+     "games": 3
+    },
+    {
+     "slot": "IL",
+     "name": "Draymond Green",
+     "nbaTeam": "GSW",
+     "status": "O",
+     "games": 3
+    },
+    {
+     "slot": "IL",
+     "name": "Santi Aldama",
+     "nbaTeam": "DAL",
+     "status": "O",
+     "games": 4
+    },
+    {
+     "slot": "IL",
+     "name": "Jusuf Nurkić",
+     "nbaTeam": "UTA",
+     "status": "O",
+     "games": 4
+    }
+   ],
+   "lastWeek": [
+    {
+     "name": "Christian Braun",
+     "weekTotal": 28.6,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 9,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 4,
+        "ast": 2,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 2.28
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 13,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 3,
+        "pts": 15,
+        "treb": 0,
+        "ast": 4,
+        "stl": 3,
+        "blk": 1
+       },
+       "vsProj": 7.1
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 16,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 7,
+        "pts": 31,
+        "treb": 3,
+        "ast": 1,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 19.22
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Victor Wembanyama",
+     "weekTotal": 25.86,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 14,
+        "fga": 21,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 0,
+        "pts": 29,
+        "treb": 10,
+        "ast": 2,
+        "stl": 2,
+        "blk": 5
+       },
+       "vsProj": 8.81
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 14,
+        "fga": 25,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 4,
+        "pts": 36,
+        "treb": 14,
+        "ast": 5,
+        "stl": 3,
+        "blk": 2
+       },
+       "vsProj": 13.36
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 17,
+        "fga": 34,
+        "ftm": 6,
+        "fta": 9,
+        "tpm": 3,
+        "pts": 43,
+        "treb": 7,
+        "ast": 4,
+        "stl": 1,
+        "blk": 6
+       },
+       "vsProj": 3.69
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Brandon Miller",
+     "weekTotal": 20.73,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 15,
+        "fga": 28,
+        "ftm": 4,
+        "fta": 5,
+        "tpm": 5,
+        "pts": 39,
+        "treb": 6,
+        "ast": 1,
+        "stl": 3,
+        "blk": 2
+       },
+       "vsProj": 16.4
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 12,
+        "fga": 26,
+        "ftm": 4,
+        "fta": 5,
+        "tpm": 3,
+        "pts": 31,
+        "treb": 12,
+        "ast": 3,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": 5.72
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 24,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 3,
+        "pts": 19,
+        "treb": 7,
+        "ast": 2,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -5.58
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 20,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 5,
+        "pts": 24,
+        "treb": 5,
+        "ast": 5,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 4.18
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Saddiq Bey",
+     "weekTotal": 9.19,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 10,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 0,
+        "ast": 3,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -2.87
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 6,
+        "ftm": 3,
+        "fta": 3,
+        "tpm": 1,
+        "pts": 10,
+        "treb": 4,
+        "ast": 3,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -3.36
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 13,
+        "ftm": 6,
+        "fta": 7,
+        "tpm": 1,
+        "pts": 25,
+        "treb": 6,
+        "ast": 1,
+        "stl": 4,
+        "blk": 0
+       },
+       "vsProj": 15.42
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Jusuf Nurkić",
+     "weekTotal": 0,
+     "games": 0,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "dnp": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Santi Aldama",
+     "weekTotal": 0,
+     "games": 0,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Trae Young",
+     "weekTotal": -4.87,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 20,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 1,
+        "pts": 22,
+        "treb": 6,
+        "ast": 10,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -4.28
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 12,
+        "ftm": 7,
+        "fta": 7,
+        "tpm": 1,
+        "pts": 14,
+        "treb": 5,
+        "ast": 8,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -8.41
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 9,
+        "ftm": 12,
+        "fta": 14,
+        "tpm": 1,
+        "pts": 21,
+        "treb": 7,
+        "ast": 9,
+        "stl": 3,
+        "blk": 1
+       },
+       "vsProj": 7.82
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Sandro Mamukelashvili",
+     "weekTotal": -5.59,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 9,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 3,
+        "pts": 17,
+        "treb": 4,
+        "ast": 2,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": 2.72
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 15,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 0,
+        "pts": 13,
+        "treb": 8,
+        "ast": 3,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 1.75
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 6,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 7,
+        "ast": 0,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -5.15
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 6,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 2,
+        "pts": 11,
+        "treb": 1,
+        "ast": 1,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -4.91
+      }
+     ]
+    },
+    {
+     "name": "Draymond Green",
+     "weekTotal": -5.7,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 2,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 3,
+        "treb": 4,
+        "ast": 7,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -6
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 3,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 3,
+        "treb": 9,
+        "ast": 6,
+        "stl": 0,
+        "blk": 2
+       },
+       "vsProj": -4.04
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 3,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 2,
+        "treb": 4,
+        "ast": 9,
+        "stl": 3,
+        "blk": 1
+       },
+       "vsProj": 4.34
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "dnp": true
+      }
+     ]
+    },
+    {
+     "name": "Reed Sheppard",
+     "weekTotal": -7.49,
+     "games": 2,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 12,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 2,
+        "pts": 13,
+        "treb": 0,
+        "ast": 4,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -0.78
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 9,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 1,
+        "pts": 7,
+        "treb": 3,
+        "ast": 4,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -6.71
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-31",
+       "dnp": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Josh Hart",
+     "weekTotal": -8.74,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 2,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 2,
+        "pts": 6,
+        "treb": 4,
+        "ast": 4,
+        "stl": 5,
+        "blk": 0
+       },
+       "vsProj": 10.16
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 6,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 2,
+        "treb": 8,
+        "ast": 3,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": -9.76
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 9,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 2,
+        "pts": 7,
+        "treb": 6,
+        "ast": 3,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -9.13
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Tre Jones",
+     "weekTotal": -10.31,
+     "games": 3,
+     "benchedGames": 3,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 2,
+        "ftm": 6,
+        "fta": 8,
+        "tpm": 0,
+        "pts": 8,
+        "treb": 1,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -11.24
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 2,
+        "fta": 3,
+        "tpm": 1,
+        "pts": 11,
+        "treb": 4,
+        "ast": 3,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -3.62
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 10,
+        "ftm": 4,
+        "fta": 6,
+        "tpm": 0,
+        "pts": 12,
+        "treb": 4,
+        "ast": 4,
+        "stl": 4,
+        "blk": 1
+       },
+       "vsProj": 4.55
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "VJ Edgecombe",
+     "weekTotal": -14.22,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 10,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 1,
+        "pts": 8,
+        "treb": 7,
+        "ast": 2,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -6.6
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 10,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 13,
+        "treb": 8,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -4.07
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 13,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 2,
+        "pts": 10,
+        "treb": 8,
+        "ast": 3,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -3.55
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Amen Thompson",
+     "weekTotal": -25.31,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 8,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 15,
+        "treb": 5,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -7.72
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 16,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 23,
+        "treb": 4,
+        "ast": 3,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -2.76
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 15,
+        "ftm": 1,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 15,
+        "treb": 3,
+        "ast": 6,
+        "stl": 4,
+        "blk": 0
+       },
+       "vsProj": -4.51
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 8,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 8,
+        "treb": 3,
+        "ast": 1,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -10.32
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "who": "Vince",
+   "team": "vincemvpcarter",
+   "rank": 8,
+   "rotoTotal": 67,
+   "cats": [
+    {
+     "c": "fgPct",
+     "pts": 9,
+     "prevPts": 11,
+     "value": 0.472,
+     "up": 0.0030000000000000027,
+     "down": 0.007999999999999952
+    },
+    {
+     "c": "ftPct",
+     "pts": 4,
+     "prevPts": 5,
+     "value": 0.767,
+     "up": 0.009000000000000008,
+     "down": 0.0050000000000000044
+    },
+    {
+     "c": "tpm",
+     "pts": 2,
+     "prevPts": 6,
+     "value": 63,
+     "up": 2,
+     "down": 9
+    },
+    {
+     "c": "pts",
+     "pts": 12,
+     "prevPts": 13,
+     "value": 883,
+     "up": 67,
+     "down": 15
+    },
+    {
+     "c": "treb",
+     "pts": 10,
+     "prevPts": 13,
+     "value": 313,
+     "up": 2,
+     "down": 1
+    },
+    {
+     "c": "ast",
+     "pts": 6,
+     "prevPts": 9,
+     "value": 179,
+     "up": 11,
+     "down": 4
+    },
+    {
+     "c": "stl",
+     "pts": 12,
+     "prevPts": 13.5,
+     "value": 63,
+     "up": 1,
+     "down": 2
+    },
+    {
+     "c": "blk",
+     "pts": 12,
+     "prevPts": 14,
+     "value": 41,
+     "up": 2,
+     "down": 2
+    }
+   ],
+   "startGames": 36,
+   "benchGames": 10,
+   "perDay": [
+    {
+     "start": 9,
+     "bench": 3
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 9,
+     "bench": 2
+    },
+    {
+     "start": 0,
+     "bench": 1
+    },
+    {
+     "start": 9,
+     "bench": 2
+    },
+    {
+     "start": 3,
+     "bench": 1
+    },
+    {
+     "start": 6,
+     "bench": 1
+    }
+   ],
+   "lineup": [
+    {
+     "slot": "PG",
+     "name": "Dejounte Murray",
+     "nbaTeam": "NOP",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SG",
+     "name": "Keyonte George",
+     "nbaTeam": "UTA",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SF",
+     "name": "Lauri Markkanen",
+     "nbaTeam": "UTA",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "PF",
+     "name": "Anthony Davis",
+     "nbaTeam": "WAS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "C",
+     "name": "Walker Kessler",
+     "nbaTeam": "LAL",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Dylan Harper",
+     "nbaTeam": "SAS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Zion Williamson",
+     "nbaTeam": "NOP",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Damian Lillard",
+     "nbaTeam": "POR",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Ryan Rollins",
+     "nbaTeam": "MIL",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "BN",
+     "name": "Collin Murray-Boyles",
+     "nbaTeam": "TOR",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Tristan da Silva",
+     "nbaTeam": "ORL",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Terrence Shannon Jr.",
+     "nbaTeam": "MIN",
+     "status": null,
+     "games": 4
+    }
+   ],
+   "lastWeek": [
+    {
+     "name": "Zion Williamson",
+     "weekTotal": 22.83,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 14,
+        "ftm": 4,
+        "fta": 6,
+        "tpm": 1,
+        "pts": 25,
+        "treb": 5,
+        "ast": 2,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 7.48
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 12,
+        "ftm": 2,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 22,
+        "treb": 6,
+        "ast": 2,
+        "stl": 5,
+        "blk": 1
+       },
+       "vsProj": 14.76
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 8,
+        "ftm": 5,
+        "fta": 8,
+        "tpm": 0,
+        "pts": 15,
+        "treb": 6,
+        "ast": 4,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": 0.59
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Terrence Shannon Jr.",
+     "weekTotal": 6.69,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 3,
+        "fta": 3,
+        "tpm": 3,
+        "pts": 14,
+        "treb": 4,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 7.84
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 13,
+        "ftm": 8,
+        "fta": 10,
+        "tpm": 1,
+        "pts": 19,
+        "treb": 6,
+        "ast": 2,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 4.2
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 6,
+        "ftm": 3,
+        "fta": 4,
+        "tpm": 2,
+        "pts": 11,
+        "treb": 3,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": 0.87
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 8,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 2,
+        "treb": 3,
+        "ast": 4,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -6.22
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Anthony Davis",
+     "weekTotal": 5.84,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 22,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 3,
+        "pts": 29,
+        "treb": 10,
+        "ast": 0,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 3.66
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 18,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 2,
+        "pts": 18,
+        "treb": 5,
+        "ast": 3,
+        "stl": 1,
+        "blk": 2
+       },
+       "vsProj": -0.36
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 18,
+        "ftm": 9,
+        "fta": 10,
+        "tpm": 0,
+        "pts": 25,
+        "treb": 13,
+        "ast": 1,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": 2.54
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Dylan Harper",
+     "weekTotal": 5.22,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 7,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 0,
+        "pts": 13,
+        "treb": 6,
+        "ast": 6,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": 5.51
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 17,
+        "ftm": 3,
+        "fta": 3,
+        "tpm": 2,
+        "pts": 13,
+        "treb": 5,
+        "ast": 8,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -4.67
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 17,
+        "ftm": 5,
+        "fta": 6,
+        "tpm": 2,
+        "pts": 25,
+        "treb": 7,
+        "ast": 6,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 4.38
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Tristan da Silva",
+     "weekTotal": 4.59,
+     "games": 3,
+     "benchedGames": 3,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 8,
+        "fga": 10,
+        "ftm": 0,
+        "fta": 3,
+        "tpm": 4,
+        "pts": 20,
+        "treb": 3,
+        "ast": 1,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -2.03
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 5,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 2,
+        "pts": 8,
+        "treb": 0,
+        "ast": 0,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": -2.66
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 14,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 5,
+        "pts": 23,
+        "treb": 10,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": 9.28
+      }
+     ]
+    },
+    {
+     "name": "Walker Kessler",
+     "weekTotal": 4.3,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 9,
+        "ftm": 1,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 13,
+        "treb": 8,
+        "ast": 0,
+        "stl": 1,
+        "blk": 2
+       },
+       "vsProj": -6.98
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 7,
+        "ftm": 3,
+        "fta": 5,
+        "tpm": 0,
+        "pts": 11,
+        "treb": 9,
+        "ast": 1,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": -3.19
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 7,
+        "ftm": 2,
+        "fta": 3,
+        "tpm": 0,
+        "pts": 10,
+        "treb": 13,
+        "ast": 2,
+        "stl": 0,
+        "blk": 5
+       },
+       "vsProj": 2.81
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 6,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 16,
+        "treb": 15,
+        "ast": 1,
+        "stl": 1,
+        "blk": 4
+       },
+       "vsProj": 11.65
+      }
+     ]
+    },
+    {
+     "name": "Dejounte Murray",
+     "weekTotal": -6.45,
+     "games": 1,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 10,
+        "treb": 8,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -6.45
+      },
+      {
+       "date": "2026-10-29",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "dnp": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Keyonte George",
+     "weekTotal": -9.03,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 17,
+        "ftm": 8,
+        "fta": 9,
+        "tpm": 0,
+        "pts": 26,
+        "treb": 3,
+        "ast": 6,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -0.69
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 27,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 5,
+        "pts": 31,
+        "treb": 4,
+        "ast": 3,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -0.24
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 10,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 8,
+        "treb": 3,
+        "ast": 4,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -8.1
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Collin Murray-Boyles",
+     "weekTotal": -10.07,
+     "games": 3,
+     "benchedGames": 3,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 5,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 2,
+        "pts": 10,
+        "treb": 2,
+        "ast": 1,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -4.95
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 10,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 15,
+        "treb": 5,
+        "ast": 1,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -2.53
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 6,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 3,
+        "ast": 1,
+        "stl": 3,
+        "blk": 0
+       },
+       "vsProj": -2.59
+      }
+     ]
+    },
+    {
+     "name": "Lauri Markkanen",
+     "weekTotal": -18.75,
+     "games": 2,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 0,
+        "fga": 2,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 2,
+        "treb": 0,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -15.6
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 14,
+        "ftm": 5,
+        "fta": 6,
+        "tpm": 2,
+        "pts": 13,
+        "treb": 6,
+        "ast": 1,
+        "stl": 2,
+        "blk": 2
+       },
+       "vsProj": -3.14
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Damian Lillard",
+     "weekTotal": -24.67,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 12,
+        "ftm": 7,
+        "fta": 11,
+        "tpm": 4,
+        "pts": 21,
+        "treb": 5,
+        "ast": 4,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -9.16
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 13,
+        "ftm": 2,
+        "fta": 4,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 2,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -19.17
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 17,
+        "ftm": 7,
+        "fta": 8,
+        "tpm": 3,
+        "pts": 22,
+        "treb": 5,
+        "ast": 4,
+        "stl": 2,
+        "blk": 1
+       },
+       "vsProj": 3.66
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Ryan Rollins",
+     "weekTotal": -35.64,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 14,
+        "ftm": 2,
+        "fta": 4,
+        "tpm": 3,
+        "pts": 19,
+        "treb": 2,
+        "ast": 4,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -9.62
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 14,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 4,
+        "ast": 5,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -15.6
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 3,
+        "ast": 7,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -10.42
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "who": "fishy",
+   "team": "Fishy Achilles",
+   "rank": 15,
+   "rotoTotal": 36.5,
+   "cats": [
+    {
+     "c": "fgPct",
+     "pts": 3,
+     "prevPts": 1,
+     "value": 0.449,
+     "up": 0.0020000000000000018,
+     "down": 0.0010000000000000009
+    },
+    {
+     "c": "ftPct",
+     "pts": 6,
+     "prevPts": 6,
+     "value": 0.78,
+     "up": 0.009000000000000008,
+     "down": 0.0040000000000000036
+    },
+    {
+     "c": "tpm",
+     "pts": 6,
+     "prevPts": 6,
+     "value": 73,
+     "up": 4,
+     "down": 1
+    },
+    {
+     "c": "pts",
+     "pts": 3,
+     "prevPts": 1,
+     "value": 736,
+     "up": 29,
+     "down": 2
+    },
+    {
+     "c": "treb",
+     "pts": 2,
+     "prevPts": 3,
+     "value": 260,
+     "up": 18,
+     "down": 31
+    },
+    {
+     "c": "ast",
+     "pts": 2,
+     "prevPts": 2,
+     "value": 154,
+     "up": 11,
+     "down": 5
+    },
+    {
+     "c": "stl",
+     "pts": 5.5,
+     "prevPts": 4,
+     "value": 55,
+     "up": 2,
+     "down": 4
+    },
+    {
+     "c": "blk",
+     "pts": 9,
+     "prevPts": 9.5,
+     "value": 33,
+     "up": 4,
+     "down": 1
+    }
+   ],
+   "startGames": 32,
+   "benchGames": 9,
+   "perDay": [
+    {
+     "start": 9,
+     "bench": 3
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 9,
+     "bench": 3
+    },
+    {
+     "start": 0,
+     "bench": 0
+    },
+    {
+     "start": 8,
+     "bench": 0
+    },
+    {
+     "start": 1,
+     "bench": 1
+    },
+    {
+     "start": 5,
+     "bench": 2
+    }
+   ],
+   "lineup": [
+    {
+     "slot": "PG",
+     "name": "James Harden",
+     "nbaTeam": "CLE",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SG",
+     "name": "Derrick White",
+     "nbaTeam": "BOS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "SF",
+     "name": "Trey Murphy III",
+     "nbaTeam": "NOP",
+     "status": "P",
+     "games": 4
+    },
+    {
+     "slot": "PF",
+     "name": "Scottie Barnes",
+     "nbaTeam": "TOR",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "C",
+     "name": "Zach Edey",
+     "nbaTeam": "MEM",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Neemias Queta",
+     "nbaTeam": "BOS",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "Util",
+     "name": "Norman Powell",
+     "nbaTeam": "CHI",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Ja'Kobe Walter",
+     "nbaTeam": "TOR",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "Util",
+     "name": "Jeremiah Fears",
+     "nbaTeam": "NOP",
+     "status": null,
+     "games": 4
+    },
+    {
+     "slot": "BN",
+     "name": "Obi Toppin",
+     "nbaTeam": "IND",
+     "status": "Q",
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Leonard Miller",
+     "nbaTeam": "CHI",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "BN",
+     "name": "Rui Hachimura",
+     "nbaTeam": "LAC",
+     "status": null,
+     "games": 3
+    },
+    {
+     "slot": "IL",
+     "name": "Nic Claxton",
+     "nbaTeam": "CHI",
+     "status": "O",
+     "games": 3
+    }
+   ],
+   "lastWeek": [
+    {
+     "name": "Jeremiah Fears",
+     "weekTotal": 22.71,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 14,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 11,
+        "treb": 4,
+        "ast": 3,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -3.53
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 16,
+        "ftm": 1,
+        "fta": 3,
+        "tpm": 3,
+        "pts": 22,
+        "treb": 8,
+        "ast": 13,
+        "stl": 2,
+        "blk": 4
+       },
+       "vsProj": 19.37
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 9,
+        "fga": 12,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 1,
+        "pts": 20,
+        "treb": 5,
+        "ast": 7,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 6.88
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Scottie Barnes",
+     "weekTotal": 7.82,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 17,
+        "ftm": 6,
+        "fta": 6,
+        "tpm": 0,
+        "pts": 28,
+        "treb": 6,
+        "ast": 4,
+        "stl": 3,
+        "blk": 2
+       },
+       "vsProj": 13.56
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 19,
+        "fga": 34,
+        "ftm": 2,
+        "fta": 3,
+        "tpm": 1,
+        "pts": 41,
+        "treb": 5,
+        "ast": 5,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": 4.41
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 11,
+        "fga": 20,
+        "ftm": 7,
+        "fta": 13,
+        "tpm": 0,
+        "pts": 29,
+        "treb": 6,
+        "ast": 5,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -10.15
+      }
+     ]
+    },
+    {
+     "name": "Ja'Kobe Walter",
+     "weekTotal": 7.7,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 9,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 3,
+        "pts": 14,
+        "treb": 5,
+        "ast": 2,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 4.8
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 5,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 3,
+        "pts": 9,
+        "treb": 3,
+        "ast": 1,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 1.7
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 12,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 3,
+        "pts": 11,
+        "treb": 4,
+        "ast": 2,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": 1.2
+      }
+     ]
+    },
+    {
+     "name": "Norman Powell",
+     "weekTotal": 4.59,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 11,
+        "ftm": 6,
+        "fta": 7,
+        "tpm": 4,
+        "pts": 20,
+        "treb": 1,
+        "ast": 2,
+        "stl": 4,
+        "blk": 0
+       },
+       "vsProj": 9.34
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 15,
+        "ftm": 6,
+        "fta": 9,
+        "tpm": 4,
+        "pts": 30,
+        "treb": 2,
+        "ast": 2,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": 2.27
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 7,
+        "fta": 8,
+        "tpm": 1,
+        "pts": 16,
+        "treb": 2,
+        "ast": 3,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -7.02
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Rui Hachimura",
+     "weekTotal": 2.96,
+     "games": 2,
+     "benchedGames": 2,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 11,
+        "ftm": 2,
+        "fta": 3,
+        "tpm": 2,
+        "pts": 12,
+        "treb": 5,
+        "ast": 0,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -1.62
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 10,
+        "fga": 16,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 4,
+        "pts": 24,
+        "treb": 7,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": 4.58
+      }
+     ]
+    },
+    {
+     "name": "Nic Claxton",
+     "weekTotal": 0,
+     "games": 0,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Derrick White",
+     "weekTotal": -9.02,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 4,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 5,
+        "treb": 6,
+        "ast": 4,
+        "stl": 3,
+        "blk": 1
+       },
+       "vsProj": 1.98
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 15,
+        "ftm": 5,
+        "fta": 5,
+        "tpm": 1,
+        "pts": 16,
+        "treb": 5,
+        "ast": 7,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -6.57
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 6,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 2,
+        "ast": 4,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -2.4
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 2,
+        "pts": 12,
+        "treb": 2,
+        "ast": 2,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -2.03
+      }
+     ]
+    },
+    {
+     "name": "Leonard Miller",
+     "weekTotal": -10.28,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 7,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 9,
+        "treb": 9,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -1.02
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 1,
+        "fta": 1,
+        "tpm": 1,
+        "pts": 10,
+        "treb": 0,
+        "ast": 1,
+        "stl": 0,
+        "blk": 2
+       },
+       "vsProj": -0.07
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 1,
+        "fga": 5,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 2,
+        "treb": 2,
+        "ast": 1,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -9.18
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Obi Toppin",
+     "weekTotal": -11.71,
+     "games": 2,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 13,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 2,
+        "pts": 14,
+        "treb": 6,
+        "ast": 2,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": -0.19
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 4,
+        "fta": 8,
+        "tpm": 1,
+        "pts": 13,
+        "treb": 6,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -11.52
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "dnp": true
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "dnp": true
+      }
+     ]
+    },
+    {
+     "name": "James Harden",
+     "weekTotal": -13.55,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 17,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 3,
+        "pts": 19,
+        "treb": 5,
+        "ast": 9,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": 1.66
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 5,
+        "fga": 18,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 2,
+        "pts": 16,
+        "treb": 2,
+        "ast": 6,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -8.6
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 7,
+        "fga": 14,
+        "ftm": 7,
+        "fta": 9,
+        "tpm": 3,
+        "pts": 24,
+        "treb": 5,
+        "ast": 4,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -5.6
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 8,
+        "ftm": 2,
+        "fta": 2,
+        "tpm": 3,
+        "pts": 13,
+        "treb": 6,
+        "ast": 7,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -1.01
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Trey Murphy III",
+     "weekTotal": -18.61,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 7,
+        "ftm": 0,
+        "fta": 1,
+        "tpm": 2,
+        "pts": 6,
+        "treb": 1,
+        "ast": 3,
+        "stl": 2,
+        "blk": 0
+       },
+       "vsProj": -10.1
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 12,
+        "ftm": 5,
+        "fta": 8,
+        "tpm": 2,
+        "pts": 19,
+        "treb": 5,
+        "ast": 3,
+        "stl": 1,
+        "blk": 0
+       },
+       "vsProj": -8.25
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 10,
+        "ftm": 6,
+        "fta": 6,
+        "tpm": 1,
+        "pts": 15,
+        "treb": 5,
+        "ast": 5,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -0.27
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    },
+    {
+     "name": "Neemias Queta",
+     "weekTotal": -21.24,
+     "games": 4,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 5,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 7,
+        "treb": 5,
+        "ast": 1,
+        "stl": 0,
+        "blk": 2
+       },
+       "vsProj": -5.28
+      },
+      {
+       "date": "2026-10-27",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 3,
+        "ftm": 1,
+        "fta": 2,
+        "tpm": 0,
+        "pts": 7,
+        "treb": 3,
+        "ast": 2,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -8.16
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-30",
+       "line": {
+        "games": 1,
+        "fgm": 3,
+        "fga": 5,
+        "ftm": 7,
+        "fta": 10,
+        "tpm": 0,
+        "pts": 13,
+        "treb": 6,
+        "ast": 0,
+        "stl": 1,
+        "blk": 1
+       },
+       "vsProj": -4.36
+      },
+      {
+       "date": "2026-10-31",
+       "noGame": true
+      },
+      {
+       "date": "2026-11-01",
+       "line": {
+        "games": 1,
+        "fgm": 4,
+        "fga": 9,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 8,
+        "treb": 8,
+        "ast": 1,
+        "stl": 0,
+        "blk": 2
+       },
+       "vsProj": -3.44
+      }
+     ]
+    },
+    {
+     "name": "Zach Edey",
+     "weekTotal": -23.62,
+     "games": 3,
+     "benchedGames": 0,
+     "days": [
+      {
+       "date": "2026-10-26",
+       "line": {
+        "games": 1,
+        "fgm": 0,
+        "fga": 2,
+        "ftm": 4,
+        "fta": 4,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 3,
+        "ast": 2,
+        "stl": 0,
+        "blk": 2
+       },
+       "vsProj": -7.25
+      },
+      {
+       "date": "2026-10-27",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-28",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-29",
+       "line": {
+        "games": 1,
+        "fgm": 6,
+        "fga": 8,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 1,
+        "pts": 13,
+        "treb": 7,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0
+       },
+       "vsProj": -5.53
+      },
+      {
+       "date": "2026-10-30",
+       "noGame": true
+      },
+      {
+       "date": "2026-10-31",
+       "line": {
+        "games": 1,
+        "fgm": 2,
+        "fga": 5,
+        "ftm": 0,
+        "fta": 0,
+        "tpm": 0,
+        "pts": 4,
+        "treb": 6,
+        "ast": 0,
+        "stl": 0,
+        "blk": 1
+       },
+       "vsProj": -10.85
+      },
+      {
+       "date": "2026-11-01",
+       "noGame": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

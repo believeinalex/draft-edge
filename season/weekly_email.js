@@ -7,16 +7,16 @@ const { buildScorer } = require('./morning_report.js');
 
 /**
  * Monday email for the four-team "league inside the league" (the user's team, Finn's,
- * Vince's and fishy's). Writes reports/weekly/<monday>/ with PNG charts, email.html (an
- * email-safe preview that references the PNGs), poster.png (the whole email as one image,
- * for pasting into Gmail) and email.txt (subject + plain-text body).
+ * Vince's and fishy's). Writes reports/weekly/<monday>/: email.html (the email as rich HTML;
+ * every chart is a colored table, so it pastes into Gmail as editable text), email.txt (subject +
+ * plain text), data.json (every number behind it, for fact-checking) and preview.png.
  *
  * Inputs: season/league.json, season/standings, season/lineups (this week's pre-lock paste),
  * stats/snapshots (last week's daily box scores), season/schedule/2026-27.txt.
  * Optional reports/weekly/<monday>/intro.md: hand-written trash talk placed at the top.
  *
  * Usage: node season/weekly_email.js [--date YYYY-MM-DD]   (npm run weekly)
- * Needs Playwright + Chromium to render the PNGs (pre-installed in the cloud container).
+ * preview.png needs Playwright + Chromium (pre-installed in the cloud container); --no-preview skips it.
  */
 
 const ROOT = path.join(__dirname, '..');
@@ -224,114 +224,60 @@ function build(monday) {
   return { league, monday, week, lastWeek, now, prev, history, teams, warnings };
 }
 
-// ---------- charts (SVG strings) ----------
+// ---------- charts (email-safe HTML tables: they paste into Gmail as editable rich text) ----------
 
-const svgWrap = (w, h, body) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" font-family="${FONT}"><rect width="${w}" height="${h}" fill="${C.surface}"/>${body}</svg>`;
-const text = (x, y, s, o = {}) => `<text x="${x}" y="${y}" font-size="${o.size || 12}" fill="${o.fill || C.ink2}" text-anchor="${o.anchor || 'start'}" font-weight="${o.weight || 400}"${o.baseline ? ` dominant-baseline="${o.baseline}"` : ''}>${esc(s)}</text>`;
 const inkOn = hex => { const n = parseInt(hex.slice(1), 16); const l = (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; return l > 0.6 ? C.ink : '#ffffff'; };
-
-function chartRotoRace(d) {
-  const W = 600, H = 360, L = 34, R = 128, T = 16, B = 30;
-  const hist = d.history;
-  const n = hist[0].teams.length;
-  const t0 = Date.parse(hist[0].date), t1 = Date.parse(hist[hist.length - 1].date);
-  const x = iso => L + (W - L - R) * ((Date.parse(iso) - t0) / Math.max(1, t1 - t0));
-  const y = r => T + (H - T - B) * ((r - 1) / (n - 1));
-  let s = '';
-  for (let r = 1; r <= n; r++) s += `<line x1="${L}" x2="${W - R}" y1="${y(r)}" y2="${y(r)}" stroke="${C.grid}" stroke-width="1"/>` + ([1, 5, 10, 15].includes(r) ? text(L - 8, y(r) + 4, r, { anchor: 'end', size: 11, fill: C.muted }) : '');
-  for (const h of hist) s += text(x(h.date), H - 10, fmtDate(h.date), { anchor: 'middle', size: 11, fill: C.muted });
-  const path = name => hist.map(h => { const t = h.teams.find(q => q.name === name); return t ? [x(h.date), y(t.realRank)] : null; }).filter(Boolean);
-  const groupNames = new Set(d.teams.map(t => t.team));
-  for (const t of hist[hist.length - 1].teams.filter(t => !groupNames.has(t.name))) {
-    s += `<polyline points="${path(t.name).map(p => p.join(',')).join(' ')}" fill="none" stroke="${C.other}" stroke-width="1.5" stroke-linejoin="round"/>`;
-  }
-  // Direct labels at the right edge; nudge apart so they never collide
-  const ends = d.teams.map(t => ({ t, p: path(t.team) })).map(o => ({ ...o, ly: o.p[o.p.length - 1][1] })).sort((a, b) => a.ly - b.ly);
-  for (let i = 1; i < ends.length; i++) if (ends[i].ly - ends[i - 1].ly < 15) ends[i].ly = ends[i - 1].ly + 15;
-  for (const { t, p, ly } of ends) {
-    s += `<polyline points="${p.map(q => q.join(',')).join(' ')}" fill="none" stroke="${t.color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
-    for (const q of p) s += `<circle cx="${q[0]}" cy="${q[1]}" r="4" fill="${t.color}" stroke="${C.surface}" stroke-width="2"/>`;
-    const last = p[p.length - 1];
-    s += text(last[0] + 10, ly + 4, `${t.st.realRank}. ${t.who}`, { size: 12, fill: C.ink, weight: 600 });
-  }
-  s += text(4, 10, 'Rank', { size: 10, fill: C.muted });
-  return svgWrap(W, H, s);
-}
+const TABLE = `cellpadding="0" cellspacing="2" border="0" style="border-collapse:separate;font-family:${FONT}"`;
+// A filled cell: bgcolor attribute + inline background so the color survives paste and old clients
+const cell = (fill, html, o = {}) => `<td align="center" bgcolor="${fill}" width="${o.w || ''}" style="background:${fill};color:${inkOn(fill)};text-align:center;padding:${o.pad || '6px 2px'};border-radius:4px;${o.w ? `width:${o.w}px;` : ''}font-size:${o.size || 14}px;line-height:1.2">${html}</td>`;
+const plain = (html, o = {}) => `<td align="${o.align || 'left'}" style="padding:${o.pad || '4px 6px'};font-size:${o.size || 13}px;color:${o.color || C.ink2};text-align:${o.align || 'left'};${o.bold ? 'font-weight:700;' : ''}white-space:nowrap">${html}</td>`;
+const chip = color => `<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${color};margin-right:6px"></span>`;
+const small = s => `<br><span style="font-size:10px">${s}</span>`;
 
 function chartCategories(d) {
-  const W = 600, L = 92, T = 30, cw = (W - L - 8) / CATS.length, ch = 50, H = T + ch * d.teams.length + 8;
   const fill = pts => C.blue[Math.min(6, Math.floor((pts - 1) / 15 * 7))];
-  let s = '';
-  CATS.forEach((c, j) => { s += text(L + cw * j + cw / 2, T - 10, CAT_LABEL[c], { anchor: 'middle', size: 11, fill: C.ink2, weight: 600 }); });
-  d.teams.forEach((t, i) => {
-    const y0 = T + ch * i;
-    s += `<rect x="4" y="${y0 + 14}" width="10" height="10" rx="2" fill="${t.color}"/>` + text(20, y0 + 23, t.who, { size: 13, fill: C.ink, weight: 600 });
-    s += text(20, y0 + 39, `${t.st.realRoto.total} pts`, { size: 11, fill: C.muted });
-    t.cats.forEach((k, j) => {
-      const x0 = L + cw * j, f = fill(k.pts), ink = inkOn(f);
-      s += `<rect x="${x0 + 1}" y="${y0 + 1}" width="${cw - 2}" height="${ch - 2}" rx="4" fill="${f}"/>`;
-      s += text(x0 + cw / 2, y0 + 22, Number.isInteger(k.pts) ? k.pts : k.pts.toFixed(1), { anchor: 'middle', size: 15, fill: ink, weight: 700 });
-      const sub = k.up === null ? 'top' : `+${fmtVal(k.c, k.up)} ↑`;
-      s += text(x0 + cw / 2, y0 + 39, sub, { anchor: 'middle', size: 10, fill: ink });
-    });
-  });
-  return svgWrap(W, H, s);
+  let h = `<table ${TABLE} width="100%"><tr>${plain('')}${CATS.map(c => plain(CAT_LABEL[c], { align: 'center', size: 11, bold: true })).join('')}</tr>`;
+  for (const t of d.teams) {
+    h += `<tr>${plain(`${chip(t.color)}<b style="color:${C.ink}">${esc(t.who)}</b>${small(`<span style="color:${C.muted}">${t.st.realRoto.total} pts</span>`)}`)}`;
+    h += t.cats.map(k => cell(fill(k.pts), `<b>${Number.isInteger(k.pts) ? k.pts : k.pts.toFixed(1)}</b>${small(k.up === null ? 'top' : `+${fmtVal(k.c, k.up)}`)}`, { w: 58 })).join('') + '</tr>';
+  }
+  return h + '</table>';
 }
 
 function chartGames(d) {
-  const W = 600, L = 92, T = 30, cols = 9, cw = (W - L - 8) / cols, ch = 44, H = T + ch * d.teams.length + 8;
   const fill = v => v === 0 ? C.neutral : C.blue[Math.min(6, Math.max(0, Math.round(v / 9 * 6)))];
-  let s = '';
-  [...DAYS, 'Starts', 'Bench'].forEach((lab, j) => { s += text(L + cw * j + cw / 2, T - 10, lab, { anchor: 'middle', size: 11, fill: j < 7 ? C.ink2 : C.ink, weight: 600 }); });
-  d.teams.forEach((t, i) => {
-    const y0 = T + ch * i;
-    s += `<rect x="4" y="${y0 + 16}" width="10" height="10" rx="2" fill="${t.color}"/>` + text(20, y0 + 25, t.who, { size: 13, fill: C.ink, weight: 600 });
-    t.perDay.forEach((p, j) => {
-      const x0 = L + cw * j, f = fill(p.start);
-      s += `<rect x="${x0 + 1}" y="${y0 + 1}" width="${cw - 2}" height="${ch - 2}" rx="4" fill="${f}"/>`;
-      s += text(x0 + cw / 2, y0 + 22, p.start, { anchor: 'middle', size: 14, fill: inkOn(f), weight: 700 });
-      if (p.bench) s += text(x0 + cw / 2, y0 + 36, `+${p.bench} BN`, { anchor: 'middle', size: 9, fill: inkOn(f) });
-    });
-    s += text(L + cw * 7 + cw / 2, y0 + 27, t.startGames, { anchor: 'middle', size: 16, fill: C.ink, weight: 700 });
-    s += text(L + cw * 8 + cw / 2, y0 + 27, t.benchGames, { anchor: 'middle', size: 16, fill: t.benchGames ? '#c13534' : C.muted, weight: 700 });
-  });
-  return svgWrap(W, H, s);
+  let h = `<table ${TABLE} width="100%"><tr>${plain('')}${DAYS.map(x => plain(x, { align: 'center', size: 11, bold: true })).join('')}${plain('Starts', { align: 'center', size: 11, bold: true, color: C.ink })}${plain('Bench', { align: 'center', size: 11, bold: true, color: C.ink })}</tr>`;
+  for (const t of d.teams) {
+    h += `<tr>${plain(`${chip(t.color)}<b style="color:${C.ink}">${esc(t.who)}</b>`)}`;
+    h += t.perDay.map(p => cell(fill(p.start), `<b>${p.start}</b>${small(p.bench ? `+${p.bench} BN` : '&nbsp;')}`, { w: 46 })).join('');
+    h += plain(`<b style="font-size:16px;color:${C.ink}">${t.startGames}</b>`, { align: 'center' });
+    h += plain(`<b style="font-size:16px;color:${t.benchGames ? '#c13534' : C.muted}">${t.benchGames}</b>`, { align: 'center' }) + '</tr>';
+  }
+  return h + '</table>';
 }
 
+const hotFill = v => {
+  const a = Math.abs(v), step = a < 2 ? -1 : Math.min(5, Math.floor((a - 2) / 3));
+  return step < 0 ? C.neutral : (v > 0 ? C.red : C.blue)[step];
+};
+const shortName = n => n.length > 17 ? n.replace(/^(\S)\S*\s/, '$1. ') : n;
+
 function chartHotCold(d) {
-  const W = 600, colW = 296, nameW = 112, cw = 21, rh = 17, T = 44;
-  const maxRows = Math.max(...d.teams.map(t => t.hot.length));
-  const panelH = 28 + rh * maxRows + 8, H = T + panelH * 2 + 6;
-  const fill = v => {
-    const a = Math.abs(v), step = a < 2 ? -1 : Math.min(5, Math.floor((a - 2) / 3));
-    return step < 0 ? C.neutral : (v > 0 ? C.red : C.blue)[step];
+  const sw = v => `<td bgcolor="${hotFill(v)}" style="background:${hotFill(v)};width:16px;height:12px;border-radius:3px;font-size:1px">&nbsp;</td>`;
+  const legend = `<table cellpadding="0" cellspacing="2" border="0" style="font-family:${FONT};margin:4px 0 8px"><tr>${plain('Below projection', { size: 11 })}${[-14, -9, -5, 0, 5, 9, 14].map(sw).join('')}${plain('Above projection', { size: 11 })}${plain('&middot; = didn\'t play', { size: 11 })}</tr></table>`;
+  const panel = t => {
+    let h = `<table cellpadding="0" cellspacing="1" border="0" style="font-family:${FONT}"><tr><td colspan="9" style="padding:2px 0 4px;font-size:13px;color:${C.ink};font-weight:700">${chip(t.color)}${esc(t.who)}</td></tr>`;
+    h += `<tr>${plain('', { pad: '0' })}${DAYS.map(x => plain(x[0], { align: 'center', size: 9, color: C.muted, pad: '0' })).join('')}${plain('Week', { align: 'right', size: 9, color: C.muted, pad: '0 0 0 4px' })}</tr>`;
+    for (const p of t.hot) {
+      h += `<tr>${plain(esc(shortName(p.name)), { size: 11, pad: '1px 4px 1px 0' })}`;
+      h += p.cells.map(c => c && c.line ? `<td bgcolor="${hotFill(c.delta)}" style="background:${hotFill(c.delta)};width:18px;border-radius:3px;font-size:9px">&nbsp;</td>`
+        : `<td style="width:18px;text-align:center;font-size:12px;color:${C.muted}">${c && c.dnp ? '&middot;' : '&nbsp;'}</td>`).join('');
+      h += plain(p.games ? signed(p.total) : '—', { align: 'right', size: 11, bold: true, color: C.ink, pad: '1px 0 1px 6px' }) + '</tr>';
+    }
+    return h + '</table>';
   };
-  let s = '';
-  // legend: diverging scale, labelled ends (hot = above projection)
-  const lx = 150, steps = [-14, -9, -5, 0, 5, 9, 14];
-  s += text(lx - 8, 16, 'Below projection', { anchor: 'end', size: 11, fill: C.ink2 });
-  steps.forEach((v, i) => { s += `<rect x="${lx + i * 22}" y="6" width="20" height="13" rx="3" fill="${fill(v)}"/>`; });
-  s += text(lx + steps.length * 22 + 6, 16, 'Above projection', { size: 11, fill: C.ink2 });
-  s += `<rect x="${lx + 260}" y="6" width="20" height="13" rx="3" fill="none" stroke="${C.axis}" stroke-dasharray="2 2"/>` + text(lx + 286, 16, 'DNP', { size: 11, fill: C.ink2 });
-  s += text(4, 34, 'Each cell = one game, value vs. that player\'s projected game (8-cat z). Blank = no game.', { size: 10, fill: C.muted });
-  d.teams.forEach((t, k) => {
-    const x0 = (k % 2) * (colW + 8), y0 = T + Math.floor(k / 2) * panelH;
-    s += `<rect x="${x0}" y="${y0 + 3}" width="10" height="10" rx="2" fill="${t.color}"/>` + text(x0 + 15, y0 + 12, t.who, { size: 12, fill: C.ink, weight: 700 });
-    DAYS.forEach((dd, j) => { s += text(x0 + nameW + j * cw + cw / 2, y0 + 24, dd[0], { anchor: 'middle', size: 9, fill: C.muted }); });
-    s += text(x0 + nameW + 7 * cw + 30, y0 + 24, 'Week', { anchor: 'end', size: 9, fill: C.muted });
-    t.hot.forEach((p, r) => {
-      const y = y0 + 28 + r * rh;
-      const nm = p.name.length > 17 ? p.name.replace(/^(\S)\S*\s/, '$1. ') : p.name;
-      s += text(x0, y + 12, nm.length > 18 ? nm.slice(0, 17) + '…' : nm, { size: 11, fill: C.ink2 });
-      p.cells.forEach((cell, j) => {
-        const cx = x0 + nameW + j * cw;
-        if (cell && cell.line) s += `<rect x="${cx + 1}" y="${y + 1}" width="${cw - 2}" height="${rh - 2}" rx="3" fill="${fill(cell.delta)}"/>`;
-        else if (cell && cell.dnp) s += `<rect x="${cx + 1.5}" y="${y + 1.5}" width="${cw - 3}" height="${rh - 3}" rx="3" fill="none" stroke="${C.axis}" stroke-dasharray="2 2"/>`;
-      });
-      s += text(x0 + nameW + 7 * cw + 30, y + 12, p.games ? signed(p.total) : '—', { anchor: 'end', size: 11, fill: C.ink, weight: 600 });
-    });
-  });
-  return svgWrap(W, H, s);
+  const rows = [d.teams.slice(0, 2), d.teams.slice(2, 4)].map(pair => `<tr>${pair.map(t => `<td valign="top" style="padding:0 12px 14px 0;vertical-align:top">${panel(t)}</td>`).join('')}</tr>`).join('');
+  return legend + `<table cellpadding="0" cellspacing="0" border="0">${rows}</table>`;
 }
 
 // ---------- copy ----------
@@ -378,30 +324,30 @@ function lineupAdvice(t) {
 
 // ---------- email ----------
 
-function emailHtml(d, a, talk, intro, imgs) {
+function emailHtml(d, a, talk, intro) {
   const row = (cells, head) => `<tr>${cells.map((c, i) => `<${head ? 'th' : 'td'} style="padding:6px 8px;border-bottom:1px solid ${C.grid};text-align:${i === 0 ? 'left' : 'right'};font-size:13px;${head ? `color:${C.muted};font-weight:600;` : `color:${C.ink};`}">${c}</${head ? 'th' : 'td'}>`).join('')}</tr>`;
   const ord = [...d.teams].sort((x, y) => x.st.realRank - y.st.realRank);
-  const table = `<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;font-family:${FONT}">` +
+  const table = `<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;width:100%;font-family:${FONT}">` +
     row(['Team', 'Overall', 'Roto pts', 'Week Δ', 'Starter games'], true) +
     ord.map(t => { const m = a.moves.find(x => x.t === t); return row([
-      `<span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${t.color};margin-right:6px"></span><b>${esc(t.who)}</b> <span style="color:${C.muted}">${esc(t.team)}</span>`,
+      `${chip(t.color)}<b>${esc(t.who)}</b> <span style="color:${C.muted}">${esc(t.team)}</span>`,
       `#${t.st.realRank}`, t.st.realRoto.total, m.delta > 0 ? `▲ ${m.delta}` : m.delta < 0 ? `▼ ${-m.delta}` : '–', t.startGames]); }).join('') + '</table>';
   const h2 = s => `<h2 style="font-family:${FONT};font-size:17px;color:${C.ink};margin:28px 0 4px">${s}</h2>`;
   const p = s => `<p style="font-family:${FONT};font-size:14px;line-height:1.5;color:${C.ink2};margin:4px 0 10px">${s}</p>`;
-  const img = (k, alt) => `<img src="${imgs[k]}" alt="${esc(alt)}" width="600" style="display:block;width:100%;max-width:600px;height:auto;border:0;margin:6px 0">`;
   return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Monday Huddle ${d.monday}</title></head>
-<body style="margin:0;padding:0;background:#f9f9f7"><div id="email" style="max-width:640px;margin:0 auto;padding:24px 20px;background:${C.surface}">
+<body style="margin:0;padding:0;background:#f9f9f7">
+<div style="max-width:640px;margin:0 auto;padding:12px 20px;font-family:${FONT};font-size:12px;color:${C.muted}">To send: select everything below the line (Ctrl/Cmd+A selects only the email box after you click in it), copy, and paste into a new Gmail message. Text stays editable.</div>
+<div id="email" contenteditable="true" style="max-width:640px;margin:0 auto;padding:24px 20px;background:${C.surface};outline:none">
 <div style="font-family:${FONT};font-size:12px;color:${C.muted};letter-spacing:.06em;text-transform:uppercase">LePrawn · Week of ${fmtDate(d.monday)}</div>
 <h1 style="font-family:${FONT};font-size:26px;color:${C.ink};margin:4px 0 12px">The Monday Huddle</h1>
 ${intro ? intro.split(/\n\s*\n/).map(x => p(esc(x.trim()))).join('') : ''}
 ${talk.map(x => `<div style="font-family:${FONT};font-size:14px;line-height:1.5;color:${C.ink};margin:0 0 6px">• ${esc(x)}</div>`).join('')}
-${h2('The group table')}${p(`Yahoo standings through ${fmtDate(addDays(d.now.date, -1))}. Week Δ is the change in overall rank since ${fmtDate(d.prev.date)}.`)}${table}
-${h2('The roto race')}${p('Overall rank in the 15-team league after each standings update. The four of us are in colour and the other 11 teams are grey.')}${img('race', 'Rank over time chart')}
-${h2('Where the cheap points are')}${p('Roto points per category (15 = best). The small number is how much more you need to pass the next team up. Small gaps are where to aim this week.')}${img('cats', 'Category points heatmap')}
-${h2('Games this week')}${p(`Starters with a game each day (Mon ${fmtDate(d.week[0])} – Sun ${fmtDate(d.week[6])}), not counting anyone listed Out. "BN" = bench players with a game who won't count. Lineups lock for the whole week, so set them now.`)}${img('games', 'Games this week grid')}
+${h2('The group table')}${p(`Yahoo standings through ${fmtDate(addDays(d.now.date, -1))}. Week Δ is the change in overall rank (out of 15) since ${fmtDate(d.prev.date)}.`)}${table}
+${h2('Where the cheap points are')}${p('Roto points per category (15 = best). The small number is how much more you need to pass the next team up. Small gaps are where to aim this week.')}${chartCategories(d)}
+${h2('Games this week')}${p(`Starters with a game each day (Mon ${fmtDate(d.week[0])} – Sun ${fmtDate(d.week[6])}), not counting anyone listed Out. "BN" = bench players with a game who won't count. Lineups lock for the whole week, so set them now.`)}${chartGames(d)}
 ${p('<b>Lineup check</b> (best legal 9 by projected value × games, same math for everyone):')}
 ${d.teams.map(t => p('• ' + esc(lineupAdvice(t)))).join('')}
-${h2('Last week, hot and cold')}${p(`${fmtDate(d.lastWeek[0])} – ${fmtDate(d.lastWeek[6])}. Red = beat his projection, blue = stunk.`)}${img('hot', 'Hot and cold strip chart')}
+${h2('Last week, hot and cold')}${p(`${fmtDate(d.lastWeek[0])} – ${fmtDate(d.lastWeek[6])}. One square per game: red = beat his projection, blue = stunk. "Week" is the total vs. projection (8-category z-score, so +10 is a big week).`)}${chartHotCold(d)}
 <p style="font-family:${FONT};font-size:11px;color:${C.muted};margin-top:28px">Generated by Draft Edge from Yahoo standings and lineups, Hashtag Basketball stats and the NBA schedule. Projections are draft-season estimates, so treat them as trash-talk grade.</p>
 </div></body></html>`;
 }
@@ -416,17 +362,27 @@ function emailText(d, a, talk, intro) {
     'LINEUP CHECK', ...d.teams.map(t => '• ' + lineupAdvice(t)), ''].join('\n');
 }
 
-async function render(outDir, charts, html) {
+// Everything behind the email, for fact-checking (box-score line per player per day)
+function emailData(d, a) {
+  return {
+    monday: d.monday, standingsAsOf: d.now.date, prevStandingsAsOf: d.prev.date, lastWeek: d.lastWeek, week: d.week,
+    awards: { hot: a.hot && { name: a.hot.name, who: a.hot.t.who, total: +a.hot.total.toFixed(2) }, cold: a.cold && { name: a.cold.name, who: a.cold.t.who, total: +a.cold.total.toFixed(2) },
+      bench: { who: a.bench.t.who, games: a.bench.games }, moves: a.moves.map(m => ({ who: m.t.who, rankNow: m.t.st.realRank, rankPrev: m.t.st0 && m.t.st0.realRank, delta: m.delta })) },
+    teams: d.teams.map(t => ({ who: t.who, team: t.team, rank: t.st.realRank, rotoTotal: t.st.realRoto.total,
+      cats: t.cats, startGames: t.startGames, benchGames: t.benchGames, perDay: t.perDay,
+      lineup: t.roster.map(p => ({ slot: p.slot, name: p.name, nbaTeam: p.nbaTeam, status: p.status || null, games: p.nGames })),
+      lastWeek: t.hot.map(p => ({ name: p.name, weekTotal: +p.total.toFixed(2), games: p.games, benchedGames: p.benchedGames,
+        days: p.cells.map((c, i) => ({ date: d.lastWeek[i], ...(c && c.line ? { line: c.line, vsProj: +c.delta.toFixed(2) } : c && c.dnp ? { dnp: true } : { noGame: true }) })) })) }))
+  };
+}
+
+async function render(outDir) {
   const { chromium } = require('playwright');
   const browser = await chromium.launch();
   try {
-    const page = await browser.newPage({ deviceScaleFactor: 2, viewport: { width: 640, height: 800 } });
-    for (const [name, svg] of Object.entries(charts)) {
-      await page.setContent(`<html><body style="margin:0">${svg}</body></html>`);
-      await page.locator('svg').screenshot({ path: path.join(outDir, `${name}.png`) });
-    }
+    const page = await browser.newPage({ deviceScaleFactor: 2, viewport: { width: 680, height: 800 } });
     await page.goto('file://' + path.join(outDir, 'email.html'));
-    await page.locator('#email').screenshot({ path: path.join(outDir, 'poster.png') });
+    await page.locator('#email').screenshot({ path: path.join(outDir, 'preview.png') });
   } finally { await browser.close(); }
 }
 
@@ -440,14 +396,13 @@ async function main() {
   const introPath = path.join(outDir, 'intro.md');
   const intro = fs.existsSync(introPath) ? fs.readFileSync(introPath, 'utf8') : '';
   const talk = trashTalk(d, a);
-  const charts = { race: chartRotoRace(d), cats: chartCategories(d), games: chartGames(d), hot: chartHotCold(d) };
-  const imgs = Object.fromEntries(Object.keys(charts).map(k => [k, `${k}.png`]));
-  fs.writeFileSync(path.join(outDir, 'email.html'), emailHtml(d, a, talk, intro, imgs));
+  fs.writeFileSync(path.join(outDir, 'email.html'), emailHtml(d, a, talk, intro));
   fs.writeFileSync(path.join(outDir, 'email.txt'), emailText(d, a, talk, intro));
-  await render(outDir, charts);
+  fs.writeFileSync(path.join(outDir, 'data.json'), JSON.stringify(emailData(d, a), null, 1));
+  if (!process.argv.includes('--no-preview')) await render(outDir);
   for (const w of d.warnings) console.log('WARNING ' + w);
   console.log(fs.readFileSync(path.join(outDir, 'email.txt'), 'utf8'));
-  console.log(`Wrote ${path.relative(ROOT, outDir)}/ (email.html, poster.png, ${Object.keys(charts).map(k => k + '.png').join(', ')})`);
+  console.log(`Wrote ${path.relative(ROOT, outDir)}/ (email.html to paste, email.txt, data.json, preview.png)`);
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
