@@ -921,6 +921,31 @@
       "drop": []
     },
     {
+      "date": "2026-10-31 11:09",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [
+        {
+          "name": "Precious Achiuwa",
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Tobias Harris",
+          "nbaTeam": "SAS",
+          "pos": [
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-11-01 07:20",
       "type": "trade",
       "note": "Between the two managed teams (user and Finn).",
@@ -942,6 +967,56 @@
             "C"
           ],
           "to": "Shut Up and Jam Gaiden"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01 07:33",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [
+        {
+          "name": "De'Anthony Melton",
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-01 12:14",
+      "type": "add_drop",
+      "team": "The New Day Co-op",
+      "add": [
+        {
+          "name": "Derrick Jones Jr.",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-02 02:00",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [],
+      "drop": [
+        {
+          "name": "Gui Santos",
+          "nbaTeam": "GSW",
+          "pos": [
+            "SF",
+            "PF"
+          ]
         }
       ]
     }
