@@ -13,6 +13,7 @@
     "value": "node season/value_report.js",
     "injuries": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_injuries.js && npm run -s season",
     "report": "NODE_USE_ENV_PROXY=1 node --no-warnings season/morning_report.js",
+    "weekly": "node season/weekly_email.js",
     "news": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_news.js",
     "morning": "npm run -s fetch-stats && npm run -s injuries && npm run -s report"
   },
