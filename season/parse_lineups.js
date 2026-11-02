@@ -15,6 +15,8 @@ const path = require('path');
  *   PHI - PG
  *   7:00 pm vs CLE            <- optional: game today
  *
+ * An unfilled slot shows as "(Empty)" after its slot label and is skipped.
+ *
  * The league locks lineups weekly, so this is the lineup in effect for the current
  * week. Mid-week adds, drops and trades only show up in next week's lineup.
  *
@@ -49,6 +51,10 @@ function parseLineupText(text) {
     let m;
     if (SLOT_RE.test(line)) {
       slot = line;
+    } else if (line === '(Empty)') {
+      // An unfilled slot, not a team name
+      slot = null;
+      player = null;
     } else if ((m = line.match(NAME_RE)) && slot) {
       player = { slot, name: m[1].trim(), status: m[2] || null, nbaTeam: null, pos: [], gameToday: null };
       block.players.push(player);

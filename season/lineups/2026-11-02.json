@@ -1,0 +1,2130 @@
+{
+  "asOf": "2026-11-02",
+  "source": "season/lineups/raw/2026-11-02.txt",
+  "teams": [
+    {
+      "team": "vincemvpcarter",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Dejounte Murray",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "SG",
+          "name": "Keyonte George",
+          "status": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        },
+        {
+          "slot": "SF",
+          "name": "Lauri Markkanen",
+          "status": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        },
+        {
+          "slot": "PF",
+          "name": "Anthony Davis",
+          "status": null,
+          "nbaTeam": "WAS",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm @ ORL"
+        },
+        {
+          "slot": "C",
+          "name": "Walker Kessler",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "Util",
+          "name": "Dylan Harper",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "Util",
+          "name": "Zion Williamson",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "Util",
+          "name": "Damian Lillard",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "Util",
+          "name": "Ryan Rollins",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "BN",
+          "name": "Collin Murray-Boyles",
+          "status": null,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "BN",
+          "name": "Tristan da Silva",
+          "status": null,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        },
+        {
+          "slot": "BN",
+          "name": "Terrence Shannon Jr.",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        }
+      ]
+    },
+    {
+      "team": "#WashedAutoDraftKing",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "LaMelo Ball",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "SG",
+          "name": "Kris Dunn",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "SF",
+          "name": "Julian Champagnie",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "PF",
+          "name": "Giannis Antetokounmpo",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "C",
+          "name": "Pascal Siakam",
+          "status": null,
+          "nbaTeam": "IND",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        },
+        {
+          "slot": "Util",
+          "name": "Myles Turner",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "Util",
+          "name": "Brook Lopez",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "Util",
+          "name": "Daniel Gafford",
+          "status": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "Util",
+          "name": "Darryn Peterson",
+          "status": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SG"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        },
+        {
+          "slot": "BN",
+          "name": "Ja Morant",
+          "status": "O",
+          "nbaTeam": "POR",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "BN",
+          "name": "Aaron Gordon",
+          "status": null,
+          "nbaTeam": "DEN",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "9:00 pm vs POR"
+        },
+        {
+          "slot": "BN",
+          "name": "Kon Knueppel",
+          "status": "O",
+          "nbaTeam": "CHA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "IL",
+          "name": "Paolo Banchero",
+          "status": "O",
+          "nbaTeam": "ORL",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        }
+      ]
+    },
+    {
+      "team": "Bitsketball Stars",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Shai Gilgeous-Alexander",
+          "status": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "SG",
+          "name": "Cedric Coward",
+          "status": null,
+          "nbaTeam": "MEM",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:00 pm vs NOP"
+        },
+        {
+          "slot": "SF",
+          "name": "LeBron James",
+          "status": null,
+          "nbaTeam": "PHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs CHI"
+        },
+        {
+          "slot": "PF",
+          "name": "DeMar DeRozan",
+          "status": null,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "9:00 pm vs POR"
+        },
+        {
+          "slot": "C",
+          "name": "Onyeka Okongwu",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "Util",
+          "name": "Jamal Murray",
+          "status": null,
+          "nbaTeam": "DEN",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "9:00 pm vs POR"
+        },
+        {
+          "slot": "Util",
+          "name": "Andrew Nembhard",
+          "status": null,
+          "nbaTeam": "IND",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        },
+        {
+          "slot": "Util",
+          "name": "RJ Barrett",
+          "status": null,
+          "nbaTeam": "TOR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "Util",
+          "name": "Moussa Diabaté",
+          "status": null,
+          "nbaTeam": "CHA",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "BN",
+          "name": "Anthony Black",
+          "status": null,
+          "nbaTeam": "ORL",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        },
+        {
+          "slot": "BN",
+          "name": "Aaron Nesmith",
+          "status": null,
+          "nbaTeam": "IND",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        },
+        {
+          "slot": "BN",
+          "name": "Bennedict Mathurin",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        }
+      ]
+    },
+    {
+      "team": "Grilled Teampura",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Tyrese Maxey",
+          "status": null,
+          "nbaTeam": "PHI",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "7:30 pm vs CHI"
+        },
+        {
+          "slot": "SG",
+          "name": "Josh Giddey",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "SF",
+          "name": "Naji Marshall",
+          "status": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "PF",
+          "name": "Michael Porter Jr.",
+          "status": null,
+          "nbaTeam": "BKN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ NYK"
+        },
+        {
+          "slot": "C",
+          "name": "Jalen Smith",
+          "status": "P",
+          "nbaTeam": "CHI",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "Util",
+          "name": "Stephon Castle",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "Util",
+          "name": "Grayson Allen",
+          "status": null,
+          "nbaTeam": "CHA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "Util",
+          "name": "Peyton Watson",
+          "status": "Q",
+          "nbaTeam": "CLE",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:00 pm vs OKC"
+        },
+        {
+          "slot": "Util",
+          "name": "Alex Sarr",
+          "status": "Q",
+          "nbaTeam": "WAS",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm @ ORL"
+        },
+        {
+          "slot": "BN",
+          "name": "Kyle Kuzma",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "BN",
+          "name": "Tari Eason",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "IL",
+          "name": "Alex Caruso",
+          "status": "O",
+          "nbaTeam": "OKC",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "IL",
+          "name": "Tyrese Haliburton",
+          "status": "O",
+          "nbaTeam": "IND",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        }
+      ]
+    },
+    {
+      "team": "Billy Hoyle's Boy-les",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Austin Reaves",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "SG",
+          "name": "Kyshawn George",
+          "status": null,
+          "nbaTeam": "WAS",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ ORL"
+        },
+        {
+          "slot": "SF",
+          "name": "Zach LaVine",
+          "status": "Q",
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:00 pm @ DAL"
+        },
+        {
+          "slot": "PF",
+          "name": "Caleb Wilson",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "C",
+          "name": "Naz Reid",
+          "status": null,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "Util",
+          "name": "Jaden McDaniels",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SF"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "Util",
+          "name": "Yaxel Lendeborg",
+          "status": null,
+          "nbaTeam": "GSW",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "Util",
+          "name": "Ty Jerome",
+          "status": null,
+          "nbaTeam": "MEM",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm vs NOP"
+        },
+        {
+          "slot": "Util",
+          "name": "Cooper Flagg",
+          "status": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "BN",
+          "name": "Matas Buzelis",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "BN",
+          "name": "Darius Acuff Jr.",
+          "status": null,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:00 pm @ DAL"
+        },
+        {
+          "slot": "BN",
+          "name": "Keaton Wagler",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "SG"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "IL",
+          "name": "Brandon Ingram",
+          "status": "O",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        }
+      ]
+    },
+    {
+      "team": "Fishy Achilles",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "James Harden",
+          "status": null,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:00 pm vs OKC"
+        },
+        {
+          "slot": "SG",
+          "name": "Derrick White",
+          "status": null,
+          "nbaTeam": "BOS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "SF",
+          "name": "Trey Murphy III",
+          "status": "P",
+          "nbaTeam": "NOP",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "PF",
+          "name": "Scottie Barnes",
+          "status": null,
+          "nbaTeam": "TOR",
+          "pos": [
+            "SF",
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "C",
+          "name": "Zach Edey",
+          "status": null,
+          "nbaTeam": "MEM",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm vs NOP"
+        },
+        {
+          "slot": "Util",
+          "name": "Neemias Queta",
+          "status": null,
+          "nbaTeam": "BOS",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "Util",
+          "name": "Norman Powell",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "Util",
+          "name": "Ja'Kobe Walter",
+          "status": null,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "Util",
+          "name": "Jeremiah Fears",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "BN",
+          "name": "Obi Toppin",
+          "status": "Q",
+          "nbaTeam": "IND",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        },
+        {
+          "slot": "BN",
+          "name": "Leonard Miller",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "BN",
+          "name": "Rui Hachimura",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "IL",
+          "name": "Nic Claxton",
+          "status": "O",
+          "nbaTeam": "CHI",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        }
+      ]
+    },
+    {
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Cade Cunningham",
+          "status": null,
+          "nbaTeam": "DET",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        },
+        {
+          "slot": "SG",
+          "name": "Jaime Jaquez Jr.",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "SF",
+          "name": "Jalen Johnson",
+          "status": "Q",
+          "nbaTeam": "ATL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "PF",
+          "name": "Ausar Thompson",
+          "status": null,
+          "nbaTeam": "DET",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        },
+        {
+          "slot": "C",
+          "name": "Kel'el Ware",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "Util",
+          "name": "Fred VanVleet",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "Util",
+          "name": "Isaiah Jackson",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "Util",
+          "name": "Zaccharie Risacher",
+          "status": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "Util",
+          "name": "Jaxson Hayes",
+          "status": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        },
+        {
+          "slot": "BN",
+          "name": "Mitchell Robinson",
+          "status": "O",
+          "nbaTeam": "BOS",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "BN",
+          "name": "Ziaire Williams",
+          "status": "O",
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "IL",
+          "name": "Keegan Murray",
+          "status": "O",
+          "nbaTeam": "SAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm @ DAL"
+        },
+        {
+          "slot": "IL",
+          "name": "Kawhi Leonard",
+          "status": "O",
+          "nbaTeam": "TOR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "IL",
+          "name": "Kristaps Porziņģis",
+          "status": "O",
+          "nbaTeam": "GSW",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        }
+      ]
+    },
+    {
+      "team": "Shut Up and Jam Gaiden",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Luka Dončić",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "SG",
+          "name": "Ajay Mitchell",
+          "status": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "SF",
+          "name": "Franz Wagner",
+          "status": null,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        },
+        {
+          "slot": "PF",
+          "name": "Bam Adebayo",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "C",
+          "name": "Paul Reed",
+          "status": null,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        },
+        {
+          "slot": "Util",
+          "name": "Day'Ron Sharpe",
+          "status": null,
+          "nbaTeam": "BKN",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm @ NYK"
+        },
+        {
+          "slot": "Util",
+          "name": "Darius Garland",
+          "status": null,
+          "nbaTeam": "LAC",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "Util",
+          "name": "Khaman Maluach",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "Util",
+          "name": "Miles Bridges",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "BN",
+          "name": "Immanuel Quickley",
+          "status": null,
+          "nbaTeam": "TOR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm @ LAC"
+        },
+        {
+          "slot": "BN",
+          "name": "Robert Williams III",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "IL",
+          "name": "Chet Holmgren",
+          "status": "O",
+          "nbaTeam": "OKC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "IL",
+          "name": "Jalen Suggs",
+          "status": "O",
+          "nbaTeam": "ORL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        }
+      ]
+    },
+    {
+      "team": "Super Maru",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "De'Aaron Fox",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "SG",
+          "name": "Ayo Dosunmu",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "SF",
+          "name": "Luguentz Dort",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "PF",
+          "name": "Domantas Sabonis",
+          "status": null,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:00 pm @ DAL"
+        },
+        {
+          "slot": "C",
+          "name": "Bobby Portis Jr.",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "Util",
+          "name": "Aaron Wiggins",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "Util",
+          "name": "Precious Achiuwa",
+          "status": null,
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:00 pm @ DAL"
+        },
+        {
+          "slot": "Util",
+          "name": "De'Anthony Melton",
+          "status": null,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "Util",
+          "name": "Coby White",
+          "status": null,
+          "nbaTeam": "CHA",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "BN",
+          "name": "Joel Embiid",
+          "status": "Q",
+          "nbaTeam": "PHI",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm vs CHI"
+        },
+        {
+          "slot": "BN",
+          "name": "John Collins",
+          "status": null,
+          "nbaTeam": "DET",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        },
+        {
+          "slot": "IL",
+          "name": "Anthony Edwards",
+          "status": "O",
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "IL",
+          "name": "Jalen Williams",
+          "status": "O",
+          "nbaTeam": "OKC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        }
+      ]
+    },
+    {
+      "team": "Team Maru",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "N. Alexander-Walker",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "SG",
+          "name": "Desmond Bane",
+          "status": null,
+          "nbaTeam": "ORL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        },
+        {
+          "slot": "SF",
+          "name": "OG Anunoby",
+          "status": null,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs BKN"
+        },
+        {
+          "slot": "PF",
+          "name": "Mikal Bridges",
+          "status": null,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs BKN"
+        },
+        {
+          "slot": "C",
+          "name": "Derik Queen",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "Util",
+          "name": "Cameron Boozer",
+          "status": null,
+          "nbaTeam": "MEM",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs NOP"
+        },
+        {
+          "slot": "Util",
+          "name": "Dyson Daniels",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "Util",
+          "name": "Paul George",
+          "status": null,
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "Util",
+          "name": "Jalen Green",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "BN",
+          "name": "Brandin Podziemski",
+          "status": null,
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "BN",
+          "name": "Payton Pritchard",
+          "status": null,
+          "nbaTeam": "BOS",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "IL",
+          "name": "Jalen Duren",
+          "status": "O",
+          "nbaTeam": "DET",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        }
+      ]
+    },
+    {
+      "team": "The New Day Co-op",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Kyrie Irving",
+          "status": "Q",
+          "nbaTeam": "DAL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "SG",
+          "name": "Deni Avdija",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "SF",
+          "name": "Quentin Grimes",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "PF",
+          "name": "Karl-Anthony Towns",
+          "status": null,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:30 pm vs BKN"
+        },
+        {
+          "slot": "C",
+          "name": "Evan Mobley",
+          "status": null,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "7:00 pm vs OKC"
+        },
+        {
+          "slot": "Util",
+          "name": "Donovan Clingan",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "Util",
+          "name": "Jabari Smith Jr.",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "Util",
+          "name": "Derrick Jones Jr.",
+          "status": "Q",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs TOR"
+        },
+        {
+          "slot": "Util",
+          "name": "P.J. Washington",
+          "status": null,
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "BN",
+          "name": "Ivica Zubac",
+          "status": "O",
+          "nbaTeam": "IND",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm vs ATL"
+        },
+        {
+          "slot": "BN",
+          "name": "Mark Williams",
+          "status": "O",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "BN",
+          "name": "Collin Gillespie",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "IL",
+          "name": "Jaren Jackson Jr.",
+          "status": "O",
+          "nbaTeam": "UTA",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        }
+      ]
+    },
+    {
+      "team": "Herb's Astonishing Team",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Davion Mitchell",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "SG",
+          "name": "Jrue Holiday",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "SF",
+          "name": "Jayson Tatum",
+          "status": null,
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm @ HOU"
+        },
+        {
+          "slot": "C",
+          "name": "Nikola Jokić",
+          "status": null,
+          "nbaTeam": "DEN",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "9:00 pm vs POR"
+        },
+        {
+          "slot": "Util",
+          "name": "Toumani Camara",
+          "status": null,
+          "nbaTeam": "POR",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "9:00 pm @ DEN"
+        },
+        {
+          "slot": "Util",
+          "name": "Yves Missi",
+          "status": "O",
+          "nbaTeam": "NOP",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "Util",
+          "name": "Pelle Larsson",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "Util",
+          "name": "Jake LaRavia",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "BN",
+          "name": "Jimmy Butler III",
+          "status": "O",
+          "nbaTeam": "GSW",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "BN",
+          "name": "Mikel Brown Jr.",
+          "status": "Q",
+          "nbaTeam": "BKN",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "7:30 pm @ NYK"
+        },
+        {
+          "slot": "BN",
+          "name": "Scotty Pippen Jr.",
+          "status": "D",
+          "nbaTeam": "MEM",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "8:00 pm vs NOP"
+        },
+        {
+          "slot": "BN",
+          "name": "Julius Randle",
+          "status": null,
+          "nbaTeam": "BKN",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "7:30 pm @ NYK"
+        }
+      ]
+    },
+    {
+      "team": "Full Court Rex",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Stephen Curry",
+          "status": "O",
+          "nbaTeam": "GSW",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "SG",
+          "name": "Devin Booker",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "SF",
+          "name": "Jaylen Brown",
+          "status": null,
+          "nbaTeam": "PHI",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs CHI"
+        },
+        {
+          "slot": "PF",
+          "name": "Alperen Şengün",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "C",
+          "name": "Rudy Gobert",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "Util",
+          "name": "Ace Bailey",
+          "status": null,
+          "nbaTeam": "UTA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        },
+        {
+          "slot": "Util",
+          "name": "Isaiah Hartenstein",
+          "status": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "Util",
+          "name": "Jonathan Kuminga",
+          "status": null,
+          "nbaTeam": "MIN",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs MIL"
+        },
+        {
+          "slot": "Util",
+          "name": "Jared McCain",
+          "status": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "BN",
+          "name": "Dillon Brooks",
+          "status": null,
+          "nbaTeam": "PHX",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm @ GSW"
+        },
+        {
+          "slot": "BN",
+          "name": "Devin Vassell",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "BN",
+          "name": "AJ Dybantsa",
+          "status": null,
+          "nbaTeam": "WAS",
+          "pos": [
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ ORL"
+        }
+      ]
+    },
+    {
+      "team": "Finn will turn Bert into bacon",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Trae Young",
+          "status": null,
+          "nbaTeam": "WAS",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "7:30 pm @ ORL"
+        },
+        {
+          "slot": "SG",
+          "name": "Amen Thompson",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "SF",
+          "name": "Josh Hart",
+          "status": null,
+          "nbaTeam": "NYK",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm vs BKN"
+        },
+        {
+          "slot": "PF",
+          "name": "Sandro Mamukelashvili",
+          "status": null,
+          "nbaTeam": "LAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm vs MIA"
+        },
+        {
+          "slot": "C",
+          "name": "Victor Wembanyama",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        },
+        {
+          "slot": "Util",
+          "name": "Brandon Miller",
+          "status": null,
+          "nbaTeam": "CHA",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "7:30 pm vs DET"
+        },
+        {
+          "slot": "Util",
+          "name": "Christian Braun",
+          "status": null,
+          "nbaTeam": "DEN",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "9:00 pm vs POR"
+        },
+        {
+          "slot": "Util",
+          "name": "VJ Edgecombe",
+          "status": null,
+          "nbaTeam": "PHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm vs CHI"
+        },
+        {
+          "slot": "Util",
+          "name": "Saddiq Bey",
+          "status": null,
+          "nbaTeam": "NOP",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:00 pm @ MEM"
+        },
+        {
+          "slot": "BN",
+          "name": "Tre Jones",
+          "status": null,
+          "nbaTeam": "CHI",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm @ PHI"
+        },
+        {
+          "slot": "BN",
+          "name": "Reed Sheppard",
+          "status": "Q",
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "IL",
+          "name": "Draymond Green",
+          "status": "O",
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "gameToday": "10:00 pm vs PHX"
+        },
+        {
+          "slot": "IL",
+          "name": "Santi Aldama",
+          "status": "O",
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ],
+          "gameToday": "8:00 pm vs SAC"
+        },
+        {
+          "slot": "IL",
+          "name": "Jusuf Nurkić",
+          "status": "O",
+          "nbaTeam": "UTA",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "8:30 pm @ SAS"
+        }
+      ]
+    },
+    {
+      "team": "Cole is like that",
+      "players": [
+        {
+          "slot": "PG",
+          "name": "Jalen Brunson",
+          "status": null,
+          "nbaTeam": "NYK",
+          "pos": [
+            "PG"
+          ],
+          "gameToday": "7:30 pm vs BKN"
+        },
+        {
+          "slot": "SG",
+          "name": "Donovan Mitchell",
+          "status": null,
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:00 pm vs OKC"
+        },
+        {
+          "slot": "SF",
+          "name": "Andrew Wiggins",
+          "status": null,
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "10:00 pm @ LAL"
+        },
+        {
+          "slot": "PF",
+          "name": "Kevin Durant",
+          "status": null,
+          "nbaTeam": "HOU",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm vs BOS"
+        },
+        {
+          "slot": "C",
+          "name": "Jarrett Allen",
+          "status": null,
+          "nbaTeam": "CLE",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:00 pm vs OKC"
+        },
+        {
+          "slot": "Util",
+          "name": "Tyler Herro",
+          "status": null,
+          "nbaTeam": "MIL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "8:00 pm @ MIN"
+        },
+        {
+          "slot": "Util",
+          "name": "Wendell Carter Jr.",
+          "status": null,
+          "nbaTeam": "ORL",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:30 pm vs WAS"
+        },
+        {
+          "slot": "Util",
+          "name": "CJ McCollum",
+          "status": null,
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "gameToday": "7:30 pm @ IND"
+        },
+        {
+          "slot": "Util",
+          "name": "Duncan Robinson",
+          "status": null,
+          "nbaTeam": "DET",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "gameToday": "7:30 pm @ CHA"
+        },
+        {
+          "slot": "BN",
+          "name": "Aday Mara",
+          "status": null,
+          "nbaTeam": "OKC",
+          "pos": [
+            "C"
+          ],
+          "gameToday": "7:00 pm @ CLE"
+        },
+        {
+          "slot": "BN",
+          "name": "Keldon Johnson",
+          "status": null,
+          "nbaTeam": "SAS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "gameToday": "8:30 pm vs UTA"
+        }
+      ]
+    }
+  ]
+}

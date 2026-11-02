@@ -280,3 +280,12 @@ test('team coverage: parseRss strips the outlet suffix and mentionsOf avoids sha
   assert.deepEqual(mentionsOf('Reed Sheppard gets paid', ['Paul Reed']), []);
   assert.deepEqual(mentionsOf('Pistons coach praises Paul Reed', ['Paul Reed']), ['Paul Reed']);
 });
+
+test('parseLineupText skips an (Empty) slot instead of starting a new team block', () => {
+  const { parseLineupText } = require('../season/parse_lineups.js');
+  const text = ['Herb\'s Astonishing Team', '', 'Pos', 'Player', 'SF', 'Jayson TatumNew Player Note', 'BOS - SF,PF', 'PF', '(Empty)', 'C', 'Nikola JokićPlayer Note', 'DEN - C', '9:00 pm vs POR'].join('\n');
+  const blocks = parseLineupText(text);
+  assert.equal(blocks.length, 1);
+  assert.equal(blocks[0].team, 'Herb\'s Astonishing Team');
+  assert.deepEqual(blocks[0].players.map(p => `${p.slot}:${p.name}`), ['SF:Jayson Tatum', 'C:Nikola Jokić']);
+});

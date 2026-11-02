@@ -12,7 +12,7 @@
   "transactionsApplied": 41,
   "asOf": "2026-11-01 07:20",
   "statsAsOf": "2026-11-02",
-  "lineupAsOf": "2026-10-27",
+  "lineupAsOf": "2026-11-02",
   "standingsAsOf": "2026-11-02",
   "injuriesAsOf": "2026-11-02",
   "teams": [
@@ -60,7 +60,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -97,7 +97,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ ORL"
           }
         },
         {
@@ -135,7 +135,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": "8:00 pm vs DET"
+            "gameToday": "7:30 pm vs BKN"
           }
         },
         {
@@ -172,8 +172,8 @@
           "injury": null,
           "thisWeek": {
             "slot": "Util",
-            "status": "Q",
-            "gameToday": null
+            "status": null,
+            "gameToday": "7:30 pm vs CHI"
           }
         },
         {
@@ -211,7 +211,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -250,7 +250,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "9:00 pm vs POR"
           }
         },
         {
@@ -273,7 +273,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -312,9 +312,9 @@
             "note": "Rest"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -350,9 +350,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "PF",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -373,9 +373,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "BN",
+            "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -413,7 +413,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -451,7 +451,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -486,7 +486,11 @@
             "rank": 179
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": "10:00 pm vs MIA"
+          }
         },
         {
           "name": "Reed Sheppard",
@@ -523,7 +527,11 @@
             "status": "Q",
             "note": "Back"
           },
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": "Q",
+            "gameToday": "8:30 pm vs BOS"
+          }
         }
       ],
       "moveLog": [
@@ -671,17 +679,12 @@
       },
       "realRank": 2,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Sandro Mamukelashvili",
-        "Reed Sheppard"
-      ],
-      "pendingOut": [
-        "Malik Monk"
-      ]
+      "pendingIn": [],
+      "pendingOut": []
     },
     {
       "name": "Shut Up and Jam Gaiden",
@@ -726,7 +729,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -765,9 +768,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "C",
+            "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -805,7 +808,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -842,7 +845,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         },
         {
@@ -879,7 +882,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "7:30 pm @ BOS"
+            "gameToday": "7:30 pm @ NYK"
           }
         },
         {
@@ -915,9 +918,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "SG",
+            "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAC"
           }
         },
         {
@@ -958,7 +961,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -993,9 +996,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "BN",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         },
         {
@@ -1031,9 +1034,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -1069,9 +1072,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "C",
             "status": null,
-            "gameToday": "8:00 pm @ NYK"
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -1106,7 +1109,11 @@
             "rank": 46
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "PF",
+            "status": null,
+            "gameToday": "10:00 pm @ LAL"
+          }
         },
         {
           "name": "Robert Williams III",
@@ -1139,7 +1146,11 @@
             "rank": 137
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "9:00 pm @ DEN"
+          }
         },
         {
           "name": "Khaman Maluach",
@@ -1172,7 +1183,11 @@
             "rank": 156
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "10:00 pm @ GSW"
+          }
         }
       ],
       "moveLog": [
@@ -1302,19 +1317,12 @@
       },
       "realRank": 3,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Bam Adebayo",
-        "Robert Williams III",
-        "Khaman Maluach"
-      ],
-      "pendingOut": [
-        "Julius Randle",
-        "Jakob Poeltl"
-      ]
+      "pendingIn": [],
+      "pendingOut": []
     },
     {
       "name": "Team Maru",
@@ -1359,7 +1367,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": "8:00 pm vs DET"
+            "gameToday": "7:30 pm vs BKN"
           }
         },
         {
@@ -1397,7 +1405,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -1437,7 +1445,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": "8:00 pm @ NYK"
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -1475,7 +1483,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": "8:00 pm vs DET"
+            "gameToday": "7:30 pm vs BKN"
           }
         },
         {
@@ -1512,7 +1520,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs NOP"
           }
         },
         {
@@ -1550,7 +1558,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -1588,7 +1596,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -1626,7 +1634,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -1664,7 +1672,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -1701,7 +1709,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -1739,7 +1747,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -1777,7 +1785,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         }
       ],
@@ -1852,7 +1860,7 @@
       },
       "realRank": 11,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -1903,7 +1911,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -1942,7 +1950,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -1980,7 +1988,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -2019,7 +2027,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ ORL"
           }
         },
         {
@@ -2056,7 +2064,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -2094,7 +2102,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -2132,7 +2140,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs NOP"
           }
         },
         {
@@ -2169,7 +2177,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -2210,8 +2218,8 @@
           },
           "thisWeek": {
             "slot": "SF",
-            "status": null,
-            "gameToday": "8:00 pm @ SAS"
+            "status": "Q",
+            "gameToday": "8:00 pm @ DAL"
           }
         },
         {
@@ -2248,7 +2256,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -2285,7 +2293,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": "8:00 pm @ SAS"
+            "gameToday": "8:00 pm @ DAL"
           }
         },
         {
@@ -2322,7 +2330,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         },
         {
@@ -2347,7 +2355,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         }
       ],
@@ -2442,7 +2450,7 @@
       },
       "realRank": 1,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -2493,7 +2501,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAC"
           }
         },
         {
@@ -2531,7 +2539,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -2569,7 +2577,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm vs OKC"
           }
         },
         {
@@ -2609,8 +2617,8 @@
           },
           "thisWeek": {
             "slot": "SF",
-            "status": null,
-            "gameToday": null
+            "status": "P",
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -2647,7 +2655,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs NOP"
           }
         },
         {
@@ -2684,7 +2692,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -2722,7 +2730,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -2760,7 +2768,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         },
         {
@@ -2783,7 +2791,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -2819,9 +2827,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -2859,7 +2867,11 @@
             "status": "O",
             "note": "Back"
           },
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": "Q",
+            "gameToday": "7:30 pm vs ATL"
+          }
         },
         {
           "name": "Ja'Kobe Walter",
@@ -2893,7 +2905,11 @@
             "rank": 94
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "10:00 pm @ LAC"
+          }
         },
         {
           "name": "Jeremiah Fears",
@@ -2927,7 +2943,11 @@
             "rank": 144
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:00 pm @ MEM"
+          }
         }
       ],
       "moveLog": [
@@ -3069,20 +3089,12 @@
       },
       "realRank": 15,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Obi Toppin",
-        "Ja'Kobe Walter",
-        "Jeremiah Fears"
-      ],
-      "pendingOut": [
-        "Sandro Mamukelashvili",
-        "Egor Dëmin",
-        "Morez Johnson Jr."
-      ]
+      "pendingIn": [],
+      "pendingOut": []
     },
     {
       "name": "Grilled Teampura",
@@ -3126,7 +3138,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs CHI"
           }
         },
         {
@@ -3165,9 +3177,9 @@
             "note": "Hamstring"
           },
           "thisWeek": {
-            "slot": "SG",
-            "status": null,
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "7:30 pm vs ATL"
           }
         },
         {
@@ -3203,9 +3215,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -3243,9 +3255,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": null
+            "slot": "Util",
+            "status": "Q",
+            "gameToday": "7:30 pm @ ORL"
           }
         },
         {
@@ -3285,8 +3297,8 @@
           },
           "thisWeek": {
             "slot": "Util",
-            "status": null,
-            "gameToday": null
+            "status": "Q",
+            "gameToday": "7:00 pm vs OKC"
           }
         },
         {
@@ -3326,8 +3338,8 @@
           },
           "thisWeek": {
             "slot": "C",
-            "status": null,
-            "gameToday": null
+            "status": "P",
+            "gameToday": "7:30 pm @ PHI"
           }
         },
         {
@@ -3365,11 +3377,7 @@
             "status": "O",
             "note": "Knee"
           },
-          "thisWeek": {
-            "slot": "BN",
-            "status": null,
-            "gameToday": null
-          }
+          "thisWeek": null
         },
         {
           "name": "Tari Eason",
@@ -3407,7 +3415,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -3445,7 +3453,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -3483,7 +3491,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": "7:30 pm @ BOS"
+            "gameToday": "7:30 pm @ NYK"
           }
         },
         {
@@ -3521,7 +3529,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -3558,9 +3566,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "IL",
-            "status": "Q",
-            "gameToday": null
+            "slot": "SF",
+            "status": null,
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -3599,9 +3607,9 @@
             "note": "Ankle"
           },
           "thisWeek": {
-            "slot": "SF",
-            "status": "Q",
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -3636,7 +3644,11 @@
             "rank": 165
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm @ MIN"
+          }
         }
       ],
       "moveLog": [
@@ -3760,12 +3772,12 @@
       },
       "realRank": 9,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
       "pendingIn": [
-        "Kyle Kuzma"
+        "Gui Santos"
       ],
       "pendingOut": []
     },
@@ -3812,7 +3824,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": "8:00 pm @ NYK"
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -3852,9 +3864,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "SG",
-            "status": "Q",
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "10:00 pm @ LAC"
           }
         },
         {
@@ -3894,8 +3906,8 @@
           },
           "thisWeek": {
             "slot": "SF",
-            "status": null,
-            "gameToday": null
+            "status": "Q",
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -3933,8 +3945,8 @@
           "injury": null,
           "thisWeek": {
             "slot": "PF",
-            "status": "Q",
-            "gameToday": "8:00 pm @ NYK"
+            "status": null,
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -3971,7 +3983,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MIN"
           }
         },
         {
@@ -4010,9 +4022,9 @@
             "note": "Ankle"
           },
           "thisWeek": {
-            "slot": "BN",
+            "slot": "IL",
             "status": "O",
-            "gameToday": "8:00 pm @ SAS"
+            "gameToday": "8:00 pm @ DAL"
           }
         },
         {
@@ -4049,7 +4061,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -4086,9 +4098,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MIN"
           }
         },
         {
@@ -4111,7 +4123,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -4148,7 +4160,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         },
         {
@@ -4187,8 +4199,8 @@
           },
           "thisWeek": {
             "slot": "BN",
-            "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "status": "O",
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -4224,9 +4236,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "BN",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -4265,9 +4277,9 @@
             "note": "Foot"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -4301,7 +4313,11 @@
             "rank": 83
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "Util",
+            "status": null,
+            "gameToday": "8:30 pm @ SAS"
+          }
         }
       ],
       "moveLog": [
@@ -4401,13 +4417,11 @@
       },
       "realRank": 14,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Jaxson Hayes"
-      ],
+      "pendingIn": [],
       "pendingOut": []
     },
     {
@@ -4453,7 +4467,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAL"
           }
         },
         {
@@ -4490,7 +4504,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -4527,7 +4541,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MIN"
           }
         },
         {
@@ -4567,7 +4581,7 @@
           "thisWeek": {
             "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -4605,7 +4619,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs ATL"
           }
         },
         {
@@ -4643,9 +4657,9 @@
             "note": "Hamstring"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -4669,7 +4683,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -4704,9 +4718,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "BN",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -4743,7 +4757,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -4781,7 +4795,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "9:00 pm vs POR"
           }
         },
         {
@@ -4818,7 +4832,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         },
         {
@@ -4856,7 +4870,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -4894,7 +4908,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm vs TOR"
           }
         }
       ],
@@ -5001,7 +5015,7 @@
       },
       "realRank": 12,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -5051,7 +5065,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": "8:00 pm vs DET"
+            "gameToday": "7:30 pm vs BKN"
           }
         },
         {
@@ -5089,7 +5103,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm vs OKC"
           }
         },
         {
@@ -5128,9 +5142,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": "Q",
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -5169,7 +5183,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -5208,8 +5222,8 @@
           },
           "thisWeek": {
             "slot": "PG",
-            "status": null,
-            "gameToday": null
+            "status": "Q",
+            "gameToday": "8:00 pm vs SAC"
           }
         },
         {
@@ -5246,7 +5260,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -5284,9 +5298,9 @@
             "note": "Ankle"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": "D",
-            "gameToday": null
+            "slot": "BN",
+            "status": "O",
+            "gameToday": "7:30 pm vs ATL"
           }
         },
         {
@@ -5309,7 +5323,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": "O",
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         },
         {
@@ -5347,7 +5361,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -5385,7 +5399,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         },
         {
@@ -5423,7 +5437,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -5459,9 +5473,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "BN",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs SAC"
           }
         }
       ],
@@ -5536,12 +5550,14 @@
       },
       "realRank": 10,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
       "pendingIn": [],
-      "pendingOut": []
+      "pendingOut": [
+        "Derrick Jones Jr."
+      ]
     },
     {
       "name": "Bitsketball Stars",
@@ -5585,7 +5601,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -5623,7 +5639,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs CHI"
           }
         },
         {
@@ -5660,7 +5676,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "9:00 pm vs POR"
           }
         },
         {
@@ -5697,7 +5713,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -5735,7 +5751,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs NOP"
           }
         },
         {
@@ -5773,7 +5789,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "9:00 pm vs POR"
           }
         },
         {
@@ -5810,8 +5826,8 @@
           "injury": null,
           "thisWeek": {
             "slot": "Util",
-            "status": "Q",
-            "gameToday": null
+            "status": null,
+            "gameToday": "7:30 pm vs ATL"
           }
         },
         {
@@ -5850,7 +5866,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAC"
           }
         },
         {
@@ -5887,7 +5903,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -5926,7 +5942,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -5964,7 +5980,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs ATL"
           }
         },
         {
@@ -6002,7 +6018,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         }
       ],
@@ -6077,7 +6093,7 @@
       },
       "realRank": 6,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -6128,7 +6144,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": "8:00 pm vs DET"
+            "gameToday": "7:30 pm vs BKN"
           }
         },
         {
@@ -6167,7 +6183,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -6204,7 +6220,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm vs OKC"
           }
         },
         {
@@ -6242,7 +6258,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MIN"
           }
         },
         {
@@ -6281,7 +6297,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAL"
           }
         },
         {
@@ -6318,7 +6334,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -6355,7 +6371,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -6393,7 +6409,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -6431,7 +6447,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "8:00 pm @ NYK"
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -6469,7 +6485,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -6507,7 +6523,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm vs OKC"
           }
         }
       ],
@@ -6674,7 +6690,7 @@
       },
       "realRank": 4,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -6723,7 +6739,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -6761,7 +6777,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ ORL"
           }
         },
         {
@@ -6798,8 +6814,8 @@
           "injury": null,
           "thisWeek": {
             "slot": "SF",
-            "status": "Q",
-            "gameToday": null
+            "status": null,
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -6837,7 +6853,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -6875,7 +6891,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAC"
           }
         },
         {
@@ -6912,7 +6928,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -6950,7 +6966,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MIN"
           }
         },
         {
@@ -6988,7 +7004,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -7025,7 +7041,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -7063,7 +7079,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -7101,7 +7117,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs WAS"
           }
         },
         {
@@ -7136,7 +7152,11 @@
             "rank": 216
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "8:00 pm vs MIL"
+          }
         }
       ],
       "moveLog": [
@@ -7272,16 +7292,12 @@
       },
       "realRank": 8,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Terrence Shannon Jr."
-      ],
-      "pendingOut": [
-        "Trevon Brazile"
-      ]
+      "pendingIn": [],
+      "pendingOut": []
     },
     {
       "name": "Full Court Rex",
@@ -7327,8 +7343,8 @@
           },
           "thisWeek": {
             "slot": "PG",
-            "status": null,
-            "gameToday": null
+            "status": "O",
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -7364,8 +7380,8 @@
           "injury": null,
           "thisWeek": {
             "slot": "BN",
-            "status": "O",
-            "gameToday": null
+            "status": null,
+            "gameToday": "7:30 pm @ ORL"
           }
         },
         {
@@ -7403,7 +7419,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         },
         {
@@ -7441,7 +7457,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm vs BOS"
           }
         },
         {
@@ -7480,7 +7496,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm vs CHI"
           }
         },
         {
@@ -7517,7 +7533,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -7555,7 +7571,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:30 pm @ SAS"
           }
         },
         {
@@ -7592,7 +7608,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -7630,7 +7646,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -7668,7 +7684,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ GSW"
           }
         },
         {
@@ -7706,7 +7722,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -7744,7 +7760,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         }
       ],
@@ -7833,7 +7849,7 @@
       },
       "realRank": 13,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
@@ -7882,7 +7898,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "9:00 pm vs POR"
           }
         },
         {
@@ -7920,7 +7936,7 @@
           "thisWeek": {
             "slot": "SF",
             "status": null,
-            "gameToday": "7:30 pm vs BKN"
+            "gameToday": "8:30 pm @ HOU"
           }
         },
         {
@@ -7958,7 +7974,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -7995,7 +8011,7 @@
           "thisWeek": {
             "slot": "PG",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAL"
           }
         },
         {
@@ -8035,7 +8051,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": "O",
-            "gameToday": null
+            "gameToday": "8:00 pm @ MEM"
           }
         },
         {
@@ -8073,7 +8089,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": "11:00 pm @ LAL"
+            "gameToday": "9:00 pm @ DEN"
           }
         },
         {
@@ -8097,7 +8113,7 @@
           "thisWeek": {
             "slot": "BN",
             "status": "O",
-            "gameToday": null
+            "gameToday": "10:00 pm vs PHX"
           }
         },
         {
@@ -8135,7 +8151,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAL"
           }
         },
         {
@@ -8174,8 +8190,8 @@
           },
           "thisWeek": {
             "slot": "BN",
-            "status": null,
-            "gameToday": "7:30 pm @ BOS"
+            "status": "Q",
+            "gameToday": "7:30 pm @ NYK"
           }
         },
         {
@@ -8213,7 +8229,7 @@
           "thisWeek": {
             "slot": "Util",
             "status": null,
-            "gameToday": "11:00 pm vs POR"
+            "gameToday": "10:00 pm vs MIA"
           }
         },
         {
@@ -8252,8 +8268,8 @@
           },
           "thisWeek": {
             "slot": "BN",
-            "status": null,
-            "gameToday": null
+            "status": "D",
+            "gameToday": "8:00 pm vs NOP"
           }
         },
         {
@@ -8287,7 +8303,11 @@
             "rank": 48
           },
           "injury": null,
-          "thisWeek": null
+          "thisWeek": {
+            "slot": "BN",
+            "status": null,
+            "gameToday": "7:30 pm @ NYK"
+          }
         }
       ],
       "moveLog": [
@@ -8375,16 +8395,12 @@
       },
       "realRank": 5,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [
-        "Julius Randle"
-      ],
-      "pendingOut": [
-        "Bam Adebayo"
-      ]
+      "pendingIn": [],
+      "pendingOut": []
     },
     {
       "name": "Super Maru",
@@ -8430,9 +8446,9 @@
             "note": "Knee"
           },
           "thisWeek": {
-            "slot": "PG",
-            "status": null,
-            "gameToday": null
+            "slot": "IL",
+            "status": "O",
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -8470,9 +8486,9 @@
             "note": "Foot"
           },
           "thisWeek": {
-            "slot": "Util",
-            "status": "P",
-            "gameToday": null
+            "slot": "BN",
+            "status": "Q",
+            "gameToday": "7:30 pm vs CHI"
           }
         },
         {
@@ -8510,7 +8526,7 @@
           "thisWeek": {
             "slot": "PF",
             "status": null,
-            "gameToday": "8:00 pm @ SAS"
+            "gameToday": "8:00 pm @ DAL"
           }
         },
         {
@@ -8549,9 +8565,9 @@
             "note": "Leg"
           },
           "thisWeek": {
-            "slot": "BN",
+            "slot": "IL",
             "status": "O",
-            "gameToday": null
+            "gameToday": "7:00 pm @ CLE"
           }
         },
         {
@@ -8586,9 +8602,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "PG",
             "status": null,
-            "gameToday": "8:00 pm vs SAC"
+            "gameToday": "8:30 pm vs UTA"
           }
         },
         {
@@ -8607,9 +8623,9 @@
           "stats": null,
           "injury": null,
           "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": null
+            "slot": "Util",
+            "status": null,
+            "gameToday": "7:30 pm vs DET"
           }
         },
         {
@@ -8647,7 +8663,7 @@
           "thisWeek": {
             "slot": "SG",
             "status": null,
-            "gameToday": null
+            "gameToday": "8:00 pm vs MIL"
           }
         },
         {
@@ -8683,9 +8699,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "BN",
             "status": null,
-            "gameToday": "8:00 pm @ NYK"
+            "gameToday": "7:30 pm @ CHA"
           }
         },
         {
@@ -8705,11 +8721,7 @@
             "status": "O",
             "note": "Calf"
           },
-          "thisWeek": {
-            "slot": "BN",
-            "status": "O",
-            "gameToday": "8:00 pm vs SAC"
-          }
+          "thisWeek": null
         },
         {
           "name": "Bobby Portis Jr.",
@@ -8746,7 +8758,7 @@
           "thisWeek": {
             "slot": "C",
             "status": null,
-            "gameToday": null
+            "gameToday": "10:00 pm @ LAL"
           }
         },
         {
@@ -8782,9 +8794,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "Util",
+            "slot": "SF",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         },
         {
@@ -8820,9 +8832,9 @@
           },
           "injury": null,
           "thisWeek": {
-            "slot": "SF",
+            "slot": "Util",
             "status": null,
-            "gameToday": null
+            "gameToday": "7:30 pm @ IND"
           }
         }
       ],
@@ -8923,12 +8935,17 @@
       },
       "realRank": 7,
       "lineup": {
-        "asOf": "2026-10-27",
+        "asOf": "2026-11-02",
         "complete": true,
         "teamNameInferred": false
       },
-      "pendingIn": [],
-      "pendingOut": []
+      "pendingIn": [
+        "Tobias Harris"
+      ],
+      "pendingOut": [
+        "Precious Achiuwa",
+        "De'Anthony Melton"
+      ]
     }
   ],
   "draft": [
