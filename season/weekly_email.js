@@ -315,7 +315,7 @@ function trashTalk(d, a) {
   if (a.faller.delta < 0) out.push(`${a.faller.t.who} slid ${-a.faller.delta} spot${a.faller.delta < -1 ? 's' : ''}. Thoughts and prayers.`);
   if (a.hot) out.push(`Player of the week: ${a.hot.name} (${a.hot.t.who}), ${signed(a.hot.total)} vs. projection. Enjoy it, it won't last.`);
   if (a.cold && a.cold.total < 0) out.push(`Ice cube award: ${a.cold.name} (${a.cold.t.who}) at ${signed(a.cold.total)} vs. projection. Someone check if he's still in the league.`);
-  if (a.bench.games > 0) out.push(`Bench warmer trophy: ${a.bench.t.who} left ${a.bench.games} game${a.bench.games > 1 ? 's' : ''} on the bench last week${a.bench.leaders.length ? `, mostly ${list(a.bench.leaders)}` : ''}.`);
+  if (a.bench.games > 0) out.push(`Bench warmer trophy: ${a.bench.t.who} left ${a.bench.games} game${a.bench.games > 1 ? 's' : ''} on the bench last week${a.bench.leaders.length ? `, ${a.bench.t.hot.filter(p => p.benchedGames).length === a.bench.leaders.length ? 'all from' : 'mostly'} ${list(a.bench.leaders)}` : ''}.`);
   const worst = a.schedWorst;
   out.push(`Schedule luck this week: ${a.schedBest.who} gets ${a.schedBest.startGames} starter games, ${list(worst.map(t => t.who))} get${worst.length > 1 ? '' : 's'} ${worst[0].startGames}. Life isn't fair, and neither is the NBA calendar.`);
   const quips = ['Bold strategy.', 'Punting or just vibes?', 'A choice was made.', 'Room to grow.'];
