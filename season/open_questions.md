@@ -1,0 +1,10 @@
+# Open questions & reflections
+
+Questions to revisit on a set date. `npm run report` copies every unchecked item (`- [ ]`) under a `## YYYY-MM-DD` heading on or before the report date into an "Open questions due" section. The session or scheduled task writing that day's report should answer each one in the report, then tick it (`- [x]`) and add a one-line answer below it here. Add new questions under a future date heading (`## YYYY-MM-DD (why)`).
+
+## 2026-11-09 (Mon: first lock after the week of Nov 2–8)
+
+- [ ] **Benching Quickley: was it right?** For Nov 2–8 we started Khaman Maluach (PHX, 4 games) and Miles Bridges (PHX, 4) over Immanuel Quickley (TOR, 3). The pre-week model said a Quickley-for-Maluach swap would cost about 2–3 roto points (blocks, rebounds, FG%), and Quickley-for-Bridges about 2–4. Compare their actual Nov 2–8 lines (from the stats snapshots), re-score the week both ways, and say whether the model's call held. Then decide for the Nov 9–15 lineup: games per player that week, Quickley's FG% (37.6% through Nov 2), Maluach's minutes (21.8 through Nov 2), and Bridges's role.
+- [ ] **Trevon Brazile (DEN, FA): watch or add?** Through Nov 2: 22.8 min, 6.6 reb, 0.8 blk, 1.2 3PM in 5 games, but no new games in the Oct 31–Nov 2 snapshots. Are his minutes holding? Has a Denver frontcourt injury opened more? Add him only if he beats Robert Williams III (the planned drop) on blocks and rebounds.
+- [ ] **Mitchell sell-high and buy-low trade targets.** Has Ajay Mitchell (ranked 55th on Hashtag's value against a preseason projection of 88th) cooled off since Alex Caruso's return around Nov 4? Check the targets again: Donovan Clingan (New Day Co-op, last in assists and steals), Zach Edey (Fishy Achilles; why are his minutes down to 20?), and Rudy Gobert (Full Court Rex; is his back still limiting him?). Record any offers or results.
+- [ ] **Blocks and rebounds catch-up.** On Nov 2 we were 14th in blocks (27; 26–29 covers six places), 11th in rebounds and 12th in FG%. Where are we now, and do we still need a big from a trade or the wire while Chet Holmgren is out (expected back around Jan 2)?

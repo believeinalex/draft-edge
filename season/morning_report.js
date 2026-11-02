@@ -14,6 +14,7 @@ const { rotoPoints } = require('./build_season.js');
  * - season/standings: the latest real Yahoo standings, the base for the projection.
  * - season/injuries: the two latest reports, compared to find new, changed and cleared injuries.
  * - Tonight's schedule from ESPN's public scoreboard.
+ * - season/open_questions.md: unchecked questions due on or before today are listed for answering.
  *
  * Usage: node season/morning_report.js   (npm run report)
  * In the cloud container, run with NODE_USE_ENV_PROXY=1 (the npm script does).
@@ -35,6 +36,21 @@ function datedFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().map(f => path.join(dir, f));
 }
+// Unchecked "- [ ]" items under "## YYYY-MM-DD" headings dated on or before `today`
+function dueQuestions(today, file = path.join(__dirname, 'open_questions.md')) {
+  if (!fs.existsSync(file)) return [];
+  const out = [];
+  let date = null;
+  for (const line of fs.readFileSync(file, 'utf8').split('\n')) {
+    const h = line.match(/^##\s+(\d{4}-\d{2}-\d{2})/);
+    if (h) { date = h[1]; continue; }
+    if (/^#/.test(line)) { date = null; continue; }
+    const q = line.match(/^- \[ \]\s+(.*)/);
+    if (q && date && date <= today) out.push({ date, text: q[1] });
+  }
+  return out;
+}
+
 const etDate = (d = new Date()) => d.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 const mondayOf = iso => {
   const d = new Date(iso + 'T12:00:00Z');
@@ -308,6 +324,13 @@ async function main() {
     md.push('');
   }
 
+  const due = dueQuestions(today);
+  if (due.length) {
+    md.push('## Open questions due', '', 'From `season/open_questions.md`. Answer each below, then tick it there with a one-line answer.', '');
+    for (const q of due) md.push(`- (${q.date}) ${q.text}`);
+    md.push('');
+  }
+
   if (warn.length) md.push('## Notes', '', ...warn.map(w => `- ${w}`), '');
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const out = path.join(REPORT_DIR, `${today}.md`);
@@ -324,4 +347,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { buildScorer, gameLines, activeLineups, mondayOf };
+module.exports = { dueQuestions, buildScorer, gameLines, activeLineups, mondayOf };

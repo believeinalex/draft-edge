@@ -13,6 +13,7 @@ The draft is over and the project is now used for in-season management. This dir
 | `history/prior_standings.json` | Final Yahoo standings (category totals + GP) from the two previous seasons: 2025-26 (12 teams; the user finished last after injuries and disengaging, 478 GP) and 2024-25 (13 teams; the user finished 5th). Use as end-of-season benchmarks, comparing per-GP rates rather than raw totals, since league size and GP differ. |
 | `injuries/YYYY-MM-DD.json` | Yahoo's public NBA injury report (`npm run injuries`; re-running the same day replaces that day's file). Statuses: O out, D doubtful, Q questionable, P probable. The latest is attached to rostered players as `injury`. |
 | `morning_report.js` | `npm run report` (or `npm run morning` to fetch first): writes `reports/YYYY-MM-DD.md` with last night's over/under performers (game z-score minus projected per-game z-score), injury changes and projected standings after tonight (latest Yahoo standings + games since, estimated from player stats + tonight's ESPN schedule × active lineups, weighted by injury status). |
+| `open_questions.md` | Dated questions and reflections to revisit. Unchecked items due on or before the report date appear in the morning report's "Open questions due" section. Answer them, then tick them with a one-line answer. |
 | `build_season.js` | Regenerates `league.json` (`npm run season`). |
 
 ## Notes
