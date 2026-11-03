@@ -1663,7 +1663,7 @@
             "rank": 14
           },
           "injury": {
-            "status": "O",
+            "status": "P",
             "note": "Rest"
           },
           "thisWeek": {
@@ -2756,7 +2756,7 @@
             "rank": 220
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Quadriceps"
           },
           "thisWeek": {
@@ -3282,7 +3282,7 @@
             "rank": 126
           },
           "injury": {
-            "status": "O",
+            "status": "P",
             "note": "Rest"
           },
           "thisWeek": {
@@ -3811,7 +3811,7 @@
             "rank": 30
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Ankle"
           },
           "thisWeek": {
@@ -4523,7 +4523,7 @@
             "rank": 15
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Knee"
           },
           "thisWeek": {
@@ -4816,7 +4816,7 @@
             "rank": 107
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Knee"
           },
           "thisWeek": {
@@ -5177,7 +5177,7 @@
             "rank": 59
           },
           "injury": {
-            "status": "O",
+            "status": "P",
             "note": "Neck"
           },
           "thisWeek": {
@@ -5295,7 +5295,7 @@
             "rank": 44
           },
           "injury": {
-            "status": "O",
+            "status": "P",
             "note": "Rest"
           },
           "thisWeek": {
@@ -5336,7 +5336,7 @@
             "rank": 190
           },
           "injury": {
-            "status": "O",
+            "status": "P",
             "note": "Rest"
           },
           "thisWeek": {
@@ -5617,7 +5617,7 @@
             "rank": 128
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Knee"
           },
           "thisWeek": {
@@ -5658,7 +5658,7 @@
             "rank": 117
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Hamstring"
           },
           "thisWeek": {
@@ -7166,7 +7166,7 @@
             "rank": 212
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Hip"
           },
           "thisWeek": {
@@ -8349,7 +8349,7 @@
             "rank": 239
           },
           "injury": {
-            "status": "O",
+            "status": "Q",
             "note": "Back"
           },
           "thisWeek": {
