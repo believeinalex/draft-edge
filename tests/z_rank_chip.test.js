@@ -4,6 +4,9 @@ const { injectZRankChips, getConfig, setConfig } = require('../content.js');
 const { matchPlayer, buildNameIndex } = require('../engine.js');
 const PLAYERS = require('../players.js');
 
+// Ranks change with every projection refresh, so look them up instead of hardcoding.
+const rkOf = (name) => PLAYERS.find(p => p.name === name).rk;
+
 // Simple DOM element mock
 class MockElement {
   constructor(tagName = 'div', className = '', textContent = '') {
@@ -152,7 +155,7 @@ test('injectZRankChips attaches Z rank chip next to player name in .ys-player', 
   const doc = new MockDocument();
   global.document = doc;
 
-  // Simulate a player row in the players board (e.g. Payton Pritchard, rk 91)
+  // Simulate a player row in the players board (e.g. Payton Pritchard)
   const playerDiv = doc.createElement('div');
   playerDiv.className = 'ys-player';
   playerDiv.setAttribute('data-id', '1001');
@@ -173,9 +176,9 @@ test('injectZRankChips attaches Z rank chip next to player name in .ys-player', 
 
   const badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge, 'Badge should be injected');
-  assert.equal(badge.textContent, '#91');
-  assert.equal(badge.title, 'Z-Score Rank #91');
-  assert.equal(badge.dataset.rk, '91');
+  assert.equal(badge.textContent, `#${rkOf('Payton Pritchard')}`);
+  assert.equal(badge.title, `Z-Score Rank #${rkOf('Payton Pritchard')}`);
+  assert.equal(badge.dataset.rk, String(rkOf('Payton Pritchard')));
 
   // Verify badge is positioned before player name
   assert.equal(nameWrap.children[0], badge);
@@ -194,12 +197,12 @@ test('injectZRankChips handles players without .ys-player wrapper via .ys-player
   const doc = new MockDocument();
   global.document = doc;
 
-  // Simulate Mikal Bridges (rk 102)
+  // Simulate Mikal Bridges
   const row = doc.createElement('div');
   row.className = 'custom-player-row';
 
   const nameWrap = doc.createElement('div');
-  const nameSpan = doc.createElement('span', 'player-name', 'M. Bridges');
+  const nameSpan = doc.createElement('span', 'player-name', 'Mikal Bridges');
   const notesSpan = doc.createElement('span', 'ys-player-notes');
 
   nameWrap.appendChild(nameSpan);
@@ -211,8 +214,8 @@ test('injectZRankChips handles players without .ys-player wrapper via .ys-player
 
   const badge = row.querySelector('.de-name-rank-badge');
   assert.ok(badge, 'Badge should be injected for .ys-player-notes fallback');
-  assert.equal(badge.textContent, '#102');
-  assert.equal(badge.dataset.rk, '102');
+  assert.equal(badge.textContent, `#${rkOf('Mikal Bridges')}`);
+  assert.equal(badge.dataset.rk, String(rkOf('Mikal Bridges')));
 
   delete global.document;
 });
@@ -255,16 +258,16 @@ test('injectZRankChips updates existing badge when player row is recycled in vir
 
   injectZRankChips();
   let badge = playerDiv.querySelector('.de-name-rank-badge');
-  assert.equal(badge.textContent, '#91');
-  assert.equal(badge.dataset.rk, '91');
+  assert.equal(badge.textContent, `#${rkOf('Payton Pritchard')}`);
+  assert.equal(badge.dataset.rk, String(rkOf('Payton Pritchard')));
 
-  // Virtual scroll recycles row for Mikal Bridges (rk 102)
-  nameSpan.textContent = 'M. Bridges';
+  // Virtual scroll recycles row for Mikal Bridges
+  nameSpan.textContent = 'Mikal Bridges';
   injectZRankChips();
 
   badge = playerDiv.querySelector('.de-name-rank-badge');
-  assert.equal(badge.textContent, '#102');
-  assert.equal(badge.dataset.rk, '102');
+  assert.equal(badge.textContent, `#${rkOf('Mikal Bridges')}`);
+  assert.equal(badge.dataset.rk, String(rkOf('Mikal Bridges')));
 
   delete global.document;
 });
@@ -293,9 +296,9 @@ test('injectZRankChips works with img[title] and disambiguates Ausar Thompson vi
 
   const badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge);
-  // Ausar Thompson is rk 98, Amen Thompson is rk 27
-  assert.equal(badge.textContent, '#98');
-  assert.equal(badge.dataset.rk, '98');
+  // Ausar (DET) must win over the higher-ranked Amen Thompson (HOU)
+  assert.equal(badge.textContent, `#${rkOf('Ausar Thompson')}`);
+  assert.equal(badge.dataset.rk, String(rkOf('Ausar Thompson')));
 
   delete global.document;
 });
@@ -310,11 +313,11 @@ test('matchPlayer rejects different first name/initial even when last name match
   // Giannis Antetokounmpo should still match
   const giannisInit = matchPlayer('G. Antetokounmpo', PLAYERS, byNorm, 'PF · MIL');
   assert.ok(giannisInit);
-  assert.equal(giannisInit.rk, 24);
+  assert.equal(giannisInit.rk, rkOf('Giannis Antetokounmpo'));
 
   const giannisFull = matchPlayer('Giannis Antetokounmpo', PLAYERS, byNorm);
   assert.ok(giannisFull);
-  assert.equal(giannisFull.rk, 24);
+  assert.equal(giannisFull.rk, rkOf('Giannis Antetokounmpo'));
 });
 
 test('injectZRankChips removes existing badge when row is recycled for an unranked player', () => {
@@ -334,7 +337,7 @@ test('injectZRankChips removes existing badge when row is recycled for an unrank
   injectZRankChips();
   let badge = playerDiv.querySelector('.de-name-rank-badge');
   assert.ok(badge);
-  assert.equal(badge.textContent, '#24');
+  assert.equal(badge.textContent, `#${rkOf('Giannis Antetokounmpo')}`);
 
   // Row is recycled in virtual scroll for an unranked player (e.g. Joe Ingles or Thanasis)
   nameSpan.textContent = 'J. Ingles';
