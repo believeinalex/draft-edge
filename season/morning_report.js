@@ -310,7 +310,7 @@ async function main() {
     md.push('|---|---|---|---|---|---|' + CATS.map(() => '---').join('|') + '|');
     for (const t of [...teams].sort((a, b) => a.projRank - b.projRank)) {
       const mark = t.name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(t.name) ? ' **(Finn)**' : '';
-      md.push(`| ${t.realRank} | ${t.projRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${t.gpNow} | ${t.games} | ${t.realRoto.total} → ${t.projRoto.total} | ` +
+      md.push(`| ${t.realRank} | ${t.projRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${t.gpNow} | ${+t.games.toFixed(1)} | ${t.realRoto.total} → ${t.projRoto.total} | ` +
         CATS.map(c => t.projRoto[c]).join(' | ') + ' |');
     }
     if (teams.some(t => t.estimated)) md.push('', '† lineup paste was cut off; missing starters estimated from best-projected players.');
@@ -318,7 +318,7 @@ async function main() {
     for (const tn of league.managedTeams || []) {
       const t = teams.find(x => x.name === tn);
       if (!t) continue;
-      md.push(`- **${tn}:** ${t.realRank} → ${t.projRank} (${t.realRoto.total} → ${t.projRoto.total} pts), ${t.games} games tonight. ` +
+      md.push(`- **${tn}:** ${t.realRank} → ${t.projRank} (${t.realRoto.total} → ${t.projRoto.total} pts), ${+t.games.toFixed(1)} games tonight. ` +
         `Projected: FG ${fmtPct(t.projTotals.fgPct)}, FT ${fmtPct(t.projTotals.ftPct)}, ${COUNT.map(c => `${Math.round(t.projTotals[c])} ${c}`).join(', ')}.`);
     }
     md.push('');
