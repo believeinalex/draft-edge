@@ -4,8 +4,15 @@
 
 ## Current take
 
-_No notes yet._
+Lloyd: not a must in 12-team leagues, with a short-term bump while Porziņģis is away. Season check (HTB through Nov 5): 26.6 mpg, 3.2 pts, 6.3 ast, 38.9% FG, 151st.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-10-22 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Oct 21, 11 games
+Source: sources/2026-10-22_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 21 minutes, 8 ast in a loss to the Lakers.
+- **Analysis:** "I don't think that Draymond is a must in 12-team formats."
+- **Analysis:** While Kristaps Porziņģis is out, Golden State's bigs (Draymond included) get a boost. If Porziņģis is traded, the Warriors would bring someone back, which is worse for them.
+
