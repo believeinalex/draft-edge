@@ -2,14 +2,19 @@
 
 ## Current take
 
-Lloyd: buy low. (opening-week single game; season stats are the better guide now)
+Missed Nov 4; buy-low per Lloyd (Oct 22).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
+Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Sat out against Utah.
+- **Analysis:** His return makes New Orleans' lineup hard to project.
+
 ### 2026-10-22 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Oct 21, 11 games
 Source: sources/2026-10-22_locked-on-fantasy-basketball.txt
 Tags: usage, trade
 - **Stat:** 11-4-1, only 14% usage; uninvolved.
 - **Analysis:** Hold, and probably buy low.
-

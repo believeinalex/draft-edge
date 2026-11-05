@@ -1,0 +1,15 @@
+# Pelle Larsson
+
+## Current take
+
+Lloyd: 14-team.
+
+## Notes
+
+<!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
+Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 7-3-4, but he got the minutes.
+- **Analysis:** Definitely a 14-team player, not quite a 12.
