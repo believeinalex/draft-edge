@@ -3,6 +3,7 @@ const path = require('path');
 const PLAYERS = require('../players.js');
 const { normName, CATS } = require('../engine.js');
 const { rotoPoints } = require('./build_season.js');
+const { recentNotes } = require('./dossiers.js');
 
 /**
  * Morning report: last night's over/under performers, injury changes, and projected
@@ -15,6 +16,7 @@ const { rotoPoints } = require('./build_season.js');
  * - season/injuries: the two latest reports, compared to find new, changed and cleared injuries.
  * - Tonight's schedule from ESPN's public scoreboard.
  * - season/open_questions.md: unchecked questions due on or before today are listed for answering.
+ * - season/dossiers: the managed teams' player-dossier notes from the last 7 days.
  *
  * Usage: node season/morning_report.js   (npm run report)
  * In the cloud container, run with NODE_USE_ENV_PROXY=1 (the npm script does).
@@ -328,6 +330,20 @@ async function main() {
   if (due.length) {
     md.push('## Open questions due', '', 'From `season/open_questions.md`. Answer each below, then tick it there with a one-line answer.', '');
     for (const q of due) md.push(`- (${q.date}) ${q.text}`);
+    md.push('');
+  }
+
+  const weekAgo = new Date(new Date(today + 'T12:00:00Z').getTime() - 7 * 864e5).toISOString().slice(0, 10);
+  for (const tn of league.managedTeams || []) {
+    const t = findTeam(league, tn);
+    const notes = t ? recentNotes(t.roster.map(r => r.name), weekAgo) : [];
+    if (!notes.length) continue;
+    if (!md.includes('## Dossier notes')) md.push('## Dossier notes', '', `Notes dated ${weekAgo} or later in \`season/dossiers/\`. Read the full dossier before acting on one.`, '');
+    md.push(`**${tn}**`, '');
+    for (const { name, file, entry } of notes) {
+      md.push(`- ${name}, ${entry.date} · ${entry.source}${entry.tags.length ? ` (${entry.tags.join(', ')})` : ''} ([dossier](../season/dossiers/players/${file}))`);
+      for (const b of entry.bullets) md.push(`  - ${b}`);
+    }
     md.push('');
   }
 

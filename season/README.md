@@ -14,6 +14,7 @@ The draft is over and the project is now used for in-season management. This dir
 | `injuries/YYYY-MM-DD.json` | Yahoo's public NBA injury report (`npm run injuries`; re-running the same day replaces that day's file). Statuses: O out, D doubtful, Q questionable, P probable. The latest is attached to rostered players as `injury`. |
 | `morning_report.js` | `npm run report` (or `npm run morning` to fetch first): writes `reports/YYYY-MM-DD.md` with last night's over/under performers (game z-score minus projected per-game z-score), injury changes and projected standings after tonight (latest Yahoo standings + games since, estimated from player stats + tonight's ESPN schedule × active lineups, weighted by injury status). |
 | `open_questions.md` | Dated questions and reflections to revisit. Unchecked items due on or before the report date appear in the morning report's "Open questions due" section. Answer them, then tick them with a one-line answer. |
+| `dossiers/` | Player dossiers: `players/<slug>.md` (dated, sourced notes per player plus a running "Current take"), `sources/` (verbatim podcast transcripts and articles) and a generated `INDEX.md`. `dossiers.js` (`npm run dossiers`) rebuilds the index, checks the format and creates stubs for both managed rosters. See `dossiers/README.md`. |
 | `build_season.js` | Regenerates `league.json` (`npm run season`). |
 
 ## Notes
