@@ -3,6 +3,7 @@ const path = require('path');
 const { normName } = require('../engine.js');
 const PLAYERS = require('../players.js');
 const { fetchCoverage, coverageMarkdown } = require('./team_coverage.js');
+const { fetchRotowire, rotowireMarkdown } = require('./rotowire.js');
 
 /**
  * Daily injury & news digest from ESPN's public NBA endpoints (no login needed).
@@ -183,16 +184,22 @@ async function main() {
   let coverage = {}, covErrors = [];
   try { ({ coverage, errors: covErrors } = await fetchCoverage(covTeams)); } catch (e) { covErrors = [e.message]; }
 
+  // RotoWire's live injury feed (non-fatal: the digest still builds without it)
+  let rotowire = [], rotoError = null;
+  try { rotowire = await fetchRotowire(); } catch (e) { rotoError = e.message; }
+
   const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
   fs.mkdirSync(NEWS_DIR, { recursive: true });
   const earlier = fs.readdirSync(NEWS_DIR).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f < `${today}.json`).sort();
   const prev = earlier.length ? JSON.parse(fs.readFileSync(path.join(NEWS_DIR, earlier[earlier.length - 1]), 'utf8')) : null;
   const changes = prev ? diffInjuries(prev.injuries, injuries, k => owner.has(k)) : null;
 
-  fs.writeFileSync(path.join(NEWS_DIR, `${today}.json`), JSON.stringify({ asOf: today, fetchedAt: new Date().toISOString(), source: BASE, injuries, articles, coverage }, null, 2) + '\n');
+  fs.writeFileSync(path.join(NEWS_DIR, `${today}.json`), JSON.stringify({ asOf: today, fetchedAt: new Date().toISOString(), source: BASE, injuries, articles, rotowire, coverage }, null, 2) + '\n');
   const latest = JSON.parse(fs.readFileSync(path.join(ROOT, 'stats', 'latest.json'), 'utf8'));
   const stats = new Map(latest.players.map(p => [normName(p.name), p]));
-  const md = buildMarkdown({ today, league, injuries, articles, changes, owner, stats }) + '\n' + coverageMarkdown(coverage, covTeams, covErrors);
+  const md = buildMarkdown({ today, league, injuries, articles, changes, owner, stats }) + '\n' +
+    (rotoError ? `## RotoWire injury feed\n\nUnavailable: ${rotoError}\n` : rotowireMarkdown(rotowire, league, owner)) + '\n' +
+    coverageMarkdown(coverage, covTeams, covErrors);
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const out = path.join(REPORT_DIR, `${today}-news.md`);
   fs.writeFileSync(out, md);

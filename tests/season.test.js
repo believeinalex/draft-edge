@@ -289,3 +289,23 @@ test('parseLineupText skips an (Empty) slot instead of starting a new team block
   assert.equal(blocks[0].team, 'Herb\'s Astonishing Team');
   assert.deepEqual(blocks[0].players.map(p => `${p.slot}:${p.name}`), ['SF:Jayson Tatum', 'C:Nikola Jokić']);
 });
+
+test('RotoWire feed: parseRotowire reads items and rotowireMarkdown groups managed, rostered and free-agent players', () => {
+  const { parseRotowire, rotowireMarkdown } = require('../season/rotowire.js');
+  const item = (team, name, head, inj) => `<div class="news-update is-injured"><div class="news-update__top"><img class="news-update__logo" alt="${team}"><div class="news-update__playerhead"><a class="news-update__player-link" href="/x">${name}</a><a class="news-update__headline" href="/y">${head}</a></div></div><div class="news-update__meta"><div class="news-update__pos">G</div><div class="news-update__inj">${inj}</div></div><div class="news-update__timestamp">November 4, 2026</div><div class="news-update__news">News</div><div class="news-update__analysis">Analysis</div></div>`;
+  const html = '<html>' + item('CLE', 'Jarrett Allen', 'Exits to locker room', 'Knee') + item('CLE', 'Jarrett Allen', 'Doubtful to return', 'Knee') + item('ORL', 'Free Guy', 'Out', 'Ankle') + item('HOU', 'Reed Sheppard', 'Back tightness', 'Back') + '</html>';
+  const items = parseRotowire(html);
+  assert.equal(items.length, 4);
+  assert.equal(items[0].name, 'Jarrett Allen');
+  assert.equal(items[0].injury, 'Knee');
+  assert.equal(items[0].team, 'CLE');
+  assert.throws(() => parseRotowire('<html></html>'), /layout may have changed/);
+  const league = { myTeam: 'Mine', managedTeams: ['Mine', 'Finn'] };
+  const owner = new Map([['jarrett allen', 'Cole'], ['reed sheppard', 'Finn']]);
+  const md = rotowireMarkdown(items, league, owner);
+  const managed = md.split('**Other rostered players**')[0];
+  assert.ok(managed.includes('Reed Sheppard'));
+  assert.ok(!managed.includes('Jarrett Allen'));
+  assert.equal((md.match(/\*\*Jarrett Allen\*\*/g) || []).length, 1);
+  assert.ok(md.split('**Free agents**')[1].includes('Free Guy'));
+});
