@@ -1019,6 +1019,115 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-02 19:38",
+      "type": "add_drop",
+      "team": "vincemvpcarter",
+      "add": [
+        {
+          "name": "Brayden Burries",
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Tristan da Silva",
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03 20:51",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [
+        {
+          "name": "Dylan Cardwell",
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-04 18:51",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [
+        {
+          "name": "Cam Spencer",
+          "nbaTeam": "MEM",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-05 06:46",
+      "type": "add_drop",
+      "team": "Cole is like that",
+      "add": [
+        {
+          "name": "Klay Thompson",
+          "nbaTeam": "MIA",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-05 21:04",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "add": [
+        {
+          "name": "Oso Ighodaro",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-05 22:43",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Max Strus",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
     }
   ]
 }
