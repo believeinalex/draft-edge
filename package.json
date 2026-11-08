@@ -15,7 +15,8 @@
     "report": "NODE_USE_ENV_PROXY=1 node --no-warnings season/morning_report.js",
     "news": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_news.js",
     "morning": "npm run -s fetch-stats && npm run -s injuries && npm run -s report",
-    "dossiers": "node season/dossiers.js"
+    "dossiers": "node season/dossiers.js",
+    "lineup": "NODE_USE_ENV_PROXY=1 node --no-warnings season/lineup_optimizer.js"
   },
   "keywords": [
     "fantasy-basketball",

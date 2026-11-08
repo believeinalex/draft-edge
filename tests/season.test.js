@@ -309,3 +309,28 @@ test('RotoWire feed: parseRotowire reads items and rotowireMarkdown groups manag
   assert.equal((md.match(/\*\*Jarrett Allen\*\*/g) || []).length, 1);
   assert.ok(md.split('**Free agents**')[1].includes('Free Guy'));
 });
+
+test('lineup optimizer: slot coverage, lineup enumeration and the per-player sampler', () => {
+  const { slotCoverage, combinations, drawLine, catValues, rng } = require('../season/lineup_optimizer.js');
+  const p = (...pos) => ({ pos });
+  // Five players covering every slot once; two centers can't fill PG
+  assert.equal(slotCoverage([p('PG'), p('SG'), p('SF'), p('PF'), p('C')]), 5);
+  assert.equal(slotCoverage([p('C'), p('C'), p('PF', 'C'), p('PG', 'SG')]), 3);
+  // A dual-eligible player can only fill one slot
+  assert.equal(slotCoverage([p('PG', 'SG'), p('SF'), p('PF'), p('C')]), 4);
+  assert.equal(combinations(12, 9).length, 220);
+  assert.deepEqual(combinations(4, 3)[0], [0, 1, 2]);
+  // Sampler: 4 games of a 20/10 line average out near 80 pts and 40 reb, makes never exceed attempts
+  const R = rng(7);
+  const rate = { fgm: 8, fga: 16, ftm: 3, fta: 4, tpm: 1, pts: 20, treb: 10, ast: 2, stl: 1, blk: 1 };
+  const n = 3000, out = new Float64Array(10 * n);
+  for (let s = 0; s < n; s++) drawLine(rate, 4, 1, R, out, s * 10);
+  let pts = 0, reb = 0;
+  for (let s = 0; s < n; s++) {
+    const v = catValues(out, s * 10);
+    assert.ok(v[0] >= 0 && v[0] <= 1 && v[1] >= 0 && v[1] <= 1);
+    pts += v[3]; reb += v[4];
+  }
+  assert.ok(Math.abs(pts / n - 80) < 1.5, `pts ${pts / n}`);
+  assert.ok(Math.abs(reb / n - 40) < 1, `reb ${reb / n}`);
+});
