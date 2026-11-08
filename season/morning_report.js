@@ -3,11 +3,10 @@ const path = require('path');
 const PLAYERS = require('../players.js');
 const { normName, CATS } = require('../engine.js');
 const { rotoPoints } = require('./build_season.js');
-const { recentNotes } = require('./dossiers.js');
 
 /**
- * Morning report: last night's over/under performers, injury changes, and projected
- * standings after tonight's games. Writes reports/YYYY-MM-DD.md and prints it.
+ * Morning report, four sections: top performers and stinkers (any team), how both managed
+ * teams played vs projection, projected standings (tonight and end of week), injury updates. Writes reports/YYYY-MM-DD.md and prints it.
  *
  * Inputs (all already in the repo after `npm run fetch-stats` + `npm run injuries`):
  * - stats/snapshots: the two latest snapshots. Their difference is last night's box score.
@@ -16,7 +15,6 @@ const { recentNotes } = require('./dossiers.js');
  * - season/injuries: the two latest reports, compared to find new, changed and cleared injuries.
  * - Tonight's schedule from ESPN's public scoreboard.
  * - season/open_questions.md: unchecked questions due on or before today are listed for answering.
- * - season/dossiers: the managed teams' player-dossier notes from the last 7 days.
  *
  * Usage: node season/morning_report.js   (npm run report)
  * In the cloud container, run with NODE_USE_ENV_PROXY=1 (the npm script does).
@@ -53,7 +51,8 @@ function dueQuestions(today, file = path.join(__dirname, 'open_questions.md')) {
   return out;
 }
 
-const etDate = (d = new Date()) => d.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+// REPORT_DATE=YYYY-MM-DD overrides today (for checking the end-of-week projection mid-week)
+const etDate = (d = new Date()) => process.env.REPORT_DATE || d.toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 const mondayOf = iso => {
   const d = new Date(iso + 'T12:00:00Z');
   d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
@@ -174,41 +173,54 @@ async function main() {
   const activeKey = new Map();
   for (const [team, a] of active) for (const r of a.players) activeKey.set(normName(r.name), team);
 
+  const injFiles = datedFiles(path.join(__dirname, 'injuries'));
+  const injBy = new Map((injFiles.length ? readJson(injFiles[injFiles.length - 1]).players : []).map(p => [normName(p.name), p]));
   const rated = [];
   for (const [key, l] of lines) {
-    if (!owner.has(key)) continue;
+    const proj = projByName.get(key);
+    if (!proj) continue; // players outside the projection pool can't be compared with a projection
     const per = { ...l };
     for (const k of ['fgm', 'fga', 'ftm', 'fta', ...COUNT]) per[k] = l[k] / l.games;
-    const proj = projByName.get(key) || cur.players.find(p => normName(p.name) === key);
-    const gameZ = score(per), projZ = proj ? score(proj) : 0;
+    const gameZ = score(per), projZ = score(proj);
     rated.push({ ...l, key, delta: (gameZ - projZ) * l.games, gameZ, projZ, counted: activeKey.has(key) });
   }
   rated.sort((a, b) => b.delta - a.delta);
+  const sgn = v => `${v >= 0 ? '+' : ''}${v.toFixed(1)}`;
   const row = r => {
     const team = activeKey.get(r.key);
     const note = !team ? ' *(not in an active lineup)*' : team !== owner.get(r.key) ? ` *(counts for ${team} this week)*` : '';
-    return `| ${r.name}${tag(r.name)}${note} | ${fmtLine(r)} | ${r.delta >= 0 ? '+' : ''}${r.delta.toFixed(1)} |`;
+    return `| ${r.name}${tag(r.name)}${note} | ${fmtLine(r)} | ${sgn(r.delta)} |`;
   };
-  md.push(`## Last night (games in snapshot ${cur.asOf})`, '');
+  md.push('## Top performers and stinkers (any team, free agents too)', '');
   if (!rated.length) {
-    md.push('No rostered player games between the last two snapshots.', '');
+    md.push('No games between the last two snapshots.', '');
   } else {
-    md.push('Value vs projection is the game\'s 8-cat z-score minus the player\'s projected per-game z-score.', '');
-    md.push('**Biggest over-performers (rostered)**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(0, 6).map(row), '');
-    md.push('**Biggest under-performers (rostered)**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(-6).reverse().map(row), '');
-    for (const tn of league.managedTeams || []) {
-      // Lineup first: a player traded mid-week still counts for his locked-lineup team until the next lock
-      const mine = rated.filter(r => (activeKey.get(r.key) || owner.get(r.key)) === tn);
-      md.push(`**${tn}** — ${mine.length} played`, '');
-      if (mine.length) md.push('| Player | Line | vs proj |', '|---|---|---|', ...mine.map(row), '');
-    }
+    md.push(`Games in snapshot ${cur.asOf}. "vs proj" is the game's 8-cat z-score minus the player's projected per-game z-score.`, '');
+    md.push('**Top performers**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(0, 8).map(row), '');
+    md.push('**Stinkers**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(-8).reverse().map(row), '');
+  }
+
+  md.push('## How your two teams played vs projection', '');
+  for (const tn of league.managedTeams || []) {
+    const t = findTeam(league, tn);
+    // Lineup first: a player traded mid-week still counts for his locked-lineup team until the next lock
+    const mine = rated.filter(r => (activeKey.get(r.key) || owner.get(r.key)) === tn);
+    const playedKeys = new Set(lines.keys());
+    const dnp = (t ? t.roster : []).filter(r => !playedKeys.has(normName(r.name))).map(r => {
+      const i = injBy.get(normName(r.name));
+      return `${r.name}${i ? ` (${i.status}${i.note ? `: ${i.note}` : ''})` : ''}`;
+    });
+    const net = mine.filter(r => r.counted).reduce((s, r) => s + r.delta, 0);
+    md.push(`**${tn}** — ${mine.length} played, net ${sgn(net)} vs projection (active players only)`, '');
+    if (mine.length) md.push('| Player | Line | vs proj |', '|---|---|---|', ...mine.map(row), '');
+    md.push(`Did not play (no game, injury or rest): ${dnp.length ? dnp.join(', ') : 'none'}`, '');
   }
 
   // 2. Injuries: changes since the previous report
-  md.push('## Injury changes (rostered players)', '');
-  const injFiles = datedFiles(path.join(__dirname, 'injuries'));
+  const injMd = [];
+  injMd.push('## Injury updates', '');
   if (injFiles.length < 2) {
-    md.push('Need two injury reports to compare; only one so far.', '');
+    injMd.push('Need two injury reports to compare; only one so far.', '');
   } else {
     const [a, b] = injFiles.slice(-2).map(readJson);
     const was = new Map(a.players.map(p => [normName(p.name), p]));
@@ -223,17 +235,17 @@ async function main() {
     for (const [k, o] of was) {
       if (owner.has(k) && !now.has(k)) changes.push(`- **Cleared:** ${o.name}${tag(o.name)} — was ${o.status} (${o.note})`);
     }
-    md.push(`Comparing ${a.asOf} → ${b.asOf}.`, '', ...(changes.length ? changes : ['No changes for rostered players.']), '');
+    injMd.push(`Comparing ${a.asOf} → ${b.asOf}.`, '', ...(changes.length ? changes : ['No changes for rostered players.']), '');
     for (const tn of league.managedTeams || []) {
       const t = league.teams.find(x => x.name === tn);
       const hurt = t.roster.filter(r => now.has(normName(r.name))).map(r => `${r.name} ${now.get(normName(r.name)).status}`);
-      md.push(`- ${tn}: ${hurt.length ? hurt.join(', ') : 'no injuries'}`);
+      injMd.push(`- ${tn}: ${hurt.length ? hurt.join(', ') : 'no injuries'}`);
     }
-    md.push('');
+    injMd.push('');
   }
 
-  // 3. Projected standings after tonight
-  md.push('## Projected standings after tonight', '');
+  // 3. Projected standings: tonight and end of week
+  md.push('## Projected standings: tonight and end of week', '');
   const stFiles = datedFiles(path.join(__dirname, 'standings'));
   if (!stFiles.length) {
     md.push('No Yahoo standings saved yet.', '');
@@ -265,7 +277,27 @@ async function main() {
 
     let tonight = new Set();
     try { tonight = await tonightsSchedule(today); } catch (e) { warn.push(`Couldn't load tonight's schedule: ${e.message}`); }
-    const injNow = injFiles.length ? new Map(readJson(injFiles[injFiles.length - 1]).players.map(p => [normName(p.name), p.status])) : new Map();
+    // Remaining days of this Monday-to-Sunday week (today included): who plays on each
+    const weekStart = new Date(mondayOf(today) + 'T12:00:00Z').getTime();
+    const days = [...Array(7).keys()].map(i => new Date(weekStart + i * 864e5).toISOString().slice(0, 10)).filter(d => d >= today);
+    const sched = new Map([[today, tonight]]);
+    for (const d of days.slice(1)) {
+      try { sched.set(d, await tonightsSchedule(d)); } catch (e) { sched.set(d, new Set()); warn.push(`Couldn't load the ${d} schedule, so end of week is understated: ${e.message}`); }
+    }
+    const injNow = new Map([...injBy].map(([k, p]) => [k, p.status]));
+    // ESPN expected-return dates (latest digest) let an "out" player count again once he's due back
+    const newsFiles = datedFiles(path.join(__dirname, 'news'));
+    const retDate = new Map();
+    if (newsFiles.length) {
+      const nj = readJson(newsFiles[newsFiles.length - 1]);
+      for (const i of nj.injuries || []) if (i.returnDate) retDate.set(normName(i.name), i.returnDate.slice(0, 10));
+      if (nj.asOf < today) warn.push(`Expected-return dates come from the ${nj.asOf} news digest.`);
+    }
+    // Share of a game expected on day d: injury weight, but an out player counts at 0.7 from his ESPN return date
+    const playWeight = (k, d) => {
+      const w = PLAY_WEIGHT[injNow.get(k)] ?? 1;
+      return w === 0 && retDate.has(k) && d >= retDate.get(k) ? 0.7 : w;
+    };
     const statLine = new Map(cur.players.map(p => [normName(p.name), p]));
 
     const teams = base.map(r => {
@@ -286,16 +318,33 @@ async function main() {
         ...Object.fromEntries(COUNT.map(c => [c, r[c] + x[c]]))
       };
       const t = { name: r.team, yahooRank: r.yahooRank, gpNow: r.gp + x.gp, games: 0, estimated: a.estimated };
-      const add = { fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
-      for (const p of a.players) {
-        const k = normName(p.name);
-        const src = projByName.get(k) || statLine.get(k);
-        const team = (projByName.get(k) || {}).team || p.nbaTeam;
-        const w = tonight.has(ESPN_TEAM[team] || team) ? (PLAY_WEIGHT[injNow.get(k)] ?? 1) : 0;
-        if (!src || !w) continue;
-        t.games += w;
-        for (const c of Object.keys(add)) add[c] += (src[c] || 0) * w;
-      }
+      // Projected stats from the active lineup over the given days (games weighted by injury status)
+      const project = ds => {
+        const add = { fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
+        let games = 0;
+        for (const p of a.players) {
+          const k = normName(p.name);
+          const src = projByName.get(k) || statLine.get(k);
+          const team = (projByName.get(k) || {}).team || p.nbaTeam;
+          if (!src) continue;
+          for (const d of ds) {
+            const w = sched.get(d).has(ESPN_TEAM[team] || team) ? playWeight(k, d) : 0;
+            if (!w) continue;
+            games += w;
+            for (const c of Object.keys(add)) add[c] += (src[c] || 0) * w;
+          }
+        }
+        return { add, games };
+      };
+      const { add, games: gTonight } = project([today]);
+      const { add: addEow, games: gEow } = project(days);
+      t.games = gTonight;
+      t.gamesEow = gEow;
+      t.eowTotals = {
+        fgPct: (nowT.fgm + addEow.fgm) / (nowT.fga + addEow.fga),
+        ftPct: (nowT.ftm + addEow.ftm) / (nowT.fta + addEow.fta),
+        ...Object.fromEntries(COUNT.map(c => [c, nowT[c] + addEow[c]]))
+      };
       t.realTotals = { fgPct: nowT.fgm / nowT.fga, ftPct: nowT.ftm / nowT.fta, ...Object.fromEntries(COUNT.map(c => [c, nowT[c]])) };
       t.projTotals = {
         fgPct: (nowT.fgm + add.fgm) / (nowT.fga + add.fga),
@@ -306,44 +355,33 @@ async function main() {
     });
     rotoPoints(teams, 'real');
     rotoPoints(teams, 'proj');
-    standingsJson = { base: st.asOf, statsThrough: cur.asOf, teams: teams.map(t => ({ name: t.name, gpNow: t.gpNow, gamesTonight: t.games, now: t.realTotals, nowRoto: t.realRoto, nowRank: t.realRank, proj: t.projTotals, projRoto: t.projRoto, projRank: t.projRank })) };
-    md.push(`"Now" = Yahoo standings ${st.asOf}${st.asOf < cur.asOf ? ` plus games through stats ${cur.asOf}, rebuilt from player stats` : ''}. Tonight: ${tonight.size / 2} NBA games; each player in a locked active lineup counts his projected per-game stats, weighted by injury status (O/D 0, Q 0.5, P 0.9). Players traded or dropped mid-week keep counting for the team whose lineup they're locked into until the next lock, as Yahoo does.`, '');
-    md.push('| Now | Proj | Team | GP now | Games tonight | Points now → proj | ' + CATS.join(' | ') + ' |');
+    rotoPoints(teams, 'eow');
+    standingsJson = { base: st.asOf, statsThrough: cur.asOf, teams: teams.map(t => ({ name: t.name, gpNow: t.gpNow, gamesTonight: t.games, now: t.realTotals, nowRoto: t.realRoto, nowRank: t.realRank, proj: t.projTotals, projRoto: t.projRoto, projRank: t.projRank, gamesEow: t.gamesEow, eow: t.eowTotals, eowRoto: t.eowRoto, eowRank: t.eowRank })) };
+    md.push(`"Now" = Yahoo standings ${st.asOf}${st.asOf < cur.asOf ? ` plus games through stats ${cur.asOf}, rebuilt from player stats` : ''}. "Tonight" adds today's ${tonight.size / 2} NBA games; "EOW" adds every remaining game through Sunday ${days[days.length - 1]}. Each player in a locked active lineup counts his projected per-game stats, weighted by injury status (O/D 0, Q 0.5, P 0.9; an out player counts 0.7 from his ESPN return date). Players traded or dropped mid-week keep counting for the team whose lineup they're locked into until the next lock, as Yahoo does.`, '');
+    md.push('| Now | Tonight | EOW | Team | Games tonight / EOW | Points now → tonight → EOW | ' + CATS.map(c => `${c} (EOW)`).join(' | ') + ' |');
     md.push('|---|---|---|---|---|---|' + CATS.map(() => '---').join('|') + '|');
-    for (const t of [...teams].sort((a, b) => a.projRank - b.projRank)) {
+    for (const t of [...teams].sort((a, b) => a.eowRank - b.eowRank)) {
       const mark = t.name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(t.name) ? ' **(Finn)**' : '';
-      md.push(`| ${t.realRank} | ${t.projRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${t.gpNow} | ${+t.games.toFixed(1)} | ${t.realRoto.total} → ${t.projRoto.total} | ` +
-        CATS.map(c => t.projRoto[c]).join(' | ') + ' |');
+      md.push(`| ${t.realRank} | ${t.projRank} | ${t.eowRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${+t.games.toFixed(1)} / ${+t.gamesEow.toFixed(1)} | ${t.realRoto.total} → ${t.projRoto.total} → ${t.eowRoto.total} | ` +
+        CATS.map(c => t.eowRoto[c]).join(' | ') + ' |');
     }
     if (teams.some(t => t.estimated)) md.push('', '† lineup paste was cut off; missing starters estimated from best-projected players.');
     md.push('');
     for (const tn of league.managedTeams || []) {
       const t = teams.find(x => x.name === tn);
       if (!t) continue;
-      md.push(`- **${tn}:** ${t.realRank} → ${t.projRank} (${t.realRoto.total} → ${t.projRoto.total} pts), ${+t.games.toFixed(1)} games tonight. ` +
-        `Projected: FG ${fmtPct(t.projTotals.fgPct)}, FT ${fmtPct(t.projTotals.ftPct)}, ${COUNT.map(c => `${Math.round(t.projTotals[c])} ${c}`).join(', ')}.`);
+      md.push(`- **${tn}:** now ${t.realRank} → tonight ${t.projRank} → EOW ${t.eowRank} (${t.realRoto.total} → ${t.projRoto.total} → ${t.eowRoto.total} pts), ${+t.games.toFixed(1)} games tonight, ${+t.gamesEow.toFixed(1)} through Sunday. ` +
+        `EOW projected: FG ${fmtPct(t.eowTotals.fgPct)}, FT ${fmtPct(t.eowTotals.ftPct)}, ${COUNT.map(c => `${Math.round(t.eowTotals[c])} ${c}`).join(', ')}.`);
     }
     md.push('');
   }
+
+  md.push(...injMd);
 
   const due = dueQuestions(today);
   if (due.length) {
     md.push('## Open questions due', '', 'From `season/open_questions.md`. Answer each below, then tick it there with a one-line answer.', '');
     for (const q of due) md.push(`- (${q.date}) ${q.text}`);
-    md.push('');
-  }
-
-  const weekAgo = new Date(new Date(today + 'T12:00:00Z').getTime() - 7 * 864e5).toISOString().slice(0, 10);
-  for (const tn of league.managedTeams || []) {
-    const t = findTeam(league, tn);
-    const notes = t ? recentNotes(t.roster.map(r => r.name), weekAgo) : [];
-    if (!notes.length) continue;
-    if (!md.includes('## Dossier notes')) md.push('## Dossier notes', '', `Notes dated ${weekAgo} or later in \`season/dossiers/\`. Read the full dossier before acting on one.`, '');
-    md.push(`**${tn}**`, '');
-    for (const { name, file, entry } of notes) {
-      md.push(`- ${name}, ${entry.date} · ${entry.source}${entry.tags.length ? ` (${entry.tags.join(', ')})` : ''} ([dossier](../season/dossiers/players/${file}))`);
-      for (const b of entry.bullets) md.push(`  - ${b}`);
-    }
     md.push('');
   }
 

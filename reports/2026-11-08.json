@@ -49,7 +49,30 @@
         "stl": 10,
         "blk": 14
       },
-      "projRank": 1
+      "projRank": 1,
+      "gamesEow": 5,
+      "eow": {
+        "fgPct": 0.47128754031482667,
+        "ftPct": 0.8175856680789031,
+        "tpm": 177.4,
+        "pts": 1772.2,
+        "treb": 484.3,
+        "ast": 337.7,
+        "stl": 97.4,
+        "blk": 67.5
+      },
+      "eowRoto": {
+        "total": 99,
+        "fgPct": 10,
+        "ftPct": 13,
+        "tpm": 15,
+        "pts": 15,
+        "treb": 10,
+        "ast": 12,
+        "stl": 10,
+        "blk": 14
+      },
+      "eowRank": 1
     },
     {
       "name": "Finn will turn Bert into bacon",
@@ -98,7 +121,30 @@
         "stl": 15,
         "blk": 15
       },
-      "projRank": 3
+      "projRank": 3,
+      "gamesEow": 3,
+      "eow": {
+        "fgPct": 0.4597609338911202,
+        "ftPct": 0.7958510460557652,
+        "tpm": 133.9,
+        "pts": 1331.1,
+        "treb": 480.1,
+        "ast": 311.6,
+        "stl": 110.2,
+        "blk": 70.2
+      },
+      "eowRoto": {
+        "total": 83,
+        "fgPct": 6,
+        "ftPct": 11,
+        "tpm": 8,
+        "pts": 9,
+        "treb": 9,
+        "ast": 10,
+        "stl": 15,
+        "blk": 15
+      },
+      "eowRank": 3
     },
     {
       "name": "Shut Up and Jam Gaiden",
@@ -147,7 +193,30 @@
         "stl": 12,
         "blk": 6
       },
-      "projRank": 2
+      "projRank": 2,
+      "gamesEow": 4.5,
+      "eow": {
+        "fgPct": 0.48010088739226736,
+        "ftPct": 0.8250063357310136,
+        "tpm": 151.95,
+        "pts": 1572.35,
+        "treb": 499.95,
+        "ast": 421.7,
+        "stl": 99.85,
+        "blk": 50.15
+      },
+      "eowRoto": {
+        "total": 96,
+        "fgPct": 11,
+        "ftPct": 15,
+        "tpm": 12,
+        "pts": 14,
+        "treb": 11,
+        "ast": 15,
+        "stl": 12,
+        "blk": 6
+      },
+      "eowRank": 2
     },
     {
       "name": "Cole is like that",
@@ -196,7 +265,30 @@
         "stl": 8,
         "blk": 10
       },
-      "projRank": 5
+      "projRank": 5,
+      "gamesEow": 3,
+      "eow": {
+        "fgPct": 0.4581599287544702,
+        "ftPct": 0.7878448016072326,
+        "tpm": 169.1,
+        "pts": 1524.3,
+        "treb": 444.4,
+        "ast": 288.1,
+        "stl": 88.5,
+        "blk": 61.5
+      },
+      "eowRoto": {
+        "total": 67,
+        "fgPct": 5,
+        "ftPct": 9,
+        "tpm": 14,
+        "pts": 13,
+        "treb": 4,
+        "ast": 4,
+        "stl": 8,
+        "blk": 10
+      },
+      "eowRank": 5
     },
     {
       "name": "Bitsketball Stars",
@@ -245,7 +337,30 @@
         "stl": 7,
         "blk": 5
       },
-      "projRank": 7
+      "projRank": 7,
+      "gamesEow": 1,
+      "eow": {
+        "fgPct": 0.4704512938541926,
+        "ftPct": 0.764689062798244,
+        "tpm": 141,
+        "pts": 1381.5,
+        "treb": 472.2,
+        "ast": 341.4,
+        "stl": 83.2,
+        "blk": 48.6
+      },
+      "eowRoto": {
+        "total": 64,
+        "fgPct": 9,
+        "ftPct": 4,
+        "tpm": 9,
+        "pts": 11,
+        "treb": 6,
+        "ast": 13,
+        "stl": 7,
+        "blk": 5
+      },
+      "eowRank": 7
     },
     {
       "name": "Super Maru",
@@ -294,7 +409,30 @@
         "stl": 5,
         "blk": 3
       },
-      "projRank": 13
+      "projRank": 13,
+      "gamesEow": 4,
+      "eow": {
+        "fgPct": 0.4561593218226017,
+        "ftPct": 0.779265735199829,
+        "tpm": 119.2,
+        "pts": 1139.6,
+        "treb": 529.2,
+        "ast": 288.9,
+        "stl": 80,
+        "blk": 47.6
+      },
+      "eowRoto": {
+        "total": 44,
+        "fgPct": 4,
+        "ftPct": 7,
+        "tpm": 4,
+        "pts": 3,
+        "treb": 13,
+        "ast": 5,
+        "stl": 5,
+        "blk": 3
+      },
+      "eowRank": 13
     },
     {
       "name": "Herb's Astonishing Team",
@@ -343,7 +481,30 @@
         "stl": 11,
         "blk": 1
       },
-      "projRank": 9
+      "projRank": 9,
+      "gamesEow": 4,
+      "eow": {
+        "fgPct": 0.48847835871880396,
+        "ftPct": 0.8164734353305745,
+        "tpm": 124.8,
+        "pts": 1118.7,
+        "treb": 350.7,
+        "ast": 348.7,
+        "stl": 98.4,
+        "blk": 40.3
+      },
+      "eowRoto": {
+        "total": 61,
+        "fgPct": 13,
+        "ftPct": 12,
+        "tpm": 7,
+        "pts": 2,
+        "treb": 1,
+        "ast": 14,
+        "stl": 11,
+        "blk": 1
+      },
+      "eowRank": 9
     },
     {
       "name": "vincemvpcarter",
@@ -392,7 +553,30 @@
         "stl": 13,
         "blk": 11
       },
-      "projRank": 4
+      "projRank": 4,
+      "gamesEow": 5.5,
+      "eow": {
+        "fgPct": 0.48447758150136466,
+        "ftPct": 0.7810262345679012,
+        "tpm": 110.9,
+        "pts": 1475,
+        "treb": 519.05,
+        "ast": 301.55,
+        "stl": 100.45,
+        "blk": 63.05
+      },
+      "eowRoto": {
+        "total": 79,
+        "fgPct": 12,
+        "ftPct": 8,
+        "tpm": 3,
+        "pts": 12,
+        "treb": 12,
+        "ast": 8,
+        "stl": 13,
+        "blk": 11
+      },
+      "eowRank": 4
     },
     {
       "name": "Grilled Teampura",
@@ -441,7 +625,30 @@
         "stl": 3,
         "blk": 9
       },
-      "projRank": 11
+      "projRank": 11,
+      "gamesEow": 4.9,
+      "eow": {
+        "fgPct": 0.45001110101927544,
+        "ftPct": 0.7890019919301293,
+        "tpm": 156.45,
+        "pts": 1261.46,
+        "treb": 438.1,
+        "ast": 322.17,
+        "stl": 78.16,
+        "blk": 54.42
+      },
+      "eowRoto": {
+        "total": 59,
+        "fgPct": 3,
+        "ftPct": 10,
+        "tpm": 13,
+        "pts": 7,
+        "treb": 3,
+        "ast": 11,
+        "stl": 3,
+        "blk": 9
+      },
+      "eowRank": 11
     },
     {
       "name": "The New Day Co-op",
@@ -490,7 +697,30 @@
         "stl": 1,
         "blk": 12.5
       },
-      "projRank": 8
+      "projRank": 8,
+      "gamesEow": 4,
+      "eow": {
+        "fgPct": 0.508266973681379,
+        "ftPct": 0.7432170235263018,
+        "tpm": 144,
+        "pts": 1303.6,
+        "treb": 565.1,
+        "ast": 241.4,
+        "stl": 60.1,
+        "blk": 65.5
+      },
+      "eowRoto": {
+        "total": 63.5,
+        "fgPct": 15,
+        "ftPct": 2,
+        "tpm": 10,
+        "pts": 8,
+        "treb": 14,
+        "ast": 1,
+        "stl": 1,
+        "blk": 12.5
+      },
+      "eowRank": 8
     },
     {
       "name": "Team Maru",
@@ -539,7 +769,30 @@
         "stl": 14,
         "blk": 2
       },
-      "projRank": 12
+      "projRank": 12,
+      "gamesEow": 2,
+      "eow": {
+        "fgPct": 0.4122423193259028,
+        "ftPct": 0.8221748950291209,
+        "tpm": 147.9,
+        "pts": 1217.9,
+        "treb": 458.1,
+        "ast": 293.1,
+        "stl": 106.9,
+        "blk": 45.5
+      },
+      "eowRoto": {
+        "total": 59,
+        "fgPct": 1,
+        "ftPct": 14,
+        "tpm": 11,
+        "pts": 5,
+        "treb": 5,
+        "ast": 7,
+        "stl": 14,
+        "blk": 2
+      },
+      "eowRank": 12
     },
     {
       "name": "#WashedAutoDraftKing",
@@ -588,7 +841,30 @@
         "stl": 9,
         "blk": 12.5
       },
-      "projRank": 6
+      "projRank": 6,
+      "gamesEow": 7,
+      "eow": {
+        "fgPct": 0.4967881257387514,
+        "ftPct": 0.7149924672636457,
+        "tpm": 123.9,
+        "pts": 1251,
+        "treb": 472.9,
+        "ast": 303,
+        "stl": 92.1,
+        "blk": 65.5
+      },
+      "eowRoto": {
+        "total": 64.5,
+        "fgPct": 14,
+        "ftPct": 1,
+        "tpm": 6,
+        "pts": 6,
+        "treb": 7,
+        "ast": 9,
+        "stl": 9,
+        "blk": 12.5
+      },
+      "eowRank": 6
     },
     {
       "name": "Full Court Rex",
@@ -637,7 +913,30 @@
         "stl": 4,
         "blk": 8
       },
-      "projRank": 10
+      "projRank": 10,
+      "gamesEow": 4,
+      "eow": {
+        "fgPct": 0.4673869838448939,
+        "ftPct": 0.7678258322412977,
+        "tpm": 122.9,
+        "pts": 1347.9,
+        "treb": 572.3,
+        "ast": 289.7,
+        "stl": 78.6,
+        "blk": 53.9
+      },
+      "eowRoto": {
+        "total": 61,
+        "fgPct": 8,
+        "ftPct": 5,
+        "tpm": 5,
+        "pts": 10,
+        "treb": 15,
+        "ast": 6,
+        "stl": 4,
+        "blk": 8
+      },
+      "eowRank": 10
     },
     {
       "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
@@ -686,7 +985,30 @@
         "stl": 2,
         "blk": 4
       },
-      "projRank": 15
+      "projRank": 15,
+      "gamesEow": 6,
+      "eow": {
+        "fgPct": 0.46418037427379444,
+        "ftPct": 0.7582897763453716,
+        "tpm": 84.6,
+        "pts": 1017.4,
+        "treb": 474.4,
+        "ast": 287.6,
+        "stl": 74,
+        "blk": 47.9
+      },
+      "eowRoto": {
+        "total": 29,
+        "fgPct": 7,
+        "ftPct": 3,
+        "tpm": 1,
+        "pts": 1,
+        "treb": 8,
+        "ast": 3,
+        "stl": 2,
+        "blk": 4
+      },
+      "eowRank": 15
     },
     {
       "name": "Fishy Achilles",
@@ -735,7 +1057,30 @@
         "stl": 6,
         "blk": 7
       },
-      "projRank": 14
+      "projRank": 14,
+      "gamesEow": 5,
+      "eow": {
+        "fgPct": 0.4377643455142919,
+        "ftPct": 0.7754665018225226,
+        "tpm": 109.9,
+        "pts": 1155.8,
+        "treb": 427.4,
+        "ast": 259.2,
+        "stl": 80.2,
+        "blk": 52.2
+      },
+      "eowRoto": {
+        "total": 31,
+        "fgPct": 2,
+        "ftPct": 6,
+        "tpm": 2,
+        "pts": 4,
+        "treb": 2,
+        "ast": 2,
+        "stl": 6,
+        "blk": 7
+      },
+      "eowRank": 14
     }
   ]
 }
