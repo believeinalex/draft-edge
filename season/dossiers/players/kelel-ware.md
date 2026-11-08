@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: a stash, and losing faith.
+Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
+Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
+Tags: minutes, outlook
+- **Analysis:** "Looks dreadful," and close to droppable, but if Miles Turner gets hurt he's "a top 50 guy." Hold. [24:03]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

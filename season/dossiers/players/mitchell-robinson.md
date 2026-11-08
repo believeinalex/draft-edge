@@ -7,6 +7,12 @@ Lloyd: lost his starting spot to Queta; drop.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
+Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
+Tags: schedule
+- **Analysis:** One to watch on the Celtics' Tue–Wed back-to-back; Boston then has no game Thu–Sat. [17:50, 20:26]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role
