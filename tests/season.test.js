@@ -334,3 +334,14 @@ test('lineup optimizer: slot coverage, lineup enumeration and the per-player sam
   assert.ok(Math.abs(pts / n - 80) < 1.5, `pts ${pts / n}`);
   assert.ok(Math.abs(reb / n - 40) < 1, `reb ${reb / n}`);
 });
+
+test('lineup optimizer: blendRates weights the season line by games played', () => {
+  const { blendRates } = require('../season/lineup_optimizer.js');
+  const proj = { pts: 10, treb: 4, gp: 70 };
+  assert.equal(blendRates(proj, null).pts, 10);
+  assert.equal(blendRates(null, { gp: 3, pts: 8 }).pts, 8);
+  const b = blendRates(proj, { gp: 20, pts: 20, treb: 4 }, 20);  // half weight at 20 games
+  assert.equal(b.pts, 15);
+  assert.equal(b.treb, 4);
+  assert.equal(b.gp, 70);  // availability still comes from the projection
+});

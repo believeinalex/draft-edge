@@ -18,7 +18,7 @@ const {
  *   expected rest of the current week from each team's locked lineup.
  * - Next week: every active player's scheduled games (ESPN), each played with probability
  *   from his injury status (healthy 0.95, P 0.9, Q 0.5, O/D 0; an out player counts 0.7 from
- *   his ESPN return date). Per-game rates are players.js projections, scaled by a shared
+ *   his ESPN return date). Per-game rates blend players.js projections with season-to-date stats, scaled by a shared
  *   weekly role factor, with game-to-game noise per category; makes are binomial on attempts.
  * - Opponents' next-week lineup: their current locked actives they still own, filled to 9
  *   by projected value × games. The other managed team is treated the same way.
@@ -42,6 +42,9 @@ const LINEUP_MODEL = {
   // Variance-to-mean ratio of one game's total (Poisson = 1; points come in 2s and 3s)
   disp: { pts: 2.5, treb: 1.4, ast: 1.4, stl: 1.1, blk: 1.3, tpm: 1.3, fga: 1.2, fta: 1.6 },
   seasonGames: 82,
+  // Per-game rates blend the projection with season-to-date stats: the season line gets
+  // weight gp / (gp + statsPrior), so 10 games count about a third and 20 games half
+  statsPrior: 20,
   slots: ['PG', 'SG', 'SF', 'PF', 'C'],
   starters: 9
 };
@@ -128,6 +131,17 @@ function combinations(n, k) {
   return out;
 }
 
+// Per-game rates: projection blended with the season-to-date line, weighted by games played
+function blendRates(proj, season, prior = LINEUP_MODEL.statsPrior) {
+  if (!proj) return season || null;
+  if (!season || !season.gp) return proj;
+  const w = season.gp / (season.gp + prior);
+  const out = { ...proj };
+  for (const c of SUMS) out[c] = (1 - w) * (proj[c] || 0) + w * (season[c] || 0);
+  out.statsWeight = w;
+  return out;
+}
+
 const parseArgs = argv => Object.fromEntries(argv.filter(a => a.startsWith('--')).map(a => {
   const [k, ...v] = a.slice(2).split('=');
   return [k, v.length ? v.join('=') : true];
@@ -183,7 +197,8 @@ async function main() {
 
   // Player info used by the simulation
   const info = name => {
-    const { k, src, team } = sourceFor(name, projByName, statLine);
+    const { k, team } = sourceFor(name, projByName, statLine);
+    const src = blendRates(projByName.get(k), statLine.get(k), +args.prior || LINEUP_MODEL.statsPrior);
     const proj = projByName.get(k);
     const days = targetDays.map(d => (src && sched.get(d).has(espnTeam(team)) ? playWeight(k, d) : 0));
     const games = days.filter(w => w > 0).length;
@@ -375,7 +390,7 @@ async function main() {
   }
 
   md.push('## Model', '');
-  md.push(`Per-game rates are players.js projections. Healthy players play a scheduled game with probability ${LINEUP_MODEL.healthyPlay}; P 0.9, Q 0.5, O/D 0 (0.7 from an ESPN return date). Weekly role factor sd ${LINEUP_MODEL.weekRoleSd}; rest-of-season player error sd ${LINEUP_MODEL.rosPlayerSd}, FG%/FT% sd ${LINEUP_MODEL.rosPctSd.fg}/${LINEUP_MODEL.rosPctSd.ft}. Opponents keep their current locked actives (filled to 9). Rest of season: each team's top 9 by projection × availability, over its NBA team's remaining games. Constants are in \`LINEUP_MODEL\` in \`season/lineup_optimizer.js\`.`, '');
+  md.push(`Per-game rates blend players.js projections with season-to-date stats (season weight gp / (gp + ${+args.prior || LINEUP_MODEL.statsPrior}); \`--prior=\` changes it). Healthy players play a scheduled game with probability ${LINEUP_MODEL.healthyPlay}; P 0.9, Q 0.5, O/D 0 (0.7 from an ESPN return date). Weekly role factor sd ${LINEUP_MODEL.weekRoleSd}; rest-of-season player error sd ${LINEUP_MODEL.rosPlayerSd}, FG%/FT% sd ${LINEUP_MODEL.rosPctSd.fg}/${LINEUP_MODEL.rosPctSd.ft}. Opponents keep their current locked actives (filled to 9). Rest of season: each team's top 9 by projection × availability, over its NBA team's remaining games. Constants are in \`LINEUP_MODEL\` in \`season/lineup_optimizer.js\`.`, '');
   if (warn.length) md.push('## Notes', '', ...warn.map(w => `- ${w}`), '');
 
   const out = path.join(ROOT, 'reports', `${today}-lineup.md`);
@@ -392,4 +407,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { slotCoverage, combinations, drawLine, catValues, rng, LINEUP_MODEL };
+module.exports = { blendRates, slotCoverage, combinations, drawLine, catValues, rng, LINEUP_MODEL };
