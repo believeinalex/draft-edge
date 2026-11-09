@@ -1,0 +1,7 @@
+{
+  "_format": "watches: trades to track in the morning report's FOMO watch. tradeDate must equal the trade's `date` in transactions.json; team is the point of view (the side whose players are 'got'). To track another trade, add an entry.",
+  "watches": [
+    { "id": "randle-for-bam", "label": "Randle for Bam (you and Herb)", "tradeDate": "2026-10-27 14:33", "team": "Shut Up and Jam Gaiden" },
+    { "id": "mitchell-for-amen-miller", "label": "Mitchell for Amen + Brandon Miller (Finn and Cole)", "tradeDate": "2026-10-23 19:06", "team": "Finn will turn Bert into bacon" }
+  ]
+}

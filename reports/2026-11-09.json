@@ -39,12 +39,12 @@
         "blk": 69.2
       },
       "projRoto": {
-        "total": 102,
+        "total": 103,
         "fgPct": 10,
         "ftPct": 15,
         "tpm": 15,
         "pts": 15,
-        "treb": 9,
+        "treb": 10,
         "ast": 14,
         "stl": 11,
         "blk": 13
@@ -62,12 +62,12 @@
         "blk": 85.3
       },
       "eowRoto": {
-        "total": 98,
+        "total": 97,
         "fgPct": 9,
         "ftPct": 15,
         "tpm": 15,
         "pts": 15,
-        "treb": 8,
+        "treb": 7,
         "ast": 13,
         "stl": 11,
         "blk": 12
@@ -77,7 +77,7 @@
     {
       "name": "Finn will turn Bert into bacon",
       "gpNow": 83,
-      "gamesTonight": 6.2,
+      "gamesTonight": 5.5,
       "now": {
         "fgPct": 0.4572821803611587,
         "ftPct": 0.8006388893847489,
@@ -101,45 +101,45 @@
       },
       "nowRank": 3,
       "proj": {
-        "fgPct": 0.4590840160614324,
-        "ftPct": 0.8026872332322338,
-        "tpm": 144.94,
-        "pts": 1436.92,
-        "treb": 515.98,
-        "ast": 336.15,
-        "stl": 117.65,
-        "blk": 74.49
+        "fgPct": 0.45961375003442373,
+        "ftPct": 0.802186748104744,
+        "tpm": 142.7,
+        "pts": 1421.8,
+        "treb": 512.55,
+        "ast": 334.4,
+        "stl": 116.95,
+        "blk": 74
       },
       "projRoto": {
-        "total": 85,
+        "total": 84,
         "fgPct": 6,
         "ftPct": 11,
         "tpm": 8,
         "pts": 10,
-        "treb": 10,
+        "treb": 9,
         "ast": 10,
         "stl": 15,
         "blk": 15
       },
       "projRank": 3,
-      "gamesEow": 27.599999999999998,
+      "gamesEow": 26.9,
       "eow": {
-        "fgPct": 0.46263839331968853,
-        "ftPct": 0.8062186567763747,
-        "tpm": 184.51999999999998,
-        "pts": 1829.06,
-        "treb": 656.64,
-        "ast": 431.75,
-        "stl": 142.35,
-        "blk": 91.77
+        "fgPct": 0.46308979721269794,
+        "ftPct": 0.8058381562541901,
+        "tpm": 182.28,
+        "pts": 1813.9399999999998,
+        "treb": 653.21,
+        "ast": 430,
+        "stl": 141.65,
+        "blk": 91.28
       },
       "eowRoto": {
-        "total": 83,
+        "total": 80,
         "fgPct": 5,
         "ftPct": 12,
-        "tpm": 9,
+        "tpm": 8,
         "pts": 9,
-        "treb": 11,
+        "treb": 9,
         "ast": 10,
         "stl": 14,
         "blk": 13
@@ -353,11 +353,11 @@
         "total": 64,
         "fgPct": 10,
         "ftPct": 5,
-        "tpm": 8,
+        "tpm": 9,
         "pts": 11,
         "treb": 6,
         "ast": 14,
-        "stl": 7,
+        "stl": 6,
         "blk": 3
       },
       "eowRank": 8
@@ -410,24 +410,24 @@
         "blk": 4
       },
       "projRank": 13,
-      "gamesEow": 24,
+      "gamesEow": 26.099999999999998,
       "eow": {
-        "fgPct": 0.456377998266063,
-        "ftPct": 0.7879730620314688,
-        "tpm": 159.4,
-        "pts": 1446.1,
-        "treb": 622.4,
-        "ast": 351.8,
-        "stl": 102.7,
-        "blk": 57
+        "fgPct": 0.4592478230171805,
+        "ftPct": 0.7863459084383475,
+        "tpm": 160.87,
+        "pts": 1481.8,
+        "treb": 648.23,
+        "ast": 362.72,
+        "stl": 104.17,
+        "blk": 57.629999999999995
       },
       "eowRoto": {
-        "total": 33,
+        "total": 34,
         "fgPct": 4,
         "ftPct": 9,
         "tpm": 4,
         "pts": 3,
-        "treb": 7,
+        "treb": 8,
         "ast": 2,
         "stl": 2,
         "blk": 2
@@ -854,12 +854,12 @@
         "blk": 92.8
       },
       "eowRoto": {
-        "total": 67,
+        "total": 68,
         "fgPct": 14,
         "ftPct": 1,
         "tpm": 7,
         "pts": 7,
-        "treb": 9,
+        "treb": 10,
         "ast": 5,
         "stl": 10,
         "blk": 14
@@ -998,12 +998,12 @@
         "blk": 67.92999999999999
       },
       "eowRoto": {
-        "total": 36,
+        "total": 37,
         "fgPct": 8,
         "ftPct": 3,
         "tpm": 1,
         "pts": 1,
-        "treb": 10,
+        "treb": 11,
         "ast": 4,
         "stl": 4,
         "blk": 5
@@ -1058,29 +1058,301 @@
         "blk": 8
       },
       "projRank": 14,
-      "gamesEow": 28,
+      "gamesEow": 30.099999999999998,
       "eow": {
-        "fgPct": 0.4493224385209578,
-        "ftPct": 0.7835276921117763,
-        "tpm": 152.70000000000002,
-        "pts": 1562.6999999999998,
-        "treb": 584.7,
-        "ast": 364.7,
-        "stl": 109.5,
-        "blk": 73.89999999999999
+        "fgPct": 0.44991804267366303,
+        "ftPct": 0.7845414515614566,
+        "tpm": 158.37,
+        "pts": 1606.59,
+        "treb": 591.4200000000001,
+        "ast": 369.32,
+        "stl": 111.81,
+        "blk": 74.32
       },
       "eowRoto": {
-        "total": 35,
+        "total": 36,
         "fgPct": 2,
         "ftPct": 6,
         "tpm": 3,
         "pts": 4,
         "treb": 3,
         "ast": 3,
-        "stl": 6,
+        "stl": 7,
         "blk": 8
       },
       "eowRank": 14
+    }
+  ],
+  "tradeWatch": [
+    {
+      "id": "randle-for-bam",
+      "label": "Randle for Bam (you and Herb)",
+      "team": "Shut Up and Jam Gaiden",
+      "tradeDate": "2026-10-27 14:33",
+      "baselineDate": "2026-10-27",
+      "baselineApprox": false,
+      "asOf": "2026-11-09",
+      "note": "Randle for Bam 1:1 with Herb (user offered, Herb accepted).",
+      "got": [
+        {
+          "name": "Bam Adebayo",
+          "nbaTeam": "MIA",
+          "games": 6,
+          "line": {
+            "games": 6,
+            "fgm": 52,
+            "fga": 87,
+            "ftm": 31,
+            "fta": 39,
+            "tpm": 3,
+            "pts": 138,
+            "treb": 55,
+            "ast": 18,
+            "stl": 13,
+            "blk": 3
+          },
+          "z": 6.962470936089513,
+          "value": 61.09390375147623,
+          "rankNow": 36,
+          "rankThen": 120
+        }
+      ],
+      "gave": [
+        {
+          "name": "Julius Randle",
+          "nbaTeam": "BKN",
+          "games": 7,
+          "line": {
+            "games": 7,
+            "fgm": 44,
+            "fga": 104,
+            "ftm": 36,
+            "fta": 45,
+            "tpm": 10,
+            "pts": 134,
+            "treb": 46,
+            "ast": 31,
+            "stl": 7,
+            "blk": 1
+          },
+          "z": -1.7006226400960434,
+          "value": 10.634566010090037,
+          "rankNow": 80,
+          "rankThen": 48
+        }
+      ],
+      "gotValue": 61.09390375147623,
+      "gaveValue": 10.634566010090037,
+      "net": 50.45933774138619,
+      "series": [
+        {
+          "date": "2026-10-28",
+          "net": -4.105788199097152
+        },
+        {
+          "date": "2026-10-29",
+          "net": 7.55214685331647
+        },
+        {
+          "date": "2026-10-30",
+          "net": 7.55214685331647
+        },
+        {
+          "date": "2026-10-31",
+          "net": 28.01119577319915
+        },
+        {
+          "date": "2026-11-01",
+          "net": 28.01119577319915
+        },
+        {
+          "date": "2026-11-02",
+          "net": 19.089976606517933
+        },
+        {
+          "date": "2026-11-03",
+          "net": 32.72302422982252
+        },
+        {
+          "date": "2026-11-04",
+          "net": 32.72302422982252
+        },
+        {
+          "date": "2026-11-05",
+          "net": 40.20083100263856
+        },
+        {
+          "date": "2026-11-06",
+          "net": 41.46817339567512
+        },
+        {
+          "date": "2026-11-07",
+          "net": 41.46817339567512
+        },
+        {
+          "date": "2026-11-08",
+          "net": 34.791584869419594
+        },
+        {
+          "date": "2026-11-09",
+          "net": 50.45933774138619
+        }
+      ],
+      "replacement": -3.2198463558231913
+    },
+    {
+      "id": "mitchell-for-amen-miller",
+      "label": "Mitchell for Amen + Brandon Miller (Finn and Cole)",
+      "team": "Finn will turn Bert into bacon",
+      "tradeDate": "2026-10-23 19:06",
+      "baselineDate": "2026-10-23",
+      "baselineApprox": false,
+      "asOf": "2026-11-09",
+      "note": "Finn accepted his counter (Mitchell alone for Amen + Miller). The user vetoed it, and the commissioner overruled the veto, so the trade stands. Yahoo shows '( Bert )' next to both teams.",
+      "got": [
+        {
+          "name": "Amen Thompson",
+          "nbaTeam": "HOU",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 54,
+            "fga": 107,
+            "ftm": 31,
+            "fta": 39,
+            "tpm": 1,
+            "pts": 140,
+            "treb": 55,
+            "ast": 26,
+            "stl": 11,
+            "blk": 6
+          },
+          "z": -1.1628874737074777,
+          "value": 18.512629939041425,
+          "rankNow": 99,
+          "rankThen": 99
+        },
+        {
+          "name": "Brandon Miller",
+          "nbaTeam": "CHA",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 66,
+            "fga": 184,
+            "ftm": 32,
+            "fta": 36,
+            "tpm": 24,
+            "pts": 188,
+            "treb": 46,
+            "ast": 21,
+            "stl": 11,
+            "blk": 7
+          },
+          "z": -1.3995223966733927,
+          "value": 16.382915632348187,
+          "rankNow": 110,
+          "rankThen": 177
+        }
+      ],
+      "gave": [
+        {
+          "name": "Donovan Mitchell",
+          "nbaTeam": "CLE",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 71,
+            "fga": 149,
+            "ftm": 39,
+            "fta": 50,
+            "tpm": 27,
+            "pts": 208,
+            "treb": 41,
+            "ast": 53,
+            "stl": 11,
+            "blk": 4
+          },
+          "z": 2.912435851935452,
+          "value": 55.19053986982779,
+          "rankNow": 24,
+          "rankThen": 16
+        }
+      ],
+      "gotValue": 34.89554557138961,
+      "gaveValue": 55.19053986982779,
+      "net": -20.294994298438176,
+      "series": [
+        {
+          "date": "2026-10-24",
+          "net": 7.59859657400755
+        },
+        {
+          "date": "2026-10-25",
+          "net": 9.519175927056828
+        },
+        {
+          "date": "2026-10-26",
+          "net": 9.519175927056828
+        },
+        {
+          "date": "2026-10-27",
+          "net": 15.108865069825463
+        },
+        {
+          "date": "2026-10-28",
+          "net": 15.108865069825463
+        },
+        {
+          "date": "2026-10-29",
+          "net": 19.003849275104066
+        },
+        {
+          "date": "2026-10-30",
+          "net": 20.117757831554037
+        },
+        {
+          "date": "2026-10-31",
+          "net": 20.130630840143347
+        },
+        {
+          "date": "2026-11-01",
+          "net": 22.073672519244745
+        },
+        {
+          "date": "2026-11-02",
+          "net": 22.073672519244745
+        },
+        {
+          "date": "2026-11-03",
+          "net": 22.808378375898172
+        },
+        {
+          "date": "2026-11-04",
+          "net": 22.808378375898172
+        },
+        {
+          "date": "2026-11-05",
+          "net": -6.136444463054616
+        },
+        {
+          "date": "2026-11-06",
+          "net": -6.136444463054616
+        },
+        {
+          "date": "2026-11-07",
+          "net": -17.927402935523673
+        },
+        {
+          "date": "2026-11-08",
+          "net": -20.294994298438176
+        },
+        {
+          "date": "2026-11-09",
+          "net": -20.294994298438176
+        }
+      ],
+      "replacement": -3.2198463558231913
     }
   ]
 }

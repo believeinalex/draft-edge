@@ -3,10 +3,12 @@ const path = require('path');
 const PLAYERS = require('../players.js');
 const { normName, CATS } = require('../engine.js');
 const { rotoPoints } = require('./build_season.js');
+const { buildTradeWatch, tradeWatchMarkdown, loadWatches } = require('./trade_watch.js');
 
 /**
  * Morning report, four sections: top performers and stinkers (any team), how both managed
- * teams played vs projection, projected standings (tonight and end of week), injury updates. Writes reports/YYYY-MM-DD.md and prints it.
+ * teams played vs projection, projected standings (tonight and end of week), injury updates, plus a FOMO watch
+ * of tracked trades (season/trade_watch.json). Writes reports/YYYY-MM-DD.md and prints it.
  *
  * Inputs (all already in the repo after `npm run fetch-stats` + `npm run injuries`):
  * - stats/snapshots: the two latest snapshots. Their difference is last night's box score.
@@ -378,6 +380,24 @@ async function main() {
 
   md.push(...injMd);
 
+  // 4. FOMO watch: how the tracked trades are working out since they happened
+  let tradeWatch = [];
+  try {
+    const watches = loadWatches();
+    if (watches.length && snaps.length) {
+      const txFile = path.join(__dirname, 'transactions.json');
+      tradeWatch = buildTradeWatch({
+        watches,
+        transactions: readJson(txFile).transactions,
+        snapshots: snaps.map(readJson),
+        score,
+        findTeam: name => findTeam(league, name),
+        ownedKeys: new Set(owner.keys())
+      });
+      md.push(...tradeWatchMarkdown(tradeWatch, name => (injBy.get(normName(name)) || {}).status || ''));
+    }
+  } catch (e) { warn.push(`FOMO watch failed: ${e.message}`); }
+
   const due = dueQuestions(today);
   if (due.length) {
     md.push('## Open questions due', '', 'From `season/open_questions.md`. Answer each below, then tick it there with a one-line answer.', '');
@@ -389,7 +409,7 @@ async function main() {
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const out = path.join(REPORT_DIR, `${today}.md`);
   fs.writeFileSync(out, md.join('\n'));
-  if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify(standingsJson, null, 2) + '\n');
+  if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify({ ...standingsJson, tradeWatch }, null, 2) + '\n');
   console.log(md.join('\n'));
   console.log(`\nSaved ${path.relative(process.cwd(), out)}`);
 }

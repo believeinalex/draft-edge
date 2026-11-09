@@ -309,3 +309,44 @@ test('RotoWire feed: parseRotowire reads items and rotowireMarkdown groups manag
   assert.equal((md.match(/\*\*Jarrett Allen\*\*/g) || []).length, 1);
   assert.ok(md.split('**Free agents**')[1].includes('Free Guy'));
 });
+
+test('trade watch: values each side by play since the trade, charges a 2-for-1 a replacement, and builds a daily net series', () => {
+  const { buildTradeWatch, tradeWatchMarkdown, sinceLine } = require('../season/trade_watch.js');
+  const mk = (name, gp, perGame, rank = 50) => ({ name, nbaTeam: 'AAA', gp, rank, fgm: 5, fga: 10, ftm: 2, fta: 2, tpm: 1, pts: perGame, treb: 5, ast: 3, stl: 1, blk: 0.5 });
+  const snap = (asOf, rows) => ({ asOf, players: rows });
+  const free = i => mk(`Free ${i}`, 10, 4, 100 + i);
+  const frees = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(free);
+  const snapshots = [
+    snap('2026-10-27', [mk('Star', 5, 20), mk('Dud One', 5, 10), mk('Dud Two', 5, 10), ...frees]),
+    snap('2026-10-28', [mk('Star', 6, 20), mk('Dud One', 6, 10), mk('Dud Two', 6, 10), ...frees]),
+    snap('2026-10-29', [mk('Star', 7, 20), mk('Dud One', 7, 10), mk('Dud Two', 7, 10), ...frees])
+  ];
+  // z-score: points only, so it is easy to reason about
+  const score = l => l.pts - 10;
+  const transactions = [{ type: 'trade', date: '2026-10-27 14:33', moves: [{ name: 'Star', to: 'Team A' }, { name: 'Dud One', to: 'Team B' }, { name: 'Dud Two', to: 'Team B' }] }];
+  const teams = { 'Team A': { name: 'Team A' }, 'Team B': { name: 'Team B' } };
+  const run = team => buildTradeWatch({
+    watches: [{ id: 'x', label: 'Star for two duds', tradeDate: '2026-10-27 14:33', team }],
+    transactions, snapshots, score, findTeam: n => teams[n], ownedKeys: new Set(['star', 'dud one', 'dud two'])
+  })[0];
+  const a = run('Team A');
+  assert.equal(a.baselineDate, '2026-10-27');
+  assert.equal(a.got.length, 1);
+  assert.equal(a.gave.length, 2);
+  // replacement = median of the free agents' z = 4 - 10 = -6; Star: 2 games x (10 - -6) = 32; each dud: 2 x (0 - -6) = 12
+  assert.equal(a.replacement, -6);
+  assert.equal(a.got[0].games, 2);
+  assert.equal(Math.round(a.got[0].value), 32);
+  assert.equal(Math.round(a.gaveValue), 24);
+  assert.equal(Math.round(a.net), 8);
+  // Team B sees the mirror image
+  assert.equal(Math.round(run('Team B').net), -8);
+  assert.equal(a.series.length, 2);
+  assert.equal(Math.round(a.series[0].net), 4);
+  const md = tradeWatchMarkdown([a, { label: 'Missing', error: 'No trade' }]).join('\n');
+  assert.match(md, /FOMO watch/);
+  assert.match(md, /ahead by 8\.0/);
+  assert.match(md, /Missing\*\* — No trade/);
+  // a player with no games since the baseline contributes nothing
+  assert.equal(sinceLine({ gp: 5, fgm: 1, fga: 2, ftm: 0, fta: 0, tpm: 0, pts: 2, treb: 1, ast: 1, stl: 0, blk: 0 }, { gp: 5 }), null);
+});
