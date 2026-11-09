@@ -8,6 +8,12 @@ Lloyd: playing well.
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 14-3 with two threes in 26 minutes. [50:38]
+- **Analysis:** A 12-team league guy.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: schedule

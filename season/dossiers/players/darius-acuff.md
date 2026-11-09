@@ -7,6 +7,13 @@ Lloyd: a percentages killer with big volume.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 32-5-10 with a steal and three threes in 39 minutes, 31 usage, over 50% FG. Top 40 in H2H this season; Lloyd's young gun of the night. [46:49]
+- **Analysis:** Terrible defensively, but the offensive numbers are insane.
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: shooting

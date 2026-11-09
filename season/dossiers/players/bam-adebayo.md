@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd was lukewarm after the opener (Oct 22), but Bam has been strong since. Season check (HTB through Nov 5): 18.6 pts, 8.3 reb, 2.1 stl, 53.3% FG, 32nd.
+Lloyd (Nov 9): "settling in now", top 15 over the last two weeks. Season check (HTB through Nov 5): 18.6 pts, 8.3 reb, 2.1 stl, 53.3% FG, 32nd.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 18-8-4. Top 15 over the last two weeks. [44:55]
+- **Analysis:** "Sort of settling in now."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

@@ -8,6 +8,12 @@ Lloyd (Nov 7): a priority add in category leagues for week 4. Off the bench but 
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 4 points, 9 rebounds, 14% FG in 19 minutes. [32:17]
+- **Analysis:** Inconsistent, no starting role, but Dallas has a good schedule (weekend back-to-back). Don't drop mid back-to-back; reassess this week.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: role, minutes, schedule

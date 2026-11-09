@@ -8,6 +8,12 @@ Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner go
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** Scoreless in nine minutes; now outside the top 200. [41:15]
+- **Analysis:** "Might just be terrible." Upside if Turner gets hurt or he's moved into the starting lineup (27 minutes = top-40). Try to hold through three games in five nights; that's likely the final straw.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: minutes, outlook

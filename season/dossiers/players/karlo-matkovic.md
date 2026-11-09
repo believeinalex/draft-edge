@@ -8,6 +8,12 @@ Lloyd: a minutes squeeze once Missi returns.
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 3-3-2 with foul trouble. [49:26]
+- **Analysis:** Lloyd has faith in him and would hold, but without 26–27 minutes he can't sustain high value in this center rotation.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: minutes

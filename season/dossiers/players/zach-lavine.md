@@ -7,6 +7,13 @@ Minutes back up.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 15-4 with a three in only 25 minutes; barely played down the stretch. [46:21]
+- **Analysis:** A drop-back after a very good start; "okay for now."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: minutes

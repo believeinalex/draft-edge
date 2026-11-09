@@ -7,6 +7,13 @@ Lloyd: strong start (Oct 22, Nov 5). Season check (HTB through Nov 5): 30.6 mpg,
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: defense
+- **Stat:** 12-16, three blocks and a steal. 31st for the season. [14:13]
+- **Analysis:** FT will always hurt, but steals look like a new, real skill.
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook, trade

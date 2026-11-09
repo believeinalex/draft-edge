@@ -8,6 +8,12 @@ Lloyd: was an add (Oct 22); now a drop window, with a hand injury, Claxton back 
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** Started over the returning Claxton: 17-8, two threes, four blocks, 64% FG. [8:57]
+- **Analysis:** Lloyd thinks Smith is better than Claxton and is not ready to drop him; doesn't think the two will play much together. Leaves "more fluff in the Jalen Smith bucket."
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: role

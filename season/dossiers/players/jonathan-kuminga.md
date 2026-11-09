@@ -8,6 +8,12 @@ Lloyd went from "a bad sign" (Oct 22) to impressed (Nov 5).
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 4 points and "literally nothing" in 25 minutes. Lloyd's dud of the night. [25:13]
+- **Analysis:** Earlier shooting felt fluky. Still holding but "could swing on that easy," and Minnesota has only two games this week.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: schedule

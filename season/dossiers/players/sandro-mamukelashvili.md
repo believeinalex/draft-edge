@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd says drop on Oct 22 and Nov 5. Season check (HTB through Nov 5): 23.4 mpg, 9.0 pts, 177th. A drop candidate for Finn.
+Lloyd says drop on Oct 22, Nov 5 and Nov 9 ("insanely over-rostered"; only a Kessler-injury stash). Season check (HTB through Nov 5): 23.4 mpg, 9.0 pts, 177th. A drop candidate for Finn.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 7-3 in 18 minutes. [15:32]
+- **Analysis:** "Insanely over-rostered." Only a stash in case Kessler gets hurt; anyone rostering him in a 10- or 12-teamer should "reassess how you're approaching this league."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

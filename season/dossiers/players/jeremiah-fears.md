@@ -7,6 +7,13 @@ Lloyd: hold; the role holds even with Murray back.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 25-6-5, two steals, 71% FG. Top 100 for the season, top 35 over two weeks. [48:31]
+- **Analysis:** One of Lloyd's five must-draft players (with Garland, Paul George, Ty Jerome and Anthony Davis); "looking all right now."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd says on both Oct 22 and Nov 5 that he is points only. Season check (HTB through Nov 5): 26.6 mpg, 16.4 pts, 1.8 3PM, 0.1 blk, 51.7% FG, 90th. Rosterable as a scorer, but empty in other categories, and Trey Murphy's return costs him shots.
+Lloyd says on Oct 22 and Nov 5 that he is points only; on Nov 9 (25% FG) "you probably still do want to roster him. I just have no faith in him." Season check (HTB through Nov 5): 26.6 mpg, 16.4 pts, 1.8 3PM, 0.1 blk, 51.7% FG, 90th. Rosterable as a scorer, empty elsewhere; Trey Murphy's usage rebound (29 on Nov 8) costs him shots.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: shooting
+- **Stat:** 13-4-3 in 26 minutes, 25% FG. [49:10]
+- **Analysis:** "You probably still do want to roster him. I just have no faith in him whatsoever."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

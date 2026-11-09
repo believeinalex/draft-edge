@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd held him all season but now (Nov 7) says: if you were thinking of cutting him, especially in 10-team or 12-team points leagues, do it now, before the Nets' 2-game week 4. Season check (HTB through Nov 5): 23.1 mpg, 7.1 reb, 2.6 ast, 1.1 blk, 50% FG, 170th. A back-of-roster hold for blocks and FG% in deeper leagues; the first cut candidate this week.
+Lloyd flipped back to a hold on Nov 9: after 6-4-6 with 2 stl and 2 blk in 20 minutes, he calls Sharpe "a must-roster guy", pencils him in for 25–27 minutes, thinks the assists are real, and would probably hold through the Nets' 2-game week (though he gets it if you don't). On Nov 7 he'd said to cut now if you were thinking about it. Season check (HTB through Nov 5): 23.1 mpg, 7.1 reb, 2.6 ast, 1.1 blk, 50% FG, 170th. Back-of-roster hold for blocks and FG%; only cut for a clear schedule gain this week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role, minutes, schedule
+- **Stat:** 6-4-6 with two steals and two blocks in 20 minutes (only one foul), shot poorly. [29:55]
+- **Analysis:** Thinks the assists are real; pencils him in for 25–27 minutes most nights. "To me a must-roster guy"; would probably hold through the two-game week, but understands if you don't.
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

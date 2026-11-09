@@ -7,6 +7,14 @@ Lloyd: strong; inquire about selling high.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: role, usage
+- **Stat:** 6-3-3, 12 usage. [47:46]
+- **Analysis:** "Completely marginalized" since returning from the birth of his child; looks "relatively toxic." Makes more sense for New Orleans to feed Fears.
+- **Speculation:** Lloyd has no idea whether he'll be traded.
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: trade

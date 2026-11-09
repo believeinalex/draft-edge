@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd: high volume, poor efficiency; that's the profile. Knueppel's re-injury keeps the shots with Miller. Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd.
+Out as of Nov 9, alongside Knueppel (4+ weeks) and Schröder (2+ weeks); return timing not given in the episode, so check the injury report. When healthy: high volume, poor efficiency (Lloyd). Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: injury, rotation
+- **Reported:** Out as well, alongside Knueppel (4+ weeks) and Schröder (2+ weeks). [1:22]
+- **Analysis:** If Miller remains out, Royce O'Neale becomes a 12-team stream / 14-team option. [2:08]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: shooting

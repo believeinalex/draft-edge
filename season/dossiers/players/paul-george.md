@@ -8,6 +8,12 @@ Lloyd: sell for top 40 if possible; health is the only worry.
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
 
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: outlook, injury
+- **Stat:** 27 points, two steals, five threes, 61% FG. 21st for the season. [35:50]
+- **Analysis:** Clearly Boston's No. 2. Shooting will cool and injury risk remains; would sell for a top-30 player, otherwise ride it.
+
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt
 Tags: schedule

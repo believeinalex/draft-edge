@@ -7,6 +7,13 @@ Lloyd: patience until Thanksgiving.
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
+Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 26-6-4 with four threes in 35 minutes, 52% FG. Top 75 for the season; last two games "absolute bangers." [20:26]
+- **Analysis:** Doesn't get to the rim much, but with Markkanen out and Keyonte George hurt, "he could go on a crazy run."
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook
