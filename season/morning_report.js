@@ -4,11 +4,12 @@ const PLAYERS = require('../players.js');
 const { normName, CATS } = require('../engine.js');
 const { rotoPoints } = require('./build_season.js');
 const { buildTradeWatch, tradeWatchMarkdown, loadWatches } = require('./trade_watch.js');
+const { fetchSchedule, movesLeft, simulateSeason, seasonOddsMarkdown } = require('./season_sim.js');
 
 /**
  * Morning report, four sections: top performers and stinkers (any team), how both managed
  * teams played vs projection, projected standings (tonight and end of week), injury updates, plus a FOMO watch
- * of tracked trades (season/trade_watch.json). Writes reports/YYYY-MM-DD.md and prints it.
+ * of tracked trades (season/trade_watch.json) and rest-of-season odds (season/season_sim.js). Writes reports/YYYY-MM-DD.md and prints it.
  *
  * Inputs (all already in the repo after `npm run fetch-stats` + `npm run injuries`):
  * - stats/snapshots: the two latest snapshots. Their difference is last night's box score.
@@ -405,11 +406,37 @@ async function main() {
     md.push('');
   }
 
+  // 5. Season odds: Monte Carlo of the rest of the season (SEASON_SIM_N=0 skips it)
+  let seasonOdds = null;
+  const simN = parseInt(process.env.SEASON_SIM_N || '4000', 10);
+  if (standingsJson && simN > 0) {
+    try {
+      const { schedule, source } = await fetchSchedule(today);
+      const news = datedFiles(path.join(__dirname, 'news'));
+      const returns = new Map();
+      if (news.length) for (const i of readJson(news[news.length - 1]).injuries || []) if (i.returnDate) returns.set(normName(i.name), i.returnDate.slice(0, 10));
+      const left = movesLeft(league, readJson(path.join(__dirname, 'transactions.json')).transactions);
+      const res = simulateSeason({
+        N: simN, today, schedule, players: PLAYERS, stats: cur.players, score,
+        injuries: new Map([...injBy].map(([k, p]) => [k, p.status])), returns,
+        teams: standingsJson.teams.map(st => {
+          const t = findTeam(league, st.name);
+          const a = active.get(t.name);
+          return { name: t.name, now: st.now, gpNow: st.gpNow, roster: t.roster, activeNames: new Set(((a && a.players) || []).map(p => normName(p.name))), movesLeft: left[t.name] };
+        })
+      });
+      const priorFile = datedFiles(REPORT_DIR).filter(f => path.basename(f) < `${today}.json`).pop();
+      const prior = priorFile ? readJson(priorFile).seasonOdds : null;
+      seasonOdds = { asOf: today, N: res.N, weeks: res.weeks, third: res.third, teams: res.teams };
+      md.push(...seasonOddsMarkdown(res, league, prior, source));
+    } catch (e) { warn.push(`Season odds failed: ${e.message}`); }
+  }
+
   if (warn.length) md.push('## Notes', '', ...warn.map(w => `- ${w}`), '');
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const out = path.join(REPORT_DIR, `${today}.md`);
   fs.writeFileSync(out, md.join('\n'));
-  if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify({ ...standingsJson, tradeWatch }, null, 2) + '\n');
+  if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify({ ...standingsJson, tradeWatch, seasonOdds }, null, 2) + '\n');
   console.log(md.join('\n'));
   console.log(`\nSaved ${path.relative(process.cwd(), out)}`);
 }

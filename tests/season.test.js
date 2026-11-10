@@ -350,3 +350,34 @@ test('trade watch: values each side by play since the trade, charges a 2-for-1 a
   // a player with no games since the baseline contributes nothing
   assert.equal(sinceLine({ gp: 5, fgm: 1, fga: 2, ftm: 0, fta: 0, tpm: 0, pts: 2, treb: 1, ast: 1, stl: 0, blk: 0 }, { gp: 5 }), null);
 });
+
+test('season sim: the stronger team wins most seasons, odds add up, remaining moves and Monday math work', () => {
+  const { simulateSeason, seasonOddsMarkdown, movesLeft, mondayOf } = require('../season/season_sim.js');
+  let seed = 12345;
+  const rng = () => { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; };
+  const mkP = (name, team, pts) => ({ name, team, gp: 80, rk: 1, totalZ: pts / 5, fgm: pts / 2.2, fga: pts / 1.1, ftm: pts / 6, fta: pts / 5, tpm: pts / 10, pts, treb: pts / 4, ast: pts / 5, stl: 1, blk: 1 });
+  const P = [];
+  const mkTeam = (name, abbr, pts) => {
+    const roster = Array.from({ length: 10 }, (_, i) => { const p = mkP(`${name} Guy ${String.fromCharCode(65 + i)}`, abbr, pts); P.push(p); return { name: p.name, nbaTeam: abbr }; });
+    return { name, now: { fgPct: 0.45, ftPct: 0.8, tpm: 10, pts: 100, treb: 40, ast: 20, stl: 8, blk: 5 }, gpNow: 10, roster, activeNames: new Set(roster.slice(0, 9).map(r => require('../engine.js').normName(r.name))), movesLeft: 5 };
+  };
+  const teams = [mkTeam('Alpha', 'AAA', 30), mkTeam('Beta', 'BBB', 12), mkTeam('Gamma', 'CCC', 12)];
+  const schedule = { '2026-11-10': [['AAA', 'BBB']], '2026-11-12': [['CCC', 'AAA']], '2026-11-17': [['BBB', 'CCC'], ['AAA', 'BBB']] };
+  const res = simulateSeason({ N: 300, rng, today: '2026-11-10', schedule, players: P, stats: [], score: l => l.pts / 10, injuries: new Map(), returns: new Map(), teams });
+  assert.equal(res.weeks, 2);
+  assert.equal(res.teams.length, 3);
+  assert.equal(res.teams[0].name, 'Alpha');
+  assert.ok(res.teams[0].first > 0.9, `Alpha should win nearly every time, got ${res.teams[0].first}`);
+  assert.ok(Math.abs(res.teams.reduce((s, t) => s + t.first, 0) - 1) < 1e-9);
+  assert.equal(res.third, 1);
+  const md = seasonOddsMarkdown(res, { myTeam: 'Alpha', managedTeams: ['Alpha'] }, { asOf: '2026-11-09', teams: [{ name: 'Alpha', topThird: 0.5 }] }, 'ESPN').join('\n');
+  assert.match(md, /Season odds/);
+  assert.match(md, /Alpha \*\*\(you\)\*\*/);
+  assert.match(md, /\+\d+ pts/);
+  const league = { teams: [{ name: 'New Name', previousNames: ['Old Name'] }, { name: 'Other' }] };
+  const left = movesLeft(league, [{ type: 'add_drop', team: 'Old Name', add: [{}, {}] }, { type: 'add_drop', team: 'New Name', add: [{}] }, { type: 'trade', team: 'Other' }]);
+  assert.equal(left['New Name'], 15);
+  assert.equal(left.Other, 18);
+  assert.equal(mondayOf('2026-11-15'), '2026-11-09');
+  assert.equal(mondayOf('2026-11-16'), '2026-11-16');
+});

@@ -1362,5 +1362,163 @@
       ],
       "replacement": -3.2227573468188613
     }
-  ]
+  ],
+  "seasonOdds": {
+    "asOf": "2026-11-10",
+    "N": 4000,
+    "weeks": 22,
+    "third": 5,
+    "teams": [
+      {
+        "name": "Shut Up and Jam Gaiden",
+        "topThird": 0.88425,
+        "top3": 0.75925,
+        "first": 0.434,
+        "avgRank": 2.7,
+        "p10": 1,
+        "p90": 6,
+        "avgPts": 86.598
+      },
+      {
+        "name": "Billy Hoyle's Boy-les",
+        "topThird": 0.8025,
+        "top3": 0.6115,
+        "first": 0.2245,
+        "avgRank": 3.60275,
+        "p10": 1,
+        "p90": 8,
+        "avgPts": 81.19825
+      },
+      {
+        "name": "Finn will turn Bert into bacon",
+        "topThird": 0.61425,
+        "top3": 0.37175,
+        "first": 0.095,
+        "avgRank": 5.25625,
+        "p10": 2,
+        "p90": 10,
+        "avgPts": 74.21525
+      },
+      {
+        "name": "Team Maru",
+        "topThird": 0.48625,
+        "top3": 0.2775,
+        "first": 0.0665,
+        "avgRank": 6.28875,
+        "p10": 2,
+        "p90": 12,
+        "avgPts": 70.77075
+      },
+      {
+        "name": "Bitsketball Stars",
+        "topThird": 0.39975,
+        "top3": 0.21975,
+        "first": 0.04975,
+        "avgRank": 7.27325,
+        "p10": 2,
+        "p90": 13,
+        "avgPts": 66.54625
+      },
+      {
+        "name": "#WashedAutoDraftKing",
+        "topThird": 0.36575,
+        "top3": 0.1915,
+        "first": 0.039,
+        "avgRank": 7.56,
+        "p10": 2,
+        "p90": 13,
+        "avgPts": 65.618
+      },
+      {
+        "name": "Herb's Astonishing Team",
+        "topThird": 0.3575,
+        "top3": 0.16125,
+        "first": 0.02775,
+        "avgRank": 7.254,
+        "p10": 3,
+        "p90": 12,
+        "avgPts": 66.638
+      },
+      {
+        "name": "vincemvpcarter",
+        "topThird": 0.3455,
+        "top3": 0.1755,
+        "first": 0.035,
+        "avgRank": 7.62575,
+        "p10": 3,
+        "p90": 13,
+        "avgPts": 65.1365
+      },
+      {
+        "name": "Cole is like that",
+        "topThird": 0.186,
+        "top3": 0.06925,
+        "first": 0.009,
+        "avgRank": 8.6885,
+        "p10": 4,
+        "p90": 13,
+        "avgPts": 61.19625
+      },
+      {
+        "name": "The New Day Co-op",
+        "topThird": 0.168,
+        "top3": 0.03825,
+        "first": 0.0035,
+        "avgRank": 7.95125,
+        "p10": 5,
+        "p90": 11,
+        "avgPts": 64.105
+      },
+      {
+        "name": "Grilled Teampura",
+        "topThird": 0.089,
+        "top3": 0.0305,
+        "first": 0.0035,
+        "avgRank": 10.81625,
+        "p10": 6,
+        "p90": 15,
+        "avgPts": 52.92875
+      },
+      {
+        "name": "Full Court Rex",
+        "topThird": 0.08675,
+        "top3": 0.02975,
+        "first": 0.00425,
+        "avgRank": 11.1575,
+        "p10": 6,
+        "p90": 15,
+        "avgPts": 51.24875
+      },
+      {
+        "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+        "topThird": 0.0785,
+        "top3": 0.02475,
+        "first": 0.003,
+        "avgRank": 10.812,
+        "p10": 6,
+        "p90": 15,
+        "avgPts": 53.44175
+      },
+      {
+        "name": "Fishy Achilles",
+        "topThird": 0.07375,
+        "top3": 0.02375,
+        "first": 0.00275,
+        "avgRank": 11.36325,
+        "p10": 6,
+        "p90": 15,
+        "avgPts": 51.2375
+      },
+      {
+        "name": "Super Maru",
+        "topThird": 0.06225,
+        "top3": 0.01575,
+        "first": 0.0025,
+        "avgRank": 11.6505,
+        "p10": 7,
+        "p90": 15,
+        "avgPts": 49.121
+      }
+    ]
+  }
 }
