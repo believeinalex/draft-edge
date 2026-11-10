@@ -1261,6 +1261,49 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-10 18:30",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [],
+      "drop": [
+        {
+          "name": "Santi Aldama",
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ]
+        }
+      ],
+      "note": "Entered from the user's report in chat; time approximate. Dropped to make room because Miller moved off IL."
+    },
+    {
+      "date": "2026-11-10 18:40",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Tristan da Silva",
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Reed Sheppard",
+          "nbaTeam": "HOU",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ],
+      "note": "Entered from the user's report in chat; time approximate."
     }
   ]
 }
