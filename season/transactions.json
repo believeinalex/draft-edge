@@ -1263,7 +1263,75 @@
       ]
     },
     {
-      "date": "2026-11-10 18:30",
+      "date": "2026-11-09 18:46",
+      "type": "add_drop",
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "add": [
+        {
+          "name": "Morez Johnson Jr.",
+          "nbaTeam": "DAL",
+          "pos": [
+            "PF"
+          ],
+          "status": "Q",
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Kristaps Porziņģis",
+          "nbaTeam": "GSW",
+          "pos": [
+            "C"
+          ],
+          "status": "O"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09 21:01",
+      "type": "add_drop",
+      "team": "Fishy Achilles",
+      "add": [
+        {
+          "name": "Maxime Raynaud",
+          "nbaTeam": "SAC",
+          "pos": [
+            "C"
+          ],
+          "status": "O",
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-09 22:12",
+      "type": "add_drop",
+      "team": "vincemvpcarter",
+      "add": [
+        {
+          "name": "Jakob Poeltl",
+          "nbaTeam": "TOR",
+          "pos": [
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Terrence Shannon Jr.",
+          "nbaTeam": "MIN",
+          "pos": [
+            "SG",
+            "SF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10 06:38",
       "type": "add_drop",
       "team": "Finn will turn Bert into bacon",
       "add": [],
@@ -1276,10 +1344,10 @@
           ]
         }
       ],
-      "note": "Entered from the user's report in chat; time approximate. Dropped to make room because Miller moved off IL."
+      "note": "Dropped to make room because Miller moved off IL."
     },
     {
-      "date": "2026-11-10 18:40",
+      "date": "2026-11-10 06:43",
       "type": "add_drop",
       "team": "Finn will turn Bert into bacon",
       "add": [
@@ -1290,7 +1358,8 @@
             "SF",
             "PF"
           ],
-          "via": "FA"
+          "via": "FA",
+          "status": "O"
         }
       ],
       "drop": [
@@ -1302,8 +1371,168 @@
             "SG"
           ]
         }
+      ]
+    },
+    {
+      "date": "2026-11-10 18:03",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [],
+      "drop": [
+        {
+          "name": "Saddiq Bey",
+          "nbaTeam": "NOP",
+          "pos": [
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10 18:04",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Hugo González",
+          "nbaTeam": "BOS",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
       ],
-      "note": "Entered from the user's report in chat; time approximate."
+      "drop": []
+    },
+    {
+      "date": "2026-11-10 18:07",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Jordan Walsh",
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Tristan da Silva",
+          "nbaTeam": "ORL",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "status": "O"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10 18:10",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Ron Harper Jr.",
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Draymond Green",
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10 18:12",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [],
+      "drop": [
+        {
+          "name": "Sandro Mamukelashvili",
+          "nbaTeam": "LAL",
+          "pos": [
+            "PF",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10 18:14",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Bilal Coulibaly",
+          "nbaTeam": "WAS",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-10 20:24",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Jayden Quaintance",
+          "nbaTeam": "SAS",
+          "pos": [
+            "PF"
+          ],
+          "status": "O",
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-10 20:25",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Jordan McLaughlin",
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Hugo González",
+          "nbaTeam": "BOS",
+          "pos": [
+            "SG",
+            "SF"
+          ]
+        }
+      ]
     }
   ]
 }
