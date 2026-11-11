@@ -11,6 +11,10 @@ Questions to revisit on a set date. `npm run report` copies every unchecked item
 - [x] **Mo Bamba (UTA, FA) for Robert Williams III?** Through Nov 2: 1.7 blk in 18 min, but only 3 games and 81% FG. On Nov 2 he was the only waiver move the model rated positive (+1 to +2). Has he stayed in Utah's rotation? **Answered 2026-11-09:** Marginal, skip for now (Bamba rank 127, 1.7 blk in 17.4 mpg vs Williams rank 106, 1.3 blk; about 1–2 blocks a week).
 - [x] **Blocks and rebounds catch-up.** On Nov 2 we were 14th in blocks (27; 26–29 covers six places), 11th in rebounds and 12th in FG%. Where are we now, and do we still need a big from a trade or the wire while Chet Holmgren is out (expected back around Jan 2)? **Answered 2026-11-09:** Blocks still the gap, rebounds fixed.
 
+## 2026-11-13 (Fri: Bey's waiver window ends)
+
+- [ ] **Did Saddiq Bey clear waivers, and did Finn get him back?** Finn dropped Bey (and Draymond Green) to waivers on Nov 10 at about 6 pm, during his add/drop spree. League claims process around 4 am about three days after the drop, so Bey should clear early Nov 13. The plan was to re-add him as a free agent the moment he clears, dropping Jordan McLaughlin (or Ron Harper Jr. / Jordan Walsh). That uses 1 of Finn's 6 remaining adds. Say who claimed him if someone did. Also say whether Draymond is worth a second add, given Finn's center depth (Wembanyama plus Nurkić, who is Out).
+
 ## 2026-11-16 (Mon: first lock after week 4, Nov 9–15)
 
 - [ ] **Week 4 lineup calls: did the bigs-over-Quickley plan pay off?** For Nov 9–15 the plan (made Nov 7) was to start Maluach, Ighodaro (PHX, 4 games each) and Paul Reed (DET, 3) and bench Quickley (TOR, 4, hamstring), Robert Williams III and Day'Ron Sharpe (BKN, 2), to chase blocks and rebounds (we were roughly 11th in blocks and 7th in rebounds by roto points) instead of points, assists and 3s, where we're already near the top. Compare actual lines, and check whether Duren's return cut Reed's minutes. For Finn: did Miller (groin) and Hart (ankle) play, and was starting Sheppard over Draymond/Aldama right?
