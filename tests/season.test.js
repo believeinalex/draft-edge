@@ -381,3 +381,33 @@ test('season sim: the stronger team wins most seasons, odds add up, remaining mo
   assert.equal(mondayOf('2026-11-15'), '2026-11-09');
   assert.equal(mondayOf('2026-11-16'), '2026-11-16');
 });
+
+test('move watch: add/drop watches follow the pickup until it is cut, ignore pure drops, and keep same-timestamp moves apart', () => {
+  const { buildTradeWatch, moveWatchesFor, moveWatchMarkdown } = require('../season/trade_watch.js');
+  const mk = (name, gp, pts, rank = 50) => ({ name, nbaTeam: 'AAA', gp, rank, fgm: 5, fga: 10, ftm: 2, fta: 2, tpm: 1, pts, treb: 5, ast: 3, stl: 1, blk: 0.5 });
+  const frees = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(i => mk(`Free ${i}`, 10, 4, 100 + i));
+  const snap = (asOf, n) => ({ asOf, players: [mk('Added', n, 20), mk('Dropped', n, 10), mk('Other', n, 10), ...frees] });
+  const snapshots = [snap('2026-10-27', 5), snap('2026-10-28', 6), snap('2026-10-29', 7), snap('2026-10-30', 8)];
+  const transactions = [
+    { type: 'add_drop', date: '2026-10-27 08:00', team: 'Team A', add: [{ name: 'Added' }], drop: [{ name: 'Dropped' }] },
+    { type: 'add_drop', date: '2026-10-27 08:00', team: 'Team A', add: [{ name: 'Other' }], drop: [] },
+    { type: 'add_drop', date: '2026-10-29 09:00', team: 'Team A', add: [], drop: [{ name: 'Added' }] },
+    { type: 'add_drop', date: '2026-10-29 10:00', team: 'Team B', add: [{ name: 'Free 1' }], drop: [] }
+  ];
+  const findTeam = n => ({ 'Team A': { name: 'Team A' }, 'Team B': { name: 'Team B' } })[n];
+  const watches = moveWatchesFor('Team A', transactions, findTeam);
+  assert.equal(watches.length, 2, 'the pure drop is not a watch');
+  const res = buildTradeWatch({ watches, transactions, snapshots, score: l => l.pts - 10, findTeam, ownedKeys: new Set(['added', 'dropped', 'other']) });
+  assert.equal(res.length, 2);
+  // the two moves share a timestamp but each reads its own transaction
+  assert.equal(res[0].got[0].name, 'Added');
+  assert.equal(res[1].got[0].name, 'Other');
+  // Added was cut on 10-29: counts only games up to that snapshot (2 games), not through today (3)
+  assert.equal(res[0].got[0].games, 2);
+  assert.equal(res[0].got[0].droppedOn, '2026-10-29');
+  // Dropped (10p) keeps counting through today
+  assert.equal(res[0].gave[0].games, 3);
+  const md = moveWatchMarkdown(res).join('\n');
+  assert.match(md, /Move watch/);
+  assert.match(md, /cut 10-29/);
+});

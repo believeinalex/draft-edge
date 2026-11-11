@@ -64,17 +64,32 @@ function buildTradeWatch({ watches, transactions, snapshots, score, findTeam, ow
   const repl = replacementLevel(latest, ownedKeys, score);
   const out = [];
   for (const w of watches) {
-    const tx = transactions.find(t => t.type === 'trade' && t.date === w.tradeDate);
-    if (!tx) { out.push({ ...w, error: `No trade dated ${w.tradeDate} in transactions.json` }); continue; }
     const me = findTeam(w.team);
-    const mine = tx.moves.filter(m => (findTeam(m.to) || {}).name === (me || {}).name);
-    const theirs = tx.moves.filter(m => (findTeam(m.to) || {}).name !== (me || {}).name);
+    // A watch can follow a trade or an add/drop (the added players are "got", the dropped players "gave")
+    const tx = (w.txIndex != null ? transactions[w.txIndex] : null) || transactions.find(t => t.date === w.tradeDate && (t.type === 'trade' || (t.type === 'add_drop' && (findTeam(t.team) || {}).name === (me || {}).name)));
+    if (!tx) { out.push({ ...w, error: `No trade or add/drop dated ${w.tradeDate} in transactions.json` }); continue; }
+    const isMove = tx.type === 'add_drop';
+    const mine = isMove ? (tx.add || []) : tx.moves.filter(m => (findTeam(m.to) || {}).name === (me || {}).name);
+    const theirs = isMove ? (tx.drop || []) : tx.moves.filter(m => (findTeam(m.to) || {}).name !== (me || {}).name);
     // Morning snapshots hold games through the day before, so the snapshot dated the trade day is the baseline
     const day = w.tradeDate.slice(0, 10);
     const idx = snapshots.findIndex(s => s.asOf >= day);
     const baseIdx = idx === -1 ? snapshots.length - 1 : idx;
     const approx = snapshots[baseIdx].asOf !== day;
-    const side = (moves, snap) => moves.map(m => playerSince(m.name, snap, snapshots[baseIdx], score, repl));
+    // An added player stops counting once the same team drops him again
+    const endIdx = m => {
+      if (!isMove) return snapshots.length - 1;
+      const later = transactions.find(t => t.type === 'add_drop' && t.date > w.tradeDate && (findTeam(t.team) || {}).name === (me || {}).name && (t.drop || []).some(d => normName(d.name) === normName(m.name)));
+      if (!later) return snapshots.length - 1;
+      const i = snapshots.findIndex(sn => sn.asOf >= later.date.slice(0, 10));
+      return i === -1 ? snapshots.length - 1 : i;
+    };
+    const side = (moves, snap) => moves.map(m => {
+      const cap = isMove && mine.includes(m) ? snapshots[Math.min(snapshots.indexOf(snap), endIdx(m))] : snap;
+      const r = playerSince(m.name, cap, snapshots[baseIdx], score, repl);
+      if (isMove && mine.includes(m) && endIdx(m) < snapshots.length - 1) r.droppedOn = cap.asOf;
+      return r;
+    });
     const got = side(mine, latest), gave = side(theirs, latest);
     const sum = rows => rows.reduce((s, r) => s + r.value, 0);
     const series = snapshots.slice(baseIdx + 1).map(s => ({
@@ -82,7 +97,7 @@ function buildTradeWatch({ watches, transactions, snapshots, score, findTeam, ow
       net: sum(side(mine, s)) - sum(side(theirs, s))
     }));
     out.push({
-      id: w.id, label: w.label, team: me ? me.name : w.team, tradeDate: w.tradeDate, baselineDate: snapshots[baseIdx].asOf, baselineApprox: approx,
+      id: w.id, label: w.label, kind: isMove ? 'move' : 'trade', team: me ? me.name : w.team, tradeDate: w.tradeDate, baselineDate: snapshots[baseIdx].asOf, baselineApprox: approx,
       asOf: latest.asOf, note: tx.note || '', got, gave, gotValue: sum(got), gaveValue: sum(gave), net: sum(got) - sum(gave), series, replacement: repl
     });
   }
@@ -122,9 +137,38 @@ function tradeWatchMarkdown(results, statusOf = () => '') {
   return md;
 }
 
+
+// Watches for every add/drop a team has made, for teams that have no trades in trade_watch.json
+function moveWatchesFor(teamName, transactions, findTeam) {
+  const me = findTeam(teamName);
+  return transactions.map((t, txIndex) => ({ t, txIndex })).filter(({ t }) => t.type === 'add_drop' && (findTeam(t.team) || {}).name === (me || {}).name && (t.add || []).length)
+    .map(({ t, txIndex }) => ({
+      id: `${t.date}`, txIndex,
+      label: `${(t.add || []).map(a => a.name).join(', ') || 'no add'} (dropped ${(t.drop || []).map(d => d.name).join(', ') || 'nobody'})`,
+      tradeDate: t.date, team: me.name
+    }));
+}
+
+// One row per add/drop: what the added players have produced since, against what the dropped players have
+function moveWatchMarkdown(results, statusOf = () => '') {
+  const ok = results.filter(r => !r.error);
+  const md = ['## Move watch (were the pickups worth it?)', ''];
+  if (!ok.length) return [...md, 'No add/drop moves to track.', ''];
+  md.push(`Each row follows one add/drop using only play since the move: value = games x (per-game 8-cat z-score - replacement z of ${sgn(ok[0].replacement, 2)}, the median of the top 10 free agents). Net = added player(s) - dropped player(s). Negative means the dropped player(s) out-produced the pickup. An added player stops counting once the team drops him; a dropped player counts through today.`, '');
+  md.push('| Move | Added (GP, value) | Dropped (GP, value) | Net |', '|---|---|---|---|');
+  let total = 0;
+  for (const r of ok) {
+    const f = rows => rows.length ? rows.map(p => `${p.name}${statusOf(p.name) ? ` (${statusOf(p.name)})` : ''} (${p.games} GP, ${sgn(p.value)}${p.droppedOn ? `, cut ${p.droppedOn.slice(5)}` : ''})`).join('; ') : '-';
+    total += r.net;
+    md.push(`| ${r.tradeDate.slice(5, 10)} | ${f(r.got)} | ${f(r.gave)} | **${sgn(r.net)}** |`);
+  }
+  md.push('', `Net across ${ok.length} moves: **${sgn(total)}**.`, '');
+  return md;
+}
+
 const WATCH_FILE = path.join(__dirname, 'trade_watch.json');
 function loadWatches(file = WATCH_FILE) {
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')).watches || [] : [];
 }
 
-module.exports = { sinceLine, replacementLevel, playerSince, buildTradeWatch, tradeWatchMarkdown, loadWatches };
+module.exports = { sinceLine, replacementLevel, playerSince, buildTradeWatch, tradeWatchMarkdown, moveWatchesFor, moveWatchMarkdown, loadWatches };

@@ -224,7 +224,7 @@ const sgnPts = d => (Math.abs(d) < 0.005 ? '0' : `${d > 0 ? '+' : ''}${Math.roun
 
 // prev = the previous report's seasonOdds (optional), to show the change in top-third odds
 function seasonOddsMarkdown(res, league, prev, source) {
-  const tag = name => name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(name) ? ' **(Finn)**' : '';
+  const tag = name => name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(name) ? ` **${league.managedLabel || '(Finn)'}**` : '';
   const before = new Map(prev && prev.teams ? prev.teams.map(t => [t.name, t.topThird]) : []);
   const md = ['## Season odds (rest-of-season simulation)', ''];
   md.push(`${res.N.toLocaleString('en-US')} simulated seasons over ${res.weeks} weeks (schedule: ${source}) with weekly lineups, injuries, shooting luck and other managers' waiver moves. Top third = top ${res.third} of ${res.teams.length}. It uses the preseason projections the teams were drafted with, so managed teams run a little optimistic.`, '');

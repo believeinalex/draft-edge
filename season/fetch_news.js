@@ -4,6 +4,7 @@ const { normName } = require('../engine.js');
 const PLAYERS = require('../players.js');
 const { fetchCoverage, coverageMarkdown } = require('./team_coverage.js');
 const { fetchRotowire, rotowireMarkdown } = require('./rotowire.js');
+const { applyFocus } = require('./focus.js');
 
 /**
  * Daily injury & news digest from ESPN's public NBA endpoints (no login needed).
@@ -106,7 +107,7 @@ function buildMarkdown({ today, league, injuries, articles, changes, owner, stat
   const md = [`# Injury & news digest — ${today}`, '', 'Source: ESPN injuries and news feeds. Comments are ESPN\'s; role-impact reads are inferred.', ''];
   const tag = name => {
     const o = owner.get(normName(name));
-    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ' **(Finn)**' : o ? ` (${o})` : '';
+    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ` **${league.managedLabel || '(Finn)'}**` : o ? ` (${o})` : '';
   };
   for (const tn of league.managedTeams) {
     const t = league.teams.find(x => x.name === tn);
@@ -165,6 +166,7 @@ function buildMarkdown({ today, league, injuries, articles, changes, owner, stat
 
 async function main() {
   const league = JSON.parse(fs.readFileSync(path.join(__dirname, 'league.json'), 'utf8'));
+  const focus = applyFocus(league); // REPORT_TEAMS: digest for other teams, written to suffixed files
   const owner = new Map();
   for (const t of league.teams) for (const r of t.roster) owner.set(normName(r.name), t.name);
 
@@ -194,17 +196,17 @@ async function main() {
   const prev = earlier.length ? JSON.parse(fs.readFileSync(path.join(NEWS_DIR, earlier[earlier.length - 1]), 'utf8')) : null;
   const changes = prev ? diffInjuries(prev.injuries, injuries, k => owner.has(k)) : null;
 
-  fs.writeFileSync(path.join(NEWS_DIR, `${today}.json`), JSON.stringify({ asOf: today, fetchedAt: new Date().toISOString(), source: BASE, injuries, articles, rotowire, coverage }, null, 2) + '\n');
+  fs.writeFileSync(path.join(NEWS_DIR, `${today}${focus ? `-${focus.slug}` : ''}.json`), JSON.stringify({ asOf: today, fetchedAt: new Date().toISOString(), source: BASE, injuries, articles, rotowire, coverage }, null, 2) + '\n');
   const latest = JSON.parse(fs.readFileSync(path.join(ROOT, 'stats', 'latest.json'), 'utf8'));
   const stats = new Map(latest.players.map(p => [normName(p.name), p]));
   const md = buildMarkdown({ today, league, injuries, articles, changes, owner, stats }) + '\n' +
     (rotoError ? `## RotoWire injury feed\n\nUnavailable: ${rotoError}\n` : rotowireMarkdown(rotowire, league, owner)) + '\n' +
     coverageMarkdown(coverage, covTeams, covErrors);
   fs.mkdirSync(REPORT_DIR, { recursive: true });
-  const out = path.join(REPORT_DIR, `${today}-news.md`);
+  const out = path.join(REPORT_DIR, `${today}-news${focus ? `-${focus.slug}` : ''}.md`);
   fs.writeFileSync(out, md);
   console.log(md);
-  console.log(`\nSaved season/news/${today}.json and ${path.relative(process.cwd(), out)}`);
+  console.log(`\nSaved season/news/${today}${focus ? `-${focus.slug}` : ''}.json and ${path.relative(process.cwd(), out)}`);
 }
 
 if (require.main === module) {

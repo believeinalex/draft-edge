@@ -42,7 +42,7 @@ function rotowireMarkdown(items, league, owner) {
   const latest = items.filter(i => { const k = normName(i.name); if (seen.has(k)) return false; seen.add(k); return true; });
   const tag = name => {
     const o = owner.get(normName(name));
-    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ' **(Finn)**' : o ? ` (${o})` : '';
+    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ` **${league.managedLabel || '(Finn)'}**` : o ? ` (${o})` : '';
   };
   const groups = { managed: [], rostered: [], free: [] };
   for (const i of latest) {

@@ -3,8 +3,9 @@ const path = require('path');
 const PLAYERS = require('../players.js');
 const { normName, CATS } = require('../engine.js');
 const { rotoPoints } = require('./build_season.js');
-const { buildTradeWatch, tradeWatchMarkdown, loadWatches } = require('./trade_watch.js');
+const { buildTradeWatch, tradeWatchMarkdown, moveWatchesFor, moveWatchMarkdown, loadWatches } = require('./trade_watch.js');
 const { fetchSchedule, movesLeft, simulateSeason, seasonOddsMarkdown } = require('./season_sim.js');
+const { applyFocus } = require('./focus.js');
 
 /**
  * Morning report, four sections: top performers and stinkers (any team), how both managed
@@ -148,12 +149,13 @@ const fmtPct = v => v.toFixed(3).replace(/^0/, '');
 async function main() {
   const today = etDate();
   const league = readJson(path.join(__dirname, 'league.json'));
+  const focus = applyFocus(league); // REPORT_TEAMS: report on other teams, written to suffixed files
   const projByName = new Map(PLAYERS.map(p => [normName(p.name), p]));
   const owner = new Map();
   for (const t of league.teams) for (const r of t.roster) owner.set(normName(r.name), t.name);
   const tag = name => {
     const o = owner.get(normName(name));
-    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ' **(Finn)**' : o ? ` (${o})` : ' (FA)';
+    return o === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(o) ? ` **${league.managedLabel || '(Finn)'}**` : o ? ` (${o})` : ' (FA)';
   };
   const score = buildScorer();
   const md = [];
@@ -203,7 +205,7 @@ async function main() {
     md.push('**Stinkers**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(-8).reverse().map(row), '');
   }
 
-  md.push('## How your two teams played vs projection', '');
+  md.push(focus ? `## How ${league.managedTeams.join(' and ')} played vs projection` : '## How your two teams played vs projection', '');
   for (const tn of league.managedTeams || []) {
     const t = findTeam(league, tn);
     // Lineup first: a player traded mid-week still counts for his locked-lineup team until the next lock
@@ -364,7 +366,7 @@ async function main() {
     md.push('| Now | Tonight | EOW | Team | Games tonight / EOW | Points now → tonight → EOW | ' + CATS.map(c => `${c} (EOW)`).join(' | ') + ' |');
     md.push('|---|---|---|---|---|---|' + CATS.map(() => '---').join('|') + '|');
     for (const t of [...teams].sort((a, b) => a.eowRank - b.eowRank)) {
-      const mark = t.name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(t.name) ? ' **(Finn)**' : '';
+      const mark = t.name === league.myTeam ? ' **(you)**' : (league.managedTeams || []).includes(t.name) ? ` **${league.managedLabel || '(Finn)'}**` : '';
       md.push(`| ${t.realRank} | ${t.projRank} | ${t.eowRank} | ${t.name}${mark}${t.estimated ? ' †' : ''} | ${+t.games.toFixed(1)} / ${+t.gamesEow.toFixed(1)} | ${t.realRoto.total} → ${t.projRoto.total} → ${t.eowRoto.total} | ` +
         CATS.map(c => t.eowRoto[c]).join(' | ') + ' |');
     }
@@ -384,22 +386,28 @@ async function main() {
   // 4. FOMO watch: how the tracked trades are working out since they happened
   let tradeWatch = [];
   try {
-    const watches = loadWatches();
+    let watches = loadWatches();
+    const txAll = readJson(path.join(__dirname, 'transactions.json')).transactions;
+    let moves = false;
+    if (focus) {
+      // Focus teams: the configured trades for those teams, else every add/drop they have made
+      watches = watches.filter(w => league.managedTeams.includes((findTeam(league, w.team) || {}).name));
+      if (!watches.length) { watches = league.managedTeams.flatMap(tn => moveWatchesFor(tn, txAll, name => findTeam(league, name))); moves = true; }
+    }
     if (watches.length && snaps.length) {
-      const txFile = path.join(__dirname, 'transactions.json');
       tradeWatch = buildTradeWatch({
         watches,
-        transactions: readJson(txFile).transactions,
+        transactions: txAll,
         snapshots: snaps.map(readJson),
         score,
         findTeam: name => findTeam(league, name),
         ownedKeys: new Set(owner.keys())
       });
-      md.push(...tradeWatchMarkdown(tradeWatch, name => (injBy.get(normName(name)) || {}).status || ''));
+      md.push(...(moves ? moveWatchMarkdown : tradeWatchMarkdown)(tradeWatch, name => (injBy.get(normName(name)) || {}).status || ''));
     }
   } catch (e) { warn.push(`FOMO watch failed: ${e.message}`); }
 
-  const due = dueQuestions(today);
+  const due = focus ? [] : dueQuestions(today);
   if (due.length) {
     md.push('## Open questions due', '', 'From `season/open_questions.md`. Answer each below, then tick it there with a one-line answer.', '');
     for (const q of due) md.push(`- (${q.date}) ${q.text}`);
@@ -434,7 +442,7 @@ async function main() {
 
   if (warn.length) md.push('## Notes', '', ...warn.map(w => `- ${w}`), '');
   fs.mkdirSync(REPORT_DIR, { recursive: true });
-  const out = path.join(REPORT_DIR, `${today}.md`);
+  const out = path.join(REPORT_DIR, `${today}${focus ? `-${focus.slug}` : ''}.md`);
   fs.writeFileSync(out, md.join('\n'));
   if (standingsJson) fs.writeFileSync(out.replace(/\.md$/, '.json'), JSON.stringify({ ...standingsJson, tradeWatch, seasonOdds }, null, 2) + '\n');
   console.log(md.join('\n'));
