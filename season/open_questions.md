@@ -13,7 +13,7 @@ Questions to revisit on a set date. `npm run report` copies every unchecked item
 
 ## 2026-11-13 (Fri: Bey's waiver window ends)
 
-- [ ] **Did Saddiq Bey clear waivers, and did Finn get him back?** Finn dropped Bey (and Draymond Green) to waivers on Nov 10 at about 6 pm, during his add/drop spree. League claims process around 4 am about three days after the drop, so Bey should clear early Nov 13. The plan was to re-add him as a free agent the moment he clears, dropping Jordan McLaughlin (or Ron Harper Jr. / Jordan Walsh). That uses 1 of Finn's 6 remaining adds. Say who claimed him if someone did. Also say whether Draymond is worth a second add, given Finn's center depth (Wembanyama plus Nurkić, who is Out).
+- [x] **Did Saddiq Bey clear waivers, and did Finn get him back?** Finn dropped Bey (and Draymond Green) to waivers on Nov 10 at about 6 pm, during his add/drop spree. League claims process around 4 am about three days after the drop, so Bey should clear early Nov 13. The plan was to re-add him as a free agent the moment he clears, dropping Jordan McLaughlin (or Ron Harper Jr. / Jordan Walsh). That uses 1 of Finn's 6 remaining adds. Say who claimed him if someone did. Also say whether Draymond is worth a second add, given Finn's center depth (Wembanyama plus Nurkić, who is Out). **Answered 2026-11-13:** Nobody has claimed Bey, Green or Mamukelashvili (none on any roster); Finn should add Bey and Mamu (drop McLaughlin, Harper) once Yahoo shows them as normal adds, and skip Draymond.
 
 ## 2026-11-16 (Mon: first lock after week 4, Nov 9–15)
 
