@@ -1533,6 +1533,95 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-12 14:06",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [],
+      "drop": [
+        {
+          "name": "Dylan Cardwell",
+          "nbaTeam": "SAC",
+          "pos": [
+            "PF",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-12 14:30",
+      "type": "trade",
+      "moves": [
+        {
+          "name": "Brayden Burries",
+          "nbaTeam": "MIL",
+          "pos": [
+            "SG"
+          ],
+          "to": "Grilled Teampura"
+        },
+        {
+          "name": "Peyton Watson",
+          "nbaTeam": "CLE",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "to": "vincemvpcarter"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13 06:50",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [
+        {
+          "name": "Sandro Mamukelashvili",
+          "nbaTeam": "LAL",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "via": "FA"
+        },
+        {
+          "name": "Saddiq Bey",
+          "nbaTeam": "NOP",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Jordan McLaughlin",
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13 08:27",
+      "type": "add_drop",
+      "team": "Finn will turn Bert into bacon",
+      "add": [],
+      "drop": [
+        {
+          "name": "Ron Harper Jr.",
+          "nbaTeam": "BOS",
+          "pos": [
+            "SF"
+          ]
+        }
+      ]
     }
   ]
 }
