@@ -411,3 +411,17 @@ test('move watch: add/drop watches follow the pickup until it is cut, ignore pur
   assert.match(md, /Move watch/);
   assert.match(md, /cut 10-29/);
 });
+
+test('box score parser reads whole-number lines and skips DNPs', () => {
+  const { parseSummary, addDays } = require('../season/boxscores.js');
+  const labels = ['MIN', 'PTS', 'FG', '3PT', 'FT', 'REB', 'AST', 'TO', 'STL', 'BLK', 'OREB', 'DREB', 'PF', '+/-'];
+  const summary = { boxscore: { players: [{ team: { abbreviation: 'NY' }, statistics: [{ labels, athletes: [
+    { athlete: { displayName: 'Real Player' }, stats: ['34', '28', '10-20', '3-8', '5-6', '9', '4', '2', '1', '2', '1', '8', '3', '+5'] },
+    { athlete: { displayName: 'Bench Guy' }, stats: ['--', '0', '0-0', '0-0', '0-0', '0', '0', '0', '0', '0', '0', '0', '0', '0'] },
+    { athlete: { displayName: 'Scratched' }, didNotPlay: true, stats: [] }
+  ] }] }] } };
+  const rows = parseSummary(summary);
+  assert.equal(rows.length, 1);
+  assert.deepEqual({ ...rows[0] }, { name: 'Real Player', nbaTeam: 'NY', games: 1, fgm: 10, fga: 20, ftm: 5, fta: 6, tpm: 3, pts: 28, treb: 9, ast: 4, stl: 1, blk: 2 });
+  assert.equal(addDays('2026-11-30', 1), '2026-12-01');
+});

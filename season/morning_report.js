@@ -6,6 +6,7 @@ const { rotoPoints } = require('./build_season.js');
 const { buildTradeWatch, tradeWatchMarkdown, moveWatchesFor, moveWatchMarkdown, loadWatches } = require('./trade_watch.js');
 const { fetchSchedule, movesLeft, simulateSeason, seasonOddsMarkdown } = require('./season_sim.js');
 const { applyFocus } = require('./focus.js');
+const { fetchDay, addDays } = require('./boxscores.js');
 
 /**
  * Morning report, four sections: top performers and stinkers (any team), how both managed
@@ -264,19 +265,59 @@ async function main() {
     if (skipped.length) warn.push(`Skipped standings ${skipped.join(', ')}: copied while games were still in progress.`);
     let base = st.teams.map(r => ({ ...r, team: (findTeam(league, r.team) || { name: r.team }).name }));
     if (st.asOf < cur.asOf) {
-      warn.push(`Base standings ${st.asOf}; games since then (through stats ${cur.asOf}) are rebuilt from player stats and locked lineups. Paste standings each morning, after every game has finished, for an exact base.`);
-      const since = snaps.map(readJson).filter(s => s.asOf >= st.asOf);
+      const emptyX = () => ({ gp: 0, fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 });
       const extra = new Map();
-      for (let i = 1; i < since.length; i++) {
-        for (const [k, l] of gameLines(since[i - 1], since[i])) {
-          const team = activeKey.get(k);
-          if (!team) continue;
-          const e = extra.get(team) || { gp: 0, fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
-          e.gp += l.games;
-          for (const c of Object.keys(e)) if (c !== 'gp') e[c] += l[c];
-          extra.set(team, e);
+      const addLine = (team, l) => {
+        const e = extra.get(team) || emptyX();
+        e.gp += l.games;
+        for (const c of Object.keys(e)) if (c !== 'gp') e[c] += l[c];
+        extra.set(team, e);
+      };
+      // Exact ESPN box scores for each game day since the base standings, credited to the team
+      // whose locked lineup (that week's) holds the player. Falls back to differencing the
+      // rounded season snapshots if ESPN can't be reached or a game day isn't final.
+      let exact = false;
+      try {
+        const lineupFor = d => {
+          const wk = mondayOf(d);
+          const same = lineupFiles.filter(f => mondayOf(path.basename(f, '.json')) === wk);
+          const f = same.length ? same[same.length - 1] : [...lineupFiles].reverse().find(f => path.basename(f, '.json') <= d) || lineupFiles[lineupFiles.length - 1];
+          return f;
+        };
+        const keyCache = new Map();
+        const keysFor = f => {
+          if (!keyCache.has(f)) {
+            const m = new Map();
+            for (const [team, a] of activeLineups(league, readJson(f), projByName)) for (const r of a.players) m.set(normName(r.name), team);
+            keyCache.set(f, m);
+          }
+          return keyCache.get(f);
+        };
+        if (!lineupFiles.length) throw new Error('no lineup snapshots');
+        const staged = [];
+        for (let d = st.asOf; d < cur.asOf; d = addDays(d, 1)) {
+          const day = await fetchDay(d);
+          if (!day.complete) throw new Error(`games on ${d} aren't all final yet`);
+          const keys = keysFor(lineupFor(d));
+          for (const pl of day.players) {
+            const team = keys.get(normName(pl.name));
+            if (team) staged.push([team, pl]);
+          }
+        }
+        for (const [team, pl] of staged) addLine(team, pl);
+        exact = true;
+      } catch (e) {
+        extra.clear();
+        warn.push(`Couldn't use ESPN box scores (${e.message}); games since the base standings are differenced from the rounded stat snapshots instead, so rank points can be off by a point or two.`);
+        const since = snaps.map(readJson).filter(sn => sn.asOf >= st.asOf);
+        for (let i = 1; i < since.length; i++) {
+          for (const [k, l] of gameLines(since[i - 1], since[i])) {
+            const team = activeKey.get(k);
+            if (team) addLine(team, l);
+          }
         }
       }
+      warn.push(`Base standings ${st.asOf}; games since then (through ${exact ? 'ESPN box scores for ' + addDays(cur.asOf, -1) : 'stats ' + cur.asOf}) are rebuilt ${exact ? 'exactly from box scores' : 'from player stats'} and locked lineups. Paste standings each morning, after every game has finished, for an exact base.`);
       base = base.map(r => ({ ...r, _extra: extra.get(r.team) }));
     }
 
