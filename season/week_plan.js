@@ -50,28 +50,22 @@ function parseCSV(file) {
   return out;
 }
 
-function feasible(players) { // can these (<=9) players fill the Yahoo slots? returns slot assignment or null
+function feasible(players) { // can these (<=9) players fill the Yahoo slots? returns slot per player or null
   const n = players.length;
-  const asg = new Array(n).fill(null);
-  const used = new Array(n).fill(false);
-  const rec = s => {
-    if (s === SLOTS.length) return true;
+  if (n > 9) return null;
+  let best = null, bestCount = -1;
+  const asg = new Array(n).fill(null), used = new Array(n).fill(false);
+  const rec = (s, cnt) => {
+    if (s === SLOTS.length) { if (cnt > bestCount) { bestCount = cnt; best = [...asg]; } return; }
     for (let i = 0; i < n; i++) {
       if (used[i] || !players[i].pos.includes(SLOTS[s])) continue;
-      used[i] = true; asg[i] = SLOTS[s];
-      if (rec(s + 1)) return true;
-      used[i] = false; asg[i] = null;
+      used[i] = true; asg[i] = SLOTS[s]; rec(s + 1, cnt + 1); used[i] = false; asg[i] = null;
     }
-    // a positional slot may stay empty only if nobody left can fill it
-    return false;
+    rec(s + 1, cnt); // slot left to a Util / empty
   };
-  if (n >= 9 || n >= 5) {
-    if (!rec(0)) {
-      // fewer fillable slots: allow best-effort (rare) -> treat all as Util
-      return n <= 9 ? players.map(() => 'Util') : null;
-    }
-  }
-  return asg.map(a => a || 'Util');
+  rec(0, 0);
+  if (n - bestCount > 4) return null; // more than 4 players would need Util
+  return best.map(a => a || 'Util');
 }
 
 function subsets(arr, k, cb, start = 0, cur = []) {
@@ -154,6 +148,7 @@ async function main() {
   };
   for (const list of [...rosters.values(), fas]) for (const p of list) p.sim = simPlayer(p);
 
+  const mine = league.managedTeams;
   // ---- lineups
   const detMean = lineup => { // expected weekly totals (no noise)
     const t = { fgm: 0, fga: 0, ftm: 0, fta: 0, ...Object.fromEntries(COUNT.map(c => [c, 0])) };
@@ -178,6 +173,26 @@ async function main() {
       lineups.set(t.name, ros.filter(p => p.g > 0 && p.owner && (t.roster.find(r => normName(r.name) === p.key).thisWeek || {}).slot && !['BN', 'IL', 'IL+', 'NA'].includes(t.roster.find(r => normName(r.name) === p.key).thisWeek.slot)));
     } else lineups.set(t.name, best9ByValue(ros));
   }
+
+  // Other managers replace players who are out with real free agents: every empty active slot
+  // (and a locked-lineup slot held by an out player) is filled by the best free agent that fits.
+  const taken = new Set();
+  const fillWithFAs = (tn) => {
+    let L = lineups.get(tn);
+    while (L.length < 9) {
+      let bestF = null, bv = -1e9;
+      for (const f of fas) {
+        if (taken.has(f.key) || !f.proj) continue;
+        if (!feasible([...L, f])) continue;
+        if (f.value > bv) { bv = f.value; bestF = f; }
+      }
+      if (!bestF) break;
+      taken.add(bestF.key); L = [...L, bestF]; filled.push([tn, bestF.name]);
+    }
+    lineups.set(tn, L);
+  };
+  const filled = [];
+  for (const t of league.teams) if (!mine.includes(t.name)) fillWithFAs(t.name);
 
   // ---- roto scoring over simulations
   const teamTotals = (name, lineup, s) => {
@@ -215,7 +230,6 @@ async function main() {
   const cacheOthers = (n, s) => { const key = n; let c = otherCache.get(key); if (!c) { c = new Array(N); const l = lineups.get(n); for (let i = 0; i < N; i++) c[i] = teamTotals(n, l, i); otherCache.set(key, c); } return c[s]; };
 
   // optimise my two teams (2 passes so they react to each other)
-  const mine = league.managedTeams;
   const picks = {};
   for (let pass = 0; pass < 2; pass++) {
     for (const tn of mine) {
@@ -271,7 +285,7 @@ async function main() {
 
   // ---- free-agent scan for the managed teams (swap into best lineup)
   const faScan = {};
-  const faN = fas.sort((a, b) => b.value - a.value).slice(0, 45);
+  const faN = fas.filter(f => !taken.has(f.key)).sort((a, b) => b.value - a.value).slice(0, 45);
   for (const tn of mine) {
     const { others, i0 } = picks[tn];
     const cur = lineups.get(tn);
@@ -359,7 +373,7 @@ async function main() {
 
   const notes = [];
   for (const [tn, ros] of rosters) for (const p of ros) if (!p.proj) notes.push(`${p.name} (${tn}) has no projection in the sheet and counts as zero.`);
-  md.push('## Notes', '', `- Other teams play their best feasible nine (value = games x per-game z); ${INACTIVE_MANAGER} keeps its locked lineup (inactive manager).`, '- Players out at the lock all week count zero. Q and P players count full games, as requested; they will sometimes miss games, so the rank bands are slightly optimistic.', '- Unrostered/unprojected: ' + (notes.join(' ') || 'none') + '', '');
+  md.push('## Notes', '', `- Other teams play their best feasible nine (value = games x per-game z); ${INACTIVE_MANAGER} keeps its locked lineup minus anyone out.`, '- Other teams fill any empty active slot (players who are out) with the best free agent that fits: ' + (filled.map(x => x[1] + ' (' + x[0] + ')').join('; ') || 'none') + '.', '- Players out at the lock all week count zero. Q and P players count full games, as requested; they will sometimes miss games, so the rank bands are slightly optimistic.', '- Unrostered/unprojected: ' + (notes.join(' ') || 'none') + '', '');
   const outFile = path.join(ROOT, 'reports', `${start}-week-plan.md`);
   fs.writeFileSync(outFile, md.join('\n'));
   console.log(md.join('\n'));
