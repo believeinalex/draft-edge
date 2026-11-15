@@ -169,9 +169,7 @@ async function main() {
   const lineups = new Map();
   for (const t of league.teams) {
     const ros = rosters.get(t.name);
-    if (t.name === INACTIVE_MANAGER) {
-      lineups.set(t.name, ros.filter(p => p.g > 0 && p.owner && (t.roster.find(r => normName(r.name) === p.key).thisWeek || {}).slot && !['BN', 'IL', 'IL+', 'NA'].includes(t.roster.find(r => normName(r.name) === p.key).thisWeek.slot)));
-    } else lineups.set(t.name, best9ByValue(ros));
+    lineups.set(t.name, best9ByValue(ros));
   }
 
   // Other managers replace players who are out with real free agents: every empty active slot
@@ -373,7 +371,7 @@ async function main() {
 
   const notes = [];
   for (const [tn, ros] of rosters) for (const p of ros) if (!p.proj) notes.push(`${p.name} (${tn}) has no projection in the sheet and counts as zero.`);
-  md.push('## Notes', '', `- Other teams play their best feasible nine (value = games x per-game z); ${INACTIVE_MANAGER} keeps its locked lineup minus anyone out.`, '- Other teams fill any empty active slot (players who are out) with the best free agent that fits: ' + (filled.map(x => x[1] + ' (' + x[0] + ')').join('; ') || 'none') + '.', '- Players out at the lock all week count zero. Q and P players count full games, as requested; they will sometimes miss games, so the rank bands are slightly optimistic.', '- Unrostered/unprojected: ' + (notes.join(' ') || 'none') + '', '');
+  md.push('## Notes', '', `- Other teams play their best feasible nine (value = games x per-game z); bench players are used before free agents.`, '- Other teams fill any empty active slot (players who are out) with the best free agent that fits: ' + (filled.map(x => x[1] + ' (' + x[0] + ')').join('; ') || 'none') + '.', '- Players out at the lock all week count zero. Q and P players count full games, as requested; they will sometimes miss games, so the rank bands are slightly optimistic.', '- Unrostered/unprojected: ' + (notes.join(' ') || 'none') + '', '');
   const outFile = path.join(ROOT, 'reports', `${start}-week-plan.md`);
   fs.writeFileSync(outFile, md.join('\n'));
   console.log(md.join('\n'));
