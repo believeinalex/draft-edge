@@ -5,7 +5,7 @@
     {
       "name": "Billy Hoyle's Boy-les",
       "gpNow": 108,
-      "gamesTonight": 5.7,
+      "gamesTonight": 5,
       "now": {
         "fgPct": 0.46736607543780867,
         "ftPct": 0.8209177001127395,
@@ -29,50 +29,50 @@
       },
       "nowRank": 1,
       "proj": {
-        "fgPct": 0.46704568712862793,
-        "ftPct": 0.8209391279268885,
-        "tpm": 245.22,
-        "pts": 2326.45,
-        "treb": 625.42,
-        "ast": 468.39,
-        "stl": 127.67,
-        "blk": 72.61
+        "fgPct": 0.467007817975953,
+        "ftPct": 0.8204663514005092,
+        "tpm": 243.4,
+        "pts": 2309.3,
+        "treb": 622.2,
+        "ast": 464.4,
+        "stl": 126.9,
+        "blk": 72.4
       },
       "projRoto": {
-        "total": 93,
+        "total": 92,
         "fgPct": 7,
         "ftPct": 14,
         "tpm": 15,
         "pts": 15,
         "treb": 7,
         "ast": 12,
-        "stl": 13,
+        "stl": 12,
         "blk": 10
       },
-      "projRank": 1,
-      "gamesEow": 5.7,
+      "projRank": 2,
+      "gamesEow": 5,
       "eow": {
-        "fgPct": 0.46704568712862793,
-        "ftPct": 0.8209391279268885,
-        "tpm": 245.22,
-        "pts": 2326.45,
-        "treb": 625.42,
-        "ast": 468.39,
-        "stl": 127.67,
-        "blk": 72.61
+        "fgPct": 0.467007817975953,
+        "ftPct": 0.8204663514005092,
+        "tpm": 243.4,
+        "pts": 2309.3,
+        "treb": 622.2,
+        "ast": 464.4,
+        "stl": 126.9,
+        "blk": 72.4
       },
       "eowRoto": {
-        "total": 93,
+        "total": 92,
         "fgPct": 7,
         "ftPct": 14,
         "tpm": 15,
         "pts": 15,
         "treb": 7,
         "ast": 12,
-        "stl": 13,
+        "stl": 12,
         "blk": 10
       },
-      "eowRank": 1
+      "eowRank": 2
     },
     {
       "name": "Shut Up and Jam Gaiden",
@@ -111,17 +111,17 @@
         "blk": 68.05
       },
       "projRoto": {
-        "total": 93,
+        "total": 94,
         "fgPct": 11,
         "ftPct": 13,
         "tpm": 8,
         "pts": 14,
         "treb": 13,
         "ast": 15,
-        "stl": 12,
+        "stl": 13,
         "blk": 7
       },
-      "projRank": 2,
+      "projRank": 1,
       "gamesEow": 5.5,
       "eow": {
         "fgPct": 0.48074196358308613,
@@ -134,17 +134,17 @@
         "blk": 68.05
       },
       "eowRoto": {
-        "total": 93,
+        "total": 94,
         "fgPct": 11,
         "ftPct": 13,
         "tpm": 8,
         "pts": 14,
         "treb": 13,
         "ast": 15,
-        "stl": 12,
+        "stl": 13,
         "blk": 7
       },
-      "eowRank": 2
+      "eowRank": 1
     },
     {
       "name": "Finn will turn Bert into bacon",
@@ -437,7 +437,7 @@
     {
       "name": "#WashedAutoDraftKing",
       "gpNow": 107,
-      "gamesTonight": 6,
+      "gamesTonight": 6.7,
       "now": {
         "fgPct": 0.5004064498836308,
         "ftPct": 0.7093517375870316,
@@ -461,47 +461,47 @@
       },
       "nowRank": 5,
       "proj": {
-        "fgPct": 0.49887689530459195,
-        "ftPct": 0.7121805236060904,
+        "fgPct": 0.49936692440860436,
+        "ftPct": 0.7119237248751017,
         "tpm": 185.9,
-        "pts": 1758.2,
-        "treb": 635.3,
-        "ast": 405.5,
-        "stl": 118.2,
-        "blk": 82
+        "pts": 1765.06,
+        "treb": 639.78,
+        "ast": 406.34,
+        "stl": 118.55,
+        "blk": 82.84
       },
       "projRoto": {
-        "total": 70.5,
+        "total": 71,
         "fgPct": 14,
         "ftPct": 1,
         "tpm": 9,
         "pts": 7,
         "treb": 8,
         "ast": 9,
-        "stl": 9.5,
+        "stl": 10,
         "blk": 13
       },
       "projRank": 5,
-      "gamesEow": 6,
+      "gamesEow": 6.7,
       "eow": {
-        "fgPct": 0.49887689530459195,
-        "ftPct": 0.7121805236060904,
+        "fgPct": 0.49936692440860436,
+        "ftPct": 0.7119237248751017,
         "tpm": 185.9,
-        "pts": 1758.2,
-        "treb": 635.3,
-        "ast": 405.5,
-        "stl": 118.2,
-        "blk": 82
+        "pts": 1765.06,
+        "treb": 639.78,
+        "ast": 406.34,
+        "stl": 118.55,
+        "blk": 82.84
       },
       "eowRoto": {
-        "total": 70.5,
+        "total": 71,
         "fgPct": 14,
         "ftPct": 1,
         "tpm": 9,
         "pts": 7,
         "treb": 8,
         "ast": 9,
-        "stl": 9.5,
+        "stl": 10,
         "blk": 13
       },
       "eowRank": 5
@@ -687,8 +687,8 @@
         "blk": 67.9
       },
       "projRoto": {
-        "total": 65,
-        "fgPct": 8,
+        "total": 66,
+        "fgPct": 9,
         "ftPct": 4,
         "tpm": 7,
         "pts": 12,
@@ -710,8 +710,8 @@
         "blk": 67.9
       },
       "eowRoto": {
-        "total": 65,
-        "fgPct": 8,
+        "total": 66,
+        "fgPct": 9,
         "ftPct": 4,
         "tpm": 7,
         "pts": 12,
@@ -759,14 +759,14 @@
         "blk": 53.9
       },
       "projRoto": {
-        "total": 58.5,
+        "total": 58,
         "fgPct": 10,
         "ftPct": 15,
         "tpm": 5,
         "pts": 3,
         "treb": 1,
         "ast": 14,
-        "stl": 9.5,
+        "stl": 9,
         "blk": 1
       },
       "projRank": 11,
@@ -782,14 +782,14 @@
         "blk": 53.9
       },
       "eowRoto": {
-        "total": 58.5,
+        "total": 58,
         "fgPct": 10,
         "ftPct": 15,
         "tpm": 5,
         "pts": 3,
         "treb": 1,
         "ast": 14,
-        "stl": 9.5,
+        "stl": 9,
         "blk": 1
       },
       "eowRank": 11
@@ -869,7 +869,7 @@
     {
       "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
       "gpNow": 99,
-      "gamesTonight": 5.2,
+      "gamesTonight": 4.5,
       "now": {
         "fgPct": 0.4727717065868263,
         "ftPct": 0.8008699360341152,
@@ -893,44 +893,44 @@
       },
       "nowRank": 13,
       "proj": {
-        "fgPct": 0.4737380078065956,
-        "ftPct": 0.7995838812425119,
+        "fgPct": 0.473067950775816,
+        "ftPct": 0.8002806811509101,
         "tpm": 120.1,
-        "pts": 1451.82,
-        "treb": 619.25,
-        "ast": 395.02,
-        "stl": 106.07,
-        "blk": 66.78
+        "pts": 1446.15,
+        "treb": 615.75,
+        "ast": 394.25,
+        "stl": 105.65,
+        "blk": 66.15
       },
       "projRoto": {
-        "total": 44,
-        "fgPct": 9,
+        "total": 42,
+        "fgPct": 8,
         "ftPct": 8,
         "tpm": 1,
-        "pts": 2,
+        "pts": 1,
         "treb": 6,
         "ast": 7,
         "stl": 7,
         "blk": 4
       },
       "projRank": 13,
-      "gamesEow": 5.2,
+      "gamesEow": 4.5,
       "eow": {
-        "fgPct": 0.4737380078065956,
-        "ftPct": 0.7995838812425119,
+        "fgPct": 0.473067950775816,
+        "ftPct": 0.8002806811509101,
         "tpm": 120.1,
-        "pts": 1451.82,
-        "treb": 619.25,
-        "ast": 395.02,
-        "stl": 106.07,
-        "blk": 66.78
+        "pts": 1446.15,
+        "treb": 615.75,
+        "ast": 394.25,
+        "stl": 105.65,
+        "blk": 66.15
       },
       "eowRoto": {
-        "total": 44,
-        "fgPct": 9,
+        "total": 42,
+        "fgPct": 8,
         "ftPct": 8,
         "tpm": 1,
-        "pts": 2,
+        "pts": 1,
         "treb": 6,
         "ast": 7,
         "stl": 7,
@@ -1047,11 +1047,11 @@
         "blk": 67.41
       },
       "projRoto": {
-        "total": 25,
+        "total": 26,
         "fgPct": 2,
         "ftPct": 6,
         "tpm": 3,
-        "pts": 1,
+        "pts": 2,
         "treb": 2,
         "ast": 2,
         "stl": 4,
@@ -1070,11 +1070,11 @@
         "blk": 67.41
       },
       "eowRoto": {
-        "total": 25,
+        "total": 26,
         "fgPct": 2,
         "ftPct": 6,
         "tpm": 3,
-        "pts": 1,
+        "pts": 2,
         "treb": 2,
         "ast": 2,
         "stl": 4,
@@ -1413,153 +1413,153 @@
     "teams": [
       {
         "name": "Shut Up and Jam Gaiden",
-        "topThird": 0.91,
-        "top3": 0.80025,
-        "first": 0.4705,
-        "avgRank": 2.449,
+        "topThird": 0.91325,
+        "top3": 0.79475,
+        "first": 0.47125,
+        "avgRank": 2.47125,
         "p10": 1,
         "p90": 5,
-        "avgPts": 87.58375
+        "avgPts": 87.35675
       },
       {
         "name": "Billy Hoyle's Boy-les",
-        "topThird": 0.77975,
-        "top3": 0.569,
-        "first": 0.19175,
-        "avgRank": 3.83175,
+        "topThird": 0.7745,
+        "top3": 0.575,
+        "first": 0.2025,
+        "avgRank": 3.8115,
         "p10": 1,
         "p90": 8,
-        "avgPts": 79.9975
+        "avgPts": 80.029
       },
       {
         "name": "Finn will turn Bert into bacon",
-        "topThird": 0.6575,
-        "top3": 0.44925,
-        "first": 0.1335,
-        "avgRank": 4.82,
+        "topThird": 0.65025,
+        "top3": 0.4305,
+        "first": 0.1185,
+        "avgRank": 4.90025,
         "p10": 1,
         "p90": 10,
-        "avgPts": 76.16225
+        "avgPts": 75.6975
       },
       {
         "name": "Team Maru",
-        "topThird": 0.44475,
-        "top3": 0.237,
-        "first": 0.0465,
-        "avgRank": 6.57475,
+        "topThird": 0.436,
+        "top3": 0.23,
+        "first": 0.042,
+        "avgRank": 6.70075,
         "p10": 2,
         "p90": 12,
-        "avgPts": 69.276
+        "avgPts": 68.8455
       },
       {
         "name": "#WashedAutoDraftKing",
-        "topThird": 0.4075,
-        "top3": 0.219,
-        "first": 0.045,
-        "avgRank": 7.125,
+        "topThird": 0.41275,
+        "top3": 0.22125,
+        "first": 0.04425,
+        "avgRank": 7.1235,
         "p10": 2,
         "p90": 13,
-        "avgPts": 66.8235
+        "avgPts": 66.7645
       },
       {
         "name": "Bitsketball Stars",
-        "topThird": 0.39275,
-        "top3": 0.2175,
-        "first": 0.0475,
-        "avgRank": 7.19525,
+        "topThird": 0.401,
+        "top3": 0.22525,
+        "first": 0.053,
+        "avgRank": 7.1625,
         "p10": 2,
         "p90": 13,
-        "avgPts": 66.94775
+        "avgPts": 67.0875
       },
       {
         "name": "vincemvpcarter",
-        "topThird": 0.33575,
-        "top3": 0.1455,
-        "first": 0.02125,
-        "avgRank": 7.66925,
+        "topThird": 0.33175,
+        "top3": 0.15725,
+        "first": 0.0235,
+        "avgRank": 7.58475,
         "p10": 3,
         "p90": 13,
-        "avgPts": 64.69225
+        "avgPts": 64.974
       },
       {
         "name": "Herb's Astonishing Team",
-        "topThird": 0.32275,
-        "top3": 0.145,
-        "first": 0.0255,
-        "avgRank": 7.523,
+        "topThird": 0.30925,
+        "top3": 0.13325,
+        "first": 0.0235,
+        "avgRank": 7.637,
         "p10": 3,
         "p90": 12,
-        "avgPts": 65.87025
+        "avgPts": 65.5595
       },
       {
         "name": "The New Day Co-op",
-        "topThird": 0.185,
-        "top3": 0.04475,
-        "first": 0.003,
-        "avgRank": 7.846,
+        "topThird": 0.1905,
+        "top3": 0.038,
+        "first": 0.0015,
+        "avgRank": 7.94725,
         "p10": 5,
         "p90": 11,
-        "avgPts": 64.35675
+        "avgPts": 64.038
       },
       {
         "name": "Cole is like that",
-        "topThird": 0.15025,
-        "top3": 0.042,
-        "first": 0.00225,
-        "avgRank": 9.25425,
+        "topThird": 0.15825,
+        "top3": 0.0485,
+        "first": 0.00525,
+        "avgRank": 9.066,
         "p10": 5,
         "p90": 13,
-        "avgPts": 59.27875
+        "avgPts": 59.94575
       },
       {
         "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-        "topThird": 0.14275,
-        "top3": 0.047,
-        "first": 0.006,
-        "avgRank": 9.822,
+        "topThird": 0.1475,
+        "top3": 0.0505,
+        "first": 0.00475,
+        "avgRank": 9.75625,
         "p10": 5,
         "p90": 14,
-        "avgPts": 57.38375
+        "avgPts": 57.65625
       },
       {
         "name": "Full Court Rex",
-        "topThird": 0.1065,
-        "top3": 0.03475,
-        "first": 0.00275,
-        "avgRank": 10.8515,
+        "topThird": 0.1085,
+        "top3": 0.0405,
+        "first": 0.0045,
+        "avgRank": 10.8165,
         "p10": 5,
         "p90": 15,
-        "avgPts": 52.16625
+        "avgPts": 52.35025
       },
       {
         "name": "Grilled Teampura",
-        "topThird": 0.065,
-        "top3": 0.019,
-        "first": 0.00225,
-        "avgRank": 11.11225,
-        "p10": 6,
+        "topThird": 0.0655,
+        "top3": 0.0195,
+        "first": 0.00075,
+        "avgRank": 11.14175,
+        "p10": 7,
         "p90": 15,
-        "avgPts": 52.2535
+        "avgPts": 52.128
       },
       {
         "name": "Fishy Achilles",
-        "topThird": 0.059,
-        "top3": 0.021,
-        "first": 0.00175,
-        "avgRank": 11.637,
+        "topThird": 0.05775,
+        "top3": 0.02075,
+        "first": 0.0025,
+        "avgRank": 11.65325,
         "p10": 7,
         "p90": 15,
-        "avgPts": 50.35475
+        "avgPts": 50.39675
       },
       {
         "name": "Super Maru",
-        "topThird": 0.04075,
-        "top3": 0.009,
-        "first": 0.0005,
-        "avgRank": 12.289,
+        "topThird": 0.04325,
+        "top3": 0.015,
+        "first": 0.00225,
+        "avgRank": 12.2275,
         "p10": 8,
         "p90": 15,
-        "avgPts": 46.853
+        "avgPts": 47.17075
       }
     ]
   }
