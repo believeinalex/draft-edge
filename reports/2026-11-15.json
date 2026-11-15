@@ -1,0 +1,1566 @@
+{
+  "base": "2026-11-14",
+  "statsThrough": "2026-11-15",
+  "teams": [
+    {
+      "name": "Billy Hoyle's Boy-les",
+      "gpNow": 108,
+      "gamesTonight": 5.7,
+      "now": {
+        "fgPct": 0.46736607543780867,
+        "ftPct": 0.8209177001127395,
+        "tpm": 233,
+        "pts": 2218,
+        "treb": 597,
+        "ast": 445,
+        "stl": 122,
+        "blk": 69
+      },
+      "nowRoto": {
+        "total": 92.5,
+        "fgPct": 7,
+        "ftPct": 14,
+        "tpm": 15,
+        "pts": 15,
+        "treb": 7,
+        "ast": 12,
+        "stl": 12.5,
+        "blk": 10
+      },
+      "nowRank": 1,
+      "proj": {
+        "fgPct": 0.46704568712862793,
+        "ftPct": 0.8209391279268885,
+        "tpm": 245.22,
+        "pts": 2326.45,
+        "treb": 625.42,
+        "ast": 468.39,
+        "stl": 127.67,
+        "blk": 72.61
+      },
+      "projRoto": {
+        "total": 93,
+        "fgPct": 7,
+        "ftPct": 14,
+        "tpm": 15,
+        "pts": 15,
+        "treb": 7,
+        "ast": 12,
+        "stl": 13,
+        "blk": 10
+      },
+      "projRank": 1,
+      "gamesEow": 5.7,
+      "eow": {
+        "fgPct": 0.46704568712862793,
+        "ftPct": 0.8209391279268885,
+        "tpm": 245.22,
+        "pts": 2326.45,
+        "treb": 625.42,
+        "ast": 468.39,
+        "stl": 127.67,
+        "blk": 72.61
+      },
+      "eowRoto": {
+        "total": 93,
+        "fgPct": 7,
+        "ftPct": 14,
+        "tpm": 15,
+        "pts": 15,
+        "treb": 7,
+        "ast": 12,
+        "stl": 13,
+        "blk": 10
+      },
+      "eowRank": 1
+    },
+    {
+      "name": "Shut Up and Jam Gaiden",
+      "gpNow": 106,
+      "gamesTonight": 5.5,
+      "now": {
+        "fgPct": 0.4805828523118606,
+        "ftPct": 0.8199050030489159,
+        "tpm": 172,
+        "pts": 1930,
+        "treb": 642,
+        "ast": 512,
+        "stl": 122,
+        "blk": 64
+      },
+      "nowRoto": {
+        "total": 91,
+        "fgPct": 10,
+        "ftPct": 13,
+        "tpm": 8,
+        "pts": 13.5,
+        "treb": 13,
+        "ast": 15,
+        "stl": 12.5,
+        "blk": 6
+      },
+      "nowRank": 2,
+      "proj": {
+        "fgPct": 0.48074196358308613,
+        "ftPct": 0.8186250223723278,
+        "tpm": 182.3,
+        "pts": 2029.9,
+        "treb": 676.6,
+        "ast": 536.9,
+        "stl": 127.6,
+        "blk": 68.05
+      },
+      "projRoto": {
+        "total": 93,
+        "fgPct": 11,
+        "ftPct": 13,
+        "tpm": 8,
+        "pts": 14,
+        "treb": 13,
+        "ast": 15,
+        "stl": 12,
+        "blk": 7
+      },
+      "projRank": 2,
+      "gamesEow": 5.5,
+      "eow": {
+        "fgPct": 0.48074196358308613,
+        "ftPct": 0.8186250223723278,
+        "tpm": 182.3,
+        "pts": 2029.9,
+        "treb": 676.6,
+        "ast": 536.9,
+        "stl": 127.6,
+        "blk": 68.05
+      },
+      "eowRoto": {
+        "total": 93,
+        "fgPct": 11,
+        "ftPct": 13,
+        "tpm": 8,
+        "pts": 14,
+        "treb": 13,
+        "ast": 15,
+        "stl": 12,
+        "blk": 7
+      },
+      "eowRank": 2
+    },
+    {
+      "name": "Finn will turn Bert into bacon",
+      "gpNow": 108,
+      "gamesTonight": 7,
+      "now": {
+        "fgPct": 0.4596568379614442,
+        "ftPct": 0.8121333397539306,
+        "tpm": 176,
+        "pts": 1712,
+        "treb": 613,
+        "ast": 398,
+        "stl": 135,
+        "blk": 93
+      },
+      "nowRoto": {
+        "total": 85,
+        "fgPct": 6,
+        "ftPct": 12,
+        "tpm": 10,
+        "pts": 9,
+        "treb": 9,
+        "ast": 10,
+        "stl": 14,
+        "blk": 15
+      },
+      "nowRank": 3,
+      "proj": {
+        "fgPct": 0.4614661621643423,
+        "ftPct": 0.811139459313084,
+        "tpm": 188.2,
+        "pts": 1833.1,
+        "treb": 660.5,
+        "ast": 430.7,
+        "stl": 143.1,
+        "blk": 99.1
+      },
+      "projRoto": {
+        "total": 87,
+        "fgPct": 6,
+        "ftPct": 12,
+        "tpm": 10,
+        "pts": 9,
+        "treb": 11,
+        "ast": 10,
+        "stl": 14,
+        "blk": 15
+      },
+      "projRank": 3,
+      "gamesEow": 7,
+      "eow": {
+        "fgPct": 0.4614661621643423,
+        "ftPct": 0.811139459313084,
+        "tpm": 188.2,
+        "pts": 1833.1,
+        "treb": 660.5,
+        "ast": 430.7,
+        "stl": 143.1,
+        "blk": 99.1
+      },
+      "eowRoto": {
+        "total": 87,
+        "fgPct": 6,
+        "ftPct": 12,
+        "tpm": 10,
+        "pts": 9,
+        "treb": 11,
+        "ast": 10,
+        "stl": 14,
+        "blk": 15
+      },
+      "eowRank": 3
+    },
+    {
+      "name": "vincemvpcarter",
+      "gpNow": 105,
+      "gamesTonight": 5,
+      "now": {
+        "fgPct": 0.485978121687773,
+        "ftPct": 0.7997707903322459,
+        "tpm": 134,
+        "pts": 1817,
+        "treb": 637,
+        "ast": 368,
+        "stl": 117,
+        "blk": 76
+      },
+      "nowRoto": {
+        "total": 74,
+        "fgPct": 13,
+        "ftPct": 7,
+        "tpm": 2,
+        "pts": 12,
+        "treb": 12,
+        "ast": 5,
+        "stl": 11,
+        "blk": 12
+      },
+      "nowRank": 4,
+      "proj": {
+        "fgPct": 0.4874768195111185,
+        "ftPct": 0.7974965211560032,
+        "tpm": 137.4,
+        "pts": 1886.1,
+        "treb": 671.1,
+        "ast": 381,
+        "stl": 122,
+        "blk": 81.4
+      },
+      "projRoto": {
+        "total": 73,
+        "fgPct": 13,
+        "ftPct": 7,
+        "tpm": 2,
+        "pts": 11,
+        "treb": 12,
+        "ast": 5,
+        "stl": 11,
+        "blk": 12
+      },
+      "projRank": 4,
+      "gamesEow": 5,
+      "eow": {
+        "fgPct": 0.4874768195111185,
+        "ftPct": 0.7974965211560032,
+        "tpm": 137.4,
+        "pts": 1886.1,
+        "treb": 671.1,
+        "ast": 381,
+        "stl": 122,
+        "blk": 81.4
+      },
+      "eowRoto": {
+        "total": 73,
+        "fgPct": 13,
+        "ftPct": 7,
+        "tpm": 2,
+        "pts": 11,
+        "treb": 12,
+        "ast": 5,
+        "stl": 11,
+        "blk": 12
+      },
+      "eowRank": 4
+    },
+    {
+      "name": "Full Court Rex",
+      "gpNow": 105,
+      "gamesTonight": 6,
+      "now": {
+        "fgPct": 0.4829392857219168,
+        "ftPct": 0.7607876310267853,
+        "tpm": 161,
+        "pts": 1753,
+        "treb": 718,
+        "ast": 375,
+        "stl": 101,
+        "blk": 67
+      },
+      "nowRoto": {
+        "total": 67,
+        "fgPct": 12,
+        "ftPct": 3,
+        "tpm": 5,
+        "pts": 10,
+        "treb": 14,
+        "ast": 7,
+        "stl": 7.5,
+        "blk": 8.5
+      },
+      "nowRank": 6,
+      "proj": {
+        "fgPct": 0.48277883519638115,
+        "ftPct": 0.7618698271795078,
+        "tpm": 169.7,
+        "pts": 1860.3,
+        "treb": 755,
+        "ast": 398.4,
+        "stl": 106.7,
+        "blk": 70.4
+      },
+      "projRoto": {
+        "total": 70,
+        "fgPct": 12,
+        "ftPct": 3,
+        "tpm": 6,
+        "pts": 10,
+        "treb": 14,
+        "ast": 8,
+        "stl": 8,
+        "blk": 9
+      },
+      "projRank": 6,
+      "gamesEow": 6,
+      "eow": {
+        "fgPct": 0.48277883519638115,
+        "ftPct": 0.7618698271795078,
+        "tpm": 169.7,
+        "pts": 1860.3,
+        "treb": 755,
+        "ast": 398.4,
+        "stl": 106.7,
+        "blk": 70.4
+      },
+      "eowRoto": {
+        "total": 70,
+        "fgPct": 12,
+        "ftPct": 3,
+        "tpm": 6,
+        "pts": 10,
+        "treb": 14,
+        "ast": 8,
+        "stl": 8,
+        "blk": 9
+      },
+      "eowRank": 6
+    },
+    {
+      "name": "Cole is like that",
+      "gpNow": 112,
+      "gamesTonight": 4,
+      "now": {
+        "fgPct": 0.458054930157423,
+        "ftPct": 0.8073959928417247,
+        "tpm": 210,
+        "pts": 1930,
+        "treb": 550,
+        "ast": 372,
+        "stl": 98,
+        "blk": 73
+      },
+      "nowRoto": {
+        "total": 65.5,
+        "fgPct": 4,
+        "ftPct": 10,
+        "tpm": 12.5,
+        "pts": 13.5,
+        "treb": 4,
+        "ast": 6,
+        "stl": 4.5,
+        "blk": 11
+      },
+      "nowRank": 8,
+      "proj": {
+        "fgPct": 0.45901191263702384,
+        "ftPct": 0.8085071947241652,
+        "tpm": 219.8,
+        "pts": 2016.3,
+        "treb": 566.4,
+        "ast": 391.7,
+        "stl": 101.1,
+        "blk": 74.9
+      },
+      "projRoto": {
+        "total": 63,
+        "fgPct": 4,
+        "ftPct": 10,
+        "tpm": 13,
+        "pts": 13,
+        "treb": 3,
+        "ast": 6,
+        "stl": 3,
+        "blk": 11
+      },
+      "projRank": 9,
+      "gamesEow": 4,
+      "eow": {
+        "fgPct": 0.45901191263702384,
+        "ftPct": 0.8085071947241652,
+        "tpm": 219.8,
+        "pts": 2016.3,
+        "treb": 566.4,
+        "ast": 391.7,
+        "stl": 101.1,
+        "blk": 74.9
+      },
+      "eowRoto": {
+        "total": 63,
+        "fgPct": 4,
+        "ftPct": 10,
+        "tpm": 13,
+        "pts": 13,
+        "treb": 3,
+        "ast": 6,
+        "stl": 3,
+        "blk": 11
+      },
+      "eowRank": 9
+    },
+    {
+      "name": "#WashedAutoDraftKing",
+      "gpNow": 107,
+      "gamesTonight": 6,
+      "now": {
+        "fgPct": 0.5004064498836308,
+        "ftPct": 0.7093517375870316,
+        "tpm": 175,
+        "pts": 1679,
+        "treb": 607,
+        "ast": 390,
+        "stl": 112,
+        "blk": 77
+      },
+      "nowRoto": {
+        "total": 71,
+        "fgPct": 15,
+        "ftPct": 1,
+        "tpm": 9,
+        "pts": 7,
+        "treb": 8,
+        "ast": 9,
+        "stl": 9,
+        "blk": 13
+      },
+      "nowRank": 5,
+      "proj": {
+        "fgPct": 0.49887689530459195,
+        "ftPct": 0.7121805236060904,
+        "tpm": 185.9,
+        "pts": 1758.2,
+        "treb": 635.3,
+        "ast": 405.5,
+        "stl": 118.2,
+        "blk": 82
+      },
+      "projRoto": {
+        "total": 70.5,
+        "fgPct": 14,
+        "ftPct": 1,
+        "tpm": 9,
+        "pts": 7,
+        "treb": 8,
+        "ast": 9,
+        "stl": 9.5,
+        "blk": 13
+      },
+      "projRank": 5,
+      "gamesEow": 6,
+      "eow": {
+        "fgPct": 0.49887689530459195,
+        "ftPct": 0.7121805236060904,
+        "tpm": 185.9,
+        "pts": 1758.2,
+        "treb": 635.3,
+        "ast": 405.5,
+        "stl": 118.2,
+        "blk": 82
+      },
+      "eowRoto": {
+        "total": 70.5,
+        "fgPct": 14,
+        "ftPct": 1,
+        "tpm": 9,
+        "pts": 7,
+        "treb": 8,
+        "ast": 9,
+        "stl": 9.5,
+        "blk": 13
+      },
+      "eowRank": 5
+    },
+    {
+      "name": "The New Day Co-op",
+      "gpNow": 105,
+      "gamesTonight": 6,
+      "now": {
+        "fgPct": 0.5001207994059134,
+        "ftPct": 0.7379706007257636,
+        "tpm": 198,
+        "pts": 1709,
+        "treb": 734,
+        "ast": 320,
+        "stl": 83,
+        "blk": 90
+      },
+      "nowRoto": {
+        "total": 66,
+        "fgPct": 14,
+        "ftPct": 2,
+        "tpm": 11,
+        "pts": 8,
+        "treb": 15,
+        "ast": 1,
+        "stl": 1,
+        "blk": 14
+      },
+      "nowRank": 7,
+      "proj": {
+        "fgPct": 0.4997371668288696,
+        "ftPct": 0.7405001077207974,
+        "tpm": 208.3,
+        "pts": 1808.2,
+        "treb": 779.9,
+        "ast": 338.8,
+        "stl": 88.5,
+        "blk": 94.1
+      },
+      "projRoto": {
+        "total": 67,
+        "fgPct": 15,
+        "ftPct": 2,
+        "tpm": 11,
+        "pts": 8,
+        "treb": 15,
+        "ast": 1,
+        "stl": 1,
+        "blk": 14
+      },
+      "projRank": 7,
+      "gamesEow": 6,
+      "eow": {
+        "fgPct": 0.4997371668288696,
+        "ftPct": 0.7405001077207974,
+        "tpm": 208.3,
+        "pts": 1808.2,
+        "treb": 779.9,
+        "ast": 338.8,
+        "stl": 88.5,
+        "blk": 94.1
+      },
+      "eowRoto": {
+        "total": 67,
+        "fgPct": 15,
+        "ftPct": 2,
+        "tpm": 11,
+        "pts": 8,
+        "treb": 15,
+        "ast": 1,
+        "stl": 1,
+        "blk": 14
+      },
+      "eowRank": 7
+    },
+    {
+      "name": "Team Maru",
+      "gpNow": 109,
+      "gamesTonight": 5,
+      "now": {
+        "fgPct": 0.42885750315258514,
+        "ftPct": 0.8097180380595014,
+        "tpm": 219,
+        "pts": 1640,
+        "treb": 570,
+        "ast": 356,
+        "stl": 141,
+        "blk": 57
+      },
+      "nowRoto": {
+        "total": 59,
+        "fgPct": 1,
+        "ftPct": 11,
+        "tpm": 14,
+        "pts": 6,
+        "treb": 5,
+        "ast": 4,
+        "stl": 15,
+        "blk": 3
+      },
+      "nowRank": 11,
+      "proj": {
+        "fgPct": 0.4299921004372972,
+        "ftPct": 0.8104842702423929,
+        "tpm": 231.2,
+        "pts": 1727.4,
+        "treb": 591.4,
+        "ast": 372.3,
+        "stl": 147.3,
+        "blk": 59.7
+      },
+      "projRoto": {
+        "total": 59,
+        "fgPct": 1,
+        "ftPct": 11,
+        "tpm": 14,
+        "pts": 6,
+        "treb": 5,
+        "ast": 4,
+        "stl": 15,
+        "blk": 3
+      },
+      "projRank": 10,
+      "gamesEow": 5,
+      "eow": {
+        "fgPct": 0.4299921004372972,
+        "ftPct": 0.8104842702423929,
+        "tpm": 231.2,
+        "pts": 1727.4,
+        "treb": 591.4,
+        "ast": 372.3,
+        "stl": 147.3,
+        "blk": 59.7
+      },
+      "eowRoto": {
+        "total": 59,
+        "fgPct": 1,
+        "ftPct": 11,
+        "tpm": 14,
+        "pts": 6,
+        "treb": 5,
+        "ast": 4,
+        "stl": 15,
+        "blk": 3
+      },
+      "eowRank": 10
+    },
+    {
+      "name": "Bitsketball Stars",
+      "gpNow": 102,
+      "gamesTonight": 5.5,
+      "now": {
+        "fgPct": 0.4718542916049995,
+        "ftPct": 0.7802545693613565,
+        "tpm": 171,
+        "pts": 1803,
+        "treb": 614,
+        "ast": 446,
+        "stl": 96,
+        "blk": 64
+      },
+      "nowRoto": {
+        "total": 61,
+        "fgPct": 8,
+        "ftPct": 4,
+        "tpm": 7,
+        "pts": 11,
+        "treb": 10,
+        "ast": 13,
+        "stl": 2,
+        "blk": 6
+      },
+      "nowRank": 10,
+      "proj": {
+        "fgPct": 0.47323726764517354,
+        "ftPct": 0.7804831970168452,
+        "tpm": 178.2,
+        "pts": 1904.7,
+        "treb": 649.1,
+        "ast": 471.6,
+        "stl": 102.05,
+        "blk": 67.9
+      },
+      "projRoto": {
+        "total": 65,
+        "fgPct": 8,
+        "ftPct": 4,
+        "tpm": 7,
+        "pts": 12,
+        "treb": 10,
+        "ast": 13,
+        "stl": 5,
+        "blk": 6
+      },
+      "projRank": 8,
+      "gamesEow": 5.5,
+      "eow": {
+        "fgPct": 0.47323726764517354,
+        "ftPct": 0.7804831970168452,
+        "tpm": 178.2,
+        "pts": 1904.7,
+        "treb": 649.1,
+        "ast": 471.6,
+        "stl": 102.05,
+        "blk": 67.9
+      },
+      "eowRoto": {
+        "total": 65,
+        "fgPct": 8,
+        "ftPct": 4,
+        "tpm": 7,
+        "pts": 12,
+        "treb": 10,
+        "ast": 13,
+        "stl": 5,
+        "blk": 6
+      },
+      "eowRank": 8
+    },
+    {
+      "name": "Herb's Astonishing Team",
+      "gpNow": 93,
+      "gamesTonight": 2,
+      "now": {
+        "fgPct": 0.48075078419780315,
+        "ftPct": 0.8335153048966059,
+        "tpm": 165,
+        "pts": 1433,
+        "treb": 452,
+        "ast": 468,
+        "stl": 116,
+        "blk": 53
+      },
+      "nowRoto": {
+        "total": 62,
+        "fgPct": 11,
+        "ftPct": 15,
+        "tpm": 6,
+        "pts": 4,
+        "treb": 1,
+        "ast": 14,
+        "stl": 10,
+        "blk": 1
+      },
+      "nowRank": 9,
+      "proj": {
+        "fgPct": 0.48040282577200705,
+        "ftPct": 0.8330668404277034,
+        "tpm": 169.1,
+        "pts": 1465.8,
+        "treb": 464.3,
+        "ast": 475.9,
+        "stl": 118.2,
+        "blk": 53.9
+      },
+      "projRoto": {
+        "total": 58.5,
+        "fgPct": 10,
+        "ftPct": 15,
+        "tpm": 5,
+        "pts": 3,
+        "treb": 1,
+        "ast": 14,
+        "stl": 9.5,
+        "blk": 1
+      },
+      "projRank": 11,
+      "gamesEow": 2,
+      "eow": {
+        "fgPct": 0.48040282577200705,
+        "ftPct": 0.8330668404277034,
+        "tpm": 169.1,
+        "pts": 1465.8,
+        "treb": 464.3,
+        "ast": 475.9,
+        "stl": 118.2,
+        "blk": 53.9
+      },
+      "eowRoto": {
+        "total": 58.5,
+        "fgPct": 10,
+        "ftPct": 15,
+        "tpm": 5,
+        "pts": 3,
+        "treb": 1,
+        "ast": 14,
+        "stl": 9.5,
+        "blk": 1
+      },
+      "eowRank": 11
+    },
+    {
+      "name": "Grilled Teampura",
+      "gpNow": 106,
+      "gamesTonight": 5.5,
+      "now": {
+        "fgPct": 0.4591883881123361,
+        "ftPct": 0.786741767106387,
+        "tpm": 210,
+        "pts": 1606,
+        "treb": 543,
+        "ast": 427,
+        "stl": 98,
+        "blk": 67
+      },
+      "nowRoto": {
+        "total": 54.5,
+        "fgPct": 5,
+        "ftPct": 5,
+        "tpm": 12.5,
+        "pts": 5,
+        "treb": 3,
+        "ast": 11,
+        "stl": 4.5,
+        "blk": 8.5
+      },
+      "nowRank": 12,
+      "proj": {
+        "fgPct": 0.45901584608823726,
+        "ftPct": 0.787126777280896,
+        "tpm": 219.45,
+        "pts": 1694.25,
+        "treb": 568.45,
+        "ast": 447.65,
+        "stl": 104.85,
+        "blk": 69.65
+      },
+      "projRoto": {
+        "total": 56,
+        "fgPct": 5,
+        "ftPct": 5,
+        "tpm": 12,
+        "pts": 5,
+        "treb": 4,
+        "ast": 11,
+        "stl": 6,
+        "blk": 8
+      },
+      "projRank": 12,
+      "gamesEow": 5.5,
+      "eow": {
+        "fgPct": 0.45901584608823726,
+        "ftPct": 0.787126777280896,
+        "tpm": 219.45,
+        "pts": 1694.25,
+        "treb": 568.45,
+        "ast": 447.65,
+        "stl": 104.85,
+        "blk": 69.65
+      },
+      "eowRoto": {
+        "total": 56,
+        "fgPct": 5,
+        "ftPct": 5,
+        "tpm": 12,
+        "pts": 5,
+        "treb": 4,
+        "ast": 11,
+        "stl": 6,
+        "blk": 8
+      },
+      "eowRank": 12
+    },
+    {
+      "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "gpNow": 99,
+      "gamesTonight": 5.2,
+      "now": {
+        "fgPct": 0.4727717065868263,
+        "ftPct": 0.8008699360341152,
+        "tpm": 114,
+        "pts": 1380,
+        "treb": 584,
+        "ast": 380,
+        "stl": 101,
+        "blk": 63
+      },
+      "nowRoto": {
+        "total": 45.5,
+        "fgPct": 9,
+        "ftPct": 9,
+        "tpm": 1,
+        "pts": 1,
+        "treb": 6,
+        "ast": 8,
+        "stl": 7.5,
+        "blk": 4
+      },
+      "nowRank": 13,
+      "proj": {
+        "fgPct": 0.4737380078065956,
+        "ftPct": 0.7995838812425119,
+        "tpm": 120.1,
+        "pts": 1451.82,
+        "treb": 619.25,
+        "ast": 395.02,
+        "stl": 106.07,
+        "blk": 66.78
+      },
+      "projRoto": {
+        "total": 44,
+        "fgPct": 9,
+        "ftPct": 8,
+        "tpm": 1,
+        "pts": 2,
+        "treb": 6,
+        "ast": 7,
+        "stl": 7,
+        "blk": 4
+      },
+      "projRank": 13,
+      "gamesEow": 5.2,
+      "eow": {
+        "fgPct": 0.4737380078065956,
+        "ftPct": 0.7995838812425119,
+        "tpm": 120.1,
+        "pts": 1451.82,
+        "treb": 619.25,
+        "ast": 395.02,
+        "stl": 106.07,
+        "blk": 66.78
+      },
+      "eowRoto": {
+        "total": 44,
+        "fgPct": 9,
+        "ftPct": 8,
+        "tpm": 1,
+        "pts": 2,
+        "treb": 6,
+        "ast": 7,
+        "stl": 7,
+        "blk": 4
+      },
+      "eowRank": 13
+    },
+    {
+      "name": "Super Maru",
+      "gpNow": 107,
+      "gamesTonight": 3,
+      "now": {
+        "fgPct": 0.450466345814441,
+        "ftPct": 0.8007045541812025,
+        "tpm": 154,
+        "pts": 1431,
+        "treb": 625,
+        "ast": 349,
+        "stl": 98,
+        "blk": 54
+      },
+      "nowRoto": {
+        "total": 38,
+        "fgPct": 3,
+        "ftPct": 8,
+        "tpm": 4,
+        "pts": 3,
+        "treb": 11,
+        "ast": 2.5,
+        "stl": 4.5,
+        "blk": 2
+      },
+      "nowRank": 14,
+      "proj": {
+        "fgPct": 0.4522143147451274,
+        "ftPct": 0.8008026970803725,
+        "tpm": 159.1,
+        "pts": 1486.4,
+        "treb": 644.8,
+        "ast": 364.7,
+        "stl": 100.7,
+        "blk": 54.8
+      },
+      "projRoto": {
+        "total": 36,
+        "fgPct": 3,
+        "ftPct": 9,
+        "tpm": 4,
+        "pts": 4,
+        "treb": 9,
+        "ast": 3,
+        "stl": 2,
+        "blk": 2
+      },
+      "projRank": 14,
+      "gamesEow": 3,
+      "eow": {
+        "fgPct": 0.4522143147451274,
+        "ftPct": 0.8008026970803725,
+        "tpm": 159.1,
+        "pts": 1486.4,
+        "treb": 644.8,
+        "ast": 364.7,
+        "stl": 100.7,
+        "blk": 54.8
+      },
+      "eowRoto": {
+        "total": 36,
+        "fgPct": 3,
+        "ftPct": 9,
+        "tpm": 4,
+        "pts": 4,
+        "treb": 9,
+        "ast": 3,
+        "stl": 2,
+        "blk": 2
+      },
+      "eowRank": 14
+    },
+    {
+      "name": "Fishy Achilles",
+      "gpNow": 102,
+      "gamesTonight": 3.7,
+      "now": {
+        "fgPct": 0.44287638376383764,
+        "ftPct": 0.7928110799875506,
+        "tpm": 139,
+        "pts": 1393,
+        "treb": 513,
+        "ast": 349,
+        "stl": 98,
+        "blk": 64
+      },
+      "nowRoto": {
+        "total": 28,
+        "fgPct": 2,
+        "ftPct": 6,
+        "tpm": 3,
+        "pts": 2,
+        "treb": 2,
+        "ast": 2.5,
+        "stl": 4.5,
+        "blk": 6
+      },
+      "nowRank": 15,
+      "proj": {
+        "fgPct": 0.44482853564735453,
+        "ftPct": 0.7924940171457999,
+        "tpm": 143.9,
+        "pts": 1446.28,
+        "treb": 536.03,
+        "ast": 361.17,
+        "stl": 101.75,
+        "blk": 67.41
+      },
+      "projRoto": {
+        "total": 25,
+        "fgPct": 2,
+        "ftPct": 6,
+        "tpm": 3,
+        "pts": 1,
+        "treb": 2,
+        "ast": 2,
+        "stl": 4,
+        "blk": 5
+      },
+      "projRank": 15,
+      "gamesEow": 3.7,
+      "eow": {
+        "fgPct": 0.44482853564735453,
+        "ftPct": 0.7924940171457999,
+        "tpm": 143.9,
+        "pts": 1446.28,
+        "treb": 536.03,
+        "ast": 361.17,
+        "stl": 101.75,
+        "blk": 67.41
+      },
+      "eowRoto": {
+        "total": 25,
+        "fgPct": 2,
+        "ftPct": 6,
+        "tpm": 3,
+        "pts": 1,
+        "treb": 2,
+        "ast": 2,
+        "stl": 4,
+        "blk": 5
+      },
+      "eowRank": 15
+    }
+  ],
+  "tradeWatch": [
+    {
+      "id": "randle-for-bam",
+      "label": "Randle for Bam (you and Herb)",
+      "kind": "trade",
+      "team": "Shut Up and Jam Gaiden",
+      "tradeDate": "2026-10-27 14:33",
+      "baselineDate": "2026-10-27",
+      "baselineApprox": false,
+      "asOf": "2026-11-15",
+      "note": "Randle for Bam 1:1 with Herb (user offered, Herb accepted).",
+      "got": [
+        {
+          "name": "Bam Adebayo",
+          "nbaTeam": "MIA",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 70,
+            "fga": 121,
+            "ftm": 58,
+            "fta": 74,
+            "tpm": 6,
+            "pts": 206,
+            "treb": 81,
+            "ast": 29,
+            "stl": 21,
+            "blk": 7
+          },
+          "z": 7.306220837235175,
+          "value": 97.20375478759098,
+          "rankNow": 24,
+          "rankThen": 120
+        }
+      ],
+      "gave": [
+        {
+          "name": "Julius Randle",
+          "nbaTeam": "BKN",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 58,
+            "fga": 136,
+            "ftm": 44,
+            "fta": 57,
+            "tpm": 13,
+            "pts": 173,
+            "treb": 55,
+            "ast": 41,
+            "stl": 10,
+            "blk": 2
+          },
+          "z": -1.8144784747818186,
+          "value": 15.117460979438043,
+          "rankNow": 97,
+          "rankThen": 48
+        }
+      ],
+      "gotValue": 97.20375478759098,
+      "gaveValue": 15.117460979438043,
+      "net": 82.08629380815293,
+      "series": [
+        {
+          "date": "2026-10-28",
+          "net": -4.380138204660005
+        },
+        {
+          "date": "2026-10-29",
+          "net": 7.55214685331647
+        },
+        {
+          "date": "2026-10-30",
+          "net": 7.55214685331647
+        },
+        {
+          "date": "2026-10-31",
+          "net": 28.011195773199148
+        },
+        {
+          "date": "2026-11-01",
+          "net": 28.011195773199148
+        },
+        {
+          "date": "2026-11-02",
+          "net": 18.815626600955078
+        },
+        {
+          "date": "2026-11-03",
+          "net": 32.44867422425966
+        },
+        {
+          "date": "2026-11-04",
+          "net": 32.44867422425966
+        },
+        {
+          "date": "2026-11-05",
+          "net": 39.9264809970757
+        },
+        {
+          "date": "2026-11-06",
+          "net": 41.46817339567512
+        },
+        {
+          "date": "2026-11-07",
+          "net": 41.46817339567512
+        },
+        {
+          "date": "2026-11-08",
+          "net": 34.51723486385674
+        },
+        {
+          "date": "2026-11-09",
+          "net": 50.184987735823334
+        },
+        {
+          "date": "2026-11-10",
+          "net": 50.184987735823334
+        },
+        {
+          "date": "2026-11-11",
+          "net": 57.45537287156206
+        },
+        {
+          "date": "2026-11-12",
+          "net": 62.905615264087785
+        },
+        {
+          "date": "2026-11-13",
+          "net": 62.905615264087785
+        },
+        {
+          "date": "2026-11-14",
+          "net": 82.16331760589134
+        },
+        {
+          "date": "2026-11-15",
+          "net": 82.08629380815293
+        }
+      ],
+      "replacement": -3.4941963613860456
+    },
+    {
+      "id": "mitchell-for-amen-miller",
+      "label": "Mitchell for Amen + Brandon Miller (Finn and Cole)",
+      "kind": "trade",
+      "team": "Finn will turn Bert into bacon",
+      "tradeDate": "2026-10-23 19:06",
+      "baselineDate": "2026-10-23",
+      "baselineApprox": false,
+      "asOf": "2026-11-15",
+      "note": "Finn accepted his counter (Mitchell alone for Amen + Miller). The user vetoed it, and the commissioner overruled the veto, so the trade stands. Yahoo shows '( Bert )' next to both teams.",
+      "got": [
+        {
+          "name": "Amen Thompson",
+          "nbaTeam": "HOU",
+          "games": 12,
+          "line": {
+            "games": 12,
+            "fgm": 69,
+            "fga": 134,
+            "ftm": 40,
+            "fta": 51,
+            "tpm": 2,
+            "pts": 179,
+            "treb": 81,
+            "ast": 36,
+            "stl": 13,
+            "blk": 9
+          },
+          "z": -1.1280832131587673,
+          "value": 28.393357778727342,
+          "rankNow": 98,
+          "rankThen": 99
+        },
+        {
+          "name": "Brandon Miller",
+          "nbaTeam": "CHA",
+          "games": 9,
+          "line": {
+            "games": 9,
+            "fgm": 66,
+            "fga": 184,
+            "ftm": 32,
+            "fta": 36,
+            "tpm": 24,
+            "pts": 188,
+            "treb": 46,
+            "ast": 21,
+            "stl": 11,
+            "blk": 7
+          },
+          "z": -1.3995223966733927,
+          "value": 18.85206568241388,
+          "rankNow": 116,
+          "rankThen": 177
+        }
+      ],
+      "gave": [
+        {
+          "name": "Donovan Mitchell",
+          "nbaTeam": "CLE",
+          "games": 12,
+          "line": {
+            "games": 12,
+            "fgm": 92,
+            "fga": 196,
+            "ftm": 48,
+            "fta": 61,
+            "tpm": 36,
+            "pts": 267,
+            "treb": 54,
+            "ast": 70,
+            "stl": 14,
+            "blk": 6
+          },
+          "z": 2.582944721696186,
+          "value": 72.92569299698678,
+          "rankNow": 30,
+          "rankThen": 16
+        }
+      ],
+      "gotValue": 47.24542346114122,
+      "gaveValue": 72.92569299698678,
+      "net": -25.68026953584556,
+      "series": [
+        {
+          "date": "2026-10-24",
+          "net": 8.147296585133256
+        },
+        {
+          "date": "2026-10-25",
+          "net": 10.342225943745389
+        },
+        {
+          "date": "2026-10-26",
+          "net": 10.342225943745389
+        },
+        {
+          "date": "2026-10-27",
+          "net": 16.20626509207688
+        },
+        {
+          "date": "2026-10-28",
+          "net": 16.20626509207688
+        },
+        {
+          "date": "2026-10-29",
+          "net": 20.375599302918346
+        },
+        {
+          "date": "2026-10-30",
+          "net": 21.215157853805458
+        },
+        {
+          "date": "2026-10-31",
+          "net": 21.776730873520478
+        },
+        {
+          "date": "2026-11-01",
+          "net": 23.994122558184735
+        },
+        {
+          "date": "2026-11-02",
+          "net": 23.994122558184735
+        },
+        {
+          "date": "2026-11-03",
+          "net": 25.003178420401
+        },
+        {
+          "date": "2026-11-04",
+          "net": 25.003178420401
+        },
+        {
+          "date": "2026-11-05",
+          "net": -3.6672944129889373
+        },
+        {
+          "date": "2026-11-06",
+          "net": -3.6672944129889373
+        },
+        {
+          "date": "2026-11-07",
+          "net": -15.45825288545798
+        },
+        {
+          "date": "2026-11-08",
+          "net": -17.82584424837249
+        },
+        {
+          "date": "2026-11-09",
+          "net": -17.82584424837249
+        },
+        {
+          "date": "2026-11-10",
+          "net": -22.173613061239372
+        },
+        {
+          "date": "2026-11-11",
+          "net": -22.173613061239372
+        },
+        {
+          "date": "2026-11-12",
+          "net": -23.122609188565818
+        },
+        {
+          "date": "2026-11-13",
+          "net": -23.122609188565818
+        },
+        {
+          "date": "2026-11-14",
+          "net": -25.68026953584556
+        },
+        {
+          "date": "2026-11-15",
+          "net": -25.68026953584556
+        }
+      ],
+      "replacement": -3.4941963613860456
+    }
+  ],
+  "seasonOdds": {
+    "asOf": "2026-11-15",
+    "N": 4000,
+    "weeks": 22,
+    "third": 5,
+    "teams": [
+      {
+        "name": "Shut Up and Jam Gaiden",
+        "topThird": 0.91,
+        "top3": 0.80025,
+        "first": 0.4705,
+        "avgRank": 2.449,
+        "p10": 1,
+        "p90": 5,
+        "avgPts": 87.58375
+      },
+      {
+        "name": "Billy Hoyle's Boy-les",
+        "topThird": 0.77975,
+        "top3": 0.569,
+        "first": 0.19175,
+        "avgRank": 3.83175,
+        "p10": 1,
+        "p90": 8,
+        "avgPts": 79.9975
+      },
+      {
+        "name": "Finn will turn Bert into bacon",
+        "topThird": 0.6575,
+        "top3": 0.44925,
+        "first": 0.1335,
+        "avgRank": 4.82,
+        "p10": 1,
+        "p90": 10,
+        "avgPts": 76.16225
+      },
+      {
+        "name": "Team Maru",
+        "topThird": 0.44475,
+        "top3": 0.237,
+        "first": 0.0465,
+        "avgRank": 6.57475,
+        "p10": 2,
+        "p90": 12,
+        "avgPts": 69.276
+      },
+      {
+        "name": "#WashedAutoDraftKing",
+        "topThird": 0.4075,
+        "top3": 0.219,
+        "first": 0.045,
+        "avgRank": 7.125,
+        "p10": 2,
+        "p90": 13,
+        "avgPts": 66.8235
+      },
+      {
+        "name": "Bitsketball Stars",
+        "topThird": 0.39275,
+        "top3": 0.2175,
+        "first": 0.0475,
+        "avgRank": 7.19525,
+        "p10": 2,
+        "p90": 13,
+        "avgPts": 66.94775
+      },
+      {
+        "name": "vincemvpcarter",
+        "topThird": 0.33575,
+        "top3": 0.1455,
+        "first": 0.02125,
+        "avgRank": 7.66925,
+        "p10": 3,
+        "p90": 13,
+        "avgPts": 64.69225
+      },
+      {
+        "name": "Herb's Astonishing Team",
+        "topThird": 0.32275,
+        "top3": 0.145,
+        "first": 0.0255,
+        "avgRank": 7.523,
+        "p10": 3,
+        "p90": 12,
+        "avgPts": 65.87025
+      },
+      {
+        "name": "The New Day Co-op",
+        "topThird": 0.185,
+        "top3": 0.04475,
+        "first": 0.003,
+        "avgRank": 7.846,
+        "p10": 5,
+        "p90": 11,
+        "avgPts": 64.35675
+      },
+      {
+        "name": "Cole is like that",
+        "topThird": 0.15025,
+        "top3": 0.042,
+        "first": 0.00225,
+        "avgRank": 9.25425,
+        "p10": 5,
+        "p90": 13,
+        "avgPts": 59.27875
+      },
+      {
+        "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+        "topThird": 0.14275,
+        "top3": 0.047,
+        "first": 0.006,
+        "avgRank": 9.822,
+        "p10": 5,
+        "p90": 14,
+        "avgPts": 57.38375
+      },
+      {
+        "name": "Full Court Rex",
+        "topThird": 0.1065,
+        "top3": 0.03475,
+        "first": 0.00275,
+        "avgRank": 10.8515,
+        "p10": 5,
+        "p90": 15,
+        "avgPts": 52.16625
+      },
+      {
+        "name": "Grilled Teampura",
+        "topThird": 0.065,
+        "top3": 0.019,
+        "first": 0.00225,
+        "avgRank": 11.11225,
+        "p10": 6,
+        "p90": 15,
+        "avgPts": 52.2535
+      },
+      {
+        "name": "Fishy Achilles",
+        "topThird": 0.059,
+        "top3": 0.021,
+        "first": 0.00175,
+        "avgRank": 11.637,
+        "p10": 7,
+        "p90": 15,
+        "avgPts": 50.35475
+      },
+      {
+        "name": "Super Maru",
+        "topThird": 0.04075,
+        "top3": 0.009,
+        "first": 0.0005,
+        "avgRank": 12.289,
+        "p10": 8,
+        "p90": 15,
+        "avgPts": 46.853
+      }
+    ]
+  }
+}
