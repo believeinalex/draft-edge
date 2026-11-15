@@ -126,6 +126,8 @@ async function main() {
     return { name: n, fga, fta, fgm: b.eow.fgPct * fga, ftm: b.eow.ftPct * fta, ...Object.fromEntries(COUNT.map(c => [c, b.eow[c]])) };
   });
 
+  // Scenario override: BASE_ADJ='{"Team name":{"fgm":..,"fga":..,"pts":..}}' shifts that team's starting totals
+  if (process.env.BASE_ADJ) for (const [tn, d] of Object.entries(JSON.parse(process.env.BASE_ADJ))) { const b = base[names.indexOf(tn)]; for (const [k, v] of Object.entries(d)) b[k] += v; }
   // ---- simulated weekly lines per player (common random numbers)
   const simPlayer = p => {
     if (!p.g) return null;
@@ -372,7 +374,7 @@ async function main() {
   const notes = [];
   for (const [tn, ros] of rosters) for (const p of ros) if (!p.proj) notes.push(`${p.name} (${tn}) has no projection in the sheet and counts as zero.`);
   md.push('## Notes', '', `- Other teams play their best feasible nine (value = games x per-game z); bench players are used before free agents.`, '- Other teams fill any empty active slot (players who are out) with the best free agent that fits: ' + (filled.map(x => x[1] + ' (' + x[0] + ')').join('; ') || 'none') + '.', '- Players out at the lock all week count zero. Q and P players count full games, as requested; they will sometimes miss games, so the rank bands are slightly optimistic.', '- Unrostered/unprojected: ' + (notes.join(' ') || 'none') + '', '');
-  const outFile = path.join(ROOT, 'reports', `${start}-week-plan.md`);
+  const outFile = process.env.WEEK_OUT || path.join(ROOT, 'reports', `${start}-week-plan.md`);
   fs.writeFileSync(outFile, md.join('\n'));
   console.log(md.join('\n'));
   console.error('wrote', outFile);
