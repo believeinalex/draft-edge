@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: a reluctant hold.
+Lloyd: a reluctant hold. Nov 16 (Lloyd): an upgrade from reluctant hold to a pickup.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 28 min, 26 pts, 4 reb, 4 ast, 5 threes on 57%, no steals. [14:29]
+- **Analysis:** Trending towards overtaking Jalen Green or just playing more. 'If you want to grab him, you do it now.' Would love a 30-minute lock. [14:43]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): possible week-4 return; cuts into Cardwell, not Sabonis.
+Lloyd (Nov 7): possible week-4 return; cuts into Cardwell, not Sabonis. Nov 16 (Lloyd): not a stash.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Out Sunday. Lloyd is not 'super into' stashing him: 'it's going to be very rocky early on when he comes back'. [1:07:12]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

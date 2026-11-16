@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd is positive on the role on Oct 22 and Nov 5; Toronto is short of creators without Kawhi Leonard. On Nov 9 he flagged Quickley's (and Barnes') status as deciding whether Collin Murray-Boyles keeps starting, so check the injury report before Monday's lineup. Season check (HTB through Nov 5): 31.8 mpg, 17.4 pts, 5.8 ast, 2.6 3PM, 40.9% FG, 0.0 blk, 82nd. Shooting is still the problem (see the Quickley benching open question, Nov 9).
+Lloyd is positive on the role on Oct 22 and Nov 5; Toronto is short of creators without Kawhi Leonard. On Nov 9 he flagged Quickley's (and Barnes') status as deciding whether Collin Murray-Boyles keeps starting, so check the injury report before Monday's lineup. Season check (HTB through Nov 5): 31.8 mpg, 17.4 pts, 5.8 ast, 2.6 3PM, 40.9% FG, 0.0 blk, 82nd. Shooting is still the problem (see the Quickley benching open question, Nov 9). Nov 16 (Lloyd): a solid line with Barnes back; no change.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 17 pts, 6 reb, 6 ast, 2 stl in the OT loss to the Knicks, poor shooting; Scottie Barnes was back and Kawhi Leonard is still out. [42:19]
+- **Analysis:** 'Overall he's been pretty good.' [42:27]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

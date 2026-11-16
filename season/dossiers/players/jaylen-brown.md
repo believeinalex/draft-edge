@@ -2,11 +2,17 @@
 
 ## Current take
 
-Strong.
+Strong. Nov 16 (Lloyd): top-40 pace despite lower usage.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 31 pts, 2 reb, 2 ast; great FG, bad FT. 'Basically a top 40 player this season.' Usage has dropped hugely, as Lloyd expected, but production is fine. [7:50]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

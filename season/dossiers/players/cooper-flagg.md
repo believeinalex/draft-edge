@@ -2,11 +2,17 @@
 
 ## Current take
 
-Elite, cooling slightly.
+Elite, cooling slightly. Nov 16 (Lloyd): fine.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: shooting
+- **Stat:** 27 min, 17 pts, 3 reb, 4 ast, 1 stl, 1 blk. 'Always going to come down' on percentages; not worried. [46:14]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -4,11 +4,18 @@
 
 ## Current take
 
-The best player in fantasy. Sat the first night of the Lakers' Nov 8–9 back-to-back, so watch for rest days on back-to-backs. Season check (HTB through Nov 5): 1st (38.5 pts, 5.9 3PM).
+The best player in fantasy. Sat the first night of the Lakers' Nov 8–9 back-to-back, so watch for rest days on back-to-backs. Season check (HTB through Nov 5): 1st (38.5 pts, 5.9 3PM). Nov 16 (Lloyd): free-throw percentage may be a real improvement, not a hot streak.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 43 pts, 3 reb, 9 ast in the Lakers' win over Phoenix. [10:05]
+- **Analysis:** Thinks his free throws may now be genuinely fine; compares it to Shai Gilgeous-Alexander jumping from about 80% to 89% in one year. [10:13]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

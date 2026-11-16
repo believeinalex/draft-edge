@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): taken Max Christie's minutes; a weekend streaming option (Dallas Sat–Sun back-to-back).
+Lloyd (Nov 7): taken Max Christie's minutes; a weekend streaming option (Dallas Sat–Sun back-to-back). Nov 16 (Lloyd): a deeper-league fill-in.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 23 min, 13 pts, 4 reb, 3 ast, 3 threes with Kyrie out. 'Deeper league player.' [46:29]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

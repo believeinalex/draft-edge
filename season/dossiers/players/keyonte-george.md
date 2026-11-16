@@ -2,11 +2,17 @@
 
 ## Current take
 
-Hurt Nov 8 and ruled out immediately (injury unspecified); Lloyd is worried. If he misses time, Darryn Peterson and Isaiah Collier benefit.
+Hurt Nov 8 and ruled out immediately (injury unspecified); Lloyd is worried. If he misses time, Darryn Peterson and Isaiah Collier benefit. Nov 16 (Lloyd): a poor shooting night.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury, usage
+- **Stat:** 13 pts, 4 reb, 8 ast on 29%. [35:54]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

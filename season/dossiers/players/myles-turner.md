@@ -2,11 +2,18 @@
 
 ## Current take
 
-A rough start, now around the top 100.
+A rough start, now around the top 100. Nov 16 (Lloyd): hold in 12s.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 8 pts, 7 reb, 1 blk. 'Hold him in twelves but not necessarily in points leagues.' [1:00:19]
+- **Analysis:** Lloyd can't see why the Bucks are moving Turner and Kuzma 'down to positions where they're worse'. [59:57]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

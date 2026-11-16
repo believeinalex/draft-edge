@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: a speculative add.
+Lloyd: a speculative add. Nov 16 (Lloyd): speculative add only.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Reported:** Started. 29 min, 14 pts, 10 ast, 1 reb, 3 threes. [1:07:23]
+- **Analysis:** 'We can't trust him to play big minutes.' [1:07:37]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

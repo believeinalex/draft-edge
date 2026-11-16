@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: strong start. (opening-week single game; season stats are the better guide now)
+Lloyd: strong start. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold, but minutes are unreliable.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 20 min, 5 pts on 15%. Lloyd 'thought he was immune to the nonsense' but his minutes are now random. [1:00:56]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

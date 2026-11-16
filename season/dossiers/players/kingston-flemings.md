@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: starting, a 12-team must-roster held through Thanksgiving, but minutes/usage are capped. Light week 4 (3 games, Tue–Thu gap); don't start in weekly leagues.
+Lloyd: starting, a 12-team must-roster held through Thanksgiving, but minutes/usage are capped. Light week 4 (3 games, Tue–Thu gap); don't start in weekly leagues. Nov 16 (Lloyd): reverses 'must-roster'; now droppable.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Out for the Hawks game; CJ McCollum started in his place. [56:09]
+- **Analysis:** Usage has been low as a starter; 'if you wanted to drop him, go for it'. Not sure he will reach top-100 numbers. [56:25]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

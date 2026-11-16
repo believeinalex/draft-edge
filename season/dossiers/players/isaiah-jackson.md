@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd went from a hold (Oct 22) to drop (Nov 5).
+Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): big game, small role.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 13 pts, 2 reb, 3 blk, 1 stl in only 15 minutes. Impending return of Yanic Konan Niederhauser may come this week; 'we're not relying upon that'. [28:33]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

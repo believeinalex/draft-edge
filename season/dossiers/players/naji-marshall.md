@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: a 14-team option.
+Lloyd: a 14-team option. Nov 16 (Lloyd): only a deep-league stream.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Reported:** Started in place of Kyrie. 23 min, 13 pts. [46:42]
+- **Analysis:** 'Not a 12 team league player'; Lloyd calls the plan of Marshall as the replacement point guard ridiculous. [46:51]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

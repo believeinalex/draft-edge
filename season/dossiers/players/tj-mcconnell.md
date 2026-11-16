@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): back from a long hamstring injury; expects only ~16 minutes at first. Don't rush to add.
+Lloyd (Nov 7): back from a long hamstring injury; expects only ~16 minutes at first. Don't rush to add. Nov 16 (Lloyd): good night, still a stream.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 19 min, 12 pts, 5 ast. On the streaming board but Lloyd isn't 'rushing and adding him in a standard format'. [5:55]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

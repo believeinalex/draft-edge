@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5).
+Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): reverses 'drop' to hold for now.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Reported:** Moved to the bench for Murray-Boyles when Barnes returned. [40:18]
+- **Stat:** 17 min, 11 pts, 5 reb, 1 stl, 71% FG. 'Just hold on to him for now.' [40:35]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role, injury

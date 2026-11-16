@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: top 10 so far; the benching worry hasn't happened.
+Lloyd: top 10 so far; the benching worry hasn't happened. Nov 16 (Lloyd): fine.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+- **Stat:** 19 pts, 8 reb, 8 ast in 28 min in a blowout. [49:52]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

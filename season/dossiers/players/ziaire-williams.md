@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: not reliable.
+Lloyd: not reliable. Nov 16 (Lloyd): steals stream.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 19 min, 6 pts, 2 stl with foul trouble. In the stream mix for 12-team leagues. [12:18]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

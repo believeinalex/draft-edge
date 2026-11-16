@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd is bearish (Oct 22, Nov 5).
+Lloyd is bearish (Oct 22, Nov 5). Nov 16 (Lloyd): more positive than before, but not full faith.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage, outlook
+- **Stat:** 25 pts, 9 reb, 3 blk on 69%, the second big game in a row with a healthy team. Shooting won't hold, but 'the increased usage is encouraging'. [54:41]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

@@ -2,11 +2,19 @@
 
 ## Current take
 
-Lloyd: hold (Oct 22); now starting over Poeltl.
+Lloyd: hold (Oct 22); now starting over Poeltl. Nov 16 (Lloyd): hold; Lloyd is convinced he is better than the start.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Reported:** With Scottie Barnes back, Poeltl went to the bench and Murray-Boyles stayed in the starting lineup (Lloyd doubts he should start every night). [40:18]
+- **Stat:** 6 pts on 6-of-13, 2 ast, 1 stl, 2 blk. Top 100 over the last two weeks. [41:00]
+- **Analysis:** Missed easy shots; 'we got to hold him', as the slow start is not real. [41:31]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

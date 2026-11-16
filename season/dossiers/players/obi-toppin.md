@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd (Nov 7): a week-4 streamer and priority add in category leagues (10-and-6 with good percentages, 4 games). Earlier call was drop.
+Lloyd (Nov 7): a week-4 streamer and priority add in category leagues (10-and-6 with good percentages, 4 games). Earlier call was drop. Nov 16 (Lloyd): reverses his Nov 7 week-4 streamer/priority-add call; now a drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 14 min, 5 pts, 2 reb on 29%; outside the top 260 over the last two weeks. 'Out of favor.' [5:32]
+- **Analysis:** 'Get that garbage out of here'; wouldn't roster even in 14-team leagues; needs 25 minutes at elite efficiency to be a 12-team guy. [5:46]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

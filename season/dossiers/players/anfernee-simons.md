@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: drop.
+Lloyd: drop. Nov 16 (Lloyd): drop call reinforced.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 12 pts, then zeros, 15 min with foul trouble. [8:22]
+- **Analysis:** 'Decidedly not very good': his Portland numbers came with the ball in his hands on a bad team, and they don't hold on a real team. [8:29]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

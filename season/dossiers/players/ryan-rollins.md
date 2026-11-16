@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt.
+Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt. Nov 16 (Lloyd): hold through the illness.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Out with illness. [59:19]
+- **Analysis:** Lloyd is holding him. [1:03:15]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

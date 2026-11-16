@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd said drop him on Oct 22 (two injuries needed for minutes), then saw a good Nov 4 game when Smart played only 18 minutes. Not trusted; hold only if he's the backup point guard. Season check (HTB through Nov 5): 21.7 mpg, 10.7 pts, 2.3 3PM, 1.7 stl, 39.0% FG, 134th.
+Lloyd said drop him on Oct 22 (two injuries needed for minutes), then saw a good Nov 4 game when Smart played only 18 minutes. Not trusted; hold only if he's the backup point guard. Season check (HTB through Nov 5): 21.7 mpg, 10.7 pts, 2.3 3PM, 1.7 stl, 39.0% FG, 134th. Nov 16 (Lloyd): drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 26 min, 11 pts, 6 reb, 3 threes, 2 stl with no Smart or VanVleet. 'The absolute nail in the coffin': Udoka won't play him. [51:30]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

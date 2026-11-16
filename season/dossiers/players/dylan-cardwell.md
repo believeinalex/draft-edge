@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: only if Sabonis misses time.
+Lloyd: only if Sabonis misses time. Nov 16 (Lloyd): not a must hold.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Reported:** Started next to Sabonis. [1:06:20]
+- **Stat:** 19 min, 10 pts, 6 reb, 0 blk; minutes unpredictable (19, 29, 12 in recent games). 'Not a must roster.' Harder when Maxime Raynaud returns. [1:06:46]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

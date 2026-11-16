@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold for steals. Season check (HTB through Nov 5): 2.8 stl, 54th.
+Lloyd: hold for steals. Season check (HTB through Nov 5): 2.8 stl, 54th. Nov 16 (Lloyd): third bad game; a squeeze is coming, so only hold the steals while the role lasts.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** Third bad game in a row: 18 min, 7 pts, 1 stl. Lloyd expects him to be squeezed when Wagler, Garland and Ingram return. 'If you want to drop preemptively, it's got to be because you're adding somebody else.' [26:44]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

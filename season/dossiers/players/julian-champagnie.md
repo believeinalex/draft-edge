@@ -2,11 +2,19 @@
 
 ## Current take
 
-Lloyd: stream only (Oct 22, Nov 5).
+Lloyd: stream only (Oct 22, Nov 5). Nov 16 (Lloyd): stream only; very over-rostered.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Reported:** Started with De'Aaron Fox out (hip tightness). [32:11]
+- **Stat:** 4 pts in 24 min on 16% shooting; 71% rostered in Basketball Monster advanced leagues. 'Barely 150th'; 200th over the last two weeks. [32:19]
+- **Analysis:** Fine as a three-point stream only. [32:46]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): long-term center of the future, but expect a three-way split with Lopez and Jackson after the broken foot; don't rush.
+Lloyd (Nov 7): long-term center of the future, but expect a three-way split with Lopez and Jackson after the broken foot; don't rush. Nov 16 (Lloyd): return may be this week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Return from the broken foot 'might come this week'. [28:33]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd says drop on Oct 22, Nov 5 and Nov 9 ("insanely over-rostered"; only a Kessler-injury stash). Season check (HTB through Nov 5): 23.4 mpg, 9.0 pts, 177th. A drop candidate for Finn.
+Lloyd says drop on Oct 22, Nov 5 and Nov 9 ("insanely over-rostered"; only a Kessler-injury stash). Season check (HTB through Nov 5): 23.4 mpg, 9.0 pts, 177th. A drop candidate for Finn. Nov 16 (Lloyd): fourth straight over-rostered call (Oct 22, Nov 5, Nov 9, Nov 16). Drop candidate for Finn.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes, role
+- **Stat:** 4 pts in 21 min against the Suns, after Quentin Grimes' return; Lloyd had flagged him after two big games with Reaves and Doncic out. [12:33]
+- **Analysis:** 'Guess not' on the pickup. Rostered in 94% of Basketball Monster advanced leagues: 'way too high', he has been fine but 'hasn't even been good'. 'Don't overindex on Mamu.' [12:33]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

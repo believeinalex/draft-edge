@@ -4,11 +4,19 @@
 
 ## Current take
 
-Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer.
+Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, usage, outlook
+- **Reported:** Started at point guard again with Fred VanVleet out and Marcus Smart suspended. [48:56]
+- **Stat:** 26 pts, 7 reb, 7 ast, 3 threes, 1 stl, 1 blk on 82% FG and 83% FT; back to 54th for the season. [49:11]
+- **Analysis:** 'It did need Fred out', and VanVleet plays Monday, so don't over-read it. Still, it showed what made him a fantasy prospect, and Lloyd hopes it 'unlocks something'. [49:30]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

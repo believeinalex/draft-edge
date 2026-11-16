@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down.
+Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down. Nov 16 (Lloyd): hold; a rare good game.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 25 min, 8 pts, 11 reb, 3 blk on 29%. 'This is why you'd probably try to hold him.' [1:00:33]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

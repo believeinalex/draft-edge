@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd (Nov 7): a schedule play for week 4 (4 games, Mon–Tue back-to-back), not a long-term hold; was a 14-team add.
+Lloyd (Nov 7): a schedule play for week 4 (4 games, Mon–Tue back-to-back), not a long-term hold; was a 14-team add. Nov 16 (Lloyd): 17 minutes; the week-4 schedule play did not pay off.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** Only 17 minutes against the Lakers. 'Not a 12-team league guy either.' [16:32]
+- **Analysis:** Phoenix tried small-ball centre looks with Josh Primo (10 pts, 8 min), which Lloyd finds 'a little bit intriguing' for minutes. [16:49]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd thought he might be washed (Oct 22) but has seen him play well since; hold.
+Lloyd thought he might be washed (Oct 22) but has seen him play well since; hold. Nov 16 (Lloyd): reverses 'hold'; now a drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 19 min, 3 pts, 4 reb, 3 blk; third game in a row under 20 minutes. [44:40]
+- **Analysis:** 'I reckon we can just move off from Gafford.' Dallas is running 'randos' at centre. [44:56]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
