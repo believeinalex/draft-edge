@@ -12,9 +12,10 @@
     "lineups": "node season/parse_lineups.js && node season/build_season.js",
     "value": "node season/value_report.js",
     "injuries": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_injuries.js && npm run -s season",
+    "viz": "node season/viz/build_velocity.js",
     "report": "NODE_USE_ENV_PROXY=1 node --no-warnings season/morning_report.js",
     "news": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_news.js",
-    "morning": "npm run -s fetch-stats && npm run -s injuries && (npm run -s news || echo \"news digest failed; the report uses the previous one\") && npm run -s report",
+    "morning": "npm run -s fetch-stats && npm run -s injuries && (npm run -s news || echo \"news digest failed; the report uses the previous one\") && npm run -s report && (npm run -s viz || echo \"dashboard build failed; docs/ unchanged\")",
     "dossiers": "node season/dossiers.js"
   },
   "keywords": [

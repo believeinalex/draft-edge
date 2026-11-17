@@ -1,0 +1,143 @@
+<style>
+  .cv-page { display: flex; flex-direction: column; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .cv-page h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .cv-page h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+  .cv-page h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .cv-page p { margin: 0; line-height: 1.5; max-width: 70ch; }
+  .cv-lede { color: var(--cds-text-secondary); font-size: var(--cds-font-size-body); }
+  .cv-muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .cv-bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: end; padding: var(--cds-pad-sm) 0; background: var(--color-bg); border-bottom: 1px solid var(--color-border-line); }
+  .cv-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .cv-field label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cv-field .dash-select { max-width: 100%; }
+  .cv-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); min-width: 0; }
+  .cv-sec-head { display: flex; flex-direction: column; gap: 4px; }
+  .cv-head-row { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); justify-content: space-between; align-items: end; }
+  .cv-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+  .cv-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--cds-gap-lg); }
+  .cv-chart { position: relative; min-height: 120px; min-width: 0; font-variant-numeric: tabular-nums; }
+  .cv-frame { position: relative; }
+  .cv-frame svg { display: block; max-width: 100%; overflow: visible; }
+  .cv-frame text { fill: var(--cds-text-secondary); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .cv-frame .cv-lab { fill: var(--color-fg); font-size: 12px; }
+  .cv-frame .cv-lab.hi { font-weight: 600; }
+  .cv-frame .cv-h { fill: var(--cds-text-secondary); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; }
+  .cv-frame .cv-cell { fill: var(--color-fg); font-size: 11px; pointer-events: none; }
+  .cv-frame .cv-seg { fill: var(--color-fg); font-size: 11px; pointer-events: none; }
+  .cv-frame .cv-quad { fill: var(--color-fg-muted); font-size: 11px; font-style: italic; }
+  .cv-tip { position: absolute; z-index: 20; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); color: var(--cds-text-secondary); border-radius: 6px; padding: 6px 9px; font-size: 12px; line-height: 1.4; max-width: 260px; }
+  .cv-tip-h { color: var(--color-fg); font-weight: 600; }
+  .cv-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-bottom: 8px; font-size: 12px; color: var(--cds-text-secondary); }
+  .cv-sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; vertical-align: -1px; }
+  .cv-sw.dash { width: 14px; height: 0; border-radius: 0; border-top: 2px dashed; vertical-align: 3px; }
+  .cv-grid { display: grid; gap: 12px; }
+  .cv-panel { min-width: 0; }
+  .cv-ptitle { font-size: 12px; font-weight: 600; color: var(--color-fg); margin-bottom: 2px; }
+  .cv-scale { display: flex; align-items: center; gap: 8px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cv-scale i { display: inline-block; height: 10px; width: 120px; border-radius: 3px; background: linear-gradient(90deg, #d4622b, transparent 50%, #2b7fc4); opacity: 0.8; }
+  .cv-note { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-md); }
+  @media (max-width: 520px) { .cv-bar { position: static; } }
+</style>
+<div class="cv-page">
+  <header class="cv-sec-head" style="gap:8px">
+    <h1 id="title">Category velocity</h1>
+    <p class="cv-lede" id="headline" data-draw="headline" data-source="standings odds">—</p>
+    <p class="cv-muted">Data as of {{ASOF}}. Yahoo league standings for the 15 teams, 8 categories, from {{FIRST}} to {{ASOF_SHORT}}. Pick a team to follow and one to compare with. Every chart responds.</p>
+  </header>
+
+  <div class="cv-bar" id="controls">
+    <div class="cv-field"><label for="team-select">Follow</label><select class="dash-select" id="team-select" data-draw="team" data-source="standings" aria-label="Team to follow"></select></div>
+    <div class="cv-field"><label for="compare-select">Compare with</label><select class="dash-select" id="compare-select" data-draw="compare" data-source="standings" aria-label="Team to compare with"></select></div>
+  </div>
+
+  <section class="cv-sec" id="velocity-section">
+    <div class="cv-head-row">
+      <div class="cv-sec-head">
+        <h2 id="velocity-h">Who is producing right now</h2>
+        <p class="cv-muted">Each cell is a team's production in a period, in standard deviations above or below the league average. Counting stats are per team-game. FG% and FT% use the change in the running average.</p>
+      </div>
+      <div class="cv-field"><label for="period-select">Period</label><select class="dash-select" id="period-select" data-draw="period" data-source="periods" aria-label="Period"></select></div>
+    </div>
+    <div class="cv-card">
+      <div class="cv-scale"><span>Below league</span><i></i><span>Above league</span></div>
+      <div class="cv-chart" id="velocity" data-draw="velocity" data-source="periods">—</div>
+      <p class="cv-muted">Δ pts is the change in roto points across the period. The first period has no FG% or FT% change because it starts from zero.</p>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="rank-section">
+    <div class="cv-sec-head">
+      <h2 id="rank-h">Rank over time, per category</h2>
+      <p class="cv-muted">Rank 1 is the top. Lines crossing mean one team passed another. Dashed vertical lines mark trades involving the teams you picked.</p>
+    </div>
+    <div class="cv-card"><div class="cv-chart" id="bump" data-draw="bump" data-source="standings trades">—</div></div>
+  </section>
+
+  <section class="cv-sec" id="gap-section">
+    <div class="cv-sec-head">
+      <h2 id="gap-h">Gap to the teams around you</h2>
+      <p class="cv-muted">For the team you follow: how far the next team ahead is, and how big the cushion over the next team behind is, in standard deviations of the league spread (so categories compare). A shrinking gap ahead means you are closing in. A shrinking cushion means you are being caught.</p>
+    </div>
+    <div class="cv-card"><div class="cv-chart" id="gaps" data-draw="gaps" data-source="standings trades">—</div></div>
+  </section>
+
+  <section class="cv-sec" id="points-section">
+    <div class="cv-sec-head">
+      <h2 id="points-h">Roto points over time</h2>
+      <p class="cv-muted">Roto points per category are 16 minus rank, with ties sharing the average.</p>
+    </div>
+    <div class="cv-two">
+      <div class="cv-card"><h3 id="area-h">Where your points come from</h3><div class="cv-chart" id="area" data-draw="area" data-source="standings trades">—</div></div>
+      <div class="cv-card"><h3 id="rototime-h">Total roto points, all teams</h3><div class="cv-chart" id="rototime" data-draw="rototime" data-source="standings trades">—</div></div>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="odds-section">
+    <div class="cv-head-row">
+      <div class="cv-sec-head">
+        <h2 id="odds-h">Season odds and momentum</h2>
+        <p class="cv-muted">Odds come from the daily 4,000-run rest-of-season simulation, saved since {{ODDS_FIRST}}.</p>
+      </div>
+      <div class="cv-field"><label for="metric-select">Odds of</label><select class="dash-select" id="metric-select" data-draw="metric" aria-label="Odds measure"></select></div>
+    </div>
+    <div class="cv-two">
+      <div class="cv-card"><h3 id="odds-ribbon-h">Odds by day</h3><div class="cv-chart" id="odds" data-draw="odds" data-source="odds trades">—</div></div>
+      <div class="cv-card"><h3 id="oddsvel-h">Did points gained move the odds?</h3><div class="cv-chart" id="oddsvel" data-draw="oddsvel" data-source="odds periods">—</div></div>
+    </div>
+  </section>
+
+  <section class="cv-sec" id="action-section">
+    <div class="cv-sec-head">
+      <h2 id="action-h">What to do about it</h2>
+      <p class="cv-muted">Where the cheap points are, who is carrying the team, and how every team compares with its draft-day projection.</p>
+    </div>
+    <div class="cv-two">
+      <div class="cv-card"><h3 id="targets-h">Target map</h3><p class="cv-muted">Left means a team ahead is close. Top means the team behind is far away. The upper left is where you gain a spot without much risk of losing one.</p><div class="cv-chart" id="targets" data-draw="targets" data-source="standings">—</div></div>
+      <div class="cv-card"><h3 id="radar-h">Category profile</h3><p class="cv-muted">Roto points per category, 1 to 15. Bigger is better. The dashed ring is the league average.</p><div class="cv-chart" id="radar" data-draw="radar" data-source="standings">—</div></div>
+    </div>
+    <div class="cv-card"><h3 id="contrib-h">Who carries each category</h3><p class="cv-muted">Share of the team's season total by player. FG% and FT% show share of attempts. Totals use today's roster for the whole season, so they include games played before a player joined.</p><div class="cv-chart" id="contrib" data-draw="contrib" data-source="players">—</div></div>
+  </section>
+
+  <section class="cv-sec" id="league-section">
+    <div class="cv-sec-head">
+      <h2 id="league-h">League-wide patterns</h2>
+    </div>
+    <div class="cv-two">
+      <div class="cv-card">
+        <h3 id="vsproj-h">Actual vs draft-day projection</h3>
+        <p class="cv-muted">Counting stats compare each team's share of the league total with its projected share. FG% and FT% show percentage points over or under. Blue is ahead of projection.</p>
+        <div class="cv-chart" id="vsproj" data-draw="vsproj" data-source="projection">—</div>
+      </div>
+      <div class="cv-card">
+        <h3 id="consistency-h">Streaky or steady</h3>
+        <p class="cv-muted">How much each team's category production swings from period to period. Darker means streakier, so more room to move up or down.</p>
+        <div class="cv-chart" id="consistency" data-draw="consistency" data-source="periods">—</div>
+      </div>
+    </div>
+  </section>
+
+  <details class="cv-note" id="method">
+    <summary>How the numbers are built</summary>
+    <p class="cv-muted">Standings are the Yahoo snapshots saved in the repo, {{NSNAPS}} of them from {{FIRST}} to {{ASOF_SHORT}}, spaced unevenly. Velocity compares checkpoints: {{CHECKPOINTS}}. Per-game rates use the change in team games played. Gaps and rank charts use all ten snapshots on a true time axis. Projections apply the draft-day player projections to current rosters, so a team that traded heavily is compared with the roster it has now. The page is rebuilt by season/viz/build_velocity.js each time the morning run completes.</p>
+  </details>
+</div>
