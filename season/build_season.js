@@ -27,7 +27,7 @@ const MANAGED_TEAMS = [MY_TEAM, 'Finn will turn Bert into bacon'];
 // Teams renamed since the draft: current name -> earlier names
 const TEAM_ALIASES = {
   'Cole is like that': ["Cole's aura tuff team"],
-  'Finn will turn Bert into bacon': ['Finn will cook Burt']
+  'Finn will turn Bert into bacon': ['Finn will cook Burt', 'Finn will eat fish from bert']
 };
 // Older names in the draft file, transactions, lineups and standings resolve to the current one
 const canonTeam = name => (Object.entries(TEAM_ALIASES).find(([, old]) => old.includes(name)) || [name])[0];

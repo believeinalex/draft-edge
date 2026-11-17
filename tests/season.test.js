@@ -425,3 +425,15 @@ test('box score parser reads whole-number lines and skips DNPs', () => {
   assert.deepEqual({ ...rows[0] }, { name: 'Real Player', nbaTeam: 'NY', games: 1, fgm: 10, fga: 20, ftm: 5, fta: 6, tpm: 3, pts: 28, treb: 9, ast: 4, stl: 1, blk: 2 });
   assert.equal(addDays('2026-11-30', 1), '2026-12-01');
 });
+
+test('lineup parser skips live and final game status lines', () => {
+  const { parseLineupText } = require('../season/parse_lineups.js');
+  const text = ['Team A', 'Pos', 'Player', 'PG\t', 'Damian LillardPlayer Note', 'POR - PG', 'Q1 10:12, 4-2 @ MIN *',
+    'SG\t', 'Keyonte GeorgeNew Player Note', 'UTA - PG,SG', 'C\t', 'Walker KesslerONew Player Note', 'LAL - C', 'Half, 69-59 vs MEM *',
+    'Team B', 'Pos', 'Player', 'PF\t', 'Some GuyPlayer Note', 'DEN - PF', '9:00 pm vs PHX'].join('\n');
+  const blocks = parseLineupText(text);
+  assert.deepEqual(blocks.map(b => b.team), ['Team A', 'Team B']);
+  assert.equal(blocks[0].players.length, 3);
+  assert.equal(blocks[0].players[0].gameToday, 'Q1 10:12, 4-2 @ MIN *');
+  assert.equal(blocks[0].players[2].status, 'O');
+});

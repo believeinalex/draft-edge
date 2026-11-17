@@ -13,7 +13,8 @@ const path = require('path');
  *   PG<TAB>
  *   Tyrese MaxeyPlayer Note   <- name + optional status tag (Q, O, NA, ...) + Yahoo note label
  *   PHI - PG
- *   7:00 pm vs CLE            <- optional: game today
+ *   7:00 pm vs CLE            <- optional: game today (or, once games start, a live/final
+ *                                status such as "Q1 10:12, 4-2 @ MIN *" or "Half, 69-59 vs MEM")
  *
  * An unfilled slot shows as "(Empty)" after its slot label and is skipped.
  *
@@ -29,7 +30,7 @@ const OUT_DIR = path.join(__dirname, 'lineups');
 const SLOT_RE = /^(PG|SG|G|SF|PF|F|C|Util|BN|IL\+?|NA)$/;
 const NAME_RE = /^(.+?)(Q|O|D|P|NA|GTD|DTD|INJ|SUSP)?(New Player Note|Player Note|No new player Notes)$/;
 const TEAM_POS_RE = /^([A-Z]{2,3}) - ([A-Z,]+)$/;
-const GAME_RE = /^\d{1,2}:\d{2} (am|pm) (vs|@) [A-Z]{2,3}$/;
+const GAME_RE = /^(\d{1,2}:\d{2} (am|pm)|(Q[1-4]|\d?OT|Half|End|Final|F\b|W\b|L\b)[^\n]*?) (vs|@) [A-Z]{2,4}( \*)?$/;
 
 function parseLineupText(text) {
   const blocks = [];
