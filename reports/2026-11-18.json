@@ -1437,153 +1437,153 @@
     "teams": [
       {
         "name": "Shut Up and Jam Gaiden",
-        "topThird": 0.89475,
-        "top3": 0.767,
-        "first": 0.42075,
-        "avgRank": 2.645,
+        "topThird": 0.89425,
+        "top3": 0.76625,
+        "first": 0.41075,
+        "avgRank": 2.65425,
         "p10": 1,
         "p90": 6,
-        "avgPts": 86.03725
+        "avgPts": 86.09375
       },
       {
         "name": "Billy Hoyle's Boy-les",
-        "topThird": 0.8055,
-        "top3": 0.60675,
-        "first": 0.22275,
-        "avgRank": 3.5735,
+        "topThird": 0.81075,
+        "top3": 0.6005,
+        "first": 0.22125,
+        "avgRank": 3.5795,
         "p10": 1,
         "p90": 7,
-        "avgPts": 81.018
+        "avgPts": 81.0395
       },
       {
         "name": "Finn will turn Bert into bacon",
-        "topThird": 0.6565,
-        "top3": 0.43375,
-        "first": 0.12575,
-        "avgRank": 4.9195,
+        "topThird": 0.65525,
+        "top3": 0.4425,
+        "first": 0.13225,
+        "avgRank": 4.8505,
         "p10": 1,
         "p90": 10,
-        "avgPts": 75.6765
+        "avgPts": 75.95775
       },
       {
         "name": "Team Maru",
-        "topThird": 0.51375,
-        "top3": 0.27325,
-        "first": 0.05825,
-        "avgRank": 6.061,
+        "topThird": 0.49825,
+        "top3": 0.2685,
+        "first": 0.06075,
+        "avgRank": 6.14,
         "p10": 2,
         "p90": 11,
-        "avgPts": 71.4465
+        "avgPts": 71.1285
       },
       {
         "name": "Bitsketball Stars",
-        "topThird": 0.4415,
-        "top3": 0.239,
-        "first": 0.06725,
-        "avgRank": 6.73525,
+        "topThird": 0.429,
+        "top3": 0.23575,
+        "first": 0.06175,
+        "avgRank": 6.83025,
         "p10": 2,
         "p90": 12,
-        "avgPts": 68.954
-      },
-      {
-        "name": "#WashedAutoDraftKing",
-        "topThird": 0.35575,
-        "top3": 0.1795,
-        "first": 0.03475,
-        "avgRank": 7.56275,
-        "p10": 2,
-        "p90": 13,
-        "avgPts": 65.229
+        "avgPts": 68.48375
       },
       {
         "name": "vincemvpcarter",
-        "topThird": 0.34425,
-        "top3": 0.16325,
-        "first": 0.02725,
-        "avgRank": 7.40025,
+        "topThird": 0.36,
+        "top3": 0.1675,
+        "first": 0.02875,
+        "avgRank": 7.3585,
         "p10": 3,
         "p90": 13,
-        "avgPts": 65.76925
+        "avgPts": 65.93125
+      },
+      {
+        "name": "#WashedAutoDraftKing",
+        "topThird": 0.359,
+        "top3": 0.17525,
+        "first": 0.0385,
+        "avgRank": 7.62525,
+        "p10": 3,
+        "p90": 13,
+        "avgPts": 65.1395
       },
       {
         "name": "Herb's Astonishing Team",
-        "topThird": 0.334,
-        "top3": 0.1495,
-        "first": 0.0265,
-        "avgRank": 7.35025,
+        "topThird": 0.33075,
+        "top3": 0.15525,
+        "first": 0.027,
+        "avgRank": 7.33975,
         "p10": 3,
         "p90": 12,
-        "avgPts": 66.42525
+        "avgPts": 66.573
       },
       {
         "name": "The New Day Co-op",
-        "topThird": 0.17475,
-        "top3": 0.03725,
-        "first": 0.002,
-        "avgRank": 7.84925,
+        "topThird": 0.1815,
+        "top3": 0.03775,
+        "first": 0.00225,
+        "avgRank": 7.819,
         "p10": 5,
         "p90": 11,
-        "avgPts": 64.3725
+        "avgPts": 64.389
       },
       {
         "name": "Cole is like that",
-        "topThird": 0.15875,
-        "top3": 0.05025,
-        "first": 0.0045,
-        "avgRank": 8.985,
+        "topThird": 0.14525,
+        "top3": 0.04725,
+        "first": 0.0055,
+        "avgRank": 9.02,
         "p10": 5,
         "p90": 13,
-        "avgPts": 60.20825
+        "avgPts": 60.15275
       },
       {
         "name": "the tinkerballers 🧚🏼‍♀️🌸🎀",
-        "topThird": 0.08725,
-        "top3": 0.02775,
-        "first": 0.0025,
-        "avgRank": 10.54575,
+        "topThird": 0.0895,
+        "top3": 0.0295,
+        "first": 0.0035,
+        "avgRank": 10.61775,
         "p10": 6,
         "p90": 14,
-        "avgPts": 54.719
-      },
-      {
-        "name": "Grilled Teampura",
-        "topThird": 0.07825,
-        "top3": 0.02175,
-        "first": 0.002,
-        "avgRank": 10.88675,
-        "p10": 6,
-        "p90": 15,
-        "avgPts": 53.29275
+        "avgPts": 54.42825
       },
       {
         "name": "Full Court Rex",
-        "topThird": 0.075,
-        "top3": 0.025,
-        "first": 0.00275,
-        "avgRank": 11.0925,
+        "topThird": 0.08125,
+        "top3": 0.02375,
+        "first": 0.0025,
+        "avgRank": 11.0385,
         "p10": 6,
         "p90": 15,
-        "avgPts": 51.39575
+        "avgPts": 51.384
+      },
+      {
+        "name": "Grilled Teampura",
+        "topThird": 0.08025,
+        "top3": 0.024,
+        "first": 0.00175,
+        "avgRank": 10.773,
+        "p10": 6,
+        "p90": 14,
+        "avgPts": 53.68775
       },
       {
         "name": "Fishy Achilles",
-        "topThird": 0.04875,
-        "top3": 0.01575,
-        "first": 0.0025,
-        "avgRank": 11.87325,
+        "topThird": 0.0495,
+        "top3": 0.014,
+        "first": 0.002,
+        "avgRank": 11.89,
         "p10": 7,
         "p90": 15,
-        "avgPts": 49.476
+        "avgPts": 49.30175
       },
       {
         "name": "Super Maru",
-        "topThird": 0.03125,
-        "top3": 0.01025,
-        "first": 0.0005,
-        "avgRank": 12.52,
+        "topThird": 0.0355,
+        "top3": 0.01225,
+        "first": 0.0015,
+        "avgRank": 12.46375,
         "p10": 8,
         "p90": 15,
-        "avgPts": 45.98
+        "avgPts": 46.3095
       }
     ]
   }

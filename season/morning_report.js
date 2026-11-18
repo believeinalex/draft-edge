@@ -173,7 +173,28 @@ async function main() {
     warn.push(`The latest locked lineup (${league.lineupAsOf}) is from an earlier week. Paste this week's Yahoo rosters so the projection uses the right active players.`);
   }
 
-  const lines = prev ? gameLines(prev, cur) : new Map();
+  // Last night's lines: exact ESPN box scores for each game day the snapshots span (the snapshot
+  // dated D holds games through D-1); differencing the rounded snapshots is only the fallback.
+  let lines = new Map();
+  let lineSource = 'box';
+  if (prev) {
+    try {
+      for (let d = prev.asOf; d < cur.asOf; d = addDays(d, 1)) {
+        const day = await fetchDay(d);
+        if (!day.complete) throw new Error(`games on ${d} aren't all final`);
+        for (const pl of day.players) {
+          const k = normName(pl.name);
+          const l = lines.get(k);
+          if (!l) { lines.set(k, { ...pl }); continue; }
+          for (const c of ['games', 'fgm', 'fga', 'ftm', 'fta', ...COUNT]) l[c] += pl[c];
+        }
+      }
+    } catch (e) {
+      warn.push(`Couldn't load ESPN box scores for last night (${e.message}); game lines are differenced from the rounded stat snapshots and can be off by one.`);
+      lines = gameLines(prev, cur);
+      lineSource = 'snapshots';
+    }
+  }
   const lineupFiles = datedFiles(path.join(__dirname, 'lineups'));
   const active = activeLineups(league, lineupFiles.length ? readJson(lineupFiles[lineupFiles.length - 1]) : null, projByName);
   const activeKey = new Map();
@@ -201,7 +222,7 @@ async function main() {
   if (!rated.length) {
     md.push('No games between the last two snapshots.', '');
   } else {
-    md.push(`Games in snapshot ${cur.asOf}. "vs proj" is the game's 8-cat z-score minus the player's projected per-game z-score.`, '');
+    md.push(`Games in snapshot ${cur.asOf} (${lineSource === 'box' ? 'lines from ESPN box scores' : 'lines differenced from rounded stat snapshots'}). "vs proj" is the game's 8-cat z-score minus the player's projected per-game z-score.`, '');
     md.push('**Top performers**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(0, 8).map(row), '');
     md.push('**Stinkers**', '', '| Player | Line | vs proj |', '|---|---|---|', ...rated.slice(-8).reverse().map(row), '');
   }
