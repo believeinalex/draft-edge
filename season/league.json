@@ -11,10 +11,10 @@
   "generatedFrom": "season/draft_2026-10-18.txt",
   "transactionsApplied": 75,
   "asOf": "2026-11-13 08:27",
-  "statsAsOf": "2026-11-17",
+  "statsAsOf": "2026-11-18",
   "lineupAsOf": "2026-11-16",
   "standingsAsOf": "2026-11-17",
-  "injuriesAsOf": "2026-11-17",
+  "injuriesAsOf": "2026-11-18",
   "teams": [
     {
       "name": "Shut Up and Jam Gaiden",
@@ -38,21 +38,21 @@
           "acquiredDate": "2026-10-18",
           "projZ": 13.27,
           "stats": {
-            "gp": 12,
-            "mpg": 35.9,
-            "fgPct": 0.486,
-            "fgm": 12,
-            "fga": 24.7,
-            "ftPct": 0.865,
-            "ftm": 9.6,
-            "fta": 11.1,
+            "gp": 13,
+            "mpg": 36.4,
+            "fgPct": 0.476,
+            "fgm": 12.1,
+            "fga": 25.4,
+            "ftPct": 0.857,
+            "ftm": 9.2,
+            "fta": 10.8,
             "tpm": 5.4,
-            "pts": 39,
-            "treb": 7.2,
-            "ast": 7.8,
-            "stl": 1.9,
+            "pts": 38.8,
+            "treb": 7.1,
+            "ast": 7.7,
+            "stl": 1.8,
             "blk": 0.7,
-            "valueTotal": 18.37,
+            "valueTotal": 17.23,
             "rank": 1
           },
           "injury": null,
@@ -90,7 +90,7 @@
             "ast": 1.3,
             "stl": 0.7,
             "blk": 3,
-            "valueTotal": 7.47,
+            "valueTotal": 7.55,
             "rank": 17
           },
           "injury": {
@@ -131,7 +131,7 @@
             "ast": 8.3,
             "stl": 1.2,
             "blk": 0.2,
-            "valueTotal": 6.75,
+            "valueTotal": 6.77,
             "rank": 22
           },
           "injury": null,
@@ -154,22 +154,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 4.4,
           "stats": {
-            "gp": 12,
-            "mpg": 33.2,
-            "fgPct": 0.476,
-            "fgm": 7.4,
-            "fga": 15.6,
-            "ftPct": 0.825,
-            "ftm": 3.9,
-            "fta": 4.8,
+            "gp": 13,
+            "mpg": 32.9,
+            "fgPct": 0.465,
+            "fgm": 7.2,
+            "fga": 15.5,
+            "ftPct": 0.846,
+            "ftm": 4.2,
+            "fta": 5,
             "tpm": 2.5,
-            "pts": 21.3,
-            "treb": 2.3,
+            "pts": 21.2,
+            "treb": 2.4,
             "ast": 6.9,
             "stl": 0.6,
-            "blk": 0.1,
-            "valueTotal": 3.26,
-            "rank": 56
+            "blk": 0.2,
+            "valueTotal": 3.61,
+            "rank": 51
           },
           "injury": null,
           "thisWeek": {
@@ -205,8 +205,8 @@
             "ast": 4.2,
             "stl": 0.8,
             "blk": 1.2,
-            "valueTotal": 1.14,
-            "rank": 113
+            "valueTotal": 1.22,
+            "rank": 112
           },
           "injury": null,
           "thisWeek": {
@@ -229,22 +229,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.16,
           "stats": {
-            "gp": 11,
-            "mpg": 31.6,
-            "fgPct": 0.399,
-            "fgm": 5.7,
-            "fga": 14.4,
+            "gp": 12,
+            "mpg": 31.8,
+            "fgPct": 0.408,
+            "fgm": 5.8,
+            "fga": 14.1,
             "ftPct": 0.867,
-            "ftm": 3.5,
-            "fta": 4.1,
-            "tpm": 2.6,
-            "pts": 17.5,
-            "treb": 3.8,
-            "ast": 5.6,
-            "stl": 1.2,
+            "ftm": 3.3,
+            "fta": 3.8,
+            "tpm": 2.5,
+            "pts": 17.3,
+            "treb": 3.6,
+            "ast": 5.8,
+            "stl": 1.1,
             "blk": 0.1,
-            "valueTotal": 2.39,
-            "rank": 82
+            "valueTotal": 2.3,
+            "rank": 85
           },
           "injury": null,
           "thisWeek": {
@@ -281,8 +281,8 @@
             "ast": 4.8,
             "stl": 1.2,
             "blk": 0.6,
-            "valueTotal": -1.09,
-            "rank": 160
+            "valueTotal": -1.06,
+            "rank": 158
           },
           "injury": null,
           "thisWeek": {
@@ -318,7 +318,7 @@
             "ast": 3,
             "stl": 1,
             "blk": 0.7,
-            "valueTotal": 2.79,
+            "valueTotal": 2.83,
             "rank": 67
           },
           "injury": null,
@@ -356,8 +356,8 @@
             "ast": 3.4,
             "stl": 1.3,
             "blk": 0.3,
-            "valueTotal": 2.41,
-            "rank": 80
+            "valueTotal": 2.46,
+            "rank": 79
           },
           "injury": null,
           "thisWeek": {
@@ -380,22 +380,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0.13,
           "stats": {
-            "gp": 12,
-            "mpg": 26.6,
-            "fgPct": 0.554,
+            "gp": 13,
+            "mpg": 26.5,
+            "fgPct": 0.56,
             "fgm": 4.7,
             "fga": 8.4,
-            "ftPct": 0.655,
-            "ftm": 1.6,
-            "fta": 2.4,
+            "ftPct": 0.633,
+            "ftm": 1.5,
+            "fta": 2.3,
             "tpm": 0.4,
-            "pts": 11.3,
-            "treb": 7.8,
-            "ast": 2.2,
-            "stl": 1,
+            "pts": 11.2,
+            "treb": 7.7,
+            "ast": 2.4,
+            "stl": 1.2,
             "blk": 0.8,
-            "valueTotal": 0.86,
-            "rank": 119
+            "valueTotal": 1.28,
+            "rank": 106
           },
           "injury": null,
           "thisWeek": {
@@ -432,11 +432,11 @@
             "ast": 3.2,
             "stl": 2.1,
             "blk": 0.7,
-            "valueTotal": 5.02,
+            "valueTotal": 5.1,
             "rank": 32
           },
           "injury": {
-            "status": "Q",
+            "status": "P",
             "note": "Hip"
           },
           "thisWeek": {
@@ -458,22 +458,22 @@
           "acquiredDate": "2026-10-28 09:30",
           "projZ": -0.54,
           "stats": {
-            "gp": 11,
-            "mpg": 16.4,
-            "fgPct": 0.633,
+            "gp": 12,
+            "mpg": 16.3,
+            "fgPct": 0.647,
             "fgm": 2.8,
-            "fga": 4.5,
-            "ftPct": 0.833,
-            "ftm": 0.9,
-            "fta": 1.1,
+            "fga": 4.3,
+            "ftPct": 0.857,
+            "ftm": 1,
+            "fta": 1.2,
             "tpm": 0,
             "pts": 6.5,
-            "treb": 6.5,
-            "ast": 1,
+            "treb": 6.6,
+            "ast": 1.3,
             "stl": 0.8,
-            "blk": 1.1,
-            "valueTotal": 0.02,
-            "rank": 131
+            "blk": 1,
+            "valueTotal": 0.22,
+            "rank": 129
           },
           "injury": null,
           "thisWeek": {
@@ -509,8 +509,8 @@
             "ast": 1.2,
             "stl": 0.5,
             "blk": 0.9,
-            "valueTotal": -1.25,
-            "rank": 162
+            "valueTotal": -1.18,
+            "rank": 161
           },
           "injury": null,
           "thisWeek": {
@@ -546,8 +546,8 @@
             "ast": 3.5,
             "stl": 0.2,
             "blk": 0.8,
-            "valueTotal": -4.66,
-            "rank": 276
+            "valueTotal": -4.58,
+            "rank": 275
           },
           "injury": null,
           "thisWeek": null
@@ -639,23 +639,23 @@
       },
       "projRank": 1,
       "actualTotals": {
-        "fgPct": 0.4893,
-        "ftPct": 0.7956,
-        "tpm": 200,
-        "pts": 2453,
-        "treb": 936,
-        "ast": 645,
-        "stl": 165,
-        "blk": 106
+        "fgPct": 0.4886,
+        "ftPct": 0.7971,
+        "tpm": 210,
+        "pts": 2541,
+        "treb": 961,
+        "ast": 675,
+        "stl": 170,
+        "blk": 109
       },
-      "gamesPlayed": 155,
+      "gamesPlayed": 160,
       "actualRoto": {
         "total": 88,
-        "fgPct": 15,
-        "ftPct": 7,
+        "fgPct": 14,
+        "ftPct": 8,
         "tpm": 3,
-        "pts": 12,
-        "treb": 14,
+        "pts": 13,
+        "treb": 13,
         "ast": 15,
         "stl": 13,
         "blk": 9
@@ -718,22 +718,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 6.15,
           "stats": {
-            "gp": 9,
-            "mpg": 33.6,
-            "fgPct": 0.476,
-            "fgm": 9.8,
-            "fga": 20.6,
-            "ftPct": 0.642,
-            "ftm": 3.8,
+            "gp": 10,
+            "mpg": 33.7,
+            "fgPct": 0.477,
+            "fgm": 9.5,
+            "fga": 19.9,
+            "ftPct": 0.661,
+            "ftm": 3.9,
             "fta": 5.9,
             "tpm": 0.9,
-            "pts": 24.2,
-            "treb": 7.8,
-            "ast": 5,
-            "stl": 2.1,
-            "blk": 0.8,
-            "valueTotal": 4.27,
-            "rank": 38
+            "pts": 23.8,
+            "treb": 7.4,
+            "ast": 4.7,
+            "stl": 1.9,
+            "blk": 0.9,
+            "valueTotal": 4.25,
+            "rank": 40
           },
           "injury": null,
           "thisWeek": {
@@ -770,8 +770,8 @@
             "ast": 4.8,
             "stl": 1.2,
             "blk": 0.6,
-            "valueTotal": 1.89,
-            "rank": 93
+            "valueTotal": 1.93,
+            "rank": 92
           },
           "injury": null,
           "thisWeek": {
@@ -846,8 +846,8 @@
             "ast": 3.6,
             "stl": 1,
             "blk": 0.2,
-            "valueTotal": 2.33,
-            "rank": 85
+            "valueTotal": 2.36,
+            "rank": 83
           },
           "injury": {
             "status": "O",
@@ -886,8 +886,8 @@
             "ast": 0.9,
             "stl": 0.1,
             "blk": 1.3,
-            "valueTotal": 0.43,
-            "rank": 123
+            "valueTotal": 0.5,
+            "rank": 124
           },
           "injury": null,
           "thisWeek": {
@@ -923,13 +923,10 @@
             "ast": 1.8,
             "stl": 0.2,
             "blk": 1.3,
-            "valueTotal": -1.55,
-            "rank": 173
+            "valueTotal": -1.46,
+            "rank": 171
           },
-          "injury": {
-            "status": "P",
-            "note": "Rest"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": "O",
@@ -964,8 +961,8 @@
             "ast": 2.2,
             "stl": 1.4,
             "blk": 0.2,
-            "valueTotal": 1.12,
-            "rank": 115
+            "valueTotal": 1.15,
+            "rank": 116
           },
           "injury": null,
           "thisWeek": {
@@ -988,22 +985,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -1.03,
           "stats": {
-            "gp": 10,
-            "mpg": 29,
-            "fgPct": 0.367,
-            "fgm": 4.4,
-            "fga": 12,
-            "ftPct": 0.679,
+            "gp": 11,
+            "mpg": 28.9,
+            "fgPct": 0.392,
+            "fgm": 4.6,
+            "fga": 11.8,
+            "ftPct": 0.656,
             "ftm": 1.9,
-            "fta": 2.8,
-            "tpm": 1.9,
-            "pts": 12.6,
-            "treb": 6,
-            "ast": 1.6,
+            "fta": 2.9,
+            "tpm": 2.1,
+            "pts": 13.3,
+            "treb": 5.9,
+            "ast": 1.5,
             "stl": 1,
-            "blk": 0.1,
-            "valueTotal": -3.21,
-            "rank": 232
+            "blk": 0.2,
+            "valueTotal": -2.47,
+            "rank": 212
           },
           "injury": null,
           "thisWeek": {
@@ -1039,8 +1036,8 @@
             "ast": 2,
             "stl": 0.3,
             "blk": 1,
-            "valueTotal": -1.25,
-            "rank": 163
+            "valueTotal": -1.19,
+            "rank": 162
           },
           "injury": null,
           "thisWeek": {
@@ -1077,8 +1074,8 @@
             "ast": 1.5,
             "stl": 0.2,
             "blk": 0.2,
-            "valueTotal": -2.38,
-            "rank": 204
+            "valueTotal": -2.34,
+            "rank": 205
           },
           "injury": null,
           "thisWeek": {
@@ -1101,22 +1098,22 @@
           "acquiredDate": "2026-10-27 11:43",
           "projZ": -0.5,
           "stats": {
-            "gp": 13,
-            "mpg": 30.7,
-            "fgPct": 0.375,
-            "fgm": 3.5,
-            "fga": 9.2,
+            "gp": 14,
+            "mpg": 30.9,
+            "fgPct": 0.4,
+            "fgm": 3.9,
+            "fga": 9.6,
             "ftPct": 0.687,
-            "ftm": 1.7,
-            "fta": 2.5,
-            "tpm": 2.2,
-            "pts": 10.8,
-            "treb": 4,
-            "ast": 1.8,
+            "ftm": 1.6,
+            "fta": 2.3,
+            "tpm": 2.5,
+            "pts": 11.8,
+            "treb": 3.8,
+            "ast": 1.9,
             "stl": 1.2,
             "blk": 0.3,
-            "valueTotal": -2.31,
-            "rank": 201
+            "valueTotal": -1.39,
+            "rank": 168
           },
           "injury": null,
           "thisWeek": {
@@ -1153,7 +1150,7 @@
             "ast": 5.5,
             "stl": 1,
             "blk": 0.5,
-            "valueTotal": 1.6,
+            "valueTotal": 1.63,
             "rank": 100
           },
           "injury": null,
@@ -1191,7 +1188,7 @@
             "ast": 5.4,
             "stl": 0.7,
             "blk": 0.1,
-            "valueTotal": 1.54,
+            "valueTotal": 1.58,
             "rank": 101
           },
           "injury": null,
@@ -1335,26 +1332,26 @@
       },
       "projRank": 2,
       "actualTotals": {
-        "fgPct": 0.4552,
-        "ftPct": 0.7774,
-        "tpm": 228,
-        "pts": 2025,
-        "treb": 721,
-        "ast": 510,
-        "stl": 130,
-        "blk": 78
+        "fgPct": 0.4584,
+        "ftPct": 0.7767,
+        "tpm": 240,
+        "pts": 2090,
+        "treb": 731,
+        "ast": 515,
+        "stl": 133,
+        "blk": 81
       },
-      "gamesPlayed": 148,
+      "gamesPlayed": 151,
       "actualRoto": {
-        "total": 38,
+        "total": 39,
         "fgPct": 3,
         "ftPct": 5,
-        "tpm": 7,
+        "tpm": 8,
         "pts": 4,
         "treb": 2,
-        "ast": 10,
+        "ast": 9,
         "stl": 3,
-        "blk": 4
+        "blk": 5
       },
       "actualRank": 15,
       "realTotals": {
@@ -1411,21 +1408,21 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.85,
           "stats": {
-            "gp": 13,
-            "mpg": 33.7,
-            "fgPct": 0.39,
+            "gp": 14,
+            "mpg": 33.8,
+            "fgPct": 0.394,
             "fgm": 4.6,
             "fga": 11.8,
-            "ftPct": 0.878,
+            "ftPct": 0.875,
             "ftm": 5,
             "fta": 5.7,
-            "tpm": 2.2,
+            "tpm": 2.1,
             "pts": 16.4,
-            "treb": 5.4,
-            "ast": 2.2,
+            "treb": 5.3,
+            "ast": 2,
             "stl": 1.1,
-            "blk": 0.7,
-            "valueTotal": 2.56,
+            "blk": 0.8,
+            "valueTotal": 2.61,
             "rank": 76
           },
           "injury": null,
@@ -1463,8 +1460,8 @@
             "ast": 2.3,
             "stl": 0.9,
             "blk": 0.8,
-            "valueTotal": 1.16,
-            "rank": 111
+            "valueTotal": 1.22,
+            "rank": 113
           },
           "injury": null,
           "thisWeek": {
@@ -1500,8 +1497,8 @@
             "ast": 2,
             "stl": 1,
             "blk": 1,
-            "valueTotal": 3.33,
-            "rank": 54
+            "valueTotal": 3.41,
+            "rank": 58
           },
           "injury": {
             "status": "O",
@@ -1527,22 +1524,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.52,
           "stats": {
-            "gp": 13,
-            "mpg": 25.3,
-            "fgPct": 0.375,
-            "fgm": 2.8,
-            "fga": 7.4,
-            "ftPct": 0.833,
+            "gp": 14,
+            "mpg": 25.7,
+            "fgPct": 0.402,
+            "fgm": 3.1,
+            "fga": 7.6,
+            "ftPct": 0.75,
             "ftm": 0.4,
-            "fta": 0.5,
+            "fta": 0.6,
             "tpm": 0.9,
-            "pts": 6.8,
-            "treb": 3.5,
-            "ast": 2.2,
-            "stl": 1.1,
+            "pts": 7.5,
+            "treb": 3.6,
+            "ast": 2.1,
+            "stl": 1,
             "blk": 0.5,
-            "valueTotal": -2.88,
-            "rank": 223
+            "valueTotal": -2.69,
+            "rank": 221
           },
           "injury": null,
           "thisWeek": {
@@ -1578,7 +1575,7 @@
             "ast": 5.4,
             "stl": 0.6,
             "blk": 0.7,
-            "valueTotal": 4.14,
+            "valueTotal": 4.16,
             "rank": 43
           },
           "injury": null,
@@ -1616,8 +1613,8 @@
             "ast": 2.7,
             "stl": 1,
             "blk": 0.5,
-            "valueTotal": 3.21,
-            "rank": 58
+            "valueTotal": 3.23,
+            "rank": 60
           },
           "injury": null,
           "thisWeek": {
@@ -1654,8 +1651,8 @@
             "ast": 5.5,
             "stl": 2.9,
             "blk": 0.3,
-            "valueTotal": 3.27,
-            "rank": 55
+            "valueTotal": 3.34,
+            "rank": 59
           },
           "injury": null,
           "thisWeek": {
@@ -1692,8 +1689,8 @@
             "ast": 2.7,
             "stl": 1.5,
             "blk": 0.4,
-            "valueTotal": 3.68,
-            "rank": 48
+            "valueTotal": 3.69,
+            "rank": 50
           },
           "injury": null,
           "thisWeek": {
@@ -1730,7 +1727,7 @@
             "ast": 3.9,
             "stl": 2,
             "blk": 0.3,
-            "valueTotal": 6.43,
+            "valueTotal": 6.47,
             "rank": 24
           },
           "injury": null,
@@ -1767,8 +1764,8 @@
             "ast": 3.9,
             "stl": 0.7,
             "blk": 0.1,
-            "valueTotal": -0.17,
-            "rank": 136
+            "valueTotal": -0.16,
+            "rank": 138
           },
           "injury": null,
           "thisWeek": {
@@ -1805,7 +1802,7 @@
             "ast": 3.8,
             "stl": 1.2,
             "blk": 0.6,
-            "valueTotal": 2.89,
+            "valueTotal": 2.94,
             "rank": 64
           },
           "injury": null,
@@ -1843,8 +1840,8 @@
             "ast": 2.9,
             "stl": 0.9,
             "blk": 0.5,
-            "valueTotal": -2.92,
-            "rank": 224
+            "valueTotal": -2.88,
+            "rank": 227
           },
           "injury": null,
           "thisWeek": {
@@ -1878,28 +1875,28 @@
       },
       "projRank": 3,
       "actualTotals": {
-        "fgPct": 0.4319,
-        "ftPct": 0.8105,
-        "tpm": 302,
-        "pts": 2191,
-        "treb": 784,
+        "fgPct": 0.4331,
+        "ftPct": 0.8089,
+        "tpm": 304,
+        "pts": 2224,
+        "treb": 793,
         "ast": 503,
-        "stl": 186,
-        "blk": 74
+        "stl": 187,
+        "blk": 77
       },
-      "gamesPlayed": 148,
+      "gamesPlayed": 150,
       "actualRoto": {
-        "total": 64.5,
+        "total": 62.5,
         "fgPct": 1,
         "ftPct": 12,
-        "tpm": 13.5,
+        "tpm": 13,
         "pts": 7,
-        "treb": 6.5,
-        "ast": 8,
+        "treb": 5.5,
+        "ast": 7,
         "stl": 14,
-        "blk": 2.5
+        "blk": 3
       },
-      "actualRank": 8,
+      "actualRank": 10,
       "realTotals": {
         "fgPct": 0.433,
         "ftPct": 0.806,
@@ -1957,21 +1954,21 @@
           "acquiredDate": "2026-10-18",
           "projZ": 14.8,
           "stats": {
-            "gp": 14,
-            "mpg": 29.7,
-            "fgPct": 0.535,
+            "gp": 15,
+            "mpg": 30,
+            "fgPct": 0.53,
             "fgm": 10.5,
-            "fga": 19.6,
-            "ftPct": 0.769,
-            "ftm": 5.7,
-            "fta": 7.4,
+            "fga": 19.9,
+            "ftPct": 0.774,
+            "ftm": 5.5,
+            "fta": 7.1,
             "tpm": 1.9,
-            "pts": 28.6,
-            "treb": 11.6,
+            "pts": 28.4,
+            "treb": 12,
             "ast": 3.3,
             "stl": 1.1,
-            "blk": 4.3,
-            "valueTotal": 16.89,
+            "blk": 4.1,
+            "valueTotal": 16.68,
             "rank": 2
           },
           "injury": null,
@@ -2009,7 +2006,7 @@
             "stl": 1.2,
             "blk": 0.1,
             "valueTotal": 3.56,
-            "rank": 50
+            "rank": 54
           },
           "injury": null,
           "thisWeek": {
@@ -2032,22 +2029,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 1.79,
           "stats": {
-            "gp": 10,
-            "mpg": 29.7,
-            "fgPct": 0.338,
+            "gp": 11,
+            "mpg": 29.8,
+            "fgPct": 0.342,
             "fgm": 2.5,
-            "fga": 7.4,
+            "fga": 7.2,
             "ftPct": 0.6,
             "ftm": 0.3,
             "fta": 0.5,
             "tpm": 1.3,
-            "pts": 6.6,
-            "treb": 6.5,
-            "ast": 3.6,
-            "stl": 1.6,
-            "blk": 0.2,
+            "pts": 6.5,
+            "treb": 6.3,
+            "ast": 3.5,
+            "stl": 1.5,
+            "blk": 0.3,
             "valueTotal": -1.04,
-            "rank": 158
+            "rank": 157
           },
           "injury": null,
           "thisWeek": {
@@ -2084,7 +2081,7 @@
             "ast": 3.7,
             "stl": 1.6,
             "blk": 0.4,
-            "valueTotal": 2.03,
+            "valueTotal": 2.08,
             "rank": 91
           },
           "injury": null,
@@ -2122,8 +2119,8 @@
             "ast": 3.2,
             "stl": 1.2,
             "blk": 0.3,
-            "valueTotal": -1.04,
-            "rank": 159
+            "valueTotal": -1,
+            "rank": 156
           },
           "injury": null,
           "thisWeek": {
@@ -2161,7 +2158,7 @@
             "ast": 2.3,
             "stl": 2.2,
             "blk": 0.3,
-            "valueTotal": 2.08,
+            "valueTotal": 2.13,
             "rank": 90
           },
           "injury": null,
@@ -2222,8 +2219,8 @@
             "ast": 3.4,
             "stl": 1.1,
             "blk": 0.7,
-            "valueTotal": 2.75,
-            "rank": 70
+            "valueTotal": 2.82,
+            "rank": 68
           },
           "injury": {
             "status": "Q",
@@ -2249,22 +2246,22 @@
           "acquiredDate": "2026-10-23 19:06",
           "projZ": 1.99,
           "stats": {
-            "gp": 11,
-            "mpg": 30.4,
-            "fgPct": 0.344,
-            "fgm": 6.7,
+            "gp": 12,
+            "mpg": 30.5,
+            "fgPct": 0.359,
+            "fgm": 7,
             "fga": 19.5,
-            "ftPct": 0.854,
+            "ftPct": 0.864,
             "ftm": 3.2,
             "fta": 3.7,
-            "tpm": 2.6,
-            "pts": 19.2,
-            "treb": 4.6,
-            "ast": 2.4,
-            "stl": 1.1,
-            "blk": 0.7,
-            "valueTotal": -0.25,
-            "rank": 140
+            "tpm": 2.8,
+            "pts": 19.9,
+            "treb": 4.4,
+            "ast": 2.5,
+            "stl": 1,
+            "blk": 0.8,
+            "valueTotal": 0.67,
+            "rank": 121
           },
           "injury": null,
           "thisWeek": {
@@ -2301,8 +2298,8 @@
             "ast": 0.6,
             "stl": 0.7,
             "blk": 0.1,
-            "valueTotal": -5.06,
-            "rank": 291
+            "valueTotal": -5.03,
+            "rank": 292
           },
           "injury": null,
           "thisWeek": {
@@ -2339,8 +2336,8 @@
             "ast": 0.6,
             "stl": 1.1,
             "blk": 1.1,
-            "valueTotal": -1.69,
-            "rank": 180
+            "valueTotal": -1.63,
+            "rank": 177
           },
           "injury": null,
           "thisWeek": {
@@ -2386,22 +2383,22 @@
           "acquiredDate": "2026-11-13 06:50",
           "projZ": 0.74,
           "stats": {
-            "gp": 14,
+            "gp": 15,
             "mpg": 23.4,
-            "fgPct": 0.477,
-            "fgm": 3.8,
+            "fgPct": 0.454,
+            "fgm": 3.6,
             "fga": 7.9,
-            "ftPct": 0.818,
+            "ftPct": 0.792,
             "ftm": 1.3,
             "fta": 1.6,
-            "tpm": 1.5,
-            "pts": 10.4,
-            "treb": 4.3,
+            "tpm": 1.4,
+            "pts": 9.9,
+            "treb": 4.2,
             "ast": 1.7,
             "stl": 0.8,
             "blk": 0.5,
-            "valueTotal": -0.75,
-            "rank": 152
+            "valueTotal": -1.4,
+            "rank": 169
           },
           "injury": null,
           "thisWeek": {
@@ -2438,8 +2435,8 @@
             "ast": 2.3,
             "stl": 0.8,
             "blk": 0.3,
-            "valueTotal": 1.88,
-            "rank": 94
+            "valueTotal": 1.9,
+            "rank": 93
           },
           "injury": null,
           "thisWeek": {
@@ -2667,21 +2664,21 @@
       },
       "projRank": 4,
       "actualTotals": {
-        "fgPct": 0.4534,
-        "ftPct": 0.8115,
-        "tpm": 223,
-        "pts": 2212,
-        "treb": 813,
-        "ast": 486,
-        "stl": 190,
-        "blk": 123
+        "fgPct": 0.4525,
+        "ftPct": 0.8123,
+        "tpm": 231,
+        "pts": 2274,
+        "treb": 840,
+        "ast": 497,
+        "stl": 192,
+        "blk": 128
       },
-      "gamesPlayed": 160,
+      "gamesPlayed": 164,
       "actualRoto": {
-        "total": 73,
+        "total": 74,
         "fgPct": 2,
         "ftPct": 13,
-        "tpm": 5,
+        "tpm": 6,
         "pts": 8,
         "treb": 9,
         "ast": 6,
@@ -2758,7 +2755,7 @@
             "ast": 6.2,
             "stl": 1.9,
             "blk": 0.8,
-            "valueTotal": 9.31,
+            "valueTotal": 9.35,
             "rank": 9
           },
           "injury": null,
@@ -2797,7 +2794,7 @@
             "ast": 4.7,
             "stl": 1.2,
             "blk": 0.3,
-            "valueTotal": 7.76,
+            "valueTotal": 7.78,
             "rank": 16
           },
           "injury": {
@@ -2838,8 +2835,8 @@
             "ast": 1.8,
             "stl": 0.5,
             "blk": 0.8,
-            "valueTotal": 1.15,
-            "rank": 112
+            "valueTotal": 1.18,
+            "rank": 115
           },
           "injury": null,
           "thisWeek": {
@@ -2877,7 +2874,7 @@
             "ast": 4.5,
             "stl": 0.7,
             "blk": 1.2,
-            "valueTotal": 4.22,
+            "valueTotal": 4.28,
             "rank": 39
           },
           "injury": null,
@@ -2914,8 +2911,8 @@
             "ast": 1.9,
             "stl": 1.8,
             "blk": 0.9,
-            "valueTotal": 2.77,
-            "rank": 68
+            "valueTotal": 2.82,
+            "rank": 69
           },
           "injury": {
             "status": "O",
@@ -2941,22 +2938,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.26,
           "stats": {
-            "gp": 13,
-            "mpg": 29.6,
-            "fgPct": 0.399,
-            "fgm": 6.7,
-            "fga": 16.8,
-            "ftPct": 0.633,
-            "ftm": 1.5,
-            "fta": 2.3,
-            "tpm": 2.4,
-            "pts": 17.2,
-            "treb": 8.2,
-            "ast": 2.2,
-            "stl": 0.8,
-            "blk": 0.5,
-            "valueTotal": -0.36,
-            "rank": 142
+            "gp": 14,
+            "mpg": 30.5,
+            "fgPct": 0.403,
+            "fgm": 6.8,
+            "fga": 16.9,
+            "ftPct": 0.647,
+            "ftm": 1.6,
+            "fta": 2.4,
+            "tpm": 2.5,
+            "pts": 17.6,
+            "treb": 8.4,
+            "ast": 2.4,
+            "stl": 0.9,
+            "blk": 0.6,
+            "valueTotal": 0.6,
+            "rank": 122
           },
           "injury": null,
           "thisWeek": {
@@ -2993,11 +2990,11 @@
             "ast": 5.2,
             "stl": 0.7,
             "blk": 0.2,
-            "valueTotal": 5.88,
+            "valueTotal": 5.9,
             "rank": 27
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Hip"
           },
           "thisWeek": {
@@ -3019,22 +3016,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.4,
           "stats": {
-            "gp": 14,
-            "mpg": 33.2,
-            "fgPct": 0.522,
-            "fgm": 6.9,
-            "fga": 13.1,
+            "gp": 15,
+            "mpg": 33.5,
+            "fgPct": 0.53,
+            "fgm": 7.1,
+            "fga": 13.3,
             "ftPct": 0.857,
-            "ftm": 1.7,
-            "fta": 2,
+            "ftm": 1.6,
+            "fta": 1.9,
             "tpm": 1.3,
-            "pts": 16.7,
-            "treb": 6.3,
+            "pts": 17.1,
+            "treb": 6.2,
             "ast": 3.8,
-            "stl": 1,
+            "stl": 1.1,
             "blk": 0.9,
-            "valueTotal": 4.6,
-            "rank": 35
+            "valueTotal": 5.1,
+            "rank": 33
           },
           "injury": null,
           "thisWeek": {
@@ -3072,13 +3069,10 @@
             "ast": 2.8,
             "stl": 1,
             "blk": 0.3,
-            "valueTotal": 4.21,
+            "valueTotal": 4.24,
             "rank": 41
           },
-          "injury": {
-            "status": "Q",
-            "note": "Illness"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": "Q",
@@ -3112,8 +3106,8 @@
             "ast": 3.4,
             "stl": 1,
             "blk": 0.8,
-            "valueTotal": 4.28,
-            "rank": 37
+            "valueTotal": 4.34,
+            "rank": 38
           },
           "injury": null,
           "thisWeek": {
@@ -3211,11 +3205,11 @@
             "ast": 4,
             "stl": 0.7,
             "blk": 0.3,
-            "valueTotal": -2.11,
+            "valueTotal": -2.06,
             "rank": 189
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Back"
           },
           "thisWeek": {
@@ -3281,25 +3275,25 @@
       },
       "projRank": 5,
       "actualTotals": {
-        "fgPct": 0.4665,
-        "ftPct": 0.8364,
-        "tpm": 319,
-        "pts": 2953,
-        "treb": 767,
-        "ast": 607,
-        "stl": 155,
-        "blk": 92
+        "fgPct": 0.4674,
+        "ftPct": 0.8358,
+        "tpm": 324,
+        "pts": 2999,
+        "treb": 783,
+        "ast": 616,
+        "stl": 160,
+        "blk": 95
       },
-      "gamesPlayed": 152,
+      "gamesPlayed": 154,
       "actualRoto": {
-        "total": 87,
+        "total": 88,
         "fgPct": 8,
         "ftPct": 15,
         "tpm": 15,
         "pts": 15,
         "treb": 4,
         "ast": 13,
-        "stl": 9,
+        "stl": 10,
         "blk": 8
       },
       "actualRank": 2,
@@ -3373,7 +3367,7 @@
             "ast": 5.2,
             "stl": 0.9,
             "blk": 1.3,
-            "valueTotal": 7.24,
+            "valueTotal": 7.39,
             "rank": 18
           },
           "injury": null,
@@ -3396,21 +3390,21 @@
           "acquiredDate": "2026-10-18",
           "projZ": 3.81,
           "stats": {
-            "gp": 14,
-            "mpg": 27.4,
+            "gp": 15,
+            "mpg": 27.6,
             "fgPct": 0.416,
-            "fgm": 6.2,
-            "fga": 14.9,
-            "ftPct": 0.758,
-            "ftm": 1.8,
-            "fta": 2.4,
+            "fgm": 6.3,
+            "fga": 15.1,
+            "ftPct": 0.765,
+            "ftm": 1.7,
+            "fta": 2.3,
             "tpm": 3.5,
             "pts": 17.7,
-            "treb": 3.8,
-            "ast": 5.8,
+            "treb": 4.1,
+            "ast": 5.5,
             "stl": 1.9,
             "blk": 0.1,
-            "valueTotal": 3.88,
+            "valueTotal": 3.87,
             "rank": 47
           },
           "injury": null,
@@ -3447,7 +3441,7 @@
             "ast": 2.6,
             "stl": 0.6,
             "blk": 2.1,
-            "valueTotal": 1.37,
+            "valueTotal": 1.43,
             "rank": 103
           },
           "injury": null,
@@ -3484,7 +3478,7 @@
             "ast": 7.5,
             "stl": 1,
             "blk": 0,
-            "valueTotal": 6.01,
+            "valueTotal": 6.11,
             "rank": 26
           },
           "injury": {
@@ -3525,8 +3519,8 @@
             "ast": 4,
             "stl": 0.9,
             "blk": 0.1,
-            "valueTotal": 2.39,
-            "rank": 81
+            "valueTotal": 2.45,
+            "rank": 80
           },
           "injury": null,
           "thisWeek": {
@@ -3562,7 +3556,7 @@
             "ast": 5.5,
             "stl": 1,
             "blk": 0,
-            "valueTotal": 2.11,
+            "valueTotal": 2.15,
             "rank": 89
           },
           "injury": {
@@ -3603,8 +3597,8 @@
             "ast": 0,
             "stl": 0,
             "blk": 0,
-            "valueTotal": -7.68,
-            "rank": 391
+            "valueTotal": -7.67,
+            "rank": 393
           },
           "injury": {
             "status": "O",
@@ -3629,22 +3623,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.92,
           "stats": {
-            "gp": 14,
+            "gp": 15,
             "mpg": 31.4,
-            "fgPct": 0.405,
-            "fgm": 6.1,
-            "fga": 15,
-            "ftPct": 0.884,
-            "ftm": 2.7,
-            "fta": 3.1,
+            "fgPct": 0.4,
+            "fgm": 5.9,
+            "fga": 14.7,
+            "ftPct": 0.86,
+            "ftm": 2.9,
+            "fta": 3.3,
             "tpm": 2.3,
-            "pts": 17.1,
+            "pts": 16.9,
             "treb": 4.3,
-            "ast": 3.9,
+            "ast": 3.7,
             "stl": 1.2,
-            "blk": 0.8,
-            "valueTotal": 2.87,
-            "rank": 65
+            "blk": 0.7,
+            "valueTotal": 2.25,
+            "rank": 86
           },
           "injury": null,
           "thisWeek": {
@@ -3680,8 +3674,8 @@
             "ast": 1.9,
             "stl": 0.6,
             "blk": 1.8,
-            "valueTotal": 1.28,
-            "rank": 105
+            "valueTotal": 1.39,
+            "rank": 104
           },
           "injury": null,
           "thisWeek": null
@@ -3714,7 +3708,7 @@
             "ast": 1.9,
             "stl": 0.9,
             "blk": 0.5,
-            "valueTotal": -2.13,
+            "valueTotal": -2.09,
             "rank": 191
           },
           "injury": null,
@@ -3737,22 +3731,22 @@
           "acquiredDate": "2026-10-23 23:53",
           "projZ": -2.87,
           "stats": {
-            "gp": 12,
+            "gp": 13,
             "mpg": 24.4,
-            "fgPct": 0.54,
-            "fgm": 5.6,
-            "fga": 10.3,
-            "ftPct": 0.6,
-            "ftm": 1.5,
+            "fgPct": 0.536,
+            "fgm": 5.8,
+            "fga": 10.8,
+            "ftPct": 0.636,
+            "ftm": 1.6,
             "fta": 2.5,
-            "tpm": 1.4,
-            "pts": 14.1,
-            "treb": 5.3,
+            "tpm": 1.6,
+            "pts": 14.8,
+            "treb": 5.4,
             "ast": 1.8,
             "stl": 0.5,
             "blk": 0.9,
-            "valueTotal": -0.1,
-            "rank": 134
+            "valueTotal": 0.6,
+            "rank": 123
           },
           "injury": null,
           "thisWeek": {
@@ -3775,22 +3769,22 @@
           "acquiredDate": "2026-10-26 01:17",
           "projZ": -1.55,
           "stats": {
-            "gp": 14,
-            "mpg": 25.9,
-            "fgPct": 0.431,
-            "fgm": 3.1,
-            "fga": 7.3,
+            "gp": 15,
+            "mpg": 26.1,
+            "fgPct": 0.437,
+            "fgm": 3.3,
+            "fga": 7.5,
             "ftPct": 0.909,
             "ftm": 0.7,
-            "fta": 0.8,
-            "tpm": 2.6,
-            "pts": 9.6,
-            "treb": 4.1,
-            "ast": 1.5,
-            "stl": 0.9,
+            "fta": 0.7,
+            "tpm": 2.7,
+            "pts": 9.9,
+            "treb": 4.2,
+            "ast": 1.4,
+            "stl": 0.8,
             "blk": 0.6,
-            "valueTotal": 0.03,
-            "rank": 129
+            "valueTotal": 0.05,
+            "rank": 134
           },
           "injury": null,
           "thisWeek": {
@@ -3813,22 +3807,22 @@
           "acquiredDate": "2026-10-26 01:25",
           "projZ": 1.33,
           "stats": {
-            "gp": 12,
+            "gp": 13,
             "mpg": 26.9,
-            "fgPct": 0.486,
-            "fgm": 2.8,
+            "fgPct": 0.467,
+            "fgm": 2.7,
             "fga": 5.8,
             "ftPct": 0.889,
-            "ftm": 1.3,
-            "fta": 1.5,
+            "ftm": 1.2,
+            "fta": 1.4,
             "tpm": 0.8,
-            "pts": 7.8,
-            "treb": 3.7,
+            "pts": 7.4,
+            "treb": 3.8,
             "ast": 4.2,
-            "stl": 2,
-            "blk": 0.4,
-            "valueTotal": 1.72,
-            "rank": 98
+            "stl": 2.1,
+            "blk": 0.5,
+            "valueTotal": 1.86,
+            "rank": 94
           },
           "injury": null,
           "thisWeek": {
@@ -3851,22 +3845,22 @@
           "acquiredDate": "2026-11-05 22:43",
           "projZ": -2.34,
           "stats": {
-            "gp": 6,
-            "mpg": 22.6,
-            "fgPct": 0.373,
-            "fgm": 3.2,
-            "fga": 8.5,
+            "gp": 7,
+            "mpg": 22.3,
+            "fgPct": 0.351,
+            "fgm": 2.9,
+            "fga": 8.1,
             "ftPct": 0.833,
-            "ftm": 0.8,
-            "fta": 1,
-            "tpm": 2.2,
-            "pts": 9.3,
-            "treb": 3.5,
-            "ast": 3.8,
-            "stl": 1,
+            "ftm": 0.7,
+            "fta": 0.9,
+            "tpm": 2,
+            "pts": 8.4,
+            "treb": 3.3,
+            "ast": 3.4,
+            "stl": 1.3,
             "blk": 0,
-            "valueTotal": -1.67,
-            "rank": 178
+            "valueTotal": -1.96,
+            "rank": 188
           },
           "injury": null,
           "thisWeek": null
@@ -3934,28 +3928,28 @@
       },
       "projRank": 6,
       "actualTotals": {
-        "fgPct": 0.4871,
-        "ftPct": 0.7217,
-        "tpm": 229,
-        "pts": 2102,
-        "treb": 784,
-        "ast": 497,
-        "stl": 149,
-        "blk": 115
+        "fgPct": 0.4841,
+        "ftPct": 0.7278,
+        "tpm": 245,
+        "pts": 2177,
+        "treb": 816,
+        "ast": 506,
+        "stl": 159,
+        "blk": 117
       },
-      "gamesPlayed": 145,
+      "gamesPlayed": 151,
       "actualRoto": {
-        "total": 60,
+        "total": 64,
         "fgPct": 13,
         "ftPct": 1,
-        "tpm": 8,
+        "tpm": 9,
         "pts": 5,
-        "treb": 6.5,
-        "ast": 7,
-        "stl": 6.5,
-        "blk": 13
+        "treb": 7,
+        "ast": 8,
+        "stl": 9,
+        "blk": 12
       },
-      "actualRank": 10,
+      "actualRank": 9,
       "realTotals": {
         "fgPct": 0.496,
         "ftPct": 0.71,
@@ -4017,22 +4011,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 8.38,
           "stats": {
-            "gp": 12,
-            "mpg": 34.7,
+            "gp": 13,
+            "mpg": 34.9,
             "fgPct": 0.477,
-            "fgm": 8.7,
-            "fga": 18.2,
-            "ftPct": 0.862,
-            "ftm": 6.3,
-            "fta": 7.3,
-            "tpm": 2.1,
-            "pts": 25.7,
+            "fgm": 8.9,
+            "fga": 18.7,
+            "ftPct": 0.856,
+            "ftm": 5.9,
+            "fta": 6.9,
+            "tpm": 2,
+            "pts": 25.8,
             "treb": 5.2,
-            "ast": 7.9,
-            "stl": 1.5,
+            "ast": 7.8,
+            "stl": 1.4,
             "blk": 0.9,
-            "valueTotal": 10.07,
-            "rank": 5
+            "valueTotal": 9.58,
+            "rank": 8
           },
           "injury": null,
           "thisWeek": {
@@ -4070,7 +4064,7 @@
             "ast": 1.5,
             "stl": 3.5,
             "blk": 0.5,
-            "valueTotal": 6.87,
+            "valueTotal": 6.85,
             "rank": 21
           },
           "injury": {
@@ -4111,7 +4105,7 @@
             "ast": 7.4,
             "stl": 1,
             "blk": 0.5,
-            "valueTotal": 4.1,
+            "valueTotal": 4.14,
             "rank": 44
           },
           "injury": null,
@@ -4136,22 +4130,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 1.2,
           "stats": {
-            "gp": 11,
-            "mpg": 27.8,
-            "fgPct": 0.505,
-            "fgm": 4.3,
-            "fga": 8.5,
+            "gp": 12,
+            "mpg": 27.9,
+            "fgPct": 0.509,
+            "fgm": 4.5,
+            "fga": 8.8,
             "ftPct": 0.68,
-            "ftm": 1.5,
-            "fta": 2.3,
+            "ftm": 1.4,
+            "fta": 2.1,
             "tpm": 0,
-            "pts": 10.1,
-            "treb": 8.6,
-            "ast": 5,
-            "stl": 1.4,
-            "blk": 0.9,
-            "valueTotal": 2.59,
-            "rank": 75
+            "pts": 10.4,
+            "treb": 8.7,
+            "ast": 5.6,
+            "stl": 1.7,
+            "blk": 0.8,
+            "valueTotal": 3.58,
+            "rank": 53
           },
           "injury": null,
           "thisWeek": null
@@ -4183,8 +4177,8 @@
             "ast": 0.9,
             "stl": 0.5,
             "blk": 1.2,
-            "valueTotal": -1.53,
-            "rank": 172
+            "valueTotal": -1.48,
+            "rank": 173
           },
           "injury": null,
           "thisWeek": {
@@ -4221,8 +4215,8 @@
             "ast": 1.3,
             "stl": 1,
             "blk": 1,
-            "valueTotal": -2.26,
-            "rank": 198
+            "valueTotal": -2.23,
+            "rank": 199
           },
           "injury": null,
           "thisWeek": {
@@ -4258,8 +4252,8 @@
             "ast": 5.4,
             "stl": 1.2,
             "blk": 0.3,
-            "valueTotal": 2.18,
-            "rank": 87
+            "valueTotal": 2.21,
+            "rank": 88
           },
           "injury": null,
           "thisWeek": {
@@ -4297,8 +4291,8 @@
             "ast": 2.9,
             "stl": 0.7,
             "blk": 0.1,
-            "valueTotal": 0.25,
-            "rank": 125
+            "valueTotal": 0.28,
+            "rank": 127
           },
           "injury": null,
           "thisWeek": {
@@ -4320,22 +4314,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.7,
           "stats": {
-            "gp": 11,
+            "gp": 12,
             "mpg": 19.6,
-            "fgPct": 0.576,
+            "fgPct": 0.583,
             "fgm": 3.5,
             "fga": 6,
             "ftPct": 0.65,
-            "ftm": 1.2,
-            "fta": 1.8,
+            "ftm": 1.1,
+            "fta": 1.7,
             "tpm": 0.2,
             "pts": 8.3,
             "treb": 5.3,
-            "ast": 2.1,
-            "stl": 1.2,
-            "blk": 0.9,
-            "valueTotal": -0.23,
-            "rank": 138
+            "ast": 1.9,
+            "stl": 1.1,
+            "blk": 1,
+            "valueTotal": -0.1,
+            "rank": 137
           },
           "injury": null,
           "thisWeek": {
@@ -4371,8 +4365,8 @@
             "ast": 0.8,
             "stl": 0.7,
             "blk": 0.8,
-            "valueTotal": -4.28,
-            "rank": 266
+            "valueTotal": -4.19,
+            "rank": 262
           },
           "injury": null,
           "thisWeek": {
@@ -4409,8 +4403,8 @@
             "ast": 1.3,
             "stl": 1.2,
             "blk": 0.9,
-            "valueTotal": -0.91,
-            "rank": 155
+            "valueTotal": -0.85,
+            "rank": 154
           },
           "injury": null,
           "thisWeek": {
@@ -4433,22 +4427,22 @@
           "acquiredDate": "2026-10-24 23:30",
           "projZ": -0.98,
           "stats": {
-            "gp": 11,
+            "gp": 12,
             "mpg": 23.7,
-            "fgPct": 0.568,
-            "fgm": 3.8,
-            "fga": 6.7,
+            "fgPct": 0.56,
+            "fgm": 3.5,
+            "fga": 6.3,
             "ftPct": 0.857,
-            "ftm": 1.1,
-            "fta": 1.3,
-            "tpm": 1.8,
-            "pts": 10.5,
-            "treb": 2.5,
-            "ast": 2.1,
+            "ftm": 1,
+            "fta": 1.2,
+            "tpm": 1.7,
+            "pts": 9.7,
+            "treb": 2.4,
+            "ast": 2,
             "stl": 1.5,
             "blk": 0.2,
-            "valueTotal": 0.91,
-            "rank": 118
+            "valueTotal": 0.39,
+            "rank": 125
           },
           "injury": null,
           "thisWeek": {
@@ -4484,8 +4478,8 @@
             "ast": 1.6,
             "stl": 0.9,
             "blk": 1.3,
-            "valueTotal": 1.18,
-            "rank": 110
+            "valueTotal": 1.27,
+            "rank": 107
           },
           "injury": {
             "status": "O",
@@ -4524,7 +4518,7 @@
             "ast": 1.3,
             "stl": 0.5,
             "blk": 0.2,
-            "valueTotal": -4.99,
+            "valueTotal": -4.96,
             "rank": 289
           },
           "injury": null,
@@ -4597,24 +4591,24 @@
       },
       "projRank": 7,
       "actualTotals": {
-        "fgPct": 0.4727,
-        "ftPct": 0.7638,
-        "tpm": 153,
-        "pts": 1817,
-        "treb": 857,
-        "ast": 471,
-        "stl": 162,
-        "blk": 108
+        "fgPct": 0.4731,
+        "ftPct": 0.7619,
+        "tpm": 155,
+        "pts": 1867,
+        "treb": 879,
+        "ast": 490,
+        "stl": 168,
+        "blk": 111
       },
-      "gamesPlayed": 156,
+      "gamesPlayed": 160,
       "actualRoto": {
-        "total": 53,
+        "total": 53.5,
         "fgPct": 10,
         "ftPct": 4,
         "tpm": 1,
         "pts": 1,
         "treb": 11,
-        "ast": 4,
+        "ast": 4.5,
         "stl": 12,
         "blk": 10
       },
@@ -4677,22 +4671,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 6.91,
           "stats": {
-            "gp": 13,
-            "mpg": 32.5,
-            "fgPct": 0.534,
-            "fgm": 7.8,
-            "fga": 14.5,
-            "ftPct": 0.765,
-            "ftm": 4,
-            "fta": 5.2,
-            "tpm": 2.1,
-            "pts": 21.6,
-            "treb": 13.9,
-            "ast": 3.6,
+            "gp": 14,
+            "mpg": 32.8,
+            "fgPct": 0.545,
+            "fgm": 7.7,
+            "fga": 14.1,
+            "ftPct": 0.768,
+            "ftm": 3.8,
+            "fta": 4.9,
+            "tpm": 2,
+            "pts": 21.2,
+            "treb": 14.1,
+            "ast": 3.9,
             "stl": 1,
-            "blk": 0.5,
-            "valueTotal": 7.88,
-            "rank": 15
+            "blk": 0.4,
+            "valueTotal": 8.12,
+            "rank": 13
           },
           "injury": null,
           "thisWeek": {
@@ -4729,8 +4723,8 @@
             "ast": 3.6,
             "stl": 0.6,
             "blk": 1.2,
-            "valueTotal": 3.4,
-            "rank": 53
+            "valueTotal": 3.49,
+            "rank": 57
           },
           "injury": {
             "status": "O",
@@ -4770,8 +4764,8 @@
             "ast": 2,
             "stl": 0.3,
             "blk": 1.3,
-            "valueTotal": 0.98,
-            "rank": 116
+            "valueTotal": 1.05,
+            "rank": 117
           },
           "injury": {
             "status": "O",
@@ -4812,10 +4806,13 @@
             "ast": 6.1,
             "stl": 1.1,
             "blk": 0.4,
-            "valueTotal": 4.16,
+            "valueTotal": 4.23,
             "rank": 42
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Foot"
+          },
           "thisWeek": {
             "slot": "SF",
             "status": null,
@@ -4849,13 +4846,10 @@
             "ast": 4.4,
             "stl": 1.3,
             "blk": 0.5,
-            "valueTotal": 6.13,
+            "valueTotal": 6.16,
             "rank": 25
           },
-          "injury": {
-            "status": "Q",
-            "note": "Knee"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "PG",
             "status": "Q",
@@ -4875,22 +4869,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.73,
           "stats": {
-            "gp": 13,
-            "mpg": 25,
-            "fgPct": 0.58,
-            "fgm": 4.5,
-            "fga": 7.7,
-            "ftPct": 0.65,
-            "ftm": 1,
-            "fta": 1.5,
-            "tpm": 1,
-            "pts": 10.9,
-            "treb": 10.4,
-            "ast": 1.5,
-            "stl": 0.5,
-            "blk": 2.3,
-            "valueTotal": 5,
-            "rank": 33
+            "gp": 14,
+            "mpg": 25.6,
+            "fgPct": 0.561,
+            "fgm": 4.6,
+            "fga": 8.1,
+            "ftPct": 0.565,
+            "ftm": 0.9,
+            "fta": 1.6,
+            "tpm": 0.9,
+            "pts": 11,
+            "treb": 10.5,
+            "ast": 1.8,
+            "stl": 0.6,
+            "blk": 2.2,
+            "valueTotal": 4.53,
+            "rank": 37
           },
           "injury": null,
           "thisWeek": {
@@ -4926,8 +4920,8 @@
             "ast": 1.7,
             "stl": 0,
             "blk": 0.7,
-            "valueTotal": -1.37,
-            "rank": 170
+            "valueTotal": -1.31,
+            "rank": 165
           },
           "injury": null,
           "thisWeek": {
@@ -4987,7 +4981,7 @@
             "ast": 2.1,
             "stl": 0.7,
             "blk": 1,
-            "valueTotal": 2.59,
+            "valueTotal": 2.64,
             "rank": 74
           },
           "injury": null,
@@ -5025,8 +5019,8 @@
             "ast": 4,
             "stl": 1.8,
             "blk": 0.1,
-            "valueTotal": -0.68,
-            "rank": 150
+            "valueTotal": -0.66,
+            "rank": 148
           },
           "injury": null,
           "thisWeek": {
@@ -5049,22 +5043,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0.23,
           "stats": {
-            "gp": 12,
-            "mpg": 27,
-            "fgPct": 0.467,
-            "fgm": 2.9,
-            "fga": 6.3,
-            "ftPct": 0.711,
-            "ftm": 2.3,
-            "fta": 3.2,
-            "tpm": 1.1,
-            "pts": 9.2,
-            "treb": 2.8,
-            "ast": 2.4,
+            "gp": 13,
+            "mpg": 28.1,
+            "fgPct": 0.515,
+            "fgm": 3.9,
+            "fga": 7.6,
+            "ftPct": 0.727,
+            "ftm": 2.5,
+            "fta": 3.4,
+            "tpm": 1.8,
+            "pts": 12.1,
+            "treb": 3.1,
+            "ast": 2.5,
             "stl": 1,
             "blk": 0.2,
-            "valueTotal": -3,
-            "rank": 226
+            "valueTotal": -0.84,
+            "rank": 153
           },
           "injury": null,
           "thisWeek": {
@@ -5101,8 +5095,8 @@
             "ast": 1.3,
             "stl": 0.6,
             "blk": 0.9,
-            "valueTotal": -0.5,
-            "rank": 148
+            "valueTotal": -0.46,
+            "rank": 146
           },
           "injury": null,
           "thisWeek": {
@@ -5125,22 +5119,22 @@
           "acquiredDate": "2026-11-01 12:14",
           "projZ": -2.36,
           "stats": {
-            "gp": 11,
-            "mpg": 28.8,
-            "fgPct": 0.534,
-            "fgm": 4.3,
-            "fga": 8,
-            "ftPct": 0.643,
-            "ftm": 0.8,
-            "fta": 1.3,
-            "tpm": 2.2,
-            "pts": 11.5,
-            "treb": 4.8,
+            "gp": 12,
+            "mpg": 28.7,
+            "fgPct": 0.527,
+            "fgm": 4,
+            "fga": 7.6,
+            "ftPct": 0.6,
+            "ftm": 1,
+            "fta": 1.7,
+            "tpm": 2,
+            "pts": 11,
+            "treb": 4.5,
             "ast": 1.3,
-            "stl": 1,
+            "stl": 0.9,
             "blk": 1.1,
-            "valueTotal": 1.8,
-            "rank": 96
+            "valueTotal": 0.73,
+            "rank": 120
           },
           "injury": null,
           "thisWeek": {
@@ -5182,28 +5176,28 @@
       },
       "projRank": 8,
       "actualTotals": {
-        "fgPct": 0.4888,
-        "ftPct": 0.7334,
-        "tpm": 265,
-        "pts": 2123,
-        "treb": 929,
-        "ast": 405,
-        "stl": 122,
-        "blk": 116
+        "fgPct": 0.492,
+        "ftPct": 0.7279,
+        "tpm": 275,
+        "pts": 2204,
+        "treb": 966,
+        "ast": 424,
+        "stl": 126,
+        "blk": 118
       },
-      "gamesPlayed": 140,
+      "gamesPlayed": 144,
       "actualRoto": {
-        "total": 63,
-        "fgPct": 14,
+        "total": 64.5,
+        "fgPct": 15,
         "ftPct": 2,
         "tpm": 11,
         "pts": 6,
-        "treb": 13,
+        "treb": 14,
         "ast": 1,
         "stl": 2,
-        "blk": 14
+        "blk": 13.5
       },
-      "actualRank": 9,
+      "actualRank": 8,
       "realTotals": {
         "fgPct": 0.497,
         "ftPct": 0.739,
@@ -5259,22 +5253,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 4.01,
           "stats": {
-            "gp": 13,
+            "gp": 14,
             "mpg": 34.3,
-            "fgPct": 0.434,
+            "fgPct": 0.435,
             "fgm": 9.1,
-            "fga": 20.9,
-            "ftPct": 0.798,
-            "ftm": 5.8,
+            "fga": 21,
+            "ftPct": 0.812,
+            "ftm": 5.9,
             "fta": 7.2,
-            "tpm": 2.8,
-            "pts": 26.7,
-            "treb": 2.8,
+            "tpm": 2.9,
+            "pts": 27,
+            "treb": 2.9,
             "ast": 5.9,
-            "stl": 0.8,
-            "blk": 0.3,
-            "valueTotal": 3.18,
-            "rank": 60
+            "stl": 0.7,
+            "blk": 0.4,
+            "valueTotal": 3.79,
+            "rank": 48
           },
           "injury": null,
           "thisWeek": {
@@ -5312,7 +5306,7 @@
             "ast": 3.9,
             "stl": 0.5,
             "blk": 1.1,
-            "valueTotal": 5.85,
+            "valueTotal": 5.89,
             "rank": 28
           },
           "injury": null,
@@ -5349,8 +5343,8 @@
             "ast": 1.5,
             "stl": 0.7,
             "blk": 1.3,
-            "valueTotal": 2.53,
-            "rank": 77
+            "valueTotal": 2.63,
+            "rank": 75
           },
           "injury": null,
           "thisWeek": {
@@ -5387,7 +5381,7 @@
             "ast": 4.2,
             "stl": 0.9,
             "blk": 0.2,
-            "valueTotal": 1.85,
+            "valueTotal": 1.86,
             "rank": 95
           },
           "injury": null,
@@ -5426,7 +5420,7 @@
             "ast": 1.6,
             "stl": 0.5,
             "blk": 0.9,
-            "valueTotal": -2.12,
+            "valueTotal": -2.08,
             "rank": 190
           },
           "injury": null,
@@ -5463,8 +5457,8 @@
             "ast": 1.4,
             "stl": 0.1,
             "blk": 1.7,
-            "valueTotal": 0.03,
-            "rank": 130
+            "valueTotal": 0.13,
+            "rank": 132
           },
           "injury": null,
           "thisWeek": {
@@ -5500,8 +5494,8 @@
             "ast": 1.1,
             "stl": 0.8,
             "blk": 0.8,
-            "valueTotal": 2.14,
-            "rank": 88
+            "valueTotal": 2.21,
+            "rank": 87
           },
           "injury": null,
           "thisWeek": {
@@ -5524,22 +5518,22 @@
           "acquiredDate": "2026-10-21 04:06",
           "projZ": -2.96,
           "stats": {
-            "gp": 14,
-            "mpg": 24.5,
-            "fgPct": 0.475,
-            "fgm": 3.4,
-            "fga": 7.1,
+            "gp": 15,
+            "mpg": 23.9,
+            "fgPct": 0.471,
+            "fgm": 3.3,
+            "fga": 6.9,
             "ftPct": 0.703,
-            "ftm": 1.9,
-            "fta": 2.6,
-            "tpm": 0.4,
-            "pts": 8.9,
-            "treb": 5.9,
-            "ast": 2.4,
-            "stl": 0.8,
+            "ftm": 1.7,
+            "fta": 2.5,
+            "tpm": 0.3,
+            "pts": 8.6,
+            "treb": 5.6,
+            "ast": 2.3,
+            "stl": 0.7,
             "blk": 0,
-            "valueTotal": -3.22,
-            "rank": 233
+            "valueTotal": -3.63,
+            "rank": 246
           },
           "injury": null,
           "thisWeek": {
@@ -5576,8 +5570,8 @@
             "ast": 2.1,
             "stl": 1.3,
             "blk": 0.2,
-            "valueTotal": 2.38,
-            "rank": 83
+            "valueTotal": 2.39,
+            "rank": 82
           },
           "injury": {
             "status": "O",
@@ -5617,10 +5611,13 @@
             "ast": 3.9,
             "stl": 1.1,
             "blk": 0.5,
-            "valueTotal": 1.2,
-            "rank": 108
+            "valueTotal": 1.23,
+            "rank": 110
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Calf"
+          },
           "thisWeek": null
         },
         {
@@ -5651,7 +5648,7 @@
             "ast": 5.5,
             "stl": 1.4,
             "blk": 0.4,
-            "valueTotal": 6.62,
+            "valueTotal": 6.67,
             "rank": 23
           },
           "injury": null,
@@ -5689,8 +5686,8 @@
             "ast": 2.1,
             "stl": 0.2,
             "blk": 0.8,
-            "valueTotal": 1.2,
-            "rank": 109
+            "valueTotal": 1.22,
+            "rank": 111
           },
           "injury": null,
           "thisWeek": {
@@ -5822,24 +5819,24 @@
       },
       "projRank": 9,
       "actualTotals": {
-        "fgPct": 0.4799,
-        "ftPct": 0.7996,
-        "tpm": 302,
-        "pts": 2588,
-        "treb": 758,
-        "ast": 482,
-        "stl": 121,
-        "blk": 111
+        "fgPct": 0.4791,
+        "ftPct": 0.7988,
+        "tpm": 305,
+        "pts": 2623,
+        "treb": 764,
+        "ast": 489,
+        "stl": 120,
+        "blk": 113
       },
-      "gamesPlayed": 161,
+      "gamesPlayed": 163,
       "actualRoto": {
-        "total": 68.5,
-        "fgPct": 12,
+        "total": 66,
+        "fgPct": 11,
         "ftPct": 9,
-        "tpm": 13.5,
+        "tpm": 14,
         "pts": 14,
         "treb": 3,
-        "ast": 5,
+        "ast": 3,
         "stl": 1,
         "blk": 11
       },
@@ -5915,7 +5912,7 @@
             "ast": 1.9,
             "stl": 1.2,
             "blk": 2.2,
-            "valueTotal": 7.02,
+            "valueTotal": 7.16,
             "rank": 19
           },
           "injury": {
@@ -5956,7 +5953,7 @@
             "ast": 2,
             "stl": 1.2,
             "blk": 1.2,
-            "valueTotal": 8.06,
+            "valueTotal": 8.14,
             "rank": 12
           },
           "injury": null,
@@ -5994,8 +5991,8 @@
             "ast": 2,
             "stl": 0.6,
             "blk": 0.6,
-            "valueTotal": 2.32,
-            "rank": 86
+            "valueTotal": 2.33,
+            "rank": 84
           },
           "injury": {
             "status": "O",
@@ -6021,22 +6018,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.15,
           "stats": {
-            "gp": 13,
-            "mpg": 32.7,
-            "fgPct": 0.424,
-            "fgm": 6.6,
-            "fga": 15.6,
-            "ftPct": 0.817,
+            "gp": 14,
+            "mpg": 32.9,
+            "fgPct": 0.436,
+            "fgm": 6.9,
+            "fga": 15.7,
+            "ftPct": 0.83,
             "ftm": 5.2,
             "fta": 6.3,
-            "tpm": 1.9,
-            "pts": 20.3,
-            "treb": 4.5,
-            "ast": 6.6,
+            "tpm": 2.1,
+            "pts": 21,
+            "treb": 4.3,
+            "ast": 6.9,
             "stl": 0.8,
-            "blk": 0.2,
-            "valueTotal": 2.51,
-            "rank": 78
+            "blk": 0.3,
+            "valueTotal": 3.69,
+            "rank": 49
           },
           "injury": null,
           "thisWeek": {
@@ -6059,22 +6056,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.15,
           "stats": {
-            "gp": 12,
-            "mpg": 24.3,
-            "fgPct": 0.464,
+            "gp": 13,
+            "mpg": 25,
+            "fgPct": 0.476,
             "fgm": 3.8,
-            "fga": 8.1,
+            "fga": 7.9,
             "ftPct": 0.828,
-            "ftm": 2,
-            "fta": 2.4,
-            "tpm": 0.6,
-            "pts": 10.1,
-            "treb": 5.2,
+            "ftm": 1.8,
+            "fta": 2.2,
+            "tpm": 0.5,
+            "pts": 9.9,
+            "treb": 4.8,
             "ast": 1.8,
             "stl": 1.1,
-            "blk": 1.1,
-            "valueTotal": 0.56,
-            "rank": 122
+            "blk": 1.2,
+            "valueTotal": 0.74,
+            "rank": 119
           },
           "injury": null,
           "thisWeek": {
@@ -6110,7 +6107,7 @@
             "ast": 4.4,
             "stl": 1.6,
             "blk": 0.6,
-            "valueTotal": 2.85,
+            "valueTotal": 2.88,
             "rank": 66
           },
           "injury": {
@@ -6151,13 +6148,10 @@
             "ast": 3.9,
             "stl": 0.8,
             "blk": 0.3,
-            "valueTotal": -1.65,
-            "rank": 177
+            "valueTotal": -1.63,
+            "rank": 178
           },
-          "injury": {
-            "status": "Q",
-            "note": "Illness"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "Util",
             "status": "Q",
@@ -6178,24 +6172,27 @@
           "acquiredDate": "2026-10-18",
           "projZ": 1.63,
           "stats": {
-            "gp": 14,
-            "mpg": 31.6,
-            "fgPct": 0.5,
+            "gp": 15,
+            "mpg": 31.8,
+            "fgPct": 0.505,
             "fgm": 7.1,
             "fga": 14.1,
-            "ftPct": 0.872,
-            "ftm": 2.9,
-            "fta": 3.4,
-            "tpm": 1.2,
-            "pts": 18.3,
-            "treb": 5.5,
-            "ast": 4.7,
-            "stl": 1,
+            "ftPct": 0.865,
+            "ftm": 3,
+            "fta": 3.5,
+            "tpm": 1.1,
+            "pts": 18.4,
+            "treb": 5.4,
+            "ast": 4.5,
+            "stl": 0.9,
             "blk": 0.1,
-            "valueTotal": 3.24,
-            "rank": 57
+            "valueTotal": 2.94,
+            "rank": 63
           },
-          "injury": null,
+          "injury": {
+            "status": "Q",
+            "note": "Undisclosed"
+          },
           "thisWeek": null
         },
         {
@@ -6211,22 +6208,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.55,
           "stats": {
-            "gp": 13,
-            "mpg": 29,
-            "fgPct": 0.393,
-            "fgm": 5.5,
-            "fga": 14.1,
-            "ftPct": 0.89,
-            "ftm": 5.6,
-            "fta": 6.3,
-            "tpm": 3,
-            "pts": 19.7,
+            "gp": 14,
+            "mpg": 29.1,
+            "fgPct": 0.396,
+            "fgm": 5.7,
+            "fga": 14.4,
+            "ftPct": 0.885,
+            "ftm": 5.5,
+            "fta": 6.2,
+            "tpm": 3.1,
+            "pts": 20.1,
             "treb": 3,
-            "ast": 4.3,
+            "ast": 4.4,
             "stl": 0.7,
-            "blk": 0.2,
-            "valueTotal": 2.49,
-            "rank": 79
+            "blk": 0.1,
+            "valueTotal": 2.39,
+            "rank": 81
           },
           "injury": null,
           "thisWeek": {
@@ -6263,7 +6260,7 @@
             "ast": 2.6,
             "stl": 1.9,
             "blk": 0.6,
-            "valueTotal": 5.36,
+            "valueTotal": 5.45,
             "rank": 31
           },
           "injury": null,
@@ -6286,22 +6283,22 @@
           "acquiredDate": "2026-11-09 22:12",
           "projZ": -0.85,
           "stats": {
-            "gp": 11,
-            "mpg": 23.3,
-            "fgPct": 0.627,
-            "fgm": 3.8,
-            "fga": 6.1,
-            "ftPct": 0.588,
+            "gp": 12,
+            "mpg": 22.9,
+            "fgPct": 0.614,
+            "fgm": 3.6,
+            "fga": 5.8,
+            "ftPct": 0.579,
             "ftm": 0.9,
-            "fta": 1.5,
+            "fta": 1.6,
             "tpm": 0,
-            "pts": 8.5,
+            "pts": 8.1,
             "treb": 6.5,
             "ast": 1.3,
             "stl": 0.8,
             "blk": 0.7,
-            "valueTotal": -1.2,
-            "rank": 161
+            "valueTotal": -1.46,
+            "rank": 170
           },
           "injury": null,
           "thisWeek": {
@@ -6338,12 +6335,12 @@
             "ast": 2.5,
             "stl": 0.7,
             "blk": 1.5,
-            "valueTotal": -1.69,
+            "valueTotal": -1.63,
             "rank": 179
           },
           "injury": {
             "status": "Q",
-            "note": "Head"
+            "note": "Back"
           },
           "thisWeek": {
             "slot": "Util",
@@ -6474,28 +6471,28 @@
       },
       "projRank": 10,
       "actualTotals": {
-        "fgPct": 0.4796,
-        "ftPct": 0.8079,
-        "tpm": 172,
-        "pts": 2343,
-        "treb": 877,
-        "ast": 469,
-        "stl": 153,
-        "blk": 114
+        "fgPct": 0.4817,
+        "ftPct": 0.8064,
+        "tpm": 180,
+        "pts": 2429,
+        "treb": 892,
+        "ast": 490,
+        "stl": 155,
+        "blk": 118
       },
-      "gamesPlayed": 146,
+      "gamesPlayed": 151,
       "actualRoto": {
-        "total": 70,
-        "fgPct": 11,
+        "total": 72.5,
+        "fgPct": 12,
         "ftPct": 11,
         "tpm": 2,
         "pts": 11,
         "treb": 12,
-        "ast": 3,
-        "stl": 8,
-        "blk": 12
+        "ast": 4.5,
+        "stl": 6.5,
+        "blk": 13.5
       },
-      "actualRank": 6,
+      "actualRank": 4,
       "realTotals": {
         "fgPct": 0.482,
         "ftPct": 0.807,
@@ -6567,8 +6564,8 @@
             "ast": 4.4,
             "stl": 0.9,
             "blk": 0.9,
-            "valueTotal": 7.99,
-            "rank": 13
+            "valueTotal": 8.02,
+            "rank": 14
           },
           "injury": null,
           "thisWeek": {
@@ -6605,13 +6602,10 @@
             "ast": 6.9,
             "stl": 1.2,
             "blk": 0.7,
-            "valueTotal": 2.64,
+            "valueTotal": 2.69,
             "rank": 72
           },
-          "injury": {
-            "status": "P",
-            "note": "Back"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "SF",
             "status": "O",
@@ -6645,8 +6639,8 @@
             "ast": 6,
             "stl": 0.9,
             "blk": 0.9,
-            "valueTotal": 9.9,
-            "rank": 7
+            "valueTotal": 9.95,
+            "rank": 6
           },
           "injury": null,
           "thisWeek": {
@@ -6682,7 +6676,7 @@
             "ast": 2.5,
             "stl": 1.1,
             "blk": 0.9,
-            "valueTotal": 2.97,
+            "valueTotal": 3.04,
             "rank": 62
           },
           "injury": null,
@@ -6720,7 +6714,7 @@
             "ast": 3.4,
             "stl": 1.5,
             "blk": 0.4,
-            "valueTotal": 4.52,
+            "valueTotal": 4.56,
             "rank": 36
           },
           "injury": null,
@@ -6758,8 +6752,8 @@
             "ast": 2.7,
             "stl": 0.5,
             "blk": 0.2,
-            "valueTotal": -5.34,
-            "rank": 308
+            "valueTotal": -5.31,
+            "rank": 307
           },
           "injury": null,
           "thisWeek": {
@@ -6796,7 +6790,7 @@
             "ast": 7.6,
             "stl": 0.5,
             "blk": 0.2,
-            "valueTotal": 2.63,
+            "valueTotal": 2.65,
             "rank": 73
           },
           "injury": {
@@ -6824,22 +6818,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -1.29,
           "stats": {
-            "gp": 13,
-            "mpg": 33.7,
-            "fgPct": 0.468,
-            "fgm": 8,
+            "gp": 14,
+            "mpg": 34.1,
+            "fgPct": 0.473,
+            "fgm": 8.1,
             "fga": 17.1,
-            "ftPct": 0.632,
-            "ftm": 3.3,
-            "fta": 5.2,
+            "ftPct": 0.608,
+            "ftm": 3.2,
+            "fta": 5.3,
             "tpm": 1.5,
-            "pts": 20.8,
-            "treb": 6.5,
-            "ast": 4.3,
-            "stl": 0.5,
+            "pts": 20.9,
+            "treb": 6.4,
+            "ast": 4.4,
+            "stl": 0.4,
             "blk": 0.5,
-            "valueTotal": -0.43,
-            "rank": 145
+            "valueTotal": -0.83,
+            "rank": 151
           },
           "injury": null,
           "thisWeek": {
@@ -6861,22 +6855,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -1.57,
           "stats": {
-            "gp": 11,
-            "mpg": 28.8,
-            "fgPct": 0.603,
-            "fgm": 3.7,
-            "fga": 6.2,
-            "ftPct": 0.739,
+            "gp": 12,
+            "mpg": 29.5,
+            "fgPct": 0.614,
+            "fgm": 3.6,
+            "fga": 5.8,
+            "ftPct": 0.72,
             "ftm": 1.5,
             "fta": 2.1,
             "tpm": 0,
-            "pts": 9,
-            "treb": 9.7,
+            "pts": 8.7,
+            "treb": 10.3,
             "ast": 2.1,
-            "stl": 1.3,
+            "stl": 1.2,
             "blk": 1.1,
-            "valueTotal": 2.93,
-            "rank": 63
+            "valueTotal": 2.91,
+            "rank": 65
           },
           "injury": null,
           "thisWeek": {
@@ -6914,7 +6908,7 @@
             "ast": 5.6,
             "stl": 1.9,
             "blk": 0.8,
-            "valueTotal": 5.84,
+            "valueTotal": 5.89,
             "rank": 29
           },
           "injury": null,
@@ -6952,8 +6946,8 @@
             "ast": 1.8,
             "stl": 0.7,
             "blk": 0.3,
-            "valueTotal": -2.6,
-            "rank": 212
+            "valueTotal": -2.58,
+            "rank": 219
           },
           "injury": null,
           "thisWeek": {
@@ -6990,11 +6984,11 @@
             "ast": 1.2,
             "stl": 0.3,
             "blk": 0,
-            "valueTotal": -6.6,
-            "rank": 351
+            "valueTotal": -6.58,
+            "rank": 352
           },
           "injury": {
-            "status": "D",
+            "status": "O",
             "note": "Foot"
           },
           "thisWeek": {
@@ -7028,23 +7022,23 @@
       },
       "projRank": 11,
       "actualTotals": {
-        "fgPct": 0.4654,
-        "ftPct": 0.8013,
-        "tpm": 227,
-        "pts": 2324,
-        "treb": 771,
-        "ast": 573,
+        "fgPct": 0.4672,
+        "ftPct": 0.7949,
+        "tpm": 229,
+        "pts": 2351,
+        "treb": 793,
+        "ast": 581,
         "stl": 134,
-        "blk": 84
+        "blk": 85
       },
-      "gamesPlayed": 144,
+      "gamesPlayed": 146,
       "actualRoto": {
-        "total": 58,
-        "fgPct": 6,
-        "ftPct": 10,
-        "tpm": 6,
+        "total": 55.5,
+        "fgPct": 7,
+        "ftPct": 7,
+        "tpm": 5,
         "pts": 10,
-        "treb": 5,
+        "treb": 5.5,
         "ast": 11,
         "stl": 4,
         "blk": 6
@@ -7117,7 +7111,7 @@
             "ast": 8.9,
             "stl": 1.8,
             "blk": 1.1,
-            "valueTotal": 13.62,
+            "valueTotal": 13.7,
             "rank": 3
           },
           "injury": null,
@@ -7155,8 +7149,8 @@
             "ast": 7.1,
             "stl": 0.7,
             "blk": 0.8,
-            "valueTotal": 7.92,
-            "rank": 14
+            "valueTotal": 7.93,
+            "rank": 15
           },
           "injury": null,
           "thisWeek": {
@@ -7179,22 +7173,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0.61,
           "stats": {
-            "gp": 13,
-            "mpg": 28.8,
-            "fgPct": 0.479,
+            "gp": 14,
+            "mpg": 29.1,
+            "fgPct": 0.451,
             "fgm": 4.3,
-            "fga": 9,
+            "fga": 9.5,
             "ftPct": 0.789,
-            "ftm": 1.2,
-            "fta": 1.5,
+            "ftm": 1.1,
+            "fta": 1.4,
             "tpm": 2.6,
-            "pts": 12.4,
-            "treb": 3.2,
+            "pts": 12.2,
+            "treb": 3.5,
             "ast": 1.3,
-            "stl": 0.8,
-            "blk": 0.5,
-            "valueTotal": -0.05,
-            "rank": 133
+            "stl": 0.9,
+            "blk": 0.4,
+            "valueTotal": -0.44,
+            "rank": 145
           },
           "injury": null,
           "thisWeek": {
@@ -7230,7 +7224,7 @@
             "ast": 9.2,
             "stl": 1.4,
             "blk": 0.6,
-            "valueTotal": 5.57,
+            "valueTotal": 5.62,
             "rank": 30
           },
           "injury": null,
@@ -7267,8 +7261,8 @@
             "ast": 1.8,
             "stl": 1.3,
             "blk": 2.3,
-            "valueTotal": 2.37,
-            "rank": 84
+            "valueTotal": 2.5,
+            "rank": 78
           },
           "injury": null,
           "thisWeek": {
@@ -7291,22 +7285,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0.01,
           "stats": {
-            "gp": 13,
-            "mpg": 26.2,
-            "fgPct": 0.482,
-            "fgm": 4.1,
-            "fga": 8.5,
-            "ftPct": 0.9,
-            "ftm": 2.1,
-            "fta": 2.3,
-            "tpm": 2.3,
-            "pts": 12.5,
-            "treb": 3.5,
-            "ast": 3.8,
-            "stl": 0.9,
+            "gp": 14,
+            "mpg": 26.5,
+            "fgPct": 0.465,
+            "fgm": 4.3,
+            "fga": 9.2,
+            "ftPct": 0.861,
+            "ftm": 2.2,
+            "fta": 2.6,
+            "tpm": 2.5,
+            "pts": 13.3,
+            "treb": 3.6,
+            "ast": 4,
+            "stl": 1,
             "blk": 0.2,
-            "valueTotal": 1.54,
-            "rank": 102
+            "valueTotal": 1.75,
+            "rank": 96
           },
           "injury": null,
           "thisWeek": {
@@ -7367,13 +7361,10 @@
             "ast": 3.5,
             "stl": 1.3,
             "blk": 0.1,
-            "valueTotal": 1.23,
-            "rank": 107
+            "valueTotal": 1.25,
+            "rank": 108
           },
-          "injury": {
-            "status": "O",
-            "note": "Illness"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": "O",
@@ -7408,7 +7399,7 @@
             "stl": 0.8,
             "blk": 0.1,
             "valueTotal": -3.5,
-            "rank": 240
+            "rank": 242
           },
           "injury": null,
           "thisWeek": {
@@ -7431,21 +7422,21 @@
           "acquiredDate": "2026-10-18",
           "projZ": -4.44,
           "stats": {
-            "gp": 13,
-            "mpg": 25.1,
-            "fgPct": 0.467,
-            "fgm": 2.2,
+            "gp": 14,
+            "mpg": 24.9,
+            "fgPct": 0.462,
+            "fgm": 2.1,
             "fga": 4.6,
             "ftPct": 0.562,
-            "ftm": 0.7,
-            "fta": 1.2,
-            "tpm": 1.1,
-            "pts": 6.1,
-            "treb": 3.9,
+            "ftm": 0.6,
+            "fta": 1.1,
+            "tpm": 1,
+            "pts": 5.9,
+            "treb": 4,
             "ast": 2.2,
-            "stl": 1.2,
-            "blk": 0.8,
-            "valueTotal": -1.58,
+            "stl": 1.1,
+            "blk": 0.9,
+            "valueTotal": -1.54,
             "rank": 175
           },
           "injury": null,
@@ -7482,8 +7473,8 @@
             "ast": 2.2,
             "stl": 1,
             "blk": 0.2,
-            "valueTotal": -3.91,
-            "rank": 252
+            "valueTotal": -3.87,
+            "rank": 251
           },
           "injury": {
             "status": "O",
@@ -7522,8 +7513,8 @@
             "ast": 4.7,
             "stl": 1,
             "blk": 0.2,
-            "valueTotal": 2.77,
-            "rank": 69
+            "valueTotal": 2.8,
+            "rank": 70
           },
           "injury": null,
           "thisWeek": {
@@ -7546,22 +7537,22 @@
           "acquiredDate": "2026-11-09 08:40",
           "projZ": -1.79,
           "stats": {
-            "gp": 12,
-            "mpg": 28.1,
-            "fgPct": 0.441,
-            "fgm": 4.3,
-            "fga": 9.8,
+            "gp": 13,
+            "mpg": 28.9,
+            "fgPct": 0.453,
+            "fgm": 4.8,
+            "fga": 10.7,
             "ftPct": 0.906,
-            "ftm": 2.4,
-            "fta": 2.7,
-            "tpm": 2.1,
-            "pts": 13.2,
-            "treb": 3.6,
-            "ast": 4.3,
+            "ftm": 2.2,
+            "fta": 2.5,
+            "tpm": 2.2,
+            "pts": 14.1,
+            "treb": 3.7,
+            "ast": 4.4,
             "stl": 1,
             "blk": 0.1,
-            "valueTotal": 1.24,
-            "rank": 106
+            "valueTotal": 1.67,
+            "rank": 99
           },
           "injury": null,
           "thisWeek": {
@@ -7615,16 +7606,16 @@
       },
       "projRank": 12,
       "actualTotals": {
-        "fgPct": 0.4621,
-        "ftPct": 0.8281,
-        "tpm": 236,
-        "pts": 1985,
-        "treb": 615,
-        "ast": 626,
-        "stl": 145,
-        "blk": 68
+        "fgPct": 0.4588,
+        "ftPct": 0.822,
+        "tpm": 247,
+        "pts": 2047,
+        "treb": 638,
+        "ast": 642,
+        "stl": 150,
+        "blk": 69
       },
-      "gamesPlayed": 132,
+      "gamesPlayed": 136,
       "actualRoto": {
         "total": 51,
         "fgPct": 4,
@@ -7705,8 +7696,8 @@
             "ast": 3.5,
             "stl": 2,
             "blk": 0.8,
-            "valueTotal": 9.84,
-            "rank": 8
+            "valueTotal": 9.89,
+            "rank": 7
           },
           "injury": {
             "status": "O",
@@ -7745,8 +7736,8 @@
             "ast": 3.5,
             "stl": 0.8,
             "blk": 0.8,
-            "valueTotal": 3.57,
-            "rank": 49
+            "valueTotal": 3.58,
+            "rank": 52
           },
           "injury": null,
           "thisWeek": {
@@ -7783,7 +7774,7 @@
             "ast": 5.6,
             "stl": 0.7,
             "blk": 0.1,
-            "valueTotal": 4.76,
+            "valueTotal": 4.83,
             "rank": 34
           },
           "injury": null,
@@ -7821,8 +7812,8 @@
             "ast": 3.3,
             "stl": 1,
             "blk": 0.7,
-            "valueTotal": -0.86,
-            "rank": 154
+            "valueTotal": -0.84,
+            "rank": 152
           },
           "injury": {
             "status": "O",
@@ -7847,22 +7838,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 2.47,
           "stats": {
-            "gp": 13,
-            "mpg": 28.6,
-            "fgPct": 0.496,
-            "fgm": 4.5,
-            "fga": 9,
+            "gp": 14,
+            "mpg": 29,
+            "fgPct": 0.48,
+            "fgm": 4.4,
+            "fga": 9.1,
             "ftPct": 0.828,
-            "ftm": 3.7,
-            "fta": 4.5,
-            "tpm": 1,
-            "pts": 13.6,
-            "treb": 4.4,
-            "ast": 5.8,
-            "stl": 1.3,
-            "blk": 0.5,
-            "valueTotal": 3.19,
-            "rank": 59
+            "ftm": 3.4,
+            "fta": 4.1,
+            "tpm": 0.9,
+            "pts": 13.1,
+            "treb": 4.2,
+            "ast": 5.5,
+            "stl": 1.4,
+            "blk": 0.4,
+            "valueTotal": 2.53,
+            "rank": 77
           },
           "injury": null,
           "thisWeek": {
@@ -7885,22 +7876,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 1.87,
           "stats": {
-            "gp": 6,
-            "mpg": 18.4,
-            "fgPct": 0.358,
-            "fgm": 4,
-            "fga": 11.2,
-            "ftPct": 0.941,
-            "ftm": 2.7,
-            "fta": 2.8,
-            "tpm": 1,
-            "pts": 11.7,
-            "treb": 1.8,
-            "ast": 3.2,
-            "stl": 0,
-            "blk": 0.2,
-            "valueTotal": -4.36,
-            "rank": 269
+            "gp": 7,
+            "mpg": 19.5,
+            "fgPct": 0.38,
+            "fgm": 4.3,
+            "fga": 11.3,
+            "ftPct": 0.875,
+            "ftm": 3,
+            "fta": 3.4,
+            "tpm": 1.1,
+            "pts": 12.7,
+            "treb": 2,
+            "ast": 3.3,
+            "stl": 0.4,
+            "blk": 0.1,
+            "valueTotal": -3.43,
+            "rank": 238
           },
           "injury": null,
           "thisWeek": {
@@ -7923,22 +7914,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": 0.33,
           "stats": {
-            "gp": 14,
-            "mpg": 31,
-            "fgPct": 0.516,
-            "fgm": 6.9,
-            "fga": 13.4,
-            "ftPct": 0.909,
+            "gp": 15,
+            "mpg": 31.6,
+            "fgPct": 0.522,
+            "fgm": 7.2,
+            "fga": 13.8,
+            "ftPct": 0.886,
             "ftm": 2.1,
-            "fta": 2.4,
-            "tpm": 1.8,
-            "pts": 17.8,
+            "fta": 2.3,
+            "tpm": 2.1,
+            "pts": 18.6,
             "treb": 4.6,
-            "ast": 3.3,
+            "ast": 3.4,
             "stl": 1.3,
             "blk": 0.4,
-            "valueTotal": 4.22,
-            "rank": 40
+            "valueTotal": 4.77,
+            "rank": 35
           },
           "injury": null,
           "thisWeek": {
@@ -7961,22 +7952,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.42,
           "stats": {
-            "gp": 12,
-            "mpg": 26.4,
-            "fgPct": 0.459,
-            "fgm": 4.2,
-            "fga": 9.1,
-            "ftPct": 0.733,
-            "ftm": 0.9,
-            "fta": 1.3,
+            "gp": 13,
+            "mpg": 26.1,
+            "fgPct": 0.465,
+            "fgm": 4.1,
+            "fga": 8.8,
+            "ftPct": 0.789,
+            "ftm": 1.2,
+            "fta": 1.5,
             "tpm": 1.2,
-            "pts": 10.4,
-            "treb": 6,
-            "ast": 0.7,
+            "pts": 10.5,
+            "treb": 5.6,
+            "ast": 0.6,
             "stl": 0.5,
             "blk": 0.9,
-            "valueTotal": -1.31,
-            "rank": 167
+            "valueTotal": -1.14,
+            "rank": 160
           },
           "injury": null,
           "thisWeek": {
@@ -8013,8 +8004,8 @@
             "ast": 1.6,
             "stl": 0.7,
             "blk": 0.4,
-            "valueTotal": -2.98,
-            "rank": 225
+            "valueTotal": -2.96,
+            "rank": 228
           },
           "injury": null,
           "thisWeek": {
@@ -8051,8 +8042,8 @@
             "ast": 2.5,
             "stl": 0.9,
             "blk": 0.3,
-            "valueTotal": 0.04,
-            "rank": 128
+            "valueTotal": 0.07,
+            "rank": 133
           },
           "injury": null,
           "thisWeek": {
@@ -8089,8 +8080,8 @@
             "ast": 1.1,
             "stl": 1.3,
             "blk": 1.1,
-            "valueTotal": -0.62,
-            "rank": 149
+            "valueTotal": -0.53,
+            "rank": 147
           },
           "injury": {
             "status": "Q",
@@ -8130,8 +8121,8 @@
             "ast": 2.3,
             "stl": 1.2,
             "blk": 0.4,
-            "valueTotal": -0.25,
-            "rank": 139
+            "valueTotal": -0.23,
+            "rank": 140
           },
           "injury": null,
           "thisWeek": {
@@ -8167,8 +8158,8 @@
             "ast": 2.7,
             "stl": 1.3,
             "blk": 0.5,
-            "valueTotal": 0.3,
-            "rank": 124
+            "valueTotal": 0.36,
+            "rank": 126
           },
           "injury": null,
           "thisWeek": {
@@ -8205,7 +8196,7 @@
             "ast": 1.8,
             "stl": 1.1,
             "blk": 0,
-            "valueTotal": -1.71,
+            "valueTotal": -1.68,
             "rank": 181
           },
           "injury": null,
@@ -8302,26 +8293,26 @@
       },
       "projRank": 13,
       "actualTotals": {
-        "fgPct": 0.4681,
-        "ftPct": 0.7964,
-        "tpm": 218,
-        "pts": 2019,
-        "treb": 807,
-        "ast": 433,
-        "stl": 149,
+        "fgPct": 0.4691,
+        "ftPct": 0.8029,
+        "tpm": 227,
+        "pts": 2086,
+        "treb": 817,
+        "ast": 442,
+        "stl": 156,
         "blk": 74
       },
-      "gamesPlayed": 150,
+      "gamesPlayed": 154,
       "actualRoto": {
-        "total": 43,
+        "total": 46,
         "fgPct": 9,
-        "ftPct": 8,
+        "ftPct": 10,
         "tpm": 4,
         "pts": 3,
         "treb": 8,
         "ast": 2,
-        "stl": 6.5,
-        "blk": 2.5
+        "stl": 8,
+        "blk": 2
       },
       "actualRank": 14,
       "realTotals": {
@@ -8431,8 +8422,8 @@
             "ast": 2.3,
             "stl": 1.3,
             "blk": 0.4,
-            "valueTotal": -1.77,
-            "rank": 184
+            "valueTotal": -1.74,
+            "rank": 183
           },
           "injury": null,
           "thisWeek": {
@@ -8469,7 +8460,7 @@
             "ast": 5.4,
             "stl": 1.2,
             "blk": 0.3,
-            "valueTotal": 6.91,
+            "valueTotal": 6.92,
             "rank": 20
           },
           "injury": null,
@@ -8507,8 +8498,8 @@
             "ast": 7.2,
             "stl": 1.2,
             "blk": 0.9,
-            "valueTotal": 8.45,
-            "rank": 11
+            "valueTotal": 8.54,
+            "rank": 10
           },
           "injury": null,
           "thisWeek": {
@@ -8546,11 +8537,11 @@
             "ast": 3.6,
             "stl": 1.3,
             "blk": 0.5,
-            "valueTotal": 3.48,
-            "rank": 51
+            "valueTotal": 3.54,
+            "rank": 55
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Hamstring"
           },
           "thisWeek": {
@@ -8572,22 +8563,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -1.35,
           "stats": {
-            "gp": 13,
-            "mpg": 29.3,
-            "fgPct": 0.468,
-            "fgm": 2.8,
-            "fga": 6.1,
-            "ftPct": 0.457,
-            "ftm": 2.5,
-            "fta": 5.4,
+            "gp": 14,
+            "mpg": 28.8,
+            "fgPct": 0.451,
+            "fgm": 2.6,
+            "fga": 5.9,
+            "ftPct": 0.444,
+            "ftm": 2.3,
+            "fta": 5.1,
             "tpm": 0,
-            "pts": 8.2,
-            "treb": 11.7,
+            "pts": 7.6,
+            "treb": 11.1,
             "ast": 1.7,
             "stl": 0.4,
-            "blk": 1.1,
-            "valueTotal": -5.4,
-            "rank": 310
+            "blk": 1,
+            "valueTotal": -5.98,
+            "rank": 329
           },
           "injury": null,
           "thisWeek": {
@@ -8610,22 +8601,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.96,
           "stats": {
-            "gp": 14,
-            "mpg": 31.2,
-            "fgPct": 0.467,
-            "fgm": 5.5,
-            "fga": 11.8,
+            "gp": 15,
+            "mpg": 30.7,
+            "fgPct": 0.457,
+            "fgm": 5.3,
+            "fga": 11.5,
             "ftPct": 0.8,
-            "ftm": 0.9,
-            "fta": 1.1,
-            "tpm": 1.6,
-            "pts": 13.4,
-            "treb": 6.5,
-            "ast": 2,
-            "stl": 0.6,
-            "blk": 1.2,
-            "valueTotal": 1.72,
-            "rank": 97
+            "ftm": 0.8,
+            "fta": 1,
+            "tpm": 1.5,
+            "pts": 12.9,
+            "treb": 6.1,
+            "ast": 2.1,
+            "stl": 0.8,
+            "blk": 1.1,
+            "valueTotal": 1.51,
+            "rank": 102
           },
           "injury": null,
           "thisWeek": {
@@ -8661,8 +8652,8 @@
             "ast": 3.7,
             "stl": 1.1,
             "blk": 0.3,
-            "valueTotal": 1.66,
-            "rank": 99
+            "valueTotal": 1.72,
+            "rank": 97
           },
           "injury": null,
           "thisWeek": {
@@ -8685,22 +8676,22 @@
           "acquiredDate": "2026-10-18",
           "projZ": -0.27,
           "stats": {
-            "gp": 12,
-            "mpg": 29.7,
+            "gp": 13,
+            "mpg": 30.2,
             "fgPct": 0.398,
             "fgm": 3.8,
-            "fga": 9.4,
-            "ftPct": 0.929,
+            "fga": 9.5,
+            "ftPct": 0.903,
             "ftm": 2.2,
-            "fta": 2.3,
-            "tpm": 1.3,
-            "pts": 11,
-            "treb": 3.8,
-            "ast": 2.8,
-            "stl": 1.7,
-            "blk": 0.3,
-            "valueTotal": 0.57,
-            "rank": 121
+            "fta": 2.4,
+            "tpm": 1.4,
+            "pts": 11.1,
+            "treb": 3.9,
+            "ast": 2.9,
+            "stl": 1.6,
+            "blk": 0.2,
+            "valueTotal": 0.16,
+            "rank": 130
           },
           "injury": null,
           "thisWeek": {
@@ -8737,8 +8728,8 @@
             "ast": 2.1,
             "stl": 0.7,
             "blk": 0.2,
-            "valueTotal": -2.41,
-            "rank": 205
+            "valueTotal": -2.38,
+            "rank": 206
           },
           "injury": null,
           "thisWeek": {
@@ -8775,11 +8766,11 @@
             "ast": 2.8,
             "stl": 1.1,
             "blk": 0.6,
-            "valueTotal": -1.55,
+            "valueTotal": -1.5,
             "rank": 174
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Shoulder"
           },
           "thisWeek": {
@@ -8816,8 +8807,8 @@
             "ast": 1.9,
             "stl": 0.9,
             "blk": 0.2,
-            "valueTotal": -1.81,
-            "rank": 185
+            "valueTotal": -1.79,
+            "rank": 184
           },
           "injury": null,
           "thisWeek": {
@@ -8865,28 +8856,28 @@
       },
       "projRank": 14,
       "actualTotals": {
-        "fgPct": 0.4658,
-        "ftPct": 0.7628,
-        "tpm": 233,
-        "pts": 2468,
-        "treb": 966,
-        "ast": 507,
-        "stl": 159,
-        "blk": 81
+        "fgPct": 0.4639,
+        "ftPct": 0.7594,
+        "tpm": 236,
+        "pts": 2486,
+        "treb": 975,
+        "ast": 516,
+        "stl": 164,
+        "blk": 79
       },
-      "gamesPlayed": 155,
+      "gamesPlayed": 158,
       "actualRoto": {
-        "total": 72,
-        "fgPct": 7,
+        "total": 68,
+        "fgPct": 6,
         "ftPct": 3,
-        "tpm": 9,
-        "pts": 13,
+        "tpm": 7,
+        "pts": 12,
         "treb": 15,
-        "ast": 9,
+        "ast": 10,
         "stl": 11,
-        "blk": 5
+        "blk": 4
       },
-      "actualRank": 4,
+      "actualRank": 5,
       "realTotals": {
         "fgPct": 0.482,
         "ftPct": 0.766,
@@ -8954,8 +8945,8 @@
             "ast": 5.8,
             "stl": 1.3,
             "blk": 0.5,
-            "valueTotal": 8.45,
-            "rank": 10
+            "valueTotal": 8.49,
+            "rank": 11
           },
           "injury": null,
           "thisWeek": {
@@ -8992,8 +8983,8 @@
             "ast": 9.5,
             "stl": 1.3,
             "blk": 0.8,
-            "valueTotal": 9.95,
-            "rank": 6
+            "valueTotal": 10,
+            "rank": 5
           },
           "injury": {
             "status": "O",
@@ -9033,8 +9024,8 @@
             "ast": 8.5,
             "stl": 0.4,
             "blk": 0.6,
-            "valueTotal": -0.04,
-            "rank": 132
+            "valueTotal": 0,
+            "rank": 135
           },
           "injury": null,
           "thisWeek": {
@@ -9070,8 +9061,8 @@
             "ast": 1.6,
             "stl": 0.9,
             "blk": 1.1,
-            "valueTotal": 1.28,
-            "rank": 104
+            "valueTotal": 1.36,
+            "rank": 105
           },
           "injury": null,
           "thisWeek": {
@@ -9108,13 +9099,10 @@
             "ast": 2.1,
             "stl": 0.7,
             "blk": 1.1,
-            "valueTotal": 3.43,
-            "rank": 52
+            "valueTotal": 3.5,
+            "rank": 56
           },
-          "injury": {
-            "status": "Q",
-            "note": "Head"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "C",
             "status": null,
@@ -9150,8 +9138,8 @@
             "ast": 1.4,
             "stl": 0.9,
             "blk": 0.9,
-            "valueTotal": 0.23,
-            "rank": 126
+            "valueTotal": 0.27,
+            "rank": 128
           },
           "injury": null,
           "thisWeek": {
@@ -9188,10 +9176,13 @@
             "ast": 3.3,
             "stl": 0.8,
             "blk": 0.3,
-            "valueTotal": 2.74,
+            "valueTotal": 2.75,
             "rank": 71
           },
-          "injury": null,
+          "injury": {
+            "status": "O",
+            "note": "Concussion"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -9226,7 +9217,7 @@
             "ast": 1.3,
             "stl": 1.2,
             "blk": 0.5,
-            "valueTotal": 3.98,
+            "valueTotal": 4.02,
             "rank": 45
           },
           "injury": null,
@@ -9250,22 +9241,22 @@
           "acquiredDate": "2026-10-19 20:33",
           "projZ": -0.38,
           "stats": {
-            "gp": 14,
-            "mpg": 29.3,
-            "fgPct": 0.426,
-            "fgm": 5.9,
-            "fga": 13.9,
-            "ftPct": 0.788,
+            "gp": 15,
+            "mpg": 29.4,
+            "fgPct": 0.417,
+            "fgm": 5.7,
+            "fga": 13.7,
+            "ftPct": 0.757,
             "ftm": 1.9,
-            "fta": 2.4,
+            "fta": 2.5,
             "tpm": 2,
-            "pts": 15.7,
-            "treb": 5.5,
-            "ast": 5.4,
-            "stl": 1.1,
+            "pts": 15.3,
+            "treb": 5.3,
+            "ast": 5.5,
+            "stl": 1,
             "blk": 0.3,
-            "valueTotal": 1.92,
-            "rank": 92
+            "valueTotal": 1.23,
+            "rank": 109
           },
           "injury": null,
           "thisWeek": {
@@ -9303,8 +9294,8 @@
             "ast": 4.3,
             "stl": 1.3,
             "blk": 0.2,
-            "valueTotal": -1.27,
-            "rank": 165
+            "valueTotal": -1.23,
+            "rank": 164
           },
           "injury": null,
           "thisWeek": {
@@ -9341,8 +9332,8 @@
             "ast": 3,
             "stl": 1.3,
             "blk": 0.5,
-            "valueTotal": 0.71,
-            "rank": 120
+            "valueTotal": 0.75,
+            "rank": 118
           },
           "injury": null,
           "thisWeek": {
@@ -9379,7 +9370,7 @@
             "ast": 2.5,
             "stl": 1,
             "blk": 0.4,
-            "valueTotal": -1.73,
+            "valueTotal": -1.68,
             "rank": 182
           },
           "injury": null,
@@ -9416,8 +9407,8 @@
             "ast": 2.4,
             "stl": 0.6,
             "blk": 0.1,
-            "valueTotal": -3.51,
-            "rank": 241
+            "valueTotal": -3.48,
+            "rank": 239
           },
           "injury": null,
           "thisWeek": {
@@ -9531,28 +9522,28 @@
       },
       "projRank": 15,
       "actualTotals": {
-        "fgPct": 0.4632,
-        "ftPct": 0.782,
-        "tpm": 295,
-        "pts": 2271,
-        "treb": 856,
-        "ast": 587,
-        "stl": 156,
-        "blk": 89
+        "fgPct": 0.462,
+        "ftPct": 0.7797,
+        "tpm": 297,
+        "pts": 2280,
+        "treb": 858,
+        "ast": 594,
+        "stl": 155,
+        "blk": 90
       },
-      "gamesPlayed": 162,
+      "gamesPlayed": 163,
       "actualRoto": {
-        "total": 71,
+        "total": 67.5,
         "fgPct": 5,
         "ftPct": 6,
         "tpm": 12,
         "pts": 9,
         "treb": 10,
         "ast": 12,
-        "stl": 10,
+        "stl": 6.5,
         "blk": 7
       },
-      "actualRank": 5,
+      "actualRank": 6,
       "realTotals": {
         "fgPct": 0.463,
         "ftPct": 0.788,
