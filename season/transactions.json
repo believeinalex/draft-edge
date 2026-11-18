@@ -1772,6 +1772,83 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-16 17:26",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [
+        {
+          "name": "Kelly Oubre Jr.",
+          "nbaTeam": "IND",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Naji Marshall",
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16 17:28",
+      "type": "add_drop",
+      "team": "Grilled Teampura",
+      "add": [
+        {
+          "name": "Matisse Thybulle",
+          "nbaTeam": "LAL",
+          "pos": [
+            "SG",
+            "SF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Kelly Oubre Jr.",
+          "nbaTeam": "IND",
+          "pos": [
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17 07:11",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "add": [
+        {
+          "name": "Mo Bamba",
+          "nbaTeam": "UTA",
+          "pos": [
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Khaman Maluach",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
     }
   ]
 }
