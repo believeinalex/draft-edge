@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold until the frontcourt is healthy.
+Lloyd: hold until the frontcourt is healthy. Nov 16 (Lloyd): hold until the frontcourt is healthy.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 7 pts, 8 reb, 4 ast. 'Should be on all rosters in 12-team leagues.' Might lose it when Markkanen/Jackson and others return. [36:10]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

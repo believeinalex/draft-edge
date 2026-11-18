@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: frustrating; droppable (Oct 22).
+Lloyd: frustrating; droppable (Oct 22). Nov 16 (Lloyd): droppable.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 8 pts, 5 reb, 4 ast on 27%; outside the top 130. 'Completely replaceable by smart streaming.' [45:48]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

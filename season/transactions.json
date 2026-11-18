@@ -1622,6 +1622,156 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-13 18:03",
+      "type": "add_drop",
+      "team": "Shut Up and Jam Gaiden",
+      "add": [],
+      "drop": [
+        {
+          "name": "Oso Ighodaro",
+          "nbaTeam": "PHX",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15 14:18",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Bones Hyland",
+          "nbaTeam": "MIN",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-15 14:32",
+      "type": "add_drop",
+      "team": "#WashedAutoDraftKing",
+      "add": [
+        {
+          "name": "Tyrese Proctor",
+          "nbaTeam": "CLE",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Max Strus",
+          "nbaTeam": "LAC",
+          "pos": [
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15 17:41",
+      "type": "trade",
+      "moves": [
+        {
+          "name": "Daniel Gafford",
+          "nbaTeam": "DAL",
+          "pos": [
+            "C"
+          ],
+          "to": "Cole is like that"
+        },
+        {
+          "name": "CJ McCollum",
+          "nbaTeam": "ATL",
+          "pos": [
+            "PG",
+            "SG"
+          ],
+          "to": "#WashedAutoDraftKing"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15 18:12",
+      "type": "trade",
+      "moves": [
+        {
+          "name": "Dylan Harper",
+          "nbaTeam": "SAS",
+          "pos": [
+            "PG",
+            "SG",
+            "SF"
+          ],
+          "to": "the tinkerballers 🧚🏼‍♀️🌸🎀"
+        },
+        {
+          "name": "Ausar Thompson",
+          "nbaTeam": "DET",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "to": "vincemvpcarter"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15 23:45",
+      "type": "add_drop",
+      "team": "Billy Hoyle's Boy-les",
+      "add": [
+        {
+          "name": "Isaiah Stewart",
+          "nbaTeam": "MEM",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "status": "O",
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-16 14:22",
+      "type": "add_drop",
+      "team": "Billy Hoyle's Boy-les",
+      "add": [
+        {
+          "name": "Meleek Thomas",
+          "nbaTeam": "CLE",
+          "pos": [
+            "SG"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Isaiah Stewart",
+          "nbaTeam": "MEM",
+          "pos": [
+            "PF",
+            "C"
+          ]
+        }
+      ]
     }
   ]
 }

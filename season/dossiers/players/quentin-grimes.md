@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd went from a back-end hold (Oct 22) to drop (Nov 5).
+Lloyd went from a back-end hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): the Nov 5 drop call stands unless you want a Reaves-out add.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury, minutes
+- **Reported:** Back from a finger problem that cost him two games. [9:17]
+- **Stat:** 22 pts, 6 reb, 5 threes, 2 stl in 37 min. 'Basically useless' when both Reaves and Doncic play, so he is only worth an add if Reaves misses a few more games. [9:33]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

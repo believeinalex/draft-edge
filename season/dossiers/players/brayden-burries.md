@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): now a starter for the rest of the season with minutes upside; a 12-team must-roster after his Nov 6 breakout, though he won't repeat it. Reverses his Nov 5 "droppable." Bucks have 4 games in week 4.
+Lloyd (Nov 7): now a starter for the rest of the season with minutes upside; a 12-team must-roster after his Nov 6 breakout, though he won't repeat it. Reverses his Nov 5 "droppable." Bucks have 4 games in week 4. Nov 16 (Lloyd): reverses his Nov 7 'must-roster'; now droppable.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 29 min, 13 pts, 8 reb, 4 ast, 2 stl, 2 threes. 'Not convinced he needs to be rostered', but 'okay dropping' him. [1:01:56]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

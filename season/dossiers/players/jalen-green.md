@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: hold.
+Lloyd: hold. Nov 16 (Lloyd): reverses 'hold'; now a drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** 21 min, 9 pts on 36%; 195th over the last two weeks. [13:41]
+- **Analysis:** 'Get that garbage out of here.' Phoenix is 'just done with him'; Gillespie and Goodwin are coming for the minutes. [13:53]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

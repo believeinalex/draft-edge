@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: fine; wants more shots.
+Lloyd: fine; wants more shots. Nov 16 (Lloyd): 27th, fine.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+- **Stat:** 24 pts, 4 reb, 5 ast; 27th this season, 'still not where I want him to be, but not a disaster'. [50:01]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: usage

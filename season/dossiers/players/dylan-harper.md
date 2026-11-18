@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd is bullish.
+Lloyd is bullish. Nov 16 (Lloyd): well above expectations.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 31 pts, 9 reb, 4 ast, 2 threes; 56th for the season; Lloyd had him in the 70s. 'Blowing my expectations out of the water.' [33:29]
+- **Analysis:** Named 'Young of the night'. [1:10:07]
+
 
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt

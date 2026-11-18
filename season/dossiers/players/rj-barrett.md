@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: more usage than expected.
+Lloyd: more usage than expected. Nov 16 (Lloyd): usage dropping with Barnes back; monitor.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 14 pts, 5 reb, 6 ast with efficient shooting. Usage settled when Barnes returned; Lloyd 'won't want to stick with that' on 20% usage. [43:05]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: usage

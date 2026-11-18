@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd: about a top-90/100 player doing what he expected (Nov 9: 13-6-3, 3 stl, 3 threes); volume only rises when a teammate is out. Season check (HTB through Nov 5): 33.6 mpg, 12.5 pts, 7.0 reb, 113th.
+Lloyd: about a top-90/100 player doing what he expected (Nov 9: 13-6-3, 3 stl, 3 threes); volume only rises when a teammate is out. Season check (HTB through Nov 5): 33.6 mpg, 12.5 pts, 7.0 reb, 113th. Nov 16 (Lloyd): good but not a breakout even with Embiid out, so the volume ceiling is limited.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 11 pts, 4 reb, 6 ast with Embiid out. Lloyd wanted a bigger game when Embiid or LeBron sits and 'wouldn't say he went off'. [8:06]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

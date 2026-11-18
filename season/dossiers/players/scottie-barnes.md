@@ -2,11 +2,17 @@
 
 ## Current take
 
-Fine.
+Fine. Nov 16 (Lloyd): back with big volume.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Returned. 30 pts, 9 reb, 4 threes, 1 stl, 2 blk with big volume (Kawhi Leonard still out). [42:05]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

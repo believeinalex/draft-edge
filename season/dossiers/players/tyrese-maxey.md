@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd expects his usage to settle lower.
+Lloyd expects his usage to settle lower. Nov 16 (Lloyd): 16th on the season, in line with his expectation.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 27 pts, 4 reb, 6 ast, 5 threes; 16th for the season, 'bang on where I thought he would be'. [7:14]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

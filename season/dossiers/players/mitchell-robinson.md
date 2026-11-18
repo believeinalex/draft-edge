@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: lost his starting spot to Queta; drop.
+Lloyd: lost his starting spot to Queta; drop. Nov 16 (Lloyd): not a standard-league hold.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** Scoreless, 3 blk, 7 reb. 'We don't need to worry about him in standard league cases.' [48:31]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: strong start (Oct 22, Nov 5). Season check (HTB through Nov 5): 30.6 mpg, 10.2 reb, 2.7 blk, 71.8% FG, 25th. Bears on the Chet-for-Kessler idea in the open questions.
+Lloyd: strong start (Oct 22, Nov 5). Season check (HTB through Nov 5): 30.6 mpg, 10.2 reb, 2.7 blk, 71.8% FG, 25th. Bears on the Chet-for-Kessler idea in the open questions. Nov 16 (Lloyd): doing very well; relevant to the Chet-for-Kessler question.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook, usage
+- **Stat:** 14 pts, 12 reb, 2 blk with good FT and FG percentages. 'Much better than I anticipated', steals consistent. [13:18]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

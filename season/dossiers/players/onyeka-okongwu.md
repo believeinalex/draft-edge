@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd faded him (Oct 22) and still expects low usage (Nov 5), with good rebounds and defensive stats. Season check (HTB through Nov 5): 29.1 mpg, 12.2 pts, 8.4 reb, 0.7 blk, 99th. A rebounds target, not a big blocks fix (Okongwu open question, Nov 9).
+Lloyd faded him (Oct 22) and still expects low usage (Nov 5), with good rebounds and defensive stats. Season check (HTB through Nov 5): 29.1 mpg, 12.2 pts, 8.4 reb, 0.7 blk, 99th. A rebounds target, not a big blocks fix (Okongwu open question, Nov 9). Nov 16 (Lloyd): big minutes; a sell-high candidate.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 36 min, 16 pts, 11 reb, 3 threes, 2 stl, 1 blk. 'Teetering on being a sell high.' [57:46]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role, usage, trade

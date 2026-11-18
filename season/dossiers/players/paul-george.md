@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: sell for top 40 if possible; health is the only worry.
+Lloyd: sell for top 40 if possible; health is the only worry. Nov 16 (Lloyd): back and starting; a poor shooting line but the counting stats are there.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury, role
+- **Reported:** Returned and started for Boston (with Jordan Walsh); Luka Garza and Baylor Scheierman went to the bench. [47:06]
+- **Stat:** 25 min, 7 pts, 7 reb, 6 ast, 2 stl on 27%. [48:07]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

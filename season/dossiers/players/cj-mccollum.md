@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lost his starting spot (Nov 4) but produced off the bench. Lloyd: hold.
+Lost his starting spot (Nov 4) but produced off the bench. Lloyd: hold. Nov 16 (Lloyd): a hold, with 4 steals.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+- **Stat:** Back in the starting lineup: 30 min, 20 pts, 4 reb, 2 ast, 4 stl, excellent percentages. [56:09]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: role

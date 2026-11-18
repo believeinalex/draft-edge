@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd (Nov 7): a priority add in category leagues for week 4. Off the bench but minutes rising (first 20+ minute game Nov 6); Dallas has 4 games and the only weekend back-to-back. Frontcourt pecking order is unclear.
+Lloyd (Nov 7): a priority add in category leagues for week 4. Off the bench but minutes rising (first 20+ minute game Nov 6); Dallas has 4 games and the only weekend back-to-back. Frontcourt pecking order is unclear. Nov 16 (Lloyd): reverses the Nov 7 priority-add call; now a drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 26 min, 2 pts, 6 reb, 4 ast on 10% shooting. [45:11]
+- **Analysis:** 'Just drop him now'; doesn't think he has the game to blow people away even as a starter. Lloyd hated the pick at No. 9 but says it's too early to call a bust. [45:25]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

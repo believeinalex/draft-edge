@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: patience until Thanksgiving.
+Lloyd: patience until Thanksgiving. Nov 16 (Lloyd): more optimistic than 'patience'; easy top 100.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage, outlook
+- **Stat:** 17 pts, 5 reb, 4 ast on 20 shots, 35%. Top 25 over the last two weeks. [35:29]
+- **Analysis:** 'A pretty easy top 100 guy rest of season' given long-term injuries on the roster. [35:46]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: a sell-high (Nov 5) after a healthy start; injury risk remains.
+Lloyd: a sell-high (Nov 5) after a healthy start; injury risk remains. Nov 16 (Lloyd): sell high on a top-15/20 return.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 14 pts, 8 reb, 5 ast, 1 stl, 2 blk; fourth over the last two weeks. [54:25]
+- **Analysis:** 'If you could sell him for a top 20 player, I probably would. Top 15 player.' [54:36]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: hold at about 20 mpg.
+Lloyd: hold at about 20 mpg. Nov 16 (Lloyd): borderline 12-team on defensive stats.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: role, minutes, defense
+- **Stat:** 11 pts, 2 reb, 3 ast, 4 stl, 1 blk in a blowout where OKC would not extend his minutes. [1:05:45]
+- **Analysis:** 'Borderline 12 for me without being a clear must roster.' [1:05:53]
+
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

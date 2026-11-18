@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd went from a hold (Oct 22) to drop (Nov 5).
+Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): a free-throw-driven line; still not a 12-team player.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Stat:** 12 pts, 4 reb, 5 ast; 5 FT attempts. Free throws bail out a lack of two-point shooting; not a 12-team guy unless he reaches 30 minutes. [27:14]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

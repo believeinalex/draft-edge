@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered.
+Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered. Nov 16 (Lloyd): sat the game; Lloyd expected him back Monday.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Out against Indiana. Lloyd expects him to play Monday's game. [6:15]
+
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

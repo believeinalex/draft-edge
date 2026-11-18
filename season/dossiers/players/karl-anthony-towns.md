@@ -1,0 +1,17 @@
+# Karl-Anthony Towns
+
+**NBA:** NYK · **Pos:** PF,C · **Fantasy team:** The New Day Co-op _(as of 2026-11-13 08:27; INDEX.md has the current owner)_
+
+## Current take
+
+Lloyd (Nov 15 recap): far better than Lloyd expected.
+
+## Notes
+
+<!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
+Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 28 pts, 17 reb, 3 ast, 3 threes. 'Their best player this year'; Lloyd was lukewarm on him in drafts and is being proven wrong. [37:50]
+
