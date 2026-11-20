@@ -4,11 +4,17 @@
 
 ## Current take
 
-Out (ankle) as of Nov 5. Nov 16 (Lloyd): moved from 'out (ankle)' to an explicit drop candidate. Fits the drop-candidate list for Finn.
+Back from the ankle injury. Lloyd (Nov 16) moved him to a drop candidate; Besperris (Nov 20) says he is the more trustworthy of the Hart/Bridges pair and holds for now, though both may end up drops. 145th, 7-9 shots a game, defensive stats the swing factor. As Finn's player, a hold with the drop list in mind.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: role, outlook
+- **Stat:** Ranked 145th (Bridges 203rd). Took 9 shots (vs about 7-7.5 a game this season); 11 pts, 6 reb, a couple of ast and 3 threes, one defensive stat short of a good line. [02:03, 03:01]
+- **Analysis:** Hart is the more trustworthy of the two because of his better defensive stats and rebounding. 'It's possible they both end up being drops, but I'm going to hang on to Hart for now.' [02:15, 03:40]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

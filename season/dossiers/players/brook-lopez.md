@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: now the starter, but the schedule is bad this week. Nov 16 (Lloyd): hold.
+Lloyd: now the starter, but the schedule is bad this week. Nov 16 (Lloyd): hold. Nov 20 (Besperris): the Clippers lean on him for interior presence and he has been great; keep playing him. Usage is weirdly high this year and may not stick.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: role, usage
+- **Analysis:** The Clippers 'are leaning on Brook Lopez to give them some sort of interior presence. Brook has been great. So keep playing Lopez' rather than stashing Niederhauser. [08:15]
+- **Stat:** Weirdly high usage this season, but Besperris isn't sure it sticks. [14:01]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

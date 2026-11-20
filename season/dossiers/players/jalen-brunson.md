@@ -2,11 +2,16 @@
 
 ## Current take
 
-Recovering. Nov 16 (Lloyd): returning to form.
+Recovering. Nov 16 (Lloyd): returning to form. Nov 20 (Besperris): doing exactly what was expected.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook
+- **Analysis:** 'Continues to do exactly what you thought he would do.' [01:30]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

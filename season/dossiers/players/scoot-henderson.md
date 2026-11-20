@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: drop.
+Lloyd: drop. Nov 20 (Besperris): 27 pts off the bench, his first good game of the year; wait for a second before acting.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook
+- **Stat:** 27 pts off the bench, 'truly his first good game of the entire year.' Needs to happen again before doing anything. [27:51]
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

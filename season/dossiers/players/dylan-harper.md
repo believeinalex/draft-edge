@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd is bullish. Nov 16 (Lloyd): well above expectations. Besperris (Nov 19): out two to three weeks.
+Out at least two to three weeks with a groin/hip injury (Besperris, Nov 20). His 22-23% usage, 14 FGA and 5 ast per game are what boost Vassell and Champagnie while he is out.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: injury, usage
+- **Reported:** Out at least two to three weeks with a groin/hip issue. [16:39]
+- **Stat:** 22-23% usage, 14 shots and 5 ast per game; the difference-maker for Vassell and Champagnie (bigger than a Fox absence, with Fox at 19% usage). [17:58, 18:08]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: injury

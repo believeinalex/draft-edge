@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): now a starter for the rest of the season with minutes upside; a 12-team must-roster after his Nov 6 breakout, though he won't repeat it. Reverses his Nov 5 "droppable." Bucks have 4 games in week 4. Nov 16 (Lloyd): reverses his Nov 7 'must-roster'; now droppable.
+Lloyd (Nov 7): now a starter for the rest of the season with minutes upside; a 12-team must-roster after his Nov 6 breakout, though he won't repeat it. Reverses his Nov 5 "droppable." Bucks have 4 games in week 4. Nov 16 (Lloyd): reverses his Nov 7 'must-roster'; now droppable. Nov 20 (Besperris): 127th over the last week with better FT%; probably over-rostered as an exciting young player; needs consistent 11-13 shots; "doing more harm than good" for now; weeks or months out.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: role, usage
+- **Stat:** Number 127 over the last week; free throws better in that span; 11-13 shots in recent games. [31:00, 31:20]
+- **Analysis:** 'Doesn't have a good nine-cat fantasy game. Not yet': a rebounding guard with steals, few threes, bad percentages. Probably 'a little bit over-rostered.' 'Doing more harm than good,' needing more assists and threes. [30:44, 31:36, 31:58]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

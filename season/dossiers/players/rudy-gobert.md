@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9).
+Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9). Nov 20 (Besperris): called "the worst" free-throw shooter, nobody close; the Gobert owner is the punt-FT team to offer Kaminga to.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: shooting
+- **Analysis:** 'Rudy's been the worst. No one's even close to as bad as he's been' at free-throw percentage; the owner is a natural trade partner for a punt-FT player like Kaminga. [06:18]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

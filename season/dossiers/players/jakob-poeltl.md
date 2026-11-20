@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): reverses 'drop' to hold for now. Besperris (Nov 19): relevant again while Murray-Boyles is out.
+Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): reverses 'drop' to hold for now. Besperris (Nov 19): relevant again while Murray-Boyles is out. Nov 20 (Besperris): taken over Melton.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: waivers
+- **Analysis:** 'Jakob Poeltl, you go over it' (Melton). [23:16]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: role

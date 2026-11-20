@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd expected his minutes to ramp up (Oct 22) and saw signs on Nov 4 (25 min). Season check (HTB through Nov 5): 20.7 mpg, 8.1 reb, 1.6 blk, 55.3% FG, 141st. A buy-low target in the Edey open questions (Nov 9) if Drew will sell at his current rank.
+Lloyd expected his minutes to ramp up (Oct 22) and saw signs on Nov 4 (25 min). Season check (HTB through Nov 5): 20.7 mpg, 8.1 reb, 1.6 blk, 55.3% FG, 141st. A buy-low target in the Edey open questions (Nov 9) if Drew will sell at his current rank. Nov 20: out on Nov 19 (reason not given), Taylor Hendricks started at center.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: injury
+- **Reported:** Out; Taylor Hendricks started at center. [25:51]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: minutes, waiver

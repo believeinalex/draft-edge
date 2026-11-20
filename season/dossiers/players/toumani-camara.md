@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: fringe.
+Lloyd: fringe. Nov 20 (Besperris): a game that "rockets back up into the near 100 range"; in his "don't stress about it" bucket with Derrick Jones and Aaron Wiggins.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook
+- **Stat:** Had a game that moved him back to the near-100 range. In the 'don't stress about it' bucket (with Derrick Jones, Aaron Wiggins). [27:09]
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 7): a week-4 streamer (Bucks 3-in-4 Tue–Fri), not a hold. Earlier call was drop.
+Lloyd (Nov 7): a week-4 streamer (Bucks 3-in-4 Tue–Fri), not a hold. Earlier call was drop. Nov 20: rested vs Portland; expected back for the next Bucks game.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: rest
+- **Reported:** Rested vs Portland; expected back next game (with Myles Turner). [28:13, 32:53]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

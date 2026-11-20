@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: strong start. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold, but minutes are unreliable.
+Lloyd: strong start. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold, but minutes are unreliable. Nov 20 (Besperris): "mail-it-in mode" but a hold on expected FG% and FT% improvement.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook, shooting
+- **Analysis:** In 'mail-it-in mode' (and you can't blame him), but a hold because Besperris expects field-goal and free-throw percentages to improve. [32:17]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

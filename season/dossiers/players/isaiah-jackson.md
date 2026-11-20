@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): big game, small role.
+Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): big game, small role. Nov 20 (Besperris): may end up the odd man out of the Clippers' center rotation as Niederhauser returns, though he played well in 9 min.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: role, minutes
+- **Analysis:** With Niederhauser back, Jackson 'feels like' he could be the odd man out, 'although he played pretty well in his nine minutes.' [08:15]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

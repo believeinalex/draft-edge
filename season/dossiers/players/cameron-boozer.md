@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: good peripherals, shaky two-point shooting. Old Man Squad buy low that hit: 16th over the last week (Nov 19).
+Lloyd: good peripherals, shaky two-point shooting. Old Man Squad buy low that hit: 16th over the last week (Nov 19). Nov 20 (Besperris): "rolling."
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook
+- **Analysis:** 'Boozer rolling' (Memphis, per the transcript). [25:51]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook

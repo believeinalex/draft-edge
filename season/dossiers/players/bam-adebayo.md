@@ -9,6 +9,11 @@ Lloyd (Nov 9): "settling in now", top 15 over the last two weeks. Season check (
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: shooting
+- **Analysis:** In passing: Bam isn't jacking up threes and his field-goal percentage has gotten better, the flip side of Kaminga's falling FG% with more threes. No buy/sell call in this episode. [05:15]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook, trade

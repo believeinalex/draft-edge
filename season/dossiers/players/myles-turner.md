@@ -2,11 +2,16 @@
 
 ## Current take
 
-A rough start, now around the top 100. Nov 16 (Lloyd): hold in 12s. Besperris (Nov 19): 36% FG with little upside; sell for Zubac.
+A rough start, now around the top 100. Nov 16 (Lloyd): hold in 12s. Besperris (Nov 19): 36% FG with little upside; sell for Zubac. Nov 20: rested vs Portland; expected back for the next Bucks game.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: rest
+- **Reported:** Rested vs Portland; expected back next game. Besperris hopes the veterans 'run out of gas' at a back-to-back after Thanksgiving. [28:13, 32:53]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

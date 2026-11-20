@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd (Nov 15 recap): far better than Lloyd expected.
+Lloyd (Nov 15 recap): far better than Lloyd expected. Nov 20 (Besperris): "continues to impress."
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: outlook
+- **Analysis:** 'Cat continues to impress' (transcribed as 'Cat'; presumably Towns). [01:21]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

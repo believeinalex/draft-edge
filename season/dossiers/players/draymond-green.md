@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd: not a must in 12-team leagues (Oct 22); an assists-only option (Nov 5). Season check (HTB through Nov 5): 26.6 mpg, 3.2 pts, 6.3 ast, 38.9% FG, 151st.
+Lloyd: not a must in 12-team leagues (Oct 22); an assists-only option (Nov 5). Season check (HTB through Nov 5): 26.6 mpg, 3.2 pts, 6.3 ast, 38.9% FG, 151st. Nov 20: sat out the second game of a back-to-back; Bassey started at center.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: rest
+- **Reported:** Sat out; 'fully put on ice' on the back end of a back-to-back (Warriors). [24:17, 25:21]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: waiver

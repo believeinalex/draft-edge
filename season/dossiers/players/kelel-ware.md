@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down. Nov 16 (Lloyd): hold; a rare good game.
+Besperris (Nov 20; transcribed "kill start"): finally started; 25 min in foul trouble (11 pts, 5 reb, 2 stl, 2 threes, 4 TO) and fine; a longer-term fit if he gets 25 min, but Kuzma/Turner return.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: minutes
+- **Reported:** Got a start (transcribed as 'a kill start'); foul trouble early but reached 25 min, 'more than enough long term.' 11 pts, 5 reb, 2 stl, 2 threes, 4 TO. Expected to lose minutes when Kuzma and Turner return. [32:26]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

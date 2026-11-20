@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold for steals. Season check (HTB through Nov 5): 2.8 stl, 54th. Nov 16 (Lloyd): third bad game; a squeeze is coming, so only hold the steals while the role lasts.
+Besperris (Nov 20): a drop after Max Strus took the Clippers' starting SG spot, and Dunn "doesn't score" as the point guard. Lloyd (Nov 16) already expected a squeeze, so only the steals (54th through Nov 5) justify holding, and the role is now shrinking.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: role, minutes
+- **Reported:** Lost the starting shooting-guard spot to Max Strus. [12:21]
+- **Analysis:** 'Strus is an add. Dunn is a drop.' If Garland sits, Dunn becomes the point guard, but he doesn't score. [15:28, 16:26]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

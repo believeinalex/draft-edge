@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt. Nov 16 (Lloyd): hold through the illness.
+Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt. Nov 16 (Lloyd): hold through the illness. Nov 20 (Besperris): 215th; best game of the year (15-3-6, 4 stl, 3PM in 21 min) but still blocked by the young players; holding longer because of the line, but sees no pathway to a bigger role unless Jenkins shortens the rotation.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Old Man Squad (Dan Besperris): Thursday recap, Nov 19 (4 games); title "calling Max Strus a must pickup"
+Source: sources/2026-11-20_old-man-squad.txt
+Tags: minutes, role
+- **Stat:** Best game of the season: 15 pts, 3 reb, 6 ast, 4 stl and a three in 21 min, +5. Ranked 215th with high turnovers and poor percentages. [29:00, 29:17]
+- **Analysis:** 'Failing to see that pathway.' Holds him longer on the strength of the line; blocked by 'the young guys that the Bucks are more excited about' unless Jenkins plays nine instead of 42. [29:48, 30:14]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
