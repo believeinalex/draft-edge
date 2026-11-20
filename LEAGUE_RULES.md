@@ -37,3 +37,6 @@ This document outlines the core rules and settings for the "LePrawn" Yahoo Fanta
 ## Draft Timers
 * **Nomination Time:** 30 seconds
 * **Bid Time:** 20 seconds
+
+## Trade Rules
+* **No kingmaking or collusion.** Trades must be good-faith deals for both sides. Because the user manages two teams (Shut Up and Jam Gaiden and their son Finn's team), never propose trades between them unless they are fair on standard valuations (roughly equal projected value, e.g. Hashtag Basketball's trade machine), and never propose a deal whose purpose is to help one of them at the other's or the league's expense. Trade advice with other teams should also be value-fair, not lopsided offers that only work on a careless manager.
