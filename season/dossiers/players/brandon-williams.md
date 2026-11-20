@@ -1,0 +1,14 @@
+# Brandon Williams
+
+## Current take
+
+Nov 20: very close to returning.
+
+## Notes
+
+<!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Very close to returning. [13:42]

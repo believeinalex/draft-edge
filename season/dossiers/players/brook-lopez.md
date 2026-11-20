@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: now the starter, but the schedule is bad this week. Nov 16 (Lloyd): hold.
+Lloyd: now the starter, but the schedule is bad this week. Nov 16 (Lloyd): hold. Nov 20: 23 pts, 5 threes; Lloyd thought he was washed but he "looks fine... go and roster him".
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 23 pts, 5 threes. [17:31]
+- **Analysis:** Thought he was "absolutely washed" but he is fine; "you can go and roster him." [17:31]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): long-term center of the future, but expect a three-way split with Lopez and Jackson after the broken foot; don't rush. Nov 16 (Lloyd): return may be this week.
+Lloyd (Nov 7): long-term center of the future, but expect a three-way split with Lopez and Jackson after the broken foot; don't rush. Nov 16 (Lloyd): return may be this week. Nov 20: season debut: 11 min, 2 pts, 3 reb, 1 stl. Lloyd does not think you need to add or stash him; unproven, limited, sharing court with two other centers.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role, outlook
+- **Stat:** Season debut; 11 min, 2 pts, 3 reb, 1 stl. [17:01]
+- **Analysis:** "We don't even know if he is good and he will be limited... I don't think you need to stash him." [17:16]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

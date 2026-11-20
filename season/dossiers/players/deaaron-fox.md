@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd wants more. Nov 16 (Lloyd): out with hip tightness. Besperris (Nov 19): may run hot with Harper out 2-3 weeks.
+Lloyd wants more. Nov 16 (Lloyd): out with hip tightness. Besperris (Nov 19): may run hot with Harper out 2-3 weeks. Nov 20: still looks "not right" (10 pts, 5 ast); Lloyd would look to buy low.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: trade, outlook
+- **Stat:** 10 pts, 5 ast. [19:20]
+- **Analysis:** "Looks completely like not right... I would look to buy low on him after this game." [19:20]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: role, trade

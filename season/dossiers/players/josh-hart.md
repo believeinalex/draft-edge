@@ -4,11 +4,18 @@
 
 ## Current take
 
-Out (ankle) as of Nov 5. Nov 16 (Lloyd): moved from 'out (ankle)' to an explicit drop candidate. Fits the drop-candidate list for Finn.
+Out (ankle) as of Nov 5. Nov 16 (Lloyd): moved from 'out (ankle)' to an explicit drop candidate. Fits the drop-candidate list for Finn. Nov 20 (Lloyd): better game (11 pts, 6 reb, 3 threes) but still shot poorly, was out of the Knicks' closing lineup (Shamet in), and Lloyd says he is "not a must roster" player. Reinforces the Nov 16 drop-candidate read for Finn.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role, outlook
+- **Stat:** 11 pts, 6 reb, 3 threes in a 102-99 win at Minnesota; shot poorly. [5:32]
+- **Reported:** Hart was not in the closing lineup; Landry Shamet was. [5:24]
+- **Analysis:** "One of his better games" but "it hasn't been a great run of things so far"; "I just don't think that he's a must roster player." [5:40]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

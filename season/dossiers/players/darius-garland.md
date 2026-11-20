@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd: the slump was overreaction (Nov 9, after 24 pts, 10 reb, 3 threes, 2 TO) and a "really strong buy low" (Nov 5); one of his five must-draft players. As his owner, hold: he is 76th on Hashtag through Nov 5 (20.9 pts, 6.6 ast, 2.5 3PM), so a sale now sells low. Nov 16 (Lloyd): a bounce-back night; still 'okay, not what I wanted'. Nothing here changes the hold.
+Lloyd: the slump was overreaction (Nov 9, after 24 pts, 10 reb, 3 threes, 2 TO) and a "really strong buy low" (Nov 5); one of his five must-draft players. As his owner, hold: he is 76th on Hashtag through Nov 5 (20.9 pts, 6.6 ast, 2.5 3PM), so a sale now sells low. Nov 16 (Lloyd): a bounce-back night; still 'okay, not what I wanted'. Nothing here changes the hold. Nov 20 (Lloyd): another strong night (23 pts, 3 threes, 5 ast to 1 TO), top 45 over the last two weeks after a rough start. Hold.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: usage, outlook
+- **Stat:** 23 pts, 3 threes, 2 stl, 1 blk, 5 ast to 1 TO vs Spurs; top 45 over the last two weeks. [17:40]
+- **Analysis:** "After a rough start to the season... he's playing very well." [17:40]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

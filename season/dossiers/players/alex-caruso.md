@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: hold at about 20 mpg. Nov 16 (Lloyd): borderline 12-team on defensive stats.
+Lloyd: hold at about 20 mpg. Nov 16 (Lloyd): borderline 12-team on defensive stats. Nov 20: among most dropped ("no problem").
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Analysis:** Among the most dropped; "no problem." [4:39]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

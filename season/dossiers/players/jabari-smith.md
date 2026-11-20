@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted. Besperris (Nov 19): still a sell high for a top-60 return; 197th over the last week.
+Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted. Besperris (Nov 19): still a sell high for a top-60 return; 197th over the last week. Nov 20: more usage if Sengun sits.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: usage
+- **Analysis:** More for Smith if Sengun is out. [3:48] (Read as Jabari Smith.)
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook, trade

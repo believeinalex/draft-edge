@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from a back-end hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): the Nov 5 drop call stands unless you want a Reaves-out add.
+Lloyd went from a back-end hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): the Nov 5 drop call stands unless you want a Reaves-out add. Nov 20: number 5 most added in the last 30 hours.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Reported:** Number five most-added. [4:26]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

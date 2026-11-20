@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): big game, small role.
+Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): big game, small role. Nov 20: 9 minutes, 3 stl, 2 blk; do not add.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Analysis:** Played 9 minutes but 3 steals, 2 blocks; "do not add him." [17:56]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

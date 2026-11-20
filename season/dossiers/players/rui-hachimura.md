@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: playing well. Nov 16 (Lloyd): reverses 'playing well'; now a drop.
+Lloyd: playing well. Nov 16 (Lloyd): reverses 'playing well'; now a drop. Nov 20: 17 pts, 7 reb, 2 threes but Lloyd does not need to hold him.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 17 pts, 7 reb, 2 threes. [16:39]
+- **Analysis:** Not enough to hold. [16:51]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

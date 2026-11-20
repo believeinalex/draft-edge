@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): a free-throw-driven line; still not a 12-team player.
+Lloyd went from a hold (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): a free-throw-driven line; still not a 12-team player. Nov 20: 17 min, 7 pts, 5 reb, 2 ast, 1 stl; not worth rostering yet, but expected to get more time eventually.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role
+- **Stat:** 17 min, 7 pts, 5 reb, 2 ast, 1 stl. [18:04]
+- **Analysis:** "We don't need to be rostering" him. [18:04] (Transcript: "Kitten/Katon Waggler".)
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

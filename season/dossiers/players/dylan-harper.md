@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd is bullish. Nov 16 (Lloyd): well above expectations. Besperris (Nov 19): out two to three weeks.
+Lloyd is bullish. Nov 16 (Lloyd): well above expectations. Besperris (Nov 19): out two to three weeks. Nov 20: out 2-3 weeks (Lloyd refers to the mailbag show for details).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Out two to three weeks. [1:39]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: injury

@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd says on Oct 22 and Nov 5 that he is points only; on Nov 9 (25% FG) "you probably still do want to roster him. I just have no faith in him." Season check (HTB through Nov 5): 26.6 mpg, 16.4 pts, 1.8 3PM, 0.1 blk, 51.7% FG, 90th. Rosterable as a scorer, empty elsewhere; Trey Murphy's usage rebound (29 on Nov 8) costs him shots.
+Lloyd says on Oct 22 and Nov 5 that he is points only; on Nov 9 (25% FG) "you probably still do want to roster him. I just have no faith in him." Season check (HTB through Nov 5): 26.6 mpg, 16.4 pts, 1.8 3PM, 0.1 blk, 51.7% FG, 90th. Rosterable as a scorer, empty elsewhere; Trey Murphy's usage rebound (29 on Nov 8) costs him shots. Nov 20 (Lloyd): Trey Murphy is back (at least questionable) and Lloyd expects Bey to move to the bench. Hold only if Finn needs points; his role gets thinner.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role, injury
+- **Reported:** Trey Murphy is back and listed questionable; Lloyd imagines Bey moves to the bench, "further squishing" other Pelicans. [3:32] (Transcript spells him "Sadique Bay".)
+- **Analysis:** Lloyd describes Bey as depressed in value with Murphy returning. [3:32]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

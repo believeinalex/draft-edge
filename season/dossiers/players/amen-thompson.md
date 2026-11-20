@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands. Besperris (Nov 19): expects a 40-50 finish; a buy, so Finn shouldn't sell him cheap.
+Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands. Besperris (Nov 19): expects a 40-50 finish; a buy, so Finn shouldn't sell him cheap. Nov 20 (Lloyd): Alperen Sengun left Wednesday's game early and is listed questionable; if he sits, Adams starts and it is "more for Amen". A small plus for the next game; the longer-term role worry still stands.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: usage, injury
+- **Reported:** Sengun left the previous game early and is questionable; if he is out Steven Adams starts. [3:40]
+- **Analysis:** Sengun out means more usage for Amen (also Eason, Durant, Smith). [3:48]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook

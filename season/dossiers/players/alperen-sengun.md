@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: top 10 so far; the benching worry hasn't happened. Nov 16 (Lloyd): fine. Besperris (Nov 19): sell high; FT% (74% vs a 69% career norm) and FG% should regress.
+Lloyd: top 10 so far; the benching worry hasn't happened. Nov 16 (Lloyd): fine. Besperris (Nov 19): sell high; FT% (74% vs a 69% career norm) and FG% should regress. Nov 20: left the Nov 18 game early and is listed questionable for the next game. Check the injury report; if out, Steven Adams starts.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Left the game early Wednesday; listed questionable. If out, Steven Adams starts. [3:40]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9).
+Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9). Nov 20: 35 minutes, 9 pts, 7 reb, no blocks; "annoying and frustrating". Hold only for rebounds and blocks.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 35 min, 9 pts, 7 reb, 0 blk, 4-of-6 FG. [8:14]
+- **Analysis:** Told King on the mailbag he is fine to hold for rebounds and blocks, "which is the only reason you would have drafted him." [8:22]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

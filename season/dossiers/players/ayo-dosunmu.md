@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd: hold through the 2-game week; don't start in weekly leagues.
+Lloyd: hold through the 2-game week; don't start in weekly leagues. Nov 20: another stinker: 6 pts, 4 reb, 22% FG; two bad games in his last three.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: outlook
+- **Stat:** 6 pts, 4 reb, 22% FG. [7:45]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

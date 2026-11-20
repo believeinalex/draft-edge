@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: more usage than expected. Nov 16 (Lloyd): usage dropping with Barnes back; monitor. Out two weeks with a hamstring strain (reported Nov 19).
+Lloyd: more usage than expected. Nov 16 (Lloyd): usage dropping with Barnes back; monitor. Out two weeks with a hamstring strain (reported Nov 19). Nov 20: hamstring, out a couple of weeks (Lloyd names "Rowan Barrett"; read as RJ Barrett). Lifts Walter, Shead and Barnes.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Hamstring injury, out a couple of weeks. [1:51]
+- **Analysis:** More usage for Jakobe Walter without him. [2:06]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: injury

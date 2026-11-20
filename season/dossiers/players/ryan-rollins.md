@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt. Nov 16 (Lloyd): hold through the illness.
+Lloyd (Nov 7): benched behind Herro and Burries and looking terrible; give him one or two more games, maybe a week, then move on. Top-70 upside only if a Bucks guard gets hurt. Nov 16 (Lloyd): hold through the illness. Nov 20: great line (15 pts, 3 reb, 6 ast, 4 stl, 33 usage) in only 21 min behind Jakucionis, Burries and Hero as the 4th guard. Lloyd says keep if you have him, but might drop later.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: minutes, outlook
+- **Stat:** 21 min, 15 pts, 3 reb, 6 ast, 4 stl, 33% usage. [25:40]
+- **Analysis:** "I don't think you can drop him after that. But I just don't know"; fewer minutes than Hero and Burries. [25:49], [27:12]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

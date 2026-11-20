@@ -2,11 +2,17 @@
 
 ## Current take
 
-Fine. Nov 16 (Lloyd): back with big volume.
+Fine. Nov 16 (Lloyd): back with big volume. Nov 20: returns for Toronto; with Murray-Boyles and Barrett out, he fills one of the openings.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury, role
+- **Reported:** Barnes is back. Barnes and the starting center (transcript: "Purle") start. [2:06]
+- **Analysis:** One of the openings from Barrett/Murray-Boyles being out is filled by Barnes. [4:01]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: drop. Nov 16 (Lloyd): drop. Besperris (Nov 19): well above streaming level while Kawhi and Barrett are out.
+Lloyd: drop. Nov 16 (Lloyd): drop. Besperris (Nov 19): well above streaming level while Kawhi and Barrett are out. Nov 20: gains usage with Barrett out; Lloyd says add in 12-team leagues.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: usage, outlook
+- **Analysis:** Minutes fine already; more usage without Barrett; becomes a 12-team add. [2:06]
+- **Analysis:** Walter and Shead are "for twelves". [3:01]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: role

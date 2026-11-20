@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold for steals. Season check (HTB through Nov 5): 2.8 stl, 54th. Nov 16 (Lloyd): third bad game; a squeeze is coming, so only hold the steals while the role lasts.
+Lloyd: hold for steals. Season check (HTB through Nov 5): 2.8 stl, 54th. Nov 16 (Lloyd): third bad game; a squeeze is coming, so only hold the steals while the role lasts. Nov 20: moved to the bench; 20 min. Lloyd says drop (already on his drop list 2-3 games ago).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role, outlook
+- **Reported:** Moved to the bench. [16:02]
+- **Analysis:** "Dropping Chris Dunn" - already a drop for Lloyd. [18:11]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

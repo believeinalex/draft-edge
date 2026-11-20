@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold (Oct 22); now starting over Poeltl. Nov 16 (Lloyd): hold; Lloyd is convinced he is better than the start. Concussion protocol (Nov 19), not an illness.
+Lloyd: hold (Oct 22); now starting over Poeltl. Nov 16 (Lloyd): hold; Lloyd is convinced he is better than the start. Concussion protocol (Nov 19), not an illness. Nov 20: concussion, out Friday, return timing unknown. Lloyd says this is "Murray Boils" (read as Collin Murray-Boyles); Toronto openings go to Barnes, Walter and Shead.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: injury
+- **Reported:** Concussion; out for Friday; unclear how long. [1:51]
+- **Analysis:** With him and Barrett out, Barnes (back) and the starting center start; Lloyd points to Walter and Shead (12-team), Graves (16-team) and Battle (streamer) as the beneficiaries. [2:06] (Transcript says "Colari Boils" and "Murray Boils"; read as Collin Murray-Boyles.)
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: injury

@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd went from "a bad sign" (Oct 22) to impressed (Nov 5).
+Lloyd went from "a bad sign" (Oct 22) to impressed (Nov 5). Nov 20: returned for Minnesota; 35 min, 23 pts, 3 reb, 2 threes, 3 blk, 7/7 FT, over 50% FG (35 FP). After floundering, this was a big game; Cody Williams went to the bench.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: role, outlook
+- **Reported:** Returned; Cody Williams moved to the bench and did not play. [6:55]
+- **Stat:** 35 min, 23 pts, 3 reb, 2 threes, 3 blk, 7/7 FT, 50%+ FG, 35 FP. [7:04]
+- **Analysis:** "He'd been sort of floundering a bit." [7:13]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

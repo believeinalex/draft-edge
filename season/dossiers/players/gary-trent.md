@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 15 recap): don't add.
+Lloyd (Nov 15 recap): don't add. Nov 20: 7 minutes after ~20 and ~30 in the prior two; no consistency.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-20 · Locked On Fantasy Basketball (Josh Lloyd): recap of Thursday Nov 19, 4 games
+Source: sources/2026-11-20_locked-on-fantasy-basketball.txt
+Tags: minutes
+- **Stat:** 7 min vs ~20 and ~30 the previous two games. [25:10]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
