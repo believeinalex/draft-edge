@@ -2,11 +2,16 @@
 
 ## Current take
 
-Improving after a slow start. Nov 16 (Lloyd): solid.
+Improving after a slow start. Nov 16 (Lloyd): solid. Besperris (Nov 19): try to turn him into Brandon Miller even though it is a sell low.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: trade
+- **Analysis:** A bit of a sell low now, but worth trying to turn into Brandon Miller. [7:48]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

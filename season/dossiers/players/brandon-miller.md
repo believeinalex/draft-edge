@@ -4,11 +4,18 @@
 
 ## Current take
 
-Out as of Nov 9, alongside Knueppel (4+ weeks) and Schröder (2+ weeks); return timing not given in the episode, so check the injury report. When healthy: high volume, poor efficiency (Lloyd). Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd. Nov 16 (Lloyd): back from injury and played badly, but he calls it the easiest buy-low there is. Hold; for Finn, don't sell at the bottom.
+Out as of Nov 9, alongside Knueppel (4+ weeks) and Schröder (2+ weeks); return timing not given in the episode, so check the injury report. When healthy: high volume, poor efficiency (Lloyd). Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd. Nov 16 (Lloyd): back from injury and played badly, but he calls it the easiest buy-low there is. Hold; for Finn, don't sell at the bottom. Besperris (Nov 19) makes him the week's top buy low (a hot run is coming; buy for a player ranked about 80). For Finn: hold, don't sell.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: shooting, outlook, trade
+- **Stat:** 147th in 9-cat, maybe the worst FG% impact in the NBA; 3-of-10 for 8 vs Boston, missed two games (hip strain), 1-of-10 for 5 vs the Clippers before a better game vs the Lakers. [5:27]
+- **Analysis:** Top buy low of the week. Expects a heater (about 22 FGA, 12 makes, near 30 ppg, 4.5-5.5 threes for a couple of weeks); about 5 reb, 3 ast, a steal, 0.7 blk, great FT%. [6:17]
+- **Analysis:** Buy for someone ranked about 80, e.g. Immanuel Quickley, Jaylen Brown, Kyshawn George, LeBron, Derrick White, Lendeborg; Trae Young only as a build adjustment; De'Aaron Fox probably not enough. [6:56]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

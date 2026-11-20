@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: drop. Nov 16 (Lloyd): drop.
+Lloyd: drop. Nov 16 (Lloyd): drop. Besperris (Nov 19): well above streaming level while Kawhi and Barrett are out.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: role
+- **Analysis:** With no Kawhi and no Barrett, Walter goes from stream level to well above that. [29:07][29:59]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

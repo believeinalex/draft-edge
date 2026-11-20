@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): reverses 'drop' to hold for now.
+Lloyd went from "definitely holding" (Oct 22) to drop (Nov 5). Nov 16 (Lloyd): reverses 'drop' to hold for now. Besperris (Nov 19): relevant again while Murray-Boyles is out.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: role
+- **Analysis:** Suddenly interesting again with Murray-Boyles in concussion protocol; "bought himself another week". [29:16]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

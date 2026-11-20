@@ -2,11 +2,16 @@
 
 ## Current take
 
-Fine. Nov 16 (Lloyd): efficient scoring night, 65th for the season.
+Fine. Nov 16 (Lloyd): efficient scoring night, 65th for the season. Besperris (Nov 19): a chip for Duren.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: trade
+- **Analysis:** In the same range as Jarrett Allen as an offer for Duren. [28:05]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

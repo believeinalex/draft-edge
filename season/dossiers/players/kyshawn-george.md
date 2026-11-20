@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: sell only for a top-60 player. Nov 16 (Lloyd): regression arrived; not worried.
+Lloyd: sell only for a top-60 player. Nov 16 (Lloyd): regression arrived; not worried. Besperris (Nov 19): fair value for Brandon Miller, light on name power.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: trade
+- **Analysis:** Should be enough to get Brandon Miller but may lack name power; probably not enough for Jalen Duren. [7:32][28:10]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

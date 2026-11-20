@@ -2,11 +2,17 @@
 
 ## Current take
 
-Missed the Nov 4 game. Nov 16 (Lloyd): buy low relative to a second-round value.
+Missed the Nov 4 game. Nov 16 (Lloyd): buy low relative to a second-round value. Besperris (Nov 19) agrees with Lloyd: a buy low whose FG% (and 18% from three) should rebound to third-round value; pay a third-rounder.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: shooting, outlook, trade
+- **Stat:** 79th: 19 pts, 9 reb, 8 ast, 1.3 combined stocks (1.6 last year); FG% down from 49 to 43; 3P% 18% vs 31-36% the last three seasons. [20:53][22:20]
+- **Analysis:** FG% "very clearly going to come up"; expects him back to third-round value in 9-cat. Buy for a third-rounder: any name from about 31 down, e.g. Zion, Ty Jerome, Jaden McDaniels, Duren, VJ Edgecombe, Jabari Smith Jr., Nickeil Alexander-Walker, Okongwu, Sabonis, Jalen Brunson; Kessler is a second-rounder but Johnson is probably more valuable. [22:30][23:16][23:45]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

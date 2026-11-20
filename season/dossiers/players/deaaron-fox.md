@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd wants more. Nov 16 (Lloyd): out with hip tightness.
+Lloyd wants more. Nov 16 (Lloyd): out with hip tightness. Besperris (Nov 19): may run hot with Harper out 2-3 weeks.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: role, trade
+- **Reported:** Dylan Harper out two to three weeks. [8:14]
+- **Analysis:** Fox probably isn't enough for Miller but may have a spurt with Harper out; worth offering for Lendeborg. [8:14][18:18]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

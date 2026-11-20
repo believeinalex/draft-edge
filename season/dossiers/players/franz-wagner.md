@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd was unbothered after opening night: the usage was there and foul trouble explained the minutes. Season check (HTB through Nov 5): 35.8 mpg, 20.3 pts, 7.6 ast, but 41.9% FG, 0.0 blk and a 87th-place rank. The role is as good as Lloyd hoped; the efficiency and defensive stats haven't come.
+Lloyd was unbothered after opening night: the usage was there and foul trouble explained the minutes. Season check (HTB through Nov 5): 35.8 mpg, 20.3 pts, 7.6 ast, but 41.9% FG, 0.0 blk and a 87th-place rank. The role is as good as Lloyd hoped; the efficiency and defensive stats haven't come. Besperris (Nov 19): running the offense as "point Franz" while Banchero is out.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: role
+- **Analysis:** "Point Franz is doing his thing" while Banchero is out. [41:16]
+
 ### 2026-10-22 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Oct 21, 11 games
 Source: sources/2026-10-22_locked-on-fantasy-basketball.txt
 Tags: outlook, minutes

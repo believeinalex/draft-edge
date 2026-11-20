@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd is positive on the role on Oct 22 and Nov 5; Toronto is short of creators without Kawhi Leonard. On Nov 9 he flagged Quickley's (and Barnes') status as deciding whether Collin Murray-Boyles keeps starting, so check the injury report before Monday's lineup. Season check (HTB through Nov 5): 31.8 mpg, 17.4 pts, 5.8 ast, 2.6 3PM, 40.9% FG, 0.0 blk, 82nd. Shooting is still the problem (see the Quickley benching open question, Nov 9). Nov 16 (Lloyd): a solid line with Barnes back; no change.
+Lloyd is positive on the role on Oct 22 and Nov 5; Toronto is short of creators without Kawhi Leonard. On Nov 9 he flagged Quickley's (and Barnes') status as deciding whether Collin Murray-Boyles keeps starting, so check the injury report before Monday's lineup. Season check (HTB through Nov 5): 31.8 mpg, 17.4 pts, 5.8 ast, 2.6 3PM, 40.9% FG, 0.0 blk, 82nd. Shooting is still the problem (see the Quickley benching open question, Nov 9). Nov 16 (Lloyd): a solid line with Barnes back; no change. Besperris (Nov 19): a reliable 60-75 player without upside; usable as the chip for a buy low like Brandon Miller or Lendeborg.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: outlook, trade
+- **Analysis:** "Always somewhere between like 60 and 75, very reliable" but without Brandon Miller's upside; Quickley might be enough to get Miller. [7:10]
+- **Analysis:** Also floated as a chip to buy Lendeborg. [17:33]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

@@ -2,11 +2,18 @@
 
 ## Current take
 
-Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted.
+Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted. Besperris (Nov 19): still a sell high for a top-60 return; 197th over the last week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: outlook, trade
+- **Stat:** Was ranked in the late 20s, now 40th; 197th over the last week. [3:29][4:08]
+- **Analysis:** Still a sell high for a top-60 player. [4:00]
+- **Analysis:** Listed among names that could pair up to get Jalen Johnson. [24:14]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

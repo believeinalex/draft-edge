@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd is bullish. Nov 16 (Lloyd): well above expectations.
+Lloyd is bullish. Nov 16 (Lloyd): well above expectations. Besperris (Nov 19): out two to three weeks.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: injury
+- **Reported:** Out two to three weeks (Besperris, no source named). [8:14]
+- **Analysis:** An injured Harper is a target worth getting for Anthony Black. [42:40]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

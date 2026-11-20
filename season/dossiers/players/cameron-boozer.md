@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: good peripherals, shaky two-point shooting.
+Lloyd: good peripherals, shaky two-point shooting. Old Man Squad buy low that hit: 16th over the last week (Nov 19).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: outlook
+- **Stat:** Last week's buy low; 16th over the last week despite shooting trouble. [1:59]
+
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: shooting

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Elite volume. Nov 16 (Lloyd): 22nd; a buy-low.
+Elite volume. Nov 16 (Lloyd): 22nd; a buy-low. Besperris (Nov 19): a buy low; expects top-5 by January as his twos and free throws recover.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: shooting, outlook, trade
+- **Stat:** 15th: 31 ppg but 4.3 ast, 0.9 stl, 47.5% FG, 83.5% FT (vs 55/88, 52/90, 54/87); 52% on twos after 57-60% for three seasons. [30:18][31:57]
+- **Analysis:** Shooting, steals and FT% should rebound; predicts he is No. 5 by Jan 1. Buy for any player drafted after him (Sengun, Tatum, Cade, Maxey; Flagg fastest). [34:11][34:37]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

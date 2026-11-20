@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands.
+Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands. Besperris (Nov 19): expects a 40-50 finish; a buy, so Finn shouldn't sell him cheap.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: outlook
+- **Analysis:** A buy-low type target ranked in the 60s; expects him to finish in the 40-50 range this year. [41:45]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

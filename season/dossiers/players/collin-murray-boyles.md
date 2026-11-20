@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: hold (Oct 22); now starting over Poeltl. Nov 16 (Lloyd): hold; Lloyd is convinced he is better than the start.
+Lloyd: hold (Oct 22); now starting over Poeltl. Nov 16 (Lloyd): hold; Lloyd is convinced he is better than the start. Concussion protocol (Nov 19), not an illness.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: injury
+- **Reported:** Placed in concussion protocol (it was not an illness), news breaking during the recording. [28:53]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

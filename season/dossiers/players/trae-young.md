@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd is content on Oct 22 and Nov 5: big minutes and assists next to Anthony Davis. Season check (HTB through Nov 5): 35.8 mpg, 19.6 pts, 9.5 ast, 40.6% FG, 33rd. Nov 16 (Lloyd): a buy-low, not a worry. Earlier notes were content with his role; this one is about shooting luck, not role. Hold through the regression.
+Lloyd is content on Oct 22 and Nov 5: big minutes and assists next to Anthony Davis. Season check (HTB through Nov 5): 35.8 mpg, 19.6 pts, 9.5 ast, 40.6% FG, 33rd. Nov 16 (Lloyd): a buy-low, not a worry. Earlier notes were content with his role; this one is about shooting luck, not role. Hold through the regression. Besperris (Nov 19): a build-specific player; trading him for Miller only makes sense as a build fix.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: trade
+- **Analysis:** Could be used for Brandon Miller only as a build adjustment ("you forgot that he's a build guy"). [7:56]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

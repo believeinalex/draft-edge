@@ -2,11 +2,16 @@
 
 ## Current take
 
-Strong. Nov 16 (Lloyd): top-40 pace despite lower usage.
+Strong. Nov 16 (Lloyd): top-40 pace despite lower usage. Besperris (Nov 19): a trade chip for Miller or Lendeborg.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: trade
+- **Analysis:** Trade chip for Brandon Miller ("turn the inefficiencies of Brown into the inefficiencies of Miller") or Lendeborg; stat set currently close to Lendeborg's. [7:18][17:42]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

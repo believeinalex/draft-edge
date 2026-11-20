@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: strong start (Oct 22, Nov 5). Season check (HTB through Nov 5): 30.6 mpg, 10.2 reb, 2.7 blk, 71.8% FG, 25th. Bears on the Chet-for-Kessler idea in the open questions. Nov 16 (Lloyd): doing very well; relevant to the Chet-for-Kessler question.
+Lloyd: strong start (Oct 22, Nov 5). Season check (HTB through Nov 5): 30.6 mpg, 10.2 reb, 2.7 blk, 71.8% FG, 25th. Bears on the Chet-for-Kessler idea in the open questions. Nov 16 (Lloyd): doing very well; relevant to the Chet-for-Kessler question. Besperris (Nov 19): a second-round value.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: outlook
+- **Analysis:** A second-rounder he really likes, though Jalen Johnson is probably more valuable in straight fantasy terms. [23:45]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

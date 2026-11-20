@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd saw his 32 opening-night minutes as a pleasant surprise. Now out (knee); season line 3 GP, 33.4 mpg, 35.7% FG. The note mainly says Orlando will give him starter minutes when he is healthy.
+Lloyd saw his 32 opening-night minutes as a pleasant surprise. Now out (knee); season line 3 GP, 33.4 mpg, 35.7% FG. The note mainly says Orlando will give him starter minutes when he is healthy. Besperris (Nov 19): ramping up in Orlando.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: role
+- **Analysis:** Ramping up, which is shifting Orlando's usage away from Anthony Black. [41:16]
+
 ### 2026-10-22 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Oct 21, 11 games
 Source: sources/2026-10-22_locked-on-fantasy-basketball.txt
 Tags: minutes

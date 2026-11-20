@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered. Nov 16 (Lloyd): sat the game; Lloyd expected him back Monday.
+Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered. Nov 16 (Lloyd): sat the game; Lloyd expected him back Monday. Besperris (Nov 19): still a buy low despite 40% FG; 22nd over the last week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
+Source: sources/2026-11-19_old-man-squad.txt
+Tags: shooting, outlook
+- **Stat:** 22nd over the last week despite poor shooting; free throws going down, 28.5 pts, 4 reb, 1 stl, 2 blk. [2:07]
+- **Analysis:** Still a buy low "shooting 40%", with big risk. [41:58]
+
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt
