@@ -1,0 +1,1047 @@
+{
+  "asOf": "2026-11-21",
+  "fetchedAt": "2026-11-21T10:53:22.053Z",
+  "source": "https://basketball.fantasysports.yahoo.com/nba/injuries",
+  "players": [
+    {
+      "name": "Ugonna Onyenso",
+      "nbaTeam": "DET",
+      "pos": [
+        "C"
+      ],
+      "note": "Foot",
+      "status": "Q"
+    },
+    {
+      "name": "Tobi Lawal",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PF"
+      ],
+      "note": "Groin",
+      "status": "Q"
+    },
+    {
+      "name": "Walter Clayton Jr.",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Knee",
+      "status": "Q"
+    },
+    {
+      "name": "Deni Avdija",
+      "nbaTeam": "POR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Foot",
+      "status": "Q"
+    },
+    {
+      "name": "Myron Gardner",
+      "nbaTeam": "MIA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Hamstring",
+      "status": "Q"
+    },
+    {
+      "name": "P.J. Washington",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Shoulder",
+      "status": "Q"
+    },
+    {
+      "name": "Derrick White",
+      "nbaTeam": "BOS",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Shoulder",
+      "status": "Q"
+    },
+    {
+      "name": "OG Anunoby",
+      "nbaTeam": "NYK",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Calf",
+      "status": "Q"
+    },
+    {
+      "name": "Tyrese Maxey",
+      "nbaTeam": "PHI",
+      "pos": [
+        "PG"
+      ],
+      "note": "Foot",
+      "status": "Q"
+    },
+    {
+      "name": "Jayson Tatum",
+      "nbaTeam": "BOS",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Rest",
+      "status": "Q"
+    },
+    {
+      "name": "Draymond Green",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Rest",
+      "status": "P"
+    },
+    {
+      "name": "Ariel Hukporti",
+      "nbaTeam": "PHI",
+      "pos": [
+        "C"
+      ],
+      "note": "Achilles",
+      "status": "OFS"
+    },
+    {
+      "name": "Ben Simmons",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PG"
+      ],
+      "note": "Achilles",
+      "status": "OFS"
+    },
+    {
+      "name": "Henri Veesaar",
+      "nbaTeam": "ATL",
+      "pos": [
+        "C"
+      ],
+      "note": "Knee",
+      "status": "OFS"
+    },
+    {
+      "name": "Anthony Edwards",
+      "nbaTeam": "MIN",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Ty Jerome",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Alex Caruso",
+      "nbaTeam": "OKC",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Dean Wade",
+      "nbaTeam": "PHI",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Maxime Raynaud",
+      "nbaTeam": "SAC",
+      "pos": [
+        "C"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Lauri Markkanen",
+      "nbaTeam": "UTA",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Hand",
+      "status": "O"
+    },
+    {
+      "name": "Javon Small",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Personal",
+      "status": "O"
+    },
+    {
+      "name": "Jamir Watkins",
+      "nbaTeam": "WAS",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Felix Okpara",
+      "nbaTeam": "WAS",
+      "pos": [
+        "C"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Jalen Smith",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Illness",
+      "status": "O"
+    },
+    {
+      "name": "Tyrese Haliburton",
+      "nbaTeam": "IND",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Izaiyah Nelson",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Precious Achiuwa",
+      "nbaTeam": "SAC",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Lower Leg",
+      "status": "O"
+    },
+    {
+      "name": "Grant Williams",
+      "nbaTeam": "CHA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "RJ Barrett",
+      "nbaTeam": "TOR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Chris Youngblood",
+      "nbaTeam": "POR",
+      "pos": [
+        "SG"
+      ],
+      "note": "Heel",
+      "status": "O"
+    },
+    {
+      "name": "Caleb Wilson",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PF"
+      ],
+      "note": "Hand",
+      "status": "O"
+    },
+    {
+      "name": "Ja Morant",
+      "nbaTeam": "POR",
+      "pos": [
+        "PG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Duncan Robinson",
+      "nbaTeam": "DET",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Quadriceps",
+      "status": "O"
+    },
+    {
+      "name": "Grant Nelson",
+      "nbaTeam": "BKN",
+      "pos": [
+        "PF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Noah Penda",
+      "nbaTeam": "ORL",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Donte DiVincenzo",
+      "nbaTeam": "MIN",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Achilles",
+      "status": "O"
+    },
+    {
+      "name": "Kingston Flemings",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PG"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Ebuka Okorie",
+      "nbaTeam": "DET",
+      "pos": [
+        "PG"
+      ],
+      "note": "Oblique",
+      "status": "O"
+    },
+    {
+      "name": "Jaren Jackson Jr.",
+      "nbaTeam": "UTA",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Sergio De Larrea",
+      "nbaTeam": "DAL",
+      "pos": [
+        "PG"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Cameron Boozer",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Jonathan Isaac",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Jayden Quaintance",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Grayson Allen",
+      "nbaTeam": "CHA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Concussion",
+      "status": "O"
+    },
+    {
+      "name": "GG Jackson",
+      "nbaTeam": "MEM",
+      "pos": [
+        "SF",
+        "PF",
+        "C"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Vít Krejčí",
+      "nbaTeam": "POR",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Dominick Barlow",
+      "nbaTeam": "PHI",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Reece Beekman",
+      "nbaTeam": "WAS",
+      "pos": [
+        "PG"
+      ],
+      "note": "Shoulder",
+      "status": "O"
+    },
+    {
+      "name": "Bryce McGowens",
+      "nbaTeam": "NOP",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Elbow",
+      "status": "O"
+    },
+    {
+      "name": "Johnny Furphy",
+      "nbaTeam": "IND",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Nikola Topić",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PG"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Ryan Dunn",
+      "nbaTeam": "PHX",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Quadriceps",
+      "status": "O"
+    },
+    {
+      "name": "Scotty Pippen Jr.",
+      "nbaTeam": "MEM",
+      "pos": [
+        "PG"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Jaylon Tyson",
+      "nbaTeam": "CLE",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Ronald Holland II",
+      "nbaTeam": "DET",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Mark Williams",
+      "nbaTeam": "PHX",
+      "pos": [
+        "C"
+      ],
+      "note": "Shoulder",
+      "status": "O"
+    },
+    {
+      "name": "Mouhamed Gueye",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Tristan Vukcevic",
+      "nbaTeam": "WAS",
+      "pos": [
+        "C"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Jordan Miller",
+      "nbaTeam": "LAC",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Shoulder",
+      "status": "O"
+    },
+    {
+      "name": "Tarik Biberovic",
+      "nbaTeam": "DAL",
+      "pos": [
+        "SF"
+      ],
+      "note": "Heel",
+      "status": "O"
+    },
+    {
+      "name": "Jaylen Clark",
+      "nbaTeam": "MIN",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Dereck Lively II",
+      "nbaTeam": "DAL",
+      "pos": [
+        "C"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Cason Wallace",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "note": "Shoulder",
+      "status": "O"
+    },
+    {
+      "name": "Julian Strawther",
+      "nbaTeam": "DEN",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Adem Bona",
+      "nbaTeam": "PHI",
+      "pos": [
+        "C"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Jalen Duren",
+      "nbaTeam": "DET",
+      "pos": [
+        "C"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Dylan Harper",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Austin Reaves",
+      "nbaTeam": "LAL",
+      "pos": [
+        "PG",
+        "SG",
+        "SF"
+      ],
+      "note": "Heel",
+      "status": "O"
+    },
+    {
+      "name": "Dejounte Murray",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Thomas Sorber",
+      "nbaTeam": "OKC",
+      "pos": [
+        "C"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Moses Moody",
+      "nbaTeam": "GSW",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Nolan Traore",
+      "nbaTeam": "BKN",
+      "pos": [
+        "PG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Asa Newell",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Toe",
+      "status": "O"
+    },
+    {
+      "name": "Kon Knueppel",
+      "nbaTeam": "CHA",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Collin Murray-Boyles",
+      "nbaTeam": "TOR",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Concussion",
+      "status": "O"
+    },
+    {
+      "name": "Trendon Watford",
+      "nbaTeam": "NOP",
+      "pos": [
+        "PF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Jock Landale",
+      "nbaTeam": "ATL",
+      "pos": [
+        "C"
+      ],
+      "note": "Hip",
+      "status": "O"
+    },
+    {
+      "name": "Jalen Williams",
+      "nbaTeam": "OKC",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Leg",
+      "status": "O"
+    },
+    {
+      "name": "Nae'Qwan Tomlin",
+      "nbaTeam": "CLE",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Back",
+      "status": "O"
+    },
+    {
+      "name": "Justin Champagnie",
+      "nbaTeam": "WAS",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Brandon Williams",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Paolo Banchero",
+      "nbaTeam": "ORL",
+      "pos": [
+        "PF"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "Chet Holmgren",
+      "nbaTeam": "OKC",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Bennedict Mathurin",
+      "nbaTeam": "NOP",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Shaedon Sharpe",
+      "nbaTeam": "POR",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Ousmane Dieng",
+      "nbaTeam": "MIL",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Finger",
+      "status": "O"
+    },
+    {
+      "name": "Evan Mobley",
+      "nbaTeam": "CLE",
+      "pos": [
+        "PF",
+        "C"
+      ],
+      "note": "Toe",
+      "status": "O"
+    },
+    {
+      "name": "Ben Sheppard",
+      "nbaTeam": "IND",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Taurean Prince",
+      "nbaTeam": "DET",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Jaylen Brown",
+      "nbaTeam": "PHI",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Richie Saunders",
+      "nbaTeam": "MEM",
+      "pos": [
+        "SG"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Nate Bittle",
+      "nbaTeam": "TOR",
+      "pos": [
+        "C"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Bradley Beal",
+      "nbaTeam": "LAC",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Kawhi Leonard",
+      "nbaTeam": "TOR",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "Jusuf Nurkić",
+      "nbaTeam": "UTA",
+      "pos": [
+        "C"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Stephen Curry",
+      "nbaTeam": "GSW",
+      "pos": [
+        "PG"
+      ],
+      "note": "Abdomen",
+      "status": "O"
+    },
+    {
+      "name": "Kristaps Porziņģis",
+      "nbaTeam": "GSW",
+      "pos": [
+        "C"
+      ],
+      "note": "Illness",
+      "status": "O"
+    },
+    {
+      "name": "Clint Capela",
+      "nbaTeam": "HOU",
+      "pos": [
+        "C"
+      ],
+      "note": "Ankle",
+      "status": "O"
+    },
+    {
+      "name": "CJ McCollum",
+      "nbaTeam": "ATL",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Calf",
+      "status": "O"
+    },
+    {
+      "name": "Jimmy Butler III",
+      "nbaTeam": "GSW",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Knee",
+      "status": "O"
+    },
+    {
+      "name": "T.J. McConnell",
+      "nbaTeam": "IND",
+      "pos": [
+        "PG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Brandon Ingram",
+      "nbaTeam": "LAC",
+      "pos": [
+        "SG",
+        "SF",
+        "PF"
+      ],
+      "note": "Achilles",
+      "status": "O"
+    },
+    {
+      "name": "Tobias Harris",
+      "nbaTeam": "SAS",
+      "pos": [
+        "PF"
+      ],
+      "note": "Calf",
+      "status": "O"
+    },
+    {
+      "name": "Jordan Clarkson",
+      "nbaTeam": "NYK",
+      "pos": [
+        "SG",
+        "SF"
+      ],
+      "note": "Foot",
+      "status": "O"
+    },
+    {
+      "name": "Dennis Schröder",
+      "nbaTeam": "CHA",
+      "pos": [
+        "PG",
+        "SG"
+      ],
+      "note": "Hamstring",
+      "status": "O"
+    },
+    {
+      "name": "Jerami Grant",
+      "nbaTeam": "MEM",
+      "pos": [
+        "SF",
+        "PF"
+      ],
+      "note": "Calf",
+      "status": "O"
+    },
+    {
+      "name": "Tobe Awaka",
+      "nbaTeam": "CHI",
+      "pos": [
+        "PF"
+      ],
+      "note": "Back",
+      "status": "O"
+    }
+  ]
+}
