@@ -16,7 +16,7 @@
  *   shooting luck). This is smooth, so near-ties count for half a point instead of flipping whole ranks.
  * - Search: every legal 9-player subset of the roster (a few hundred to a few thousand), exhaustively.
  *
- * Usage: node season/lineup_solver.js [--team Finn] [--week YYYY-MM-DD] [--top 5] [--blend] [--json]
+ * Usage: node season/lineup_solver.js [--team Finn] [--week YYYY-MM-DD] [--top 5] [--blend] [--json] [--swap "In:Out" ...]
  * Default teams: both managed teams. Default week: the week starting today if today is Monday, else next Monday.
  */
 const fs = require('fs');
@@ -287,6 +287,17 @@ function main() {
         if (hit && (!bestSwap || hit.exp > bestSwap.exp)) bestSwap = { out, exp: hit.exp };
       }
       if (bestSwap) md.push(`| ${b.name} | ${bestSwap.out.name} | ${(bestSwap.exp - best.exp).toFixed(2)} |`);
+    }
+    // Requested swaps: --swap "In Player:Out Player" (repeatable)
+    const swaps = args.map((a, i) => a === '--swap' ? args[i + 1] : null).filter(Boolean);
+    for (const sw of swaps) {
+      const [inN, outN] = sw.split(':').map(x => x.trim().toLowerCase());
+      const inP = w.all.find(c => c.name.toLowerCase().includes(inN)), outP = best.lineup.find(c => c.name.toLowerCase().includes(outN));
+      if (!inP || !outP) { md.push(`Swap "${sw}": player not found in this lineup/roster.`); continue; }
+      const s = best.lineup.filter(c => c !== outP).concat([inP]);
+      const hit = scored.find(x => s.every(c => x.lineup.includes(c)));
+      md.push(hit ? `Swap ${inP.name} in for ${outP.name}: ${hit.exp.toFixed(1)} expected (${(hit.exp - best.exp).toFixed(2)}); categories ${CATS.map(c => `${c} ${(hit.cats[c] - best.cats[c] >= 0 ? '+' : '')}${(hit.cats[c] - best.cats[c]).toFixed(2)}`).join(', ')}.`
+        : `Swap ${inP.name} in for ${outP.name}: not a legal lineup (positions).`);
     }
     md.push('', `Next best lineups: ${scored.slice(1, topN).map(x => `${x.exp.toFixed(1)} (bench ${w.all.filter(c => !x.lineup.includes(c) && c.games > 0).map(c => c.name.split(' ').slice(-1)[0]).join(', ')})`).join('; ')}.`, '');
     results.push({ team: name, week: weekStart, expected: best.exp, cats: best.cats, lineup: Object.fromEntries([...SLOTS.filter(s => slots[s]).map(s => [s, slots[s].name]), ['Util', slots.Util.map(c => c.name)]]), bench: bench.map(c => c.name), byValueExpected: valueExp.total });
