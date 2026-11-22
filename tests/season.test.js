@@ -437,3 +437,16 @@ test('lineup parser skips live and final game status lines', () => {
   assert.equal(blocks[0].players[0].gameToday, 'Q1 10:12, 4-2 @ MIN *');
   assert.equal(blocks[0].players[2].status, 'O');
 });
+
+test('lineup solver: positions, normal CDF and expected roto points', () => {
+  const { phi, feasible, expectedRoto } = require('../season/lineup_solver.js');
+  assert.ok(Math.abs(phi(0) - 0.5) < 1e-6);
+  assert.ok(Math.abs(phi(1.96) - 0.975) < 1e-3);
+  const ok = [['PG'], ['SG'], ['SF', 'PF'], ['PF'], ['C'], ['C'], ['PG'], ['SG'], ['SF']];
+  assert.equal(feasible(ok), true);
+  assert.equal(feasible([['PG'], ['PG'], ['SF'], ['PF'], ['C'], ['C'], ['PG'], ['PF'], ['SF']]), false, 'nobody can play SG');
+  const cat = (mean, sd) => ({ fgPct: { mean, sd }, ftPct: { mean, sd }, tpm: { mean, sd }, pts: { mean, sd }, treb: { mean, sd }, ast: { mean, sd }, stl: { mean, sd }, blk: { mean, sd } });
+  const r = expectedRoto(new Map([['A', cat(10, 1e-6)], ['B', cat(5, 1e-6)], ['C', cat(5, 1e-6)]]));
+  assert.ok(Math.abs(r.get('A').total - 24) < 1e-6, 'a clear leader gets 3 points in all 8 categories');
+  assert.ok(Math.abs(r.get('B').total - 12) < 1e-4, 'two tied teams split: 1.5 each per category');
+});

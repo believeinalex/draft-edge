@@ -16,7 +16,8 @@
     "report": "NODE_USE_ENV_PROXY=1 node --no-warnings season/morning_report.js",
     "news": "NODE_USE_ENV_PROXY=1 node --no-warnings season/fetch_news.js",
     "morning": "npm run -s fetch-stats && npm run -s injuries && (npm run -s news || echo \"news digest failed; the report uses the previous one\") && npm run -s report && (npm run -s viz || echo \"dashboard build failed; docs/ unchanged\")",
-    "dossiers": "node season/dossiers.js"
+    "dossiers": "node season/dossiers.js",
+    "lineup": "node season/lineup_solver.js"
   },
   "keywords": [
     "fantasy-basketball",
