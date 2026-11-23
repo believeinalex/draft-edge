@@ -16,7 +16,7 @@
  *   shooting luck). This is smooth, so near-ties count for half a point instead of flipping whole ranks.
  * - Search: every legal 9-player subset of the roster (a few hundred to a few thousand), exhaustively.
  *
- * Usage: node season/lineup_solver.js [--team Finn] [--week YYYY-MM-DD] [--top 5] [--blend] [--json] [--swap "In:Out" ...]
+ * Usage: node season/lineup_solver.js [--team Finn] [--week YYYY-MM-DD] [--top 5] [--blend] [--respond N] [--json] [--swap "In:Out" ...]
  * Default teams: both managed teams. Default week: the week starting today if today is Monday, else next Monday.
  */
 const fs = require('fs');
@@ -245,9 +245,38 @@ function main() {
   const managed = want ? league.teams.filter(t => t.name.toLowerCase().includes(want.toLowerCase())).map(t => t.name)
     : [league.myTeam, ...(league.managedTeams || ['Finn will turn Bert into bacon'])].filter((x, i, a) => x && a.indexOf(x) === i && teamByName.has(x));
 
+  // --respond N: before solving ours, let every other team whose lineup isn't locked re-optimise its own
+  // nine against the others' current lineups (best response, sequential, up to N rounds or until nothing
+  // changes). Assumes rivals chase roto points the way we do. Inactive managers keep their value lineup.
+  const INACTIVE = new Set(['The New Day Co-op']);
+  const respondLog = [];
+  const rounds = parseInt(opt('--respond') || '0', 10);
+  for (let r = 0; r < rounds; r++) {
+    let changed = 0;
+    for (const t of league.teams) {
+      if (managed.includes(t.name) || INACTIVE.has(t.name) || locked.has(t.name) || !baseDist.has(t.name)) continue;
+      const w = weekly.get(t.name);
+      const pool = w.all.filter(c => c.games > 0);
+      const k = Math.min(9, pool.length);
+      let best = null, bv = -Infinity;
+      for (const s of combos(pool, k)) {
+        if (k === 9 && !feasible(s.map(c => c.pos))) continue;
+        baseDist.set(t.name, distFor(t.name, s));
+        const v = expectedRoto(baseDist).get(t.name).total;
+        if (v > bv + 1e-9) { bv = v; best = s; }
+      }
+      if (!best) continue;
+      if (best.length !== w.lineup.length || best.some(c => !w.lineup.includes(c))) changed++;
+      w.lineup = best; w.source = 'best response';
+      baseDist.set(t.name, distFor(t.name, best));
+    }
+    respondLog.push(changed);
+    if (!changed) break;
+  }
+
   const results = [];
   const md = [`# Lineup solver: week of ${weekStart}`, '',
-    `Base totals: ${useEow ? 'end-of-week projection' : 'current totals'} from reports/${repDate}.json (standings base ${rep.base}). Projections: ${blend ? 'players.js blended with season-to-date stats' : 'players.js per-game'} x games x availability. Other teams: ${lineupFile ? `locked lineups from ${path.basename(lineupFile)}` : 'their best healthy nine'}.`
+    `Base totals: ${useEow ? 'end-of-week projection' : 'current totals'} from reports/${repDate}.json (standings base ${rep.base}). Projections: ${blend ? 'players.js blended with season-to-date stats' : 'players.js per-game'} x games x availability. Other teams: ${lineupFile ? `locked lineups from ${path.basename(lineupFile)}` : rounds ? `best-response lineups (${respondLog.length} round${respondLog.length === 1 ? '' : 's'}; teams changing per round: ${respondLog.join(', ')}; inactive managers keep their best nine)` : 'their best healthy nine'}.`
     + (missing.length ? ` WARNING: no schedule for ${missing.join(', ')}.` : ''), ''];
   for (const name of managed) {
     const w = weekly.get(name);
