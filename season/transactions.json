@@ -1915,6 +1915,75 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-22 08:25",
+      "type": "add_drop",
+      "team": "Super Maru",
+      "add": [
+        {
+          "name": "Draymond Green",
+          "nbaTeam": "GSW",
+          "pos": [
+            "PF",
+            "C"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": []
+    },
+    {
+      "date": "2026-11-22 13:15",
+      "type": "add_drop",
+      "team": "Cole is like that",
+      "add": [
+        {
+          "name": "Naji Marshall",
+          "nbaTeam": "DAL",
+          "pos": [
+            "SG",
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Keldon Johnson",
+          "nbaTeam": "SAS",
+          "pos": [
+            "SF",
+            "PF"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23 16:56",
+      "type": "add_drop",
+      "team": "the tinkerballers 🧚🏼‍♀️🌸🎀",
+      "add": [
+        {
+          "name": "De'Andre Hunter",
+          "nbaTeam": "SAC",
+          "pos": [
+            "SF",
+            "PF"
+          ],
+          "via": "FA"
+        }
+      ],
+      "drop": [
+        {
+          "name": "Mitchell Robinson",
+          "nbaTeam": "BOS",
+          "pos": [
+            "C"
+          ]
+        }
+      ]
     }
   ]
 }
