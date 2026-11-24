@@ -122,13 +122,13 @@ test('attachLineups infers a missing team name, expands abbreviations and flags 
   const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8'].map(r);
   const teams = [
     { name: 'Maru', roster: [r('Nickeil Alexander-Walker'), ...nine], moveLog: [] },
-    { name: 'Finn', roster: [r('Malik Monk'), r('Ghost Player'), ...nine.map(p => r('F' + p.name))],
+    { name: 'Kid Team', roster: [r('Malik Monk'), r('Ghost Player'), ...nine.map(p => r('F' + p.name))],
       moveLog: [{ name: 'Malik Monk', dir: 'in' }, { name: 'Kevin Love', dir: 'out' }] }
   ];
   const lp = (name, slot = 'Util') => ({ slot, name, status: null, gameToday: null });
   const issues = attachLineups(teams, { asOf: '2026-10-22', teams: [
     { team: null, players: [lp('N. Alexander-Walker'), ...nine.map(p => lp(p.name))] },
-    { team: 'Finn', players: [lp('Kevin Love', 'BN'), ...nine.map(p => lp('F' + p.name))] }
+    { team: 'Kid Team', players: [lp('Kevin Love', 'BN'), ...nine.map(p => lp('F' + p.name))] }
   ] });
   assert.equal(teams[0].lineup.teamNameInferred, true);
   assert.equal(teams[0].roster[0].thisWeek.slot, 'Util');
