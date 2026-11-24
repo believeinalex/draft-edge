@@ -7,6 +7,8 @@ const { buildTradeWatch, tradeWatchMarkdown, moveWatchesFor, moveWatchMarkdown, 
 const { fetchSchedule, movesLeft, simulateSeason, seasonOddsMarkdown } = require('./season_sim.js');
 const { applyFocus } = require('./focus.js');
 const { fetchDay, addDays } = require('./boxscores.js');
+// Opening night of the NBA season; box scores from here to a base standings date give each team's season shot attempts
+const SEASON_START = '2026-10-20';
 
 /**
  * Morning report, four sections: top performers and stinkers (any team), how both managed
@@ -285,6 +287,45 @@ async function main() {
     const skipped = stAll.filter(x => x.asOf > st.asOf && x.complete === false).map(x => x.asOf);
     if (skipped.length) warn.push(`Skipped standings ${skipped.join(', ')}: copied while games were still in progress.`);
     let base = st.teams.map(r => ({ ...r, team: (findTeam(league, r.team) || { name: r.team }).name }));
+    const lineupFor = d => {
+      const wk = mondayOf(d);
+      const same = lineupFiles.filter(f => mondayOf(path.basename(f, '.json')) === wk);
+      const f = same.length ? same[same.length - 1] : [...lineupFiles].reverse().find(f => path.basename(f, '.json') <= d) || lineupFiles[lineupFiles.length - 1];
+      return f;
+    };
+    const keyCache = new Map();
+    const keysFor = f => {
+      if (!keyCache.has(f)) {
+        const m = new Map();
+        for (const [team, a] of activeLineups(league, readJson(f), projByName)) for (const r of a.players) m.set(normName(r.name), team);
+        keyCache.set(f, m);
+      }
+      return keyCache.get(f);
+    };
+    // Shot attempts behind the base standings' percentages: summed from ESPN box scores for
+    // every game day from opening night to the base date, credited through each week's locked
+    // lineup. Yahoo shows only rounded percentages, so the attempts set how much later games
+    // move them. Where a team's box-score games played differ from Yahoo's (an early lineup
+    // paste with gaps), the attempts are scaled to Yahoo's games played.
+    const boxBase = new Map();
+    try {
+      if (!lineupFiles.length) throw new Error('no lineup snapshots');
+      for (let d = SEASON_START; d < st.asOf; d = addDays(d, 1)) {
+        const day = await fetchDay(d);
+        if (!day.complete) throw new Error(`games on ${d} aren't all final yet`);
+        const keys = keysFor(lineupFor(d));
+        for (const pl of day.players) {
+          const team = keys.get(normName(pl.name));
+          if (!team) continue;
+          const b = boxBase.get(team) || { gp: 0, fga: 0, fta: 0 };
+          b.gp += pl.games || 1; b.fga += pl.fga || 0; b.fta += pl.fta || 0;
+          boxBase.set(team, b);
+        }
+      }
+    } catch (e) {
+      boxBase.clear();
+      warn.push(`Couldn't total season shot attempts from ESPN box scores (${e.message}); percentages since the base standings use attempts estimated from the current lineups and can drift.`);
+    }
     if (st.asOf < cur.asOf) {
       const emptyX = () => ({ gp: 0, fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 });
       const extra = new Map();
@@ -299,21 +340,6 @@ async function main() {
       // rounded season snapshots if ESPN can't be reached or a game day isn't final.
       let exact = false;
       try {
-        const lineupFor = d => {
-          const wk = mondayOf(d);
-          const same = lineupFiles.filter(f => mondayOf(path.basename(f, '.json')) === wk);
-          const f = same.length ? same[same.length - 1] : [...lineupFiles].reverse().find(f => path.basename(f, '.json') <= d) || lineupFiles[lineupFiles.length - 1];
-          return f;
-        };
-        const keyCache = new Map();
-        const keysFor = f => {
-          if (!keyCache.has(f)) {
-            const m = new Map();
-            for (const [team, a] of activeLineups(league, readJson(f), projByName)) for (const r of a.players) m.set(normName(r.name), team);
-            keyCache.set(f, m);
-          }
-          return keyCache.get(f);
-        };
         if (!lineupFiles.length) throw new Error('no lineup snapshots');
         const staged = [];
         for (let d = st.asOf; d < cur.asOf; d = addDays(d, 1)) {
@@ -379,7 +405,10 @@ async function main() {
       // season lines scaled to the base's games played
       const x = r._extra || { gp: 0, fgm: 0, fga: 0, ftm: 0, fta: 0, tpm: 0, pts: 0, treb: 0, ast: 0, stl: 0, blk: 0 };
       const scale = gp ? r.gp / gp : 1;
-      const fgaBase = fga * scale || 1, ftaBase = fta * scale || 1;
+      const bb = boxBase.get(r.team);
+      const bbScale = bb && bb.gp ? r.gp / bb.gp : 0;
+      const fgaBase = (bb && bb.fga ? bb.fga * bbScale : fga * scale) || 1;
+      const ftaBase = (bb && bb.fta ? bb.fta * bbScale : fta * scale) || 1;
       const nowT = {
         fgm: r.fgPct * fgaBase + x.fgm, fga: fgaBase + x.fga, ftm: r.ftPct * ftaBase + x.ftm, fta: ftaBase + x.fta,
         ...Object.fromEntries(COUNT.map(c => [c, r[c] + x[c]]))
