@@ -66,9 +66,12 @@
   </section>
 
   <section class="cv-sec" id="rank-section">
+    <div class="cv-head-row">
     <div class="cv-sec-head">
-      <h2 id="rank-h">Rank over time, per category</h2>
-      <p class="cv-muted">Rank 1 is the top. Lines crossing mean one team passed another. Dashed vertical lines mark trades involving the teams you picked.</p>
+      <h2 id="rank-h">Rank or raw total over time, per category</h2>
+      <p class="cv-muted">Switch between rank and each team's raw category total. In rank view, 1 is the top. Lines crossing mean one team passed another. Dashed vertical lines mark trades involving the teams you picked.</p>
+    </div>
+      <div class="cv-field"><label for="view-select">Show</label><select class="dash-select" id="view-select" data-draw="view" aria-label="Rank or raw total"></select></div>
     </div>
     <div class="cv-card"><div class="cv-chart" id="bump" data-draw="bump" data-source="standings trades">—</div></div>
   </section>

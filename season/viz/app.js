@@ -8,7 +8,7 @@
   const AXIS = 'var(--cds-chart-axis)';
   const NEG = '#d4622b';
   const POS = '#2b7fc4';
-  const DEFAULTS = { team: 'Shut Up and Jam Gaiden', compare: 'Finn will turn Bert into bacon', period: '2026-11-17', metric: 'topThird' };
+  const DEFAULTS = { team: 'Shut Up and Jam Gaiden', compare: 'Finn will turn Bert into bacon', period: '2026-11-17', metric: 'topThird', view: 'rank' };
 
   const rows = (id) => {
     const g = dash.data(id);
@@ -16,7 +16,7 @@
   };
   const P = () => {
     const p = dash.params() || {};
-    return { team: p.team || DEFAULTS.team, compare: p.compare == null ? DEFAULTS.compare : p.compare, period: p.period || DEFAULTS.period, metric: p.metric || DEFAULTS.metric };
+    return { team: p.team || DEFAULTS.team, compare: p.compare == null ? DEFAULTS.compare : p.compare, period: p.period || DEFAULTS.period, metric: p.metric || DEFAULTS.metric, view: p.view || DEFAULTS.view };
   };
   const col = (i) => (dash.colors && dash.colors.length ? dash.colors[i % dash.colors.length] : '#2b7fc4');
   const trunc = (s, n) => (s.length > n ? s.slice(0, Math.max(1, n - 1)) + '…' : s);
@@ -110,6 +110,11 @@
   dash.draw('metric', (sel) => {
     optionsFor(sel, [['topThird', 'Top five finish'], ['top3', 'Top three finish'], ['first', 'First place']], P().metric);
     sel.onchange = () => dash.setParams({ metric: sel.value });
+  });
+
+  dash.draw('view', (sel) => {
+    optionsFor(sel, [['rank', 'Rank'], ['raw', 'Raw total']], P().view);
+    sel.onchange = () => dash.setParams({ view: sel.value });
   });
 
   // ---------- headline
@@ -328,28 +333,33 @@
 
   dash.draw('bump', (el) => {
     const S = rows('standings'); if (!S) return placeholder(el);
-    const p = P(); const f = frame(el); const ms = tradeMarkers(p);
+    const p = P(); const raw = p.view === 'raw'; const f = frame(el); const ms = tradeMarkers(p);
     const teams = [...new Set(S.map((r) => r.team))]; const dates = [...new Set(S.map((r) => r.date))].sort();
     panels(el, f, (svg, w, h, c, l) => {
-      const m = { l: 26, r: 8, t: 6, b: 18 };
+      const m = { l: raw ? 36 : 26, r: 8, t: 6, b: 18 };
       const x = d3.scaleUtc().domain([pd(dates[0]), pd(dates[dates.length - 1])]).range([m.l, w - m.r]);
-      const y = d3.scaleLinear().domain([0.5, 15.5]).range([m.t, h - m.b]);
-      [1, 5, 10, 15].forEach((v) => { svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', GRID); svg.append('text').attr('x', m.l - 5).attr('y', y(v) + 4).attr('text-anchor', 'end').attr('class', 'cv-tick').text(v); });
+      const isPct = c === 'fgPct' || c === 'ftPct';
+      const tf = (v) => (isPct ? (v * 100).toFixed(1) : String(Math.round(v)));
+      const ext = d3.extent(S, (r) => r[c]); const pad = (ext[1] - ext[0]) * 0.05 || 1;
+      const y = raw ? d3.scaleLinear().domain([ext[0] - pad, ext[1] + pad]).range([h - m.b, m.t]) : d3.scaleLinear().domain([0.5, 15.5]).range([m.t, h - m.b]);
+      const yv = (r) => y(raw ? r[c] : r['rk_' + c]);
+      const ticks = raw ? y.ticks(3) : [1, 5, 10, 15];
+      ticks.forEach((v) => { svg.append('line').attr('x1', m.l).attr('x2', w - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', GRID); svg.append('text').attr('x', m.l - 5).attr('y', y(v) + 4).attr('text-anchor', 'end').attr('class', 'cv-tick').text(raw ? tf(v) : v); });
       [dates[0], dates[dates.length - 1]].forEach((d, i) => svg.append('text').attr('x', x(pd(d))).attr('y', h - 4).attr('text-anchor', i ? 'end' : 'start').attr('class', 'cv-tick').text(fd(pd(d))));
       const g = svg.append('g'); drawMarkers(g, x, ms, m.t, h - m.b);
-      const line = d3.line().x((r) => x(pd(r.date))).y((r) => y(r['rk_' + c]));
+      const line = d3.line().x((r) => x(pd(r.date))).y(yv);
       [...teams].sort((a, b) => isHi(a, p) - isHi(b, p) || (a === p.team) - (b === p.team)).forEach((t) => {
         const R = S.filter((r) => r.team === t).sort((a, b) => (a.date < b.date ? -1 : 1));
         g.append('path').datum(R).attr('d', line).attr('fill', 'none').attr('stroke', teamColor(t, p)).attr('stroke-width', isHi(t, p) ? 2.4 : 1).attr('stroke-opacity', isHi(t, p) ? 1 : 0.5).attr('stroke-linejoin', 'round');
-        if (isHi(t, p)) { const q = R[R.length - 1]; g.append('circle').attr('cx', x(pd(q.date))).attr('cy', y(q['rk_' + c])).attr('r', 3.5).attr('fill', teamColor(t, p)).attr('stroke', 'var(--color-bg)').attr('stroke-width', 1.5); }
+        if (isHi(t, p)) { const q = R[R.length - 1]; g.append('circle').attr('cx', x(pd(q.date))).attr('cy', yv(q)).attr('r', 3.5).attr('fill', teamColor(t, p)).attr('stroke', 'var(--color-bg)').attr('stroke-width', 1.5); }
       });
       const cross = svg.append('line').attr('y1', m.t).attr('y2', h - m.b).attr('stroke', AXIS).attr('opacity', 0);
       svg.append('rect').attr('x', m.l).attr('width', w - m.l - m.r).attr('height', h).attr('fill', 'transparent')
         .on('pointermove', (ev) => {
           const [px] = d3.pointer(ev); const dt = dates.reduce((a, b) => (Math.abs(x(pd(b)) - px) < Math.abs(x(pd(a)) - px) ? b : a));
           cross.attr('x1', x(pd(dt))).attr('x2', x(pd(dt))).attr('opacity', 1);
-          const lines = [l + ' rank · ' + fd(pd(dt))];
-          [p.team, p.compare].filter(Boolean).forEach((t) => { const r = S.find((q) => q.date === dt && q.team === t); if (r) lines.push(t + ': ' + num(r['rk_' + c]) + ' (' + valFmt(c, r[c]) + ')'); });
+          const lines = [l + (raw ? ' total · ' : ' rank · ') + fd(pd(dt))];
+          [p.team, p.compare].filter(Boolean).forEach((t) => { const r = S.find((q) => q.date === dt && q.team === t); if (r) lines.push(t + ': ' + (raw ? valFmt(c, r[c]) + ' (rank ' + num(r['rk_' + c]) + ')' : num(r['rk_' + c]) + ' (' + valFmt(c, r[c]) + ')')); });
           const tr = nearTrade(ms, x, px); if (tr) lines.push(tr.label);
           f.show(lines, ev);
         }).on('pointerleave', () => { cross.attr('opacity', 0); f.hide(); });

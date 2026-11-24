@@ -64,7 +64,7 @@ body{margin:0;background:var(--color-bg);color:var(--color-fg);font:14px var(--f
 .dash-select{font:inherit;color:var(--color-fg);background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:6px;padding:6px 8px}
 summary{cursor:pointer}`;
 const shim = `
-(function(){var draws=[],state={team:'Shut Up and Jam Gaiden',compare:'Finn will turn Bert into bacon',period:'${latest}',metric:'topThird'},D=window.__DATA;
+(function(){var draws=[],state={team:'Shut Up and Jam Gaiden',compare:'Finn will turn Bert into bacon',period:'${latest}',metric:'topThird',view:'rank'},D=window.__DATA;
 function run(n){draws.forEach(function(d){if(n&&d[0]!==n)return;document.querySelectorAll('[data-draw="'+d[0]+'"]').forEach(function(e){try{d[1](e)}catch(x){console.error(d[0],x)}})})}
 window.dash={colors:['#2b7fc4','#d4622b','#3a9d6b','#8a5cc2','#c99a1f','#1f9fa8','#c25a8a','#6b7280'],
 data:function(id){return {status:'ok',data:D[id]}},params:function(){return state},setParams:function(o){Object.assign(state,o);run()},draw:function(n,f){draws.push([n,f])},__run:run};
