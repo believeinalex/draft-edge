@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd went from "washed" (Oct 22) to a stream (Nov 5); watch his minutes.
+Nov 25: 7 pts, 0 reb, 1 blk; Lloyd doesn't expect him to remain a 12-team guy. Lloyd went from "washed" (Oct 22) to a stream (Nov 5); watch his minutes.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 7 pts, 0 reb, 1 blk, 1 three. "Not going to remain a 12 team league guy." [4:16]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

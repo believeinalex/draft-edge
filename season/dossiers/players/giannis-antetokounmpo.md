@@ -2,11 +2,17 @@
 
 ## Current take
 
-Playing through a wrist issue.
+Nov 25: Giannis back from injury: 32-14, 2 stl, 1 blk; #2 last two weeks, #4 season. Playing through a wrist issue.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury, usage
+**Reported:** Returned for Miami. [2:29]
+**Stat:** 32 pts, 14 reb, 2 stl, 1 blk, 10 of 13 FT. Second over the last two weeks, fourth for the season. [3:01]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

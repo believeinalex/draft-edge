@@ -2,11 +2,16 @@
 
 ## Current take
 
-Minutes back up. Nov 16 (Lloyd): out ill Sunday.
+Nov 25: scratched with right knee soreness. Minutes back up. Nov 16 (Lloyd): out ill Sunday.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Reported:** Scratch for the Kings with right knee soreness. Emanuel Sharp started. [51:49]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

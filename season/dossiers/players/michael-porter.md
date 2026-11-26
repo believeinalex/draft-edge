@@ -2,11 +2,17 @@
 
 ## Current take
 
-Strong.
+Nov 25: 12 pts on 14 shots (11 reb), 29% shooting slump; Lloyd calls him a significant buy low. Strong.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: shooting, outlook
+**Stat:** 12 pts on 14 shots, 11 reb; shooting 29% in a slump. [41:17]
+**Analysis:** "A fairly significant buy low on Porter." [41:31]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Expected back soon; cuts Jalen Smith's role.
+Nov 25: Claxton started with Jalen Smith ill: 29 min, 10 pts, 2 reb, 4 blk. Lloyd still expects Smith to start when healthy, roughly a 26/22 split. Expected back soon; cuts Jalen Smith's role.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+**Stat:** 29 min, 10 pts, 2 reb, 4 blk; minutes restriction no longer a concern. [10:06]
+**Analysis:** Expects Smith to start when back, ~26 vs 22 min; Claxton not a must-roster. [10:15]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

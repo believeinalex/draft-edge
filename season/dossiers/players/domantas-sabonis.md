@@ -2,11 +2,16 @@
 
 ## Current take
 
-Sat Nov 8 with knee soreness, after a possible rib injury Nov 4. Severity unknown; Raynaud would start if it lingers. Nov 16 (Lloyd): played, fine.
+Nov 25: monster game 27-10-6 (steal, three) on 89% FG; back inside top 35. Sat Nov 8 with knee soreness, after a possible rib injury Nov 4. Severity unknown; Raynaud would start if it lingers. Nov 16 (Lloyd): played, fine.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 27-10-6, 1 stl, 1 three, 89% FG, 83% FT. Back inside the top 35. [52:41]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

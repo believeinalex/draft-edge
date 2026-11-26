@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: fringe.
+Nov 25: 31 min, 8-4 with a steal; Lloyd says drop if he's your worst player. Lloyd: fringe.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 31 min, 8 pts, 4 reb, 1 stl. "Is he your worst player? Then move on." [58:40]
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

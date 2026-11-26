@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down. Nov 16 (Lloyd): hold; a rare good game.
+Nov 25: 13-14 with 2 blk in 20+ min for the 3rd or 4th straight game; Lloyd: grab if on waivers. Lloyd (Nov 7): looks dreadful, but hold as a handcuff: top-50 if Miles Turner goes down. Nov 16 (Lloyd): hold; a rare good game.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 13 pts, 14 reb, 2 blk; 20+ min for three or four straight games, "improving a lot." Not in line to take Turner's starting job. [43:09]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold. Nov 16 (Lloyd): reverses 'hold'; now a drop.
+Nov 25: 35 min, 16-4-5 on 38%; Lloyd doesn't buy it and wouldn't regret dropping him. Lloyd: hold. Nov 16 (Lloyd): reverses 'hold'; now a drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes, outlook
+**Stat:** 35 min, 16 pts, 4 reb, 5 ast, 1 stl, 1 blk, 38% FG. [48:26]
+**Analysis:** "I don't buy the minutes. I don't buy the production." Gives credit for the last two games. [48:34]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

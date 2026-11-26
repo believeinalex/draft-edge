@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd (Nov 15 recap): far better than Lloyd expected.
+Nov 25: questionable pre-game but played (12-10-7, 3 blk); top 10 season, fifth last two weeks. Lloyd (Nov 15 recap): far better than Lloyd expected.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Reported:** Was questionable heading into the game but played. [20:15]
+**Stat:** 12-10-7, 3 blk. A top 10 player this season, fifth over the last two weeks. [20:15]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

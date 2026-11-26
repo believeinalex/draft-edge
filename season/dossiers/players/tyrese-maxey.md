@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd expects his usage to settle lower. Nov 16 (Lloyd): 16th on the season, in line with his expectation.
+Nov 25: Maxey scored 30 with 6 ast in 37 min; Lloyd calls the game incredibly good though behind last season's level. Lloyd expects his usage to settle lower. Nov 16 (Lloyd): 16th on the season, in line with his expectation.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 30 pts, 6 ast, 37 min. "Continues to be a little behind where he was last season, which was to be expected." [6:44]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

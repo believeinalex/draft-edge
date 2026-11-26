@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: assists specialist.
+Nov 25: 40 min, 20-10 ast; Lloyd says not that much of a sell high. Lloyd: assists specialist.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 40 min, 20 pts, 10 ast, 22% usage, ~50% FG, bad FT. "Not really sure he's that much of a sell high." [3:43]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: usage

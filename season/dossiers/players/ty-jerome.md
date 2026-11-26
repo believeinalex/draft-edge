@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd suggested selling high on Oct 22, and he has stayed elite.
+Nov 25: 25 min, 17-5-7, 4 stl, 1 blk; Lloyd: can't complain. Lloyd suggested selling high on Oct 22, and he has stayed elite.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 25 min, 17 pts, 5 reb, 7 ast, 4 stl, 1 blk. [38:14]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

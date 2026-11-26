@@ -2,11 +2,16 @@
 
 ## Current take
 
-A rough start, now around the top 100. Nov 16 (Lloyd): hold in 12s. Besperris (Nov 19): 36% FG with little upside; sell for Zubac.
+Nov 25: 3 pts, 6 reb, 2 blk; Lloyd still thinks he's a 12-team hold. A rough start, now around the top 100. Nov 16 (Lloyd): hold in 12s. Besperris (Nov 19): 36% FG with little upside; sell for Zubac.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 3 pts, 6 reb, 2 blk. "I do still think Turner is a 12 team league guy." [43:24]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

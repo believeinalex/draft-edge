@@ -4,11 +4,18 @@
 
 ## Current take
 
-Lloyd (Nov 9): "no reason he's a 12-team league guy. Get that garbage out of here." He didn't start with Powell out and played 14 minutes. Season check (HTB through Nov 5): 18.2 mpg, 10.9 pts, 182nd. A drop for Finn.
+Nov 25: Tre played 20 min (10-4-8) alongside Giddey, a positive sign, but Lloyd still lacks confidence when Giddey plays well. Chicago has one game Fri to Mon. Lloyd (Nov 9): "no reason he's a 12-team league guy. Get that garbage out of here." He didn't start with Powell out and played 14 minutes. Season check (HTB through Nov 5): 18.2 mpg, 10.9 pts, 182nd. A drop for Finn.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, schedule
+**Stat:** 20 min (short of the 25 he hoped for), 10 pts, 4 reb, 8 ast, 1 stl. [11:00]
+**Analysis:** "Not feeling incredibly confident with Trey" in games where Giddey plays well, but this was a positive sign. [11:08]
+**Analysis:** Chicago plays one game Fri to Mon; holding Tre through it is "pretty debatable" given teams with three games in four nights. [1:01:38]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

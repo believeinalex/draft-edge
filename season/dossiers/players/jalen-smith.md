@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: was an add (Oct 22); now a drop window, with a hand injury, Claxton back and a light schedule.
+Nov 25: still out with illness (Lloyd jokes about six straight days). Lloyd: was an add (Oct 22); now a drop window, with a hand injury, Claxton back and a light schedule.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Reported:** Still out with an illness (Lloyd: "six consecutive days"). Expects him to start when back. [9:31, 10:15]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

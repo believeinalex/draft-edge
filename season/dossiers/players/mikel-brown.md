@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: his favourite of the rookie guards, though not starting; hold through Thanksgiving despite the Nets' 2-game week 4.
+Nov 25: bad game (6-2-1 stl in 23 min, foul trouble); Lloyd said give him 2-3 weeks and hold. Lloyd: his favourite of the rookie guards, though not starting; hold through Thanksgiving despite the Nets' 2-game week 4.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 23 min, 6 pts, 2 ast, 1 stl; early fouls. [40:03]
+**Analysis:** "You got to give it a couple of weeks... two to three weeks." Would hold. [40:16]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

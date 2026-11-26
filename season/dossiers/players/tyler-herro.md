@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: strong start. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold, but minutes are unreliable.
+Nov 25: red-hot (28-5, 3 stl, 50%); Lloyd would take any top 40 player for him but doubts he'd return that. Lloyd: strong start. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold, but minutes are unreliable.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 37 min, 28 pts, 5 (reb or ast), 3 stl, 50% FG. [43:32]
+**Analysis:** "Any top 40 player I would take in a trade. I don't think you're going to get that." [43:40]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

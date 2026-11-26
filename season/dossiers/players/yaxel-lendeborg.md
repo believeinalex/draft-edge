@@ -4,11 +4,17 @@
 
 ## Current take
 
-Besperris (Nov 19): buy low after a three-game slump; expects another hot run even before Curry returns.
+Nov 25: 15-8, 3 stl, 1 blk but usage has fallen way off; Curry returning may help. Besperris (Nov 19): buy low after a three-game slump; expects another hot run even before Curry returns.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 15 pts, 8 reb, 3 stl, 1 blk; usage fallen way off from earlier. [54:47]
+**Analysis:** Curry returning will probably help; teams are "figuring him out." [55:02]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

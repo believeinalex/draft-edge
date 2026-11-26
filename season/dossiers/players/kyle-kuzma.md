@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 7): a week-4 streamer (Bucks 3-in-4 Tue–Fri), not a hold. Earlier call was drop.
+Nov 25: 13 pts in an "inexplicable" 31 min; at least a 12-team streamer. Lloyd (Nov 7): a week-4 streamer (Bucks 3-in-4 Tue–Fri), not a hold. Earlier call was drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 13 pts, 31 min. "For now he's at least a 12 streamer." [45:05]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

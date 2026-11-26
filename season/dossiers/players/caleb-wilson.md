@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: strong so far, ignore this game.
+Nov 25: only mentioned as a pending return that would hurt Buzelis. Lloyd: strong so far, ignore this game.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Analysis:** Lloyd frames Wilson's upcoming return as the reason to sell Buzelis. [12:00]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

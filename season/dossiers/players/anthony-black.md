@@ -4,11 +4,16 @@
 
 ## Current take
 
-Besperris (Nov 19): sell high before Banchero returns (about two weeks) and Suggs ramps up.
+Nov 25: only appears in a listener trade speculation (Black as a sweetener in a Suggs dump). Besperris (Nov 19): sell high before Banchero returns (about two weeks) and Suggs ramps up.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: trade
+**Speculation:** A listener take, not Lloyd: Orlando uses Black as a sweetener to dump Suggs' contract. [1:48]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: usage, outlook, trade

@@ -4,11 +4,18 @@
 
 ## Current take
 
-Out as of Nov 9, alongside Knueppel (4+ weeks) and Schröder (2+ weeks); return timing not given in the episode, so check the injury report. When healthy: high volume, poor efficiency (Lloyd). Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd. Nov 16 (Lloyd): back from injury and played badly, but he calls it the easiest buy-low there is. Hold; for Finn, don't sell at the bottom. Besperris (Nov 19) makes him the week's top buy low (a hot run is coming; buy for a player ranked about 80). For Finn: hold, don't sell.
+Nov 25: Miller scored 35 on 40 usage (4 threes, 3 stl, 52%, 100% FT; 32nd last two weeks) with Hornets guards out. Lloyd stays steadfast: the role is real, but not a 34% shooter and bad games will come. Out as of Nov 9, alongside Knueppel (4+ weeks) and Schröder (2+ weeks); return timing not given in the episode, so check the injury report. When healthy: high volume, poor efficiency (Lloyd). Season check (HTB through Nov 5): 22.0 pts, 3.0 3PM, 35.9% FG, 92nd. Nov 16 (Lloyd): back from injury and played badly, but he calls it the easiest buy-low there is. Hold; for Finn, don't sell at the bottom. Besperris (Nov 19) makes him the week's top buy low (a hot run is coming; buy for a player ranked about 80). For Finn: hold, don't sell.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage, shooting
+**Stat:** 35 pts in 34 min, 40% usage, 4 threes, 3 stl, 52% FG, 100% FT. 32nd over the last two weeks. [13:41]
+**Analysis:** "I remain pretty steadfast... the role is not changing. He will not be a 34% shooter," but he improved hugely here; expects another bad game soon. Useful fantasy player in this situation; not an all-star in real life. [14:08, 14:59]
+**Reported:** Hornets missing Kon Knueppel, Grayson Allen (as transcribed "Allen") and Dennis Schroder: Schroder may return in a game or two, Allen should return next game, Knueppel more time. [12:44]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

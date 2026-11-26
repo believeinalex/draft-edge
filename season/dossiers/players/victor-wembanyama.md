@@ -4,11 +4,17 @@
 
 ## Current take
 
-Elite. Season check (HTB through Nov 5): 2nd (29.0 pts, 12.4 reb, 4.5 blk). Nov 16 (Lloyd): another monster line.
+Nov 25: Wemby returned (Spurs lost at Portland) with Fox and Harper still out; Lloyd's line was big but not his best (free throws frustrating). Elite. Season check (HTB through Nov 5): 2nd (29.0 pts, 12.4 reb, 4.5 blk). Nov 16 (Lloyd): another monster line.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury, role
+**Reported:** Wembanyama returned; Luke Cornet went back to the bench. De'Aaron Fox still out (cause unknown to Lloyd), Dylan Harper out. [56:22, 56:29]
+**Stat:** Stat line given as "44 and 16" (likely garbled) with 2 blk, 1 stl; free throws "a little frustrating"; "he already puts up big numbers." [56:37]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

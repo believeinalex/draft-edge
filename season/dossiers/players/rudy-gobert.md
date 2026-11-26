@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9).
+Nov 25: Lloyd would drop Gobert in a 10-team league, hold in a 12; blocks down, 1/6 FT. Lloyd: hold; blocks are returning after the back issue. Bears on the Gobert trade-target open question (Nov 9).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 32 min, 9 pts, 7 reb, 67% FG, 1 of 6 FT; block numbers down. [25:38]
+**Analysis:** Drop in a 10-team; hold in a 12 because there is nobody better to add. [25:46]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: a buy-low (Oct 22), a reluctant hold (Nov 5).
+Nov 25: 12-11-7 with no threes, steals or blocks; Lloyd holds but says it's not that good and game to game unpredictable. Lloyd: a buy-low (Oct 22), a reluctant hold (Nov 5).
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 12-11-7, no threes/steals/blocks. "I just don't know what we're going to get here." [10:38]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

@@ -2,11 +2,16 @@
 
 ## Current take
 
-Recovering after bad FT games.
+Nov 25: 29 pts, 6 ast, 2 stl, 10/10 FT but 35% FG; top 40 over last two weeks. Recovering after bad FT games.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 29 pts, 6 ast, 2 stl, 35% FG, 10/10 FT; top 40 over last two weeks. [57:59]
 
 ### 2026-11-07 · Locked On Fantasy Basketball (Josh Lloyd): Week 4 preview (Nov 9–15)
 Source: sources/2026-11-07_locked-on-fantasy-basketball.txt

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: rosterable, overrated at his current rank. Season check (HTB through Nov 5): 74th. Nov 16 (Lloyd): upgrades from 'rosterable' to 'must player'.
+Nov 25: Diabate (double-double, 38 min) is a must-roster, still rostered ~66%; a backup big got only 8 min. Lloyd: rosterable, overrated at his current rank. Season check (HTB through Nov 5): 74th. Nov 16 (Lloyd): upgrades from 'rosterable' to 'must player'.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+**Stat:** Double-double in 38 min. Rostered ~66% of leagues (Lloyd: "way too low"). With "the big" out (as transcribed), "Mahan Steinach" played only 8 min, which is why Diabate got the minutes. [15:45]
+**Analysis:** "A must roster right across the board." [15:56]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

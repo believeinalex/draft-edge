@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: drop in category leagues. Nov 16 (Lloyd): drop call reinforced.
+Nov 25: Lloyd says drop; ejected after a scuffle with Durant. Lloyd: drop in category leagues. Nov 16 (Lloyd): drop call reinforced.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Reported:** Ejected after a scuffle with Kevin Durant late. 12-6-4 in 30 min on 39%. [46:14]
+**Analysis:** "He shouldn't be rostered... Figure it out and drop him." [46:36]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

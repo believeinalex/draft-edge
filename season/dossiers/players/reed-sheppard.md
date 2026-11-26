@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd said drop him on Oct 22 (two injuries needed for minutes), then saw a good Nov 4 game when Smart played only 18 minutes. Not trusted; hold only if he's the backup point guard. Season check (HTB through Nov 5): 21.7 mpg, 10.7 pts, 2.3 3PM, 1.7 stl, 39.0% FG, 134th. Nov 16 (Lloyd): drop.
+Nov 25: 15 min, 7 pts; outside top 200; Lloyd says drop. Lloyd said drop him on Oct 22 (two injuries needed for minutes), then saw a good Nov 4 game when Smart played only 18 minutes. Not trusted; hold only if he's the backup point guard. Season check (HTB through Nov 5): 21.7 mpg, 10.7 pts, 2.3 3PM, 1.7 stl, 39.0% FG, 134th. Nov 16 (Lloyd): drop.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 15 min, 7 pts; outside the top 200 for the season. "You shouldn't hold him." [49:58]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

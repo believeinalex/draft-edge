@@ -4,11 +4,17 @@
 
 ## Current take
 
-Out (ankle) as of Nov 5. Nov 16 (Lloyd): moved from 'out (ankle)' to an explicit drop candidate. Fits the drop-candidate list for Finn.
+Nov 25: Hart is cooking with Anunoby out (15-7-12, 3 stl, 2 blk; minutes way up) but Lloyd isn't massively into him rest of season. Out (ankle) as of Nov 5. Nov 16 (Lloyd): moved from 'out (ankle)' to an explicit drop candidate. Fits the drop-candidate list for Finn.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, usage
+**Stat:** 15 pts, 7 reb, 12 ast, 3 stl, 2 blk. Shooting still bad but "peripherals and the minutes are way up." [19:24]
+**Analysis:** "There is an Anunoby factor in this. I'm not massively into Hart rest of season, but clearly good numbers." [19:40]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

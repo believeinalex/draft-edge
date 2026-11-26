@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: on a short leash. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold but frustrating.
+Nov 25: 42 minutes (non-OT), 18-4-2, 2 threes; Lloyd says roster him. Lloyd: on a short leash. (opening-week single game; season stats are the better guide now) Nov 16 (Lloyd): hold but frustrating.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 42 min, 18 pts, 4 reb, 2 ast(?), 2 threes. "We've got to roster him." [54:01]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

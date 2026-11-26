@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered. Nov 16 (Lloyd): sat the game; Lloyd expected him back Monday. Besperris (Nov 19): still a buy low despite 40% FG; 22nd over the last week.
+Nov 25: out again with illness; the next six Sixers games include two back-to-backs, so at most two Embiid games. Lloyd: healthy so far and a 30th-ranked player; sell for top 40 if offered. Nov 16 (Lloyd): sat the game; Lloyd expected him back Monday. Besperris (Nov 19): still a buy low despite 40% FG; 22nd over the last week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury, schedule
+**Reported:** Out with illness again. Next four Philadelphia games are two sets of back-to-backs: "two Embiid games max" in the six-game stretch. [5:05, 5:12]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook

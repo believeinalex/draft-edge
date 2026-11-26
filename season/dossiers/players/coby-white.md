@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: give it time. Nov 16 (Lloyd): buy low; minutes capped around 20 so far. Besperris (Nov 19): usage is huge in about 22 minutes; the buy-low window has likely closed.
+Nov 25: minutes fell to 25; still top 100 over last two weeks but needs 30+ a night. Lloyd: give it time. Nov 16 (Lloyd): buy low; minutes capped around 20 so far. Besperris (Nov 19): usage is huge in about 22 minutes; the buy-low window has likely closed.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 25 min; still top 100 over the last two weeks; block 23% as transcribed. [14:23]
+**Analysis:** "At some point you just need to play 30 plus a night." Not super concerned. [14:39]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: usage, minutes

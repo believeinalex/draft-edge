@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd is skeptical. Nov 16 (Lloyd): back on track.
+Nov 25: Lloyd says sell high on Castle while Fox and Harper are out: 20 pts, 9 ast in 34 min. Would move him for a top 50 player without hesitation. Lloyd is skeptical. Nov 16 (Lloyd): back on track.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage, trade
+**Stat:** 20 pts, 9 ast, 34 min; shot poorly but got to the line. [56:46]
+**Analysis:** "If I had Steph Castle I'd look to sell high"; "if you can get a top 50 player I would do that without hesitation." [56:46]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

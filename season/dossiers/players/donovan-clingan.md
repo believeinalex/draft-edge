@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: hot streak after a slow start; likely somewhere in the middle.
+Nov 25: struggled against Wemby (fouled out; 21 min, 5 pts, 8 reb). Lloyd: hot streak after a slow start; likely somewhere in the middle.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** Fouled out; 21 min, 5 pts, 8 reb. A dud, had been playing much better. [58:33]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: outlook

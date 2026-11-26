@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: top 10 so far; the benching worry hasn't happened. Nov 16 (Lloyd): fine. Besperris (Nov 19): sell high; FT% (74% vs a 69% career norm) and FG% should regress.
+Nov 25: another triple-double (23-11-11, 50 FP) with no defense; as expected. Lloyd: top 10 so far; the benching worry hasn't happened. Nov 16 (Lloyd): fine. Besperris (Nov 19): sell high; FT% (74% vs a 69% career norm) and FG% should regress.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 23-11-11, 50 fantasy points, no defensive stats, bad FT. [48:48]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: shooting, outlook, trade

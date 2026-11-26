@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd went from "not panicking" (Oct 22) to "dropping him is probably right" (Nov 5) to "don't love still having him" (Nov 7). Phoenix has 4 games in week 4, with a Mon–Tue back-to-back: if you hold him, let him play both nights, and don't cut mid back-to-back. Season check (HTB through Nov 5): 19.4 mpg, 7.2 pts, 6.0 reb, 1.0 blk, 180th. Oso Ighodaro is taking some of the frontcourt minutes. Nov 16 (Lloyd): another 13-minute game; his drop call stands.
+Nov 25: 12-6 in 25 min only because Ighodaro fouled out; Lloyd isn't adding unless he starts. Lloyd went from "not panicking" (Oct 22) to "dropping him is probably right" (Nov 5) to "don't love still having him" (Nov 7). Phoenix has 4 games in week 4, with a Mon–Tue back-to-back: if you hold him, let him play both nights, and don't cut mid back-to-back. Season check (HTB through Nov 5): 19.4 mpg, 7.2 pts, 6.0 reb, 1.0 blk, 180th. Oso Ighodaro is taking some of the frontcourt minutes. Nov 16 (Lloyd): another 13-minute game; his drop call stands.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+**Stat:** 25 min, 12 pts, 6 reb, 1 stl, 1 blk. [47:11]
+**Analysis:** The minutes came because Oso Ighodaro fouled out; "if Maluach starts, then I'll be interested." [47:11]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

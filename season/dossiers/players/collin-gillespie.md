@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: a reluctant hold. Nov 16 (Lloyd): an upgrade from reluctant hold to a pickup.
+Nov 25: 5 pts on 29% in 22 min; Lloyd says drop is fine since Green's minutes rose. Lloyd: a reluctant hold. Nov 16 (Lloyd): an upgrade from reluctant hold to a pickup.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role
+**Stat:** 22 min, 5 pts, 29%; 133rd last two weeks, 178th season. "If you want to drop Gillespie, do it." [47:50]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

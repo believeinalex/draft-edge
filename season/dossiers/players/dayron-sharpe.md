@@ -4,11 +4,19 @@
 
 ## Current take
 
-Lloyd flipped back to a hold on Nov 9: after 6-4-6 with 2 stl and 2 blk in 20 minutes, he calls Sharpe "a must-roster guy", pencils him in for 25–27 minutes, thinks the assists are real, and would probably hold through the Nets' 2-game week (though he gets it if you don't). On Nov 7 he'd said to cut now if you were thinking about it. Season check (HTB through Nov 5): 23.1 mpg, 7.1 reb, 2.6 ast, 1.1 blk, 50% FG, 170th. Back-of-roster hold for blocks and FG%; only cut for a clear schedule gain this week.
+Nov 25: Lloyd calls Sharpe a patience win (31 min, 11-14-5, 3 stl, 2 blk; top 50 last two weeks, 82nd season) and sees no one coming for the role; Mo Wagner knee soreness is a further tailwind. Hold. Lloyd flipped back to a hold on Nov 9: after 6-4-6 with 2 stl and 2 blk in 20 minutes, he calls Sharpe "a must-roster guy", pencils him in for 25–27 minutes, thinks the assists are real, and would probably hold through the Nets' 2-game week (though he gets it if you don't). On Nov 7 he'd said to cut now if you were thinking about it. Season check (HTB through Nov 5): 23.1 mpg, 7.1 reb, 2.6 ast, 1.1 blk, 50% FG, 170th. Back-of-roster hold for blocks and FG%; only cut for a clear schedule gain this week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, minutes, schedule
+**Stat:** 31 min, 11 pts, 14 reb, 5 ast, 3 stl, 2 blk. Top 50 over the last two weeks, 82nd for the season. [39:23]
+**Analysis:** "One of the biggest let's-be-patient scenarios we've seen all season." Admits he is playing above his head, but asks "is anyone actually coming for the role?" and answers no. [39:32, 39:49]
+**Reported:** Mo Wagner went down with knee soreness (Lloyd: "might be a nothing injury"). Danny Wolf started and had 5 pts, 0 reb in 19 min. [40:42, 42:15]
+**Analysis:** Lloyd lists Brooklyn among teams that get 3 games in the 4 nights Fri to Mon. [1:01:47]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

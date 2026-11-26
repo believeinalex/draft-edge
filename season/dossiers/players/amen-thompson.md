@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands. Besperris (Nov 19): expects a 40-50 finish; a buy, so Finn shouldn't sell him cheap.
+Nov 25: Amen back to 36 min (18-10-4, 2 blk) but 4/9 FT; 37th over last two weeks; Lloyd thinks he will do more. Lloyd wanted more from him on Oct 22 and was "very worried" by Nov 5: steals, blocks and assists have all fallen from last season. Season check (HTB through Nov 5): 32.6 mpg, 15.4 pts, 6.3 reb, 1.2 stl, 0.2 blk, 109th, against a 34th-ranked projection. Hold rather than sell at the bottom, but he is Finn's biggest underperformer. Nov 16 (Lloyd): a big game, but entirely on VanVleet's absence. Lloyd's worry about his role with VanVleet and Smart healthy stands. Besperris (Nov 19): expects a 40-50 finish; a buy, so Finn shouldn't sell him cheap.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes, outlook
+**Stat:** 36 min, 18 pts, 10 reb, 4 ast, 2 blk, 4 of 9 FT. 37th over the last two weeks. [51:06]
+**Analysis:** Season has been "a huge disappointment" but "trending in a positive direction." Lloyd was worried about his minutes before this game. [51:10, 51:20]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook

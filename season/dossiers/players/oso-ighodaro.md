@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd (Nov 7): a schedule play for week 4 (4 games, Mon–Tue back-to-back), not a long-term hold; was a 14-team add. Nov 16 (Lloyd): 17 minutes; the week-4 schedule play did not pay off.
+Nov 25: fouled out (13-2-2 in 19 min). Lloyd (Nov 7): a schedule play for week 4 (4 games, Mon–Tue back-to-back), not a long-term hold; was a 14-team add. Nov 16 (Lloyd): 17 minutes; the week-4 schedule play did not pay off.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 19 min, 13 pts, 2 reb, 2 ast, 1 stl, 1 blk; fouled out. [47:20]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

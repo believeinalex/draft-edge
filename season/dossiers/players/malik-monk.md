@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: a speculative add. Nov 16 (Lloyd): speculative add only.
+Nov 25: 5 pts, 4 reb in 13 min; benched role. Lloyd: a speculative add. Nov 16 (Lloyd): speculative add only.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role
+**Stat:** 13 min, 5 pts, 4 reb. Lloyd: Sacramento "continue to hate" him. [52:10]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

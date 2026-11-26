@@ -4,11 +4,16 @@
 
 ## Current take
 
-Lloyd: not a must in 12-team leagues (Oct 22); an assists-only option (Nov 5). Season check (HTB through Nov 5): 26.6 mpg, 3.2 pts, 6.3 ast, 38.9% FG, 151st.
+Nov 25: 11 assists. Lloyd: not a must in 12-team leagues (Oct 22); an assists-only option (Nov 5). Season check (HTB through Nov 5): 26.6 mpg, 3.2 pts, 6.3 ast, 38.9% FG, 151st.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 11 ast. [55:45]
 ### 2026-11-05 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 4, 14 games
 Source: sources/2026-11-05_locked-on-fantasy-basketball.txt
 Tags: waiver

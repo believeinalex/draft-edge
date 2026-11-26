@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: drop. Nov 16 (Lloyd): out Sunday.
+Nov 25: 15 pts on 12 usage in 39 min; Lloyd can't see it long term. Lloyd: drop. Nov 16 (Lloyd): out Sunday.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: minutes
+**Stat:** 39 min, 15 pts, 12% usage(?), 50% from three. "Way too many DeAndre Hunter minutes for now"; can't see it long term. [53:15]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

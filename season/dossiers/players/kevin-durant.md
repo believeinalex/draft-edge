@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: fine; wants more shots. Nov 16 (Lloyd): 27th, fine.
+Nov 25: Durant's usage didn't stay high (23 usage, 37 FP, 20-10). Lloyd still sees a buy low. Lloyd: fine; wants more shots. Nov 16 (Lloyd): 27th, fine.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage, outlook
+**Stat:** 23 usage, 37 fantasy points, 20 pts, 10 reb, 1 stl, 83% FT. [49:05]
+**Analysis:** "Just not exactly the same as what we've expected"; "still a bit of a buy low on him." [49:17]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

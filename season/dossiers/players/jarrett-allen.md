@@ -2,11 +2,16 @@
 
 ## Current take
 
-Knee injury Nov 4; check status. Besperris (Nov 19): a fair price to buy the injured Duren.
+Nov 25: Allen is "the absolute definition of mid" (10-5, 2 stl, 71% FG), hovering around 80-100. Knee injury Nov 4; check status. Besperris (Nov 19): a fair price to buy the injured Duren.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage
+**Stat:** 10 pts, 5 reb, 2 stl, 71% FG. Hovers in the 80 to 100 range; with Mobley out(?) "he's not increasing any of his performances." [17:29]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: trade

@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: hold through the slump.
+Nov 25: 34 min, 28% usage, 24 pts on 0 ast/stl/blk/3pm. Top 70 last two weeks; Lloyd would love to sell high before Caleb Wilson returns. Lloyd: hold through the slump.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: usage, trade
+**Stat:** 34 min, 28% usage, 24 pts; shot right on expected FG (53.3 vs 54.2); zeros in assists, steals, blocks, threes. Top 70 over last two weeks. [11:26]
+**Analysis:** Would sell high before Caleb Wilson returns, but doesn't think that is possible. [11:52]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

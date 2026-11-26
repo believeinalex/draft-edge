@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: drop now that Coby White is back.
+Nov 25: out but might return in a game or two. Lloyd: drop now that Coby White is back.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Reported:** "Shredder might return in the next game or two." If Allen or Schroder (or both) return, Christian Anderson's minutes could come undone. [12:44, 1:00:40]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

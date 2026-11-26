@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted. Besperris (Nov 19): still a sell high for a top-60 return; 197th over the last week.
+Nov 25: 13-4, 2 threes, 2 blk; 141st last two weeks, 88th season; Lloyd expects further drop. Lloyd: expected regression came. Nov 16 (Lloyd): regression arrived, as predicted. Besperris (Nov 19): still a sell high for a top-60 return; 197th over the last week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: outlook
+**Stat:** 13-4, 2 threes, 2 blk; 141st over last two weeks, 88th for season. "I think he'll continue to drop." [49:25]
 ### 2026-11-19 · Old Man Squad Fantasy Basketball (Dan Besperris): buy low / sell high, week 5
 Source: sources/2026-11-19_old-man-squad.txt
 Tags: outlook, trade

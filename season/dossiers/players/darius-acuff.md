@@ -2,11 +2,16 @@
 
 ## Current take
 
-Lloyd: a percentages killer with big volume. Nov 16 (Lloyd): a volume-with-poor-percentages note.
+Nov 25: 37 min, 22-9 but 38% FG, 25% 3P; 100th last two weeks. Lloyd: a percentages killer with big volume. Nov 16 (Lloyd): a volume-with-poor-percentages note.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: shooting
+**Stat:** 37 min, 22 pts, 9 ast, 38% FG, 1/2 FT, 25% 3P. 100th over the last two weeks. [53:30]
 
 ### 2026-11-16 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 15
 Source: sources/2026-11-16_locked-on-fantasy-basketball.txt

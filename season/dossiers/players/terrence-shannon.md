@@ -4,11 +4,17 @@
 
 ## Current take
 
-Lloyd (Nov 7): no reason to hold through the Wolves' 2-game week.
+Nov 25: if Ball is out, Lloyd expects Shannon to start (bad 8 pts in 20 min on 20% FG); he'd add Shannon over Bones for ~30 min. Lloyd (Nov 7): no reason to hold through the Wolves' 2-game week.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role, minutes
+**Stat:** 8 pts in 20 min on 20% shooting. 147th over the last two weeks. [24:10]
+**Analysis:** If Ball misses time, Shannon starts next to "Dumu" (as transcribed) and gets ~30 min; Bones ~21. Prefers Shannon over Bones as an add. [24:10, 24:42]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

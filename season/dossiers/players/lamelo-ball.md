@@ -2,11 +2,19 @@
 
 ## Current take
 
-Lloyd: rolling.
+Nov 25: Ball twisted an ankle late (helped off). No official update; Krinsky says he was in good spirits, so a major injury looks unlikely, though Lloyd still expects some missed time. Lloyd: rolling.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: injury
+**Reported:** Stood on someone's foot late, twisted his ankle, helped off the court. No update expected "until Friday, I would guess." [22:34, 23:40]
+**Reported:** Timberwolves reporter John Krawinski ("Krinsky" as transcribed) said Ball was in very good spirits in the locker room, "no immediate word on his ankle injury, but... he seems to have avoided a major one." [45:37]
+**Analysis:** Lloyd still expects some time out but "doesn't look like it's going to be significant." Fingers crossed. [45:52]
+**Stat:** 19 pts, 7 reb, 8 ast in 29 min before the injury; could be better for fantasy. [23:06]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt

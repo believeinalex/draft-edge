@@ -2,11 +2,17 @@
 
 ## Current take
 
-Lloyd: 14-team.
+Nov 25: 8-4-1 on 12% usage once Giannis returned; Lloyd says not a 12-team guy. Lloyd: 14-team.
 
 ## Notes
 
 <!-- Newest first. Heading: ### YYYY-MM-DD · Source name: episode or article. Optional "Source:" and "Tags:" lines, then bullets labelled Reported / Analysis / Stat / Speculation. -->
+
+### 2026-11-25 · Locked On Fantasy Basketball (Josh Lloyd): recap of Wednesday Nov 25, 9 games
+Source: sources/2026-11-25_locked-on-fantasy-basketball.txt
+Tags: role
+**Stat:** 8 pts, 4 reb, 1 ast, 43% FG; 179th over the last two weeks. [2:32]
+**Analysis:** His big game came without Giannis; "I like Larsson a lot... but I don't think he's a 12 team league guy." [2:40]
 
 ### 2026-11-09 · Locked On Fantasy Basketball (Josh Lloyd): recap of Sunday Nov 8, 7 games
 Source: sources/2026-11-09_locked-on-fantasy-basketball.txt
