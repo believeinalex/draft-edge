@@ -11,10 +11,10 @@
   "generatedFrom": "season/draft_2026-10-18.txt",
   "transactionsApplied": 91,
   "asOf": "2026-11-23 16:56",
-  "statsAsOf": "2026-11-26",
+  "statsAsOf": "2026-11-27",
   "lineupAsOf": "2026-11-24",
   "standingsAsOf": "2026-11-24",
-  "injuriesAsOf": "2026-11-26",
+  "injuriesAsOf": "2026-11-27",
   "teams": [
     {
       "name": "Billy Hoyle's Boy-les",
@@ -2793,7 +2793,10 @@
             "valueTotal": 7.94,
             "rank": 16
           },
-          "injury": null,
+          "injury": {
+            "status": "P",
+            "note": "Groin"
+          },
           "thisWeek": {
             "slot": "PF",
             "status": "Q",
@@ -5537,7 +5540,10 @@
             "valueTotal": -2.3,
             "rank": 206
           },
-          "injury": null,
+          "injury": {
+            "status": "P",
+            "note": "Ankle"
+          },
           "thisWeek": {
             "slot": "BN",
             "status": null,
@@ -6792,7 +6798,7 @@
             "rank": 10
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Knee"
           },
           "thisWeek": {
@@ -7862,10 +7868,7 @@
             "valueTotal": -2.88,
             "rank": 228
           },
-          "injury": {
-            "status": "Q",
-            "note": "Foot"
-          },
+          "injury": null,
           "thisWeek": {
             "slot": "BN",
             "status": "Q",
@@ -8878,7 +8881,7 @@
             "rank": 75
           },
           "injury": {
-            "status": "Q",
+            "status": "O",
             "note": "Hamstring"
           },
           "thisWeek": {
